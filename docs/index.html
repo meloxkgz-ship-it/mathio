@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mathio — Math practice for iOS</title>
+<style>
+  :root {
+    --bg:#FBF7F1; --surface:#fff; --ink:#14110E; --soft:#4C463F;
+    --faint:#9C9487; --hair:#E6DFD5; --terra:#C45F2E; --amber:#F5D97F;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:-apple-system,BlinkMacSystemFont,'SF Pro',sans-serif;
+         background:var(--bg); color:var(--ink); }
+  .wrap { max-width:760px; margin:0 auto; padding:64px 24px 96px; }
+  h1, h2, h3 { font-family:'New York','Georgia',serif; }
+  h1 { font-size:48px; line-height:1.1; margin:0 0 12px; }
+  .subtitle { color:var(--soft); font-size:19px; margin:0 0 40px; }
+  .icon { width:96px; height:96px; border-radius:24px; background:var(--terra);
+          display:flex; align-items:center; justify-content:center;
+          color:#fff; font-family:'New York',serif; font-size:60px; font-weight:700;
+          margin:0 0 28px; }
+  .features { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+              gap:14px; margin:32px 0 48px; }
+  .feature { background:var(--surface); border:0.5px solid var(--hair);
+             border-radius:18px; padding:18px; }
+  .feature h3 { font-size:17px; margin:0 0 6px; font-family:inherit; font-weight:600; }
+  .feature p { color:var(--soft); font-size:14px; margin:0; line-height:1.5; }
+  nav { display:flex; gap:24px; margin-top:48px; padding-top:24px;
+        border-top:0.5px solid var(--hair); font-size:14px; }
+  nav a { color:var(--soft); text-decoration:none; }
+  nav a:hover { color:var(--terra); }
+  .badge { display:inline-block; background:var(--amber); color:var(--ink);
+           padding:6px 12px; border-radius:99px; font-size:12px; font-weight:600;
+           letter-spacing:0.4px; text-transform:uppercase; margin-bottom:24px; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#12100E; --surface:#1C1816; --ink:#F8F5EE; --soft:#CFC9BE;
+            --faint:#948D81; --hair:#322C26; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="icon">π</div>
+  <span class="badge">iOS · Coming soon</span>
+  <h1>Math, made simple.</h1>
+  <p class="subtitle">Algebra to calculus. One small step a day.</p>
+
+  <div class="features">
+    <div class="feature">
+      <h3>Adaptive</h3>
+      <p>We pick the lesson with the lowest mastery — no decision fatigue.</p>
+    </div>
+    <div class="feature">
+      <h3>Step-by-step</h3>
+      <p>Wrong answers always get a clear, numbered solution. Never just "Not quite."</p>
+    </div>
+    <div class="feature">
+      <h3>Spaced repetition</h3>
+      <p>Questions you stumble on resurface 1 day, 3 days, 1 week, 2 weeks, 1 month later.</p>
+    </div>
+    <div class="feature">
+      <h3>Daily streak</h3>
+      <p>Personal momentum. No leaderboards, no social pressure. Streak freezes auto-spend if you skip.</p>
+    </div>
+  </div>
+
+  <nav>
+    <a href="/mathio/privacy">Privacy</a>
+    <a href="/mathio/terms">Terms</a>
+    <a href="https://github.com/meloxkgz-ship-it/mathio">GitHub</a>
+    <a href="mailto:meloxkgz@icloud.com">Support</a>
+  </nav>
+</div>
+</body>
+</html>
