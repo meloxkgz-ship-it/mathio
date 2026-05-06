@@ -1,453 +1,1756 @@
 {
-  "sourceLanguage" : "en",
-  "strings" : {
-    "%lld lessons · %lld%%" : {
-      "localizations" : {
-        "de" : {
-          "stringUnit" : { "state" : "translated", "value" : "%lld Lektionen · %lld %%" }
+  "sourceLanguage": "en",
+  "strings": {
+    "%lld lessons · %lld%%": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld Lektionen · %lld %%"
+          }
         }
       }
     },
-    "%lld questions" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "%lld Aufgaben" } }
-      }
-    },
-    "Math, made simple." : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Mathe, einfach gemacht." } }
-      }
-    },
-    "Algebra to calculus. One small step a day." : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Von Algebra bis Analysis. Jeden Tag ein kleiner Schritt." } }
-      }
-    },
-    "Get started" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Los geht's" } }
-      }
-    },
-    "Adaptive — we pick what's next for you" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Adaptiv — wir wählen die nächste Lektion für dich" } }
-      }
-    },
-    "Step-by-step solutions, every time" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Schritt-für-Schritt-Lösungen, immer" } }
-      }
-    },
-    "Build a daily streak, no leaderboards" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Tägliche Serie statt Bestenlisten" } }
-      }
-    },
-    "Continue" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Weiter" } }
-      }
-    },
-    "Good morning." : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Guten Morgen." } }
-      }
-    },
-    "Ready to think?" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Bereit nachzudenken?" } }
-      }
-    },
-    "Evening session?" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Abendsession?" } }
-      }
-    },
-    "All topics" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Alle Themen" } }
-      }
-    },
-    "Algebra" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Algebra" } }
-      }
-    },
-    "Calculus" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Analysis" } }
-      }
-    },
-    "Geometry" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Geometrie" } }
-      }
-    },
-    "Trigonometry" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Trigonometrie" } }
-      }
-    },
-    "Equations & expressions" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Gleichungen & Terme" } }
-      }
-    },
-    "Change & accumulation" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Änderung & Integration" } }
-      }
-    },
-    "Shapes & distance" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Formen & Abstand" } }
-      }
-    },
-    "Angles & ratios" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Winkel & Verhältnisse" } }
-      }
-    },
-    "Linear Equations" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Lineare Gleichungen" } }
-      }
-    },
-    "Quadratic Formula" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Quadratische Formel" } }
-      }
-    },
-    "Derivatives" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Ableitungen" } }
-      }
-    },
-    "Indefinite Integrals" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Unbestimmte Integrale" } }
-      }
-    },
-    "Pythagorean Theorem" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Satz des Pythagoras" } }
-      }
-    },
-    "Trig Ratios" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Trig-Verhältnisse" } }
-      }
-    },
-    "Solve for the unknown by isolating it on one side." : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Stelle die Variable durch Umformen frei." } }
-      }
-    },
-    "Every quadratic ax² + bx + c = 0 has solutions you can read off the formula." : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Jede quadratische Gleichung ax² + bx + c = 0 lässt sich mit der Formel lösen." } }
-      }
-    },
-    "The derivative measures how fast something changes." : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Die Ableitung beschreibt, wie schnell sich etwas ändert." } }
-      }
-    },
-    "Integration is the reverse of differentiation." : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Integration ist die Umkehrung der Ableitung." } }
-      }
-    },
-    "In a right triangle, the squared hypotenuse equals the sum of the squared legs." : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Im rechtwinkligen Dreieck gilt: Quadrat der Hypotenuse gleich Summe der Kathetenquadrate." } }
-      }
-    },
-    "In a right triangle: SOH-CAH-TOA." : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Im rechtwinkligen Dreieck: GAH-AHA-GAA." } }
-      }
-    },
-    "Start practice" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Übung starten" } }
-      }
-    },
-    "Check" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Prüfen" } }
-      }
-    },
-    "Your answer" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Deine Antwort" } }
-      }
-    },
-    "Type plain text. e.g. 6x+2, sqrt(2), pi" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Einfach tippen, z. B. 6x+2, sqrt(2), pi" } }
-      }
-    },
-    "Nice. Tap continue." : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Stark. Tippe auf Weiter." } }
-      }
-    },
-    "Not quite — here's why:" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Fast — hier ist warum:" } }
-      }
-    },
-    "Lesson complete" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Lektion abgeschlossen" } }
-      }
-    },
-    "You scored %lld out of %lld." : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Du hast %lld von %lld richtig." } }
-      }
-    },
-    "Done" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Fertig" } }
-      }
-    },
-    "True" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Wahr" } }
-      }
-    },
-    "False" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Falsch" } }
-      }
-    },
-    "Your progress" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Dein Fortschritt" } }
-      }
-    },
-    "Day streak" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Tagesserie" } }
-      }
-    },
-    "Correct" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Richtig" } }
-      }
-    },
-    "Mastery" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Beherrschung" } }
-      }
-    },
-    "Focus next" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Als nächstes üben" } }
-      }
-    },
-    "%lld%% mastery" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "%lld %% beherrscht" } }
-      }
-    },
-    "By topic" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Nach Thema" } }
-      }
-    },
-    "Settings" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Einstellungen" } }
-      }
-    },
-    "Subscription" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Abonnement" } }
-      }
-    },
-    "Mathio Premium" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Mathio Premium" } }
-      }
-    },
-    "Cancel subscription" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Abo kündigen" } }
-      }
-    },
-    "Upgrade to Premium" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Upgrade auf Premium" } }
-      }
-    },
-    "Restore purchases" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Käufe wiederherstellen" } }
-      }
-    },
-    "Restore" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Wiederherst." } }
-      }
-    },
-    "Practice" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Übung" } }
-      }
-    },
-    "Reset all progress" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Fortschritt zurücksetzen" } }
-      }
-    },
-    "Reset all progress?" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Fortschritt zurücksetzen?" } }
-      }
-    },
-    "Reset everything" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Alles zurücksetzen" } }
-      }
-    },
-    "Cancel" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Abbrechen" } }
-      }
-    },
-    "This deletes your answers and streak. Cannot be undone." : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Antworten und Serie werden gelöscht. Nicht rückgängig zu machen." } }
-      }
-    },
-    "About" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Über" } }
-      }
-    },
-    "Privacy policy" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Datenschutz" } }
-      }
-    },
-    "Terms of service" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Nutzungsbedingungen" } }
-      }
-    },
-    "Support" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Support" } }
-      }
-    },
-    "Unlock all of Mathio" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Schalte alles in Mathio frei" } }
-      }
-    },
-    "Every topic. Every lesson. No ads." : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Jedes Thema. Jede Lektion. Werbefrei." } }
-      }
-    },
-    "Wait — special offer" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Warte — Sonderangebot" } }
-      }
-    },
-    "Stay one more year for 25 % off." : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Bleib ein Jahr länger für 25 % Rabatt." } }
-      }
-    },
-    "All topics: algebra, calculus, geometry, trig" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Alle Themen: Algebra, Analysis, Geometrie, Trigonometrie" } }
-      }
-    },
-    "Step-by-step solutions for every wrong answer" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Schritt-für-Schritt-Lösungen bei jeder falschen Antwort" } }
-      }
-    },
-    "Daily streak that actually motivates" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Tagesserie, die wirklich motiviert" } }
-      }
-    },
-    "Annual" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Jährlich" } }
-      }
-    },
-    "Weekly" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Wöchentlich" } }
-      }
-    },
-    "Best value" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Bester Preis" } }
-      }
-    },
-    "%@ per week, billed yearly" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "%@ pro Woche, jährliche Abrechnung" } }
-      }
-    },
-    "Billed yearly" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Jährliche Abrechnung" } }
-      }
-    },
-    "3-day free trial, then weekly" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "3 Tage gratis, dann wöchentlich" } }
-      }
-    },
-    "ANNUAL · 25 %% OFF" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "JÄHRLICH · 25 %% RABATT" } }
-      }
-    },
-    "/ year" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "/ Jahr" } }
-      }
-    },
-    "One-time offer. Locked in for 12 months." : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Einmaliges Angebot. 12 Monate festgeschrieben." } }
-      }
-    },
-    "Cancel anytime. Auto-renews unless turned off in Settings." : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Jederzeit kündbar. Verlängert sich automatisch, sofern nicht in den Einstellungen deaktiviert." } }
-      }
-    },
-    "Start 3-day free trial" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "3 Tage gratis testen" } }
-      }
-    },
-    "Keep my access at 25 %% off" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Zugang mit 25 %% Rabatt behalten" } }
-      }
-    },
-    "Terms" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "AGB" } }
-      }
-    },
-    "Privacy" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Datenschutz" } }
+    "%lld questions": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld Aufgaben"
+          }
+        }
+      }
+    },
+    "Math, made simple.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mathe, einfach gemacht."
+          }
+        }
+      }
+    },
+    "Algebra to calculus. One small step a day.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Von Algebra bis Analysis. Jeden Tag ein kleiner Schritt."
+          }
+        }
+      }
+    },
+    "Get started": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Los geht's"
+          }
+        }
+      }
+    },
+    "Adaptive — we pick what's next for you": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adaptiv — wir wählen die nächste Lektion für dich"
+          }
+        }
+      }
+    },
+    "Step-by-step solutions, every time": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schritt-für-Schritt-Lösungen, immer"
+          }
+        }
+      }
+    },
+    "Build a daily streak, no leaderboards": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tägliche Serie statt Bestenlisten"
+          }
+        }
+      }
+    },
+    "Continue": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weiter"
+          }
+        }
+      }
+    },
+    "Good morning.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Guten Morgen."
+          }
+        }
+      }
+    },
+    "Ready to think?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bereit nachzudenken?"
+          }
+        }
+      }
+    },
+    "Evening session?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abendsession?"
+          }
+        }
+      }
+    },
+    "All topics": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alle Themen"
+          }
+        }
+      }
+    },
+    "Algebra": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Algebra"
+          }
+        }
+      }
+    },
+    "Calculus": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Analysis"
+          }
+        }
+      }
+    },
+    "Geometry": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Geometrie"
+          }
+        }
+      }
+    },
+    "Trigonometry": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trigonometrie"
+          }
+        }
+      }
+    },
+    "Equations & expressions": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gleichungen & Terme"
+          }
+        }
+      }
+    },
+    "Change & accumulation": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Änderung & Integration"
+          }
+        }
+      }
+    },
+    "Shapes & distance": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Formen & Abstand"
+          }
+        }
+      }
+    },
+    "Angles & ratios": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Winkel & Verhältnisse"
+          }
+        }
+      }
+    },
+    "Linear Equations": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lineare Gleichungen"
+          }
+        }
+      }
+    },
+    "Quadratic Formula": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quadratische Formel"
+          }
+        }
+      }
+    },
+    "Derivatives": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ableitungen"
+          }
+        }
+      }
+    },
+    "Indefinite Integrals": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unbestimmte Integrale"
+          }
+        }
+      }
+    },
+    "Pythagorean Theorem": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Satz des Pythagoras"
+          }
+        }
+      }
+    },
+    "Trig Ratios": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trig-Verhältnisse"
+          }
+        }
+      }
+    },
+    "Solve for the unknown by isolating it on one side.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stelle die Variable durch Umformen frei."
+          }
+        }
+      }
+    },
+    "Every quadratic ax² + bx + c = 0 has solutions you can read off the formula.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jede quadratische Gleichung ax² + bx + c = 0 lässt sich mit der Formel lösen."
+          }
+        }
+      }
+    },
+    "The derivative measures how fast something changes.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Ableitung beschreibt, wie schnell sich etwas ändert."
+          }
+        }
+      }
+    },
+    "Integration is the reverse of differentiation.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Integration ist die Umkehrung der Ableitung."
+          }
+        }
+      }
+    },
+    "In a right triangle, the squared hypotenuse equals the sum of the squared legs.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Im rechtwinkligen Dreieck gilt: Quadrat der Hypotenuse gleich Summe der Kathetenquadrate."
+          }
+        }
+      }
+    },
+    "In a right triangle: SOH-CAH-TOA.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Im rechtwinkligen Dreieck: GAH-AHA-GAA."
+          }
+        }
+      }
+    },
+    "Start practice": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Übung starten"
+          }
+        }
+      }
+    },
+    "Check": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prüfen"
+          }
+        }
+      }
+    },
+    "Your answer": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deine Antwort"
+          }
+        }
+      }
+    },
+    "Type plain text. e.g. 6x+2, sqrt(2), pi": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Einfach tippen, z. B. 6x+2, sqrt(2), pi"
+          }
+        }
+      }
+    },
+    "Nice. Tap continue.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stark. Tippe auf Weiter."
+          }
+        }
+      }
+    },
+    "Not quite — here's why:": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fast — hier ist warum:"
+          }
+        }
+      }
+    },
+    "Lesson complete": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lektion abgeschlossen"
+          }
+        }
+      }
+    },
+    "You scored %lld out of %lld.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Du hast %lld von %lld richtig."
+          }
+        }
+      }
+    },
+    "Done": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fertig"
+          }
+        }
+      }
+    },
+    "True": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wahr"
+          }
+        }
+      }
+    },
+    "False": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Falsch"
+          }
+        }
+      }
+    },
+    "Your progress": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dein Fortschritt"
+          }
+        }
+      }
+    },
+    "Day streak": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tagesserie"
+          }
+        }
+      }
+    },
+    "Correct": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Richtig"
+          }
+        }
+      }
+    },
+    "Mastery": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beherrschung"
+          }
+        }
+      }
+    },
+    "Focus next": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Als nächstes üben"
+          }
+        }
+      }
+    },
+    "%lld%% mastery": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld %% beherrscht"
+          }
+        }
+      }
+    },
+    "By topic": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nach Thema"
+          }
+        }
+      }
+    },
+    "Settings": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Einstellungen"
+          }
+        }
+      }
+    },
+    "Subscription": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abonnement"
+          }
+        }
+      }
+    },
+    "Mathio Premium": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mathio Premium"
+          }
+        }
+      }
+    },
+    "Cancel subscription": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abo kündigen"
+          }
+        }
+      }
+    },
+    "Upgrade to Premium": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Upgrade auf Premium"
+          }
+        }
+      }
+    },
+    "Restore purchases": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Käufe wiederherstellen"
+          }
+        }
+      }
+    },
+    "Restore": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wiederherst."
+          }
+        }
+      }
+    },
+    "Practice": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Übung"
+          }
+        }
+      }
+    },
+    "Reset all progress": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fortschritt zurücksetzen"
+          }
+        }
+      }
+    },
+    "Reset all progress?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fortschritt zurücksetzen?"
+          }
+        }
+      }
+    },
+    "Reset everything": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alles zurücksetzen"
+          }
+        }
+      }
+    },
+    "Cancel": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abbrechen"
+          }
+        }
+      }
+    },
+    "This deletes your answers and streak. Cannot be undone.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Antworten und Serie werden gelöscht. Nicht rückgängig zu machen."
+          }
+        }
+      }
+    },
+    "About": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Über"
+          }
+        }
+      }
+    },
+    "Privacy policy": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Datenschutz"
+          }
+        }
+      }
+    },
+    "Terms of service": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nutzungsbedingungen"
+          }
+        }
+      }
+    },
+    "Support": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Support"
+          }
+        }
+      }
+    },
+    "Unlock all of Mathio": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schalte alles in Mathio frei"
+          }
+        }
+      }
+    },
+    "Every topic. Every lesson. No ads.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jedes Thema. Jede Lektion. Werbefrei."
+          }
+        }
+      }
+    },
+    "Wait — special offer": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Warte — Sonderangebot"
+          }
+        }
+      }
+    },
+    "Stay one more year for 25 % off.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bleib ein Jahr länger für 25 % Rabatt."
+          }
+        }
+      }
+    },
+    "All topics: algebra, calculus, geometry, trig": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alle Themen: Algebra, Analysis, Geometrie, Trigonometrie"
+          }
+        }
+      }
+    },
+    "Step-by-step solutions for every wrong answer": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schritt-für-Schritt-Lösungen bei jeder falschen Antwort"
+          }
+        }
+      }
+    },
+    "Daily streak that actually motivates": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tagesserie, die wirklich motiviert"
+          }
+        }
+      }
+    },
+    "Annual": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jährlich"
+          }
+        }
+      }
+    },
+    "Weekly": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wöchentlich"
+          }
+        }
+      }
+    },
+    "Best value": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bester Preis"
+          }
+        }
+      }
+    },
+    "%@ per week, billed yearly": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ pro Woche, jährliche Abrechnung"
+          }
+        }
+      }
+    },
+    "Billed yearly": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jährliche Abrechnung"
+          }
+        }
+      }
+    },
+    "3-day free trial, then weekly": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3 Tage gratis, dann wöchentlich"
+          }
+        }
+      }
+    },
+    "ANNUAL · 25 %% OFF": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "JÄHRLICH · 25 %% RABATT"
+          }
+        }
+      }
+    },
+    "/ year": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "/ Jahr"
+          }
+        }
+      }
+    },
+    "One-time offer. Locked in for 12 months.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Einmaliges Angebot. 12 Monate festgeschrieben."
+          }
+        }
+      }
+    },
+    "Cancel anytime. Auto-renews unless turned off in Settings.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jederzeit kündbar. Verlängert sich automatisch, sofern nicht in den Einstellungen deaktiviert."
+          }
+        }
+      }
+    },
+    "Start 3-day free trial": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3 Tage gratis testen"
+          }
+        }
+      }
+    },
+    "Keep my access at 25 %% off": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zugang mit 25 %% Rabatt behalten"
+          }
+        }
+      }
+    },
+    "Terms": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AGB"
+          }
+        }
+      }
+    },
+    "Privacy": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Datenschutz"
+          }
+        }
+      }
+    },
+    "Activity": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aktivität"
+          }
+        }
+      }
+    },
+    "Less": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "weniger"
+          }
+        }
+      }
+    },
+    "More": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "mehr"
+          }
+        }
+      }
+    },
+    "Quit this practice?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Übung abbrechen?"
+          }
+        }
+      }
+    },
+    "Keep practicing": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weiter üben"
+          }
+        }
+      }
+    },
+    "Quit": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abbrechen"
+          }
+        }
+      }
+    },
+    "You're at %lld of %lld. Progress on answered questions is saved.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Du bist bei %lld von %lld. Beantwortete Fragen sind gespeichert."
+          }
+        }
+      }
+    },
+    "Perfect run.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Perfekt."
+          }
+        }
+      }
+    },
+    "Nothing to score.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nichts zu bewerten."
+          }
+        }
+      }
+    },
+    "Free for 7 days, then %@/year. Renews automatically unless cancelled at least 24 h before the period ends. Manage in Settings.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "7 Tage gratis, dann %@/Jahr. Verlängert sich automatisch, sofern nicht mindestens 24 Std. vor Periodenende gekündigt wird. Verwalten in den Einstellungen."
+          }
+        }
+      }
+    },
+    "Free for 3 days, then %@/week. Renews automatically unless cancelled at least 24 h before the period ends. Manage in Settings.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3 Tage gratis, dann %@/Woche. Verlängert sich automatisch, sofern nicht mindestens 24 Std. vor Periodenende gekündigt wird. Verwalten in den Einstellungen."
+          }
+        }
+      }
+    },
+    "Start 7-day free trial": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "7 Tage gratis testen"
+          }
+        }
+      }
+    },
+    "7-day free trial, then %@ per week": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "7 Tage gratis, dann %@ pro Woche"
+          }
+        }
+      }
+    },
+    "7-day free trial, then billed yearly": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "7 Tage gratis, dann jährliche Abrechnung"
+          }
+        }
+      }
+    },
+    "Pre-Algebra": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vor-Algebra"
+          }
+        }
+      }
+    },
+    "Fractions, percents, basics": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Brüche, Prozente, Grundlagen"
+          }
+        }
+      }
+    },
+    "Fractions": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Brüche"
+          }
+        }
+      }
+    },
+    "Add, subtract, and simplify common fractions.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Addiere, subtrahiere und kürze gewöhnliche Brüche."
+          }
+        }
+      }
+    },
+    "Percentages": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prozente"
+          }
+        }
+      }
+    },
+    "Percentages are fractions out of 100.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prozente sind Brüche aus 100."
+          }
+        }
+      }
+    },
+    "Order of Operations": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reihenfolge der Operationen"
+          }
+        }
+      }
+    },
+    "PEMDAS — parentheses, exponents, multiplication/division, addition/subtraction.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Klammer, Potenz, Punkt, Strich."
+          }
+        }
+      }
+    },
+    "Negative Numbers": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Negative Zahlen"
+          }
+        }
+      }
+    },
+    "Operations on numbers below zero. Two negatives multiplied give a positive.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rechnen mit Zahlen unter null. Minus mal Minus ergibt Plus."
+          }
+        }
+      }
+    },
+    "Exponent Rules": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Potenzgesetze"
+          }
+        }
+      }
+    },
+    "Exponents follow tidy rules — once you know them, big powers shrink fast.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Potenzen folgen klaren Regeln — kennt man sie, schrumpfen große Zahlen schnell."
+          }
+        }
+      }
+    },
+    "Factoring": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Faktorisieren"
+          }
+        }
+      }
+    },
+    "Find the building blocks: factor common terms or recognize standard forms.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bausteine finden: gemeinsame Faktoren oder Standardformen erkennen."
+          }
+        }
+      }
+    },
+    "Slope & Lines": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Steigung & Geraden"
+          }
+        }
+      }
+    },
+    "Lines have a slope and an intercept. Two points define them uniquely.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Geraden haben Steigung und y-Achsenabschnitt. Zwei Punkte legen sie eindeutig fest."
+          }
+        }
+      }
+    },
+    "Limits": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Grenzwerte"
+          }
+        }
+      }
+    },
+    "A limit is the value a function approaches as the input approaches a point.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ein Grenzwert ist der Wert, dem eine Funktion zustrebt."
+          }
+        }
+      }
+    },
+    "Chain Rule": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kettenregel"
+          }
+        }
+      }
+    },
+    "Differentiating compositions: outer derivative times inner derivative.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verkettung ableiten: äußere Ableitung mal innere Ableitung."
+          }
+        }
+      }
+    },
+    "Circles": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kreise"
+          }
+        }
+      }
+    },
+    "π connects a circle's circumference and area to its radius.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "π verbindet Umfang und Fläche eines Kreises mit seinem Radius."
+          }
+        }
+      }
+    },
+    "Triangle Area": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dreiecksfläche"
+          }
+        }
+      }
+    },
+    "Half base times height.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Halbe Grundseite mal Höhe."
+          }
+        }
+      }
+    },
+    "Volumes": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Volumina"
+          }
+        }
+      }
+    },
+    "Three-dimensional measure of common solids.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dreidimensionales Maß gängiger Körper."
+          }
+        }
+      }
+    },
+    "Unit Circle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Einheitskreis"
+          }
+        }
+      }
+    },
+    "On a circle of radius 1, sin and cos are coordinates.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Auf einem Kreis mit Radius 1 sind sin und cos die Koordinaten."
+          }
+        }
+      }
+    },
+    "Trig Identities": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trig-Identitäten"
+          }
+        }
+      }
+    },
+    "Identities that always hold. The Pythagorean one is the keystone.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Identitäten, die immer gelten. Die pythagoräische ist die wichtigste."
+          }
+        }
+      }
+    },
+    "Today": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Heute"
+          }
+        }
+      }
+    },
+    "Goal reached. Nice.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ziel erreicht. Stark."
+          }
+        }
+      }
+    },
+    "%lld of %lld correct": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld von %lld richtig"
+          }
+        }
+      }
+    },
+    "%lld of %lld correct today.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld von %lld heute richtig."
+          }
+        }
+      }
+    },
+    "Daily goal reached. %lld correct out of %lld.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tagesziel erreicht. %lld von %lld richtig."
+          }
+        }
+      }
+    },
+    "Review due": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wiederholung fällig"
+          }
+        }
+      }
+    },
+    "%lld questions to refresh": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld Fragen zum Auffrischen"
+          }
+        }
+      }
+    },
+    "Review": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wiederholung"
+          }
+        }
+      }
+    },
+    "Refresh what you've learned.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Frische auf, was du gelernt hast."
+          }
+        }
+      }
+    },
+    "Review complete": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wiederholung abgeschlossen"
+          }
+        }
+      }
+    },
+    "Nothing to review": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nichts zu wiederholen"
+          }
+        }
+      }
+    },
+    "Come back tomorrow — your spaced-repetition queue is empty.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Komm morgen wieder — deine Wiederholungs-Warteschlange ist leer."
+          }
+        }
+      }
+    },
+    "Formula reference": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Formelübersicht"
+          }
+        }
+      }
+    },
+    "Formulas": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Formeln"
+          }
+        }
+      }
+    },
+    "All": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alle"
+          }
+        }
+      }
+    },
+    "Bookmarked": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lesezeichen"
+          }
+        }
+      }
+    },
+    "No bookmarks yet": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Noch keine Lesezeichen"
+          }
+        }
+      }
+    },
+    "Tap the bookmark on any formula to save it here.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tippe das Lesezeichen bei einer Formel, um sie zu speichern."
+          }
+        }
+      }
+    },
+    "Bookmark formula": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Formel merken"
+          }
+        }
+      }
+    },
+    "Remove bookmark": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lesezeichen entfernen"
+          }
+        }
+      }
+    },
+    "Show hint": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hinweis zeigen"
+          }
+        }
+      }
+    },
+    "Clear answer": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Antwort löschen"
+          }
+        }
+      }
+    },
+    "Close": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schließen"
+          }
+        }
+      }
+    },
+    "Close practice": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Übung schließen"
+          }
+        }
+      }
+    },
+    "Statistics": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Statistik"
+          }
+        }
+      }
+    },
+    "Daily practice": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tägliche Übung"
+          }
+        }
+      }
+    },
+    "Daily goal": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tagesziel"
+          }
+        }
+      }
+    },
+    "%lld correct": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld richtig"
+          }
+        }
+      }
+    },
+    "Daily reminder at 19:00": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tagesreminder um 19:00"
+          }
+        }
+      }
+    },
+    "Appearance": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Darstellung"
+          }
+        }
+      }
+    },
+    "Theme": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Theme"
+          }
+        }
+      }
+    },
+    "System": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "System"
+          }
+        }
+      }
+    },
+    "Light": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hell"
+          }
+        }
+      }
+    },
+    "Dark": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dunkel"
+          }
+        }
+      }
+    },
+    "Freezes": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Joker"
+          }
+        }
+      }
+    },
+    "Continue with %@ in %@": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weiter mit %@ in %@"
+          }
+        }
+      }
+    },
+    "%@, %lld percent mastered": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@, %lld Prozent beherrscht"
+          }
+        }
+      }
+    },
+    "Question %lld of %lld": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Frage %lld von %lld"
+          }
+        }
+      }
+    },
+    "Keep your streak alive": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Halte deine Serie am Leben"
+          }
+        }
+      }
+    },
+    "Two minutes of math today is enough.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zwei Minuten Mathe heute reichen."
+          }
+        }
+      }
+    },
+    "All mastered": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alles gemeistert"
+          }
+        }
+      }
+    },
+    "Pick any topic to keep practicing.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wähle ein Thema und übe weiter."
+          }
+        }
       }
     }
   },
-  "version" : "1.0"
+  "version": "1.0"
 }

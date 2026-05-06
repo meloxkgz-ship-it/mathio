@@ -1,6 +1,7 @@
 import SwiftUI
 import StoreKit
 import UserNotifications
+import AudioToolbox
 
 // MARK: - Premium store
 //
@@ -237,6 +238,9 @@ struct HomeView: View {
     private var nextUp: (Topic, Lesson)? { store.nextLesson(in: topics, premium: premiumStore.isPremium) }
     private var reviewCount: Int { store.reviewQueue(in: topics).count }
 
+    /// Set by `PracticeMathIntent` (Siri / Spotlight). Honored once on appear.
+    private static let pendingPracticeKey = "mathio.intent.pendingPractice"
+
     var body: some View {
         NavigationStack {
             ScrollView {
@@ -271,6 +275,21 @@ struct HomeView: View {
             .sheet(isPresented: $showSettings) { SettingsView(store: store, premiumStore: premiumStore, settings: settings) }
             .sheet(isPresented: $showPaywall)  { PaywallView(premiumStore: premiumStore, mode: .upgrade) }
             .sheet(isPresented: $showFormulas) { FormulaReferenceView(store: store, topics: topics) }
+            .onAppear(perform: handlePendingIntent)
+        }
+    }
+
+    /// If launched via Siri / Spotlight "Practice Math", jump straight into
+    /// the review queue (or the suggested next lesson if nothing is due).
+    private func handlePendingIntent() {
+        let defaults = UserDefaults.standard
+        guard defaults.bool(forKey: Self.pendingPracticeKey) else { return }
+        defaults.set(false, forKey: Self.pendingPracticeKey)
+        if reviewCount > 0 {
+            showReview = true
+        } else if let (_, lesson) = nextUp,
+                  premiumStore.isPremium || lesson.isFree(in: topics.first { $0.lessons.contains(lesson) } ?? topics[0]) {
+            presented = lesson
         }
     }
 
@@ -592,7 +611,8 @@ struct PracticeView: View {
     @State private var state: AnswerState = .pending
     @State private var showHint: Bool = false
     @State private var sessionCorrect: Int = 0
-    @State private var feedback: Bool = false   // for haptic trigger
+    @State private var showQuitConfirm: Bool = false
+    @State private var didCelebrate: Bool = false
 
     enum AnswerState: Equatable { case pending, correct, incorrect }
 
@@ -622,7 +642,8 @@ struct PracticeView: View {
         .toolbar {
             ToolbarItem(placement: .topBarLeading) {
                 Button {
-                    dismiss()
+                    if shouldConfirmQuit { showQuitConfirm = true }
+                    else { dismiss() }
                 } label: {
                     Image(systemName: "xmark")
                         .font(.system(size: 16, weight: .semibold))
@@ -634,6 +655,21 @@ struct PracticeView: View {
         .navigationBarTitleDisplayMode(.inline)
         .sensoryFeedback(.success, trigger: state == .correct)
         .sensoryFeedback(.error, trigger: state == .incorrect)
+        .confirmationDialog("Quit this practice?",
+                            isPresented: $showQuitConfirm, titleVisibility: .visible) {
+            Button("Keep practicing", role: .cancel) { }
+            Button("Quit", role: .destructive) { dismiss() }
+        } message: {
+            Text("You're at \(index + 1) of \(lesson.questions.count). Progress on answered questions is saved.")
+        }
+    }
+
+    /// Confirm quit only if the user is mid-lesson (not at the very start, not at completion).
+    private var shouldConfirmQuit: Bool {
+        guard !lesson.questions.isEmpty else { return false }
+        if index >= lesson.questions.count { return false }   // at completion screen
+        if index == 0 && state == .pending { return false }   // hasn't started
+        return true
     }
 
     private var progressBar: some View {
@@ -769,22 +805,54 @@ struct PracticeView: View {
     }
 
     private var completionView: some View {
-        VStack(spacing: 24) {
-            Spacer(minLength: 40)
-            ZStack {
-                Circle().fill(Palette.amberSoft).frame(width: 120, height: 120)
-                Image(systemName: "sparkles")
-                    .font(.system(size: 50)).foregroundStyle(Palette.terracotta)
+        ZStack {
+            if didCelebrate { Confetti().allowsHitTesting(false) }
+
+            VStack(spacing: 24) {
+                Spacer(minLength: 40)
+                ZStack {
+                    Circle().fill(Palette.amberSoft).frame(width: 120, height: 120)
+                    Image(systemName: ribbon)
+                        .font(.system(size: 50)).foregroundStyle(Palette.terracotta)
+                }
+                .accessibilityHidden(true)
+                Text(isReview ? "Review complete" : "Lesson complete")
+                    .font(.displayM).foregroundStyle(Palette.ink)
+                Text(scoreLine)
+                    .font(.bodyL).foregroundStyle(Palette.inkSoft)
+                    .multilineTextAlignment(.center)
+                if isPerfect {
+                    Text("Perfect run.")
+                        .font(.titleM).foregroundStyle(Palette.terracotta)
+                        .padding(.top, -8)
+                }
+                PrimaryButton(title: "Done", icon: "checkmark") { dismiss() }
+                    .padding(.top, 12)
             }
-            .accessibilityHidden(true)
-            Text(isReview ? "Review complete" : "Lesson complete")
-                .font(.displayM).foregroundStyle(Palette.ink)
-            Text("You scored \(sessionCorrect) out of \(lesson.questions.count).")
-                .font(.bodyL).foregroundStyle(Palette.inkSoft)
-            PrimaryButton(title: "Done", icon: "checkmark") { dismiss() }
-                .padding(.top, 12)
+            .frame(maxWidth: .infinity)
         }
-        .frame(maxWidth: .infinity)
+        .onAppear {
+            guard !didCelebrate, lesson.questions.count > 0 else { return }
+            didCelebrate = true
+            if isPerfect {
+                AudioServicesPlaySystemSound(1025)   // Tink — gentle success ping
+            }
+        }
+    }
+
+    private var isPerfect: Bool {
+        sessionCorrect == lesson.questions.count && lesson.questions.count > 0
+    }
+
+    private var ribbon: String {
+        isPerfect ? "rosette" : "sparkles"
+    }
+
+    private var scoreLine: LocalizedStringResource {
+        if lesson.questions.isEmpty {
+            return "Nothing to score."
+        }
+        return "You scored \(sessionCorrect) out of \(lesson.questions.count)."
     }
 
     private var canCheck: Bool {
@@ -836,6 +904,66 @@ struct PracticeView: View {
         index += 1
         input = ""; selectedChoice = nil; trueFalseValue = nil
         state = .pending; showHint = false
+    }
+}
+
+// MARK: - Confetti
+//
+// Pure-SwiftUI particle effect — 60 colored dots that drift down and fade.
+// Lightweight (no SpriteKit), runs once and stops. ~30ms cost on iPhone 17.
+
+private struct Confetti: View {
+    @State private var phase: CGFloat = 0
+    private let colors: [Color] = [
+        Palette.terracotta, Palette.amber, Palette.calculus,
+        Palette.geometry, Palette.stats, Palette.precalc,
+    ]
+    private let count = 60
+
+    var body: some View {
+        GeometryReader { geo in
+            ZStack {
+                ForEach(0..<count, id: \.self) { i in
+                    let seed = Double(i)
+                    let xStart = Double.random(in: 0...1, seed: seed * 1.13) * geo.size.width
+                    let drift  = Double.random(in: -0.08...0.08, seed: seed * 7.7) * geo.size.width
+                    let delay  = Double.random(in: 0...0.4, seed: seed * 3.1)
+                    let size   = CGFloat.random(in: 4...8, seed: seed * 2.3)
+                    let color  = colors[i % colors.count]
+
+                    Rectangle()
+                        .fill(color)
+                        .frame(width: size, height: size * 0.6)
+                        .rotationEffect(.degrees(Double(i) * 23 + Double(phase * 360)))
+                        .position(
+                            x: xStart + drift * Double(phase),
+                            y: -20 + Double(phase) * (geo.size.height + 40)
+                        )
+                        .opacity(1 - Double(phase))
+                        .animation(.easeOut(duration: 1.6).delay(delay), value: phase)
+                }
+            }
+            .onAppear {
+                withAnimation(.easeOut(duration: 1.6)) { phase = 1 }
+            }
+        }
+    }
+}
+
+private extension Double {
+    /// Deterministic pseudo-random in a range — keeps Confetti looking the same
+    /// every time the same seed value is used for a particle index.
+    static func random(in range: ClosedRange<Double>, seed: Double) -> Double {
+        var x = seed.truncatingRemainder(dividingBy: 1.0)
+        x = abs(sin(seed * 12.9898) * 43758.5453)
+        x = x.truncatingRemainder(dividingBy: 1.0)
+        return range.lowerBound + (range.upperBound - range.lowerBound) * x
+    }
+}
+
+private extension CGFloat {
+    static func random(in range: ClosedRange<CGFloat>, seed: Double) -> CGFloat {
+        CGFloat(Double.random(in: Double(range.lowerBound)...Double(range.upperBound), seed: seed))
     }
 }
 
@@ -1001,6 +1129,7 @@ struct StatsView: View {
             ScrollView {
                 VStack(alignment: .leading, spacing: 18) {
                     headerStats
+                    activityCard
                     masteryCard
                     if hasAnyProgress, let weakest { focusCard(weakest) }
                 }
@@ -1039,6 +1168,15 @@ struct StatsView: View {
         }
         .accessibilityElement(children: .combine)
         .accessibilityLabel(Text("\(value) \(label)"))
+    }
+
+    private var activityCard: some View {
+        Card {
+            VStack(alignment: .leading, spacing: 14) {
+                SectionLabel(title: "Activity")
+                CalendarHeatmap(activity: store.dailyActivity(), weeks: 12)
+            }
+        }
     }
 
     private var masteryCard: some View {
@@ -1153,8 +1291,8 @@ struct SettingsView: View {
                 }
 
                 Section("About") {
-                    Link("Privacy policy",   destination: URL(string: "https://mathio.app/privacy")!)
-                    Link("Terms of service", destination: URL(string: "https://mathio.app/terms")!)
+                    Link("Privacy policy",   destination: URL(string: "https://meloxkgz-ship-it.github.io/mathio/privacy")!)
+                    Link("Terms of service", destination: URL(string: "https://meloxkgz-ship-it.github.io/mathio/terms")!)
                     Link("Support",          destination: URL(string: "mailto:meloxkgz@icloud.com")!)
                 }
             }
@@ -1503,9 +1641,9 @@ struct PaywallView: View {
             HStack {
                 Button("Restore") { Task { await premiumStore.restore() } }
                 Spacer()
-                Link("Terms", destination: URL(string: "https://mathio.app/terms")!)
+                Link("Terms", destination: URL(string: "https://meloxkgz-ship-it.github.io/mathio/terms")!)
                 Spacer()
-                Link("Privacy", destination: URL(string: "https://mathio.app/privacy")!)
+                Link("Privacy", destination: URL(string: "https://meloxkgz-ship-it.github.io/mathio/privacy")!)
             }
             .font(.caption).foregroundStyle(Palette.inkFaint)
         }

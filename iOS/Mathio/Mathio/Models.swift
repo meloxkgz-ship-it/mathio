@@ -314,6 +314,20 @@ final class Store {
         }.count
     }
 
+    /// Daily activity histogram for the heatmap. Counts the number of
+    /// distinct questions whose `lastCorrect` falls on each day.
+    /// (Approximation — we don't store a per-attempt log to stay tiny.)
+    func dailyActivity() -> [Date: Int] {
+        let cal = Calendar.current
+        var result: [Date: Int] = [:]
+        for entry in answered.values {
+            guard let lc = entry.lastCorrect else { continue }
+            let day = cal.startOfDay(for: lc)
+            result[day, default: 0] += 1
+        }
+        return result
+    }
+
     // MARK: Streak (with freeze)
 
     /// Refill one freeze every 7 days, up to the cap.

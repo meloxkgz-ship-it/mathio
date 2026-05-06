@@ -15,6 +15,8 @@
 		1A0000010000000000000006 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 1A0000010000000000000016 /* PrivacyInfo.xcprivacy */; };
 		1A0000010000000000000007 /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000010000000000000017 /* DesignSystem.swift */; };
 		1A0000010000000000000008 /* MathExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000010000000000000018 /* MathExpression.swift */; };
+		1A000001000000000000000B /* CalendarHeatmap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A000001000000000000001B /* CalendarHeatmap.swift */; };
+		1A000001000000000000000C /* AppIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A000001000000000000001C /* AppIntents.swift */; };
 		1A0000010000000000000009 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 1A0000010000000000000019 /* Localizable.xcstrings */; };
 		1A000001000000000000000A /* Mathio.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 1A000001000000000000001A /* Mathio.storekit */; };
 /* End PBXBuildFile section */
@@ -31,6 +33,8 @@
 		1A0000010000000000000018 /* MathExpression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathExpression.swift; sourceTree = "<group>"; };
 		1A0000010000000000000019 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		1A000001000000000000001A /* Mathio.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Mathio.storekit; sourceTree = "<group>"; };
+		1A000001000000000000001B /* CalendarHeatmap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarHeatmap.swift; sourceTree = "<group>"; };
+		1A000001000000000000001C /* AppIntents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntents.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,8 @@
 				1A0000010000000000000014 /* Content.swift */,
 				1A0000010000000000000017 /* DesignSystem.swift */,
 				1A0000010000000000000018 /* MathExpression.swift */,
+				1A000001000000000000001B /* CalendarHeatmap.swift */,
+				1A000001000000000000001C /* AppIntents.swift */,
 				1A0000010000000000000019 /* Localizable.xcstrings */,
 				1A000001000000000000001A /* Mathio.storekit */,
 				1A0000010000000000000015 /* Assets.xcassets */,
@@ -156,6 +162,8 @@
 				1A0000010000000000000004 /* Content.swift in Sources */,
 				1A0000010000000000000007 /* DesignSystem.swift in Sources */,
 				1A0000010000000000000008 /* MathExpression.swift in Sources */,
+				1A000001000000000000000B /* CalendarHeatmap.swift in Sources */,
+				1A000001000000000000000C /* AppIntents.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
