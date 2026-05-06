@@ -1,0 +1,100 @@
+{
+  "identifier" : "F39A6E10-3DE1-4F8F-A0C7-B9A4D6FF0001",
+  "nonRenewingSubscriptions" : [],
+  "products" : [],
+  "settings" : {
+    "_applicationInternalID" : "6767033115",
+    "_developerTeamID" : "T3BRJDPUGM",
+    "_failTransactionsEnabled" : false,
+    "_locale" : "en_US",
+    "_storefront" : "USA",
+    "_storeKitErrors" : [
+      { "current" : null, "enabled" : false, "name" : "Load Products" },
+      { "current" : null, "enabled" : false, "name" : "Purchase" },
+      { "current" : null, "enabled" : false, "name" : "Verification" },
+      { "current" : null, "enabled" : false, "name" : "App Store Sync" },
+      { "current" : null, "enabled" : false, "name" : "Subscription Status" },
+      { "current" : null, "enabled" : false, "name" : "App Transaction" },
+      { "current" : null, "enabled" : false, "name" : "Manage Subscriptions Sheet" },
+      { "current" : null, "enabled" : false, "name" : "Refund Request Sheet" },
+      { "current" : null, "enabled" : false, "name" : "Offer Code Redeem Sheet" }
+    ]
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "22071889",
+      "localizations" : [
+        { "description" : "All topics, step-by-step solutions, no ads.", "displayName" : "Mathio Premium", "locale" : "en_US" },
+        { "description" : "Alle Themen, Schritt-für-Schritt-Lösungen, werbefrei.", "displayName" : "Mathio Premium", "locale" : "de_DE" }
+      ],
+      "name" : "Premium",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [],
+          "codeOffers" : [],
+          "displayPrice" : "59.99",
+          "familyShareable" : true,
+          "groupNumber" : 1,
+          "internalID" : "6767033716",
+          "introductoryOffer" : {
+            "internalID" : "intro_annual_7day",
+            "paymentMode" : "free",
+            "subscriptionPeriod" : "P1W",
+            "numberOfPeriods" : 1
+          },
+          "localizations" : [
+            { "description" : "All topics, step-by-step solutions, no ads.", "displayName" : "Mathio Premium", "locale" : "en_US" },
+            { "description" : "Alle Themen, Schritt-für-Schritt-Lösungen, werbefrei.", "displayName" : "Mathio Premium", "locale" : "de_DE" }
+          ],
+          "productID" : "mathio_annual",
+          "recurringSubscriptionPeriod" : "P1Y",
+          "referenceName" : "Mathio Annual",
+          "subscriptionGroupID" : "22071889",
+          "type" : "RecurringSubscription"
+        },
+        {
+          "adHocOffers" : [],
+          "codeOffers" : [],
+          "displayPrice" : "12.99",
+          "familyShareable" : false,
+          "groupNumber" : 2,
+          "internalID" : "6767033995",
+          "introductoryOffer" : {
+            "internalID" : "intro_weekly_3day",
+            "paymentMode" : "free",
+            "subscriptionPeriod" : "P3D",
+            "numberOfPeriods" : 1
+          },
+          "localizations" : [
+            { "description" : "All topics, step-by-step solutions, no ads.", "displayName" : "Mathio Premium", "locale" : "en_US" },
+            { "description" : "Alle Themen, Schritt-für-Schritt-Lösungen, werbefrei.", "displayName" : "Mathio Premium", "locale" : "de_DE" }
+          ],
+          "productID" : "mathio_weekly",
+          "recurringSubscriptionPeriod" : "P1W",
+          "referenceName" : "Mathio Weekly",
+          "subscriptionGroupID" : "22071889",
+          "type" : "RecurringSubscription"
+        },
+        {
+          "adHocOffers" : [],
+          "codeOffers" : [],
+          "displayPrice" : "44.99",
+          "familyShareable" : false,
+          "groupNumber" : 3,
+          "internalID" : "6767033879",
+          "introductoryOffer" : null,
+          "localizations" : [
+            { "description" : "All topics, step-by-step solutions, no ads.", "displayName" : "Mathio Premium", "locale" : "en_US" },
+            { "description" : "Alle Themen, Schritt-für-Schritt-Lösungen, werbefrei.", "displayName" : "Mathio Premium", "locale" : "de_DE" }
+          ],
+          "productID" : "mathio_retention",
+          "recurringSubscriptionPeriod" : "P1Y",
+          "referenceName" : "Mathio Annual Retention",
+          "subscriptionGroupID" : "22071889",
+          "type" : "RecurringSubscription"
+        }
+      ]
+    }
+  ],
+  "version" : { "major" : 4, "minor" : 0 }
+}
