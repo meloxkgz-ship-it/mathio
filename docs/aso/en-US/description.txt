@@ -1,0 +1,46 @@
+Math, made simple.
+
+Mathio is a calm, focused math trainer for algebra, geometry, calculus, and trigonometry. No distractions. No leaderboards. Just you, clear explanations, and a daily streak.
+
+▸ ADAPTIVE LESSONS
+We pick the next topic for you based on your mastery — never wasting time on what you already know.
+
+▸ STEP-BY-STEP SOLUTIONS
+Wrong answer? You see the full worked solution inline. Never just "Not quite."
+
+▸ SPACED REPETITION
+Overdue questions surface in a daily Review queue using Leitner intervals (1 day → 3 days → 1 week → 2 weeks → 1 month). Scientifically proven to stick.
+
+▸ DAILY STREAK + FREEZES
+Build the habit without the guilt. Auto-spent freezes protect your streak when life gets busy. One refill per week, max two banked.
+
+▸ FORMULA REFERENCE
+Bookmark formulas as you learn them. Bilingual reference always one tap away.
+
+▸ NO LATEX KEYBOARD
+Just type plain text — 6x+2, sqrt(2), pi — and we parse it. No special symbols required.
+
+▸ OFFLINE-FIRST
+Everything stored on your device. No tracking, no analytics, no third-party SDKs. Audit our privacy manifest in the App Store.
+
+▸ DARK MODE + ACCESSIBILITY
+Full semantic palette adapts to system. VoiceOver labels on every interactive element, including spoken-form math.
+
+▸ GERMAN + ENGLISH
+Fully localised, including formulas and step-by-step explanations.
+
+— TOPICS —
+Pre-Algebra · Algebra · Geometry · Trigonometry · Calculus
+21 lessons, 105 hand-crafted questions across multiple-choice, free-answer, and true/false formats. From fractions, exponents, and logarithms through derivatives, integrals, and trig identities.
+
+— SUBSCRIPTION —
+Mathio is free to try. Unlock all topics with:
+• Annual — $59.99/year, 7-day free trial, Family Sharing enabled (~$1.15/week)
+• Weekly — $12.99/week, 3-day free trial
+
+Subscriptions auto-renew unless cancelled at least 24 hours before the end of the current period. Manage or cancel any time in your Apple ID settings.
+
+Privacy: https://meloxkgz-ship-it.github.io/mathio/privacy
+Terms:   https://meloxkgz-ship-it.github.io/mathio/terms
+
+From fractions to derivatives. Two minutes a day is enough.

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <!-- Direct upload to App Store Connect via xcodebuild -exportArchive. -->
+  <key>method</key>
+  <string>app-store-connect</string>
+
+  <!-- destination=upload triggers an iTMSTransporter handoff in the same call. -->
+  <key>destination</key>
+  <string>upload</string>
+
+  <!-- Use the Apple Distribution cert that's already in this Mac's keychain
+       (cert SHA: 69AB54F05515B3BAD628F21B31609EFB7F8787DF). -->
+  <key>signingStyle</key>
+  <string>automatic</string>
+
+  <key>teamID</key>
+  <string>T3BRJDPUGM</string>
+
+  <!-- Keep the symbol files inside the IPA — App Store Connect needs them
+       for the symbolicated crash reports. -->
+  <key>uploadSymbols</key>
+  <true/>
+
+  <!-- Do not strip Swift symbols (debugging-friendly App Store builds). -->
+  <key>stripSwiftSymbols</key>
+  <false/>
+</dict>
+</plist>

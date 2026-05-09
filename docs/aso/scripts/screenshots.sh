@@ -11,7 +11,11 @@
 #   docs/aso/scripts/screenshots.sh \
 #     "147737C4-A9F7-4E84-A221-29C3A39E792F" \
 #     "en-US" \
-#     "$(pwd)/docs/screenshots/en-US"
+#     "$(pwd)/docs/screenshots/en-US/iphone"
+#
+# The output directory must end in a device folder (e.g. iphone/ or ipad/)
+# so `asc screenshots upload --path docs/screenshots --device-type IPHONE_69`
+# can fan out across locales in a single pass.
 #
 # Pre-flight:
 #   1. Boot the sim:    xcrun simctl boot "iPhone 17 Pro Max"

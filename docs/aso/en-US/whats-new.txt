@@ -1,0 +1,11 @@
+Welcome to Mathio.
+
+A calm, focused way to practice math — algebra, geometry, calculus, trigonometry — one small step at a time.
+
+• 21 lessons, 105 hand-crafted questions, 50 reference formulas
+• Step-by-step solutions for every wrong answer
+• Adaptive lesson picker, daily streak with auto-freezes, spaced-repetition review queue
+• Siri shortcut ("practice math"), iPad layout, branded launch screen
+• Dark mode, VoiceOver, full DE + EN localisation
+
+Two minutes a day is enough. No leaderboards. No tracking.

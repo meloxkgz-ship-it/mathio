@@ -1,0 +1,46 @@
+Mathe. Einfach gemacht.
+
+Mathio ist ein ruhiger, fokussierter Mathe-Trainer für Algebra, Geometrie, Analysis und Trigonometrie. Keine Ablenkung. Keine Bestenlisten. Nur du, klare Erklärungen und eine tägliche Serie.
+
+▸ ADAPTIVE LEKTIONEN
+Wir wählen die nächste Lektion nach deinem Wissensstand — keine Zeit für Stoff, den du längst kannst.
+
+▸ SCHRITT-FÜR-SCHRITT-LÖSUNGEN
+Falsche Antwort? Du siehst die komplette Herleitung inline. Nie nur „Leider falsch."
+
+▸ VERTEILTES ÜBEN (Spaced Repetition)
+Fällige Aufgaben tauchen täglich in der Wiederholungs-Liste auf — mit Leitner-Intervallen (1 Tag → 3 Tage → 1 Woche → 2 Wochen → 1 Monat). Wissenschaftlich bewährt.
+
+▸ TÄGLICHE SERIE + FREEZES
+Gewohnheit aufbauen ohne Stress. Auto-Freezes schützen deine Serie, wenn der Tag mal eng wird. Eine Auffüllung pro Woche, maximal zwei auf Vorrat.
+
+▸ FORMELSAMMLUNG
+Lese-Zeichen für Formeln direkt in der Lektion. Zweisprachige Referenz ist immer einen Tap entfernt.
+
+▸ KEINE LATEX-TASTATUR
+Tippe einfach Klartext — 6x+2, sqrt(2), pi — wir parsen den Rest. Keine Sondersymbole nötig.
+
+▸ OFFLINE-FIRST
+Alles auf deinem Gerät. Kein Tracking, keine Analytics, keine Drittanbieter-SDKs. Unser Privacy-Manifest ist im App Store einsehbar.
+
+▸ DUNKELMODUS + BARRIEREFREIHEIT
+Vollständige semantische Palette passt sich dem System an. VoiceOver-Beschriftungen auf jedem interaktiven Element, inklusive Mathe-Aussprache.
+
+▸ DEUTSCH + ENGLISCH
+Vollständig übersetzt — auch Formeln und Schritt-für-Schritt-Erklärungen.
+
+— THEMEN —
+Vor-Algebra · Algebra · Geometrie · Trigonometrie · Analysis
+21 Lektionen, 105 handgemachte Aufgaben in Multiple-Choice, Freitext und Wahr/Falsch. Von Bruchrechnen, Potenzen und Logarithmen bis zu Ableitungen, Integralen und trigonometrischen Identitäten.
+
+— ABO —
+Mathio ist kostenlos zum Ausprobieren. Alle Themen freischalten mit:
+• Jahresabo — 59,99 $/Jahr, 7-tägige Gratis-Testphase, Familienfreigabe aktiv (~1,15 $/Woche)
+• Wochenabo — 12,99 $/Woche, 3-tägige Gratis-Testphase
+
+Abos verlängern sich automatisch, sofern du nicht mindestens 24 Stunden vor Ende der Periode kündigst. Verwaltung jederzeit in den Apple-ID-Einstellungen.
+
+Datenschutz: https://meloxkgz-ship-it.github.io/mathio/privacy
+AGB:         https://meloxkgz-ship-it.github.io/mathio/terms
+
+Von Bruchrechnung bis Differentialrechnung. Zwei Minuten täglich genügen.
