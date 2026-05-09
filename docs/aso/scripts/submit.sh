@@ -109,31 +109,51 @@ DE_NEW=$(cat  docs/aso/de-DE/whats-new.txt)
 # expanded — that's why we use `do_run "$ASC … '$EN_DESC'"` instead of
 # leaving the cat-substitution inline.
 
-if [[ $DRY_RUN -eq 1 ]]; then
-  printf "  \033[2m[dry] localizations update --version %s --locale en-US (description %s chars, what's-new %s chars)\033[0m\n" \
-    "$VERSION_ID" "${#EN_DESC}" "${#EN_NEW}"
-  printf "  \033[2m[dry] localizations update --version %s --locale de-DE (description %s chars, what's-new %s chars)\033[0m\n" \
-    "$VERSION_ID" "${#DE_DESC}" "${#DE_NEW}"
-else
-  $ASC --profile "$PROFILE" localizations update \
-    --version "$VERSION_ID" --locale en-US \
-    --description "$EN_DESC" \
-    --keywords 'mathe,maths,algebra,calculus,geometry,trigonometry,fractions,equations,formulas,homework,exam,tutor' \
-    --promotional-text 'New: tap "Practice math" with Siri to jump straight into your daily review queue. Two minutes a day is enough.' \
-    --whats-new "$EN_NEW" \
-    --support-url   'https://meloxkgz-ship-it.github.io/mathio/' \
-    --marketing-url 'https://meloxkgz-ship-it.github.io/mathio/' \
-    --output table
+# Detect whether this is the first release. Apple rejects --whats-new for
+# v1.0 ("What's New" only exists on subsequent versions; v1.0 *is* the new
+# thing). Heuristic: ask asc whether the version's whatsNew field is even
+# editable. Cheap shortcut: include --whats-new only when TARGET_VERSION
+# isn't 1.0.
+INCLUDE_WHATS_NEW=1
+if [[ "$TARGET_VERSION" == "1.0" || "$TARGET_VERSION" == "1.0.0" ]]; then
+  INCLUDE_WHATS_NEW=0
+fi
 
-  $ASC --profile "$PROFILE" localizations update \
-    --version "$VERSION_ID" --locale de-DE \
-    --description "$DE_DESC" \
-    --keywords 'mathe,üben,algebra,analysis,geometrie,trigonometrie,bruchrechnen,gleichung,formeln,abitur,klausur' \
-    --promotional-text 'Neu: Sag "Hey Siri, Mathe üben" und du landest direkt in deiner heutigen Wiederholungs-Liste. Zwei Minuten am Tag genügen.' \
-    --whats-new "$DE_NEW" \
-    --support-url   'https://meloxkgz-ship-it.github.io/mathio/' \
-    --marketing-url 'https://meloxkgz-ship-it.github.io/mathio/' \
+if [[ $DRY_RUN -eq 1 ]]; then
+  whats_new_note="(skipped — first release)"
+  [[ $INCLUDE_WHATS_NEW -eq 1 ]] && whats_new_note="(${#EN_NEW} / ${#DE_NEW} chars)"
+  printf "  \033[2m[dry] localizations update --version %s --locale en-US (description %s chars) what's-new %s\033[0m\n" \
+    "$VERSION_ID" "${#EN_DESC}" "$whats_new_note"
+  printf "  \033[2m[dry] localizations update --version %s --locale de-DE (description %s chars) what's-new %s\033[0m\n" \
+    "$VERSION_ID" "${#DE_DESC}" "$whats_new_note"
+else
+  EN_FLAGS=(
+    --version "$VERSION_ID" --locale en-US
+    --description "$EN_DESC"
+    --keywords 'mathe,maths,algebra,calculus,geometry,trigonometry,fractions,equations,formulas,homework,exam,tutor'
+    --promotional-text 'New: tap "Practice math" with Siri to jump straight into your daily review queue. Two minutes a day is enough.'
+    --support-url   'https://meloxkgz-ship-it.github.io/mathio/'
+    --marketing-url 'https://meloxkgz-ship-it.github.io/mathio/'
     --output table
+  )
+  DE_FLAGS=(
+    --version "$VERSION_ID" --locale de-DE
+    --description "$DE_DESC"
+    --keywords 'mathe,üben,algebra,analysis,geometrie,trigonometrie,bruchrechnen,gleichung,formeln,abitur,klausur'
+    --promotional-text 'Neu: Sag "Hey Siri, Mathe üben" und du landest direkt in deiner heutigen Wiederholungs-Liste. Zwei Minuten am Tag genügen.'
+    --support-url   'https://meloxkgz-ship-it.github.io/mathio/'
+    --marketing-url 'https://meloxkgz-ship-it.github.io/mathio/'
+    --output table
+  )
+  if [[ $INCLUDE_WHATS_NEW -eq 1 ]]; then
+    EN_FLAGS+=(--whats-new "$EN_NEW")
+    DE_FLAGS+=(--whats-new "$DE_NEW")
+  else
+    say "skipping --whats-new (first release)"
+  fi
+
+  $ASC --profile "$PROFILE" localizations update "${EN_FLAGS[@]}"
+  $ASC --profile "$PROFILE" localizations update "${DE_FLAGS[@]}"
 fi
 echo
 
