@@ -1,10 +1,57 @@
 import SwiftUI
 
+/// Centralised, force-unwrap-free outbound URLs. Each value falls back to a
+/// guaranteed-non-nil `URL(filePath:)` so a future typo in a host string can
+/// never crash the app — the worst case becomes "tapping does nothing".
+enum Links {
+    static let privacy: URL = URL(string: "https://meloxkgz-ship-it.github.io/mathio/privacy")
+        ?? URL(filePath: "/")
+    static let terms: URL = URL(string: "https://meloxkgz-ship-it.github.io/mathio/terms")
+        ?? URL(filePath: "/")
+    static let support: URL = URL(string: "mailto:meloxkgz@icloud.com")
+        ?? URL(filePath: "/")
+}
+
+/// Decides when to fire the in-app `requestReview()` prompt. Strategy: only
+/// after a **success moment with proven engagement** — namely 10+ lifetime
+/// correct answers AND a 3-day streak — and at most once per `MARKETING_VERSION`.
+/// SKStoreReviewController itself further caps Apple's UI to ~3/year, so a
+/// false positive here costs nothing.
+enum ReviewPromptGate {
+    private static let kPromptedVersion = "mathio.review.promptedVersion"
+    private static let kCorrectMilestone = 10
+    private static let kStreakMilestone = 3
+
+    private static var currentVersion: String {
+        Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "1.0"
+    }
+
+    static func shouldPrompt(store: Store) -> Bool {
+        let already = UserDefaults.standard.string(forKey: kPromptedVersion)
+        guard already != currentVersion else { return false }
+        let totalCorrect = store.answered.values.reduce(0) { $0 + $1.correct }
+        return totalCorrect >= kCorrectMilestone && store.streakDays >= kStreakMilestone
+    }
+
+    static func markPrompted() {
+        UserDefaults.standard.set(currentVersion, forKey: kPromptedVersion)
+    }
+}
+
 @main
 struct MathioApp: App {
-    @State private var store = Store()
+    @State private var store: Store
     @State private var premiumStore = PremiumStore()
     @State private var settings = UserSettings()
+
+    init() {
+        #if DEBUG
+        // Apply test-only seeding BEFORE Store reads the JSON, so the
+        // synthetic activity shows up immediately on first launch.
+        SeedActivity.runIfRequested(into: Store())
+        #endif
+        _store = State(initialValue: Store())
+    }
 
     var body: some Scene {
         WindowGroup {

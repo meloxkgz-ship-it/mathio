@@ -322,6 +322,70 @@ enum Curriculum {
         ]
     )
 
+    static let logarithms = Lesson(
+        id: "alg.log",
+        title: "Logarithms",
+        intro: "A logarithm is the inverse of an exponent — it asks 'what power gives this number?'",
+        formulas: [
+            Formula(key: "alg.log.f1",
+                    name: "Definition",
+                    math: "log{sub:_b}({var:x}) = {var:y}  ⇔  {var:b}{sup:^y} = {var:x}",
+                    explanation: "Logarithm = the exponent you raise the base by."),
+            Formula(key: "alg.log.f2",
+                    name: "Product rule",
+                    math: "log{sub:_b}({var:x}·{var:y}) = log{sub:_b}({var:x}) + log{sub:_b}({var:y})",
+                    explanation: "Multiplying inputs becomes adding outputs."),
+            Formula(key: "alg.log.f3",
+                    name: "Quotient rule",
+                    math: "log{sub:_b}({var:x}/{var:y}) = log{sub:_b}({var:x}) − log{sub:_b}({var:y})",
+                    explanation: "Dividing inputs becomes subtracting outputs."),
+            Formula(key: "alg.log.f4",
+                    name: "Power rule",
+                    math: "log{sub:_b}({var:x}{sup:^n}) = {var:n}·log{sub:_b}({var:x})",
+                    explanation: "Exponents inside come out as multipliers."),
+        ],
+        questions: [
+            Question(id: "alg.log.q1",
+                     prompt: "What is log₂(8)?",
+                     math: nil,
+                     kind: .freeAnswer(accepted: ["3"]),
+                     hint: "Ask: 2 to what power equals 8?",
+                     solutionSteps: ["2³ = 8", "So log₂(8) = 3."]),
+            Question(id: "alg.log.q2",
+                     prompt: "What is log₁₀(1000)?",
+                     math: nil,
+                     kind: .freeAnswer(accepted: ["3"]),
+                     hint: "Powers of 10.",
+                     solutionSteps: ["10³ = 1000", "log₁₀(1000) = 3."]),
+            Question(id: "alg.log.q3",
+                     prompt: "Simplify log(50) + log(2). (Common log, base 10.)",
+                     math: nil,
+                     kind: .multipleChoice(options: [
+                        .init(label: "1",   math: nil),
+                        .init(label: "2",   math: nil),
+                        .init(label: "log(52)", math: nil),
+                        .init(label: "log(100) = 2 — wait, let me think", math: nil),
+                     ], correctIndex: 1),
+                     hint: "Product rule turns + into multiplication inside.",
+                     solutionSteps: [
+                        "log(50) + log(2) = log(50·2)",
+                        "= log(100) = 2.",
+                     ]),
+            Question(id: "alg.log.q4",
+                     prompt: "Solve for x: log₃(x) = 4.",
+                     math: nil,
+                     kind: .freeAnswer(accepted: ["81"]),
+                     hint: "Rewrite in exponential form.",
+                     solutionSteps: ["log₃(x) = 4 ⇔ 3⁴ = x", "x = 81."]),
+            Question(id: "alg.log.q5",
+                     prompt: "True or false: log₂(1) = 0.",
+                     math: nil,
+                     kind: .trueFalse(answer: true),
+                     hint: "Any base to the 0 power is 1.",
+                     solutionSteps: ["b⁰ = 1 for any nonzero base", "So log_b(1) = 0."]),
+        ]
+    )
+
     // MARK: - Calculus
 
     static let limits = Lesson(
@@ -1067,7 +1131,7 @@ enum Curriculum {
               subtitle: "Equations & expressions",
               icon: "function",
               color: Palette.algebra,
-              lessons: [linearEquations, quadratics, exponents, factoring, linesAndSlope]),
+              lessons: [linearEquations, quadratics, exponents, logarithms, factoring, linesAndSlope]),
         Topic(id: "calculus",
               title: "Calculus",
               subtitle: "Change & accumulation",

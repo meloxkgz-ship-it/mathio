@@ -17,6 +17,7 @@
 		1A0000010000000000000008 /* MathExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000010000000000000018 /* MathExpression.swift */; };
 		1A000001000000000000000B /* CalendarHeatmap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A000001000000000000001B /* CalendarHeatmap.swift */; };
 		1A000001000000000000000C /* AppIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A000001000000000000001C /* AppIntents.swift */; };
+		1A000001000000000000000D /* SeedActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A000001000000000000001D /* SeedActivity.swift */; };
 		1A0000010000000000000009 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 1A0000010000000000000019 /* Localizable.xcstrings */; };
 		1A000001000000000000000A /* Mathio.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 1A000001000000000000001A /* Mathio.storekit */; };
 /* End PBXBuildFile section */
@@ -35,6 +36,7 @@
 		1A000001000000000000001A /* Mathio.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Mathio.storekit; sourceTree = "<group>"; };
 		1A000001000000000000001B /* CalendarHeatmap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarHeatmap.swift; sourceTree = "<group>"; };
 		1A000001000000000000001C /* AppIntents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntents.swift; sourceTree = "<group>"; };
+		1A000001000000000000001D /* SeedActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeedActivity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				1A0000010000000000000018 /* MathExpression.swift */,
 				1A000001000000000000001B /* CalendarHeatmap.swift */,
 				1A000001000000000000001C /* AppIntents.swift */,
+				1A000001000000000000001D /* SeedActivity.swift */,
 				1A0000010000000000000019 /* Localizable.xcstrings */,
 				1A000001000000000000001A /* Mathio.storekit */,
 				1A0000010000000000000015 /* Assets.xcassets */,
@@ -164,6 +167,7 @@
 				1A0000010000000000000008 /* MathExpression.swift in Sources */,
 				1A000001000000000000000B /* CalendarHeatmap.swift in Sources */,
 				1A000001000000000000000C /* AppIntents.swift in Sources */,
+				1A000001000000000000000D /* SeedActivity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +307,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_BackgroundColor = LaunchBackground;
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

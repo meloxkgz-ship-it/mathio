@@ -90,10 +90,12 @@ Everything is stored in `UserDefaults`. No server, no cloud sync, no analytics S
 
 ## Roadmap
 
+- [x] App Intent: "Hey Siri, practice math"
+- [x] Calendar heatmap on stats
+- [x] Logarithms lesson (Algebra)
+- [x] Branded launch screen + reviewer-bypass demo path
 - [ ] Lock Screen + Home widget (streak + today's ring)
-- [ ] App Intent: "Hey Siri, practice math"
 - [ ] FSRS algorithm (currently Leitner; FSRS reduces reviews ~25%)
-- [ ] Calendar heatmap on stats
 - [ ] Weekly recap card
 - [ ] Topic expansion: Statistics, Linear Algebra
 - [ ] Real-domain hosted Privacy / Terms pages

@@ -1750,6 +1750,366 @@
           }
         }
       }
+    },
+    "Logarithms": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Logarithmen"
+          }
+        }
+      }
+    },
+    "A logarithm is the inverse of an exponent — it asks 'what power gives this number?'": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ein Logarithmus ist die Umkehrung einer Potenz — er fragt: „Welche Hochzahl ergibt diese Zahl?\""
+          }
+        }
+      }
+    },
+    "Definition": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Definition"
+          }
+        }
+      }
+    },
+    "Logarithm = the exponent you raise the base by.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Logarithmus = die Hochzahl, mit der du die Basis potenzierst."
+          }
+        }
+      }
+    },
+    "Product rule": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Produktregel"
+          }
+        }
+      }
+    },
+    "Multiplying inputs becomes adding outputs.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aus Multiplikation der Argumente wird Addition der Werte."
+          }
+        }
+      }
+    },
+    "Quotient rule": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quotientenregel"
+          }
+        }
+      }
+    },
+    "Dividing inputs becomes subtracting outputs.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aus Division der Argumente wird Subtraktion der Werte."
+          }
+        }
+      }
+    },
+    "Power rule": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Potenzregel"
+          }
+        }
+      }
+    },
+    "Exponents inside come out as multipliers.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hochzahlen im Argument werden zu Vorfaktoren."
+          }
+        }
+      }
+    },
+    "What is log₂(8)?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Was ist log₂(8)?"
+          }
+        }
+      }
+    },
+    "Ask: 2 to what power equals 8?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Frage: 2 hoch was ergibt 8?"
+          }
+        }
+      }
+    },
+    "2³ = 8": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2³ = 8"
+          }
+        }
+      }
+    },
+    "So log₂(8) = 3.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Also log₂(8) = 3."
+          }
+        }
+      }
+    },
+    "What is log₁₀(1000)?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Was ist log₁₀(1000)?"
+          }
+        }
+      }
+    },
+    "Powers of 10.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zehnerpotenzen."
+          }
+        }
+      }
+    },
+    "10³ = 1000": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "10³ = 1000"
+          }
+        }
+      }
+    },
+    "log₁₀(1000) = 3.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "log₁₀(1000) = 3."
+          }
+        }
+      }
+    },
+    "Simplify log(50) + log(2). (Common log, base 10.)": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vereinfache log(50) + log(2). (Dekadischer Log, Basis 10.)"
+          }
+        }
+      }
+    },
+    "1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1"
+          }
+        }
+      }
+    },
+    "2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2"
+          }
+        }
+      }
+    },
+    "log(52)": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "log(52)"
+          }
+        }
+      }
+    },
+    "log(100) = 2 — wait, let me think": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "log(100) = 2 — moment, lass mich überlegen"
+          }
+        }
+      }
+    },
+    "Product rule turns + into multiplication inside.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Produktregel macht aus + im Argument eine Multiplikation."
+          }
+        }
+      }
+    },
+    "log(50) + log(2) = log(50·2)": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "log(50) + log(2) = log(50·2)"
+          }
+        }
+      }
+    },
+    "= log(100) = 2.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "= log(100) = 2."
+          }
+        }
+      }
+    },
+    "Solve for x: log₃(x) = 4.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Löse nach x: log₃(x) = 4."
+          }
+        }
+      }
+    },
+    "Rewrite in exponential form.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schreibe in Potenzform um."
+          }
+        }
+      }
+    },
+    "log₃(x) = 4 ⇔ 3⁴ = x": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "log₃(x) = 4 ⇔ 3⁴ = x"
+          }
+        }
+      }
+    },
+    "x = 81.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x = 81."
+          }
+        }
+      }
+    },
+    "True or false: log₂(1) = 0.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wahr oder falsch: log₂(1) = 0."
+          }
+        }
+      }
+    },
+    "Any base to the 0 power is 1.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jede Basis hoch 0 ist 1."
+          }
+        }
+      }
+    },
+    "b⁰ = 1 for any nonzero base": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "b⁰ = 1 für jede Basis ≠ 0"
+          }
+        }
+      }
+    },
+    "So log_b(1) = 0.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Also log_b(1) = 0."
+          }
+        }
+      }
+    },
+    "Premium unlocked for review": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Premium für Review freigeschaltet"
+          }
+        }
+      }
+    },
+    "Reviewer override cleared": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reviewer-Override zurückgesetzt"
+          }
+        }
+      }
     }
   },
   "version": "1.0"

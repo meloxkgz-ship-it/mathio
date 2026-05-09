@@ -17,7 +17,23 @@ final class PremiumStore {
     static let retentionID = "mathio_retention"
     private static let allIDs: [String] = [weeklyID, annualID, retentionID]
 
-    var isPremium: Bool = false
+    /// `UserDefaults` key for the reviewer-override flag. Toggled by 7-tapping
+    /// the version label in Settings — the documented reviewer demo path.
+    /// Persisted so a relaunch during App Review keeps premium unlocked.
+    private static let kReviewerOverride = "mathio.reviewer.override"
+
+    /// True if a real subscription transaction is currently entitled.
+    private var entitlementActive: Bool = false
+
+    /// True if the reviewer-override flag is set in `UserDefaults`. Survives
+    /// relaunches; cleared by tapping the version label again 7 times or by
+    /// "Reset all progress" in Settings.
+    private(set) var reviewerOverride: Bool = UserDefaults.standard.bool(forKey: kReviewerOverride)
+
+    /// Public premium gate. Gives access if **either** the App Store reports
+    /// an active entitlement **or** the reviewer-override flag is set.
+    var isPremium: Bool { entitlementActive || reviewerOverride }
+
     var weekly:    Product?
     var annual:    Product?
     var retention: Product?
@@ -40,6 +56,14 @@ final class PremiumStore {
         await loadProducts()
         await refreshEntitlements()
         loaded = true
+    }
+
+    /// Toggle the reviewer-override flag. Mutates `isPremium` in lockstep so
+    /// any `@Observable` subscribers re-render. Used only by the 7-tap
+    /// gesture on the version label in Settings.
+    func toggleReviewerOverride() {
+        reviewerOverride.toggle()
+        UserDefaults.standard.set(reviewerOverride, forKey: Self.kReviewerOverride)
     }
 
     private func loadProducts() async {
@@ -68,7 +92,7 @@ final class PremiumStore {
                 active = true
             }
         }
-        isPremium = active
+        entitlementActive = active
     }
 
     func purchase(_ product: Product) async {
@@ -603,6 +627,10 @@ struct PracticeView: View {
     @Bindable var store: Store
     let isReview: Bool
     @Environment(\.dismiss) private var dismiss
+    /// Modern SwiftUI in-app review prompt — shown at most once per app
+    /// version per device by Apple, regardless of how often we call it.
+    /// Triggered by `ReviewPromptGate` after a meaningful progress milestone.
+    @Environment(\.requestReview) private var requestReview
 
     @State private var index: Int = 0
     @State private var input: String = ""
@@ -898,6 +926,19 @@ struct PracticeView: View {
         state = isCorrect ? .correct : .incorrect
         if isCorrect { sessionCorrect += 1 }
         store.record(questionId: q.id, correct: isCorrect)
+
+        // Ask for an App Store rating once per version, **after** a real
+        // success moment (correct answer + 3+ day streak + ≥ 10 lifetime
+        // correct answers). Apple itself caps prompts to ~3/year per user.
+        if isCorrect, ReviewPromptGate.shouldPrompt(store: store) {
+            ReviewPromptGate.markPrompted()
+            // Defer past the answer-reveal animation so the prompt doesn't
+            // collide with the green "Correct!" state change.
+            Task { @MainActor in
+                try? await Task.sleep(for: .seconds(0.9))
+                requestReview()
+            }
+        }
     }
 
     private func advance() {
@@ -1233,6 +1274,13 @@ struct SettingsView: View {
     @Environment(\.dismiss) private var dismiss
     @State private var showRetention = false
     @State private var showResetConfirm = false
+    /// Tap counter on the version label. When it hits 7 we toggle the
+    /// reviewer-override flag in `PremiumStore`. Documented in the App
+    /// Review notes so the reviewer can unlock premium without purchase.
+    @State private var versionTapCount = 0
+    /// True for ~1.4 s after the override is toggled — drives a small
+    /// confirmation banner so the reviewer sees their action took effect.
+    @State private var showOverrideToast = false
 
     var body: some View {
         NavigationStack {
@@ -1291,13 +1339,26 @@ struct SettingsView: View {
                 }
 
                 Section("About") {
-                    Link("Privacy policy",   destination: URL(string: "https://meloxkgz-ship-it.github.io/mathio/privacy")!)
-                    Link("Terms of service", destination: URL(string: "https://meloxkgz-ship-it.github.io/mathio/terms")!)
-                    Link("Support",          destination: URL(string: "mailto:meloxkgz@icloud.com")!)
+                    Link("Privacy policy",   destination: Links.privacy)
+                    Link("Terms of service", destination: Links.terms)
+                    Link("Support",          destination: Links.support)
+                }
+
+                Section {
+                    EmptyView()
+                } footer: {
+                    versionFooter
                 }
             }
             .scrollContentBackground(.hidden)
             .background(Palette.background)
+            .overlay(alignment: .top) {
+                if showOverrideToast {
+                    ReviewerOverlayToast(active: premiumStore.reviewerOverride)
+                        .padding(.top, 8)
+                        .transition(.move(edge: .top).combined(with: .opacity))
+                }
+            }
             .navigationTitle("Settings")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
@@ -1330,6 +1391,55 @@ struct SettingsView: View {
         } else {
             NotificationManager.cancelDailyReminder()
         }
+    }
+
+    /// Footer line with the build version. Tapping it 7 times toggles the
+    /// reviewer-override flag — the documented App Review demo path. The
+    /// gesture is silent for casual users (no UI hint) and confirmed via a
+    /// short toast once activated.
+    private var versionFooter: some View {
+        let bundle = Bundle.main.infoDictionary
+        let version = bundle?["CFBundleShortVersionString"] as? String ?? "1.0"
+        let build = bundle?["CFBundleVersion"] as? String ?? "1"
+        let label = "Mathio \(version) (\(build))"
+        return Text(label)
+            .font(.system(size: 13, weight: .regular, design: .default))
+            .foregroundStyle(Palette.inkFaint)
+            .frame(maxWidth: .infinity)
+            .contentShape(Rectangle())
+            .onTapGesture { handleVersionTap() }
+            .accessibilityLabel(Text(label))
+    }
+
+    private func handleVersionTap() {
+        versionTapCount += 1
+        guard versionTapCount >= 7 else { return }
+        versionTapCount = 0
+        premiumStore.toggleReviewerOverride()
+        withAnimation(.easeOut(duration: 0.2)) { showOverrideToast = true }
+        Task { @MainActor in
+            try? await Task.sleep(for: .seconds(1.4))
+            withAnimation(.easeIn(duration: 0.2)) { showOverrideToast = false }
+        }
+    }
+}
+
+/// Brief banner shown after the reviewer-override gesture toggles. Confirms
+/// the new state so the App Review tester sees the action took effect.
+private struct ReviewerOverlayToast: View {
+    let active: Bool
+
+    var body: some View {
+        HStack(spacing: 10) {
+            Image(systemName: active ? "lock.open.fill" : "lock.fill")
+            Text(active ? "Premium unlocked for review" : "Reviewer override cleared")
+                .font(.bodyM)
+        }
+        .foregroundStyle(Palette.background)
+        .padding(.horizontal, 16)
+        .padding(.vertical, 10)
+        .background(Palette.ink, in: Capsule())
+        .shadow(color: .black.opacity(0.15), radius: 6, y: 2)
     }
 }
 
@@ -1641,9 +1751,9 @@ struct PaywallView: View {
             HStack {
                 Button("Restore") { Task { await premiumStore.restore() } }
                 Spacer()
-                Link("Terms", destination: URL(string: "https://meloxkgz-ship-it.github.io/mathio/terms")!)
+                Link("Terms", destination: Links.terms)
                 Spacer()
-                Link("Privacy", destination: URL(string: "https://meloxkgz-ship-it.github.io/mathio/privacy")!)
+                Link("Privacy", destination: Links.privacy)
             }
             .font(.caption).foregroundStyle(Palette.inkFaint)
         }
