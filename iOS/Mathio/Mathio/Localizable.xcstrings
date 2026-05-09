@@ -2110,6 +2110,4886 @@
           }
         }
       }
+    },
+    "(2r)² = 4r²": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(2r)² = 4r²"
+          }
+        }
+      }
+    },
+    "(2r)³ = 8r³": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(2r)³ = 8r³"
+          }
+        }
+      }
+    },
+    "(2x)² − 5² = (2x−5)(2x+5)": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(2x)² − 5² = (2x−5)(2x+5)"
+          }
+        }
+      }
+    },
+    "(4/3)πr³.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(4/3)πr³."
+          }
+        }
+      }
+    },
+    "(4/3)π·27 = 36π": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(4/3)π·27 = 36π"
+          }
+        }
+      }
+    },
+    "(5 + 3) · 4": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(5 + 3) · 4"
+          }
+        }
+      }
+    },
+    "(8 − 2) / (3 − 1).": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(8 − 2) / (3 − 1)."
+          }
+        }
+      }
+    },
+    "(sin θ / cos θ) · cos θ = sin θ": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(sin θ / cos θ) · cos θ = sin θ"
+          }
+        }
+      }
+    },
+    "(x + 3)(x − 2) = 0": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(x + 3)(x − 2) = 0"
+          }
+        }
+      }
+    },
+    "(x−3)(x+3)/(x−3) = x+3": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(x−3)(x+3)/(x−3) = x+3"
+          }
+        }
+      }
+    },
+    "(−)(−) = (+)": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(−)(−) = (+)"
+          }
+        }
+      }
+    },
+    "+ for increase, − for decrease.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "+ für Erhöhung, − für Verringerung."
+          }
+        }
+      }
+    },
+    "0": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0"
+          }
+        }
+      }
+    },
+    "0 + 5 = 5": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0 + 5 = 5"
+          }
+        }
+      }
+    },
+    "0.2 · 80 = 16": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0,2 · 80 = 16"
+          }
+        }
+      }
+    },
+    "0°": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0°"
+          }
+        }
+      }
+    },
+    "1% higher": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1 % höher"
+          }
+        }
+      }
+    },
+    "1% lower": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1 % niedriger"
+          }
+        }
+      }
+    },
+    "1.10 · 0.90 = 0.99": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1,10 · 0,90 = 0,99"
+          }
+        }
+      }
+    },
+    "1/2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1/2"
+          }
+        }
+      }
+    },
+    "1/2 + 1/2 = 1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1/2 + 1/2 = 1"
+          }
+        }
+      }
+    },
+    "1/2 = 3/6": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1/2 = 3/6"
+          }
+        }
+      }
+    },
+    "1/3 = 2/6": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1/3 = 2/6"
+          }
+        }
+      }
+    },
+    "1/x → 0 as x → ∞": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1/x → 0 für x → ∞"
+          }
+        }
+      }
+    },
+    "12 ÷ 4 = 3": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "12 ÷ 4 = 3"
+          }
+        }
+      }
+    },
+    "13² − 5² = 169 − 25 = 144": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "13² − 5² = 169 − 25 = 144"
+          }
+        }
+      }
+    },
+    "15 is what percent of 60?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wieviel Prozent von 60 sind 15?"
+          }
+        }
+      }
+    },
+    "15/60 = 0.25 = 25%": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "15/60 = 0,25 = 25 %"
+          }
+        }
+      }
+    },
+    "15/60.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "15/60."
+          }
+        }
+      }
+    },
+    "180°": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "180°"
+          }
+        }
+      }
+    },
+    "1² + 1² = 2.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1² + 1² = 2."
+          }
+        }
+      }
+    },
+    "1³.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1³."
+          }
+        }
+      }
+    },
+    "1·1·1 = 1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1·1·1 = 1"
+          }
+        }
+      }
+    },
+    "2 · 3 + 5": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2 · 3 + 5"
+          }
+        }
+      }
+    },
+    "2 · 3 = 6": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2 · 3 = 6"
+          }
+        }
+      }
+    },
+    "2 · 5 = 10": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2 · 5 = 10"
+          }
+        }
+      }
+    },
+    "2/3 = 4/6": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2/3 = 4/6"
+          }
+        }
+      }
+    },
+    "2/4 = 1/2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2/4 = 1/2"
+          }
+        }
+      }
+    },
+    "20 − 4 + 1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "20 − 4 + 1"
+          }
+        }
+      }
+    },
+    "20/100 = 0.2.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "20/100 = 0,2."
+          }
+        }
+      }
+    },
+    "200% = 2.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "200 % = 2."
+          }
+        }
+      }
+    },
+    "20x³": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "20x³"
+          }
+        }
+      }
+    },
+    "25 + 144 = 169 = 13²": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "25 + 144 = 169 = 13²"
+          }
+        }
+      }
+    },
+    "2³⁺⁴ = 2⁷ = 128": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2³⁺⁴ = 2⁷ = 128"
+          }
+        }
+      }
+    },
+    "3 + 2 = 5": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3 + 2 = 5"
+          }
+        }
+      }
+    },
+    "3 + 4 = 7": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3 + 4 = 7"
+          }
+        }
+      }
+    },
+    "3 + 8 = 11": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3 + 8 = 11"
+          }
+        }
+      }
+    },
+    "3 − (−2) = 3 + 2 = 5": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3 − (−2) = 3 + 2 = 5"
+          }
+        }
+      }
+    },
+    "3(2x + 3)": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3(2x + 3)"
+          }
+        }
+      }
+    },
+    "3(x²+1)² · 2x = 6x(x²+1)²": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3(x²+1)² · 2x = 6x(x²+1)²"
+          }
+        }
+      }
+    },
+    "3/4": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3/4"
+          }
+        }
+      }
+    },
+    "3/4 = 6/8": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3/4 = 6/8"
+          }
+        }
+      }
+    },
+    "360°": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "360°"
+          }
+        }
+      }
+    },
+    "3x = 15": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3x = 15"
+          }
+        }
+      }
+    },
+    "3x − 6 = 9": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3x − 6 = 9"
+          }
+        }
+      }
+    },
+    "3² + 4² = 25": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3² + 4² = 25"
+          }
+        }
+      }
+    },
+    "3²·³ = 3⁶ = 729": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3²·³ = 3⁶ = 729"
+          }
+        }
+      }
+    },
+    "3·2 + 1 = 7": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3·2 + 1 = 7"
+          }
+        }
+      }
+    },
+    "4": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "4"
+          }
+        }
+      }
+    },
+    "4 · 2 = 8": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "4 · 2 = 8"
+          }
+        }
+      }
+    },
+    "4 · 5 = 20": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "4 · 5 = 20"
+          }
+        }
+      }
+    },
+    "4(3x+2)³ · 3 = 12(3x+2)³": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "4(3x+2)³ · 3 = 12(3x+2)³"
+          }
+        }
+      }
+    },
+    "4/6 − 1/6 = 3/6 = 1/2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "4/6 − 1/6 = 3/6 = 1/2"
+          }
+        }
+      }
+    },
+    "4x⁵": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "4x⁵"
+          }
+        }
+      }
+    },
+    "4³ = 64": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "4³ = 64"
+          }
+        }
+      }
+    },
+    "5 + 12 = 17": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "5 + 12 = 17"
+          }
+        }
+      }
+    },
+    "5 + 3 · 4": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "5 + 3 · 4"
+          }
+        }
+      }
+    },
+    "5 · 4 · x³ = 20x³": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "5 · 4 · x³ = 20x³"
+          }
+        }
+      }
+    },
+    "5/8": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "5/8"
+          }
+        }
+      }
+    },
+    "5x³": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "5x³"
+          }
+        }
+      }
+    },
+    "5⁻² = 1/5² = 1/25": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "5⁻² = 1/5² = 1/25"
+          }
+        }
+      }
+    },
+    "6": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "6"
+          }
+        }
+      }
+    },
+    "6/8 > 5/8": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "6/8 > 5/8"
+          }
+        }
+      }
+    },
+    "6² + 8² = 100": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "6² + 8² = 100"
+          }
+        }
+      }
+    },
+    "7 · 2 = 14": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "7 · 2 = 14"
+          }
+        }
+      }
+    },
+    "8": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "8"
+          }
+        }
+      }
+    },
+    "8 − 6 = 2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "8 − 6 = 2"
+          }
+        }
+      }
+    },
+    "8/12 = 2/3": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "8/12 = 2/3"
+          }
+        }
+      }
+    },
+    "80 · 0.75 = 60": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "80 · 0,75 = 60"
+          }
+        }
+      }
+    },
+    "90°": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "90°"
+          }
+        }
+      }
+    },
+    "= 1% lower than original": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "= 1 % niedriger als der Ausgangspreis"
+          }
+        }
+      }
+    },
+    "= x² + C": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "= x² + C"
+          }
+        }
+      }
+    },
+    "A = 2²·√3/4 = √3": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A = 2²·√3/4 = √3"
+          }
+        }
+      }
+    },
+    "A = ½ · 10 · 6 = 30": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A = ½ · 10 · 6 = 30"
+          }
+        }
+      }
+    },
+    "A = ½ · 5 · 12 = 30": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A = ½ · 5 · 12 = 30"
+          }
+        }
+      }
+    },
+    "A = ½bh — same b, same h → same A.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A = ½bh — gleiches b, gleiches h → gleiches A."
+          }
+        }
+      }
+    },
+    "A = πr².": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A = πr²."
+          }
+        }
+      }
+    },
+    "A = π·9 = 9π": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A = π·9 = 9π"
+          }
+        }
+      }
+    },
+    "A full revolution returns to the start.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eine ganze Drehung führt zum Ausgang zurück."
+          }
+        }
+      }
+    },
+    "A jacket costs $80 and is 25% off. What's the sale price?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eine Jacke kostet 80 $ mit 25 % Rabatt. Was ist der reduzierte Preis?"
+          }
+        }
+      }
+    },
+    "A negative exponent flips the base.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ein negativer Exponent kehrt die Basis um."
+          }
+        }
+      }
+    },
+    "A right triangle has legs 3 and 4. Find the hypotenuse.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ein rechtwinkliges Dreieck hat die Katheten 3 und 4. Bestimme die Hypotenuse."
+          }
+        }
+      }
+    },
+    "ANNUAL · 25 % OFF": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "JAHRESABO · 25 % RABATT"
+          }
+        }
+      }
+    },
+    "Absolute value strips the sign.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der Betrag entfernt das Vorzeichen."
+          }
+        }
+      }
+    },
+    "Add 1 to the exponent, divide by the new exponent, add C.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Exponent + 1, durch den neuen Exponenten teilen, +C."
+          }
+        }
+      }
+    },
+    "Add 3: 3x = 12": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "+3: 3x = 12"
+          }
+        }
+      }
+    },
+    "Add exponents.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Exponenten addieren."
+          }
+        }
+      }
+    },
+    "Adjacent equals hypotenuse at 0°.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bei 0° ist Ankathete = Hypotenuse."
+          }
+        }
+      }
+    },
+    "Adjacent over hypotenuse.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ankathete durch Hypotenuse."
+          }
+        }
+      }
+    },
+    "Apply 1.10 then 0.90.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erst · 1,10, dann · 0,90."
+          }
+        }
+      }
+    },
+    "Area": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Flächeninhalt"
+          }
+        }
+      }
+    },
+    "Area is 4× larger.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der Flächeninhalt ist 4× so groß."
+          }
+        }
+      }
+    },
+    "Area is linear in base.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der Flächeninhalt ist linear in der Grundseite."
+          }
+        }
+      }
+    },
+    "Area of a circle with radius 3? In terms of π.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Flächeninhalt eines Kreises mit Radius 3? In Einheiten von π."
+          }
+        }
+      }
+    },
+    "Area scales with r².": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der Flächeninhalt wächst mit r²."
+          }
+        }
+      }
+    },
+    "At x = 0: y = −5": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bei x = 0: y = −5"
+          }
+        }
+      }
+    },
+    "At x→3: 6": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Für x→3: 6"
+          }
+        }
+      }
+    },
+    "Base and height must be perpendicular.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Grundseite und Höhe müssen senkrecht aufeinander stehen."
+          }
+        }
+      }
+    },
+    "Base area times height.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Grundfläche mal Höhe."
+          }
+        }
+      }
+    },
+    "Both share a factor of 4.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beide haben den Faktor 4 gemeinsam."
+          }
+        }
+      }
+    },
+    "Bring down the exponent, subtract one.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Den Exponenten als Faktor nach vorne ziehen und um 1 verringern."
+          }
+        }
+      }
+    },
+    "By convention, any nonzero base to the 0 is 1.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Per Konvention: jede Basis ≠ 0 hoch 0 ergibt 1."
+          }
+        }
+      }
+    },
+    "By the Pythagorean identity.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mit der trigonometrischen Pythagoras-Identität."
+          }
+        }
+      }
+    },
+    "C = 2πr.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "C = 2πr."
+          }
+        }
+      }
+    },
+    "C = 2π·5 = 10π": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "C = 2π·5 = 10π"
+          }
+        }
+      }
+    },
+    "Chain rule": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kettenregel"
+          }
+        }
+      }
+    },
+    "Check 5² + 12² = 13².": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prüfe 5² + 12² = 13²."
+          }
+        }
+      }
+    },
+    "Circumference": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Umfang"
+          }
+        }
+      }
+    },
+    "Circumference of a circle with radius 5? In terms of π.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Umfang eines Kreises mit Radius 5? In Einheiten von π."
+          }
+        }
+      }
+    },
+    "Closer to zero = larger when negative.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Näher an der Null = größer (bei negativen Zahlen)."
+          }
+        }
+      }
+    },
+    "Common approximation.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gängige Näherung."
+          }
+        }
+      }
+    },
+    "Common denominator": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gemeinsamer Nenner"
+          }
+        }
+      }
+    },
+    "Common denominator is 6.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gemeinsamer Nenner ist 6."
+          }
+        }
+      }
+    },
+    "Common factor": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gemeinsamer Faktor"
+          }
+        }
+      }
+    },
+    "Compute (3 + 4) · 2.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Berechne (3 + 4) · 2."
+          }
+        }
+      }
+    },
+    "Compute (−4)·(−5).": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Berechne (−4)·(−5)."
+          }
+        }
+      }
+    },
+    "Compute 1/2 + 1/3. Give the simplest fraction.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Berechne 1/2 + 1/3. Als einfachster Bruch."
+          }
+        }
+      }
+    },
+    "Compute 12 ÷ 4 + 2.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Berechne 12 ÷ 4 + 2."
+          }
+        }
+      }
+    },
+    "Compute 2/3 − 1/6.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Berechne 2/3 − 1/6."
+          }
+        }
+      }
+    },
+    "Compute 2³ − 2 · 3.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Berechne 2³ − 2 · 3."
+          }
+        }
+      }
+    },
+    "Compute 3 + 4 · 2.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Berechne 3 + 4 · 2."
+          }
+        }
+      }
+    },
+    "Compute 3 − (−2).": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Berechne 3 − (−2)."
+          }
+        }
+      }
+    },
+    "Compute the discriminant.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Berechne die Diskriminante."
+          }
+        }
+      }
+    },
+    "Compute −7 + 3.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Berechne −7 + 3."
+          }
+        }
+      }
+    },
+    "Compute ∫ 2x dx. Use C for the constant.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Berechne ∫ 2x dx. Nutze C für die Konstante."
+          }
+        }
+      }
+    },
+    "Compute ∫ 5 dx.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Berechne ∫ 5 dx."
+          }
+        }
+      }
+    },
+    "Compute ∫ x³ dx.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Berechne ∫ x³ dx."
+          }
+        }
+      }
+    },
+    "Constant integrates to constant·x.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Konstante integriert zu Konstante·x."
+          }
+        }
+      }
+    },
+    "Constant multiple": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Konstanter Faktor"
+          }
+        }
+      }
+    },
+    "Constant rule": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Konstantenregel"
+          }
+        }
+      }
+    },
+    "Constants don't change.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Konstanten ändern sich nicht."
+          }
+        }
+      }
+    },
+    "Constants slide outside the integral.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Konstanten dürfen vor das Integral gezogen werden."
+          }
+        }
+      }
+    },
+    "Convert to a common denominator.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bring auf einen gemeinsamen Nenner."
+          }
+        }
+      }
+    },
+    "Convert to a fraction, then multiply.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In Bruch umrechnen, dann multiplizieren."
+          }
+        }
+      }
+    },
+    "Coordinates": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Koordinaten"
+          }
+        }
+      }
+    },
+    "Cosine": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kosinus"
+          }
+        }
+      }
+    },
+    "Cube": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Würfel"
+          }
+        }
+      }
+    },
+    "Cylinder": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zylinder"
+          }
+        }
+      }
+    },
+    "Definition of zero exponent.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Definition des Exponenten 0."
+          }
+        }
+      }
+    },
+    "Depends on the price": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hängt vom Preis ab"
+          }
+        }
+      }
+    },
+    "Derivative: (1/2)x^(−1/2) = 1/(2√x)": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ableitung: (1/2)x^(−1/2) = 1/(2√x)"
+          }
+        }
+      }
+    },
+    "Diagonal of a square with side 1?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Diagonale eines Quadrats mit Seite 1?"
+          }
+        }
+      }
+    },
+    "Difference of squares": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Differenz zweier Quadrate"
+          }
+        }
+      }
+    },
+    "Difference of squares with (2x)² and 5².": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Differenz von Quadraten mit (2x)² und 5²."
+          }
+        }
+      }
+    },
+    "Difference of squares.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Differenz zweier Quadrate."
+          }
+        }
+      }
+    },
+    "Differentiate (2x + 1)³. Use the chain rule.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Leite (2x + 1)³ mit der Kettenregel ab."
+          }
+        }
+      }
+    },
+    "Differentiate (3x + 2)⁴.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Leite (3x + 2)⁴ ab."
+          }
+        }
+      }
+    },
+    "Differentiate (x² + 1)³.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Leite (x² + 1)³ ab."
+          }
+        }
+      }
+    },
+    "Differentiate e^(3x).": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Leite e^(3x) ab."
+          }
+        }
+      }
+    },
+    "Differentiate sin(2x).": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Leite sin(2x) ab."
+          }
+        }
+      }
+    },
+    "Differentiate term by term.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Term für Term ableiten."
+          }
+        }
+      }
+    },
+    "Differentiate the outer function at the inner, then multiply by inner's derivative.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erst die äußere Funktion an der inneren ableiten, dann mit der Ableitung der inneren multiplizieren."
+          }
+        }
+      }
+    },
+    "Direct from the unit circle.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Direkt vom Einheitskreis."
+          }
+        }
+      }
+    },
+    "Direct substitution": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Direktes Einsetzen"
+          }
+        }
+      }
+    },
+    "Discriminant": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Diskriminante"
+          }
+        }
+      }
+    },
+    "Distance around the circle.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wegstrecke um den Kreis herum."
+          }
+        }
+      }
+    },
+    "Distance from zero is 7.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der Abstand zur Null ist 7."
+          }
+        }
+      }
+    },
+    "Distribute first: 3x − 6 = 9.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erst ausmultiplizieren: 3x − 6 = 9."
+          }
+        }
+      }
+    },
+    "Divide by 2: x = 4": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": ":2: x = 4"
+          }
+        }
+      }
+    },
+    "Divide by 3: x = 4": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": ":3: x = 4"
+          }
+        }
+      }
+    },
+    "Divide numerator and denominator by their common factor.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zähler und Nenner durch den gemeinsamen Faktor teilen."
+          }
+        }
+      }
+    },
+    "Division before addition.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erst dividieren, dann addieren."
+          }
+        }
+      }
+    },
+    "Double": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verdoppelt sich"
+          }
+        }
+      }
+    },
+    "Doubles": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verdoppelt sich"
+          }
+        }
+      }
+    },
+    "Doubling the radius makes the area:": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wird der Radius verdoppelt, wird der Flächeninhalt:"
+          }
+        }
+      }
+    },
+    "Doubling the radius of a sphere multiplies the volume by:": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verdoppelt man den Radius einer Kugel, vervielfacht sich das Volumen mit:"
+          }
+        }
+      }
+    },
+    "Equilateral triangle with side 2. Area?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gleichseitiges Dreieck mit Seite 2. Flächeninhalt?"
+          }
+        }
+      }
+    },
+    "Evaluate ∫ (−1) dx.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Berechne ∫ (−1) dx."
+          }
+        }
+      }
+    },
+    "Even / odd": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gerade / ungerade"
+          }
+        }
+      }
+    },
+    "Every angle picks a unique point.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jeder Winkel ergibt einen eindeutigen Punkt."
+          }
+        }
+      }
+    },
+    "Exponent, then multiplication, then subtraction.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erst Potenz, dann Multiplikation, dann Subtraktion."
+          }
+        }
+      }
+    },
+    "Factor numerator: (x−3)(x+3).": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zähler faktorisieren: (x−3)(x+3)."
+          }
+        }
+      }
+    },
+    "Factor.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Faktorisiere."
+          }
+        }
+      }
+    },
+    "Factor: (x − 2)(x − 3) = 0": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Faktorisierung: (x − 2)(x − 3) = 0"
+          }
+        }
+      }
+    },
+    "Factor: 6x + 9.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Faktorisiere: 6x + 9."
+          }
+        }
+      }
+    },
+    "Factor: x² + 6x + 9.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Faktorisiere: x² + 6x + 9."
+          }
+        }
+      }
+    },
+    "Factor: x² − 9.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Faktorisiere: x² − 9."
+          }
+        }
+      }
+    },
+    "Famous limit": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Berühmter Grenzwert"
+          }
+        }
+      }
+    },
+    "Find lim x→0 (x² + 5).": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Finde lim x→0 (x² + 5)."
+          }
+        }
+      }
+    },
+    "Find lim x→2 (3x + 1).": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Finde lim x→2 (3x + 1)."
+          }
+        }
+      }
+    },
+    "Find lim x→∞ 1/x.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Finde lim x→∞ 1/x."
+          }
+        }
+      }
+    },
+    "Find roots: numbers that multiply to 6, add to 5.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Suche zwei Zahlen, die multipliziert 6 und addiert 5 ergeben."
+          }
+        }
+      }
+    },
+    "Find the derivative of 3x² + 2x − 7.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bestimme die Ableitung von 3x² + 2x − 7."
+          }
+        }
+      }
+    },
+    "Find ∫ cos x dx.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Finde ∫ cos x dx."
+          }
+        }
+      }
+    },
+    "For any x, y = 3 → horizontal.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Für jedes x ist y = 3 → waagerecht."
+          }
+        }
+      }
+    },
+    "Four times": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vier mal"
+          }
+        }
+      }
+    },
+    "GCD = 3": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ggT = 3"
+          }
+        }
+      }
+    },
+    "GCD of 6 and 9.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ggT von 6 und 9."
+          }
+        }
+      }
+    },
+    "GCD(8,12) = 4": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ggT(8,12) = 4"
+          }
+        }
+      }
+    },
+    "Half of the diameter.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Hälfte des Durchmessers."
+          }
+        }
+      }
+    },
+    "Halves": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Halbiert sich"
+          }
+        }
+      }
+    },
+    "Heron's formula": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Heronsche Formel"
+          }
+        }
+      }
+    },
+    "How many real solutions does x² + 4x + 5 = 0 have?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wie viele reelle Lösungen hat x² + 4x + 5 = 0?"
+          }
+        }
+      }
+    },
+    "How much surface the circle covers.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wieviel Fläche der Kreis bedeckt."
+          }
+        }
+      }
+    },
+    "Hypotenuse is 13, one leg is 5. The other leg is:": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hypotenuse 13, eine Kathete ist 5. Die andere Kathete:"
+          }
+        }
+      }
+    },
+    "If a price goes up by 10%, then down by 10%, the result is:": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ein Preis steigt um 10 % und fällt dann um 10 %. Resultat:"
+          }
+        }
+      }
+    },
+    "If base doubles and height stays the same, area:": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verdoppelt sich die Grundseite und die Höhe bleibt, dann ist der Flächeninhalt:"
+          }
+        }
+      }
+    },
+    "If cos θ = 0, sin θ equals?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wenn cos θ = 0 ist, dann ist sin θ:"
+          }
+        }
+      }
+    },
+    "If sin θ = 3/5 and θ is in Q1, what is cos θ?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wenn sin θ = 3/5 und θ in Q1, was ist cos θ?"
+          }
+        }
+      }
+    },
+    "If the diameter is 8, the radius is:": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wenn der Durchmesser 8 ist, ist der Radius:"
+          }
+        }
+      }
+    },
+    "Increase / decrease": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erhöhen / Verringern"
+          }
+        }
+      }
+    },
+    "Infinite": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unendlich"
+          }
+        }
+      }
+    },
+    "Infinity": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unendlich"
+          }
+        }
+      }
+    },
+    "Inner u′ = 2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Innere u′ = 2"
+          }
+        }
+      }
+    },
+    "Inverse operations": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Umkehroperationen"
+          }
+        }
+      }
+    },
+    "Is 5-12-13 a right triangle?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ist 5-12-13 ein rechtwinkliges Dreieck?"
+          }
+        }
+      }
+    },
+    "It's the famous limit.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der berühmte Grenzwert."
+          }
+        }
+      }
+    },
+    "Left-to-right inside the same level.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bei gleicher Priorität von links nach rechts."
+          }
+        }
+      }
+    },
+    "Legs 6 and 8. Hypotenuse?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Katheten 6 und 8. Hypotenuse?"
+          }
+        }
+      }
+    },
+    "Legs are base and height.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Katheten sind Grundseite und Höhe."
+          }
+        }
+      }
+    },
+    "Look at the formula.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schau in die Formel."
+          }
+        }
+      }
+    },
+    "Look for two numbers that multiply to 6 and add to −5.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Suche zwei Zahlen, die multipliziert 6 und addiert −5 ergeben."
+          }
+        }
+      }
+    },
+    "Mathio": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mathio"
+          }
+        }
+      }
+    },
+    "Memorize the 4/3.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "4/3 auswendig lernen."
+          }
+        }
+      }
+    },
+    "Memorize the special angles.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die besonderen Winkel auswendig lernen."
+          }
+        }
+      }
+    },
+    "Move 8 over, then divide.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "8 auf die andere Seite, dann teilen."
+          }
+        }
+      }
+    },
+    "Move all x to one side first.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erst alle x auf eine Seite bringen."
+          }
+        }
+      }
+    },
+    "Multiplication before addition.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erst multiplizieren, dann addieren."
+          }
+        }
+      }
+    },
+    "Multiply across to share a denominator, then add the tops.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Über Kreuz multiplizieren, dann die Zähler addieren."
+          }
+        }
+      }
+    },
+    "Multiply before adding.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erst multiplizieren, dann addieren."
+          }
+        }
+      }
+    },
+    "Multiply both by 2: 3-4-5 triple.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beide mal 2: 3-4-5-Tripel."
+          }
+        }
+      }
+    },
+    "Multiply by 0.75.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mit 0,75 multiplizieren."
+          }
+        }
+      }
+    },
+    "Multiply by the exponent, drop it by one.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mit dem Exponenten multiplizieren, dann um 1 verringern."
+          }
+        }
+      }
+    },
+    "Multiply exponents.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Exponenten multiplizieren."
+          }
+        }
+      }
+    },
+    "Negative": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Negativer Exponent"
+          }
+        }
+      }
+    },
+    "Negative exponent → reciprocal.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Negativer Exponent → Kehrwert."
+          }
+        }
+      }
+    },
+    "No vertical change.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keine senkrechte Änderung."
+          }
+        }
+      }
+    },
+    "One": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eins"
+          }
+        }
+      }
+    },
+    "Opposite over hypotenuse.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gegenkathete durch Hypotenuse."
+          }
+        }
+      }
+    },
+    "Or sin θ / cos θ.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oder sin θ / cos θ."
+          }
+        }
+      }
+    },
+    "Order": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reihenfolge"
+          }
+        }
+      }
+    },
+    "Outer 3·u² times inner 2.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Äußere 3·u² mal innere 2."
+          }
+        }
+      }
+    },
+    "Outer 3·u², inner is 2x.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Äußere 3·u², innere 2x."
+          }
+        }
+      }
+    },
+    "Outer 4·u³, inner derivative is 3.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Äußere 4·u³, innere Ableitung 3."
+          }
+        }
+      }
+    },
+    "Outer derivative times inner derivative.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Äußere Ableitung mal innere Ableitung."
+          }
+        }
+      }
+    },
+    "Outer is cos, inner derivative is 2.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Äußere cos, innere Ableitung 2."
+          }
+        }
+      }
+    },
+    "Parentheses first.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Klammern zuerst."
+          }
+        }
+      }
+    },
+    "Percent of": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prozent von"
+          }
+        }
+      }
+    },
+    "Perfect square": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quadratische Ergänzung"
+          }
+        }
+      }
+    },
+    "Perfect square.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vollständiges Quadrat."
+          }
+        }
+      }
+    },
+    "Plug 2 in.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2 einsetzen."
+          }
+        }
+      }
+    },
+    "Plug x = 0.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x = 0 einsetzen."
+          }
+        }
+      }
+    },
+    "Power": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Potenz"
+          }
+        }
+      }
+    },
+    "Power rule (integral)": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Potenzregel (Integral)"
+          }
+        }
+      }
+    },
+    "Power rule on each term; the constant vanishes.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Potenzregel pro Term; die Konstante fällt weg."
+          }
+        }
+      }
+    },
+    "Power rule with 1/2.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Potenzregel mit Exponent 1/2."
+          }
+        }
+      }
+    },
+    "Power rule.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Potenzregel."
+          }
+        }
+      }
+    },
+    "Power rule: x^4/4 + C.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Potenzregel: x^4/4 + C."
+          }
+        }
+      }
+    },
+    "Product": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Produkt"
+          }
+        }
+      }
+    },
+    "Product: 3(2x+1)² · 2 = 6(2x+1)²": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Produkt: 3(2x+1)² · 2 = 6(2x+1)²"
+          }
+        }
+      }
+    },
+    "Pull out what's shared.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Den gemeinsamen Faktor ausklammern."
+          }
+        }
+      }
+    },
+    "Pythagorean": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pythagoras"
+          }
+        }
+      }
+    },
+    "Quadrant boundaries.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quadrantengrenzen."
+          }
+        }
+      }
+    },
+    "Quadratic formula": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quadratische Lösungsformel"
+          }
+        }
+      }
+    },
+    "Quadruples": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vervierfacht sich"
+          }
+        }
+      }
+    },
+    "Quotient": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quotient"
+          }
+        }
+      }
+    },
+    "Recognize the pattern → square it back.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Muster erkennen → wieder zur Quadratform."
+          }
+        }
+      }
+    },
+    "Reverse of d/dx(sin x) = cos x.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Umkehrung von d/dx(sin x) = cos x."
+          }
+        }
+      }
+    },
+    "Reverse of d/dx(sin x).": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Umkehrung von d/dx(sin x)."
+          }
+        }
+      }
+    },
+    "Right triangle with legs 5 and 12. Area?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rechtwinkliges Dreieck mit Katheten 5 und 12. Flächeninhalt?"
+          }
+        }
+      }
+    },
+    "Right triangle: opposite 3, hypotenuse 5. sin θ?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rechtwinkliges Dreieck: Gegenkathete 3, Hypotenuse 5. sin θ?"
+          }
+        }
+      }
+    },
+    "Rise over run.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Steigung = Höhenunterschied / Längenunterschied."
+          }
+        }
+      }
+    },
+    "Roots: x = 2 or x = 3": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lösungen: x = 2 oder x = 3"
+          }
+        }
+      }
+    },
+    "SOH.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "GAH (Gegenkathete/Ankathete/Hypotenuse)."
+          }
+        }
+      }
+    },
+    "Same base → add the exponents.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gleiche Basis → Exponenten addieren."
+          }
+        }
+      }
+    },
+    "Same base → subtract the exponents.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gleiche Basis → Exponenten subtrahieren."
+          }
+        }
+      }
+    },
+    "Same sign → positive product. Different sign → negative.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gleiches Vorzeichen → positives Produkt. Unterschiedliches Vorzeichen → negatives."
+          }
+        }
+      }
+    },
+    "Side cubed.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Seite hoch drei."
+          }
+        }
+      }
+    },
+    "Sign rules": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vorzeichenregeln"
+          }
+        }
+      }
+    },
+    "Simplify": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vereinfachen"
+          }
+        }
+      }
+    },
+    "Simplify (3²)³.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vereinfache (3²)³."
+          }
+        }
+      }
+    },
+    "Simplify 2/4 first.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vereinfache zuerst 2/4."
+          }
+        }
+      }
+    },
+    "Simplify 2³ · 2⁴.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vereinfache 2³ · 2⁴."
+          }
+        }
+      }
+    },
+    "Simplify 8/12.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kürze 8/12."
+          }
+        }
+      }
+    },
+    "Simplify sin(−x) + sin(x).": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vereinfache sin(−x) + sin(x)."
+          }
+        }
+      }
+    },
+    "Simplify x⁵ / x².": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vereinfache x⁵ / x²."
+          }
+        }
+      }
+    },
+    "Sine": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sinus"
+          }
+        }
+      }
+    },
+    "Sixteen times": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sechzehn mal"
+          }
+        }
+      }
+    },
+    "Slope from two points": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Steigung aus zwei Punkten"
+          }
+        }
+      }
+    },
+    "Slope is zero.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Steigung ist 0."
+          }
+        }
+      }
+    },
+    "Slope of a horizontal line is:": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Steigung einer waagerechten Geraden ist:"
+          }
+        }
+      }
+    },
+    "Slope through (1, 2) and (3, 8).": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Steigung durch (1, 2) und (3, 8)."
+          }
+        }
+      }
+    },
+    "Slope-intercept form": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Steigungs-Achsenabschnitts-Form"
+          }
+        }
+      }
+    },
+    "Solve for x:": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Löse nach x:"
+          }
+        }
+      }
+    },
+    "Solve x² − 5x + 6 = 0. Give both roots, comma-separated, smallest first.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Löse x² − 5x + 6 = 0. Beide Lösungen, kommagetrennt, kleinster Wert zuerst."
+          }
+        }
+      }
+    },
+    "Solve x² − 9 = 0. Smallest first, comma-separated.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Löse x² − 9 = 0. Kleinster Wert zuerst, kommagetrennt."
+          }
+        }
+      }
+    },
+    "Solve: 7 = x + 4.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Löse: 7 = x + 4."
+          }
+        }
+      }
+    },
+    "Solve: x² + x − 6 = 0. Smallest first.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Löse: x² + x − 6 = 0. Kleinster Wert zuerst."
+          }
+        }
+      }
+    },
+    "Solve: −2x + 8 = 0.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Löse: −2x + 8 = 0."
+          }
+        }
+      }
+    },
+    "Special values": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Besondere Werte"
+          }
+        }
+      }
+    },
+    "Sphere": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kugel"
+          }
+        }
+      }
+    },
+    "Square the legs, add, take the root.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Katheten quadrieren, addieren, Wurzel ziehen."
+          }
+        }
+      }
+    },
+    "Standard": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Standard"
+          }
+        }
+      }
+    },
+    "Standard derivative.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Standard-Ableitung."
+          }
+        }
+      }
+    },
+    "Stays the same": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bleibt gleich"
+          }
+        }
+      }
+    },
+    "Substitute the tangent identity.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tangens-Identität einsetzen."
+          }
+        }
+      }
+    },
+    "Substitute x = 0.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x = 0 einsetzen."
+          }
+        }
+      }
+    },
+    "Subtract 2x: 3x − 3 = 9": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "−2x: 3x − 3 = 9"
+          }
+        }
+      }
+    },
+    "Subtract 4 from both sides.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Auf beiden Seiten 4 abziehen."
+          }
+        }
+      }
+    },
+    "Subtract 6 from both sides, then divide by 2.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Auf beiden Seiten 6 abziehen, dann durch 2 teilen."
+          }
+        }
+      }
+    },
+    "Subtract 6: 2x = 8": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "−6: 2x = 8"
+          }
+        }
+      }
+    },
+    "Subtract exponents.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Exponenten subtrahieren."
+          }
+        }
+      }
+    },
+    "Subtracting a negative": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eine negative Zahl abziehen"
+          }
+        }
+      }
+    },
+    "Subtracting a negative is adding.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eine negative Zahl abzuziehen ist dasselbe wie addieren."
+          }
+        }
+      }
+    },
+    "Sum rule": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Summenregel"
+          }
+        }
+      }
+    },
+    "Sum: 5/6": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Summe: 5/6"
+          }
+        }
+      }
+    },
+    "Sum: 6x + 2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Summe: 6x + 2"
+          }
+        }
+      }
+    },
+    "Tangent": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tangens"
+          }
+        }
+      }
+    },
+    "Tangent identity": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tangens-Identität"
+          }
+        }
+      }
+    },
+    "The original price": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der ursprüngliche Preis"
+          }
+        }
+      }
+    },
+    "Theorem": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lehrsatz"
+          }
+        }
+      }
+    },
+    "They are equal": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sie sind gleich"
+          }
+        }
+      }
+    },
+    "Think of a number line.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Denk an die Zahlengerade."
+          }
+        }
+      }
+    },
+    "This is one of the basic trig derivatives.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eine der grundlegenden trigonometrischen Ableitungen."
+          }
+        }
+      }
+    },
+    "This is the Pythagorean identity.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Das ist die trigonometrische Pythagoras-Identität."
+          }
+        }
+      }
+    },
+    "Through (0, 1) with slope 4. What's the y-value at x = 2?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Durch (0, 1) mit Steigung 4. Wie groß ist y bei x = 2?"
+          }
+        }
+      }
+    },
+    "Top of the circle.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oben am Einheitskreis."
+          }
+        }
+      }
+    },
+    "Treat −1 as a constant, integrate w.r.t. x.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "−1 als Konstante behandeln und nach x integrieren."
+          }
+        }
+      }
+    },
+    "Triangle with base 10 and height 6. Area?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dreieck mit Grundseite 10 und Höhe 6. Flächeninhalt?"
+          }
+        }
+      }
+    },
+    "Trig basics": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trigonometrie-Grundlagen"
+          }
+        }
+      }
+    },
+    "Triple": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verdreifacht sich"
+          }
+        }
+      }
+    },
+    "True or false: 2/4 + 1/2 = 1.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wahr oder falsch: 2/4 + 1/2 = 1."
+          }
+        }
+      }
+    },
+    "True or false: 200% of 5 equals 10.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wahr oder falsch: 200 % von 5 ergibt 10."
+          }
+        }
+      }
+    },
+    "True or false: 4x² − 25 = (2x − 5)(2x + 5).": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wahr oder falsch: 4x² − 25 = (2x − 5)(2x + 5)."
+          }
+        }
+      }
+    },
+    "True or false: a 1×1×1 cube has volume 1.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wahr oder falsch: ein 1×1×1-Würfel hat das Volumen 1."
+          }
+        }
+      }
+    },
+    "True or false: any two triangles with the same base and height have the same area.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wahr oder falsch: zwei Dreiecke mit gleicher Grundseite und Höhe haben den gleichen Flächeninhalt."
+          }
+        }
+      }
+    },
+    "True or false: a⁰ = 1 for any nonzero a.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wahr oder falsch: a⁰ = 1 für jedes a ≠ 0."
+          }
+        }
+      }
+    },
+    "True or false: cos(360°) = cos(0°).": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wahr oder falsch: cos(360°) = cos(0°)."
+          }
+        }
+      }
+    },
+    "True or false: cos(−π) = cos(π).": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wahr oder falsch: cos(−π) = cos(π)."
+          }
+        }
+      }
+    },
+    "True or false: d/dx (sin x) = cos x.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wahr oder falsch: d/dx (sin x) = cos x."
+          }
+        }
+      }
+    },
+    "True or false: d/dx √x = 1/(2√x).": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wahr oder falsch: d/dx √x = 1/(2√x)."
+          }
+        }
+      }
+    },
+    "True or false: lim x→3 (x² − 9)/(x − 3) = 6.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wahr oder falsch: lim x→3 (x² − 9)/(x − 3) = 6."
+          }
+        }
+      }
+    },
+    "True or false: sin²θ + cos²θ = 1 for every angle θ.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wahr oder falsch: sin²θ + cos²θ = 1 für jeden Winkel θ."
+          }
+        }
+      }
+    },
+    "True or false: y = 3 is a horizontal line.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wahr oder falsch: y = 3 ist eine waagerechte Gerade."
+          }
+        }
+      }
+    },
+    "True or false: |−7| = 7.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wahr oder falsch: |−7| = 7."
+          }
+        }
+      }
+    },
+    "True or false: π is approximately 3.14.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wahr oder falsch: π ist ungefähr 3,14."
+          }
+        }
+      }
+    },
+    "Two": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zwei"
+          }
+        }
+      }
+    },
+    "Two minuses cancel.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zwei Minus heben sich auf."
+          }
+        }
+      }
+    },
+    "Two negatives → positive.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zwei Minuszeichen → Plus."
+          }
+        }
+      }
+    },
+    "Two perfect squares minus → product of sum and difference.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zwei Quadrate mit Minus → Produkt aus Summe und Differenz."
+          }
+        }
+      }
+    },
+    "Two-step rule": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zweistufige Regel"
+          }
+        }
+      }
+    },
+    "Undefined": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nicht definiert"
+          }
+        }
+      }
+    },
+    "Undo addition first, then division.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erst Addition rückgängig, dann dividieren."
+          }
+        }
+      }
+    },
+    "Use 6 as the denominator.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nutze 6 als Nenner."
+          }
+        }
+      }
+    },
+    "Use it whenever factoring is awkward.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nutze sie, wenn das Faktorisieren schwierig wird."
+          }
+        }
+      }
+    },
+    "Use side²·√3/4.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nutze Seite²·√3/4."
+          }
+        }
+      }
+    },
+    "Use sin² + cos² = 1.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nutze sin² + cos² = 1."
+          }
+        }
+      }
+    },
+    "Useful in trigonometric limits.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nützlich bei trigonometrischen Grenzwerten."
+          }
+        }
+      }
+    },
+    "Volume of a cube with side 4?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Volumen eines Würfels mit Seite 4?"
+          }
+        }
+      }
+    },
+    "Volume of a cylinder with radius 2 and height 5? In terms of π.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Volumen eines Zylinders mit Radius 2 und Höhe 5? In Einheiten von π."
+          }
+        }
+      }
+    },
+    "Volume of a sphere with radius 3? In terms of π.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Volumen einer Kugel mit Radius 3? In Einheiten von π."
+          }
+        }
+      }
+    },
+    "Volume scales with r³.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Das Volumen wächst mit r³."
+          }
+        }
+      }
+    },
+    "What does 1/x do as x grows?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Was macht 1/x, wenn x wächst?"
+          }
+        }
+      }
+    },
+    "What does tan θ · cos θ simplify to?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wozu vereinfacht sich tan θ · cos θ?"
+          }
+        }
+      }
+    },
+    "What is 20% of 80?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Was sind 20 % von 80?"
+          }
+        }
+      }
+    },
+    "What is 5⁻²?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Was ist 5⁻²?"
+          }
+        }
+      }
+    },
+    "What is cos 0°?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Was ist cos 0°?"
+          }
+        }
+      }
+    },
+    "What is cos 90°?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Was ist cos 90°?"
+          }
+        }
+      }
+    },
+    "What is lim x→0 sin(x)/x?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Was ist lim x→0 sin(x)/x?"
+          }
+        }
+      }
+    },
+    "What is sin 180°?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Was ist sin 180°?"
+          }
+        }
+      }
+    },
+    "What is sin 30°?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Was ist sin 30°?"
+          }
+        }
+      }
+    },
+    "What is tan 45°?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Was ist tan 45°?"
+          }
+        }
+      }
+    },
+    "What is tan 90°?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Was ist tan 90°?"
+          }
+        }
+      }
+    },
+    "What is the slope of f(x) = x³ at x = 2?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wie groß ist die Steigung von f(x) = x³ an der Stelle x = 2?"
+          }
+        }
+      }
+    },
+    "What's the discriminant of 2x² + 3x − 5?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wie lautet die Diskriminante von 2x² + 3x − 5?"
+          }
+        }
+      }
+    },
+    "Whatever you do to one side, do to the other.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Was du auf einer Seite tust, tust du auch auf der anderen."
+          }
+        }
+      }
+    },
+    "Whenever cos θ ≠ 0.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Immer wenn cos θ ≠ 0."
+          }
+        }
+      }
+    },
+    "Which angle has sine equal to 1?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Welcher Winkel hat den Sinus 1?"
+          }
+        }
+      }
+    },
+    "Which equals 17?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Was ergibt 17?"
+          }
+        }
+      }
+    },
+    "Which is a factor of x² + 5x + 6?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Welches ist ein Faktor von x² + 5x + 6?"
+          }
+        }
+      }
+    },
+    "Which is larger?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Was ist größer?"
+          }
+        }
+      }
+    },
+    "Which is largest?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Welche Zahl ist am größten?"
+          }
+        }
+      }
+    },
+    "Which is the derivative of 5x⁴?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Welche ist die Ableitung von 5x⁴?"
+          }
+        }
+      }
+    },
+    "Which value of x satisfies 3(x − 2) = 9?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Welcher x-Wert erfüllt 3(x − 2) = 9?"
+          }
+        }
+      }
+    },
+    "Works when f is continuous at a.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gilt, wenn f bei a stetig ist."
+          }
+        }
+      }
+    },
+    "Y-intercept of y = 2x − 5?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "y-Achsenabschnitt von y = 2x − 5?"
+          }
+        }
+      }
+    },
+    "Zero": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Null"
+          }
+        }
+      }
+    },
+    "b = 12": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "b = 12"
+          }
+        }
+      }
+    },
+    "b² = c² − a²": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "b² = c² − a²"
+          }
+        }
+      }
+    },
+    "c = 10": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "c = 10"
+          }
+        }
+      }
+    },
+    "c = √25 = 5": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "c = √25 = 5"
+          }
+        }
+      }
+    },
+    "c is the side opposite the right angle.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "c ist die der rechten Ecke gegenüberliegende Seite."
+          }
+        }
+      }
+    },
+    "cos 0° = 1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "cos 0° = 1"
+          }
+        }
+      }
+    },
+    "cos 90° = 0": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "cos 90° = 0"
+          }
+        }
+      }
+    },
+    "cos = 4/5 (Q1)": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "cos = 4/5 (Q1)"
+          }
+        }
+      }
+    },
+    "cos has period 360°.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "cos hat die Periode 360°."
+          }
+        }
+      }
+    },
+    "cos is even.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "cos ist gerade."
+          }
+        }
+      }
+    },
+    "cos is even; sin is odd.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "cos ist gerade, sin ist ungerade."
+          }
+        }
+      }
+    },
+    "cos θ": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "cos θ"
+          }
+        }
+      }
+    },
+    "cos(2x) · 2 = 2cos(2x)": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "cos(2x) · 2 = 2cos(2x)"
+          }
+        }
+      }
+    },
+    "cos(−x) = cos(x) for all x.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "cos(−x) = cos(x) für alle x."
+          }
+        }
+      }
+    },
+    "cos² = 1 − 9/25 = 16/25": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "cos² = 1 − 9/25 = 16/25"
+          }
+        }
+      }
+    },
+    "d = √2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "d = √2"
+          }
+        }
+      }
+    },
+    "d/du(u³) = 3u²": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "d/du(u³) = 3u²"
+          }
+        }
+      }
+    },
+    "d/dx(2x) = 2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "d/dx(2x) = 2"
+          }
+        }
+      }
+    },
+    "d/dx(3x²) = 6x": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "d/dx(3x²) = 6x"
+          }
+        }
+      }
+    },
+    "d/dx(−7) = 0": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "d/dx(−7) = 0"
+          }
+        }
+      }
+    },
+    "d² = 2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "d² = 2"
+          }
+        }
+      }
+    },
+    "e^(3x) · 3 = 3e^(3x)": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "e^(3x) · 3 = 3e^(3x)"
+          }
+        }
+      }
+    },
+    "e^u stays, inner derivative is 3.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "e^u bleibt, innere Ableitung 3."
+          }
+        }
+      }
+    },
+    "f′(2) = 12": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "f′(2) = 12"
+          }
+        }
+      }
+    },
+    "f′(x) = 3x²": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "f′(x) = 3x²"
+          }
+        }
+      }
+    },
+    "f′(x) = 3x², then plug in 2.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "f′(x) = 3x², dann 2 einsetzen."
+          }
+        }
+      }
+    },
+    "lim x→0 sin(x)/x = 1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "lim x→0 sin(x)/x = 1"
+          }
+        }
+      }
+    },
+    "m = 0": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "m = 0"
+          }
+        }
+      }
+    },
+    "m = 6/2 = 3": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "m = 6/2 = 3"
+          }
+        }
+      }
+    },
+    "m is the slope, b is the y-intercept.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "m ist die Steigung, b der y-Achsenabschnitt."
+          }
+        }
+      }
+    },
+    "r = d/2 = 4": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "r = d/2 = 4"
+          }
+        }
+      }
+    },
+    "s = (a+b+c)/2 is the semi-perimeter.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "s = (a+b+c)/2 ist der halbe Umfang."
+          }
+        }
+      }
+    },
+    "sin 180° = 0": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "sin 180° = 0"
+          }
+        }
+      }
+    },
+    "sin 30° = 1/2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "sin 30° = 1/2"
+          }
+        }
+      }
+    },
+    "sin 45° = cos 45°.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "sin 45° = cos 45°."
+          }
+        }
+      }
+    },
+    "sin 90° = 1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "sin 90° = 1"
+          }
+        }
+      }
+    },
+    "sin is odd.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sinus ist ungerade."
+          }
+        }
+      }
+    },
+    "sin θ": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "sin θ"
+          }
+        }
+      }
+    },
+    "sin θ = 3/5": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "sin θ = 3/5"
+          }
+        }
+      }
+    },
+    "sin(−x) = −sin(x)": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "sin(−x) = −sin(x)"
+          }
+        }
+      }
+    },
+    "sin² + cos² = 1.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "sin² + cos² = 1."
+          }
+        }
+      }
+    },
+    "sin² = 1 → sin = ±1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "sin² = 1 → sin = ±1"
+          }
+        }
+      }
+    },
+    "s³.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "s³."
+          }
+        }
+      }
+    },
+    "tan 45° = 1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "tan 45° = 1"
+          }
+        }
+      }
+    },
+    "tan 90° is undefined (division by zero).": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "tan 90° ist nicht definiert (Division durch null)."
+          }
+        }
+      }
+    },
+    "tan = sin/cos and cos 90° = 0.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "tan = sin/cos und cos 90° = 0."
+          }
+        }
+      }
+    },
+    "x": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x"
+          }
+        }
+      }
+    },
+    "x + 1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x + 1"
+          }
+        }
+      }
+    },
+    "x + 2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x + 2"
+          }
+        }
+      }
+    },
+    "x + C": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x + C"
+          }
+        }
+      }
+    },
+    "x = 1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x = 1"
+          }
+        }
+      }
+    },
+    "x = 3": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x = 3"
+          }
+        }
+      }
+    },
+    "x = 4": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x = 4"
+          }
+        }
+      }
+    },
+    "x = 5": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x = 5"
+          }
+        }
+      }
+    },
+    "x = 7": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x = 7"
+          }
+        }
+      }
+    },
+    "x = 7 − 4 = 3": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x = 7 − 4 = 3"
+          }
+        }
+      }
+    },
+    "x = ±3": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x = ±3"
+          }
+        }
+      }
+    },
+    "x = −3 or x = 2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x = −3 oder x = 2"
+          }
+        }
+      }
+    },
+    "x − 3": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x − 3"
+          }
+        }
+      }
+    },
+    "x − 6": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x − 6"
+          }
+        }
+      }
+    },
+    "x-coordinate at the top of the circle.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x-Koordinate am höchsten Punkt des Einheitskreises."
+          }
+        }
+      }
+    },
+    "x² + 5x + 6 = (x + 2)(x + 3)": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x² + 5x + 6 = (x + 2)(x + 3)"
+          }
+        }
+      }
+    },
+    "x² + 6x + 9 = (x + 3)²": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x² + 6x + 9 = (x + 3)²"
+          }
+        }
+      }
+    },
+    "x² = 9": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x² = 9"
+          }
+        }
+      }
+    },
+    "x² − 3² = (x−3)(x+3)": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x² − 3² = (x−3)(x+3)"
+          }
+        }
+      }
+    },
+    "x³": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x³"
+          }
+        }
+      }
+    },
+    "x⁵⁻² = x³": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x⁵⁻² = x³"
+          }
+        }
+      }
+    },
+    "y = 4·2 + 1 = 9": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "y = 4·2 + 1 = 9"
+          }
+        }
+      }
+    },
+    "y = mx + b.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "y = mx + b."
+          }
+        }
+      }
+    },
+    "y-coordinate at the leftmost point.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "y-Koordinate am äußersten linken Punkt."
+          }
+        }
+      }
+    },
+    "±1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "±1"
+          }
+        }
+      }
+    },
+    "½ · 2b · h = 2 · (½bh) = double": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "½ · 2b · h = 2 · (½bh) = doppelt"
+          }
+        }
+      }
+    },
+    "Δ < 0 → no real solutions": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Δ < 0 → keine reellen Lösungen"
+          }
+        }
+      }
+    },
+    "Δ = 16 − 20 = −4": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Δ = 16 − 20 = −4"
+          }
+        }
+      }
+    },
+    "Δ = 9 − 4·2·(−5) = 9 + 40 = 49": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Δ = 9 − 4·2·(−5) = 9 + 40 = 49"
+          }
+        }
+      }
+    },
+    "Δ = b² − 4ac.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Δ = b² − 4ac."
+          }
+        }
+      }
+    },
+    "Δ > 0 → two real roots. Δ = 0 → one. Δ < 0 → none in ℝ.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Δ > 0 → zwei reelle Lösungen. Δ = 0 → eine. Δ < 0 → keine in ℝ."
+          }
+        }
+      }
+    },
+    "Δy = 0": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Δy = 0"
+          }
+        }
+      }
+    },
+    "θ": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "θ"
+          }
+        }
+      }
+    },
+    "π": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "π"
+          }
+        }
+      }
+    },
+    "π · 4 · 5 = 20π": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "π · 4 · 5 = 20π"
+          }
+        }
+      }
+    },
+    "π ≈ 3.14159…": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "π ≈ 3,14159…"
+          }
+        }
+      }
+    },
+    "πr²h.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "πr²h."
+          }
+        }
+      }
+    },
+    "−1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "−1"
+          }
+        }
+      }
+    },
+    "−1 + C": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "−1 + C"
+          }
+        }
+      }
+    },
+    "−1 > −5 > −10 > −100": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "−1 > −5 > −10 > −100"
+          }
+        }
+      }
+    },
+    "−10": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "−10"
+          }
+        }
+      }
+    },
+    "−100": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "−100"
+          }
+        }
+      }
+    },
+    "−2x = −8": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "−2x = −8"
+          }
+        }
+      }
+    },
+    "−5": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "−5"
+          }
+        }
+      }
+    },
+    "−7 + 3 = −4": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "−7 + 3 = −4"
+          }
+        }
+      }
+    },
+    "−sin(x) + sin(x) = 0": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "−sin(x) + sin(x) = 0"
+          }
+        }
+      }
+    },
+    "−x + C": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "−x + C"
+          }
+        }
+      }
+    },
+    "√2/2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "√2/2"
+          }
+        }
+      }
+    },
+    "√3/2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "√3/2"
+          }
+        }
+      }
+    },
+    "√x = x^(1/2)": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "√x = x^(1/2)"
+          }
+        }
+      }
+    },
+    "∫ (−1) dx = −x + C": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "∫ (−1) dx = −x + C"
+          }
+        }
+      }
+    },
+    "∫ 2x dx = 2 · x²/2 + C": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "∫ 2x dx = 2 · x²/2 + C"
+          }
+        }
+      }
+    },
+    "∫ 5 dx = 5x + C": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "∫ 5 dx = 5x + C"
+          }
+        }
+      }
+    },
+    "∫ cos x dx = sin x + C": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "∫ cos x dx = sin x + C"
+          }
+        }
+      }
+    },
+    "∫ x³ dx = x⁴/4 + C": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "∫ x³ dx = x⁴/4 + C"
+          }
+        }
+      }
     }
   },
   "version": "1.0"
