@@ -188,57 +188,202 @@ struct RootView: View {
 }
 
 // MARK: - Onboarding
+//
+// Three-page paged intro. Every page is wrapped in a height-matched
+// `ScrollView`, so content stays vertically centered on tall iPhones and
+// scrolls instead of clipping on an iPhone SE. A fixed bottom bar carries
+// the page dots and the primary action so the button never moves.
 
 struct OnboardingView: View {
     let store: Store
     let onContinue: () -> Void
 
+    @State private var page = 0
+    private let pageCount = 3
+
     var body: some View {
         VStack(spacing: 0) {
-            Spacer()
-            VStack(spacing: 24) {
-                ZStack {
-                    Circle().fill(Palette.terracottaSoft).frame(width: 140, height: 140)
-                    Text("π")
-                        .font(.system(size: 80, weight: .bold, design: .serif))
-                        .foregroundStyle(Palette.terracotta)
-                }
-                .accessibilityHidden(true)
-
-                VStack(spacing: 12) {
-                    Text("Math, made simple.")
-                        .font(.displayL).foregroundStyle(Palette.ink)
-                        .multilineTextAlignment(.center)
-                    Text("Algebra to calculus. One small step a day.")
-                        .font(.bodyL).foregroundStyle(Palette.inkSoft)
-                        .multilineTextAlignment(.center)
-                        .padding(.horizontal, 32)
-                }
+            skipBar
+            TabView(selection: $page) {
+                welcomePage.tag(0)
+                howItWorksPage.tag(1)
+                habitPage.tag(2)
             }
-            Spacer()
-            VStack(spacing: 12) {
-                bulletRow("brain.head.profile", "Adaptive — we pick what's next for you")
-                bulletRow("lightbulb.max", "Step-by-step solutions, every time")
-                bulletRow("flame.fill", "Build a daily streak, no leaderboards")
-            }
-            .padding(.horizontal, 28).padding(.bottom, 32)
-
-            PrimaryButton(title: "Get started", icon: "arrow.right", action: onContinue)
-                .padding(.horizontal, 24).padding(.bottom, 32)
+            .tabViewStyle(.page(indexDisplayMode: .never))
+            bottomBar
         }
     }
 
-    private func bulletRow(_ icon: String, _ text: LocalizedStringResource) -> some View {
-        HStack(spacing: 14) {
-            Image(systemName: icon)
-                .font(.system(size: 18))
-                .foregroundStyle(Palette.terracotta)
-                .frame(width: 28, height: 28)
-                .background(Palette.terracottaSoft)
-                .clipShape(Circle())
-                .accessibilityHidden(true)
-            Text(text).font(.bodyL).foregroundStyle(Palette.ink)
+    // MARK: Chrome
+
+    private var skipBar: some View {
+        HStack {
             Spacer()
+            Button("Skip") { onContinue() }
+                .font(.bodyM)
+                .foregroundStyle(Palette.inkFaint)
+                .opacity(page < pageCount - 1 ? 1 : 0)
+                .disabled(page == pageCount - 1)
+                .accessibilityHidden(page == pageCount - 1)
+        }
+        .padding(.horizontal, 20)
+        .padding(.top, 6)
+        .frame(height: 32)
+    }
+
+    private var bottomBar: some View {
+        VStack(spacing: 20) {
+            HStack(spacing: 7) {
+                ForEach(0..<pageCount, id: \.self) { i in
+                    Capsule()
+                        .fill(i == page ? Palette.terracotta : Palette.hairline)
+                        .frame(width: i == page ? 22 : 7, height: 7)
+                }
+            }
+            .animation(.spring(response: 0.32, dampingFraction: 0.8), value: page)
+            .accessibilityHidden(true)
+
+            PrimaryButton(
+                title: page == pageCount - 1 ? "Get started" : "Continue",
+                icon: page == pageCount - 1 ? "arrow.right" : nil
+            ) {
+                if page < pageCount - 1 {
+                    withAnimation(.easeInOut(duration: 0.3)) { page += 1 }
+                } else {
+                    onContinue()
+                }
+            }
+            .padding(.horizontal, 24)
+        }
+        .padding(.bottom, 24)
+        .padding(.top, 8)
+    }
+
+    // MARK: Pages
+
+    private var welcomePage: some View {
+        OnboardingPage {
+            ZStack {
+                Circle().fill(Palette.terracottaSoft).frame(width: 152, height: 152)
+                Text("π")
+                    .font(.system(size: 84, weight: .bold, design: .serif))
+                    .foregroundStyle(Palette.terracotta)
+            }
+            .accessibilityHidden(true)
+
+            VStack(spacing: 14) {
+                Text("Math, made simple.")
+                    .font(.displayL).foregroundStyle(Palette.ink)
+                    .multilineTextAlignment(.center)
+                Text("Algebra to calculus. One small step a day.")
+                    .font(.bodyL).foregroundStyle(Palette.inkSoft)
+                    .multilineTextAlignment(.center)
+            }
+        }
+    }
+
+    private var howItWorksPage: some View {
+        OnboardingPage {
+            VStack(spacing: 10) {
+                Text("How Mathio works")
+                    .font(.displayM).foregroundStyle(Palette.ink)
+                    .multilineTextAlignment(.center)
+                Text("A quieter way to get better at math.")
+                    .font(.bodyL).foregroundStyle(Palette.inkSoft)
+                    .multilineTextAlignment(.center)
+            }
+
+            VStack(spacing: 12) {
+                featureCard("brain.head.profile", "Adaptive practice",
+                            "Mathio picks your next lesson from what you've mastered — never busywork.")
+                featureCard("lightbulb.max.fill", "Step-by-step solutions",
+                            "Miss a question and you'll see exactly how to reach the answer, line by line.")
+                featureCard("arrow.triangle.2.circlepath", "Spaced repetition",
+                            "Questions return right before you'd forget them, so it actually sticks.")
+            }
+        }
+    }
+
+    private var habitPage: some View {
+        OnboardingPage {
+            ZStack {
+                Circle().fill(Palette.amberSoft).frame(width: 152, height: 152)
+                Image(systemName: "flame.fill")
+                    .font(.system(size: 64))
+                    .foregroundStyle(Palette.terracotta)
+            }
+            .accessibilityHidden(true)
+
+            VStack(spacing: 14) {
+                Text("Build the habit")
+                    .font(.displayL).foregroundStyle(Palette.ink)
+                    .multilineTextAlignment(.center)
+                Text("Two minutes a day is enough. Mathio holds your streak and picks up exactly where you left off.")
+                    .font(.bodyL).foregroundStyle(Palette.inkSoft)
+                    .multilineTextAlignment(.center)
+            }
+
+            VStack(spacing: 10) {
+                miniStat("flame.fill", "Daily streaks, with freezes for the days you miss")
+                miniStat("target", "A daily goal small enough to actually hit")
+                miniStat("chart.bar.xaxis", "Progress tracked across every topic")
+            }
+        }
+    }
+
+    // MARK: Page pieces
+
+    private func featureCard(_ icon: String,
+                             _ title: LocalizedStringResource,
+                             _ body: LocalizedStringResource) -> some View {
+        Card(padding: 16) {
+            HStack(alignment: .top, spacing: 14) {
+                Image(systemName: icon)
+                    .font(.system(size: 18))
+                    .foregroundStyle(Palette.terracotta)
+                    .frame(width: 40, height: 40)
+                    .background(Palette.terracottaSoft)
+                    .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
+                    .accessibilityHidden(true)
+                VStack(alignment: .leading, spacing: 4) {
+                    Text(title).font(.titleM).foregroundStyle(Palette.ink)
+                    Text(body).font(.bodyM).foregroundStyle(Palette.inkSoft)
+                        .fixedSize(horizontal: false, vertical: true)
+                }
+                Spacer(minLength: 0)
+            }
+        }
+        .accessibilityElement(children: .combine)
+    }
+
+    private func miniStat(_ icon: String, _ text: LocalizedStringResource) -> some View {
+        HStack(spacing: 12) {
+            Image(systemName: icon)
+                .font(.system(size: 15))
+                .foregroundStyle(Palette.terracotta)
+                .frame(width: 26)
+                .accessibilityHidden(true)
+            Text(text).font(.bodyM).foregroundStyle(Palette.ink)
+                .fixedSize(horizontal: false, vertical: true)
+            Spacer(minLength: 0)
+        }
+    }
+}
+
+/// A single onboarding page: content is vertically centered when it fits and
+/// scrolls when it doesn't, so the layout holds from iPhone SE to Pro Max.
+private struct OnboardingPage<Content: View>: View {
+    @ViewBuilder var content: () -> Content
+
+    var body: some View {
+        GeometryReader { geo in
+            ScrollView(.vertical, showsIndicators: false) {
+                VStack(spacing: 28) { content() }
+                    .frame(maxWidth: .infinity)
+                    .padding(.horizontal, 28)
+                    .padding(.vertical, 24)
+                    .frame(minHeight: geo.size.height, alignment: .center)
+            }
         }
     }
 }

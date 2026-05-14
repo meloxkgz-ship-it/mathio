@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <!-- Export a signed App Store .ipa to disk only. The upload is done
+       separately via `asc builds upload`, because xcodebuild's
+       destination=upload handoff fails with "Failed to Use Accounts"
+       on this Mac (no Xcode-signed-in account). -->
+  <key>method</key>
+  <string>app-store-connect</string>
+
+  <key>destination</key>
+  <string>export</string>
+
+  <key>signingStyle</key>
+  <string>automatic</string>
+
+  <key>teamID</key>
+  <string>T3BRJDPUGM</string>
+
+  <key>uploadSymbols</key>
+  <true/>
+
+  <key>stripSwiftSymbols</key>
+  <false/>
+</dict>
+</plist>
