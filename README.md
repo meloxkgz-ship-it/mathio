@@ -18,8 +18,8 @@ Native iOS 18+, SwiftUI, **StoreKit 2** (no third-party SDKs), DE + EN localized
 
 | | |
 |---|---|
-| **Topics** | Pre-Algebra · Algebra · Calculus · Geometry · Trigonometry · Statistics · Linear Algebra |
-| **Lessons** | 46 lessons, 230 questions across multiple-choice, free-answer, true/false |
+| **Topics** | Pre-Algebra · Algebra · Calculus · Geometry · Trigonometry · Statistics · Linear Algebra · Financial Math · Discrete Math |
+| **Lessons** | 52 lessons, 260 questions across multiple-choice, free-answer, true/false |
 | **Review queue** | Spaced repetition based on Leitner intervals (1d / 3d / 1w / 2w / 1m) |
 | **Daily goal** | User-set target (default 5 correct/day), settable in Settings |
 | **Streak + freeze** | Daily streak with auto-spent freezes (1 weekly refill, max 2) |

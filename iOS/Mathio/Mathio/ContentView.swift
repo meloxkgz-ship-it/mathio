@@ -525,7 +525,7 @@ struct HomeView: View {
                     presented = lesson
                 }
             } label: {
-                Card(padding: 24, background: Palette.ink) {
+                Card(padding: 24, background: Palette.heroSurface) {
                     VStack(alignment: .leading, spacing: 16) {
                         HStack {
                             Text("Continue").textCase(.uppercase).tracking(1.4)
@@ -535,12 +535,12 @@ struct HomeView: View {
                                 Image(systemName: "lock.fill").foregroundStyle(Palette.amber)
                             }
                         }
-                        Text(lesson.title).font(.displayM).foregroundStyle(.white)
+                        Text(lesson.title).font(.displayM).foregroundStyle(Palette.heroInk)
                         HStack(spacing: 6) {
                             Image(systemName: topic.icon).font(.system(size: 13))
                             Text(topic.title).font(.label)
                         }
-                        .foregroundStyle(.white.opacity(0.7))
+                        .foregroundStyle(Palette.heroInkSoft)
                         HStack {
                             ProgressBar(progress: store.mastery(for: lesson),
                                         color: Palette.amber, height: 6)

@@ -32,6 +32,12 @@ enum Palette {
         light: Color(red: 0.969, green: 0.953, blue: 0.925),
         dark:  Color(red: 0.149, green: 0.133, blue: 0.114)
     )
+    static let heroSurface     = Color.dynamic(
+        light: Color(red: 0.078, green: 0.067, blue: 0.055),
+        dark:  Color(red: 0.125, green: 0.110, blue: 0.094)
+    )
+    static let heroInk         = Color(red: 0.973, green: 0.957, blue: 0.929)
+    static let heroInkSoft     = Color(red: 0.812, green: 0.788, blue: 0.745)
 
     // Type
     static let ink             = Color.dynamic(
