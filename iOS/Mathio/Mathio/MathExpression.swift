@@ -41,15 +41,6 @@ enum MathInput {
         // Tidy any decimal numbers: 4.0 → 4 ; 4.50 → 4.5 ; 12.000 → 12.
         out = canonicalizeNumbers(in: out)
 
-        // Sort comma-separated lists numerically when all items are numbers.
-        if out.contains(",") {
-            let parts = out.split(separator: ",").map(String.init)
-            if parts.allSatisfy({ Double($0) != nil }) {
-                let sorted = parts.compactMap(Double.init).sorted()
-                out = sorted.map(formatNumber).joined(separator: ",")
-            }
-        }
-
         // Reorder a single-variable polynomial like "2+6x" → "6x+2"
         // by sorting "+" terms with x before constants.
         out = reorderTerms(out)

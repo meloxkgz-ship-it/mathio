@@ -154,12 +154,14 @@ final class Store {
     private let kBookmarks     = "mathio.bookmarks"
     private let kFreezes       = "mathio.streak.freezes"
     private let kFreezeRefill  = "mathio.streak.freezeRefillDate"
+    private let kDailyCorrect  = "mathio.dailyCorrect.v1"
 
     static let maxFreezes = 2
 
     private(set) var answered: [String: AnsweredEntry] = [:]
     private(set) var streakDays: Int = 0
     private(set) var bookmarks: Set<String> = []
+    private(set) var dailyCorrect: [String: Int] = [:]
     /// Available "streak freezes" — auto-spent if a day is missed. Refills weekly.
     private(set) var streakFreezes: Int = 2
     var hasOnboarded: Bool
@@ -174,6 +176,10 @@ final class Store {
         self.streakDays = defaults.integer(forKey: kStreakCount)
         if let bm = defaults.array(forKey: kBookmarks) as? [String] {
             self.bookmarks = Set(bm)
+        }
+        if let data = defaults.data(forKey: kDailyCorrect),
+           let decoded = try? JSONDecoder().decode([String: Int].self, from: data) {
+            self.dailyCorrect = decoded
         }
         // Default freezes if never set (defaults.integer returns 0 for unset).
         if defaults.object(forKey: kFreezes) == nil {
@@ -199,12 +205,14 @@ final class Store {
             entry.correct += 1
             entry.lastCorrect = .now
             entry.streakCorrect += 1
+            dailyCorrect[Self.dayKey(for: .now), default: 0] += 1
         } else {
             entry.streakCorrect = 0
         }
         answered[questionId] = entry
         bumpStreakIfNeeded(touch: true)
         persistAnswered()
+        persistDailyCorrect()
     }
 
     func completeOnboarding() {
@@ -217,9 +225,11 @@ final class Store {
         answered = [:]
         streakDays = 0
         streakFreezes = Self.maxFreezes
+        dailyCorrect = [:]
         defaults.removeObject(forKey: kAnswered)
         defaults.removeObject(forKey: kStreakCount)
         defaults.removeObject(forKey: kStreakDay)
+        defaults.removeObject(forKey: kDailyCorrect)
         defaults.set(Self.maxFreezes, forKey: kFreezes)
         defaults.removeObject(forKey: kFreezeRefill)
     }
@@ -306,26 +316,16 @@ final class Store {
 
     /// Number of correct answers today.
     func correctToday() -> Int {
-        let cal = Calendar.current
-        let today = cal.startOfDay(for: .now)
-        return answered.values.filter { entry in
-            guard let lc = entry.lastCorrect else { return false }
-            return cal.isDate(lc, inSameDayAs: today)
-        }.count
+        dailyCorrect[Self.dayKey(for: .now), default: 0]
     }
 
     /// Daily activity histogram for the heatmap. Counts the number of
-    /// distinct questions whose `lastCorrect` falls on each day.
-    /// (Approximation — we don't store a per-attempt log to stay tiny.)
+    /// correct answers completed on each day.
     func dailyActivity() -> [Date: Int] {
-        let cal = Calendar.current
-        var result: [Date: Int] = [:]
-        for entry in answered.values {
-            guard let lc = entry.lastCorrect else { continue }
-            let day = cal.startOfDay(for: lc)
-            result[day, default: 0] += 1
+        dailyCorrect.reduce(into: [:]) { result, item in
+            guard let date = Self.dayDate(from: item.key) else { return }
+            result[date] = item.value
         }
-        return result
     }
 
     // MARK: Streak (with freeze)
@@ -385,5 +385,27 @@ final class Store {
         if let data = try? JSONEncoder().encode(answered) {
             defaults.set(data, forKey: kAnswered)
         }
+    }
+
+    private func persistDailyCorrect() {
+        if let data = try? JSONEncoder().encode(dailyCorrect) {
+            defaults.set(data, forKey: kDailyCorrect)
+        }
+    }
+
+    private static func dayKey(for date: Date) -> String {
+        let parts = Calendar.current.dateComponents([.year, .month, .day], from: date)
+        return String(format: "%04d-%02d-%02d", parts.year ?? 0, parts.month ?? 0, parts.day ?? 0)
+    }
+
+    private static func dayDate(from key: String) -> Date? {
+        let parts = key.split(separator: "-").compactMap { Int($0) }
+        guard parts.count == 3 else { return nil }
+        var components = DateComponents()
+        components.year = parts[0]
+        components.month = parts[1]
+        components.day = parts[2]
+        guard let date = Calendar.current.date(from: components) else { return nil }
+        return Calendar.current.startOfDay(for: date)
     }
 }

@@ -406,6 +406,11 @@ struct HomeView: View {
     private var topics: [Topic] { Curriculum.topics }
     private var nextUp: (Topic, Lesson)? { store.nextLesson(in: topics, premium: premiumStore.isPremium) }
     private var reviewCount: Int { store.reviewQueue(in: topics).count }
+    private var lessonCount: Int { topics.reduce(0) { $0 + $1.lessons.count } }
+    private var questionCount: Int { topics.reduce(0) { $0 + $1.lessons.reduce(0) { $0 + $1.questions.count } } }
+    private var monthsOfPractice: Int {
+        max(1, Int(ceil(Double(questionCount) / Double(max(settings.dailyGoal, 1)) / 30.0)))
+    }
 
     /// Set by `PracticeMathIntent` (Siri / Spotlight). Honored once on appear.
     private static let pendingPracticeKey = "mathio.intent.pendingPractice"
@@ -418,6 +423,7 @@ struct HomeView: View {
                     DailyGoalView(progress: store.correctToday(), goal: settings.dailyGoal)
                     if reviewCount > 0 { reviewBanner }
                     nextUpCard
+                    learningPlanCard
                     topicsList
                     Spacer(minLength: 40)
                 }
@@ -573,6 +579,47 @@ struct HomeView: View {
                 .accessibilityLabel(Text("\(topic.title), \(Int(store.mastery(for: topic) * 100)) percent mastered"))
             }
         }
+    }
+
+    private var learningPlanCard: some View {
+        Card(padding: 18, background: Palette.surfaceMuted) {
+            VStack(alignment: .leading, spacing: 14) {
+                HStack(alignment: .top, spacing: 12) {
+                    Image(systemName: "calendar.badge.clock")
+                        .font(.system(size: 20, weight: .semibold))
+                        .foregroundStyle(Palette.calculus)
+                        .frame(width: 42, height: 42)
+                        .background(Palette.calculus.opacity(0.14))
+                        .clipShape(Circle())
+                    VStack(alignment: .leading, spacing: 3) {
+                        Text("Multi-month path")
+                            .font(.titleM)
+                            .foregroundStyle(Palette.ink)
+                        Text("\(lessonCount) lessons · \(questionCount) questions · about \(monthsOfPractice) months at your current goal")
+                            .font(.bodyM)
+                            .foregroundStyle(Palette.inkSoft)
+                            .fixedSize(horizontal: false, vertical: true)
+                    }
+                }
+
+                HStack(spacing: 10) {
+                    planPill("Foundation", icon: "1.circle.fill")
+                    planPill("Practice", icon: "2.circle.fill")
+                    planPill("Review", icon: "3.circle.fill")
+                }
+            }
+        }
+        .accessibilityElement(children: .combine)
+    }
+
+    private func planPill(_ title: LocalizedStringResource, icon: String) -> some View {
+        Label(title, systemImage: icon)
+            .font(.caption)
+            .foregroundStyle(Palette.ink)
+            .padding(.horizontal, 10)
+            .padding(.vertical, 8)
+            .frame(maxWidth: .infinity)
+            .background(Palette.surface, in: Capsule())
     }
 
     /// Build a synthetic lesson from the spaced-repetition queue.
