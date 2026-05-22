@@ -34,7 +34,7 @@ REPO_ROOT="$(cd "$(dirname "$0")/../../.." && pwd)"
 cd "$REPO_ROOT"
 
 BUNDLE="com.kgz.Mathio"
-TARGET_VERSION="${TARGET_VERSION:-1.0.3}"
+TARGET_VERSION="${TARGET_VERSION:-1.0.4}"
 TARGET_BUILD="${TARGET_BUILD:-6}"
 PROFILE="${PROFILE:-industrietrainer}"
 ASC=/opt/homebrew/bin/asc

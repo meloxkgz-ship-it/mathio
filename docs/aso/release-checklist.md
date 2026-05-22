@@ -5,7 +5,7 @@ Run top-to-bottom before tapping **Submit for Review** in App Store Connect.
 ## 1 — Xcode project sanity
 
 - [x] Bundle ID: `com.kgz.Mathio`
-- [x] Marketing version: `1.0.3`
+- [x] Marketing version: `1.0.4`
 - [x] Build number: `6` (bump for every TestFlight upload)
 - [x] iOS Deployment Target: `18.0` (intentional per README)
 - [x] `INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO` (skips export-compliance dialog)
