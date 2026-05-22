@@ -9,16 +9,19 @@ screenshots and reviewer override continue to work.
 - Bundle ID: `com.kgz.Mathio`
 - App Store Connect app ID: `6767033115`
 - RevenueCat entitlement IDs accepted by the app: `premium` or `plus`
+- App Store subscription group: `Premium` (`22071889`)
 
 ## Products
 
 Attach these App Store products to the RevenueCat entitlement:
 
-| Product ID | Package | Purpose |
-| --- | --- | --- |
-| `mathio_annual` | Annual | Primary yearly subscription |
-| `mathio_weekly` | Weekly | Weekly subscription |
-| `mathio_retention` | Custom | Retention yearly discount |
+| Product ID | App Store subscription ID | RevenueCat package | App Store state | Purpose |
+| --- | --- | --- | --- | --- |
+| `mathio_annual` | `6767033716` | Annual | `APPROVED` | Primary yearly subscription |
+| `mathio_weekly` | `6767033995` | Weekly | `APPROVED` | Weekly subscription |
+| `mathio_retention` | `6767033879` | Custom | `APPROVED` | Retention yearly discount |
+
+Verified with `asc subscriptions list --group-id 22071889` on 2026-05-23.
 
 Create or select the default RevenueCat offering and add annual + weekly
 packages. Add the retention product as a custom package if it should be served
