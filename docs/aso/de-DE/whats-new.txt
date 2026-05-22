@@ -2,9 +2,9 @@ Willkommen bei Mathio.
 
 Eine ruhige, fokussierte Art, Mathe zu üben — Algebra, Geometrie, Analysis, Statistik, Lineare Algebra, Finanzmathematik und Diskrete Mathematik — Schritt für Schritt.
 
-• 52 Lektionen, 260 handgemachte Aufgaben, erweiterte Referenz-Formeln
-• Neue Themen: Statistik, Lineare Algebra, Finanzmathematik und Diskrete Mathematik
-• Dunkelmodus-Kontrast der „Weiter"-Karte auf Home korrigiert
+• Neue App-Sprachen: Spanisch, Französisch, Italienisch und Brasilianisches Portugiesisch
+• Neue Lektionsvisualisierungen für Graphen, Dreiecke, Zahlenstrahlen, Einheitskreis, Vektoren, Statistik und Zinswachstum
+• Dunkelmodus-Kontrast bei Primärbuttons und Lernkarten korrigiert
 • Schritt-für-Schritt-Lösung bei jeder falschen Antwort
 • Adaptive Lektionswahl, tägliche Serie mit Auto-Freezes, Spaced-Repetition-Wiederholung
 • Siri-Kurzbefehl („Mathe üben"), iPad-Layout, Branded Launch-Screen
