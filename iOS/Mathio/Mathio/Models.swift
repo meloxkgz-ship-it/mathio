@@ -22,11 +22,37 @@ struct Lesson: Identifiable, Hashable {
     let id: String
     let title: LocalizedStringResource
     let intro: LocalizedStringResource
+    let visual: LessonVisual?
     let formulas: [Formula]
     let questions: [Question]
 
+    init(id: String,
+         title: LocalizedStringResource,
+         intro: LocalizedStringResource,
+         visual: LessonVisual? = nil,
+         formulas: [Formula],
+         questions: [Question]) {
+        self.id = id
+        self.title = title
+        self.intro = intro
+        self.visual = visual
+        self.formulas = formulas
+        self.questions = questions
+    }
+
     static func == (lhs: Lesson, rhs: Lesson) -> Bool { lhs.id == rhs.id }
     func hash(into h: inout Hasher) { h.combine(id) }
+}
+
+enum LessonVisual: String, Hashable {
+    case numberLine
+    case triangle
+    case parabola
+    case derivativeSlope
+    case unitCircle
+    case barChart
+    case vectorPlane
+    case compoundGrowth
 }
 
 struct Formula: Hashable, Identifiable {

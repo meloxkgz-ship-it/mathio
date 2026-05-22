@@ -134,7 +134,7 @@ struct PrimaryButton: View {
                 Text(title).fontWeight(.semibold)
             }
             .frame(maxWidth: .infinity, minHeight: 54)
-            .foregroundStyle(enabled ? Color.white : Color.white.opacity(0.7))
+            .foregroundStyle(Palette.background)
             .background(enabled ? Palette.ink : Palette.inkFaint)
             .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
         }

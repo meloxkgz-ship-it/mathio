@@ -760,6 +760,10 @@ struct LessonView: View {
                 Text(lesson.intro).font(.bodyL).foregroundStyle(Palette.inkSoft)
                     .padding(.bottom, 4)
 
+                if let visual = lesson.visual {
+                    LessonVisualCard(visual: visual)
+                }
+
                 ForEach(lesson.formulas, id: \.id) { formula in
                     FormulaCard(formula: formula, store: store)
                 }
@@ -782,6 +786,257 @@ struct LessonView: View {
         .navigationBarTitleDisplayMode(.inline)
         .navigationDestination(isPresented: $showPractice) {
             PracticeView(lesson: lesson, store: store, isReview: false)
+        }
+    }
+}
+
+struct LessonVisualCard: View {
+    let visual: LessonVisual
+
+    var body: some View {
+        Card(padding: 0) {
+            VStack(alignment: .leading, spacing: 14) {
+                HStack {
+                    Label(title, systemImage: symbol)
+                        .font(.titleM)
+                        .foregroundStyle(Palette.ink)
+                    Spacer()
+                    Text("Visual")
+                        .font(.caption)
+                        .foregroundStyle(Palette.inkFaint)
+                        .textCase(.uppercase)
+                        .tracking(1.1)
+                }
+                .padding(.horizontal, 18)
+                .padding(.top, 18)
+
+                visualBody
+                    .frame(height: 168)
+                    .frame(maxWidth: .infinity)
+                    .background(Palette.surfaceMuted)
+                    .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
+                    .padding(.horizontal, 14)
+                    .padding(.bottom, 14)
+            }
+        }
+        .accessibilityElement(children: .combine)
+        .accessibilityLabel(Text(accessibilityLabel))
+    }
+
+    private var title: LocalizedStringResource {
+        switch visual {
+        case .numberLine: return "See the movement"
+        case .triangle: return "See the shape"
+        case .parabola: return "See the curve"
+        case .derivativeSlope: return "See the slope"
+        case .unitCircle: return "See the angle"
+        case .barChart: return "See the data"
+        case .vectorPlane: return "See the vector"
+        case .compoundGrowth: return "See the growth"
+        }
+    }
+
+    private var symbol: String {
+        switch visual {
+        case .numberLine: return "arrow.left.and.right"
+        case .triangle: return "triangle"
+        case .parabola, .derivativeSlope: return "chart.xyaxis.line"
+        case .unitCircle: return "circle.dotted"
+        case .barChart: return "chart.bar"
+        case .vectorPlane: return "arrow.up.right"
+        case .compoundGrowth: return "chart.line.uptrend.xyaxis"
+        }
+    }
+
+    private var accessibilityLabel: LocalizedStringResource {
+        switch visual {
+        case .numberLine: return "Number line visual showing movement left and right."
+        case .triangle: return "Triangle visual showing sides and height."
+        case .parabola: return "Parabola visual showing a quadratic curve."
+        case .derivativeSlope: return "Curve visual showing a tangent slope."
+        case .unitCircle: return "Unit circle visual showing an angle and radius."
+        case .barChart: return "Bar chart visual showing different values."
+        case .vectorPlane: return "Coordinate plane visual showing a vector."
+        case .compoundGrowth: return "Growth curve visual showing compounding."
+        }
+    }
+
+    @ViewBuilder
+    private var visualBody: some View {
+        switch visual {
+        case .numberLine:
+            NumberLineVisual()
+        case .triangle:
+            TriangleVisual()
+        case .parabola:
+            CurveVisual(mode: .parabola)
+        case .derivativeSlope:
+            CurveVisual(mode: .slope)
+        case .unitCircle:
+            UnitCircleVisual()
+        case .barChart:
+            BarChartVisual()
+        case .vectorPlane:
+            VectorPlaneVisual()
+        case .compoundGrowth:
+            CurveVisual(mode: .growth)
+        }
+    }
+}
+
+private struct NumberLineVisual: View {
+    var body: some View {
+        GeometryReader { geo in
+            let mid = geo.size.height * 0.52
+            let w = geo.size.width
+            Canvas { ctx, size in
+                var axis = Path()
+                axis.move(to: CGPoint(x: 24, y: mid))
+                axis.addLine(to: CGPoint(x: w - 24, y: mid))
+                ctx.stroke(axis, with: .color(Palette.inkFaint), lineWidth: 2)
+                for i in 0...6 {
+                    let x = 24 + (w - 48) * CGFloat(i) / 6
+                    var tick = Path()
+                    tick.move(to: CGPoint(x: x, y: mid - 7))
+                    tick.addLine(to: CGPoint(x: x, y: mid + 7))
+                    ctx.stroke(tick, with: .color(Palette.inkFaint), lineWidth: 1.5)
+                }
+                var arc = Path()
+                arc.move(to: CGPoint(x: w * 0.28, y: mid))
+                arc.addQuadCurve(to: CGPoint(x: w * 0.68, y: mid),
+                                 control: CGPoint(x: w * 0.48, y: mid - 58))
+                ctx.stroke(arc, with: .color(Palette.terracotta), style: StrokeStyle(lineWidth: 4, lineCap: .round))
+            }
+            HStack {
+                Text("-3")
+                Spacer()
+                Text("0")
+                Spacer()
+                Text("3")
+            }
+            .font(.caption)
+            .foregroundStyle(Palette.inkSoft)
+            .padding(.horizontal, 20)
+            .offset(y: mid + 12)
+        }
+    }
+}
+
+private struct TriangleVisual: View {
+    var body: some View {
+        GeometryReader { geo in
+            let size = geo.size
+            Canvas { ctx, _ in
+                let a = CGPoint(x: size.width * 0.18, y: size.height * 0.78)
+                let b = CGPoint(x: size.width * 0.78, y: size.height * 0.78)
+                let c = CGPoint(x: size.width * 0.48, y: size.height * 0.24)
+                var tri = Path()
+                tri.move(to: a); tri.addLine(to: b); tri.addLine(to: c); tri.closeSubpath()
+                ctx.fill(tri, with: .color(Palette.geometry.opacity(0.18)))
+                ctx.stroke(tri, with: .color(Palette.geometry), lineWidth: 4)
+                var h = Path()
+                h.move(to: c); h.addLine(to: CGPoint(x: c.x, y: a.y))
+                ctx.stroke(h, with: .color(Palette.terracotta), style: StrokeStyle(lineWidth: 3, dash: [6, 5]))
+            }
+        }
+    }
+}
+
+private struct CurveVisual: View {
+    enum Mode { case parabola, slope, growth }
+    let mode: Mode
+
+    var body: some View {
+        Canvas { ctx, size in
+            let inset: CGFloat = 24
+            var axes = Path()
+            axes.move(to: CGPoint(x: inset, y: size.height - inset))
+            axes.addLine(to: CGPoint(x: size.width - inset, y: size.height - inset))
+            axes.move(to: CGPoint(x: inset, y: size.height - inset))
+            axes.addLine(to: CGPoint(x: inset, y: inset))
+            ctx.stroke(axes, with: .color(Palette.inkFaint.opacity(0.7)), lineWidth: 1.5)
+
+            var curve = Path()
+            for i in 0...80 {
+                let t = CGFloat(i) / 80
+                let x = inset + t * (size.width - inset * 2)
+                let y: CGFloat
+                switch mode {
+                case .parabola:
+                    y = size.height - inset - pow((t - 0.5) * 2, 2) * (size.height - inset * 2)
+                case .slope:
+                    y = size.height - inset - (0.18 + 0.62 * t + 0.12 * sin(t * .pi * 2)) * (size.height - inset * 2)
+                case .growth:
+                    y = size.height - inset - (pow(t, 2.2) * 0.82 + 0.06) * (size.height - inset * 2)
+                }
+                if i == 0 { curve.move(to: CGPoint(x: x, y: y)) }
+                else { curve.addLine(to: CGPoint(x: x, y: y)) }
+            }
+            ctx.stroke(curve, with: .color(Palette.calculus), style: StrokeStyle(lineWidth: 4, lineCap: .round, lineJoin: .round))
+
+            if mode == .slope {
+                var tangent = Path()
+                tangent.move(to: CGPoint(x: size.width * 0.42, y: size.height * 0.55))
+                tangent.addLine(to: CGPoint(x: size.width * 0.72, y: size.height * 0.30))
+                ctx.stroke(tangent, with: .color(Palette.terracotta), style: StrokeStyle(lineWidth: 3, lineCap: .round))
+            }
+        }
+    }
+}
+
+private struct UnitCircleVisual: View {
+    var body: some View {
+        Canvas { ctx, size in
+            let center = CGPoint(x: size.width / 2, y: size.height / 2)
+            let r = min(size.width, size.height) * 0.34
+            ctx.stroke(Path(ellipseIn: CGRect(x: center.x - r, y: center.y - r, width: r * 2, height: r * 2)),
+                       with: .color(Palette.trig), lineWidth: 4)
+            var axes = Path()
+            axes.move(to: CGPoint(x: center.x - r - 18, y: center.y))
+            axes.addLine(to: CGPoint(x: center.x + r + 18, y: center.y))
+            axes.move(to: CGPoint(x: center.x, y: center.y - r - 18))
+            axes.addLine(to: CGPoint(x: center.x, y: center.y + r + 18))
+            ctx.stroke(axes, with: .color(Palette.inkFaint), lineWidth: 1.5)
+            let end = CGPoint(x: center.x + r * 0.72, y: center.y - r * 0.72)
+            var radius = Path()
+            radius.move(to: center); radius.addLine(to: end)
+            ctx.stroke(radius, with: .color(Palette.terracotta), style: StrokeStyle(lineWidth: 4, lineCap: .round))
+        }
+    }
+}
+
+private struct BarChartVisual: View {
+    private let values: [CGFloat] = [0.38, 0.68, 0.52, 0.86, 0.46]
+    var body: some View {
+        HStack(alignment: .bottom, spacing: 12) {
+            ForEach(Array(values.enumerated()), id: \.offset) { index, value in
+                RoundedRectangle(cornerRadius: 8, style: .continuous)
+                    .fill(index == 3 ? Palette.stats : Palette.stats.opacity(0.42))
+                    .frame(height: 118 * value)
+            }
+        }
+        .padding(.horizontal, 32)
+        .padding(.vertical, 24)
+    }
+}
+
+private struct VectorPlaneVisual: View {
+    var body: some View {
+        Canvas { ctx, size in
+            let center = CGPoint(x: size.width * 0.42, y: size.height * 0.62)
+            var grid = Path()
+            for i in 1...4 {
+                let x = size.width * CGFloat(i) / 5
+                grid.move(to: CGPoint(x: x, y: 18)); grid.addLine(to: CGPoint(x: x, y: size.height - 18))
+                let y = size.height * CGFloat(i) / 5
+                grid.move(to: CGPoint(x: 18, y: y)); grid.addLine(to: CGPoint(x: size.width - 18, y: y))
+            }
+            ctx.stroke(grid, with: .color(Palette.hairline), lineWidth: 1)
+            let end = CGPoint(x: size.width * 0.70, y: size.height * 0.30)
+            var vector = Path()
+            vector.move(to: center); vector.addLine(to: end)
+            ctx.stroke(vector, with: .color(Palette.algebra), style: StrokeStyle(lineWidth: 5, lineCap: .round))
+            ctx.fill(Path(ellipseIn: CGRect(x: end.x - 7, y: end.y - 7, width: 14, height: 14)), with: .color(Palette.algebra))
         }
     }
 }

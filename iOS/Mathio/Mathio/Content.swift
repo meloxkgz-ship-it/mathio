@@ -221,6 +221,7 @@ enum Curriculum {
         id: "alg.quad",
         title: "Quadratic Formula",
         intro: "Every quadratic ax² + bx + c = 0 has solutions you can read off the formula.",
+        visual: .parabola,
         formulas: [
             Formula(key: "alg.quad.f1",
                     name: "Quadratic formula",
@@ -445,6 +446,7 @@ enum Curriculum {
         id: "calc.deriv",
         title: "Derivatives",
         intro: "The derivative measures how fast something changes.",
+        visual: .derivativeSlope,
         formulas: [
             Formula(key: "calc.deriv.f1",
                     name: "Power rule",
@@ -565,6 +567,7 @@ enum Curriculum {
         id: "geo.pyth",
         title: "Pythagorean Theorem",
         intro: "In a right triangle, the squared hypotenuse equals the sum of the squared legs.",
+        visual: .triangle,
         formulas: [
             Formula(key: "geo.pyth.f1",
                     name: "Theorem",
@@ -704,6 +707,7 @@ enum Curriculum {
         id: "trig.basics",
         title: "Trig Ratios",
         intro: "In a right triangle: SOH-CAH-TOA.",
+        visual: .triangle,
         formulas: [
             Formula(key: "trig.basics.f1",
                     name: "Sine",
@@ -757,6 +761,7 @@ enum Curriculum {
         id: "trig.unit",
         title: "Unit Circle",
         intro: "On a circle of radius 1, sin and cos are coordinates.",
+        visual: .unitCircle,
         formulas: [
             Formula(key: "trig.unit.f1",
                     name: "Coordinates",
@@ -814,6 +819,7 @@ enum Curriculum {
         id: "pre.neg",
         title: "Negative Numbers",
         intro: "Operations on numbers below zero. Two negatives multiplied give a positive.",
+        visual: .numberLine,
         formulas: [
             Formula(key: "pre.neg.f1",
                     name: "Sign rules",
@@ -1886,6 +1892,7 @@ enum Curriculum {
         id: "stats.desc",
         title: "Mean, Median & Mode",
         intro: "Descriptive statistics summarize a data set so you can see its center and spread at a glance.",
+        visual: .barChart,
         formulas: [
             Formula(key: "stats.desc.f1",
                     name: "Mean",
@@ -2153,6 +2160,7 @@ enum Curriculum {
         id: "lin.vectors",
         title: "Vectors",
         intro: "Vectors describe quantities with size and direction, like movement on a grid.",
+        visual: .vectorPlane,
         formulas: [
             Formula(key: "lin.vectors.f1",
                     name: "Vector addition",
@@ -2448,6 +2456,7 @@ enum Curriculum {
         id: "fin.compound",
         title: "Compound Interest",
         intro: "Compound interest earns interest on the growing balance, so growth accelerates over time.",
+        visual: .compoundGrowth,
         formulas: [
             Formula(key: "fin.compound.f1",
                     name: "Compound annually",
