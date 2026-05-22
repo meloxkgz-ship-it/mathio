@@ -152,9 +152,12 @@ Zwei Minuten am Tag genügen. Keine Bestenlisten. Kein Tracking.
 
 ## App-Privacy
 
-Identisch zu en-US: **Es werden keine Daten erhoben.** Begründung im
-`PrivacyInfo.xcprivacy` einsehbar — gesamter Fortschritt liegt in
-`UserDefaults`, kein Server, keine Analytics.
+Der Lernfortschritt bleibt lokal in `UserDefaults`; Mathio betreibt keinen
+eigenen Analytics-Server. Nach Aktivierung von RevenueCat darf die alte Antwort
+**Es werden keine Daten erhoben** aber nicht unverändert bleiben: RevenueCat
+kann Kauf-/Belegdaten, Produktkennungen und eine anonyme App-Nutzerkennung zur
+Abo-Verwaltung verarbeiten. Vor einem RevenueCat-Release die App-Privacy-Antwort
+in App Store Connect anhand des RevenueCat Privacy Manifests aktualisieren.
 
 ---
 

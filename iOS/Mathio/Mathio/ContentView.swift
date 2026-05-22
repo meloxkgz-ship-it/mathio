@@ -1,13 +1,21 @@
 import SwiftUI
+import RevenueCat
 import StoreKit
 import UserNotifications
 import AudioToolbox
 
 // MARK: - Premium store
 //
-// Native StoreKit 2. Three subscription products keyed by App Store Connect ID.
-// Local testing uses Mathio.storekit. Production reads the same product IDs
-// from App Store Connect. No external dependencies.
+// RevenueCat-first subscription store. When a public RevenueCat SDK key is
+// present in `RevenueCatAPIKey`, offerings, purchases, restore, and entitlement
+// checks run through RevenueCat. Without a key, we keep the StoreKit 2 path as
+// a local fallback so screenshots, previews, and App Review override still work.
+
+enum PremiumPlan {
+    case weekly
+    case annual
+    case retention
+}
 
 @MainActor
 @Observable
@@ -16,6 +24,8 @@ final class PremiumStore {
     static let annualID    = "mathio_annual"
     static let retentionID = "mathio_retention"
     private static let allIDs: [String] = [weeklyID, annualID, retentionID]
+    private static let entitlementIDs = ["premium", "plus"]
+    private static var revenueCatConfigured = false
 
     /// `UserDefaults` key for the reviewer-override flag. Toggled by 7-tapping
     /// the version label in Settings — the documented reviewer demo path.
@@ -23,7 +33,8 @@ final class PremiumStore {
     private static let kReviewerOverride = "mathio.reviewer.override"
 
     /// True if a real subscription transaction is currently entitled.
-    private var entitlementActive: Bool = false
+    private var storeKitEntitlementActive: Bool = false
+    private var revenueCatEntitlementActive: Bool = false
 
     /// True if the reviewer-override flag is set in `UserDefaults`. Survives
     /// relaunches; cleared by tapping the version label again 7 times or by
@@ -32,20 +43,30 @@ final class PremiumStore {
 
     /// Public premium gate. Gives access if **either** the App Store reports
     /// an active entitlement **or** the reviewer-override flag is set.
-    var isPremium: Bool { entitlementActive || reviewerOverride }
+    var isPremium: Bool {
+        revenueCatEntitlementActive || storeKitEntitlementActive || reviewerOverride
+    }
 
-    var weekly:    Product?
-    var annual:    Product?
-    var retention: Product?
+    private(set) var revenueCatEnabled = false
+    private(set) var revenueCatMessage: String?
+
+    private var weekly:    StoreKit.Product?
+    private var annual:    StoreKit.Product?
+    private var retention: StoreKit.Product?
+    private var offerings: Offerings?
     var loaded: Bool = false
     var purchaseInFlight: Bool = false
 
     init() {
-        Task { [weak self] in
-            for await update in Transaction.updates {
-                if case .verified(let tx) = update {
-                    await tx.finish()
-                    await self?.refreshEntitlements()
+        revenueCatEnabled = Self.configureRevenueCatIfPossible()
+
+        if !revenueCatEnabled {
+            Task { [weak self] in
+                for await update in Transaction.updates {
+                    if case .verified(let tx) = update {
+                        await tx.finish()
+                        await self?.refreshEntitlements()
+                    }
                 }
             }
         }
@@ -53,8 +74,12 @@ final class PremiumStore {
     }
 
     func refresh() async {
-        await loadProducts()
-        await refreshEntitlements()
+        if revenueCatEnabled {
+            await refreshRevenueCat()
+        } else {
+            await loadProducts()
+            await refreshEntitlements()
+        }
         loaded = true
     }
 
@@ -66,9 +91,52 @@ final class PremiumStore {
         UserDefaults.standard.set(reviewerOverride, forKey: Self.kReviewerOverride)
     }
 
+    private static func configureRevenueCatIfPossible() -> Bool {
+        guard let apiKey = revenueCatAPIKey else { return false }
+        guard !revenueCatConfigured else { return true }
+
+        #if DEBUG
+        Purchases.logLevel = .debug
+        #else
+        Purchases.logLevel = .warn
+        #endif
+        Purchases.configure(withAPIKey: apiKey)
+        revenueCatConfigured = true
+        return true
+    }
+
+    private static var revenueCatAPIKey: String? {
+        let bundleValue = Bundle.main.object(forInfoDictionaryKey: "RevenueCatAPIKey") as? String
+        let envValue = ProcessInfo.processInfo.environment["REVENUECAT_API_KEY"]
+        return [envValue, bundleValue]
+            .compactMap { $0?.trimmingCharacters(in: .whitespacesAndNewlines) }
+            .first { !$0.isEmpty && !$0.contains("$(") && !$0.contains("REPLACE") && $0.hasPrefix("appl_") }
+    }
+
+    private func refreshRevenueCat() async {
+        do {
+            async let fetchedInfo = Purchases.shared.customerInfo()
+            async let fetchedOfferings = Purchases.shared.offerings()
+            let (customerInfo, offerings) = try await (fetchedInfo, fetchedOfferings)
+            self.offerings = offerings
+            apply(customerInfo: customerInfo)
+            revenueCatMessage = currentOffering == nil
+                ? "RevenueCat offering is missing."
+                : nil
+        } catch {
+            revenueCatMessage = error.localizedDescription
+        }
+    }
+
+    private func apply(customerInfo: CustomerInfo) {
+        revenueCatEntitlementActive = Self.entitlementIDs.contains {
+            customerInfo.entitlements[$0]?.isActive == true
+        }
+    }
+
     private func loadProducts() async {
         do {
-            let products = try await Product.products(for: Self.allIDs)
+            let products = try await StoreKit.Product.products(for: Self.allIDs)
             for product in products {
                 switch product.id {
                 case Self.weeklyID:    weekly = product
@@ -92,12 +160,44 @@ final class PremiumStore {
                 active = true
             }
         }
-        entitlementActive = active
+        storeKitEntitlementActive = active
     }
 
-    func purchase(_ product: Product) async {
+    func purchase(_ plan: PremiumPlan) async {
         purchaseInFlight = true
         defer { purchaseInFlight = false }
+
+        if revenueCatEnabled {
+            await purchaseRevenueCat(plan)
+        } else {
+            await purchaseStoreKit(plan)
+        }
+    }
+
+    private func purchaseRevenueCat(_ plan: PremiumPlan) async {
+        guard let package = package(for: plan) ?? package(for: .annual) else {
+            revenueCatMessage = "No RevenueCat package is available yet."
+            return
+        }
+
+        do {
+            let (_, customerInfo, userCancelled) = try await Purchases.shared.purchase(package: package)
+            guard !userCancelled else { return }
+            apply(customerInfo: customerInfo)
+        } catch {
+            revenueCatMessage = error.localizedDescription
+        }
+    }
+
+    private func purchaseStoreKit(_ plan: PremiumPlan) async {
+        let product: StoreKit.Product?
+        switch plan {
+        case .weekly:    product = weekly
+        case .annual:    product = annual
+        case .retention: product = retention ?? annual
+        }
+        guard let product else { return }
+
         do {
             let result = try await product.purchase()
             if case .success(let verification) = result,
@@ -111,8 +211,34 @@ final class PremiumStore {
     }
 
     func restore() async {
-        try? await AppStore.sync()
-        await refreshEntitlements()
+        if revenueCatEnabled {
+            do {
+                let customerInfo = try await Purchases.shared.restorePurchases()
+                apply(customerInfo: customerInfo)
+                revenueCatMessage = isPremium
+                    ? "Purchases restored."
+                    : "No active subscription found."
+            } catch {
+                revenueCatMessage = error.localizedDescription
+            }
+        } else {
+            try? await AppStore.sync()
+            await refreshEntitlements()
+        }
+    }
+
+    func price(for plan: PremiumPlan, fallback: String) -> String {
+        if let package = package(for: plan) {
+            return package.storeProduct.localizedPriceString
+        }
+
+        let product: StoreKit.Product?
+        switch plan {
+        case .weekly:    product = weekly
+        case .annual:    product = annual
+        case .retention: product = retention
+        }
+        return product?.displayPrice ?? fallback
     }
 
     /// Headline price line: "$1.15 / week" derived from the annual price.
@@ -120,6 +246,27 @@ final class PremiumStore {
         guard let p = annual else { return nil }
         let perWeek = (p.price as NSDecimalNumber).doubleValue / 52.0
         return Decimal(perWeek).formatted(p.priceFormatStyle.precision(.fractionLength(2)))
+    }
+
+    private var currentOffering: Offering? {
+        offerings?.current ?? offerings?.offering(identifier: "default")
+    }
+
+    private func package(for plan: PremiumPlan) -> Package? {
+        switch plan {
+        case .weekly:
+            return currentOffering?.weekly ?? package(productID: Self.weeklyID)
+        case .annual:
+            return currentOffering?.annual ?? package(productID: Self.annualID)
+        case .retention:
+            return package(productID: Self.retentionID)
+        }
+    }
+
+    private func package(productID: String) -> Package? {
+        currentOffering?.availablePackages.first {
+            $0.storeProduct.productIdentifier == productID
+        }
     }
 }
 
@@ -2160,9 +2307,9 @@ struct PaywallView: View {
         }
     }
 
-    private var weeklyPrice: String    { premiumStore.weekly?.displayPrice ?? "$12.99" }
-    private var annualPrice: String    { premiumStore.annual?.displayPrice ?? "$59.99" }
-    private var retentionPrice: String { premiumStore.retention?.displayPrice ?? "$44.99" }
+    private var weeklyPrice: String    { premiumStore.price(for: .weekly, fallback: "$12.99") }
+    private var annualPrice: String    { premiumStore.price(for: .annual, fallback: "$59.99") }
+    private var retentionPrice: String { premiumStore.price(for: .retention, fallback: "$44.99") }
 
     /// Inline auto-renewal disclaimer that meets App Store guideline 3.1.2.
     /// Must remain visible on the paywall (not behind a sheet).
@@ -2218,13 +2365,13 @@ struct PaywallView: View {
 
     @MainActor
     private func purchase() async {
-        let target: Product?
+        let target: PremiumPlan
         switch mode {
-        case .retention: target = premiumStore.retention ?? premiumStore.annual
+        case .retention:
+            target = .retention
         default:
-            target = selected == .annual ? premiumStore.annual : premiumStore.weekly
+            target = selected == .annual ? .annual : .weekly
         }
-        guard let target else { dismiss(); return }
         await premiumStore.purchase(target)
         if premiumStore.isPremium { dismiss() }
     }
