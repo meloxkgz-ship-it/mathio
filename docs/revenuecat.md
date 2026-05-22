@@ -44,6 +44,27 @@ The build setting is copied into `RevenueCatAPIKey` in the generated Info.plist.
 If the key is empty, missing, a placeholder, or not an `appl_` key, the app uses
 the legacy StoreKit path instead of configuring RevenueCat.
 
+Before uploading a RevenueCat-enabled release build, run:
+
+```bash
+REVENUECAT_API_KEY=appl_your_public_key_here \
+  docs/aso/scripts/verify_revenuecat_release.sh \
+  ~/Library/Developer/Xcode/DerivedData/.../Build/Products/Release-iphoneos/Mathio.app
+```
+
+The preflight fails if the key is missing, is not an iOS public SDK key, still
+looks like a placeholder, or was not copied into the built app's Info.plist.
+
+RevenueCat's current setup docs require configuring the SDK once with the
+platform public SDK key, and the dashboard must contain products, entitlements,
+and offerings before the SDK can serve purchases. See RevenueCat's iOS
+installation, SDK configuration, quickstart, and Apple app privacy docs:
+
+- https://www.revenuecat.com/docs/getting-started/installation/ios
+- https://www.revenuecat.com/docs/getting-started/configuring-sdk
+- https://www.revenuecat.com/docs/getting-started/quickstart
+- https://www.revenuecat.com/docs/platform-resources/apple-platform-resources/apple-app-privacy
+
 ## Runtime behavior
 
 - App launch configures RevenueCat once when a public SDK key is present.

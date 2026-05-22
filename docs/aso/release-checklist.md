@@ -14,6 +14,9 @@ Run top-to-bottom before tapping **Submit for Review** in App Store Connect.
 - [x] `TARGETED_DEVICE_FAMILY = 1,2` (iPhone + iPad)
 - [x] `PrivacyInfo.xcprivacy` — `NSPrivacyTracking=false`, no collected types
 - [x] `Mathio.storekit` — 3 products, intro offers, family sharing on annual
+- [ ] RevenueCat dashboard — iOS public SDK key starts with `appl_`; entitlement
+      `premium` or `plus`; default offering includes `mathio_annual` and
+      `mathio_weekly`; optional custom package for `mathio_retention`
 - [x] AppIcon: 1024×1024 universal (Xcode auto-generates all device sizes from this)
 - [x] `URL(string:)!` force-unwraps eliminated → centralised `Links` enum
 
@@ -27,6 +30,7 @@ xcodebuild -scheme Mathio \
 ```
 
 - [ ] **Release** config compiles clean (Debug works; verify Release once)
+- [ ] `REVENUECAT_API_KEY=appl_... docs/aso/scripts/verify_revenuecat_release.sh <Release .app path>`
 - [ ] Zero warnings in Issue Navigator
 - [ ] Run on physical device once — touch every flow:
   - Onboarding → Topic → Lesson → Practice (correct + wrong)
