@@ -1,3 +1,32 @@
+# Mathio v1.0.4 — submitted to App Review
+
+> Verified on 2026-05-23.
+> App ID `6767033115`, Version ID `847552a7-78de-4471-9fb1-c08397838ecf`,
+> Build ID `e3f5ee69-ea3b-4b43-904d-6de30ca9a2a3`, Submission ID
+> `96b6f2c4-d883-498e-9bc7-1dadfa09cda8`.
+
+Current review state:
+
+```bash
+asc --profile industrietrainer submit status \
+  --id 96b6f2c4-d883-498e-9bc7-1dadfa09cda8
+```
+
+Latest result: `WAITING_FOR_REVIEW`.
+
+What was submitted:
+
+| Resource | Detail |
+|---|---|
+| Binary | `1.0.4 (6)` |
+| RevenueCat | Project `a4d57e90`, app `appcfdadb3b91`, entitlement `premium`, offering `default` |
+| Build config | Public iOS SDK key copied into `RevenueCatAPIKey` in `Info.plist` |
+| Metadata | EN + DE descriptions, keywords, promo text, and what's new |
+| Screenshots | EN + DE iPhone screenshots uploaded, 6 each |
+| App Store state | `WAITING_FOR_REVIEW` |
+
+## Historical v1.0 notes
+
 # Mathio v1.0 — final state, **only Web-UI clicks left**
 
 > Live in App Store Connect, verified at the time of this commit.
