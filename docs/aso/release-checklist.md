@@ -5,8 +5,8 @@ Run top-to-bottom before tapping **Submit for Review** in App Store Connect.
 ## 1 — Xcode project sanity
 
 - [x] Bundle ID: `com.kgz.Mathio`
-- [x] Marketing version: `1.0`
-- [x] Build number: `1` (bump for every TestFlight upload)
+- [x] Marketing version: `1.0.3`
+- [x] Build number: `6` (bump for every TestFlight upload)
 - [x] iOS Deployment Target: `18.0` (intentional per README)
 - [x] `INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO` (skips export-compliance dialog)
 - [x] `INFOPLIST_KEY_LSApplicationCategoryType = public.app-category.education`
@@ -14,9 +14,10 @@ Run top-to-bottom before tapping **Submit for Review** in App Store Connect.
 - [x] `TARGETED_DEVICE_FAMILY = 1,2` (iPhone + iPad)
 - [x] `PrivacyInfo.xcprivacy` — `NSPrivacyTracking=false`, no collected types
 - [x] `Mathio.storekit` — 3 products, intro offers, family sharing on annual
-- [ ] RevenueCat dashboard — iOS public SDK key starts with `appl_`; entitlement
-      `premium` or `plus`; default offering includes `mathio_annual` and
-      `mathio_weekly`; optional custom package for `mathio_retention`
+- [x] RevenueCat dashboard — project `a4d57e90`, App Store app
+      `appcfdadb3b91`, public SDK key starts with `appl_`, entitlement
+      `premium`, default offering includes `mathio_weekly`, `mathio_annual`,
+      and custom package `retention` for `mathio_retention`
 - [x] AppIcon: 1024×1024 universal (Xcode auto-generates all device sizes from this)
 - [x] `URL(string:)!` force-unwraps eliminated → centralised `Links` enum
 
@@ -29,8 +30,8 @@ xcodebuild -scheme Mathio \
   -configuration Release build CODE_SIGNING_ALLOWED=NO
 ```
 
-- [ ] **Release** config compiles clean (Debug works; verify Release once)
-- [ ] `REVENUECAT_API_KEY=appl_... docs/aso/scripts/verify_revenuecat_release.sh <Release .app path>`
+- [x] **Release** config compiles clean
+- [x] `docs/aso/scripts/verify_revenuecat_release.sh <Release .app path>`
 - [ ] Zero warnings in Issue Navigator
 - [ ] Run on physical device once — touch every flow:
   - Onboarding → Topic → Lesson → Practice (correct + wrong)

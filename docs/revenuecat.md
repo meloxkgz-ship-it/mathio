@@ -8,12 +8,15 @@ screenshots and reviewer override continue to work.
 
 - Bundle ID: `com.kgz.Mathio`
 - App Store Connect app ID: `6767033115`
+- RevenueCat project ID: `a4d57e90`
+- RevenueCat App Store app ID: `appcfdadb3b91`
 - RevenueCat entitlement IDs accepted by the app: `premium` or `plus`
 - App Store subscription group: `Premium` (`22071889`)
 
 ## Products
 
-Attach these App Store products to the RevenueCat entitlement:
+These App Store products are imported into the RevenueCat App Store app and
+attached to the `premium` entitlement:
 
 | Product ID | App Store subscription ID | RevenueCat package | App Store state | Purpose |
 | --- | --- | --- | --- | --- |
@@ -23,15 +26,22 @@ Attach these App Store products to the RevenueCat entitlement:
 
 Verified with `asc subscriptions list --group-id 22071889` on 2026-05-23.
 
-Create or select the default RevenueCat offering and add annual + weekly
-packages. Add the retention product as a custom package if it should be served
-remotely; otherwise the app falls back to the annual package.
+Default offering `default` (`ofrng2e6dec0fa8`) packages:
+
+| Package identifier | RevenueCat package | Product ID |
+| --- | --- | --- |
+| `$rc_weekly` | Weekly | `mathio_weekly` |
+| `$rc_annual` | Annual | `mathio_annual` |
+| `retention` | Custom | `mathio_retention` |
 
 ## SDK key
 
 Only use the iOS public SDK key from RevenueCat. Do not commit secret API keys.
+The Mathio App Store configuration uses public SDK key
+`appl_lVxesEhigXwlheVPosBJrNbIXyE`.
 
-Set the key at build time:
+The key is stored in the Xcode build setting `REVENUECAT_API_KEY`. You can still
+override it at build time:
 
 ```bash
 xcodebuild \
@@ -40,15 +50,14 @@ xcodebuild \
   REVENUECAT_API_KEY=appl_your_public_key_here
 ```
 
-The build setting is copied into `RevenueCatAPIKey` in the generated Info.plist.
+The build setting is copied into `RevenueCatAPIKey` in the app Info.plist.
 If the key is empty, missing, a placeholder, or not an `appl_` key, the app uses
 the legacy StoreKit path instead of configuring RevenueCat.
 
 Before uploading a RevenueCat-enabled release build, run:
 
 ```bash
-REVENUECAT_API_KEY=appl_your_public_key_here \
-  docs/aso/scripts/verify_revenuecat_release.sh \
+docs/aso/scripts/verify_revenuecat_release.sh \
   ~/Library/Developer/Xcode/DerivedData/.../Build/Products/Release-iphoneos/Mathio.app
 ```
 
