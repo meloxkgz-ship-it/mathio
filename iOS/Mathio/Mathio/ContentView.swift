@@ -554,7 +554,7 @@ struct HomeView: View {
     private var nextUp: (Topic, Lesson)? { store.nextLesson(in: topics, premium: premiumStore.isPremium) }
     private var reviewCount: Int { store.reviewQueue(in: topics).count }
     private var lessonCount: Int { topics.reduce(0) { $0 + $1.lessons.count } }
-    private var questionCount: Int { topics.reduce(0) { $0 + $1.lessons.reduce(0) { $0 + $1.questions.count } } }
+    private var questionCount: Int { topics.reduce(0) { $0 + $1.questionCount } }
     private var monthsOfPractice: Int {
         max(1, Int(ceil(Double(questionCount) / Double(max(settings.dailyGoal, 1)) / 30.0)))
     }
@@ -799,7 +799,7 @@ struct TopicRow: View {
                 }
                 VStack(alignment: .leading, spacing: 6) {
                     Text(topic.title).font(.titleM).foregroundStyle(Palette.ink)
-                    Text("\(topic.lessons.count) lessons · \(Int(mastery * 100))%")
+                    Text("\(topic.lessons.count) lessons · \(topic.questionCount) questions · \(Int(mastery * 100))%")
                         .font(.bodyM).foregroundStyle(Palette.inkSoft)
                     ProgressBar(progress: mastery, color: topic.color, height: 4)
                 }
@@ -835,6 +835,12 @@ struct TopicView: View {
                 }
                 .padding(.top, 4)
 
+                HStack(spacing: 8) {
+                    metricPill(value: "\(topic.lessons.count)", label: "Lessons")
+                    metricPill(value: "\(topic.questionCount)", label: "Questions")
+                    metricPill(value: "\(Int(store.mastery(for: topic) * 100))%", label: "Mastery")
+                }
+
                 ForEach(Array(topic.lessons.enumerated()), id: \.element.id) { index, lesson in
                     let locked = !premiumStore.isPremium && index > 0
                     Button {
@@ -860,12 +866,42 @@ struct TopicView: View {
             PaywallView(premiumStore: premiumStore, mode: .upgrade)
         }
     }
+
+    private func metricPill(value: String, label: LocalizedStringResource) -> some View {
+        VStack(alignment: .leading, spacing: 2) {
+            Text(value)
+                .font(.titleM)
+                .foregroundStyle(Palette.ink)
+                .lineLimit(1)
+                .minimumScaleFactor(0.75)
+            Text(label)
+                .font(.caption)
+                .foregroundStyle(Palette.inkSoft)
+                .lineLimit(1)
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .padding(.horizontal, 12)
+        .padding(.vertical, 10)
+        .background(Palette.surfaceMuted, in: RoundedRectangle(cornerRadius: 14, style: .continuous))
+        .accessibilityElement(children: .combine)
+        .accessibilityLabel(Text("\(value) \(label)"))
+    }
+}
+
+extension Topic {
+    var questionCount: Int {
+        lessons.reduce(0) { $0 + $1.questions.count }
+    }
 }
 
 extension Lesson {
     /// First lesson of a topic is always free.
     func isFree(in topic: Topic) -> Bool {
         topic.lessons.first?.id == self.id
+    }
+
+    var estimatedMinutes: Int {
+        max(3, questions.count)
     }
 }
 
@@ -881,7 +917,7 @@ struct LessonRow: View {
                 ProgressRing(progress: mastery, size: 36, lineWidth: 4, color: color)
                 VStack(alignment: .leading, spacing: 4) {
                     Text(lesson.title).font(.titleM).foregroundStyle(Palette.ink)
-                    Text("\(lesson.questions.count) questions")
+                    Text("\(lesson.questions.count) questions · \(lesson.estimatedMinutes) min")
                         .font(.bodyM).foregroundStyle(Palette.inkSoft)
                 }
                 Spacer()
@@ -1748,8 +1784,12 @@ struct StatsView: View {
         store.answered.values.reduce(0) { $0 + $1.correct }
     }
     private var overallMastery: Double {
-        guard !topics.isEmpty else { return 0 }
-        return topics.reduce(0.0) { $0 + store.mastery(for: $1) } / Double(topics.count)
+        let totalQuestions = topics.reduce(0) { $0 + $1.questionCount }
+        guard totalQuestions > 0 else { return 0 }
+        let weighted = topics.reduce(0.0) { total, topic in
+            total + store.mastery(for: topic) * Double(topic.questionCount)
+        }
+        return weighted / Double(totalQuestions)
     }
     private var weakest: Topic? {
         topics.filter { store.mastery(for: $0) < 1.0 }
