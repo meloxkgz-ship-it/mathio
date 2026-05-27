@@ -10745,6 +10745,40 @@
         }
       }
     },
+    "A quick rating helps more learners find it.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eine kurze Bewertung hilft mehr Lernenden, Mathio zu finden."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una valoración rápida ayuda a que más estudiantes encuentren Mathio."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Une note rapide aide davantage d’apprenants à trouver Mathio."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una breve valutazione aiuta più studenti a trovare Mathio."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uma avaliação rápida ajuda mais estudantes a encontrar o Mathio."
+          }
+        }
+      }
+    },
     "A quieter way to get better at math.": {
       "localizations": {
         "de": {
@@ -12951,6 +12985,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Álgebra"
+          }
+        }
+      }
+    },
+    "Algebra Foundation": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Algebra-Grundlagen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fundamentos de álgebra"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bases de l’algèbre"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fondamenti di algebra"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fundamentos de álgebra"
           }
         }
       }
@@ -15637,6 +15705,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Cálculo"
+          }
+        }
+      }
+    },
+    "Calculus Starter": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Analysis-Einstieg"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inicio de cálculo"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Débuter en analyse"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Introduzione all’analisi"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Introdução ao cálculo"
           }
         }
       }
@@ -21591,6 +21693,40 @@
         }
       }
     },
+    "Enjoying Mathio?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gefällt dir Mathio?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "¿Te gusta Mathio?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vous aimez Mathio ?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ti piace Mathio?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Está gostando do Mathio?"
+          }
+        }
+      }
+    },
     "Equal": {
       "localizations": {
         "de": {
@@ -21655,6 +21791,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Equações e expressões"
+          }
+        }
+      }
+    },
+    "Equations, lines, factoring": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gleichungen, Geraden, Faktorisieren"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ecuaciones, rectas, factorización"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Équations, droites, factorisation"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Equazioni, rette, fattorizzazione"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Equações, retas, fatoração"
           }
         }
       }
@@ -22335,6 +22505,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Exatamente dois"
+          }
+        }
+      }
+    },
+    "Exam Essentials": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prüfungs-Basics"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Esenciales para exámenes"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Essentiels pour les examens"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Essenziali per l’esame"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Essenciais para provas"
           }
         }
       }
@@ -25127,6 +25331,40 @@
         }
       }
     },
+    "Guided paths": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Geführte Lernpfade"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rutas guiadas"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Parcours guidés"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Percorsi guidati"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trilhas guiadas"
+          }
+        }
+      }
+    },
     "Gym visitors are not typical of everyone.": {
       "localizations": {
         "de": {
@@ -27575,6 +27813,40 @@
         }
       }
     },
+    "Interest, loans, inflation": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zinsen, Kredite, Inflation"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Intereses, préstamos, inflación"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Intérêts, prêts, inflation"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Interessi, prestiti, inflazione"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Juros, empréstimos, inflação"
+          }
+        }
+      }
+    },
     "Interior angles": {
       "localizations": {
         "de": {
@@ -28761,6 +29033,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Limites"
+          }
+        }
+      }
+    },
+    "Limits, derivatives, integrals": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Grenzwerte, Ableitungen, Integrale"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Límites, derivadas, integrales"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Limites, dérivées, intégrales"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Limiti, derivate, integrali"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Limites, derivadas, integrais"
           }
         }
       }
@@ -30261,6 +30567,40 @@
         }
       }
     },
+    "Mixed practice across core topics": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gemischtes Training zu Kernthemen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Práctica mixta de temas clave"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Entraînement mixte sur les notions clés"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Allenamento misto sui temi principali"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prática mista dos temas principais"
+          }
+        }
+      }
+    },
     "Mode": {
       "localizations": {
         "de": {
@@ -30393,6 +30733,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Módulo mantém o restante."
+          }
+        }
+      }
+    },
+    "Money Math": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Finanzmathe"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Matemáticas financieras"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Maths financières"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Matematica finanziaria"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Matemática financeira"
           }
         }
       }
@@ -32195,6 +32569,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Vetores diferentes de zero com produto escalar 0 são perpendiculares."
+          }
+        }
+      }
+    },
+    "Not now": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nicht jetzt"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ahora no"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pas maintenant"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Non ora"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Agora não"
           }
         }
       }
@@ -36479,6 +36887,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Intervalo = max - min, então mede a largura do intervalo de dados"
+          }
+        }
+      }
+    },
+    "Rate Mathio": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mathio bewerten"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Valorar Mathio"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Noter Mathio"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Valuta Mathio"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Avaliar Mathio"
           }
         }
       }

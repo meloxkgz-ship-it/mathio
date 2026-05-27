@@ -379,24 +379,35 @@ struct DailyGoalView: View {
     var body: some View {
         let pct = goal > 0 ? Double(progress) / Double(goal) : 0
         let met = progress >= goal
-        return HStack(spacing: 14) {
-            ZStack {
-                ProgressRing(progress: min(1, pct), size: 52, lineWidth: 5,
-                             color: met ? Palette.success : Palette.terracotta)
-                Image(systemName: met ? "checkmark" : "target")
-                    .font(.system(size: 18, weight: .semibold))
-                    .foregroundStyle(met ? Palette.success : Palette.terracotta)
+        return Card(padding: 16, background: met ? Palette.amberSoft : Palette.surface) {
+            HStack(spacing: 14) {
+                ZStack {
+                    ProgressRing(progress: min(1, pct), size: 54, lineWidth: 5,
+                                 color: met ? Palette.success : Palette.terracotta)
+                    Image(systemName: met ? "checkmark" : "target")
+                        .font(.system(size: 18, weight: .semibold))
+                        .foregroundStyle(met ? Palette.success : Palette.terracotta)
+                }
+                VStack(alignment: .leading, spacing: 3) {
+                    Text("Today")
+                        .font(.label).textCase(.uppercase)
+                        .tracking(1.2)
+                        .foregroundStyle(Palette.inkFaint)
+                    Text(met ? "Daily goal complete" : "\(progress) of \(goal) correct")
+                        .font(.titleM)
+                        .foregroundStyle(Palette.ink)
+                    Text(met ? "Good moment to stop or continue your streak." : "One clean session is enough.")
+                        .font(.bodyM)
+                        .foregroundStyle(Palette.inkSoft)
+                        .fixedSize(horizontal: false, vertical: true)
+                }
+                Spacer()
+                if met {
+                    Image(systemName: "sparkles")
+                        .font(.system(size: 18, weight: .semibold))
+                        .foregroundStyle(Palette.terracotta)
+                }
             }
-            VStack(alignment: .leading, spacing: 2) {
-                Text("Today")
-                    .font(.label).textCase(.uppercase)
-                    .tracking(1.2)
-                    .foregroundStyle(Palette.inkFaint)
-                Text(met ? "Goal reached. Nice." : "\(progress) of \(goal) correct")
-                    .font(.titleM)
-                    .foregroundStyle(Palette.ink)
-            }
-            Spacer()
         }
         .accessibilityElement(children: .combine)
         .accessibilityLabel(Text(met

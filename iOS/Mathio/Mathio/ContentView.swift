@@ -551,6 +551,7 @@ struct HomeView: View {
     @State private var showReview = false
 
     private var topics: [Topic] { Curriculum.topics }
+    private var learningPaths: [LearningPath] { LearningPath.defaultPaths }
     private var nextUp: (Topic, Lesson)? { store.nextLesson(in: topics, premium: premiumStore.isPremium) }
     private var reviewCount: Int { store.reviewQueue(in: topics).count }
     private var lessonCount: Int { topics.reduce(0) { $0 + $1.lessons.count } }
@@ -571,6 +572,7 @@ struct HomeView: View {
                     if reviewCount > 0 { reviewBanner }
                     nextUpCard
                     learningPlanCard
+                    learningPathsSection
                     topicsList
                     Spacer(minLength: 40)
                 }
@@ -728,6 +730,23 @@ struct HomeView: View {
         }
     }
 
+    private var learningPathsSection: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            SectionLabel(title: "Guided paths").padding(.leading, 4)
+            ForEach(learningPaths) { path in
+                Button { open(path) } label: {
+                    LearningPathRow(
+                        path: path,
+                        progress: progress(for: path),
+                        locked: firstLesson(in: path).map(isLocked(_:)) ?? false
+                    )
+                }
+                .buttonStyle(.plain)
+                .accessibilityElement(children: .combine)
+            }
+        }
+    }
+
     private var learningPlanCard: some View {
         Card(padding: 18, background: Palette.surfaceMuted) {
             VStack(alignment: .leading, spacing: 14) {
@@ -769,6 +788,33 @@ struct HomeView: View {
             .background(Palette.surface, in: Capsule())
     }
 
+    private func progress(for path: LearningPath) -> Double {
+        guard !path.lessons.isEmpty else { return 0 }
+        return path.lessons.reduce(0.0) { $0 + store.mastery(for: $1) } / Double(path.lessons.count)
+    }
+
+    private func topic(containing lesson: Lesson) -> Topic? {
+        topics.first { $0.lessons.contains(lesson) }
+    }
+
+    private func firstLesson(in path: LearningPath) -> Lesson? {
+        path.lessons.first { store.mastery(for: $0) < 1.0 } ?? path.lessons.first
+    }
+
+    private func isLocked(_ lesson: Lesson) -> Bool {
+        guard let topic = topic(containing: lesson) else { return false }
+        return !premiumStore.isPremium && !lesson.isFree(in: topic)
+    }
+
+    private func open(_ path: LearningPath) {
+        guard let lesson = firstLesson(in: path) else { return }
+        if isLocked(lesson) {
+            showPaywall = true
+        } else {
+            presented = lesson
+        }
+    }
+
     /// Build a synthetic lesson from the spaced-repetition queue.
     private func reviewLesson() -> Lesson {
         let qs = store.reviewQueue(in: topics, limit: 10)
@@ -779,6 +825,85 @@ struct HomeView: View {
             formulas: [],
             questions: qs
         )
+    }
+}
+
+struct LearningPath: Identifiable {
+    let id: String
+    let title: LocalizedStringResource
+    let subtitle: LocalizedStringResource
+    let icon: String
+    let color: Color
+    let lessons: [Lesson]
+
+    static let defaultPaths: [LearningPath] = [
+        LearningPath(
+            id: "algebra-foundation",
+            title: "Algebra Foundation",
+            subtitle: "Equations, lines, factoring",
+            icon: "function",
+            color: Palette.algebra,
+            lessons: [Curriculum.linearEquations, Curriculum.linesAndSlope, Curriculum.factoring,
+                      Curriculum.inequalities, Curriculum.systems]
+        ),
+        LearningPath(
+            id: "calculus-starter",
+            title: "Calculus Starter",
+            subtitle: "Limits, derivatives, integrals",
+            icon: "chart.xyaxis.line",
+            color: Palette.calculus,
+            lessons: [Curriculum.limits, Curriculum.derivatives, Curriculum.chainRule,
+                      Curriculum.integrals, Curriculum.definiteIntegrals]
+        ),
+        LearningPath(
+            id: "exam-essentials",
+            title: "Exam Essentials",
+            subtitle: "Mixed practice across core topics",
+            icon: "checklist",
+            color: Palette.terracotta,
+            lessons: [Curriculum.preAlgFractions, Curriculum.linearEquations, Curriculum.pythagoras,
+                      Curriculum.trigBasics, Curriculum.descriptiveStats]
+        ),
+        LearningPath(
+            id: "money-math",
+            title: "Money Math",
+            subtitle: "Interest, loans, inflation",
+            icon: "banknote",
+            color: Palette.trig,
+            lessons: [Curriculum.simpleInterest, Curriculum.compoundInterest, Curriculum.budgeting,
+                      Curriculum.inflationRealValue, Curriculum.loansPayments]
+        )
+    ]
+}
+
+struct LearningPathRow: View {
+    let path: LearningPath
+    let progress: Double
+    let locked: Bool
+
+    var body: some View {
+        Card(padding: 16) {
+            HStack(spacing: 14) {
+                ZStack {
+                    Circle().fill(path.color.opacity(0.15)).frame(width: 46, height: 46)
+                    Image(systemName: path.icon)
+                        .font(.system(size: 19, weight: .semibold))
+                        .foregroundStyle(path.color)
+                }
+                VStack(alignment: .leading, spacing: 5) {
+                    Text(path.title)
+                        .font(.titleM)
+                        .foregroundStyle(Palette.ink)
+                    Text(path.subtitle)
+                        .font(.bodyM)
+                        .foregroundStyle(Palette.inkSoft)
+                    ProgressBar(progress: progress, color: path.color, height: 4)
+                }
+                Spacer()
+                Image(systemName: locked ? "lock.fill" : "arrow.right")
+                    .foregroundStyle(Palette.inkFaint)
+            }
+        }
     }
 }
 
@@ -1271,6 +1396,7 @@ struct PracticeView: View {
     @State private var sessionCorrect: Int = 0
     @State private var showQuitConfirm: Bool = false
     @State private var didCelebrate: Bool = false
+    @State private var hideReviewOffer: Bool = false
 
     enum AnswerState: Equatable { case pending, correct, incorrect }
 
@@ -1484,6 +1610,9 @@ struct PracticeView: View {
                         .font(.titleM).foregroundStyle(Palette.terracotta)
                         .padding(.top, -8)
                 }
+                if shouldShowReviewOffer {
+                    reviewOfferCard
+                }
                 PrimaryButton(title: "Done", icon: "checkmark") { dismiss() }
                     .padding(.top, 12)
             }
@@ -1500,6 +1629,46 @@ struct PracticeView: View {
 
     private var isPerfect: Bool {
         sessionCorrect == lesson.questions.count && lesson.questions.count > 0
+    }
+
+    private var shouldShowReviewOffer: Bool {
+        !hideReviewOffer && ReviewPromptGate.shouldOfferAfterCompletion(
+            store: store,
+            sessionCorrect: sessionCorrect,
+            questionCount: lesson.questions.count,
+            isReview: isReview
+        )
+    }
+
+    private var reviewOfferCard: some View {
+        Card(padding: 16, background: Palette.surfaceMuted) {
+            VStack(alignment: .leading, spacing: 12) {
+                HStack(spacing: 10) {
+                    Image(systemName: "heart.fill")
+                        .foregroundStyle(Palette.terracotta)
+                    VStack(alignment: .leading, spacing: 2) {
+                        Text("Enjoying Mathio?")
+                            .font(.titleM)
+                            .foregroundStyle(Palette.ink)
+                        Text("A quick rating helps more learners find it.")
+                            .font(.bodyM)
+                            .foregroundStyle(Palette.inkSoft)
+                    }
+                }
+                HStack(spacing: 10) {
+                    SecondaryButton(title: "Not now") {
+                        ReviewPromptGate.markPrompted()
+                        hideReviewOffer = true
+                    }
+                    PrimaryButton(title: "Rate Mathio", icon: "star.fill") {
+                        ReviewPromptGate.markPrompted()
+                        hideReviewOffer = true
+                        requestReview()
+                    }
+                }
+            }
+        }
+        .transition(.opacity.combined(with: .move(edge: .bottom)))
     }
 
     private var ribbon: String {
@@ -1557,18 +1726,8 @@ struct PracticeView: View {
         if isCorrect { sessionCorrect += 1 }
         store.record(questionId: q.id, correct: isCorrect)
 
-        // Ask for an App Store rating once per version, **after** a real
-        // success moment (correct answer + 3+ day streak + ≥ 10 lifetime
-        // correct answers). Apple itself caps prompts to ~3/year per user.
-        if isCorrect, ReviewPromptGate.shouldPrompt(store: store) {
-            ReviewPromptGate.markPrompted()
-            // Defer past the answer-reveal animation so the prompt doesn't
-            // collide with the green "Correct!" state change.
-            Task { @MainActor in
-                try? await Task.sleep(for: .seconds(0.9))
-                requestReview()
-            }
-        }
+        // Review prompts are intentionally delayed until the completion screen,
+        // after the user has felt the full value moment.
     }
 
     private func advance() {
