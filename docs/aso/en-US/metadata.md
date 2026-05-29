@@ -18,10 +18,9 @@ data shows brand-name searches are saturated. For launch, keep clean.
 ## Subtitle (30 max)
 
 ```
-Algebra, geometry & calculus
+Math homework & exam prep
 ```
-**28 / 30** — adds the three biggest topic-search terms to Apple's index
-(brand name already covers "math").
+**25 / 30** — targets higher-intent searches from students and parents.
 
 Alternates tested for char-count:
 - `Daily math practice trainer` (27) — softer, less keyword-rich
@@ -35,9 +34,9 @@ Alternates tested for char-count:
 ## Keywords (100 max, comma-separated, no spaces)
 
 ```
-mathe,maths,algebra,calculus,geometry,trigonometry,fractions,equations,formulas,homework,exam,tutor
+maths,algebra,calculus,geometry,trigonometry,statistics,homework,exam,solver,tutor,finance
 ```
-**98 / 100**
+**90 / 100**
 
 Reasoning:
 - `math` is implied by brand and subtitle → use less-covered variants
@@ -69,7 +68,13 @@ Rotation ideas (swap monthly):
 ```
 Math, made simple.
 
-Mathio is a calm, focused math trainer for algebra, geometry, calculus, and trigonometry. No distractions. No leaderboards. Just you, clear explanations, and a daily streak.
+Mathio is a calm, focused math trainer for school, homework, exam prep, and self-study. It covers algebra, geometry, calculus, trigonometry, statistics, financial math, linear algebra, and discrete math. No distractions. No leaderboards. Just you, clear explanations, and a daily streak.
+
+WHO MATHIO IS FOR
+• Students who need structured practice for homework, quizzes, finals, SAT-style prep, or university foundations
+• Parents who want a clear math practice app without random drills or noisy gamification
+• Self-learners who want to rebuild fundamentals before moving into algebra, calculus, statistics, or finance
+• Anyone who prefers short daily sessions instead of long, unfocused study blocks
 
 ▸ ADAPTIVE LESSONS
 We pick the next topic for you based on your mastery — never wasting time on what you already know.
@@ -89,18 +94,18 @@ Bookmark formulas as you learn them. Bilingual reference always one tap away.
 ▸ NO LATEX KEYBOARD
 Just type plain text — `6x+2`, `sqrt(2)`, `pi` — and we parse it. No special symbols required.
 
-▸ OFFLINE-FIRST
-Everything stored on your device. No tracking, no analytics, no third-party SDKs. Audit our privacy manifest in the App Store.
+▸ PRIVACY-CONSCIOUS
+Learning progress stays on your device. Mathio does not run ads or sell personal data. RevenueCat is used only for subscription entitlement validation.
 
 ▸ DARK MODE + ACCESSIBILITY
 Full semantic palette adapts to system. VoiceOver labels on every interactive element, including spoken-form math.
 
-▸ GERMAN + ENGLISH
-Fully localised, including formulas and step-by-step explanations.
+▸ MULTI-LANGUAGE LEARNING
+Available in English, German, Spanish, French, Italian, and Brazilian Portuguese, including formulas and step-by-step explanations.
 
 — TOPICS —
 Pre-Algebra · Algebra · Geometry · Trigonometry · Calculus
-21 lessons, 105 hand-crafted questions across multiple-choice, free-answer, and true/false formats. From fractions, exponents, and logarithms through derivatives, integrals, and trig identities.
+61 lessons, 305 hand-crafted questions across multiple-choice, free-answer, and true/false formats. From fractions, exponents, and logarithms through derivatives, integrals, statistics, vectors, budgeting, correlation, optimization, and logic.
 
 — SUBSCRIPTION —
 Mathio is free to try. Unlock all topics with:

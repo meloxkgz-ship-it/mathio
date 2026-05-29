@@ -1463,6 +1463,74 @@
         }
       }
     },
+    "0.0062 = 6.2 × 10⁻³": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0.0062 = 6.2 × 10⁻³"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0.0062 = 6.2 × 10⁻³"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0.0062 = 6.2 × 10⁻³"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0.0062 = 6.2 × 10⁻³"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0.0062 = 6.2 × 10⁻³"
+          }
+        }
+      }
+    },
+    "0.0062 → 6.2 needs three moves right": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0.0062 → 6.2 needs three moves right"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0.0062 → 6.2 needs three moves right"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0.0062 → 6.2 needs three moves right"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0.0062 → 6.2 needs three moves right"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0.0062 → 6.2 needs three moves right"
+          }
+        }
+      }
+    },
     "0.07": {
       "localizations": {
         "de": {
@@ -1493,6 +1561,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "0.07"
+          }
+        }
+      }
+    },
+    "0.072": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0.072"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0.072"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0.072"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0.072"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0.072"
           }
         }
       }
@@ -1765,6 +1867,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "0.707 > 0.7 > 0.077 > 0.07"
+          }
+        }
+      }
+    },
+    "0.72": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0.72"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0.72"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0.72"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0.72"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0.72"
           }
         }
       }
@@ -2449,6 +2585,40 @@
         }
       }
     },
+    "1000 = 10³": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1000 = 10³"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1000 = 10³"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1000 = 10³"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1000 = 10³"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1000 = 10³"
+          }
+        }
+      }
+    },
     "1000 · 0.01 = 10": {
       "localizations": {
         "de": {
@@ -2479,6 +2649,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "1000 · 0.01 = 10"
+          }
+        }
+      }
+    },
+    "10² moves the decimal two places right.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "10² moves the decimal two places right."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "10² moves the decimal two places right."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "10² moves the decimal two places right."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "10² moves the decimal two places right."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "10² moves the decimal two places right."
           }
         }
       }
@@ -2547,6 +2751,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "12 : 18 = 2 : 3"
+          }
+        }
+      }
+    },
+    "12 is not less than 10": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "12 is not less than 10"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "12 is not less than 10"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "12 is not less than 10"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "12 is not less than 10"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "12 is not less than 10"
           }
         }
       }
@@ -4523,6 +4761,74 @@
         }
       }
     },
+    "2x = 8 → x = 4": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2x = 8 → x = 4"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2x = 8 → x = 4"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2x = 8 → x = 4"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2x = 8 → x = 4"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2x = 8 → x = 4"
+          }
+        }
+      }
+    },
+    "2x = −8 → x = −4": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2x = −8 → x = −4"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2x = −8 → x = −4"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2x = −8 → x = −4"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2x = −8 → x = −4"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2x = −8 → x = −4"
+          }
+        }
+      }
+    },
     "2x − 4 = 0": {
       "localizations": {
         "de": {
@@ -4553,6 +4859,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "2x − 4 = 0"
+          }
+        }
+      }
+    },
+    "2x − 8 = 0": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2x − 8 = 0"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2x − 8 = 0"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2x − 8 = 0"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2x − 8 = 0"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2x − 8 = 0"
           }
         }
       }
@@ -5441,6 +5781,40 @@
         }
       }
     },
+    "3.1 × 100 = 310": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3.1 × 100 = 310"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3.1 × 100 = 310"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3.1 × 100 = 310"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3.1 × 100 = 310"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3.1 × 100 = 310"
+          }
+        }
+      }
+    },
     "3/4": {
       "localizations": {
         "de": {
@@ -6219,6 +6593,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "4/6 − 1/6 = 3/6 = 1/2"
+          }
+        }
+      }
+    },
+    "4500 = 4.5 × 1000": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "4500 = 4.5 × 1000"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "4500 = 4.5 × 1000"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "4500 = 4.5 × 1000"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "4500 = 4.5 × 1000"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "4500 = 4.5 × 1000"
           }
         }
       }
@@ -7413,6 +7821,40 @@
         }
       }
     },
+    "60 lessons across algebra, calculus, geometry, statistics, finance, and more": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "60 Lektionen zu Algebra, Analysis, Geometrie, Statistik, Finanzen und mehr"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "60 lessons across algebra, calculus, geometry, statistics, finance, and more"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "60 lessons across algebra, calculus, geometry, statistics, finance, and more"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "60 lessons across algebra, calculus, geometry, statistics, finance, and more"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "60 lessons across algebra, calculus, geometry, statistics, finance, and more"
+          }
+        }
+      }
+    },
     "60 · 0.75 = 45": {
       "localizations": {
         "de": {
@@ -7477,6 +7919,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "60 · 1.20 = 72"
+          }
+        }
+      }
+    },
+    "61 lessons across algebra, calculus, geometry, statistics, finance, and more": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "61 Lektionen zu Algebra, Analysis, Geometrie, Statistik, Finanzen und mehr"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "61 lessons across algebra, calculus, geometry, statistics, finance, and more"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "61 lessons across algebra, calculus, geometry, statistics, finance, and more"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "61 lessons across algebra, calculus, geometry, statistics, finance, and more"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "61 lessons across algebra, calculus, geometry, statistics, finance, and more"
           }
         }
       }
@@ -7851,6 +8327,108 @@
           "stringUnit": {
             "state": "translated",
             "value": "Avaliação gratuita de 7 dias, depois cobrada anualmente"
+          }
+        }
+      }
+    },
+    "7.2 × 10⁻² = 7.2 ÷ 100 = 0.072": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "7.2 × 10⁻² = 7.2 ÷ 100 = 0.072"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "7.2 × 10⁻² = 7.2 ÷ 100 = 0.072"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "7.2 × 10⁻² = 7.2 ÷ 100 = 0.072"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "7.2 × 10⁻² = 7.2 ÷ 100 = 0.072"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "7.2 × 10⁻² = 7.2 ÷ 100 = 0.072"
+          }
+        }
+      }
+    },
+    "72": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "72"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "72"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "72"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "72"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "72"
+          }
+        }
+      }
+    },
+    "720": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "720"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "720"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "720"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "720"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "720"
           }
         }
       }
@@ -9283,6 +9861,40 @@
         }
       }
     },
+    "A closed interval has boundary values.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ein abgeschlossenes Intervall hat Randwerte."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A closed interval has boundary values."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A closed interval has boundary values."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A closed interval has boundary values."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A closed interval has boundary values."
+          }
+        }
+      }
+    },
     "A cluster in data means many values are:": {
       "localizations": {
         "de": {
@@ -9453,6 +10065,40 @@
         }
       }
     },
+    "A concave-up critical point is a minimum": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ein nach oben gekrümmter kritischer Punkt ist ein Minimum"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A concave-up critical point is a minimum"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A concave-up critical point is a minimum"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A concave-up critical point is a minimum"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A concave-up critical point is a minimum"
+          }
+        }
+      }
+    },
     "A contains the coefficients from the equations": {
       "localizations": {
         "de": {
@@ -9517,6 +10163,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Uma contradição significa que não há solução"
+          }
+        }
+      }
+    },
+    "A correlation of r = −0.9 is:": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eine Korrelation von r = −0,9 ist:"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A correlation of r = −0.9 is:"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A correlation of r = −0.9 is:"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A correlation of r = −0.9 is:"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A correlation of r = −0.9 is:"
           }
         }
       }
@@ -10473,6 +11153,40 @@
         }
       }
     },
+    "A negative power moves the decimal left.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eine negative Potenz verschiebt das Dezimalkomma nach links."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A negative power moves the decimal left."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A negative power moves the decimal left."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A negative power moves the decimal left."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A negative power moves the decimal left."
+          }
+        }
+      }
+    },
     "A number is even exactly when n mod 2 is:": {
       "localizations": {
         "de": {
@@ -10847,6 +11561,40 @@
         }
       }
     },
+    "A regression line summarizes a linear trend.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eine Regressionsgerade fasst einen linearen Trend zusammen."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A regression line summarizes a linear trend."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A regression line summarizes a linear trend."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A regression line summarizes a linear trend."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A regression line summarizes a linear trend."
+          }
+        }
+      }
+    },
     "A right angle is 90°": {
       "localizations": {
         "de": {
@@ -11217,6 +11965,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Uma camisa tem 3 cores e 2 tamanhos. Quantas combinações?"
+          }
+        }
+      }
+    },
+    "A smaller sample size": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eine kleinere Stichprobengröße"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A smaller sample size"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A smaller sample size"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A smaller sample size"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A smaller sample size"
           }
         }
       }
@@ -12071,6 +12853,108 @@
         }
       }
     },
+    "Absolute Value Equations": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Betragsgleichungen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Absolute Value Equations"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Absolute Value Equations"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Absolute Value Equations"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Absolute Value Equations"
+          }
+        }
+      }
+    },
+    "Absolute value is distance.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der Betrag ist ein Abstand."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Absolute value is distance."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Absolute value is distance."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Absolute value is distance."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Absolute value is distance."
+          }
+        }
+      }
+    },
+    "Absolute value measures distance from zero, so most equations split into two cases.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der Betrag misst den Abstand von null, deshalb teilt man die meisten Gleichungen in zwei Fälle."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Absolute value measures distance from zero, so most equations split into two cases."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Absolute value measures distance from zero, so most equations split into two cases."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Absolute value measures distance from zero, so most equations split into two cases."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Absolute value measures distance from zero, so most equations split into two cases."
+          }
+        }
+      }
+    },
     "Absolute value strips the sign.": {
       "localizations": {
         "de": {
@@ -12169,6 +13053,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Prática adaptativa"
+          }
+        }
+      }
+    },
+    "Adaptive practice focuses on weak spots": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adaptives Üben konzentriert sich auf Schwächen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adaptive practice focuses on weak spots"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adaptive practice focuses on weak spots"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adaptive practice focuses on weak spots"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adaptive practice focuses on weak spots"
           }
         }
       }
@@ -13431,6 +14349,40 @@
         }
       }
     },
+    "Always compare endpoints with critical points": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vergleiche immer Randpunkte mit kritischen Punkten"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Always compare endpoints with critical points"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Always compare endpoints with critical points"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Always compare endpoints with critical points"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Always compare endpoints with critical points"
+          }
+        }
+      }
+    },
     "Always parallel": {
       "localizations": {
         "de": {
@@ -14519,6 +15471,40 @@
         }
       }
     },
+    "At a smooth peak, the tangent is flat.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "An einem glatten Hochpunkt ist die Tangente waagerecht."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "At a smooth peak, the tangent is flat."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "At a smooth peak, the tangent is flat."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "At a smooth peak, the tangent is flat."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "At a smooth peak, the tangent is flat."
+          }
+        }
+      }
+    },
     "At x = 0: y = −5": {
       "localizations": {
         "de": {
@@ -15233,6 +16219,40 @@
         }
       }
     },
+    "Both 6 and −6 are 6 units from zero.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sowohl 6 als auch −6 sind 6 Einheiten von null entfernt."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Both 6 and −6 are 6 units from zero."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Both 6 and −6 are 6 units from zero."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Both 6 and −6 are 6 units from zero."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Both 6 and −6 are 6 units from zero."
+          }
+        }
+      }
+    },
     "Both conditions must hold.": {
       "localizations": {
         "de": {
@@ -15263,6 +16283,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Ambas as condições devem ser válidas."
+          }
+        }
+      }
+    },
+    "Both positive and negative values can have the same distance from zero.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Positive und negative Werte können denselben Abstand von null haben."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Both positive and negative values can have the same distance from zero."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Both positive and negative values can have the same distance from zero."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Both positive and negative values can have the same distance from zero."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Both positive and negative values can have the same distance from zero."
           }
         }
       }
@@ -15501,6 +16555,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Crie o hábito"
+          }
+        }
+      }
+    },
+    "Built for": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Geeignet für"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Built for"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Built for"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Built for"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Built for"
           }
         }
       }
@@ -16385,6 +17473,74 @@
           "stringUnit": {
             "state": "translated",
             "value": "Fechar prática"
+          }
+        }
+      }
+    },
+    "Close to a line means strong": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nahe an einer Linie bedeutet stark"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Close to a line means strong"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Close to a line means strong"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Close to a line means strong"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Close to a line means strong"
+          }
+        }
+      }
+    },
+    "Close to −1 means strong negative linear association.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nahe bei −1 bedeutet einen starken negativen linearen Zusammenhang."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Close to −1 means strong negative linear association."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Close to −1 means strong negative linear association."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Close to −1 means strong negative linear association."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Close to −1 means strong negative linear association."
           }
         }
       }
@@ -17987,6 +19143,74 @@
         }
       }
     },
+    "Concave up forms a valley.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nach oben gekrümmt bildet ein Tal."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Concave up forms a valley."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Concave up forms a valley."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Concave up forms a valley."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Concave up forms a valley."
+          }
+        }
+      }
+    },
+    "Concave up makes a valley; concave down makes a peak.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nach oben gekrümmt ergibt ein Tal; nach unten gekrümmt einen Gipfel."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Concave up makes a valley; concave down makes a peak."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Concave up makes a valley; concave down makes a peak."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Concave up makes a valley; concave down makes a peak."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Concave up makes a valley; concave down makes a peak."
+          }
+        }
+      }
+    },
     "Concavity": {
       "localizations": {
         "de": {
@@ -18361,6 +19585,40 @@
         }
       }
     },
+    "Convert 3.1 × 10² to a standard number.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wandle 3,1 × 10² in eine normale Zahl um."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Convert 3.1 × 10² to a standard number."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Convert 3.1 × 10² to a standard number."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Convert 3.1 × 10² to a standard number."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Convert 3.1 × 10² to a standard number."
+          }
+        }
+      }
+    },
     "Convert 90° to radians. In terms of π.": {
       "localizations": {
         "de": {
@@ -18595,6 +19853,142 @@
           "stringUnit": {
             "state": "translated",
             "value": "Correto"
+          }
+        }
+      }
+    },
+    "Correlation & Regression": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Korrelation & Regression"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Correlation & Regression"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Correlation & Regression"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Correlation & Regression"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Correlation & Regression"
+          }
+        }
+      }
+    },
+    "Correlation describes how two variables move together. Regression uses that pattern to make a simple prediction.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Korrelation beschreibt, wie sich zwei Variablen gemeinsam verändern. Regression nutzt dieses Muster für eine einfache Vorhersage."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Correlation describes how two variables move together. Regression uses that pattern to make a simple prediction."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Correlation describes how two variables move together. Regression uses that pattern to make a simple prediction."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Correlation describes how two variables move together. Regression uses that pattern to make a simple prediction."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Correlation describes how two variables move together. Regression uses that pattern to make a simple prediction."
+          }
+        }
+      }
+    },
+    "Correlation direction": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Richtung der Korrelation"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Correlation direction"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Correlation direction"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Correlation direction"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Correlation direction"
+          }
+        }
+      }
+    },
+    "Correlation shows association": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Korrelation zeigt einen Zusammenhang"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Correlation shows association"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Correlation shows association"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Correlation shows association"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Correlation shows association"
           }
         }
       }
@@ -18867,6 +20261,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Pontos críticos"
+          }
+        }
+      }
+    },
+    "Critical points and endpoints are where the best value can occur.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kritische Punkte und Randpunkte sind Stellen, an denen der beste Wert auftreten kann."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Critical points and endpoints are where the best value can occur."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Critical points and endpoints are where the best value can occur."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Critical points and endpoints are where the best value can occur."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Critical points and endpoints are where the best value can occur."
           }
         }
       }
@@ -20503,6 +21931,40 @@
         }
       }
     },
+    "Distance from zero": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abstand von null"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Distance from zero"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Distance from zero"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Distance from zero"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Distance from zero"
+          }
+        }
+      }
+    },
     "Distance from zero is 7.": {
       "localizations": {
         "de": {
@@ -20533,6 +21995,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "A distância de zero é 7."
+          }
+        }
+      }
+    },
+    "Distances are zero or positive": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abstände sind null oder positiv"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Distances are zero or positive"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Distances are zero or positive"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Distances are zero or positive"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Distances are zero or positive"
           }
         }
       }
@@ -22509,6 +24005,40 @@
         }
       }
     },
+    "Exactly zero": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Genau null"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Exactly zero"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Exactly zero"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Exactly zero"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Exactly zero"
+          }
+        }
+      }
+    },
     "Exam Essentials": {
       "localizations": {
         "de": {
@@ -23801,6 +25331,40 @@
         }
       }
     },
+    "First split: 2x = 8 or 2x = −8.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zuerst aufteilen: 2x = 8 oder 2x = −8."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "First split: 2x = 8 or 2x = −8."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "First split: 2x = 8 or 2x = −8."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "First split: 2x = 8 or 2x = −8."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "First split: 2x = 8 or 2x = −8."
+          }
+        }
+      }
+    },
     "First, Outer, Inner, Last.": {
       "localizations": {
         "de": {
@@ -23899,6 +25463,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Cinco décimos."
+          }
+        }
+      }
+    },
+    "Flat tangent means slope 0": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Waagerechte Tangente bedeutet Steigung 0"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Flat tangent means slope 0"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Flat tangent means slope 0"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Flat tangent means slope 0"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Flat tangent means slope 0"
           }
         }
       }
@@ -24137,6 +25735,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Para qualquer x, y = 3 → horizontal."
+          }
+        }
+      }
+    },
+    "For f(x) = x² − 8x, the minimum occurs at x =": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Für f(x) = x² − 8x liegt das Minimum bei x ="
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "For f(x) = x² − 8x, the minimum occurs at x ="
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "For f(x) = x² − 8x, the minimum occurs at x ="
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "For f(x) = x² − 8x, the minimum occurs at x ="
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "For f(x) = x² − 8x, the minimum occurs at x ="
           }
         }
       }
@@ -25365,6 +26997,40 @@
         }
       }
     },
+    "Guided paths show exactly what to study next": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Geführte Lernpfade zeigen genau, was als Nächstes kommt"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Guided paths show exactly what to study next"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Guided paths show exactly what to study next"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Guided paths show exactly what to study next"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Guided paths show exactly what to study next"
+          }
+        }
+      }
+    },
     "Gym visitors are not typical of everyone.": {
       "localizations": {
         "de": {
@@ -25871,6 +27537,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Quantas soluções o sistema y = x, y = x + 1 tem?"
+          }
+        }
+      }
+    },
+    "How many solutions does |x| = 0 have?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wie viele Lösungen hat |x| = 0?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "How many solutions does |x| = 0 have?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "How many solutions does |x| = 0 have?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "How many solutions does |x| = 0 have?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "How many solutions does |x| = 0 have?"
           }
         }
       }
@@ -26657,6 +28357,40 @@
         }
       }
     },
+    "If f″(x) > 0 at a critical point, the point is likely a:": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wenn f″(x) an einem kritischen Punkt > 0 ist, ist der Punkt wahrscheinlich ein:"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "If f″(x) > 0 at a critical point, the point is likely a:"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "If f″(x) > 0 at a critical point, the point is likely a:"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "If f″(x) > 0 at a critical point, the point is likely a:"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "If f″(x) > 0 at a critical point, the point is likely a:"
+          }
+        }
+      }
+    },
     "If g(x) = 5 for every x, what is g(100)?": {
       "localizations": {
         "de": {
@@ -26857,6 +28591,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Se você · v = 0 para dois vetores diferentes de zero, os vetores são:"
+          }
+        }
+      }
+    },
+    "If x increases and y usually increases too, the correlation is:": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wenn x steigt und y meistens ebenfalls steigt, ist die Korrelation:"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "If x increases and y usually increases too, the correlation is:"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "If x increases and y usually increases too, the correlation is:"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "If x increases and y usually increases too, the correlation is:"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "If x increases and y usually increases too, the correlation is:"
           }
         }
       }
@@ -28017,6 +29785,40 @@
         }
       }
     },
+    "Isolate the absolute value first, then split into two equations.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Isoliere zuerst den Betrag und teile dann in zwei Gleichungen auf."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Isolate the absolute value first, then split into two equations."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Isolate the absolute value first, then split into two equations."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Isolate the absolute value first, then split into two equations."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Isolate the absolute value first, then split into two equations."
+          }
+        }
+      }
+    },
     "It compares the extremes.": {
       "localizations": {
         "de": {
@@ -28115,6 +29917,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Não remove automaticamente o preconceito"
+          }
+        }
+      }
+    },
+    "It does not by itself prove cause and effect": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sie beweist allein keine Ursache-Wirkung-Beziehung"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "It does not by itself prove cause and effect"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "It does not by itself prove cause and effect"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "It does not by itself prove cause and effect"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "It does not by itself prove cause and effect"
           }
         }
       }
@@ -28731,6 +30567,40 @@
         }
       }
     },
+    "Learn math with a full roadmap": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mathe lernen mit klarer Roadmap"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Learn math with a full roadmap"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Learn math with a full roadmap"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Learn math with a full roadmap"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Learn math with a full roadmap"
+          }
+        }
+      }
+    },
     "Left-to-right inside the same level.": {
       "localizations": {
         "de": {
@@ -29101,6 +30971,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Gráfico de linhas"
+          }
+        }
+      }
+    },
+    "Line of best fit": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ausgleichsgerade"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Line of best fit"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Line of best fit"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Line of best fit"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Line of best fit"
           }
         }
       }
@@ -30261,6 +32165,40 @@
         }
       }
     },
+    "Maximum": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Maximum"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Maximum"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Maximum"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Maximum"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Maximum"
+          }
+        }
+      }
+    },
     "Maximum minus minimum.": {
       "localizations": {
         "de": {
@@ -30495,6 +32433,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Memorizá-los torna as raízes mais rápidas."
+          }
+        }
+      }
+    },
+    "Minimum": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Minimum"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Minimum"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Minimum"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Minimum"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Minimum"
           }
         }
       }
@@ -30971,6 +32943,108 @@
           "stringUnit": {
             "state": "translated",
             "value": "Mova todo x para um lado primeiro."
+          }
+        }
+      }
+    },
+    "Move the decimal point until only one nonzero digit is before it.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verschiebe das Dezimalkomma, bis nur eine von null verschiedene Ziffer davor steht."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Move the decimal point until only one nonzero digit is before it."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Move the decimal point until only one nonzero digit is before it."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Move the decimal point until only one nonzero digit is before it."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Move the decimal point until only one nonzero digit is before it."
+          }
+        }
+      }
+    },
+    "Move the decimal three places left.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verschiebe das Dezimalkomma drei Stellen nach links."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Move the decimal three places left."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Move the decimal three places left."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Move the decimal three places left."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Move the decimal three places left."
+          }
+        }
+      }
+    },
+    "Move the decimal three places right to get 6.2.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verschiebe das Dezimalkomma drei Stellen nach rechts, um 6,2 zu erhalten."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Move the decimal three places right to get 6.2."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Move the decimal three places right to get 6.2."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Move the decimal three places right to get 6.2."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Move the decimal three places right to get 6.2."
           }
         }
       }
@@ -32233,6 +34307,40 @@
         }
       }
     },
+    "No linear pattern": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kein lineares Muster"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No linear pattern"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No linear pattern"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No linear pattern"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No linear pattern"
+          }
+        }
+      }
+    },
     "No matter the input, the result is (0,0)": {
       "localizations": {
         "de": {
@@ -32263,6 +34371,74 @@
           "stringUnit": {
             "state": "translated",
             "value": "Não importa a entrada, o resultado é (0,0)"
+          }
+        }
+      }
+    },
+    "No other number has distance 0": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keine andere Zahl hat Abstand 0"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No other number has distance 0"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No other number has distance 0"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No other number has distance 0"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No other number has distance 0"
+          }
+        }
+      }
+    },
+    "No relationship": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kein Zusammenhang"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No relationship"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No relationship"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No relationship"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No relationship"
           }
         }
       }
@@ -32981,6 +35157,40 @@
         }
       }
     },
+    "On a scatter plot, points close to an upward line suggest:": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In einem Streudiagramm deuten Punkte nahe an einer steigenden Linie auf Folgendes hin:"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "On a scatter plot, points close to an upward line suggest:"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "On a scatter plot, points close to an upward line suggest:"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "On a scatter plot, points close to an upward line suggest:"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "On a scatter plot, points close to an upward line suggest:"
+          }
+        }
+      }
+    },
     "One": {
       "localizations": {
         "de": {
@@ -33389,6 +35599,40 @@
         }
       }
     },
+    "Only one number is zero units from zero.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nur eine Zahl ist null Einheiten von null entfernt."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Only one number is zero units from zero."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Only one number is zero units from zero."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Only one number is zero units from zero."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Only one number is zero units from zero."
+          }
+        }
+      }
+    },
     "Only terms with the same variable and power combine.": {
       "localizations": {
         "de": {
@@ -33623,6 +35867,108 @@
           "stringUnit": {
             "state": "translated",
             "value": "Oposto sobre a hipotenusa."
+          }
+        }
+      }
+    },
+    "Optimization Basics": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Grundlagen der Optimierung"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Optimization Basics"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Optimization Basics"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Optimization Basics"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Optimization Basics"
+          }
+        }
+      }
+    },
+    "Optimization recipe": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Optimierungsrezept"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Optimization recipe"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Optimization recipe"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Optimization recipe"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Optimization recipe"
+          }
+        }
+      }
+    },
+    "Optimization uses derivatives to find the best possible value: maximum profit, minimum cost, or shortest distance.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Optimierung nutzt Ableitungen, um den bestmöglichen Wert zu finden: maximalen Gewinn, minimale Kosten oder kürzeste Entfernung."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Optimization uses derivatives to find the best possible value: maximum profit, minimum cost, or shortest distance."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Optimization uses derivatives to find the best possible value: maximum profit, minimum cost, or shortest distance."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Optimization uses derivatives to find the best possible value: maximum profit, minimum cost, or shortest distance."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Optimization uses derivatives to find the best possible value: maximum profit, minimum cost, or shortest distance."
           }
         }
       }
@@ -34341,6 +36687,40 @@
         }
       }
     },
+    "Parents who want clear practice instead of random drills": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eltern, die klare Übungen statt zufälliger Aufgaben wollen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Parents who want clear practice instead of random drills"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Parents who want clear practice instead of random drills"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Parents who want clear practice instead of random drills"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Parents who want clear practice instead of random drills"
+          }
+        }
+      }
+    },
     "Pay 75% of the original.": {
       "localizations": {
         "de": {
@@ -34987,6 +37367,74 @@
         }
       }
     },
+    "Positive": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Positiv"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Positive"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Positive"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Positive"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Positive"
+          }
+        }
+      }
+    },
+    "Positive powers move right; negative powers move left.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Positive Potenzen verschieben nach rechts; negative nach links."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Positive powers move right; negative powers move left."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Positive powers move right; negative powers move left."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Positive powers move right; negative powers move left."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Positive powers move right; negative powers move left."
+          }
+        }
+      }
+    },
     "Positive savings means money remains after expenses.": {
       "localizations": {
         "de": {
@@ -35085,6 +37533,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Poder"
+          }
+        }
+      }
+    },
+    "Power of ten shift": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verschiebung mit Zehnerpotenzen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Power of ten shift"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Power of ten shift"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Power of ten shift"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Power of ten shift"
           }
         }
       }
@@ -35459,6 +37941,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Premium desbloqueado para revisão"
+          }
+        }
+      }
+    },
+    "Premium unlocks the complete curriculum, guided paths, and every worked solution.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Premium schaltet den kompletten Lehrplan, geführte Lernpfade und jede ausführliche Lösung frei."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Premium unlocks the complete curriculum, guided paths, and every worked solution."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Premium unlocks the complete curriculum, guided paths, and every worked solution."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Premium unlocks the complete curriculum, guided paths, and every worked solution."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Premium unlocks the complete curriculum, guided paths, and every worked solution."
           }
         }
       }
@@ -35969,6 +38485,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Progresso monitorado em todos os tópicos"
+          }
+        }
+      }
+    },
+    "Proper form would be 1.2 × 10⁴": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die korrekte Form wäre 1,2 × 10⁴"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Proper form would be 1.2 × 10⁴"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Proper form would be 1.2 × 10⁴"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Proper form would be 1.2 × 10⁴"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Proper form would be 1.2 × 10⁴"
           }
         }
       }
@@ -38727,6 +41277,40 @@
         }
       }
     },
+    "Same-direction movement means positive correlation": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bewegung in dieselbe Richtung bedeutet positive Korrelation"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Same-direction movement means positive correlation"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Same-direction movement means positive correlation"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Same-direction movement means positive correlation"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Same-direction movement means positive correlation"
+          }
+        }
+      }
+    },
     "Sample size": {
       "localizations": {
         "de": {
@@ -38965,6 +41549,176 @@
         }
       }
     },
+    "Scientific Notation": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wissenschaftliche Schreibweise"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scientific Notation"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scientific Notation"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scientific Notation"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scientific Notation"
+          }
+        }
+      }
+    },
+    "Scientific form": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wissenschaftliche Form"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scientific form"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scientific form"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scientific form"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scientific form"
+          }
+        }
+      }
+    },
+    "Scientific notation writes very large or very small numbers as a number from 1 to 10 times a power of 10.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die wissenschaftliche Schreibweise stellt sehr große oder sehr kleine Zahlen als Zahl von 1 bis 10 mal Zehnerpotenz dar."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scientific notation writes very large or very small numbers as a number from 1 to 10 times a power of 10."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scientific notation writes very large or very small numbers as a number from 1 to 10 times a power of 10."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scientific notation writes very large or very small numbers as a number from 1 to 10 times a power of 10."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scientific notation writes very large or very small numbers as a number from 1 to 10 times a power of 10."
+          }
+        }
+      }
+    },
+    "Second derivative test": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Test mit der zweiten Ableitung"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Second derivative test"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Second derivative test"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Second derivative test"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Second derivative test"
+          }
+        }
+      }
+    },
+    "Self-learners who want structure without noisy gamification": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Selbstlerner, die Struktur ohne laute Gamification wollen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Self-learners who want structure without noisy gamification"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Self-learners who want structure without noisy gamification"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Self-learners who want structure without noisy gamification"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Self-learners who want structure without noisy gamification"
+          }
+        }
+      }
+    },
     "Separate categories call for separate bars.": {
       "localizations": {
         "de": {
@@ -39101,6 +41855,40 @@
         }
       }
     },
+    "Set f′(x) = −2x + 6 equal to 0.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Setze f′(x) = −2x + 6 gleich 0."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Set f′(x) = −2x + 6 equal to 0."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Set f′(x) = −2x + 6 equal to 0."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Set f′(x) = −2x + 6 equal to 0."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Set f′(x) = −2x + 6 equal to 0."
+          }
+        }
+      }
+    },
     "Sets": {
       "localizations": {
         "de": {
@@ -39233,6 +42021,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Formas e distância"
+          }
+        }
+      }
+    },
+    "Shifted absolute value": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verschobener Betrag"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Shifted absolute value"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Shifted absolute value"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Shifted absolute value"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Shifted absolute value"
           }
         }
       }
@@ -40359,6 +43181,74 @@
         }
       }
     },
+    "Smallest first: −6, 6": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kleinster zuerst: −6, 6"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Smallest first: −6, 6"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Smallest first: −6, 6"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Smallest first: −6, 6"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Smallest first: −6, 6"
+          }
+        }
+      }
+    },
+    "So 4500 = 4.5 × 10³": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "So 4500 = 4.5 × 10³"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "So 4500 = 4.5 × 10³"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "So 4500 = 4.5 × 10³"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "So 4500 = 4.5 × 10³"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "So 4500 = 4.5 × 10³"
+          }
+        }
+      }
+    },
     "So 7 < √50 < 8": {
       "localizations": {
         "de": {
@@ -40495,6 +43385,40 @@
         }
       }
     },
+    "So solve f′(x) = 0": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Also löse f′(x) = 0"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "So solve f′(x) = 0"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "So solve f′(x) = 0"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "So solve f′(x) = 0"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "So solve f′(x) = 0"
+          }
+        }
+      }
+    },
     "So the AND statement is false": {
       "localizations": {
         "de": {
@@ -40597,6 +43521,40 @@
         }
       }
     },
+    "So the relationship is strong and negative": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der Zusammenhang ist also stark und negativ"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "So the relationship is strong and negative"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "So the relationship is strong and negative"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "So the relationship is strong and negative"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "So the relationship is strong and negative"
+          }
+        }
+      }
+    },
     "So their probabilities add to 1": {
       "localizations": {
         "de": {
@@ -40661,6 +43619,74 @@
           "stringUnit": {
             "state": "translated",
             "value": "Então {1,2} é um subconjunto"
+          }
+        }
+      }
+    },
+    "So |x| ≥ 0 for every x": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Also gilt |x| ≥ 0 für jedes x"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "So |x| ≥ 0 for every x"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "So |x| ≥ 0 for every x"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "So |x| ≥ 0 for every x"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "So |x| ≥ 0 for every x"
+          }
+        }
+      }
+    },
+    "Solutions: −3, 7": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lösungen: −3, 7"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Solutions: −3, 7"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Solutions: −3, 7"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Solutions: −3, 7"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Solutions: −3, 7"
           }
         }
       }
@@ -41005,6 +44031,108 @@
         }
       }
     },
+    "Solve |2x| = 8. Smallest first, comma-separated.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Löse |2x| = 8. Kleinster Wert zuerst, kommagetrennt."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Solve |2x| = 8. Smallest first, comma-separated."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Solve |2x| = 8. Smallest first, comma-separated."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Solve |2x| = 8. Smallest first, comma-separated."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Solve |2x| = 8. Smallest first, comma-separated."
+          }
+        }
+      }
+    },
+    "Solve |x − 2| = 5. Smallest first, comma-separated.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Löse |x − 2| = 5. Kleinster Wert zuerst, kommagetrennt."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Solve |x − 2| = 5. Smallest first, comma-separated."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Solve |x − 2| = 5. Smallest first, comma-separated."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Solve |x − 2| = 5. Smallest first, comma-separated."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Solve |x − 2| = 5. Smallest first, comma-separated."
+          }
+        }
+      }
+    },
+    "Solve |x| = 6. Smallest first, comma-separated.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Löse |x| = 6. Kleinster Wert zuerst, kommagetrennt."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Solve |x| = 6. Smallest first, comma-separated."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Solve |x| = 6. Smallest first, comma-separated."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Solve |x| = 6. Smallest first, comma-separated."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Solve |x| = 6. Smallest first, comma-separated."
+          }
+        }
+      }
+    },
     "Solve −3x < 9.": {
       "localizations": {
         "de": {
@@ -41243,6 +44371,40 @@
         }
       }
     },
+    "Spaced repetition brings back what you are about to forget": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spaced Repetition wiederholt, was du fast vergessen würdest"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spaced repetition brings back what you are about to forget"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spaced repetition brings back what you are about to forget"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spaced repetition brings back what you are about to forget"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spaced repetition brings back what you are about to forget"
+          }
+        }
+      }
+    },
     "Special values": {
       "localizations": {
         "de": {
@@ -41307,6 +44469,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Esfera"
+          }
+        }
+      }
+    },
+    "Split into x − 2 = 5 and x − 2 = −5.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Teile auf in x − 2 = 5 und x − 2 = −5."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Split into x − 2 = 5 and x − 2 = −5."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Split into x − 2 = 5 and x − 2 = −5."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Split into x − 2 = 5 and x − 2 = −5."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Split into x − 2 = 5 and x − 2 = −5."
           }
         }
       }
@@ -41957,6 +45153,142 @@
         }
       }
     },
+    "Strong negative": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stark negativ"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Strong negative"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Strong negative"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Strong negative"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Strong negative"
+          }
+        }
+      }
+    },
+    "Strong negative correlation": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Starke negative Korrelation"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Strong negative correlation"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Strong negative correlation"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Strong negative correlation"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Strong negative correlation"
+          }
+        }
+      }
+    },
+    "Strong positive correlation": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Starke positive Korrelation"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Strong positive correlation"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Strong positive correlation"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Strong positive correlation"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Strong positive correlation"
+          }
+        }
+      }
+    },
+    "Students preparing for homework, exams, and finals": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schüler, die für Hausaufgaben, Tests und Abschlussprüfungen üben"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Students preparing for homework, exams, and finals"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Students preparing for homework, exams, and finals"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Students preparing for homework, exams, and finals"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Students preparing for homework, exams, and finals"
+          }
+        }
+      }
+    },
     "Subscription": {
       "localizations": {
         "de": {
@@ -42123,6 +45455,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Substitua x = 0."
+          }
+        }
+      }
+    },
+    "Substitute x = 4.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Setze x = 4 ein."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Substitute x = 4."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Substitute x = 4."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Substitute x = 4."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Substitute x = 4."
           }
         }
       }
@@ -43419,6 +46785,40 @@
         }
       }
     },
+    "That means a power of 10⁻³": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Das bedeutet eine Potenz von 10⁻³"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "That means a power of 10⁻³"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "That means a power of 10⁻³"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "That means a power of 10⁻³"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "That means a power of 10⁻³"
+          }
+        }
+      }
+    },
     "That's the 'SAS' case.": {
       "localizations": {
         "de": {
@@ -43929,6 +47329,40 @@
         }
       }
     },
+    "The first number must be at least 1 and less than 10.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die erste Zahl muss mindestens 1 und kleiner als 10 sein."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The first number must be at least 1 and less than 10."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The first number must be at least 1 and less than 10."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The first number must be at least 1 and less than 10."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The first number must be at least 1 and less than 10."
+          }
+        }
+      }
+    },
     "The identity matrix I satisfies Ix =": {
       "localizations": {
         "de": {
@@ -44061,6 +47495,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "O intervalo tem largura zero."
+          }
+        }
+      }
+    },
+    "The largest or smallest value can occur at an endpoint": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der größte oder kleinste Wert kann an einem Randpunkt auftreten"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The largest or smallest value can occur at an endpoint"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The largest or smallest value can occur at an endpoint"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The largest or smallest value can occur at an endpoint"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The largest or smallest value can occur at an endpoint"
           }
         }
       }
@@ -45017,6 +48485,40 @@
         }
       }
     },
+    "The sign tells direction; the size tells strength.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Das Vorzeichen zeigt die Richtung, die Größe die Stärke."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The sign tells direction; the size tells strength."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The sign tells direction; the size tells strength."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The sign tells direction; the size tells strength."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The sign tells direction; the size tells strength."
+          }
+        }
+      }
+    },
     "The slope is positive.": {
       "localizations": {
         "de": {
@@ -45455,6 +48957,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Eles não podem ser adicionados"
+          }
+        }
+      }
+    },
+    "They move in the same direction.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sie bewegen sich in dieselbe Richtung."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "They move in the same direction."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "They move in the same direction."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "They move in the same direction."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "They move in the same direction."
           }
         }
       }
@@ -45965,6 +49501,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "O tempo é ignorado"
+          }
+        }
+      }
+    },
+    "To find a smooth maximum, first solve:": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Um ein glattes Maximum zu finden, löse zuerst:"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "To find a smooth maximum, first solve:"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "To find a smooth maximum, first solve:"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "To find a smooth maximum, first solve:"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "To find a smooth maximum, first solve:"
           }
         }
       }
@@ -46649,6 +50219,40 @@
         }
       }
     },
+    "True or false: 12 × 10³ is proper scientific notation.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wahr oder falsch: 12 × 10³ ist korrekte wissenschaftliche Schreibweise."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "True or false: 12 × 10³ is proper scientific notation."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "True or false: 12 × 10³ is proper scientific notation."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "True or false: 12 × 10³ is proper scientific notation."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "True or false: 12 × 10³ is proper scientific notation."
+          }
+        }
+      }
+    },
     "True or false: 2/4 + 1/2 = 1.": {
       "localizations": {
         "de": {
@@ -47295,6 +50899,40 @@
         }
       }
     },
+    "True or false: correlation proves causation.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wahr oder falsch: Korrelation beweist Kausalität."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "True or false: correlation proves causation."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "True or false: correlation proves causation."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "True or false: correlation proves causation."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "True or false: correlation proves causation."
+          }
+        }
+      }
+    },
     "True or false: cos(360°) = cos(0°).": {
       "localizations": {
         "de": {
@@ -47461,6 +51099,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Verdadeiro ou falso: d/dx √x = 1/(2√x)."
+          }
+        }
+      }
+    },
+    "True or false: endpoints can matter in an optimization problem.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wahr oder falsch: Randpunkte können bei Optimierung wichtig sein."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "True or false: endpoints can matter in an optimization problem."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "True or false: endpoints can matter in an optimization problem."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "True or false: endpoints can matter in an optimization problem."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "True or false: endpoints can matter in an optimization problem."
           }
         }
       }
@@ -48281,6 +51953,40 @@
         }
       }
     },
+    "True or false: |x| can never be negative.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wahr oder falsch: |x| kann nie negativ sein."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "True or false: |x| can never be negative."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "True or false: |x| can never be negative."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "True or false: |x| can never be negative."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "True or false: |x| can never be negative."
+          }
+        }
+      }
+    },
     "True or false: |−7| = 7.": {
       "localizations": {
         "de": {
@@ -48893,6 +52599,40 @@
         }
       }
     },
+    "Two things can move together without one causing the other.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zwei Dinge können sich gemeinsam verändern, ohne dass eines das andere verursacht."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Two things can move together without one causing the other."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Two things can move together without one causing the other."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Two things can move together without one causing the other."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Two things can move together without one causing the other."
+          }
+        }
+      }
+    },
     "Two triangles' worth.": {
       "localizations": {
         "de": {
@@ -49263,6 +53003,74 @@
           "stringUnit": {
             "state": "translated",
             "value": "Atualizar para Premium"
+          }
+        }
+      }
+    },
+    "Upward line means both variables tend to rise together.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eine steigende Linie bedeutet, dass beide Variablen tendenziell gemeinsam steigen."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Upward line means both variables tend to rise together."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Upward line means both variables tend to rise together."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Upward line means both variables tend to rise together."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Upward line means both variables tend to rise together."
+          }
+        }
+      }
+    },
+    "Upward means positive": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Steigend bedeutet positiv"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Upward means positive"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Upward means positive"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Upward means positive"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Upward means positive"
           }
         }
       }
@@ -49743,6 +53551,40 @@
         }
       }
     },
+    "Using y = 2x + 3, predict y when x = 4.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nutze y = 2x + 3 und prognostiziere y für x = 4."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Using y = 2x + 3, predict y when x = 4."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Using y = 2x + 3, predict y when x = 4."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Using y = 2x + 3, predict y when x = 4."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Using y = 2x + 3, predict y when x = 4."
+          }
+        }
+      }
+    },
     "Valid probabilities are from 0 through 1": {
       "localizations": {
         "de": {
@@ -49943,6 +53785,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Vetores, matrizes e sistemas"
+          }
+        }
+      }
+    },
+    "Vertical asymptote": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vertikale Asymptote"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vertical asymptote"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vertical asymptote"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vertical asymptote"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vertical asymptote"
           }
         }
       }
@@ -50249,6 +54125,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Espere – oferta especial"
+          }
+        }
+      }
+    },
+    "Weak positive": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schwach positiv"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weak positive"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weak positive"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weak positive"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weak positive"
           }
         }
       }
@@ -51409,6 +55319,40 @@
         }
       }
     },
+    "Which number equals 7.2 × 10⁻²?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Welche Zahl entspricht 7,2 × 10⁻²?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Which number equals 7.2 × 10⁻²?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Which number equals 7.2 × 10⁻²?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Which number equals 7.2 × 10⁻²?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Which number equals 7.2 × 10⁻²?"
+          }
+        }
+      }
+    },
     "Which operator requires both statements to be true?": {
       "localizations": {
         "de": {
@@ -51613,6 +55557,40 @@
         }
       }
     },
+    "Worked solutions explain every missed answer": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ausführliche Lösungen erklären jede falsche Antwort"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Worked solutions explain every missed answer"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Worked solutions explain every missed answer"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Worked solutions explain every missed answer"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Worked solutions explain every missed answer"
+          }
+        }
+      }
+    },
     "Works when f is continuous at a.": {
       "localizations": {
         "de": {
@@ -51681,6 +55659,40 @@
         }
       }
     },
+    "Write 0.0062 in scientific notation.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schreibe 0,0062 in wissenschaftlicher Schreibweise."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Write 0.0062 in scientific notation."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Write 0.0062 in scientific notation."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Write 0.0062 in scientific notation."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Write 0.0062 in scientific notation."
+          }
+        }
+      }
+    },
     "Write 1/x as x⁻¹ and use the power rule.": {
       "localizations": {
         "de": {
@@ -51745,6 +55757,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Escreva 3/4 como decimal."
+          }
+        }
+      }
+    },
+    "Write 4,500 in scientific notation.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schreibe 4.500 in wissenschaftlicher Schreibweise."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Write 4,500 in scientific notation."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Write 4,500 in scientific notation."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Write 4,500 in scientific notation."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Write 4,500 in scientific notation."
           }
         }
       }
@@ -53143,6 +57189,40 @@
         }
       }
     },
+    "f(x) = 0": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "f(x) = 0"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "f(x) = 0"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "f(x) = 0"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "f(x) = 0"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "f(x) = 0"
+          }
+        }
+      }
+    },
     "f(x) = x² − 4x. At what x is the minimum?": {
       "localizations": {
         "de": {
@@ -53173,6 +57253,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "f(x) = x² − 4x. Em que x é o mínimo?"
+          }
+        }
+      }
+    },
+    "f(x) = −x² + 6x. At what x is the maximum?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "f(x) = −x² + 6x. Bei welchem x liegt das Maximum?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "f(x) = −x² + 6x. At what x is the maximum?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "f(x) = −x² + 6x. At what x is the maximum?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "f(x) = −x² + 6x. At what x is the maximum?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "f(x) = −x² + 6x. At what x is the maximum?"
           }
         }
       }
@@ -53313,6 +57427,40 @@
         }
       }
     },
+    "f′(x) = 0": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "f′(x) = 0"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "f′(x) = 0"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "f′(x) = 0"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "f′(x) = 0"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "f′(x) = 0"
+          }
+        }
+      }
+    },
     "f′(x) = 2x − 4": {
       "localizations": {
         "de": {
@@ -53343,6 +57491,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "f′(x) = 2x − 4"
+          }
+        }
+      }
+    },
+    "f′(x) = 2x − 8.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "f′(x) = 2x − 8."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "f′(x) = 2x − 8."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "f′(x) = 2x − 8."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "f′(x) = 2x − 8."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "f′(x) = 2x − 8."
           }
         }
       }
@@ -53411,6 +57593,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "f′(x) = 3x², então insira 2."
+          }
+        }
+      }
+    },
+    "f′(x) = −2x + 6": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "f′(x) = −2x + 6"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "f′(x) = −2x + 6"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "f′(x) = −2x + 6"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "f′(x) = −2x + 6"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "f′(x) = −2x + 6"
           }
         }
       }
@@ -53615,6 +57831,74 @@
           "stringUnit": {
             "state": "translated",
             "value": "f″ > 0 → côncavo para cima, f″ < 0 → côncavo para baixo"
+          }
+        }
+      }
+    },
+    "f″(x) = 1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "f″(x) = 1"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "f″(x) = 1"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "f″(x) = 1"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "f″(x) = 1"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "f″(x) = 1"
+          }
+        }
+      }
+    },
+    "f″(x) > 0 means concave up": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "f″(x) > 0 bedeutet nach oben gekrümmt"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "f″(x) > 0 means concave up"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "f″(x) > 0 means concave up"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "f″(x) > 0 means concave up"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "f″(x) > 0 means concave up"
           }
         }
       }
@@ -55183,6 +59467,40 @@
         }
       }
     },
+    "x = 0 only": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x = 0 only"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x = 0 only"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x = 0 only"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x = 0 only"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x = 0 only"
+          }
+        }
+      }
+    },
     "x = 1": {
       "localizations": {
         "de": {
@@ -55383,6 +59701,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "x = 5 não está incluído"
+          }
+        }
+      }
+    },
+    "x = 6 or x = −6": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x = 6 oder x = −6"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x = 6 or x = −6"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x = 6 or x = −6"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x = 6 or x = −6"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x = 6 or x = −6"
           }
         }
       }
@@ -55757,6 +60109,74 @@
           "stringUnit": {
             "state": "translated",
             "value": "x fica 2"
+          }
+        }
+      }
+    },
+    "x − 2 = 5 → x = 7": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x − 2 = 5 → x = 7"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x − 2 = 5 → x = 7"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x − 2 = 5 → x = 7"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x − 2 = 5 → x = 7"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x − 2 = 5 → x = 7"
+          }
+        }
+      }
+    },
+    "x − 2 = −5 → x = −3": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x − 2 = −5 → x = −3"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x − 2 = −5 → x = −3"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x − 2 = −5 → x = −3"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x − 2 = −5 → x = −3"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x − 2 = −5 → x = −3"
           }
         }
       }
@@ -56271,6 +60691,40 @@
         }
       }
     },
+    "y = 2(4) + 3": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "y = 2(4) + 3"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "y = 2(4) + 3"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "y = 2(4) + 3"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "y = 2(4) + 3"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "y = 2(4) + 3"
+          }
+        }
+      }
+    },
     "y = 3": {
       "localizations": {
         "de": {
@@ -56335,6 +60789,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "y = 4·2 + 1 = 9"
+          }
+        }
+      }
+    },
+    "y = 8 + 3 = 11": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "y = 8 + 3 = 11"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "y = 8 + 3 = 11"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "y = 8 + 3 = 11"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "y = 8 + 3 = 11"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "y = 8 + 3 = 11"
           }
         }
       }
@@ -56471,6 +60959,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "interceptação y"
+          }
+        }
+      }
+    },
+    "|0| = 0": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "|0| = 0"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "|0| = 0"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "|0| = 0"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "|0| = 0"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "|0| = 0"
           }
         }
       }
@@ -57053,6 +61575,40 @@
         }
       }
     },
+    "−0.9 is near −1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "−0,9 liegt nahe bei −1"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "−0.9 is near −1"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "−0.9 is near −1"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "−0.9 is near −1"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "−0.9 is near −1"
+          }
+        }
+      }
+    },
     "−1": {
       "localizations": {
         "de": {
@@ -57253,6 +61809,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "−2 <4 é verdadeiro"
+          }
+        }
+      }
+    },
+    "−2x + 6 = 0": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "−2x + 6 = 0"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "−2x + 6 = 0"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "−2x + 6 = 0"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "−2x + 6 = 0"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "−2x + 6 = 0"
           }
         }
       }

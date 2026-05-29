@@ -844,7 +844,7 @@ struct LearningPath: Identifiable {
             icon: "function",
             color: Palette.algebra,
             lessons: [Curriculum.linearEquations, Curriculum.linesAndSlope, Curriculum.factoring,
-                      Curriculum.inequalities, Curriculum.systems]
+                      Curriculum.inequalities, Curriculum.systems, Curriculum.absoluteValueEquations]
         ),
         LearningPath(
             id: "calculus-starter",
@@ -853,7 +853,7 @@ struct LearningPath: Identifiable {
             icon: "chart.xyaxis.line",
             color: Palette.calculus,
             lessons: [Curriculum.limits, Curriculum.derivatives, Curriculum.chainRule,
-                      Curriculum.integrals, Curriculum.definiteIntegrals]
+                      Curriculum.integrals, Curriculum.definiteIntegrals, Curriculum.optimizationBasics]
         ),
         LearningPath(
             id: "exam-essentials",
@@ -862,7 +862,7 @@ struct LearningPath: Identifiable {
             icon: "checklist",
             color: Palette.terracotta,
             lessons: [Curriculum.preAlgFractions, Curriculum.linearEquations, Curriculum.pythagoras,
-                      Curriculum.trigBasics, Curriculum.descriptiveStats]
+                      Curriculum.trigBasics, Curriculum.descriptiveStats, Curriculum.correlationRegression]
         ),
         LearningPath(
             id: "money-math",
@@ -2347,6 +2347,7 @@ struct PaywallView: View {
                 VStack(alignment: .leading, spacing: 22) {
                     icon
                     headline
+                    audience
                     bullets
                     plans
                     if mode != .retention { footnote }
@@ -2391,8 +2392,8 @@ struct PaywallView: View {
         VStack(alignment: .leading, spacing: 8) {
             switch mode {
             case .onboarding, .upgrade:
-                Text("Unlock all of Mathio").font(.displayL).foregroundStyle(Palette.ink)
-                Text("Every topic. Every lesson. No ads.")
+                Text("Learn math with a full roadmap").font(.displayL).foregroundStyle(Palette.ink)
+                Text("Premium unlocks the complete curriculum, guided paths, and every worked solution.")
                     .font(.bodyL).foregroundStyle(Palette.inkSoft)
             case .retention:
                 Text("Wait — special offer").font(.displayL).foregroundStyle(Palette.ink)
@@ -2402,13 +2403,30 @@ struct PaywallView: View {
         }
     }
 
+    private var audience: some View {
+        Card(padding: 16, background: Palette.surfaceMuted) {
+            VStack(alignment: .leading, spacing: 10) {
+                Text("Built for")
+                    .font(.label)
+                    .foregroundStyle(Palette.inkFaint)
+                    .textCase(.uppercase)
+                    .tracking(1.2)
+                VStack(alignment: .leading, spacing: 8) {
+                    row("graduationcap.fill", "Students preparing for homework, exams, and finals")
+                    row("person.fill.checkmark", "Self-learners who want structure without noisy gamification")
+                    row("figure.and.child.holdinghands", "Parents who want clear practice instead of random drills")
+                }
+            }
+        }
+    }
+
     private var bullets: some View {
         VStack(alignment: .leading, spacing: 12) {
-            row("books.vertical.fill", "All topics: algebra, calculus, geometry, trig")
-            row("brain.head.profile", "Adaptive — picks the right next lesson")
-            row("arrow.triangle.2.circlepath", "Spaced repetition keeps it stuck")
-            row("lightbulb.max.fill", "Step-by-step solutions for every wrong answer")
-            row("flame.fill", "Daily streak that actually motivates")
+            row("books.vertical.fill", "61 lessons across algebra, calculus, geometry, statistics, finance, and more")
+            row("map.fill", "Guided paths show exactly what to study next")
+            row("brain.head.profile", "Adaptive practice focuses on weak spots")
+            row("arrow.triangle.2.circlepath", "Spaced repetition brings back what you are about to forget")
+            row("lightbulb.max.fill", "Worked solutions explain every missed answer")
         }
     }
 

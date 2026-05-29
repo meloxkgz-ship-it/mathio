@@ -1269,6 +1269,55 @@ enum Curriculum {
         ]
     )
 
+    static let scientificNotation = Lesson(
+        id: "pre.scinot",
+        title: "Scientific Notation",
+        intro: "Scientific notation writes very large or very small numbers as a number from 1 to 10 times a power of 10.",
+        formulas: [
+            Formula(key: "pre.scinot.f1",
+                    name: "Scientific form",
+                    math: "{var:a} × 10{sup:^n},  1 ≤ {var:a} < 10",
+                    explanation: "Move the decimal point until only one nonzero digit is before it."),
+            Formula(key: "pre.scinot.f2",
+                    name: "Power of ten shift",
+                    math: "10{sup:^n} moves the decimal {var:n} places",
+                    explanation: "Positive powers move right; negative powers move left."),
+        ],
+        questions: [
+            Question(id: "pre.scinot.q1",
+                     prompt: "Write 4,500 in scientific notation.", math: nil,
+                     kind: .freeAnswer(accepted: ["4.5x10^3", "4.5*10^3", "4.5×10^3"]),
+                     hint: "Move the decimal three places left.",
+                     solutionSteps: ["4500 = 4.5 × 1000", "1000 = 10³", "So 4500 = 4.5 × 10³"]),
+            Question(id: "pre.scinot.q2",
+                     prompt: "Write 0.0062 in scientific notation.", math: nil,
+                     kind: .freeAnswer(accepted: ["6.2x10^-3", "6.2*10^-3", "6.2×10^-3"]),
+                     hint: "Move the decimal three places right to get 6.2.",
+                     solutionSteps: ["0.0062 → 6.2 needs three moves right", "That means a power of 10⁻³", "0.0062 = 6.2 × 10⁻³"]),
+            Question(id: "pre.scinot.q3",
+                     prompt: "Convert 3.1 × 10² to a standard number.", math: nil,
+                     kind: .freeAnswer(accepted: ["310"]),
+                     hint: "10² moves the decimal two places right.",
+                     solutionSteps: ["3.1 × 100 = 310"]),
+            Question(id: "pre.scinot.q4",
+                     prompt: "Which number equals 7.2 × 10⁻²?", math: nil,
+                     kind: .multipleChoice(options: [
+                        .init(label: "0.072", math: nil),
+                        .init(label: "0.72", math: nil),
+                        .init(label: "72", math: nil),
+                        .init(label: "720", math: nil),
+                     ], correctIndex: 0),
+                     hint: "A negative power moves the decimal left.",
+                     solutionSteps: ["7.2 × 10⁻² = 7.2 ÷ 100 = 0.072"]),
+            Question(id: "pre.scinot.q5",
+                     prompt: "True or false: 12 × 10³ is proper scientific notation.",
+                     math: nil,
+                     kind: .trueFalse(answer: false),
+                     hint: "The first number must be at least 1 and less than 10.",
+                     solutionSteps: ["12 is not less than 10", "Proper form would be 1.2 × 10⁴"]),
+        ]
+    )
+
     // MARK: - Algebra (more)
 
     static let inequalities = Lesson(
@@ -1468,6 +1517,54 @@ enum Curriculum {
         ]
     )
 
+    static let absoluteValueEquations = Lesson(
+        id: "alg.abs",
+        title: "Absolute Value Equations",
+        intro: "Absolute value measures distance from zero, so most equations split into two cases.",
+        formulas: [
+            Formula(key: "alg.abs.f1",
+                    name: "Distance from zero",
+                    math: "|{var:x}| = {var:a}  ⟹  {var:x} = {var:a} or {var:x} = −{var:a}",
+                    explanation: "Both positive and negative values can have the same distance from zero."),
+            Formula(key: "alg.abs.f2",
+                    name: "Shifted absolute value",
+                    math: "|{var:x} − {var:h}| = {var:a}  ⟹  {var:x} − {var:h} = ±{var:a}",
+                    explanation: "Isolate the absolute value first, then split into two equations."),
+        ],
+        questions: [
+            Question(id: "alg.abs.q1",
+                     prompt: "Solve |x| = 6. Smallest first, comma-separated.", math: nil,
+                     kind: .freeAnswer(accepted: ["-6,6", "-6, 6"]),
+                     hint: "Both 6 and −6 are 6 units from zero.",
+                     solutionSteps: ["x = 6 or x = −6", "Smallest first: −6, 6"]),
+            Question(id: "alg.abs.q2",
+                     prompt: "Solve |x − 2| = 5. Smallest first, comma-separated.", math: nil,
+                     kind: .freeAnswer(accepted: ["-3,7", "-3, 7"]),
+                     hint: "Split into x − 2 = 5 and x − 2 = −5.",
+                     solutionSteps: ["x − 2 = 5 → x = 7", "x − 2 = −5 → x = −3", "Solutions: −3, 7"]),
+            Question(id: "alg.abs.q3",
+                     prompt: "How many solutions does |x| = 0 have?", math: nil,
+                     kind: .multipleChoice(options: [
+                        .init(label: "Zero", math: nil),
+                        .init(label: "One", math: nil),
+                        .init(label: "Two", math: nil),
+                        .init(label: "Infinitely many", math: nil),
+                     ], correctIndex: 1),
+                     hint: "Only one number is zero units from zero.",
+                     solutionSteps: ["|0| = 0", "No other number has distance 0"]),
+            Question(id: "alg.abs.q4",
+                     prompt: "Solve |2x| = 8. Smallest first, comma-separated.", math: nil,
+                     kind: .freeAnswer(accepted: ["-4,4", "-4, 4"]),
+                     hint: "First split: 2x = 8 or 2x = −8.",
+                     solutionSteps: ["2x = 8 → x = 4", "2x = −8 → x = −4"]),
+            Question(id: "alg.abs.q5",
+                     prompt: "True or false: |x| can never be negative.", math: nil,
+                     kind: .trueFalse(answer: true),
+                     hint: "Absolute value is distance.",
+                     solutionSteps: ["Distances are zero or positive", "So |x| ≥ 0 for every x"]),
+        ]
+    )
+
     // MARK: - Calculus (more)
 
     static let productQuotient = Lesson(
@@ -1624,6 +1721,60 @@ enum Curriculum {
                      kind: .freeAnswer(accepted: ["2"]),
                      hint: "h′(t) = −2t + 4.",
                      solutionSteps: ["h′(t) = −2t + 4", "h′(1) = −2 + 4 = 2"]),
+        ]
+    )
+
+    static let optimizationBasics = Lesson(
+        id: "calc.opt",
+        title: "Optimization Basics",
+        intro: "Optimization uses derivatives to find the best possible value: maximum profit, minimum cost, or shortest distance.",
+        formulas: [
+            Formula(key: "calc.opt.f1",
+                    name: "Optimization recipe",
+                    math: "1) build {var:f}({var:x})  2) solve {var:f}{sup:^′}({var:x}) = 0  3) check endpoints",
+                    explanation: "Critical points and endpoints are where the best value can occur."),
+            Formula(key: "calc.opt.f2",
+                    name: "Second derivative test",
+                    math: "{var:f}{sup:^″}({var:x}) > 0 → minimum    {var:f}{sup:^″}({var:x}) < 0 → maximum",
+                    explanation: "Concave up makes a valley; concave down makes a peak."),
+        ],
+        questions: [
+            Question(id: "calc.opt.q1",
+                     prompt: "To find a smooth maximum, first solve:", math: nil,
+                     kind: .multipleChoice(options: [
+                        .init(label: "f′(x) = 0", math: nil),
+                        .init(label: "f(x) = 0", math: nil),
+                        .init(label: "x = 0 only", math: nil),
+                        .init(label: "f″(x) = 1", math: nil),
+                     ], correctIndex: 0),
+                     hint: "At a smooth peak, the tangent is flat.",
+                     solutionSteps: ["Flat tangent means slope 0", "So solve f′(x) = 0"]),
+            Question(id: "calc.opt.q2",
+                     prompt: "f(x) = −x² + 6x. At what x is the maximum?", math: nil,
+                     kind: .freeAnswer(accepted: ["3"]),
+                     hint: "Set f′(x) = −2x + 6 equal to 0.",
+                     solutionSteps: ["f′(x) = −2x + 6", "−2x + 6 = 0", "x = 3"]),
+            Question(id: "calc.opt.q3",
+                     prompt: "If f″(x) > 0 at a critical point, the point is likely a:", math: nil,
+                     kind: .multipleChoice(options: [
+                        .init(label: "Minimum", math: nil),
+                        .init(label: "Maximum", math: nil),
+                        .init(label: "Vertical asymptote", math: nil),
+                        .init(label: "Period", math: nil),
+                     ], correctIndex: 0),
+                     hint: "Concave up forms a valley.",
+                     solutionSteps: ["f″(x) > 0 means concave up", "A concave-up critical point is a minimum"]),
+            Question(id: "calc.opt.q4",
+                     prompt: "For f(x) = x² − 8x, the minimum occurs at x =", math: nil,
+                     kind: .freeAnswer(accepted: ["4"]),
+                     hint: "f′(x) = 2x − 8.",
+                     solutionSteps: ["2x − 8 = 0", "x = 4"]),
+            Question(id: "calc.opt.q5",
+                     prompt: "True or false: endpoints can matter in an optimization problem.",
+                     math: nil,
+                     kind: .trueFalse(answer: true),
+                     hint: "A closed interval has boundary values.",
+                     solutionSteps: ["The largest or smallest value can occur at an endpoint", "Always compare endpoints with critical points"]),
         ]
     )
 
@@ -2151,6 +2302,65 @@ enum Curriculum {
                      kind: .freeAnswer(accepted: ["20"]),
                      hint: "max − min = range.",
                      solutionSteps: ["max − 12 = 8", "max = 20"]),
+        ]
+    )
+
+    static let correlationRegression = Lesson(
+        id: "stats.corr",
+        title: "Correlation & Regression",
+        intro: "Correlation describes how two variables move together. Regression uses that pattern to make a simple prediction.",
+        formulas: [
+            Formula(key: "stats.corr.f1",
+                    name: "Correlation direction",
+                    math: "{var:r} > 0 positive    {var:r} < 0 negative    {var:r} ≈ 0 weak linear pattern",
+                    explanation: "The sign tells direction; the size tells strength."),
+            Formula(key: "stats.corr.f2",
+                    name: "Line of best fit",
+                    math: "{var:y} = {var:m}{var:x} + {var:b}",
+                    explanation: "A regression line summarizes a linear trend."),
+        ],
+        questions: [
+            Question(id: "stats.corr.q1",
+                     prompt: "If x increases and y usually increases too, the correlation is:", math: nil,
+                     kind: .multipleChoice(options: [
+                        .init(label: "Positive", math: nil),
+                        .init(label: "Negative", math: nil),
+                        .init(label: "Impossible", math: nil),
+                        .init(label: "Always zero", math: nil),
+                     ], correctIndex: 0),
+                     hint: "They move in the same direction.",
+                     solutionSteps: ["Same-direction movement means positive correlation"]),
+            Question(id: "stats.corr.q2",
+                     prompt: "A correlation of r = −0.9 is:", math: nil,
+                     kind: .multipleChoice(options: [
+                        .init(label: "Strong negative", math: nil),
+                        .init(label: "Weak positive", math: nil),
+                        .init(label: "No relationship", math: nil),
+                        .init(label: "Exactly zero", math: nil),
+                     ], correctIndex: 0),
+                     hint: "Close to −1 means strong negative linear association.",
+                     solutionSteps: ["−0.9 is near −1", "So the relationship is strong and negative"]),
+            Question(id: "stats.corr.q3",
+                     prompt: "Using y = 2x + 3, predict y when x = 4.", math: nil,
+                     kind: .freeAnswer(accepted: ["11"]),
+                     hint: "Substitute x = 4.",
+                     solutionSteps: ["y = 2(4) + 3", "y = 8 + 3 = 11"]),
+            Question(id: "stats.corr.q4",
+                     prompt: "True or false: correlation proves causation.",
+                     math: nil,
+                     kind: .trueFalse(answer: false),
+                     hint: "Two things can move together without one causing the other.",
+                     solutionSteps: ["Correlation shows association", "It does not by itself prove cause and effect"]),
+            Question(id: "stats.corr.q5",
+                     prompt: "On a scatter plot, points close to an upward line suggest:", math: nil,
+                     kind: .multipleChoice(options: [
+                        .init(label: "Strong positive correlation", math: nil),
+                        .init(label: "Strong negative correlation", math: nil),
+                        .init(label: "No linear pattern", math: nil),
+                        .init(label: "A smaller sample size", math: nil),
+                     ], correctIndex: 0),
+                     hint: "Upward line means both variables tend to rise together.",
+                     solutionSteps: ["Close to a line means strong", "Upward means positive"]),
         ]
     )
 
@@ -2954,21 +3164,22 @@ enum Curriculum {
               icon: "number",
               color: Palette.stats,
               lessons: [preAlgFractions, preAlgPercents, preAlgOrder, preAlgNegatives,
-                        preAlgDecimals, preAlgRatios, preAlgRoots]),
+                        preAlgDecimals, preAlgRatios, preAlgRoots, scientificNotation]),
         Topic(id: "algebra",
               title: "Algebra",
               subtitle: "Equations & expressions",
               icon: "function",
               color: Palette.algebra,
               lessons: [linearEquations, quadratics, exponents, logarithms, factoring,
-                        linesAndSlope, inequalities, systems, polynomials, algFunctions]),
+                        linesAndSlope, inequalities, systems, polynomials, algFunctions,
+                        absoluteValueEquations]),
         Topic(id: "calculus",
               title: "Calculus",
               subtitle: "Change & accumulation",
               icon: "chart.xyaxis.line",
               color: Palette.calculus,
               lessons: [limits, derivatives, integrals, chainRule,
-                        productQuotient, definiteIntegrals, calcApplications]),
+                        productQuotient, definiteIntegrals, calcApplications, optimizationBasics]),
         Topic(id: "geometry",
               title: "Geometry",
               subtitle: "Shapes & distance",
@@ -2987,7 +3198,8 @@ enum Curriculum {
               subtitle: "Data, chance & decisions",
               icon: "chart.bar.doc.horizontal",
               color: Palette.stats,
-              lessons: [descriptiveStats, probabilityBasics, dataDisplays, sampling, distributions]),
+              lessons: [descriptiveStats, probabilityBasics, dataDisplays, sampling,
+                        distributions, correlationRegression]),
         Topic(id: "linearalgebra",
               title: "Linear Algebra",
               subtitle: "Vectors, matrices & systems",
