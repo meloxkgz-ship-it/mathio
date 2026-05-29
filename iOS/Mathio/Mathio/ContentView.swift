@@ -2413,7 +2413,7 @@ struct PaywallView: View {
                     .tracking(1.2)
                 VStack(alignment: .leading, spacing: 8) {
                     row("graduationcap.fill", "Students preparing for homework, exams, and finals")
-                    row("person.fill.checkmark", "Self-learners who want structure without noisy gamification")
+                    row("person.fill.checkmark", "Self-learners who want structure without distractions")
                     row("figure.and.child.holdinghands", "Parents who want clear practice instead of random drills")
                 }
             }
@@ -2504,7 +2504,7 @@ struct PaywallView: View {
         }
     }
 
-    private func planSubtitle(_ plan: Plan) -> String {
+    private func planSubtitle(_ plan: Plan) -> LocalizedStringResource {
         switch plan {
         case .annual:
             if let pw = premiumStore.annualPerWeek() {
@@ -2560,7 +2560,7 @@ struct PaywallView: View {
                 Task { await purchase() }
             }
             HStack {
-                Button("Restore") { Task { await premiumStore.restore() } }
+                Button("Restore purchases") { Task { await premiumStore.restore() } }
                 Spacer()
                 Link("Terms", destination: Links.terms)
                 Spacer()

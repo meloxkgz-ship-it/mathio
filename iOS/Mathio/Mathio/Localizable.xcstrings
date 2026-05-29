@@ -1328,6 +1328,7 @@
       }
     },
     "/ year": {
+      "extractionState": "manual",
       "localizations": {
         "de": {
           "stringUnit": {
@@ -1344,7 +1345,7 @@
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "/ année"
+            "value": "/ an"
           }
         },
         "it": {
@@ -5748,35 +5749,36 @@
       }
     },
     "3-day free trial, then weekly": {
+      "extractionState": "manual",
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "3 Tage gratis, dann wöchentlich"
+            "value": "3 Tage gratis, danach wöchentlich"
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Prueba gratuita de 3 días, luego semanal"
+            "value": "3 días gratis, luego semanalmente"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Essai gratuit de 3 jours, puis hebdomadaire"
+            "value": "3 jours gratuits, puis chaque semaine"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Prova gratuita di 3 giorni, poi settimanale"
+            "value": "3 giorni gratis, poi settimanalmente"
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Teste gratuito de 3 dias, depois semanalmente"
+            "value": "3 dias grátis, depois semanalmente"
           }
         }
       }
@@ -7924,6 +7926,7 @@
       }
     },
     "61 lessons across algebra, calculus, geometry, statistics, finance, and more": {
+      "extractionState": "manual",
       "localizations": {
         "de": {
           "stringUnit": {
@@ -7934,25 +7937,25 @@
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "61 lessons across algebra, calculus, geometry, statistics, finance, and more"
+            "value": "61 lecciones de álgebra, cálculo, geometría, estadística, finanzas y más"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "61 lessons across algebra, calculus, geometry, statistics, finance, and more"
+            "value": "61 leçons en algèbre, analyse, géométrie, statistiques, finance et plus encore"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "61 lessons across algebra, calculus, geometry, statistics, finance, and more"
+            "value": "61 lezioni su algebra, analisi, geometria, statistica, finanza e altro"
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "61 lessons across algebra, calculus, geometry, statistics, finance, and more"
+            "value": "61 lições de álgebra, cálculo, geometria, estatística, finanças e mais"
           }
         }
       }
@@ -8264,6 +8267,7 @@
       }
     },
     "7-day free trial, then %@ per week": {
+      "extractionState": "manual",
       "localizations": {
         "de": {
           "stringUnit": {
@@ -8274,59 +8278,60 @@
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Prueba gratuita de 7 días, luego %@ por semana"
+            "value": "7 días gratis, luego %@ por semana"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Essai gratuit de 7 jours, puis %@ par semaine"
+            "value": "7 jours gratuits, puis %@ par semaine"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Prova gratuita di 7 giorni, poi %@ a settimana"
+            "value": "7 giorni gratis, poi %@ a settimana"
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Avaliação gratuita de 7 dias, depois %@ por semana"
+            "value": "7 dias grátis, depois %@ por semana"
           }
         }
       }
     },
     "7-day free trial, then billed yearly": {
+      "extractionState": "manual",
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "7 Tage gratis, dann jährliche Abrechnung"
+            "value": "7 Tage gratis, danach jährliche Abrechnung"
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Prueba gratuita de 7 días y luego facturación anual"
+            "value": "7 días gratis, luego facturación anual"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Essai gratuit de 7 jours, puis facturé annuellement"
+            "value": "7 jours gratuits, puis facturation annuelle"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Prova gratuita di 7 giorni, poi fatturazione annuale"
+            "value": "7 giorni gratis, poi fatturazione annuale"
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Avaliação gratuita de 7 dias, depois cobrada anualmente"
+            "value": "7 dias grátis, depois cobrança anual"
           }
         }
       }
@@ -12752,11 +12757,12 @@
       }
     },
     "ANNUAL · 25 % OFF": {
+      "extractionState": "manual",
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "JAHRESABO · 25 % RABATT"
+            "value": "JÄHRLICH · 25 % RABATT"
           }
         },
         "es": {
@@ -12774,13 +12780,13 @@
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "ANNUALE · SCONTO DEL 25%."
+            "value": "ANNUALE · 25 % DI SCONTO"
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "ANUAL · 25% DE DESCONTO"
+            "value": "ANUAL · 25 % DE DESCONTO"
           }
         }
       }
@@ -13058,35 +13064,36 @@
       }
     },
     "Adaptive practice focuses on weak spots": {
+      "extractionState": "manual",
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Adaptives Üben konzentriert sich auf Schwächen"
+            "value": "Adaptive Übungen konzentrieren sich auf Schwachstellen"
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Adaptive practice focuses on weak spots"
+            "value": "La práctica adaptativa se centra en los puntos débiles"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Adaptive practice focuses on weak spots"
+            "value": "L’entraînement adaptatif cible les points faibles"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Adaptive practice focuses on weak spots"
+            "value": "La pratica adattiva si concentra sui punti deboli"
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Adaptive practice focuses on weak spots"
+            "value": "A prática adaptativa foca nos pontos fracos"
           }
         }
       }
@@ -14690,6 +14697,7 @@
       }
     },
     "Annual": {
+      "extractionState": "manual",
       "localizations": {
         "de": {
           "stringUnit": {
@@ -15948,23 +15956,24 @@
       }
     },
     "Best value": {
+      "extractionState": "manual",
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Bester Preis"
+            "value": "Bester Wert"
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Mejor valor"
+            "value": "Mejor opción"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Meilleur rapport qualité-prix"
+            "value": "Meilleur choix"
           }
         },
         "it": {
@@ -15976,7 +15985,7 @@
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Melhor valor"
+            "value": "Melhor escolha"
           }
         }
       }
@@ -16560,6 +16569,7 @@
       }
     },
     "Built for": {
+      "extractionState": "manual",
       "localizations": {
         "de": {
           "stringUnit": {
@@ -16570,25 +16580,25 @@
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Built for"
+            "value": "Hecho para"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Built for"
+            "value": "Conçu pour"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Built for"
+            "value": "Ideale per"
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Built for"
+            "value": "Feito para"
           }
         }
       }
@@ -17410,6 +17420,7 @@
       }
     },
     "Close": {
+      "extractionState": "manual",
       "localizations": {
         "de": {
           "stringUnit": {
@@ -17420,7 +17431,7 @@
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Cerca"
+            "value": "Cerrar"
           }
         },
         "fr": {
@@ -17432,7 +17443,7 @@
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Vicino"
+            "value": "Chiudi"
           }
         },
         "pt-BR": {
@@ -26998,35 +27009,36 @@
       }
     },
     "Guided paths show exactly what to study next": {
+      "extractionState": "manual",
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Geführte Lernpfade zeigen genau, was als Nächstes kommt"
+            "value": "Geführte Lernpfade zeigen genau, was als Nächstes dran ist"
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Guided paths show exactly what to study next"
+            "value": "Las rutas guiadas muestran exactamente qué estudiar después"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Guided paths show exactly what to study next"
+            "value": "Les parcours guidés indiquent exactement quoi étudier ensuite"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Guided paths show exactly what to study next"
+            "value": "I percorsi guidati mostrano esattamente cosa studiare dopo"
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Guided paths show exactly what to study next"
+            "value": "As trilhas guiadas mostram exatamente o que estudar em seguida"
           }
         }
       }
@@ -30262,6 +30274,7 @@
       }
     },
     "Keep my access at 25 %% off": {
+      "extractionState": "manual",
       "localizations": {
         "de": {
           "stringUnit": {
@@ -30272,25 +30285,25 @@
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Mantener mi acceso en 25 %% desactivado"
+            "value": "Mantener mi acceso con 25 %% de descuento"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Garder mon accès à 25 %% de réduction"
+            "value": "Garder mon accès avec 25 %% de réduction"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Mantieni il mio accesso a 25 %% disattivato"
+            "value": "Mantieni l’accesso con il 25 %% di sconto"
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Manter meu acesso em 25 %% desativado"
+            "value": "Manter meu acesso com 25 %% de desconto"
           }
         }
       }
@@ -30568,35 +30581,36 @@
       }
     },
     "Learn math with a full roadmap": {
+      "extractionState": "manual",
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Mathe lernen mit klarer Roadmap"
+            "value": "Mathe lernen mit klarem Plan"
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Learn math with a full roadmap"
+            "value": "Aprende matemáticas con una ruta clara"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Learn math with a full roadmap"
+            "value": "Apprenez les maths avec un parcours clair"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Learn math with a full roadmap"
+            "value": "Impara matematica con un percorso chiaro"
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Learn math with a full roadmap"
+            "value": "Aprenda matemática com um plano claro"
           }
         }
       }
@@ -35464,35 +35478,36 @@
       }
     },
     "One-time offer. Locked in for 12 months.": {
+      "extractionState": "manual",
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Einmaliges Angebot. 12 Monate festgeschrieben."
+            "value": "Einmaliges Angebot. Für 12 Monate gesichert."
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Oferta única. Encerrado durante 12 meses."
+            "value": "Oferta única. Precio asegurado por 12 meses."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Offre unique. Enfermé pendant 12 mois."
+            "value": "Offre unique. Tarif garanti pendant 12 mois."
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Offerta una tantum. Bloccato per 12 mesi."
+            "value": "Offerta unica. Prezzo bloccato per 12 mesi."
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Oferta única. Trancado por 12 meses."
+            "value": "Oferta única. Preço garantido por 12 meses."
           }
         }
       }
@@ -36688,35 +36703,36 @@
       }
     },
     "Parents who want clear practice instead of random drills": {
+      "extractionState": "manual",
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Eltern, die klare Übungen statt zufälliger Aufgaben wollen"
+            "value": "Eltern, die klare Übung statt zufälliger Aufgaben wollen"
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Parents who want clear practice instead of random drills"
+            "value": "Padres que quieren práctica clara en lugar de ejercicios al azar"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Parents who want clear practice instead of random drills"
+            "value": "Parents qui veulent des exercices clairs plutôt que des séries au hasard"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Parents who want clear practice instead of random drills"
+            "value": "Genitori che vogliono esercizi chiari invece di prove casuali"
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Parents who want clear practice instead of random drills"
+            "value": "Pais que querem prática clara em vez de exercícios aleatórios"
           }
         }
       }
@@ -37946,35 +37962,36 @@
       }
     },
     "Premium unlocks the complete curriculum, guided paths, and every worked solution.": {
+      "extractionState": "manual",
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Premium schaltet den kompletten Lehrplan, geführte Lernpfade und jede ausführliche Lösung frei."
+            "value": "Premium schaltet den kompletten Lehrplan, geführte Lernpfade und alle Lösungswege frei."
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Premium unlocks the complete curriculum, guided paths, and every worked solution."
+            "value": "Premium desbloquea todo el currículo, rutas guiadas y todas las soluciones explicadas."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Premium unlocks the complete curriculum, guided paths, and every worked solution."
+            "value": "Premium débloque tout le programme, les parcours guidés et chaque solution détaillée."
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Premium unlocks the complete curriculum, guided paths, and every worked solution."
+            "value": "Premium sblocca il programma completo, i percorsi guidati e ogni soluzione spiegata."
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Premium unlocks the complete curriculum, guided paths, and every worked solution."
+            "value": "O Premium libera o currículo completo, trilhas guiadas e todas as soluções explicadas."
           }
         }
       }
@@ -38048,6 +38065,7 @@
       }
     },
     "Privacy": {
+      "extractionState": "manual",
       "localizations": {
         "de": {
           "stringUnit": {
@@ -40224,6 +40242,7 @@
       }
     },
     "Restore purchases": {
+      "extractionState": "manual",
       "localizations": {
         "de": {
           "stringUnit": {
@@ -40246,7 +40265,7 @@
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Ripristina gli acquisti"
+            "value": "Ripristina acquisti"
           }
         },
         "pt-BR": {
@@ -41685,7 +41704,43 @@
         }
       }
     },
+    "Self-learners who want structure without distractions": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Selbstlerner, die Struktur ohne Ablenkung wollen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Autodidactas que quieren estructura sin distracciones"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Autodidactes qui veulent une structure sans distractions"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Autodidatti che vogliono struttura senza distrazioni"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Autodidatas que querem estrutura sem distrações"
+          }
+        }
+      }
+    },
     "Self-learners who want structure without noisy gamification": {
+      "extractionState": "stale",
       "localizations": {
         "de": {
           "stringUnit": {
@@ -44372,35 +44427,36 @@
       }
     },
     "Spaced repetition brings back what you are about to forget": {
+      "extractionState": "manual",
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Spaced Repetition wiederholt, was du fast vergessen würdest"
+            "value": "Wiederholungen kommen zurück, bevor du sie vergisst"
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Spaced repetition brings back what you are about to forget"
+            "value": "El repaso inteligente recupera lo que estás a punto de olvidar"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Spaced repetition brings back what you are about to forget"
+            "value": "La révision intelligente fait revenir ce que vous risquez d’oublier"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Spaced repetition brings back what you are about to forget"
+            "value": "Il ripasso intelligente ripropone ciò che stai per dimenticare"
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Spaced repetition brings back what you are about to forget"
+            "value": "A revisão inteligente traz de volta o que você está prestes a esquecer"
           }
         }
       }
@@ -44746,69 +44802,71 @@
       }
     },
     "Start 3-day free trial": {
+      "extractionState": "manual",
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "3 Tage gratis testen"
+            "value": "3 Tage kostenlos testen"
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Comience la prueba gratuita de 3 días"
+            "value": "Empezar 3 días gratis"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Commencez un essai gratuit de 3 jours"
+            "value": "Essayer 3 jours gratuitement"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Inizia la prova gratuita di 3 giorni"
+            "value": "Prova gratis per 3 giorni"
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Comece um teste gratuito de 3 dias"
+            "value": "Começar 3 dias grátis"
           }
         }
       }
     },
     "Start 7-day free trial": {
+      "extractionState": "manual",
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "7 Tage gratis testen"
+            "value": "7 Tage kostenlos testen"
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Comience la prueba gratuita de 7 días"
+            "value": "Empezar 7 días gratis"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Commencez l'essai gratuit de 7 jours"
+            "value": "Essayer 7 jours gratuitement"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Inizia la prova gratuita di 7 giorni"
+            "value": "Prova gratis per 7 giorni"
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Comece um teste gratuito de 7 dias"
+            "value": "Começar 7 dias grátis"
           }
         }
       }
@@ -44882,35 +44940,36 @@
       }
     },
     "Stay one more year for 25 % off.": {
+      "extractionState": "manual",
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Bleib ein Jahr länger für 25 % Rabatt."
+            "value": "Bleib ein weiteres Jahr mit 25 % Rabatt."
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Quédate un año más con un 25% de descuento."
+            "value": "Quédate un año más con 25 % de descuento."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Restez un an de plus pour 25 % de réduction."
+            "value": "Restez un an de plus avec 25 % de réduction."
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Resta un altro anno con uno sconto del 25%."
+            "value": "Resta un altro anno con il 25 % di sconto."
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Fique mais um ano com 25% de desconto."
+            "value": "Fique mais um ano com 25 % de desconto."
           }
         }
       }
@@ -45256,35 +45315,36 @@
       }
     },
     "Students preparing for homework, exams, and finals": {
+      "extractionState": "manual",
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Schüler, die für Hausaufgaben, Tests und Abschlussprüfungen üben"
+            "value": "Schüler und Studierende, die Hausaufgaben, Tests und Prüfungen vorbereiten"
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Students preparing for homework, exams, and finals"
+            "value": "Estudiantes que preparan tareas, exámenes y finales"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Students preparing for homework, exams, and finals"
+            "value": "Élèves et étudiants qui préparent devoirs, examens et contrôles"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Students preparing for homework, exams, and finals"
+            "value": "Studenti che preparano compiti, esami e verifiche"
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Students preparing for homework, exams, and finals"
+            "value": "Estudantes que se preparam para tarefas, provas e exames finais"
           }
         }
       }
@@ -46582,6 +46642,7 @@
       }
     },
     "Terms": {
+      "extractionState": "manual",
       "localizations": {
         "de": {
           "stringUnit": {
@@ -46598,7 +46659,7 @@
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Termes"
+            "value": "Conditions"
           }
         },
         "it": {
@@ -54096,23 +54157,24 @@
       }
     },
     "Wait — special offer": {
+      "extractionState": "manual",
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Warte — Sonderangebot"
+            "value": "Moment — Sonderangebot"
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Espera, oferta especial"
+            "value": "Espera: oferta especial"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Attendez — offre spéciale"
+            "value": "Attendez : offre spéciale"
           }
         },
         "it": {
@@ -54124,7 +54186,7 @@
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Espere – oferta especial"
+            "value": "Espere: oferta especial"
           }
         }
       }
@@ -54164,6 +54226,7 @@
       }
     },
     "Weekly": {
+      "extractionState": "manual",
       "localizations": {
         "de": {
           "stringUnit": {
@@ -54174,7 +54237,7 @@
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Semanalmente"
+            "value": "Semanal"
           }
         },
         "fr": {
@@ -54192,7 +54255,7 @@
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Semanalmente"
+            "value": "Semanal"
           }
         }
       }
@@ -55558,35 +55621,36 @@
       }
     },
     "Worked solutions explain every missed answer": {
+      "extractionState": "manual",
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Ausführliche Lösungen erklären jede falsche Antwort"
+            "value": "Ausgerechnete Lösungen erklären jede falsche Antwort"
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Worked solutions explain every missed answer"
+            "value": "Las soluciones desarrolladas explican cada respuesta fallida"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Worked solutions explain every missed answer"
+            "value": "Les solutions détaillées expliquent chaque réponse manquée"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Worked solutions explain every missed answer"
+            "value": "Le soluzioni svolte spiegano ogni risposta sbagliata"
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Worked solutions explain every missed answer"
+            "value": "Soluções passo a passo explicam cada resposta errada"
           }
         }
       }
