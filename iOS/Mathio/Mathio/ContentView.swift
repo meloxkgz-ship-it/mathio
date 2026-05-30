@@ -747,6 +747,14 @@ struct HomeView: View {
     private var monthsOfPractice: Int {
         max(1, Int(ceil(Double(questionCount) / Double(max(settings.dailyGoal, 1)) / 30.0)))
     }
+    private var totalCorrect: Int { store.answered.values.reduce(0) { $0 + $1.correct } }
+    private var nextCorrectMilestone: Int {
+        [25, 50, 100, 250, 500, 1_000].first { $0 > totalCorrect }
+            ?? ((totalCorrect / 500) + 1) * 500
+    }
+    private var milestoneProgress: Double {
+        min(1, Double(totalCorrect) / Double(max(nextCorrectMilestone, 1)))
+    }
 
     /// Set by `PracticeMathIntent` (Siri / Spotlight). Honored once on appear.
     private static let pendingPracticeKey = "mathio.intent.pendingPractice"
@@ -758,6 +766,7 @@ struct HomeView: View {
                     header
                     DailyGoalView(progress: store.correctToday(), goal: settings.dailyGoal)
                     todayPlanCard
+                    momentumCard
                     nextUpCard
                     personalPlanCard
                     learningPathsSection
@@ -929,6 +938,42 @@ struct HomeView: View {
             return "Daily goal reached. \(store.correctToday()) correct out of \(settings.dailyGoal)."
         }
         return "A daily goal small enough to actually hit"
+    }
+
+    private var momentumCard: some View {
+        Card(padding: 16) {
+            VStack(alignment: .leading, spacing: 12) {
+                HStack(spacing: 10) {
+                    Image(systemName: "sparkles")
+                        .font(.system(size: 15, weight: .semibold))
+                        .foregroundStyle(Palette.amber)
+                        .frame(width: 30, height: 30)
+                        .background(Palette.amberSoft, in: Circle())
+                    VStack(alignment: .leading, spacing: 2) {
+                        Text("Next milestone")
+                            .font(.titleM)
+                            .foregroundStyle(Palette.ink)
+                        Text("\(nextCorrectMilestone - totalCorrect) correct answers until \(nextCorrectMilestone) total.")
+                            .font(.bodyM)
+                            .foregroundStyle(Palette.inkSoft)
+                            .fixedSize(horizontal: false, vertical: true)
+                    }
+                    Spacer(minLength: 0)
+                }
+                ProgressBar(progress: milestoneProgress, color: Palette.amber, height: 6)
+                HStack {
+                    Text("\(totalCorrect) correct so far")
+                        .font(.caption)
+                        .foregroundStyle(Palette.inkFaint)
+                    Spacer()
+                    Text("Keep going while the session is warm.")
+                        .font(.caption)
+                        .foregroundStyle(Palette.inkFaint)
+                        .multilineTextAlignment(.trailing)
+                }
+            }
+        }
+        .accessibilityElement(children: .combine)
     }
 
     private func planRow(

@@ -35,6 +35,74 @@
         }
       }
     },
+    "%lld correct answers until %lld total.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld richtige Antworten bis insgesamt %lld."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld respuestas correctas hasta %lld en total."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld bonnes réponses avant %lld au total."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld risposte corrette fino a %lld in totale."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld respostas corretas até %lld no total."
+          }
+        }
+      }
+    },
+    "%lld correct so far": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld bisher richtig"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld correctas hasta ahora"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld bonnes réponses jusqu’ici"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld corrette finora"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld corretas até agora"
+          }
+        }
+      }
+    },
     "$1,000 loan at 12% annual interest has what monthly interest for one month?": {
       "localizations": {
         "de": {
@@ -32207,6 +32275,40 @@
         }
       }
     },
+    "Keep going while the session is warm.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mach weiter, solange du im Flow bist."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sigue mientras la sesión está activa."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continue tant que la séance est lancée."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continua finché la sessione è calda."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continue enquanto a sessão está no ritmo."
+          }
+        }
+      }
+    },
     "Keep x, change the sign of y.": {
       "localizations": {
         "de": {
@@ -36118,6 +36220,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Próximo número: 2, 6, 18, 54, ..."
+          }
+        }
+      }
+    },
+    "Next milestone": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nächster Meilenstein"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Próximo hito"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prochain palier"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prossimo traguardo"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Próximo marco"
           }
         }
       }
