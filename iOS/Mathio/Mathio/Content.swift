@@ -1109,6 +1109,59 @@ enum Curriculum {
         ]
     )
 
+    static let implicitDifferentiation = Lesson(
+        id: "calc.implicit",
+        title: "Implicit Differentiation",
+        intro: "Implicit differentiation handles equations where y is mixed with x. Treat y as a function of x, so d/dx y becomes dy/dx.",
+        formulas: [
+            Formula(key: "calc.implicit.f1",
+                    name: "Derivative of y",
+                    math: "d/d{var:x} ({var:y}) = d{var:y}/d{var:x}",
+                    explanation: "Because y depends on x, differentiating y creates dy/dx."),
+            Formula(key: "calc.implicit.f2",
+                    name: "Derivative of y²",
+                    math: "d/d{var:x} ({var:y}{sup:^2}) = 2{var:y} · d{var:y}/d{var:x}",
+                    explanation: "Use the chain rule when differentiating powers of y."),
+        ],
+        questions: [
+            Question(id: "calc.implicit.q1",
+                     prompt: "Differentiate y² with respect to x.",
+                     math: nil,
+                     kind: .freeAnswer(accepted: ["2y dy/dx", "2y*y'", "2yy'"]),
+                     hint: "Use the chain rule because y depends on x.",
+                     solutionSteps: ["d/dx(y²) = 2y · dy/dx"]),
+            Question(id: "calc.implicit.q2",
+                     prompt: "For x² + y² = 25, what is dy/dx?",
+                     math: nil,
+                     kind: .freeAnswer(accepted: ["-x/y", "−x/y"]),
+                     hint: "Differentiate both sides, then solve for dy/dx.",
+                     solutionSteps: ["2x + 2y(dy/dx) = 0", "2y(dy/dx) = −2x", "dy/dx = −x/y"]),
+            Question(id: "calc.implicit.q3",
+                     prompt: "For xy = 6, what is dy/dx?",
+                     math: nil,
+                     kind: .freeAnswer(accepted: ["-y/x", "−y/x"]),
+                     hint: "Use the product rule on xy.",
+                     solutionSteps: ["d/dx(xy) = x(dy/dx) + y", "x(dy/dx) + y = 0", "dy/dx = −y/x"]),
+            Question(id: "calc.implicit.q4",
+                     prompt: "In implicit differentiation, y is treated as:",
+                     math: nil,
+                     kind: .multipleChoice(options: [
+                        .init(label: "A function of x", math: nil),
+                        .init(label: "Always constant", math: nil),
+                        .init(label: "Always zero", math: nil),
+                        .init(label: "An exponent", math: nil),
+                     ], correctIndex: 0),
+                     hint: "That is why dy/dx appears.",
+                     solutionSteps: ["y depends on x", "So differentiating y produces dy/dx"]),
+            Question(id: "calc.implicit.q5",
+                     prompt: "True or false: d/dx(y³) = 3y² dy/dx.",
+                     math: nil,
+                     kind: .trueFalse(answer: true),
+                     hint: "Apply the chain rule to y³.",
+                     solutionSteps: ["Outer derivative: 3y²", "Inner derivative: dy/dx"]),
+        ]
+    )
+
     // MARK: - Geometry (extended)
 
     static let volumes = Lesson(
@@ -4161,7 +4214,7 @@ enum Curriculum {
               icon: "chart.xyaxis.line",
               color: Palette.calculus,
               lessons: [limits, derivatives, integrals, chainRule,
-                        productQuotient, definiteIntegrals, calcApplications, optimizationBasics,
+                        implicitDifferentiation, productQuotient, definiteIntegrals, calcApplications, optimizationBasics,
                         relatedRates]),
         Topic(id: "geometry",
               title: "Geometry",
