@@ -52,7 +52,7 @@ Begründung:
 ## Werbetext (170 max — editierbar ohne Review)
 
 ```
-Neu: 65 Lektionen und 325 geführte Aufgaben, jetzt mit Steuern, Rabatten, Funktionsmodellierung, Inferenz-Grundlagen, Wahrheitstabellen und klarem Tagesplan.
+Neu: Standardabweichung, Implizite Ableitung und 81 Lektionen.
 ```
 **113 / 170** — hebt Kataloggröße und neue alltagsnahe Inhalte hervor.
 
@@ -104,7 +104,7 @@ Verfügbar auf Deutsch, Englisch, Spanisch, Französisch, Italienisch und Brasil
 
 — THEMEN —
 Vor-Algebra · Algebra · Geometrie · Trigonometrie · Analysis
-65 Lektionen, 325 handgemachte Aufgaben in Multiple-Choice, Freitext und Wahr/Falsch. Von Bruchrechnen, Potenzen und Logarithmen bis zu Ableitungen, Integralen, Statistik, Vektoren, Budgetrechnung, Steuern, Rabatten, Funktionsmodellierung, Inferenz-Grundlagen, Korrelation, Optimierung, Wahrheitstabellen und Logik.
+81 Lektionen und 405 handgemachte Aufgaben in Multiple-Choice, Freitext und Wahr/Falsch. Von Bruchrechnen, Potenzen und Logarithmen bis zu Ableitungen, impliziter Ableitung, Integralen, Statistik, Standardabweichung, Normalverteilung, Vektoren, Budgetrechnung, Steuern, Rabatten, Funktionsmodellierung, Konfidenzintervallen, Korrelation, Optimierung, Wahrheitstabellen und Logik.
 
 — ABO —
 Mathio ist kostenlos zum Ausprobieren. Alle Themen freischalten mit:
@@ -126,13 +126,13 @@ Von Bruchrechnung bis Differentialrechnung. Zwei Minuten täglich genügen.
 ### v1.0.9
 
 ```
-Dieses Update macht Mathio breiter und nützlicher für tägliches Üben.
+Mathio gibt Lernenden jetzt klarere Richtung und mehr Tiefe für tägliches Üben.
 
-• Neue Lektion: Funktionsmodellierung für alltagsnahe Algebra
-• Neue Lektion: Inferenz-Grundlagen für Statistik und Stichproben
-• Mathio wächst auf 65 Lektionen und 325 geführte Aufgaben
-• Der persönliche Startplan und das zielbasierte Onboarding bleiben drin
-• Premium- und App-Store-Texte passen jetzt zum erweiterten Inhalt
+• Neue Lektion: Standardabweichung für Streuung, quadrierte Abweichungen und Stichprobe-vs-Population
+• Neue Lektion: Implizite Ableitung für dy/dx, Kreise, Produkte und Kettenregel-Denken
+• Home zeigt Mistake Notebook, Review-Vorschau, 7-Tage-Fokus und nächste Lernziele
+• Mathio wächst auf 81 Lektionen und 405 geführte Aufgaben
+• Premium- und App-Store-Texte passen zum erweiterten Inhalt
 
 Zwei Minuten am Tag decken jetzt noch mehr relevante Mathematik ab.
 ```

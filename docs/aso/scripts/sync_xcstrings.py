@@ -57,6 +57,50 @@ PROSE: dict[str, str] = {
     "Tomorrow": "Morgen",
     "Missed": "Verpasst",
     "Session insight": "Session-Auswertung",
+    "2 − 4 = −2, squared is 4": "2 − 4 = −2, quadriert ist das 4",
+    "4 − 4 = 0, squared is 0": "4 − 4 = 0, quadriert ist das 0",
+    "6 − 4 = 2, squared is 4": "6 − 4 = 2, quadriert ist das 4",
+    "A larger standard deviation usually means the data are:":
+        "Eine größere Standardabweichung bedeutet meistens, dass die Daten:",
+    "A square root is not negative": "Eine Quadratwurzel ist nicht negativ",
+    "Add the values and divide by 3.": "Addiere die Werte und teile durch 3.",
+    "All equal": "Alle gleich",
+    "All values equal the mean": "Alle Werte entsprechen dem Mittelwert",
+    "Always smaller": "Immer kleiner",
+    "Every deviation is 0": "Jede Abweichung ist 0",
+    "Find each distance from the mean, square it, average those squares, then take the square root.":
+        "Bestimme jeden Abstand vom Mittelwert, quadriere ihn, bilde den Durchschnitt dieser Quadrate und ziehe dann die Wurzel.",
+    "For 2, 4, and 6, the squared deviations from the mean 4 are:":
+        "Für 2, 4 und 6 sind die quadrierten Abweichungen vom Mittelwert 4:",
+    "For 2, 4, and 6, what is the mean?":
+        "Für 2, 4 und 6: Wie groß ist der Mittelwert?",
+    "For a sample, divide by n − 1 to account for estimating from limited data.":
+        "Bei einer Stichprobe teilst du durch n − 1, weil du aus begrenzten Daten schätzt.",
+    "It comes from a square root of an average of squared distances.":
+        "Sie entsteht aus der Quadratwurzel eines Durchschnitts quadrierter Abstände.",
+    "Larger typical distance means more spread":
+        "Ein größerer typischer Abstand bedeutet mehr Streuung",
+    "More spread out": "Stärker gestreut",
+    "No spread means every value is identical.":
+        "Keine Streuung bedeutet, dass jeder Wert identisch ist.",
+    "Not numbers": "Keine Zahlen",
+    "Population standard deviation": "Standardabweichung der Grundgesamtheit",
+    "Sample standard deviation": "Stichproben-Standardabweichung",
+    "So standard deviation is 0": "Also ist die Standardabweichung 0",
+    "So the data are more spread out": "Also sind die Daten stärker gestreut",
+    "Squared deviations are not negative":
+        "Quadrierte Abweichungen sind nicht negativ",
+    "Standard Deviation": "Standardabweichung",
+    "Standard deviation measures the typical distance from the mean. Small values are tightly clustered; large values are more spread out.":
+        "Die Standardabweichung misst den typischen Abstand vom Mittelwert. Kleine Werte liegen eng beieinander; große Werte sind stärker gestreut.",
+    "Standard deviation measures typical distance from the mean.":
+        "Die Standardabweichung misst den typischen Abstand vom Mittelwert.",
+    "Subtract 4 from each value, then square.":
+        "Ziehe von jedem Wert 4 ab und quadriere dann.",
+    "True or false: standard deviation is never negative.":
+        "Wahr oder falsch: Die Standardabweichung ist nie negativ.",
+    "Which data set has standard deviation 0?":
+        "Welcher Datensatz hat Standardabweichung 0?",
 
     # Curriculum: lesson titles
     "Power rule": "Potenzregel",
