@@ -4218,12 +4218,28 @@ struct StatsView: View {
                 progress: min(1, Double(store.streakDays) / 3.0)
             ),
             Achievement(
+                id: "week-anchor",
+                title: "Week anchor",
+                subtitle: "Build a 7-day streak.",
+                icon: "calendar.badge.checkmark",
+                unlocked: store.streakDays >= 7,
+                progress: min(1, Double(store.streakDays) / 7.0)
+            ),
+            Achievement(
                 id: "momentum-maker",
                 title: "Momentum maker",
                 subtitle: "Reach 25 correct answers.",
                 icon: "bolt.fill",
                 unlocked: totalCorrect >= 25,
                 progress: min(1, Double(totalCorrect) / 25.0)
+            ),
+            Achievement(
+                id: "roadmap-starter",
+                title: "Roadmap starter",
+                subtitle: "Master 25% of the roadmap.",
+                icon: "map",
+                unlocked: overallMastery >= 0.25,
+                progress: min(1, overallMastery / 0.25)
             ),
             Achievement(
                 id: "halfway-explorer",
@@ -4240,6 +4256,38 @@ struct StatsView: View {
                 icon: "100.circle.fill",
                 unlocked: totalCorrect >= 100,
                 progress: min(1, Double(totalCorrect) / 100.0)
+            ),
+            Achievement(
+                id: "deep-practice",
+                title: "Deep practice",
+                subtitle: "Reach 250 correct answers.",
+                icon: "brain.head.profile",
+                unlocked: totalCorrect >= 250,
+                progress: min(1, Double(totalCorrect) / 250.0)
+            ),
+            Achievement(
+                id: "seasoned-learner",
+                title: "Seasoned learner",
+                subtitle: "Reach 500 correct answers.",
+                icon: "graduationcap.fill",
+                unlocked: totalCorrect >= 500,
+                progress: min(1, Double(totalCorrect) / 500.0)
+            ),
+            Achievement(
+                id: "review-cleaner",
+                title: "Review cleaner",
+                subtitle: "Clear every due review question.",
+                icon: "arrow.triangle.2.circlepath",
+                unlocked: hasAnyProgress && store.reviewQueue(in: topics).isEmpty,
+                progress: reviewHealthScore
+            ),
+            Achievement(
+                id: "roadmap-master",
+                title: "Roadmap master",
+                subtitle: "Master the full Mathio roadmap.",
+                icon: "crown.fill",
+                unlocked: overallMastery >= 1.0,
+                progress: overallMastery
             )
         ]
     }

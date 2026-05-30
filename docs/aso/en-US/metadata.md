@@ -173,6 +173,7 @@ New:
 
 Improved:
 • Progress now includes lesson-level study targets, not only topic percentages
+• Achievements now extend into longer-term streak, review, 250-answer, 500-answer, and full-roadmap goals
 • Clearer learning path guidance on Home
 • Better premium feel with more personalized study flow
 • Expanded curriculum: 88 lessons and 440 guided questions across 9 topics
