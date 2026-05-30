@@ -757,7 +757,7 @@ struct HomeView: View {
                 VStack(alignment: .leading, spacing: 24) {
                     header
                     DailyGoalView(progress: store.correctToday(), goal: settings.dailyGoal)
-                    if reviewCount > 0 { reviewBanner }
+                    todayPlanCard
                     nextUpCard
                     personalPlanCard
                     learningPathsSection
@@ -850,6 +850,118 @@ struct HomeView: View {
             }
         }
         .buttonStyle(.plain)
+    }
+
+    private var todayPlanCard: some View {
+        Card(padding: 16, background: Palette.surfaceMuted) {
+            VStack(alignment: .leading, spacing: 12) {
+                HStack {
+                    Label("Your start plan", systemImage: "checklist")
+                        .font(.titleM)
+                        .foregroundStyle(Palette.ink)
+                    Spacer()
+                    Text("\(store.correctToday())/\(settings.dailyGoal)")
+                        .font(.label)
+                        .foregroundStyle(Palette.inkSoft)
+                        .padding(.horizontal, 10)
+                        .padding(.vertical, 6)
+                        .background(Palette.surface, in: Capsule())
+                }
+
+                if reviewCount > 0 {
+                    Button { showReview = true } label: {
+                        planRow(
+                            title: "Review due",
+                            subtitle: "\(reviewCount) questions to refresh",
+                            icon: "arrow.triangle.2.circlepath",
+                            tint: Palette.terracotta
+                        )
+                    }
+                    .buttonStyle(.plain)
+                } else {
+                    planRow(
+                        title: "Review",
+                        subtitle: "Refresh what you've learned.",
+                        icon: "checkmark.circle.fill",
+                        tint: Palette.success
+                    )
+                }
+
+                if let (topic, lesson) = nextUp {
+                    Button {
+                        if !premiumStore.isPremium && !lesson.isFree(in: topic) {
+                            showPaywall = true
+                        } else {
+                            presented = lesson
+                        }
+                    } label: {
+                        planRow(
+                            title: "Continue",
+                            subtitle: lesson.title,
+                            icon: topic.icon,
+                            tint: topic.color,
+                            trailing: !premiumStore.isPremium && !lesson.isFree(in: topic) ? "lock.fill" : "arrow.right"
+                        )
+                    }
+                    .buttonStyle(.plain)
+                } else {
+                    planRow(
+                        title: "All mastered",
+                        subtitle: "Pick any topic to keep practicing.",
+                        icon: "checkmark.seal.fill",
+                        tint: Palette.success
+                    )
+                }
+
+                planRow(
+                    title: "Daily goal",
+                    subtitle: dailyGoalSubtitle,
+                    icon: store.correctToday() >= settings.dailyGoal ? "checkmark.circle.fill" : "target",
+                    tint: store.correctToday() >= settings.dailyGoal ? Palette.success : Palette.calculus
+                )
+            }
+        }
+        .accessibilityElement(children: .contain)
+    }
+
+    private var dailyGoalSubtitle: LocalizedStringResource {
+        if store.correctToday() >= settings.dailyGoal {
+            return "Daily goal reached. \(store.correctToday()) correct out of \(settings.dailyGoal)."
+        }
+        return "A daily goal small enough to actually hit"
+    }
+
+    private func planRow(
+        title: LocalizedStringResource,
+        subtitle: LocalizedStringResource,
+        icon: String,
+        tint: Color,
+        trailing: String? = nil
+    ) -> some View {
+        HStack(spacing: 12) {
+            Image(systemName: icon)
+                .font(.system(size: 16, weight: .semibold))
+                .foregroundStyle(tint)
+                .frame(width: 34, height: 34)
+                .background(tint.opacity(0.14), in: Circle())
+            VStack(alignment: .leading, spacing: 3) {
+                Text(title)
+                    .font(.bodyM.weight(.semibold))
+                    .foregroundStyle(Palette.ink)
+                Text(subtitle)
+                    .font(.caption)
+                    .foregroundStyle(Palette.inkSoft)
+                    .lineLimit(2)
+            }
+            Spacer()
+            if let trailing {
+                Image(systemName: trailing)
+                    .font(.system(size: 13, weight: .semibold))
+                    .foregroundStyle(Palette.inkFaint)
+            }
+        }
+        .padding(12)
+        .background(Palette.surface, in: RoundedRectangle(cornerRadius: 12, style: .continuous))
     }
 
     @ViewBuilder
