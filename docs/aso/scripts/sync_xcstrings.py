@@ -1295,7 +1295,12 @@ PROSE.update({
     "All 97 lessons and 485 guided questions": "Alle 97 Lektionen und 485 geführten Fragen",
     "90-Day Core Mastery": "90-Tage-Kernkompetenz",
     "12-Week Exam Prep": "12-Wochen-Prüfungsvorbereitung",
+    "12-week and 90-day tracks keep the next session obvious.":
+        "12-Wochen- und 90-Tage-Pfade machen die nächste Session klar.",
+    "Built for months, not minutes.": "Gebaut für Monate, nicht Minuten.",
     "Foundations to exam confidence": "Von Grundlagen zu Prüfungssicherheit",
+    "Long-term plan": "Langzeitplan",
+    "Path progress": "Pfadfortschritt",
     "Skills, sprints, and review rhythm": "Fähigkeiten, Sprints und Wiederholungsrhythmus",
     "Error Check Sprint": "Fehlercheck-Sprint",
     "Train the last minute habits that save points: check signs, units, reasonableness, and whether an answer actually satisfies the question.":

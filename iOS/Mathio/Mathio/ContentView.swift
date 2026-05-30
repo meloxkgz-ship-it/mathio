@@ -874,6 +874,12 @@ struct HomeView: View {
     private var topics: [Topic] { Curriculum.topics }
     private var learningPaths: [LearningPath] { LearningPath.defaultPaths }
     private var recommendedPath: LearningPath { LearningPath.recommended(for: store.learningProfile) }
+    private var longTermAnchorPath: LearningPath {
+        if store.learningProfile?.goal == .exam {
+            return LearningPath.defaultPaths.first { $0.id == "exam-prep-12-week" } ?? recommendedPath
+        }
+        return LearningPath.defaultPaths.first { $0.id == "core-mastery-90" } ?? recommendedPath
+    }
     private var nextUp: (Topic, Lesson)? { store.nextLesson(in: topics, premium: premiumStore.isPremium) }
     private var weakSpot: (Topic, Lesson)? {
         let candidates: [(Topic, Lesson, Double)] = topics.flatMap { topic in
@@ -2441,6 +2447,7 @@ struct HomeView: View {
     private var learningPathsSection: some View {
         VStack(alignment: .leading, spacing: 12) {
             SectionLabel(title: "Guided paths").padding(.leading, 4)
+            longTermPlanCard
             ForEach(learningPaths) { path in
                 Button { open(path) } label: {
                     LearningPathRow(
@@ -2454,6 +2461,72 @@ struct HomeView: View {
                 .accessibilityElement(children: .combine)
             }
         }
+    }
+
+    private var longTermPlanCard: some View {
+        let path = longTermAnchorPath
+        let pathProgress = progress(for: path)
+        return Card(padding: 16, background: Palette.heroSurface) {
+            VStack(alignment: .leading, spacing: 14) {
+                HStack(alignment: .top, spacing: 12) {
+                    Image(systemName: "map.fill")
+                        .font(.system(size: 18, weight: .semibold))
+                        .foregroundStyle(path.color)
+                        .frame(width: 40, height: 40)
+                        .background(path.color.opacity(0.16), in: Circle())
+                        .accessibilityHidden(true)
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text("Long-term plan")
+                            .font(.titleM)
+                            .foregroundStyle(Palette.heroInk)
+                        Text("Built for months, not minutes.")
+                            .font(.bodyM)
+                            .foregroundStyle(Palette.heroInk.opacity(0.74))
+                            .fixedSize(horizontal: false, vertical: true)
+                    }
+                    Spacer(minLength: 0)
+                    Text("\(path.durationDays)d")
+                        .font(.caption.weight(.semibold))
+                        .foregroundStyle(Palette.heroInk)
+                        .padding(.horizontal, 9)
+                        .padding(.vertical, 6)
+                        .background(Palette.surface.opacity(0.70), in: Capsule())
+                }
+
+                ProgressBar(progress: pathProgress, color: path.color, height: 7)
+
+                HStack(spacing: 10) {
+                    longTermMetric(value: "\(Int((pathProgress * 100).rounded()))%", label: "Path progress")
+                    longTermMetric(value: "\(path.lessons.count)", label: "Lessons")
+                    longTermMetric(value: nextMilestone(for: pathProgress), label: "Next milestone")
+                }
+
+                Button { open(path) } label: {
+                    HStack(spacing: 10) {
+                        Image(systemName: path.icon)
+                            .font(.system(size: 14, weight: .semibold))
+                        VStack(alignment: .leading, spacing: 2) {
+                            Text(path.title)
+                                .font(.bodyM.weight(.semibold))
+                                .foregroundStyle(Palette.heroInk)
+                            Text("12-week and 90-day tracks keep the next session obvious.")
+                                .font(.caption)
+                                .foregroundStyle(Palette.heroInk.opacity(0.68))
+                                .fixedSize(horizontal: false, vertical: true)
+                        }
+                        Spacer(minLength: 0)
+                        Image(systemName: firstLesson(in: path).map(isLocked(_:)) == true ? "lock.fill" : "arrow.right")
+                            .font(.system(size: 13, weight: .semibold))
+                            .foregroundStyle(Palette.heroInk.opacity(0.65))
+                    }
+                    .padding(12)
+                    .background(Palette.surface.opacity(0.72), in: RoundedRectangle(cornerRadius: 12, style: .continuous))
+                }
+                .buttonStyle(.plain)
+            }
+        }
+        .accessibilityElement(children: .combine)
+        .accessibilityLabel(Text("Long-term plan. \(path.title), \(Int((pathProgress * 100).rounded())) percent complete."))
     }
 
     private var personalPlanCard: some View {
@@ -2584,6 +2657,30 @@ struct HomeView: View {
             .padding(.vertical, 8)
             .frame(maxWidth: .infinity)
             .background(Palette.surface, in: Capsule())
+    }
+
+    private func nextMilestone(for progress: Double) -> String {
+        if progress < 0.25 { return "25%" }
+        if progress < 0.5 { return "50%" }
+        if progress < 0.75 { return "75%" }
+        return "100%"
+    }
+
+    private func longTermMetric(value: String, label: LocalizedStringResource) -> some View {
+        VStack(alignment: .leading, spacing: 3) {
+            Text(verbatim: value)
+                .font(.bodyM.weight(.semibold))
+                .foregroundStyle(Palette.heroInk)
+                .lineLimit(1)
+            Text(label)
+                .font(.caption)
+                .foregroundStyle(Palette.heroInk.opacity(0.62))
+                .lineLimit(1)
+                .minimumScaleFactor(0.78)
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .padding(10)
+        .background(Palette.surface.opacity(0.62), in: RoundedRectangle(cornerRadius: 10, style: .continuous))
     }
 
     private func roadmapStep(
