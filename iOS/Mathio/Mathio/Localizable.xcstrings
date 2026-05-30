@@ -92432,6 +92432,108 @@
           }
         }
       }
+    },
+    "Unlock the full roadmap Mathio built from your goal and level check.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schalte den vollständigen Lernplan frei, den Mathio aus deinem Ziel und Level-Check erstellt hat."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Desbloquea la hoja de ruta completa que Mathio creó a partir de tu objetivo y prueba de nivel."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Débloque la feuille de route complète que Mathio a créée à partir de ton objectif et de ton test de niveau."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sblocca il percorso completo che Mathio ha creato dal tuo obiettivo e dal controllo del livello."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Desbloqueie o roteiro completo que o Mathio criou a partir do seu objetivo e teste de nível."
+          }
+        }
+      }
+    },
+    "Your math plan is ready": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dein Mathe-Plan ist bereit"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tu plan de matemáticas está listo"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ton plan de maths est prêt"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il tuo piano di matematica è pronto"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Seu plano de matemática está pronto"
+          }
+        }
+      }
+    },
+    "Your plan is ready": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dein Plan ist bereit"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tu plan está listo"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ton plan est prêt"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il tuo piano è pronto"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Seu plano está pronto"
+          }
+        }
+      }
     }
   },
   "version": "1.0"

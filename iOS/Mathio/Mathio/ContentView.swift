@@ -352,7 +352,8 @@ struct RootView: View {
         .preferredColorScheme(settings.theme.preferredColorScheme)
         .animation(.easeInOut(duration: 0.25), value: store.hasOnboarded)
         .sheet(isPresented: $showPaywall) {
-            PaywallView(premiumStore: premiumStore, mode: .onboarding)
+            PaywallView(premiumStore: premiumStore, mode: .onboarding,
+                        profile: store.learningProfile, dailyGoal: settings.dailyGoal)
         }
     }
 }
@@ -4635,6 +4636,8 @@ struct FormulaReferenceView: View {
 struct PaywallView: View {
     @Bindable var premiumStore: PremiumStore
     let mode: Mode
+    var profile: LearningProfile? = nil
+    var dailyGoal: Int? = nil
     @Environment(\.dismiss) private var dismiss
     @State private var selected: Plan = .annual
 
@@ -4648,6 +4651,7 @@ struct PaywallView: View {
                 VStack(alignment: .leading, spacing: 22) {
                     icon
                     headline
+                    if mode == .onboarding { onboardingPlanPreview }
                     audience
                     bullets
                     plans
@@ -4692,7 +4696,11 @@ struct PaywallView: View {
     private var headline: some View {
         VStack(alignment: .leading, spacing: 8) {
             switch mode {
-            case .onboarding, .upgrade:
+            case .onboarding:
+                Text("Your math plan is ready").font(.displayL).foregroundStyle(Palette.ink)
+                Text("Unlock the full roadmap Mathio built from your goal and level check.")
+                    .font(.bodyL).foregroundStyle(Palette.inkSoft)
+            case .upgrade:
                 Text("Learn math with a full roadmap").font(.displayL).foregroundStyle(Palette.ink)
                 Text("Premium unlocks the complete curriculum, guided paths, and every worked solution.")
                     .font(.bodyL).foregroundStyle(Palette.inkSoft)
@@ -4702,6 +4710,82 @@ struct PaywallView: View {
                     .font(.bodyL).foregroundStyle(Palette.inkSoft)
             }
         }
+    }
+
+    private var onboardingPlanPreview: some View {
+        let path = LearningPath.recommended(for: profile)
+        return Card(padding: 16, background: Palette.heroSurface) {
+            VStack(alignment: .leading, spacing: 14) {
+                HStack(alignment: .top, spacing: 12) {
+                    Image(systemName: profile?.goal.icon ?? path.icon)
+                        .font(.system(size: 18, weight: .semibold))
+                        .foregroundStyle(Palette.amber)
+                        .frame(width: 42, height: 42)
+                        .background(Palette.amber.opacity(0.18), in: Circle())
+                        .accessibilityHidden(true)
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text("Your plan is ready")
+                            .font(.label)
+                            .foregroundStyle(Palette.heroInkSoft)
+                            .textCase(.uppercase)
+                            .tracking(1.2)
+                        Text(onboardingPlanTitle(path: path))
+                            .font(.titleL)
+                            .foregroundStyle(Palette.heroInk)
+                        Text(onboardingPlanSubtitle)
+                            .font(.bodyM)
+                            .foregroundStyle(Palette.heroInkSoft)
+                            .fixedSize(horizontal: false, vertical: true)
+                    }
+                }
+
+                VStack(spacing: 8) {
+                    planPreviewRow("target", "Daily goal", "\(dailyGoal ?? 5) correct answers")
+                    planPreviewRow(path.icon, "First track", path.title)
+                    planPreviewRow("arrow.triangle.2.circlepath", "Review loop", "Questions return before you forget them")
+                }
+            }
+        }
+        .accessibilityElement(children: .combine)
+    }
+
+    private func onboardingPlanTitle(path: LearningPath) -> LocalizedStringResource {
+        if let profile {
+            return "\(profile.goal.title) · \(profile.level.title)"
+        }
+        return path.title
+    }
+
+    private var onboardingPlanSubtitle: LocalizedStringResource {
+        if let profile {
+            return "Based on \(profile.diagnosticCorrect) of \(profile.diagnosticTotal) in your level check."
+        }
+        return "Start with a guided path and short daily sessions."
+    }
+
+    private func planPreviewRow(_ icon: String,
+                                _ title: LocalizedStringResource,
+                                _ detail: LocalizedStringResource) -> some View {
+        HStack(alignment: .top, spacing: 10) {
+            Image(systemName: icon)
+                .font(.system(size: 14, weight: .semibold))
+                .foregroundStyle(Palette.amber)
+                .frame(width: 24)
+                .accessibilityHidden(true)
+            VStack(alignment: .leading, spacing: 2) {
+                Text(title)
+                    .font(.bodyM.weight(.semibold))
+                    .foregroundStyle(Palette.heroInk)
+                Text(detail)
+                    .font(.caption)
+                    .foregroundStyle(Palette.heroInkSoft)
+                    .fixedSize(horizontal: false, vertical: true)
+            }
+            Spacer(minLength: 0)
+        }
+        .padding(10)
+        .background(Palette.heroInk.opacity(0.07),
+                    in: RoundedRectangle(cornerRadius: 12, style: .continuous))
     }
 
     private var audience: some View {

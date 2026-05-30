@@ -67,8 +67,12 @@ PROSE: dict[str, str] = {
     "total = fixed cost + rate · amount": "gesamt = Fixkosten + Preis pro Einheit · Menge",
     "These lessons can move your roadmap fastest right now.": "Diese Lektionen bringen deinen Lernplan gerade am schnellsten voran.",
     "Tomorrow": "Morgen",
+    "Unlock the full roadmap Mathio built from your goal and level check.":
+        "Schalte den vollständigen Lernplan frei, den Mathio aus deinem Ziel und Level-Check erstellt hat.",
     "Missed": "Verpasst",
     "Session insight": "Session-Auswertung",
+    "Your math plan is ready": "Dein Mathe-Plan ist bereit",
+    "Your plan is ready": "Dein Plan ist bereit",
     "2 − 4 = −2, squared is 4": "2 − 4 = −2, quadriert ist das 4",
     "4 − 4 = 0, squared is 0": "4 − 4 = 0, quadriert ist das 0",
     "6 − 4 = 2, squared is 4": "6 − 4 = 2, quadriert ist das 4",
