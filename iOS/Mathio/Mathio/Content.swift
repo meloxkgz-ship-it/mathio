@@ -177,6 +177,10 @@ enum Curriculum {
                     name: "Order",
                     math: "1) (  )    2) {sup:^n}    3) · ÷    4) + −",
                     explanation: "Left-to-right inside the same level."),
+            Formula(key: "pre.order.f2",
+                    name: "Same-level rule",
+                    math: "{var:a} ÷ {var:b} · {var:c}  →  left to right",
+                    explanation: "Multiplication and division share one level, as do addition and subtraction."),
         ],
         questions: [
             Question(id: "pre.order.q1",
@@ -789,6 +793,10 @@ enum Curriculum {
                     name: "Theorem",
                     math: "{var:a}{sup:^2} + {var:b}{sup:^2} = {var:c}{sup:^2}",
                     explanation: "c is the side opposite the right angle."),
+            Formula(key: "geo.pyth.f2",
+                    name: "Missing leg",
+                    math: "{var:b} = √({var:c}{sup:^2} − {var:a}{sup:^2})",
+                    explanation: "Use subtraction when the hypotenuse and one leg are known."),
         ],
         questions: [
             Question(id: "geo.pyth.q1",
@@ -1251,6 +1259,10 @@ enum Curriculum {
                     name: "Chain rule",
                     math: "({var:f} ∘ {var:g}){sup:^′}({var:x}) = {var:f}{sup:^′}({var:g}({var:x})) · {var:g}{sup:^′}({var:x})",
                     explanation: "Differentiate the outer function at the inner, then multiply by inner's derivative."),
+            Formula(key: "calc.chain.f2",
+                    name: "Power chain",
+                    math: "d/d{var:x}[{var:u}{sup:^n}] = {var:n}{var:u}{sup:^(n−1)} · {var:u}{sup:^′}",
+                    explanation: "Treat the inside as u, then multiply by how u changes."),
         ],
         questions: [
             Question(id: "calc.chain.q1",

@@ -120643,6 +120643,210 @@
           }
         }
       }
+    },
+    "Same-level rule": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Regel für gleiche Ebene"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Regla del mismo nivel"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Règle du même niveau"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Regola dello stesso livello"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Regra do mesmo nível"
+          }
+        }
+      }
+    },
+    "Multiplication and division share one level, as do addition and subtraction.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Multiplikation und Division teilen sich eine Ebene, genau wie Addition und Subtraktion."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Multiplicación y división comparten un nivel, igual que suma y resta."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Multiplication et division partagent un niveau, tout comme addition et soustraction."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Moltiplicazione e divisione condividono un livello, come addizione e sottrazione."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Multiplicação e divisão compartilham um nível, assim como adição e subtração."
+          }
+        }
+      }
+    },
+    "Missing leg": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fehlende Kathete"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cateto faltante"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Côté manquant"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cateto mancante"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cateto faltante"
+          }
+        }
+      }
+    },
+    "Use subtraction when the hypotenuse and one leg are known.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nutze Subtraktion, wenn Hypotenuse und eine Kathete bekannt sind."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usa resta cuando conoces la hipotenusa y un cateto."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Utilise la soustraction quand l’hypoténuse et un côté sont connus."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usa la sottrazione quando sono noti ipotenusa e un cateto."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Use subtração quando a hipotenusa e um cateto são conhecidos."
+          }
+        }
+      }
+    },
+    "Power chain": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Potenz-Kettenregel"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cadena de potencias"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chaîne de puissance"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Catena di potenze"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cadeia de potências"
+          }
+        }
+      }
+    },
+    "Treat the inside as u, then multiply by how u changes.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Behandle den inneren Ausdruck als u und multipliziere dann mit der Änderung von u."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trata la parte interior como u y luego multiplica por cómo cambia u."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Traite l’intérieur comme u, puis multiplie par la façon dont u change."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tratta l’interno come u, poi moltiplica per come cambia u."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trate a parte interna como u e depois multiplique por como u muda."
+          }
+        }
+      }
     }
   },
   "version": "1.0"

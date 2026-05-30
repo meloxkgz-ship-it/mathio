@@ -30,6 +30,17 @@ final class CurriculumIntegrityTests: XCTestCase {
         XCTAssertTrue(shortLessons.isEmpty, "Lessons with unexpected question counts: \(shortLessons.joined(separator: ", "))")
     }
 
+    func testEveryLessonHasMultipleReferenceCards() {
+        let thinLessons = Curriculum.topics.flatMap(\.lessons)
+            .filter { $0.formulas.count < 2 }
+            .map(\.id)
+
+        XCTAssertTrue(
+            thinLessons.isEmpty,
+            "Lessons with too few reference cards: \(thinLessons.joined(separator: ", "))"
+        )
+    }
+
     func testExamReviewTopicIsACompleteSprintBlock() {
         let topic = Curriculum.topics.first { $0.id == "examreview" }
 
