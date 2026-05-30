@@ -4252,6 +4252,10 @@ struct StatsView: View {
         }
         return weighted / Double(totalQuestions)
     }
+    private var examReviewMastery: Double {
+        guard let topic = topics.first(where: { $0.id == "examreview" }) else { return 0 }
+        return store.mastery(for: topic)
+    }
     private var focusTopics: [Topic] {
         topics.filter { store.mastery(for: $0) < 1.0 }
               .sorted { store.mastery(for: $0) < store.mastery(for: $1) }
@@ -4419,6 +4423,14 @@ struct StatsView: View {
                 progress: reviewHealthScore
             ),
             Achievement(
+                id: "exam-sprinter",
+                title: "Exam sprinter",
+                subtitle: "Master 50% of Exam Review.",
+                icon: "checkmark.seal.fill",
+                unlocked: examReviewMastery >= 0.5,
+                progress: min(1, examReviewMastery / 0.5)
+            ),
+            Achievement(
                 id: "roadmap-master",
                 title: "Roadmap master",
                 subtitle: "Master the full Mathio roadmap.",
@@ -4456,6 +4468,13 @@ struct StatsView: View {
                 subtitle: "Finance, Linear Algebra, Discrete Math",
                 topicIDs: ["financialmath", "linearalgebra", "discretemath"],
                 color: Palette.precalc
+            ),
+            phase(
+                id: "exam-review",
+                title: "Exam Review",
+                subtitle: "Mixed sprints and finals prep",
+                topicIDs: ["examreview"],
+                color: Palette.terracotta
             ),
         ]
     }

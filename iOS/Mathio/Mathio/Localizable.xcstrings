@@ -40962,6 +40962,40 @@
         }
       }
     },
+    "Exam sprinter": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prüfungs-Sprinter"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "velocista de examen"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sprinteur d'examen"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Velocista d'esame"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Velocista de exame"
+          }
+        }
+      }
+    },
     "Exclude inputs that break the rule, like dividing by zero.": {
       "localizations": {
         "de": {
@@ -54614,6 +54648,40 @@
         }
       }
     },
+    "Master 50% of Exam Review.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Meistere 50 % des Prüfungstrainings."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dominar el 50% de la revisión del examen."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Maîtrisez 50 % de la révision de l'examen."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Padroneggia il 50% della revisione dell'esame."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Domine 50% da revisão do exame."
+          }
+        }
+      }
+    },
     "Master 50% of the roadmap.": {
       "extractionState": "manual",
       "localizations": {
@@ -56061,6 +56129,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Sprints mixtos y preparación para finales"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sprints mixtes et préparation aux finales"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sprint misti e preparazione alle finali"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Preparação para sprints mistos e finais"
+          }
+        }
+      }
+    },
+    "Mixed sprints and finals prep": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gemischte Sprints und Prüfungsvorbereitung"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sprints mixtos y preparación para finales."
           }
         },
         "fr": {

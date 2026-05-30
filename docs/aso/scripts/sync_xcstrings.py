@@ -76,6 +76,7 @@ PROSE: dict[str, str] = {
     "Exam days rarely ask one topic at a time. This sprint mixes fractions, percents, equations, and data so you can switch skills calmly.":
         "Prüfungen fragen selten nur ein Thema ab. Dieser Sprint mischt Brüche, Prozente, Gleichungen und Daten, damit du ruhig zwischen Fähigkeiten wechseln kannst.",
     "Exam Review": "Prüfungstraining",
+    "Exam sprinter": "Prüfungs-Sprinter",
     "Favorable outcomes = 3": "Günstige Ergebnisse = 3",
     "Find two numbers that multiply to 6 and add to 5.": "Finde zwei Zahlen, die 6 ergeben, wenn man sie multipliziert, und 5, wenn man sie addiert.",
     "Fixed cost plus rate times miles.": "Grundgebühr plus Preis pro Meile mal Meilen.",
@@ -89,6 +90,7 @@ PROSE: dict[str, str] = {
     "Many word problems combine a starting fee with a repeated rate.": "Viele Textaufgaben verbinden eine Grundgebühr mit einem wiederholten Preis.",
     "Mixed Foundations": "Gemischte Grundlagen",
     "Mixed sprints & finals prep": "Gemischte Sprints & Prüfungsvorbereitung",
+    "Mixed sprints and finals prep": "Gemischte Sprints und Prüfungsvorbereitung",
     "Multiply length, width, and height.": "Multipliziere Länge, Breite und Höhe.",
     "Only HH has two heads": "Nur KK hat zweimal Kopf",
     "P(red) = 3/5": "P(rot) = 3/5",
@@ -192,6 +194,7 @@ PROSE: dict[str, str] = {
     "Limits, derivatives, integrals": "Grenzwerte, Ableitungen, Integrale",
     "Learning health": "Lerngesundheit",
     "Master 25% of the roadmap.": "Meistere 25 % des Lernplans.",
+    "Master 50% of Exam Review.": "Meistere 50 % des Prüfungstrainings.",
     "Master the full Mathio roadmap.": "Meistere den vollständigen Mathio-Lernplan.",
     "Mathio will bring this back before it fades.": "Mathio bringt es zurück, bevor es verblasst.",
     "Memory plan": "Gedächtnisplan",
