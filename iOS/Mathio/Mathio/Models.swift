@@ -89,6 +89,17 @@ struct Question: Identifiable, Hashable {
     }
 }
 
+struct StudyPlanDay: Identifiable, Hashable {
+    let offset: Int
+    let date: Date
+    let lesson: Lesson?
+    let reviewCount: Int
+    let targetQuestions: Int
+
+    var id: Int { offset }
+    var isToday: Bool { offset == 0 }
+}
+
 enum LearningGoal: String, Codable, CaseIterable, Identifiable {
     case school
     case exam
@@ -474,6 +485,43 @@ final class Store {
         }
 
         return (dueTomorrow, dueThisWeek)
+    }
+
+    /// A concrete seven-day plan that combines review pressure with the next
+    /// unfinished lessons. The UI can show exactly why coming back tomorrow
+    /// matters instead of presenting a vague streak prompt.
+    func weeklyStudyPlan(
+        in topics: [Topic],
+        focusLessons: [Lesson],
+        dailyGoal: Int,
+        now: Date = .now
+    ) -> [StudyPlanDay] {
+        let calendar = Calendar.current
+        let today = calendar.startOfDay(for: now)
+        let questions = topics.flatMap { $0.lessons.flatMap(\.questions) }
+        let goal = max(dailyGoal, 1)
+
+        return (0..<7).compactMap { offset in
+            guard let dayStart = calendar.date(byAdding: .day, value: offset, to: today),
+                  let dayEnd = calendar.date(byAdding: .day, value: 1, to: dayStart) else {
+                return nil
+            }
+
+            let reviewCount = questions.reduce(0) { total, question in
+                guard let entry = answered[question.id], entry.attempts > 0 else { return total }
+                let belongsToday = offset == 0 && entry.nextReviewAt <= dayEnd
+                let belongsFutureDay = offset > 0 && entry.nextReviewAt > dayStart && entry.nextReviewAt <= dayEnd
+                return total + (belongsToday || belongsFutureDay ? 1 : 0)
+            }
+
+            return StudyPlanDay(
+                offset: offset,
+                date: dayStart,
+                lesson: focusLessons.indices.contains(offset) ? focusLessons[offset] : nil,
+                reviewCount: reviewCount,
+                targetQuestions: goal
+            )
+        }
     }
 
     // MARK: Daily goal progress

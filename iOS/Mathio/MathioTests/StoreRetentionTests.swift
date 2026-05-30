@@ -55,6 +55,29 @@ final class StoreRetentionTests: XCTestCase {
         XCTAssertEqual(plan.week, 1)
     }
 
+    func testWeeklyStudyPlanCombinesTodaysMissesAndTomorrowReviews() {
+        let store = Store()
+        let topics = [Curriculum.topics[1]]
+        let lesson = Curriculum.linearEquations
+
+        store.record(questionId: lesson.questions[0].id, correct: false)
+        store.record(questionId: lesson.questions[1].id, correct: true)
+
+        let plan = store.weeklyStudyPlan(
+            in: topics,
+            focusLessons: [lesson, Curriculum.quadratics],
+            dailyGoal: 5,
+            now: .now
+        )
+
+        XCTAssertEqual(plan.count, 7)
+        XCTAssertEqual(plan[0].reviewCount, 1)
+        XCTAssertEqual(plan[0].lesson?.id, lesson.id)
+        XCTAssertEqual(plan[0].targetQuestions, 5)
+        XCTAssertEqual(plan[1].reviewCount, 1)
+        XCTAssertEqual(plan[1].lesson?.id, Curriculum.quadratics.id)
+    }
+
     private func clearMathioDefaults() {
         let defaults = UserDefaults.standard
         for key in defaults.dictionaryRepresentation().keys where key.hasPrefix("mathio.") {

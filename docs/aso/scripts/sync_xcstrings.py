@@ -34,6 +34,7 @@ PROSE: dict[str, str] = {
     "89 lessons across algebra, calculus, geometry, statistics, finance, and more":
         "89 Lektionen in Algebra, Analysis, Geometrie, Statistik, Finanzmathe und mehr",
     "A quick rating helps more learners find it.": "Eine kurze Bewertung hilft mehr Lernenden, Mathio zu finden.",
+    "A concrete week of reviews and next lessons.": "Eine konkrete Woche mit Wiederholungen und nächsten Lektionen.",
     "Accuracy": "Trefferquote",
     "active days": "aktive Tage",
     "Algebra Foundation": "Algebra-Grundlagen",

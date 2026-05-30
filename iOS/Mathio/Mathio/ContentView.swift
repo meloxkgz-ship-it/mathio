@@ -941,11 +941,12 @@ struct HomeView: View {
     private var sevenDayFocusProgress: Double {
         min(1, Double(activeDaysThisWeek) / 7.0)
     }
-    private var nextFocusLesson: Lesson? {
-        sevenDayFocusLessons.first { store.mastery(for: $0) < 1.0 } ?? sevenDayFocusLessons.first
-    }
-    private var nextFocusDay: Int {
-        min(max(activeDaysThisWeek + 1, 1), 7)
+    private var sevenDayStudyPlan: [StudyPlanDay] {
+        store.weeklyStudyPlan(
+            in: topics,
+            focusLessons: sevenDayFocusLessons,
+            dailyGoal: settings.dailyGoal
+        )
     }
     private var examReadinessProgress: Double {
         let mastery = topics.isEmpty ? 0 : topics.reduce(0.0) { $0 + store.mastery(for: $1) } / Double(topics.count)
@@ -1992,7 +1993,7 @@ struct HomeView: View {
                         Text("7-day focus")
                             .font(.titleM)
                             .foregroundStyle(Palette.ink)
-                        Text("Seven small sessions from your recommended path.")
+                        Text("A concrete week of reviews and next lessons.")
                             .font(.bodyM)
                             .foregroundStyle(Palette.inkSoft)
                             .fixedSize(horizontal: false, vertical: true)
@@ -2012,53 +2013,14 @@ struct HomeView: View {
 
                 ProgressBar(progress: sevenDayFocusProgress, color: Palette.success, height: 6)
 
-                HStack(spacing: 7) {
-                    ForEach(0..<7, id: \.self) { index in
-                        Circle()
-                            .fill(index < activeDaysThisWeek ? Palette.success : Palette.hairline)
-                            .frame(width: 10, height: 10)
-                            .frame(maxWidth: .infinity)
-                            .accessibilityHidden(true)
-                    }
-                }
-
-                if let lesson = nextFocusLesson {
-                    Button {
-                        if isLocked(lesson) {
-                            showPaywall = true
-                        } else {
-                            presented = lesson
+                VStack(spacing: 8) {
+                    ForEach(sevenDayStudyPlan) { day in
+                        Button { openStudyPlanDay(day) } label: {
+                            studyPlanDayRow(day)
                         }
-                    } label: {
-                        HStack(spacing: 12) {
-                            VStack(alignment: .leading, spacing: 3) {
-                                Text("Next focus")
-                                    .font(.caption)
-                                    .foregroundStyle(Palette.inkFaint)
-                                    .textCase(.uppercase)
-                                    .tracking(1.0)
-                                Text(lesson.title)
-                                    .font(.bodyM.weight(.semibold))
-                                    .foregroundStyle(Palette.ink)
-                                    .lineLimit(1)
-                                Text("Day \(nextFocusDay) of 7")
-                                    .font(.caption)
-                                    .foregroundStyle(Palette.inkSoft)
-                            }
-                            Spacer(minLength: 0)
-                            Text(isLocked(lesson) ? "Premium session" : "Start next session")
-                                .font(.label)
-                                .foregroundStyle(Palette.ink)
-                                .lineLimit(1)
-                                .minimumScaleFactor(0.76)
-                            Image(systemName: isLocked(lesson) ? "lock.fill" : "arrow.right")
-                                .font(.system(size: 13, weight: .semibold))
-                                .foregroundStyle(Palette.inkFaint)
-                        }
-                        .padding(12)
-                        .background(Palette.surfaceMuted, in: RoundedRectangle(cornerRadius: 12, style: .continuous))
+                        .buttonStyle(.plain)
+                        .disabled(day.lesson == nil && !(day.isToday && day.reviewCount > 0))
                     }
-                    .buttonStyle(.plain)
                 }
 
                 Text("Keep the chain warm: one short session is enough.")
@@ -2067,6 +2029,80 @@ struct HomeView: View {
             }
         }
         .accessibilityElement(children: .combine)
+    }
+
+    private func openStudyPlanDay(_ day: StudyPlanDay) {
+        if day.isToday && day.reviewCount > 0 {
+            showReview = true
+            return
+        }
+        guard let lesson = day.lesson else { return }
+        if isLocked(lesson) {
+            showPaywall = true
+        } else {
+            presented = lesson
+        }
+    }
+
+    private func studyPlanDayRow(_ day: StudyPlanDay) -> some View {
+        HStack(spacing: 12) {
+            VStack(alignment: .leading, spacing: 2) {
+                Text(studyPlanDayTitle(day))
+                    .font(.caption.weight(.semibold))
+                    .foregroundStyle(day.isToday ? Palette.success : Palette.ink)
+                    .lineLimit(1)
+                Text("\(day.targetQuestions) question target")
+                    .font(.caption)
+                    .foregroundStyle(Palette.inkFaint)
+                    .lineLimit(1)
+            }
+            .frame(width: 76, alignment: .leading)
+
+            VStack(alignment: .leading, spacing: 5) {
+                if day.reviewCount > 0 {
+                    Label("\(day.reviewCount) review", systemImage: "arrow.triangle.2.circlepath")
+                        .font(.caption)
+                        .foregroundStyle(Palette.terracotta)
+                        .lineLimit(1)
+                }
+                if let lesson = day.lesson {
+                    Text(lesson.title)
+                        .font(.bodyM.weight(.semibold))
+                        .foregroundStyle(Palette.ink)
+                        .lineLimit(1)
+                    ProgressBar(progress: store.mastery(for: lesson),
+                                color: topic(containing: lesson)?.color ?? Palette.success,
+                                height: 4)
+                        .frame(maxWidth: 130)
+                } else {
+                    Text(day.reviewCount > 0 ? "Review day" : "Open practice")
+                        .font(.bodyM.weight(.semibold))
+                        .foregroundStyle(Palette.ink)
+                        .lineLimit(1)
+                }
+            }
+
+            Spacer(minLength: 0)
+
+            Image(systemName: studyPlanDayIcon(day))
+                .font(.system(size: 13, weight: .semibold))
+                .foregroundStyle(Palette.inkFaint)
+        }
+        .padding(12)
+        .background(day.isToday ? Palette.success.opacity(0.10) : Palette.surfaceMuted,
+                    in: RoundedRectangle(cornerRadius: 12, style: .continuous))
+    }
+
+    private func studyPlanDayTitle(_ day: StudyPlanDay) -> LocalizedStringResource {
+        if day.offset == 0 { return "Today" }
+        if day.offset == 1 { return "Tomorrow" }
+        return "Day \(day.offset + 1)"
+    }
+
+    private func studyPlanDayIcon(_ day: StudyPlanDay) -> String {
+        if let lesson = day.lesson, isLocked(lesson) { return "lock.fill" }
+        if day.isToday || day.lesson != nil { return "arrow.right" }
+        return "checkmark"
     }
 
     private func planRow(

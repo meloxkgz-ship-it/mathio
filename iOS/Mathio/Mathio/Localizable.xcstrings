@@ -103040,6 +103040,40 @@
           }
         }
       }
+    },
+    "A concrete week of reviews and next lessons.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eine konkrete Woche mit Wiederholungen und nächsten Lektionen."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una semana concreta de repasos y próximas lecciones."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Une semaine concrète de révisions et de prochaines leçons."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una settimana concreta di ripassi e prossime lezioni."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uma semana concreta de revisões e próximas aulas."
+          }
+        }
+      }
     }
   },
   "version": "1.0"
