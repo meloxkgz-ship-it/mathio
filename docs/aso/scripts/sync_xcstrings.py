@@ -1290,9 +1290,9 @@ PROSE: dict[str, str] = {
 }
 
 PROSE.update({
-    "97 lessons across algebra, calculus, geometry, statistics, finance, exam review, and more":
-        "97 Lektionen in Algebra, Analysis, Geometrie, Statistik, Finanzmathe, Prüfungstraining und mehr",
-    "All 97 lessons and 485 guided questions": "Alle 97 Lektionen und 485 geführten Fragen",
+    "98 lessons across algebra, calculus, geometry, statistics, finance, exam review, and more":
+        "98 Lektionen in Algebra, Analysis, Geometrie, Statistik, Finanzmathe, Prüfungstraining und mehr",
+    "All 98 lessons and 490 guided questions": "Alle 98 Lektionen und 490 geführten Fragen",
     "90-Day Core Mastery": "90-Tage-Kernkompetenz",
     "12-Week Exam Prep": "12-Wochen-Prüfungsvorbereitung",
     "12-week and 90-day tracks keep the next session obvious.":
@@ -1357,6 +1357,57 @@ PROSE.update({
     "Compare each line with the line before it": "Vergleiche jede Zeile mit der Zeile davor",
     "The first line that does not follow is where the error begins":
         "Die erste Zeile, die nicht folgt, ist der Beginn des Fehlers",
+    "Timed Exam Triage": "Zeitmanagement im Prüfungssprint",
+    "Practice the exam skill that keeps points from slipping away: choose the fastest wins first, mark hard questions, and return with time left.":
+        "Übe die Prüfungsstrategie, die Punkte rettet: zuerst schnelle sichere Aufgaben wählen, schwere markieren und mit Restzeit zurückkehren.",
+    "First pass rule": "Erste-Runde-Regel",
+    "easy → medium → hard": "leicht → mittel → schwer",
+    "Collect fast points before spending time on questions that may not move.":
+        "Sammle schnelle Punkte, bevor du Zeit in Aufgaben steckst, die vielleicht feststecken.",
+    "Mark and return": "Markieren und zurückkehren",
+    "stuck after 60–90s → mark → next": "nach 60–90 s fest → markieren → weiter",
+    "A skipped question is not lost; it is saved for a calmer second pass.":
+        "Eine übersprungene Aufgabe ist nicht verloren; sie ist für eine ruhigere zweite Runde gespeichert.",
+    "A 30-minute test has 20 questions. What is the average time per question in minutes?":
+        "Ein 30-Minuten-Test hat 20 Fragen. Wie viele Minuten bleiben im Durchschnitt pro Frage?",
+    "Divide total time by number of questions.": "Teile die Gesamtzeit durch die Anzahl der Fragen.",
+    "30 minutes / 20 questions = 1.5 minutes": "30 Minuten / 20 Fragen = 1,5 Minuten",
+    "That is 90 seconds per question on average": "Das sind im Durchschnitt 90 Sekunden pro Frage",
+    "You are stuck for 3 minutes on a 1-point question. What is the best exam move?":
+        "Du hängst 3 Minuten an einer 1-Punkt-Frage. Was ist der beste Prüfungsschritt?",
+    "Mark it, move on, and return later": "Markieren, weitergehen und später zurückkommen",
+    "Spend 10 more minutes immediately": "Sofort 10 weitere Minuten investieren",
+    "Erase the question from your plan": "Die Frage aus deinem Plan streichen",
+    "Guess without reading the choices": "Raten, ohne die Antworten zu lesen",
+    "Protect time for points you can still collect.": "Schütze Zeit für Punkte, die du noch holen kannst.",
+    "Three minutes is already above the average pace": "Drei Minuten liegen schon über dem Durchschnittstempo",
+    "Marking keeps the question available": "Markieren hält die Frage verfügbar",
+    "Moving on protects easier points": "Weitergehen schützt leichtere Punkte",
+    "Which question should usually come first in a timed first pass?":
+        "Welche Frage sollte in einer ersten Runde auf Zeit meistens zuerst kommen?",
+    "A short equation you recognize": "Eine kurze Gleichung, die du erkennst",
+    "A long word problem you do not understand yet": "Eine lange Textaufgabe, die du noch nicht verstehst",
+    "The hardest proof on the page": "Der schwerste Beweis auf der Seite",
+    "The question with the most text": "Die Aufgabe mit dem meisten Text",
+    "First pass means fast confidence.": "Erste Runde bedeutet schnelle Sicherheit.",
+    "Recognized short questions are likely fast points": "Erkannte kurze Aufgaben sind wahrscheinlich schnelle Punkte",
+    "Harder questions can wait for the second pass": "Schwerere Aufgaben können bis zur zweiten Runde warten",
+    "True or false: skipping a hard question on the first pass can improve your final score.":
+        "Wahr oder falsch: Eine schwere Frage in der ersten Runde zu überspringen kann deine Endpunktzahl verbessern.",
+    "Skipping is temporary when you mark it.": "Überspringen ist vorübergehend, wenn du markierst.",
+    "The first pass collects reliable points": "Die erste Runde sammelt verlässliche Punkte",
+    "You can return after easier questions are finished": "Du kannst zurückkehren, wenn leichtere Aufgaben erledigt sind",
+    "That usually uses time better": "Das nutzt die Zeit meistens besser",
+    "You have 5 minutes left and 4 unanswered questions. What should you do first?":
+        "Du hast 5 Minuten übrig und 4 unbeantwortete Fragen. Was solltest du zuerst tun?",
+    "Scan for the quickest possible point": "Nach dem schnellsten möglichen Punkt suchen",
+    "Restart the whole test": "Den ganzen Test neu beginnen",
+    "Only work in page order": "Nur in Seitenreihenfolge arbeiten",
+    "Stop checking units and signs": "Einheiten und Vorzeichen nicht mehr prüfen",
+    "Late time should go where it can still score.": "Restzeit gehört dorthin, wo sie noch Punkte bringen kann.",
+    "Five minutes is limited": "Fünf Minuten sind begrenzt",
+    "A quick scan finds the fastest remaining win": "Ein kurzer Scan findet den schnellsten verbleibenden Gewinn",
+    "Then use any leftover time to check": "Nutze danach Restzeit zum Prüfen",
 })
 
 # Strings whose value is identical in DE: pure math, single letters, etc.

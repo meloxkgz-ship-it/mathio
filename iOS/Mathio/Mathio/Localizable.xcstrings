@@ -114192,6 +114192,1536 @@
           }
         }
       }
+    },
+    "30 minutes / 20 questions = 1.5 minutes": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "30 Minuten / 20 Fragen = 1,5 Minuten"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "30 minutos / 20 preguntas = 1,5 minutos"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "30 minutes / 20 questions = 1,5 minute"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "30 minuti / 20 domande = 1,5 minuti"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "30 minutos / 20 questoes = 1,5 minuto"
+          }
+        }
+      }
+    },
+    "98 lessons across algebra, calculus, geometry, statistics, finance, exam review, and more": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "98 Lektionen in Algebra, Analysis, Geometrie, Statistik, Finanzmathe, Prüfungstraining und mehr"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "98 lecciones de algebra, calculo, geometria, estadistica, finanzas, repaso de examen y mas"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "98 lecons en algebre, analyse, geometrie, statistiques, finance, revision d examen et plus"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "98 lezioni di algebra, analisi, geometria, statistica, finanza, ripasso d esame e altro"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "98 licoes de algebra, calculo, geometria, estatistica, financas, revisao para provas e mais"
+          }
+        }
+      }
+    },
+    "A 30-minute test has 20 questions. What is the average time per question in minutes?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ein 30-Minuten-Test hat 20 Fragen. Wie viele Minuten bleiben im Durchschnitt pro Frage?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un examen de 30 minutos tiene 20 preguntas. Cual es el tiempo medio por pregunta en minutos?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un test de 30 minutes compte 20 questions. Quel est le temps moyen par question en minutes ?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un test di 30 minuti ha 20 domande. Qual e il tempo medio per domanda in minuti?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uma prova de 30 minutos tem 20 questoes. Qual e o tempo medio por questao em minutos?"
+          }
+        }
+      }
+    },
+    "A long word problem you do not understand yet": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eine lange Textaufgabe, die du noch nicht verstehst"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un problema largo que aun no entiendes"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un long probleme que tu ne comprends pas encore"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un lungo problema testuale che non capisci ancora"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Um problema longo que voce ainda nao entende"
+          }
+        }
+      }
+    },
+    "A quick scan finds the fastest remaining win": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ein kurzer Scan findet den schnellsten verbleibenden Gewinn"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un vistazo rapido encuentra la victoria restante mas rapida"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un balayage rapide trouve le gain restant le plus rapide"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una scansione rapida trova il guadagno rimanente piu veloce"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uma olhada rapida encontra o ganho restante mais rapido"
+          }
+        }
+      }
+    },
+    "A short equation you recognize": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eine kurze Gleichung, die du erkennst"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una ecuacion corta que reconoces"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Une courte equation que tu reconnais"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una breve equazione che riconosci"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uma equacao curta que voce reconhece"
+          }
+        }
+      }
+    },
+    "A skipped question is not lost; it is saved for a calmer second pass.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eine übersprungene Aufgabe ist nicht verloren; sie ist für eine ruhigere zweite Runde gespeichert."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una pregunta saltada no se pierde; queda guardada para una segunda pasada mas tranquila."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Une question sautee n est pas perdue; elle est gardee pour un second passage plus calme."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una domanda saltata non e persa; resta per un secondo giro piu calmo."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uma questao pulada nao esta perdida; ela fica para uma segunda passada mais calma."
+          }
+        }
+      }
+    },
+    "All 98 lessons and 490 guided questions": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alle 98 Lektionen und 490 geführten Fragen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Las 98 lecciones y 490 preguntas guiadas"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les 98 lecons et 490 questions guidees"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tutte le 98 lezioni e 490 domande guidate"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Todas as 98 licoes e 490 perguntas guiadas"
+          }
+        }
+      }
+    },
+    "Collect fast points before spending time on questions that may not move.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sammle schnelle Punkte, bevor du Zeit in Aufgaben steckst, die vielleicht feststecken."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Suma puntos rapidos antes de gastar tiempo en preguntas que quiza no avancen."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gagne les points rapides avant de passer du temps sur des questions qui risquent de bloquer."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Raccogli punti rapidi prima di spendere tempo su domande che potrebbero bloccarti."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Garanta pontos rapidos antes de gastar tempo em questoes que talvez nao avancem."
+          }
+        }
+      }
+    },
+    "Divide total time by number of questions.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Teile die Gesamtzeit durch die Anzahl der Fragen."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Divide el tiempo total por el numero de preguntas."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Divise le temps total par le nombre de questions."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dividi il tempo totale per il numero di domande."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Divida o tempo total pelo numero de questoes."
+          }
+        }
+      }
+    },
+    "Erase the question from your plan": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Frage aus deinem Plan streichen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Borrar la pregunta de tu plan"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Supprimer la question de ton plan"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancellare la domanda dal piano"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apagar a questao do seu plano"
+          }
+        }
+      }
+    },
+    "First pass means fast confidence.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erste Runde bedeutet schnelle Sicherheit."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La primera pasada busca confianza rapida."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le premier passage cherche une confiance rapide."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il primo giro punta a sicurezza rapida."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A primeira passada busca confianca rapida."
+          }
+        }
+      }
+    },
+    "First pass rule": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erste-Runde-Regel"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Regla de primera pasada"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Regle du premier passage"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Regola del primo giro"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Regra da primeira passada"
+          }
+        }
+      }
+    },
+    "Five minutes is limited": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fünf Minuten sind begrenzt"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cinco minutos son limitados"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cinq minutes, c est limite"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cinque minuti sono pochi"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cinco minutos sao limitados"
+          }
+        }
+      }
+    },
+    "Guess without reading the choices": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Raten, ohne die Antworten zu lesen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adivinar sin leer las opciones"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deviner sans lire les choix"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Indovinare senza leggere le opzioni"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chutar sem ler as alternativas"
+          }
+        }
+      }
+    },
+    "Harder questions can wait for the second pass": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schwerere Aufgaben können bis zur zweiten Runde warten"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Las preguntas mas dificiles pueden esperar a la segunda pasada"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les questions plus difficiles peuvent attendre le second passage"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le domande piu difficili possono aspettare il secondo giro"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Questoes mais dificeis podem esperar a segunda passada"
+          }
+        }
+      }
+    },
+    "Late time should go where it can still score.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Restzeit gehört dorthin, wo sie noch Punkte bringen kann."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El tiempo final debe ir donde aun puede sumar."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le temps final doit aller la ou il peut encore rapporter."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il tempo finale va usato dove puo ancora fare punti."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O tempo final deve ir para onde ainda pode pontuar."
+          }
+        }
+      }
+    },
+    "Mark and return": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Markieren und zurückkehren"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Marca y vuelve"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Marquer et revenir"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Segna e torna"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Marcar e voltar"
+          }
+        }
+      }
+    },
+    "Mark it, move on, and return later": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Markieren, weitergehen und später zurückkommen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Marcarla, seguir y volver despues"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La marquer, avancer et revenir plus tard"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Segnarla, andare avanti e tornare dopo"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Marcar, seguir e voltar depois"
+          }
+        }
+      }
+    },
+    "Marking keeps the question available": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Markieren hält die Frage verfügbar"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Marcar mantiene la pregunta disponible"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La marquer garde la question disponible"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Segnarla mantiene la domanda disponibile"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Marcar mantem a questao disponivel"
+          }
+        }
+      }
+    },
+    "Moving on protects easier points": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weitergehen schützt leichtere Punkte"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Seguir protege puntos mas faciles"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Avancer protege les points plus faciles"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Andare avanti protegge i punti piu facili"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Seguir protege pontos mais faceis"
+          }
+        }
+      }
+    },
+    "Only work in page order": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nur in Seitenreihenfolge arbeiten"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trabajar solo en orden de pagina"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Travailler seulement dans l ordre des pages"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lavorare solo in ordine di pagina"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trabalhar apenas na ordem da pagina"
+          }
+        }
+      }
+    },
+    "Practice the exam skill that keeps points from slipping away: choose the fastest wins first, mark hard questions, and return with time left.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Übe die Prüfungsstrategie, die Punkte rettet: zuerst schnelle sichere Aufgaben wählen, schwere markieren und mit Restzeit zurückkehren."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Practica la habilidad de examen que evita perder puntos: elige primero las victorias rapidas, marca las preguntas dificiles y vuelve con tiempo."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Travaille la competence d examen qui evite de perdre des points: prends d abord les gains rapides, marque les questions difficiles et reviens avec du temps."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Allena l abilita da esame che evita di perdere punti: scegli prima i risultati rapidi, segna le domande difficili e torna con tempo."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pratique a habilidade de prova que evita perder pontos: escolha primeiro os acertos rapidos, marque as questoes dificeis e volte com tempo."
+          }
+        }
+      }
+    },
+    "Protect time for points you can still collect.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schütze Zeit für Punkte, die du noch holen kannst."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Protege tiempo para puntos que aun puedes conseguir."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Protege du temps pour les points encore possibles."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Proteggi tempo per i punti che puoi ancora prendere."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Proteja tempo para pontos que voce ainda pode ganhar."
+          }
+        }
+      }
+    },
+    "Recognized short questions are likely fast points": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erkannte kurze Aufgaben sind wahrscheinlich schnelle Punkte"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Las preguntas cortas reconocidas suelen ser puntos rapidos"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les questions courtes reconnues donnent souvent des points rapides"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le domande brevi riconosciute danno spesso punti rapidi"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Questoes curtas reconhecidas tendem a render pontos rapidos"
+          }
+        }
+      }
+    },
+    "Restart the whole test": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Den ganzen Test neu beginnen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reiniciar todo el examen"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recommencer tout le test"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ricominciare tutto il test"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recomecar a prova inteira"
+          }
+        }
+      }
+    },
+    "Scan for the quickest possible point": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nach dem schnellsten möglichen Punkt suchen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Buscar el punto mas rapido posible"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chercher le point le plus rapide possible"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cercare il punto piu rapido possibile"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Procurar o ponto mais rapido possivel"
+          }
+        }
+      }
+    },
+    "Skipping is temporary when you mark it.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Überspringen ist vorübergehend, wenn du markierst."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saltar es temporal si lo marcas."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sauter est temporaire si tu marques la question."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saltare e temporaneo se la segni."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pular e temporario quando voce marca."
+          }
+        }
+      }
+    },
+    "Spend 10 more minutes immediately": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sofort 10 weitere Minuten investieren"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gastar 10 minutos mas de inmediato"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Y passer tout de suite 10 minutes de plus"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spendere subito altri 10 minuti"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gastar mais 10 minutos imediatamente"
+          }
+        }
+      }
+    },
+    "Stop checking units and signs": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Einheiten und Vorzeichen nicht mehr prüfen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dejar de revisar unidades y signos"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arreter de verifier les unites et les signes"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Smettere di controllare unita e segni"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Parar de conferir unidades e sinais"
+          }
+        }
+      }
+    },
+    "That is 90 seconds per question on average": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Das sind im Durchschnitt 90 Sekunden pro Frage"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eso son 90 segundos por pregunta en promedio"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cela fait 90 secondes par question en moyenne"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sono 90 secondi per domanda in media"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Isso da 90 segundos por questao em media"
+          }
+        }
+      }
+    },
+    "That usually uses time better": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Das nutzt die Zeit meistens besser"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eso suele usar mejor el tiempo"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cela utilise generalement mieux le temps"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Di solito usa meglio il tempo"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Isso geralmente usa melhor o tempo"
+          }
+        }
+      }
+    },
+    "The first pass collects reliable points": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die erste Runde sammelt verlässliche Punkte"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La primera pasada recoge puntos seguros"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le premier passage collecte les points fiables"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il primo giro raccoglie punti affidabili"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A primeira passada coleta pontos confiaveis"
+          }
+        }
+      }
+    },
+    "The hardest proof on the page": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der schwerste Beweis auf der Seite"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La demostracion mas dificil de la pagina"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La demonstration la plus difficile de la page"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La dimostrazione piu difficile della pagina"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A prova mais dificil da pagina"
+          }
+        }
+      }
+    },
+    "The question with the most text": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Aufgabe mit dem meisten Text"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La pregunta con mas texto"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La question avec le plus de texte"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La domanda con piu testo"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A questao com mais texto"
+          }
+        }
+      }
+    },
+    "Then use any leftover time to check": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nutze danach Restzeit zum Prüfen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Luego usa el tiempo sobrante para revisar"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Puis utilise le temps restant pour verifier"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Poi usa il tempo rimasto per controllare"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Depois use o tempo restante para conferir"
+          }
+        }
+      }
+    },
+    "Three minutes is already above the average pace": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Drei Minuten liegen schon über dem Durchschnittstempo"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tres minutos ya superan el ritmo medio"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trois minutes depassent deja le rythme moyen"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tre minuti sono gia oltre il ritmo medio"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tres minutos ja passam do ritmo medio"
+          }
+        }
+      }
+    },
+    "Timed Exam Triage": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zeitmanagement im Prüfungssprint"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Triage de examen cronometrado"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tri des questions en temps limite"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Triage d esame a tempo"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Triagem de prova cronometrada"
+          }
+        }
+      }
+    },
+    "True or false: skipping a hard question on the first pass can improve your final score.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wahr oder falsch: Eine schwere Frage in der ersten Runde zu überspringen kann deine Endpunktzahl verbessern."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verdadero o falso: saltar una pregunta dificil en la primera pasada puede mejorar tu puntuacion final."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vrai ou faux : sauter une question difficile au premier passage peut ameliorer ton score final."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vero o falso: saltare una domanda difficile al primo giro puo migliorare il punteggio finale."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verdadeiro ou falso: pular uma questao dificil na primeira passada pode melhorar sua pontuacao final."
+          }
+        }
+      }
+    },
+    "Which question should usually come first in a timed first pass?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Welche Frage sollte in einer ersten Runde auf Zeit meistens zuerst kommen?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Que pregunta deberia ir primero en una primera pasada cronometrada?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quelle question devrait venir d abord lors d un premier passage chronometre ?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quale domanda dovrebbe venire prima in un primo giro a tempo?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Qual questao deve vir primeiro em uma primeira passada com tempo?"
+          }
+        }
+      }
+    },
+    "You are stuck for 3 minutes on a 1-point question. What is the best exam move?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Du hängst 3 Minuten an einer 1-Punkt-Frage. Was ist der beste Prüfungsschritt?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Estas atascado 3 minutos en una pregunta de 1 punto. Cual es el mejor movimiento?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tu bloques 3 minutes sur une question a 1 point. Quel est le meilleur choix ?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sei bloccato da 3 minuti su una domanda da 1 punto. Qual e la mossa migliore?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Voce travou por 3 minutos em uma questao de 1 ponto. Qual e a melhor decisao?"
+          }
+        }
+      }
+    },
+    "You can return after easier questions are finished": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Du kannst zurückkehren, wenn leichtere Aufgaben erledigt sind"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Puedes volver cuando termines las preguntas mas faciles"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tu peux revenir apres les questions plus faciles"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Puoi tornare dopo le domande piu facili"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Voce pode voltar depois das questoes mais faceis"
+          }
+        }
+      }
+    },
+    "You have 5 minutes left and 4 unanswered questions. What should you do first?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Du hast 5 Minuten übrig und 4 unbeantwortete Fragen. Was solltest du zuerst tun?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Te quedan 5 minutos y 4 preguntas sin responder. Que debes hacer primero?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il te reste 5 minutes et 4 questions sans reponse. Que faire d abord ?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hai 5 minuti e 4 domande senza risposta. Cosa dovresti fare prima?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Voce tem 5 minutos e 4 questoes sem resposta. O que fazer primeiro?"
+          }
+        }
+      }
+    },
+    "easy → medium → hard": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "facil → medio → dificil"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "facile → moyen → difficile"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "facile → medio → difficile"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "facil → medio → dificil"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "leicht → mittel → schwer"
+          }
+        }
+      }
+    },
+    "stuck after 60–90s → mark → next": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "atasco tras 60–90 s → marca → siguiente"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "bloque apres 60–90 s → marque → suivant"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "blocco dopo 60–90 s → segna → avanti"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "travou apos 60–90 s → marque → proxima"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "nach 60–90 s fest → markieren → weiter"
+          }
+        }
+      }
     }
   },
   "version": "1.0"

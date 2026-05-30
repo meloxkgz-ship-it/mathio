@@ -5150,6 +5150,69 @@ enum Curriculum {
         ]
     )
 
+    static let examTimedTriageSprint = Lesson(
+        id: "exam.timed.triage.sprint",
+        title: "Timed Exam Triage",
+        intro: "Practice the exam skill that keeps points from slipping away: choose the fastest wins first, mark hard questions, and return with time left.",
+        formulas: [
+            Formula(key: "exam.triage.f1",
+                    name: "First pass rule",
+                    math: "easy → medium → hard",
+                    explanation: "Collect fast points before spending time on questions that may not move."),
+            Formula(key: "exam.triage.f2",
+                    name: "Mark and return",
+                    math: "stuck after 60–90s → mark → next",
+                    explanation: "A skipped question is not lost; it is saved for a calmer second pass."),
+        ],
+        questions: [
+            Question(id: "exam.triage.q1",
+                     prompt: "A 30-minute test has 20 questions. What is the average time per question in minutes?",
+                     math: nil,
+                     kind: .freeAnswer(accepted: ["1.5", "1.5 min", "1.5 minutes", "90s", "90 seconds"]),
+                     hint: "Divide total time by number of questions.",
+                     solutionSteps: ["30 minutes / 20 questions = 1.5 minutes", "That is 90 seconds per question on average"]),
+            Question(id: "exam.triage.q2",
+                     prompt: "You are stuck for 3 minutes on a 1-point question. What is the best exam move?",
+                     math: nil,
+                     kind: .multipleChoice(options: [
+                        .init(label: "Mark it, move on, and return later", math: nil),
+                        .init(label: "Spend 10 more minutes immediately", math: nil),
+                        .init(label: "Erase the question from your plan", math: nil),
+                        .init(label: "Guess without reading the choices", math: nil),
+                     ], correctIndex: 0),
+                     hint: "Protect time for points you can still collect.",
+                     solutionSteps: ["Three minutes is already above the average pace", "Marking keeps the question available", "Moving on protects easier points"]),
+            Question(id: "exam.triage.q3",
+                     prompt: "Which question should usually come first in a timed first pass?",
+                     math: nil,
+                     kind: .multipleChoice(options: [
+                        .init(label: "A short equation you recognize", math: nil),
+                        .init(label: "A long word problem you do not understand yet", math: nil),
+                        .init(label: "The hardest proof on the page", math: nil),
+                        .init(label: "The question with the most text", math: nil),
+                     ], correctIndex: 0),
+                     hint: "First pass means fast confidence.",
+                     solutionSteps: ["Recognized short questions are likely fast points", "Harder questions can wait for the second pass"]),
+            Question(id: "exam.triage.q4",
+                     prompt: "True or false: skipping a hard question on the first pass can improve your final score.",
+                     math: nil,
+                     kind: .trueFalse(answer: true),
+                     hint: "Skipping is temporary when you mark it.",
+                     solutionSteps: ["The first pass collects reliable points", "You can return after easier questions are finished", "That usually uses time better"]),
+            Question(id: "exam.triage.q5",
+                     prompt: "You have 5 minutes left and 4 unanswered questions. What should you do first?",
+                     math: nil,
+                     kind: .multipleChoice(options: [
+                        .init(label: "Scan for the quickest possible point", math: nil),
+                        .init(label: "Restart the whole test", math: nil),
+                        .init(label: "Only work in page order", math: nil),
+                        .init(label: "Stop checking units and signs", math: nil),
+                     ], correctIndex: 0),
+                     hint: "Late time should go where it can still score.",
+                     solutionSteps: ["Five minutes is limited", "A quick scan finds the fastest remaining win", "Then use any leftover time to check"]),
+        ]
+    )
+
     // MARK: - All topics
 
     static let topics: [Topic] = [
@@ -5222,7 +5285,7 @@ enum Curriculum {
               subtitle: "Mixed sprints & finals prep",
               icon: "checkmark.seal",
               color: Palette.terracotta,
-              lessons: [examMixedFoundations, examAlgebraSprint, examGeometrySprint, examDataSprint, examWordProblemSprint,
-                        examStrategySprint, examMentalMathSprint, examErrorCheckSprint]),
+                        lessons: [examMixedFoundations, examAlgebraSprint, examGeometrySprint, examDataSprint, examWordProblemSprint,
+                        examStrategySprint, examMentalMathSprint, examErrorCheckSprint, examTimedTriageSprint]),
     ]
 }

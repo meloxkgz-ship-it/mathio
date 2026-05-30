@@ -7,8 +7,8 @@ final class CurriculumIntegrityTests: XCTestCase {
         let lessonCount = Curriculum.topics.reduce(0) { $0 + $1.lessons.count }
         let questionCount = Curriculum.topics.reduce(0) { $0 + $1.questionCount }
 
-        XCTAssertEqual(lessonCount, 97)
-        XCTAssertEqual(questionCount, 485)
+        XCTAssertEqual(lessonCount, 98)
+        XCTAssertEqual(questionCount, 490)
     }
 
     func testCurriculumIdsAreUnique() {
@@ -34,8 +34,8 @@ final class CurriculumIntegrityTests: XCTestCase {
         let topic = Curriculum.topics.first { $0.id == "examreview" }
 
         XCTAssertNotNil(topic)
-        XCTAssertEqual(topic?.lessons.count, 8)
-        XCTAssertEqual(topic?.questionCount, 40)
+        XCTAssertEqual(topic?.lessons.count, 9)
+        XCTAssertEqual(topic?.questionCount, 45)
         XCTAssertEqual(topic?.lessons.map(\.id), [
             "exam.mixed.foundations",
             "exam.algebra.sprint",
@@ -45,6 +45,7 @@ final class CurriculumIntegrityTests: XCTestCase {
             "exam.strategy.sprint",
             "exam.mental.sprint",
             "exam.errorcheck.sprint",
+            "exam.timed.triage.sprint",
         ])
     }
 
@@ -71,5 +72,6 @@ final class CurriculumIntegrityTests: XCTestCase {
         XCTAssertEqual(examPath?.durationDays, 84)
         XCTAssertTrue((corePath?.lessons.count ?? 0) >= 25)
         XCTAssertTrue((examPath?.lessons.map(\.id) ?? []).contains("exam.errorcheck.sprint"))
+        XCTAssertTrue((examPath?.lessons.map(\.id) ?? []).contains("exam.timed.triage.sprint"))
     }
 }

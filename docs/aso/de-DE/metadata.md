@@ -52,7 +52,7 @@ Begründung:
 ## Werbetext (170 max — editierbar ohne Review)
 
 ```
-Neu: Lerngesundheit, Lerncoach, Prüfungstraining und 97 Lektionen.
+Neu: Lerngesundheit, Lerncoach, Prüfungstraining und 98 Lektionen.
 ```
 **113 / 170** — hebt Kataloggröße und neue alltagsnahe Inhalte hervor.
 
@@ -104,7 +104,7 @@ Verfügbar auf Deutsch, Englisch, Spanisch, Französisch, Italienisch und Brasil
 
 — THEMEN —
 Vor-Algebra · Algebra · Geometrie · Trigonometrie · Analysis · Prüfungstraining
-97 Lektionen und 485 handgemachte Fragen in Multiple-Choice, Freitext und Wahr/Falsch. Von Bruchrechnen, Potenzen, Logarithmen, exponentiellem Wachstum, Geraden zeichnen, quadratische Graphen und Wurzelgleichungen bis zu Ableitungen, impliziter Ableitung, Integralen, Statistik, bedingte Wahrscheinlichkeit, Erwartungswert, Satz von Bayes, Standardabweichung, Normalverteilung, Vektoren, Budgetrechnung, Steuern, Rabatten, Funktionsmodellierung, Konfidenzintervallen, Korrelation, Optimierung, Wahrheitstabellen, Logik, Prüfungs-Sprints, Kopfrechnen, Fehlerkontrolle und gemischter Abschlusswiederholung.
+98 Lektionen und 490 handgemachte Fragen in Multiple-Choice, Freitext und Wahr/Falsch. Von Bruchrechnen, Potenzen, Logarithmen, exponentiellem Wachstum, Geraden zeichnen, quadratische Graphen und Wurzelgleichungen bis zu Ableitungen, impliziter Ableitung, Integralen, Statistik, bedingte Wahrscheinlichkeit, Erwartungswert, Satz von Bayes, Standardabweichung, Normalverteilung, Vektoren, Budgetrechnung, Steuern, Rabatten, Funktionsmodellierung, Konfidenzintervallen, Korrelation, Optimierung, Wahrheitstabellen, Logik, Prüfungs-Sprints, Kopfrechnen, Fehlerkontrolle und gemischter Abschlusswiederholung.
 
 — ABO —
 Mathio ist kostenlos zum Ausprobieren. Alle Themen freischalten mit:
@@ -138,7 +138,7 @@ Mathio gibt Lernenden jetzt klarere Richtung und mehr Tiefe für tägliches Übe
 • Neue Lektion: Implizite Ableitung für dy/dx, Kreise, Produkte und Kettenregel-Denken
 • Neue Lektion: Wurzelgleichungen für Wurzeln, Quadrieren beider Seiten und Scheinlösungen
 • Home zeigt Fehler-Notizbuch, Wiederholungs-Vorschau, 7-Tage-Fokus und nächste Lernziele
-• Mathio wächst auf 97 Lektionen, 485 geführte Aufgaben und längere Lernpfade
+• Mathio wächst auf 98 Lektionen, 490 geführte Aufgaben und längere Lernpfade
 • Premium- und App-Store-Texte passen zum erweiterten Inhalt
 
 Zwei Minuten am Tag decken jetzt noch mehr relevante Mathematik ab.

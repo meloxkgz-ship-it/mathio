@@ -2937,7 +2937,8 @@ struct LearningPath: Identifiable {
                       Curriculum.conditionalProbability, Curriculum.standardDeviation,
                       Curriculum.correlationRegression, Curriculum.examMixedFoundations, Curriculum.examAlgebraSprint,
                       Curriculum.examGeometrySprint, Curriculum.examDataSprint, Curriculum.examWordProblemSprint,
-                      Curriculum.examStrategySprint, Curriculum.examMentalMathSprint, Curriculum.examErrorCheckSprint],
+                      Curriculum.examStrategySprint, Curriculum.examMentalMathSprint, Curriculum.examErrorCheckSprint,
+                      Curriculum.examTimedTriageSprint],
             durationDays: 21
         ),
         LearningPath(
@@ -3009,7 +3010,7 @@ struct LearningPath: Identifiable {
                       Curriculum.wordProblems, Curriculum.pythagoras, Curriculum.angles, Curriculum.trigBasics,
                       Curriculum.descriptiveStats, Curriculum.probabilityBasics, Curriculum.standardDeviation,
                       Curriculum.examMixedFoundations, Curriculum.examStrategySprint, Curriculum.examMentalMathSprint,
-                      Curriculum.examErrorCheckSprint],
+                      Curriculum.examErrorCheckSprint, Curriculum.examTimedTriageSprint],
             durationDays: 90
         ),
         LearningPath(
@@ -3026,7 +3027,7 @@ struct LearningPath: Identifiable {
                       Curriculum.standardDeviation, Curriculum.correlationRegression,
                       Curriculum.examMixedFoundations, Curriculum.examAlgebraSprint, Curriculum.examGeometrySprint,
                       Curriculum.examDataSprint, Curriculum.examWordProblemSprint, Curriculum.examStrategySprint,
-                      Curriculum.examMentalMathSprint, Curriculum.examErrorCheckSprint],
+                      Curriculum.examMentalMathSprint, Curriculum.examErrorCheckSprint, Curriculum.examTimedTriageSprint],
             durationDays: 84
         )
     ]
@@ -6002,7 +6003,7 @@ struct PaywallView: View {
 
     private var bullets: some View {
         VStack(alignment: .leading, spacing: 12) {
-            row("books.vertical.fill", "97 lessons across algebra, calculus, geometry, statistics, finance, exam review, and more")
+            row("books.vertical.fill", "98 lessons across algebra, calculus, geometry, statistics, finance, exam review, and more")
             row("map.fill", "Guided paths show exactly what to study next")
             row("brain.head.profile", "Adaptive practice focuses on weak spots")
             row("arrow.triangle.2.circlepath", "Spaced repetition brings back what you are about to forget")
@@ -6021,7 +6022,7 @@ struct PaywallView: View {
                 valueProof("sparkles", "Study coach", "One best next step every time you open Mathio")
                 valueProof("calendar.badge.checkmark", "Weekly plan", "A clear seven-day path from today's level")
                 valueProof("arrow.triangle.2.circlepath", "Smart review", "Questions return before you forget them")
-                valueProof("map.fill", "Full roadmap", "All 97 lessons and 485 guided questions")
+                valueProof("map.fill", "Full roadmap", "All 98 lessons and 490 guided questions")
             }
         }
     }
