@@ -383,14 +383,20 @@ struct OnboardingView: View {
     }
 
     private var selectedPath: LearningPath {
-        LearningPath.recommended(for: LearningProfile(
+        LearningPath.recommended(for: previewProfile)
+    }
+
+    private var previewProfile: LearningProfile {
+        LearningProfile(
             goal: selectedGoal,
             confidence: confidence,
             diagnosticCorrect: diagnosticCorrect,
             diagnosticTotal: DiagnosticQuestion.samples.count,
             createdAt: .now
-        ))
+        )
     }
+
+    private var firstWeekTargetDays: Int { previewProfile.weeklyHabitTargetDays }
 
     var body: some View {
         VStack(spacing: 0) {
@@ -723,10 +729,10 @@ struct OnboardingView: View {
                     Image(systemName: "calendar.badge.clock")
                         .foregroundStyle(Palette.terracotta)
                     VStack(alignment: .leading, spacing: 2) {
-                        Text("7-day focus")
+                        Text("First week focus")
                             .font(.titleM)
                             .foregroundStyle(Palette.ink)
-                        Text("Seven small sessions from your recommended path.")
+                        Text("Aim for \(firstWeekTargetDays) short study days, then let Mathio adapt.")
                             .font(.bodyM)
                             .foregroundStyle(Palette.inkSoft)
                     }
@@ -1087,7 +1093,7 @@ struct HomeView: View {
         return currentSeasonLessons.reduce(0.0) { $0 + store.mastery(for: $1) } / Double(currentSeasonLessons.count)
     }
     private var sevenDayFocusProgress: Double {
-        min(1, Double(activeDaysThisWeek) / 7.0)
+        weeklyHabitProgress
     }
     private var sevenDayStudyPlan: [StudyPlanDay] {
         store.weeklyStudyPlan(
@@ -2452,7 +2458,7 @@ struct HomeView: View {
                         .accessibilityHidden(true)
 
                     VStack(alignment: .leading, spacing: 3) {
-                        Text("7-day focus")
+                        Text("Weekly focus")
                             .font(.titleM)
                             .foregroundStyle(Palette.ink)
                         Text(sevenDayFocusSubtitle)
@@ -2464,10 +2470,10 @@ struct HomeView: View {
                     Spacer(minLength: 0)
 
                     VStack(alignment: .trailing, spacing: 0) {
-                        Text(verbatim: "\(activeDaysThisWeek)/7")
+                        Text(verbatim: "\(activeDaysThisWeek)/\(weeklyHabitTargetDays)")
                             .font(.label)
                             .foregroundStyle(Palette.ink)
-                        Text("active days")
+                        Text("target days")
                             .font(.caption)
                             .foregroundStyle(Palette.inkFaint)
                     }
@@ -2478,7 +2484,7 @@ struct HomeView: View {
                 HStack(spacing: 8) {
                     focusMetric(value: "\(weeklyAnswersRemaining)", label: LocalizedStringResource("answers left"), active: weeklyAnswersRemaining > 0)
                     focusMetric(value: "\(reviewsDueThisWeek)", label: LocalizedStringResource("reviews soon"), active: reviewsDueThisWeek > 0)
-                    focusMetric(value: "\(activeDaysThisWeek)", label: LocalizedStringResource("active days"), active: activeDaysThisWeek >= 3)
+                    focusMetric(value: "\(activeDaysThisWeek)", label: LocalizedStringResource("active days"), active: weeklyHabitDaysRemaining == 0)
                 }
 
                 VStack(spacing: 8) {
@@ -2509,8 +2515,8 @@ struct HomeView: View {
         if let nextPlannedStudyDay, nextPlannedStudyDay.offset == 1, nextPlannedStudyDay.reviewCount > 0 {
             return "\(nextPlannedStudyDay.reviewCount) reviews are already planned for tomorrow."
         }
-        if activeDaysThisWeek < 3 {
-            return "Aim for three short study days before adding longer sessions."
+        if weeklyHabitDaysRemaining > 0 {
+            return "\(weeklyHabitDaysRemaining) short study days left in your realistic weekly target."
         }
         return "A concrete week of reviews and next lessons."
     }
