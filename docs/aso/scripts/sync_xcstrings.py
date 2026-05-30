@@ -31,6 +31,8 @@ PROSE: dict[str, str] = {
         "85 Lektionen in Algebra, Analysis, Geometrie, Statistik, Finanzmathe und mehr",
     "88 lessons across algebra, calculus, geometry, statistics, finance, and more":
         "88 Lektionen in Algebra, Analysis, Geometrie, Statistik, Finanzmathe und mehr",
+    "89 lessons across algebra, calculus, geometry, statistics, finance, and more":
+        "89 Lektionen in Algebra, Analysis, Geometrie, Statistik, Finanzmathe und mehr",
     "A quick rating helps more learners find it.": "Eine kurze Bewertung hilft mehr Lernenden, Mathio zu finden.",
     "Accuracy": "Trefferquote",
     "active days": "aktive Tage",
@@ -131,6 +133,7 @@ PROSE: dict[str, str] = {
     "All possible outcomes": "Alle möglichen Ergebnisse",
     "All 85 lessons and 425 guided questions": "Alle 85 Lektionen und 425 geführten Aufgaben",
     "All 88 lessons and 440 guided questions": "Alle 88 Lektionen und 440 geführten Aufgaben",
+    "All 89 lessons and 445 guided questions": "Alle 89 Lektionen und 445 geführten Aufgaben",
     "answers left": "Antworten übrig",
     "A line has slope 3. From point (0, 2), what point do you reach after run 1?":
         "Eine Gerade hat Steigung 3. Welchen Punkt erreichst du von (0, 2) aus nach einem Schritt nach rechts?",
@@ -178,6 +181,7 @@ PROSE: dict[str, str] = {
     "Plug x = 1 into the equation.": "Setze x = 1 in die Gleichung ein.",
     "Run 1 right and rise 3": "Gehe 1 nach rechts und 3 nach oben",
     "Set y = 0.": "Setze y = 0.",
+    "Set x = 0.": "Setze x = 0.",
     "Slope 3 means rise 3 for run 1.": "Steigung 3 bedeutet: 3 nach oben bei 1 nach rechts.",
     "Slope-intercept graph": "Graph aus Steigung und Achsenabschnitt",
     "So (1, 5) is on the line.": "Also liegt (1, 5) auf der Gerade.",
@@ -185,6 +189,9 @@ PROSE: dict[str, str] = {
     "Start at (0, 2)": "Starte bei (0, 2)",
     "Starting amount = 200": "Startwert = 200",
     "The graph crosses the y-axis at (0, 3).": "Der Graph schneidet die y-Achse bei (0, 3).",
+    "The y-intercept is (0, 8)": "Der y-Achsenabschnitt ist (0, 8)",
+    "The y-intercept is where the graph crosses the y-axis.":
+        "Der y-Achsenabschnitt ist der Punkt, an dem der Graph die y-Achse schneidet.",
     "The x-intercept is (4, 0).": "Der x-Achsenabschnitt ist (4, 0).",
     "The added amount usually changes each step": "Der addierte Betrag ändert sich normalerweise in jedem Schritt",
     "True or false: Exponential growth adds the same amount each step.":
@@ -200,6 +207,43 @@ PROSE: dict[str, str] = {
         "Welcher Ausdruck modelliert 5 % Wachstum über t Jahre ausgehend von 200?",
     "x-intercept": "x-Achsenabschnitt",
     "complete": "abgeschlossen",
+    "a = −3": "a = −3",
+    "Axis of symmetry": "Symmetrieachse",
+    "Axis of symmetry: x = 4": "Symmetrieachse: x = 4",
+    "Both": "Beide",
+    "Does y = −3(x + 1)² + 4 open up or down?":
+        "Öffnet sich y = −3(x + 1)² + 4 nach oben oder nach unten?",
+    "Down": "Nach unten",
+    "Find the y-intercept of y = x² − 6x + 8.":
+        "Finde den y-Achsenabschnitt von y = x² − 6x + 8.",
+    "For y = (x − 4)² − 1, what is the axis of symmetry?":
+        "Wie lautet die Symmetrieachse von y = (x − 4)² − 1?",
+    "h = 2 and k = 5": "h = 2 und k = 5",
+    "h = 4": "h = 4",
+    "If a is positive the parabola opens up; if a is negative it opens down.":
+        "Ist a positiv, öffnet sich die Parabel nach oben; ist a negativ, öffnet sie sich nach unten.",
+    "Look at the sign of a.": "Achte auf das Vorzeichen von a.",
+    "Negative a means the parabola opens down": "Negatives a bedeutet: Die Parabel öffnet sich nach unten",
+    "Neither": "Keines von beiden",
+    "Quadratic Graphs": "Quadratische Graphen",
+    "Quadratic graphs are parabolas. Vertex form shows the turning point, direction, and shifts without a table of values.":
+        "Quadratische Graphen sind Parabeln. Die Scheitelpunktform zeigt Scheitelpunkt, Richtung und Verschiebungen ohne Wertetabelle.",
+    "Rewrite x + 3 as x − (−3).": "Schreibe x + 3 als x − (−3).",
+    "The axis is x = h.": "Die Achse ist x = h.",
+    "The vertical line through the vertex splits the parabola into two matching halves.":
+        "Die vertikale Gerade durch den Scheitelpunkt teilt die Parabel in zwei passende Hälften.",
+    "The vertex is (h, k). If a is positive the parabola opens up; if a is negative it opens down.":
+        "Der Scheitelpunkt ist (h, k). Ist a positiv, öffnet sich die Parabel nach oben; ist a negativ, öffnet sie sich nach unten.",
+    "True or false: y = (x + 3)² has vertex (−3, 0).":
+        "Wahr oder falsch: y = (x + 3)² hat den Scheitelpunkt (−3, 0).",
+    "Up": "Nach oben",
+    "Vertex: (2, 5)": "Scheitelpunkt: (2, 5)",
+    "Vertex: (−3, 0)": "Scheitelpunkt: (−3, 0)",
+    "What is the vertex of y = (x − 2)² + 5?":
+        "Wie lautet der Scheitelpunkt von y = (x − 2)² + 5?",
+    "y = 0² − 6·0 + 8": "y = 0² − 6·0 + 8",
+    "y = 8": "y = 8",
+    "y = (x − (−3))² + 0": "y = (x − (−3))² + 0",
     "All values equal the mean": "Alle Werte entsprechen dem Mittelwert",
     "Always check in the original equation": "Prüfe immer in der ursprünglichen Gleichung",
     "2 is not one of the payouts": "2 ist keiner der möglichen Auszahlungswerte",

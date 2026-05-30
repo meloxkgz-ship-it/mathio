@@ -28,6 +28,7 @@ New:
 • Unit Conversions: new foundation practice for metric moves, conversion factors, and real-world units
 • Exponential Growth & Decay: new algebra practice for interest, depreciation, doubling, and growth factors
 • Graphing Lines: new algebra practice for y-intercepts, x-intercepts, slope moves, and reading points
+• Quadratic Graphs: new algebra practice for vertex form, symmetry, opening direction, and intercepts
 • Percent Change: new everyday math practice for discounts, growth, and loss
 • Word Problems: new algebra practice for translating real situations into equations
 • Related Rates: new calculus practice for classic exam-style rate problems
@@ -42,7 +43,7 @@ Improved:
 • Achievements now extend into longer-term streak, review, 250-answer, 500-answer, and full-roadmap goals
 • Clearer learning path guidance on Home
 • Better premium feel with more personalized study flow
-• Expanded curriculum: 88 lessons and 440 guided questions across 9 topics
+• Expanded curriculum: 89 lessons and 445 guided questions across 9 topics
 
 Fixed:
 • Continued cleanup of localized app copy to avoid mixed German/English flows

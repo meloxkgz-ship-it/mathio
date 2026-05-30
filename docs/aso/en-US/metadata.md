@@ -53,7 +53,7 @@ Reasoning:
 ## Promotional Text (170 max — editable without review)
 
 ```
-New: Learning Health, Study Coach, and 88 lessons.
+New: Learning Health, Study Coach, and 89 lessons.
 ```
 **73 / 170** — highlights current catalog size, retention improvements, and new exam-prep content.
 
@@ -110,7 +110,7 @@ Available in English, German, Spanish, French, Italian, and Brazilian Portuguese
 TOPICS
 Pre-Algebra, Algebra, Calculus, Geometry, Trigonometry, Statistics, Linear Algebra, Financial Math, and Discrete Math.
 
-88 lessons and 440 hand-crafted questions cover fractions, percentages, percent change, unit conversions, equations, graphing lines, word problems, functions, exponential growth, sequences, series, derivatives, implicit differentiation, integrals, related rates, vectors, matrices, probability, conditional probability, expected value, Bayes' theorem, regression, standard deviation, normal distribution, box plots, confidence intervals, rational expressions, radical equations, completing the square, coordinate geometry, composite areas, budgeting, unit prices, tips, bill splitting, loans, taxes, discounts, truth tables, logic, graph theory, and more.
+89 lessons and 445 hand-crafted questions cover fractions, percentages, percent change, unit conversions, equations, graphing lines, quadratic graphs, word problems, functions, exponential growth, sequences, series, derivatives, implicit differentiation, integrals, related rates, vectors, matrices, probability, conditional probability, expected value, Bayes' theorem, regression, standard deviation, normal distribution, box plots, confidence intervals, rational expressions, radical equations, completing the square, coordinate geometry, composite areas, budgeting, unit prices, tips, bill splitting, loans, taxes, discounts, truth tables, logic, graph theory, and more.
 
 SUBSCRIPTION
 Mathio is free to try. Unlock all topics with:
@@ -162,6 +162,7 @@ New:
 • Unit Conversions: new foundation practice for metric moves, conversion factors, and real-world units
 • Exponential Growth & Decay: new algebra practice for interest, depreciation, doubling, and growth factors
 • Graphing Lines: new algebra practice for y-intercepts, x-intercepts, slope moves, and reading points
+• Quadratic Graphs: new algebra practice for vertex form, symmetry, opening direction, and intercepts
 • Percent Change: new everyday math practice for discounts, growth, and loss
 • Word Problems: new algebra practice for translating real situations into equations
 • Related Rates: new calculus practice for classic exam-style rate problems
@@ -176,7 +177,7 @@ Improved:
 • Achievements now extend into longer-term streak, review, 250-answer, 500-answer, and full-roadmap goals
 • Clearer learning path guidance on Home
 • Better premium feel with more personalized study flow
-• Expanded curriculum: 88 lessons and 440 guided questions across 9 topics
+• Expanded curriculum: 89 lessons and 445 guided questions across 9 topics
 
 Fixed:
 • Continued cleanup of localized app copy to avoid mixed German/English flows
