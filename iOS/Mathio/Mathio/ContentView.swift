@@ -584,6 +584,8 @@ struct OnboardingView: View {
                                                                                confidence: confidence).title)
                 miniStat("calendar.badge.clock", "A 14-day starter path will appear on Home")
             }
+
+            firstWeekPreview
         }
     }
 
@@ -701,6 +703,68 @@ struct OnboardingView: View {
                 .fixedSize(horizontal: false, vertical: true)
             Spacer(minLength: 0)
         }
+    }
+
+    private var firstWeekPreview: some View {
+        Card(padding: 16, background: Palette.surfaceMuted) {
+            VStack(alignment: .leading, spacing: 12) {
+                HStack(spacing: 8) {
+                    Image(systemName: "calendar.badge.clock")
+                        .foregroundStyle(Palette.terracotta)
+                    VStack(alignment: .leading, spacing: 2) {
+                        Text("7-day focus")
+                            .font(.titleM)
+                            .foregroundStyle(Palette.ink)
+                        Text("Seven small sessions from your recommended path.")
+                            .font(.bodyM)
+                            .foregroundStyle(Palette.inkSoft)
+                    }
+                    Spacer(minLength: 0)
+                }
+
+                VStack(spacing: 8) {
+                    starterPlanRow(index: 1, icon: "target", title: "Daily goal",
+                                   detail: "A daily goal small enough to actually hit")
+                    starterPlanRow(index: 2, icon: "map.fill", title: "Guided paths",
+                                   detail: "Mathio picks your next lesson from what you've mastered — never busywork.")
+                    starterPlanRow(index: 3, icon: "lightbulb.max.fill", title: "Step-by-step solutions",
+                                   detail: "Miss a question and you'll see exactly how to reach the answer, line by line.")
+                    starterPlanRow(index: 4, icon: "arrow.triangle.2.circlepath", title: "Spaced repetition",
+                                   detail: "Questions return right before you'd forget them, so it actually sticks.")
+                }
+            }
+        }
+    }
+
+    private func starterPlanRow(index: Int,
+                                icon: String,
+                                title: LocalizedStringResource,
+                                detail: LocalizedStringResource) -> some View {
+        HStack(alignment: .top, spacing: 10) {
+            Text("\(index)")
+                .font(.caption)
+                .fontWeight(.bold)
+                .foregroundStyle(Palette.heroInk)
+                .frame(width: 24, height: 24)
+                .background(Palette.terracotta, in: Circle())
+                .accessibilityHidden(true)
+            Image(systemName: icon)
+                .font(.system(size: 14, weight: .semibold))
+                .foregroundStyle(Palette.terracotta)
+                .frame(width: 20)
+                .accessibilityHidden(true)
+            VStack(alignment: .leading, spacing: 2) {
+                Text(title)
+                    .font(.bodyM)
+                    .foregroundStyle(Palette.ink)
+                Text(detail)
+                    .font(.caption)
+                    .foregroundStyle(Palette.inkSoft)
+                    .fixedSize(horizontal: false, vertical: true)
+            }
+            Spacer(minLength: 0)
+        }
+        .accessibilityElement(children: .combine)
     }
 }
 
@@ -4579,7 +4643,10 @@ struct PaywallView: View {
     private func row(_ icon: String, _ text: LocalizedStringResource) -> some View {
         HStack(spacing: 12) {
             Image(systemName: icon).frame(width: 22).foregroundStyle(Palette.terracotta)
-            Text(text).font(.bodyL).foregroundStyle(Palette.ink)
+            Text(text)
+                .font(.bodyL)
+                .foregroundStyle(Palette.ink)
+                .fixedSize(horizontal: false, vertical: true)
         }
     }
 
