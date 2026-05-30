@@ -119283,6 +119283,958 @@
           }
         }
       }
+    },
+    "Build durable math confidence": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dauerhaftes Mathevertrauen aufbauen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Desarrollar confianza matemática duradera"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Développez une confiance durable en mathématiques"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Costruisci una sicurezza duratura in matematica"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Construa uma confiança matemática durável"
+          }
+        }
+      }
+    },
+    "Build logic for counting, graphs, and code": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Logik für Zählen, Graphen und Code aufbauen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cree lógica para contar, gráficos y código"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Créer une logique pour le comptage, les graphiques et le code"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Costruisci la logica per il conteggio, i grafici e il codice"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Crie lógica para contagem, gráficos e código"
+          }
+        }
+      }
+    },
+    "Calculus explains motion, growth, optimization, and area. It is the language behind many advanced courses.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Analysis erklärt Bewegung, Wachstum, Optimierung und Flächen. Sie ist die Sprache hinter vielen fortgeschrittenen Kursen."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El cálculo explica el movimiento, el crecimiento, la optimización y el área. Es el lenguaje detrás de muchos cursos avanzados."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le calcul explique le mouvement, la croissance, l'optimisation et la surface. C'est la langue derrière de nombreux cours avancés."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il calcolo spiega il movimento, la crescita, l'ottimizzazione e l'area. È la lingua alla base di molti corsi avanzati."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O cálculo explica movimento, crescimento, otimização e área. É a linguagem por trás de muitos cursos avançados."
+          }
+        }
+      }
+    },
+    "Connect angles, waves, and right triangles": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verbinde Winkel, Wellen und rechtwinklige Dreiecke"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Conecta ángulos, ondas y triángulos rectángulos."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Connectez les angles, les vagues et les triangles rectangles"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Collega angoli, onde e triangoli rettangoli"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Conecte ângulos, ondas e triângulos retângulos"
+          }
+        }
+      }
+    },
+    "Counting, logic, and graph ideas support computer science, probability, algorithms, and proofs.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zählen, Logik und Graphenideen stützen Informatik, Wahrscheinlichkeit, Algorithmen und Beweise."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Las ideas de conteo, lógica y gráficos respaldan la informática, la probabilidad, los algoritmos y las pruebas."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les idées de comptage, de logique et de graphiques soutiennent l'informatique, les probabilités, les algorithmes et les preuves."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le idee di conteggio, logica e grafico supportano l'informatica, la probabilità, gli algoritmi e le dimostrazioni."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Idéias de contagem, lógica e gráficos apoiam a ciência da computação, probabilidade, algoritmos e provas."
+          }
+        }
+      }
+    },
+    "Daily life": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alltag"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vida diaria"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vie quotidienne"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vita quotidiana"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vida diária"
+          }
+        }
+      }
+    },
+    "Equations and functions help you translate word problems, graphs, and exam questions into a clear plan.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gleichungen und Funktionen helfen dir, Textaufgaben, Graphen und Prüfungsfragen in einen klaren Plan zu übersetzen."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Las ecuaciones y funciones lo ayudan a traducir problemas planteados, gráficas y preguntas de exámenes en un plan claro."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les équations et les fonctions vous aident à traduire des problèmes écrits, des graphiques et des questions d'examen en un plan clair."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Equazioni e funzioni ti aiutano a tradurre problemi di parole, grafici e domande d'esame in un piano chiaro."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Equações e funções ajudam a traduzir problemas de palavras, gráficos e questões de exames em um plano claro."
+          }
+        }
+      }
+    },
+    "Exam ready": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prüfungsbereit"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Listo para el examen"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prêt pour l'examen"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pronto per l’esame"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pronto para a prova"
+          }
+        }
+      }
+    },
+    "Fractions, percents, units, and ratios show up everywhere. Master them and harder topics feel lighter.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Brüche, Prozente, Einheiten und Verhältnisse tauchen überall auf. Beherrsche sie, und schwierigere Themen fühlen sich leichter an."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fracciones, porcentajes, unidades y proporciones aparecen en todas partes. Domínelos y los temas más difíciles se sentirán más ligeros."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les fractions, les pourcentages, les unités et les ratios apparaissent partout. Maîtrisez-les et les sujets plus difficiles semblent plus légers."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Frazioni, percentuali, unità e rapporti compaiono ovunque. Padroneggiateli e gli argomenti più difficili sembreranno più leggeri."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Frações, porcentagens, unidades e proporções aparecem em todos os lugares. Domine-os e os tópicos mais difíceis parecerão mais leves."
+          }
+        }
+      }
+    },
+    "Geometry makes diagrams less mysterious by turning angles, area, distance, and volume into repeatable moves.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Geometrie macht Diagramme verständlicher, indem Winkel, Fläche, Abstand und Volumen zu wiederholbaren Schritten werden."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La geometría hace que los diagramas sean menos misteriosos al convertir ángulos, áreas, distancias y volúmenes en movimientos repetibles."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La géométrie rend les diagrammes moins mystérieux en transformant les angles, la surface, la distance et le volume en mouvements répétables."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La geometria rende i diagrammi meno misteriosi trasformando angoli, area, distanza e volume in movimenti ripetibili."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A geometria torna os diagramas menos misteriosos ao transformar ângulos, áreas, distâncias e volumes em movimentos repetíveis."
+          }
+        }
+      }
+    },
+    "Interest, inflation, discounts, loans, and budgets become easier when the numbers have a method.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zinsen, Inflation, Rabatte, Kredite und Budgets werden leichter, wenn die Zahlen eine Methode haben."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Los intereses, la inflación, los descuentos, los préstamos y los presupuestos se vuelven más fáciles cuando los números tienen un método."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les intérêts, l’inflation, les remises, les prêts et les budgets deviennent plus faciles lorsque les chiffres ont une méthode."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Interessi, inflazione, sconti, prestiti e budget diventano più facili quando i numeri hanno un metodo."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Juros, inflação, descontos, empréstimos e orçamentos ficam mais fáceis quando os números têm método."
+          }
+        }
+      }
+    },
+    "Make shapes, units, and diagrams predictable": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mache Formen, Einheiten und Diagramme berechenbar"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Haga que las formas, unidades y diagramas sean predecibles"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rendre les formes, les unités et les diagrammes prévisibles"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rendi prevedibili forme, unità e diagrammi"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Torne formas, unidades e diagramas previsíveis"
+          }
+        }
+      }
+    },
+    "Mixed practice trains switching skills quickly, checking work, and choosing the fastest wins first.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gemischtes Training übt, schnell zwischen Fähigkeiten zu wechseln, Arbeit zu prüfen und zuerst die schnellsten Punkte zu holen."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La práctica mixta entrena para cambiar habilidades rápidamente, verificar el trabajo y elegir primero las victorias más rápidas."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La pratique mixte entraîne le changement rapide de compétences, la vérification du travail et la sélection en premier des victoires les plus rapides."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La pratica mista allena il passaggio rapido delle abilità, il controllo del lavoro e la scelta delle vittorie più veloci per prime."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A prática mista treina a troca rápida de habilidades, verificando o trabalho e escolhendo primeiro as vitórias mais rápidas."
+          }
+        }
+      }
+    },
+    "Next topics": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nächste Themen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Próximos temas"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sujets suivants"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Argomenti successivi"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Próximos tópicos"
+          }
+        }
+      }
+    },
+    "Precalculus ties functions, graphs, growth, and trig together before calculus raises the speed.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vorkalkül verbindet Funktionen, Graphen, Wachstum und Trigonometrie, bevor Analysis das Tempo erhöht."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El precálculo une funciones, gráficas, crecimiento y trigonometría antes de que el cálculo aumente la velocidad."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le précalcul relie les fonctions, les graphiques, la croissance et le trig avant que le calcul n'augmente la vitesse."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il precalcolo lega insieme funzioni, grafici, crescita e trigonometria prima che il calcolo aumenti la velocità."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O pré-cálculo une funções, gráficos, crescimento e trigonometria antes que o cálculo aumente a velocidade."
+          }
+        }
+      }
+    },
+    "Prepare for functions and calculus": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Auf Funktionen und Analysis vorbereiten"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prepárese para funciones y cálculo."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Préparez-vous aux fonctions et au calcul"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prepararsi per funzioni e calcoli"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prepare-se para funções e cálculo"
+          }
+        }
+      }
+    },
+    "Protect points under time pressure": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Punkte unter Zeitdruck sichern"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Proteger puntos bajo presión de tiempo"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Protéger les points sous pression"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Proteggi i punti sotto pressione"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Proteja pontos sob pressão de tempo"
+          }
+        }
+      }
+    },
+    "Read data without guessing": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Daten lesen, ohne zu raten"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Leer datos sin adivinar"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lire les données sans deviner"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Leggi i dati senza indovinare"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Leia dados sem adivinhar"
+          }
+        }
+      }
+    },
+    "Short lessons connect today’s practice to the skills you will need again later.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kurze Lektionen verbinden die heutige Übung mit den Fähigkeiten, die du später wieder brauchst."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Las lecciones breves conectan la práctica de hoy con las habilidades que volverás a necesitar más adelante."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "De courtes leçons relient la pratique d’aujourd’hui aux compétences dont tu auras encore besoin plus tard."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Brevi lezioni collegano la pratica di oggi alle competenze di cui avrai bisogno in seguito."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lições curtas conectam a prática de hoje às habilidades que você vai precisar de novo mais tarde."
+          }
+        }
+      }
+    },
+    "Statistics helps you judge charts, uncertainty, averages, and claims instead of trusting first impressions.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Statistik hilft dir, Diagramme, Unsicherheit, Durchschnittswerte und Behauptungen zu beurteilen, statt dem ersten Eindruck zu vertrauen."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Las estadísticas le ayudan a juzgar gráficos, incertidumbres, promedios y afirmaciones en lugar de confiar en las primeras impresiones."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les statistiques vous aident à juger des graphiques, des incertitudes, des moyennes et des affirmations au lieu de vous fier aux premières impressions."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le statistiche ti aiutano a giudicare grafici, incertezze, medie e affermazioni invece di fidarti delle prime impressioni."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "As estatísticas ajudam você a avaliar gráficos, incertezas, médias e afirmações, em vez de confiar nas primeiras impressões."
+          }
+        }
+      }
+    },
+    "The base for every next step": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Basis für jeden nächsten Schritt"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La base para cada paso siguiente"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La base pour chaque prochaine étape"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La base per ogni passo successivo"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A base para cada próximo passo"
+          }
+        }
+      }
+    },
+    "Think clearly about systems and vectors": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Klar über Systeme und Vektoren nachdenken"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pensar claramente en sistemas y vectores."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pensez clairement aux systèmes et aux vecteurs"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pensa chiaramente a sistemi e vettori"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pense claramente sobre sistemas e vetores"
+          }
+        }
+      }
+    },
+    "Trig connects triangles to circles and waves, which makes physics, engineering, and precalculus easier.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trigonometrie verbindet Dreiecke mit Kreisen und Wellen. Das macht Physik, Technik und Vorkalkül leichter."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La trigonometría conecta triángulos con círculos y ondas, lo que facilita física, ingeniería y precálculo."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La trigonométrie relie les triangles aux cercles et aux ondes, ce qui facilite la physique, l’ingénierie et le précalcul."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La trigonometria collega triangoli, cerchi e onde, rendendo più semplici fisica, ingegneria e precalcolo."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A trigonometria conecta triângulos a círculos e ondas, facilitando física, engenharia e pré-cálculo."
+          }
+        }
+      }
+    },
+    "Turn unknowns into solvable steps": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mache Unbekannte zu lösbaren Schritten"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Convierta las incógnitas en pasos solucionables"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Transformez les inconnues en étapes résolubles"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trasforma le incognite in passaggi risolvibili"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Transforme incógnitas em etapas solucionáveis"
+          }
+        }
+      }
+    },
+    "Understand change, slopes, and accumulation": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verstehe Veränderung, Steigungen und Ansammlung"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Comprender el cambio, las pendientes y la acumulación"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Comprendre le changement, les pentes et l'accumulation"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Comprendere il cambiamento, le pendenze e l’accumulo"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Compreenda a mudança, as inclinações e a acumulação"
+          }
+        }
+      }
+    },
+    "Use math for money decisions": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mathe für Geldentscheidungen nutzen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usa las matemáticas para decidir sobre dinero"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Utiliser les mathématiques pour prendre des décisions financières"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usa la matematica per prendere decisioni finanziarie"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Use matemática para decisões com dinheiro"
+          }
+        }
+      }
+    },
+    "Vectors, matrices, and systems power data science, graphics, economics, and higher-level math.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vektoren, Matrizen und Systeme treiben Data Science, Grafik, Wirtschaft und höhere Mathematik an."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vectores, matrices y sistemas potencian la ciencia de datos, los gráficos, la economía y las matemáticas de nivel superior."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les vecteurs, les matrices et les systèmes alimentent la science des données, les graphiques, l'économie et les mathématiques de niveau supérieur."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vettori, matrici e sistemi alimentano la scienza dei dati, la grafica, l'economia e la matematica di livello superiore."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vetores, matrizes e sistemas potencializam a ciência de dados, gráficos, economia e matemática de nível superior."
+          }
+        }
+      }
+    },
+    "Why this matters": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Warum das wichtig ist"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Por qué esto importa"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pourquoi c'est important"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Perché questo è importante"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Por que isso é importante"
+          }
+        }
+      }
     }
   },
   "version": "1.0"

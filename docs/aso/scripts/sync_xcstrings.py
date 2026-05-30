@@ -248,6 +248,7 @@ PROSE: dict[str, str] = {
     "Which expression factors x² + 5x + 6?": "Welcher Ausdruck faktorisiert x² + 5x + 6?",
     "Which statistic is most affected by one extreme outlier?": "Welche Kennzahl wird am stärksten von einem extremen Ausreißer beeinflusst?",
     "Which value is greatest?": "Welcher Wert ist am größten?",
+    "Why this matters": "Warum das wichtig ist",
     "Word Problem Sprint": "Textaufgaben-Sprint",
     "Write 2x + 7 = 25.": "Schreibe 2x + 7 = 25.",
     "Zeros are the x-values where the graph crosses the x-axis.": "Nullstellen sind die x-Werte, an denen der Graph die x-Achse schneidet.",

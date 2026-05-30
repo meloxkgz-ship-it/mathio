@@ -3547,6 +3547,8 @@ struct TopicView: View {
                     metricPill(value: "\(Int(store.mastery(for: topic) * 100))%", label: "Mastery")
                 }
 
+                topicPurposeCard
+
                 ForEach(Array(topic.lessons.enumerated()), id: \.element.id) { index, lesson in
                     let locked = !premiumStore.isPremium && index > 0
                     Button {
@@ -3573,6 +3575,53 @@ struct TopicView: View {
         }
     }
 
+    private var topicPurposeCard: some View {
+        Card(padding: 16, background: Palette.surfaceMuted) {
+            VStack(alignment: .leading, spacing: 14) {
+                HStack(alignment: .top, spacing: 12) {
+                    Image(systemName: "sparkles")
+                        .font(.system(size: 17, weight: .semibold))
+                        .foregroundStyle(topic.color)
+                        .frame(width: 36, height: 36)
+                        .background(topic.color.opacity(0.14), in: Circle())
+                        .accessibilityHidden(true)
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text("Why this matters")
+                            .font(.label)
+                            .foregroundStyle(Palette.inkFaint)
+                            .textCase(.uppercase)
+                            .tracking(1.2)
+                        Text(topic.useCaseTitle)
+                            .font(.titleM)
+                            .foregroundStyle(Palette.ink)
+                        Text(topic.useCaseDetail)
+                            .font(.bodyM)
+                            .foregroundStyle(Palette.inkSoft)
+                            .fixedSize(horizontal: false, vertical: true)
+                    }
+                }
+
+                HStack(spacing: 8) {
+                    topicPurposePill("Exam ready")
+                    topicPurposePill("Daily life")
+                    topicPurposePill("Next topics")
+                }
+            }
+        }
+        .accessibilityElement(children: .combine)
+    }
+
+    private func topicPurposePill(_ label: LocalizedStringResource) -> some View {
+        Text(label)
+            .font(.caption.weight(.semibold))
+            .foregroundStyle(Palette.inkSoft)
+            .lineLimit(1)
+            .minimumScaleFactor(0.75)
+            .frame(maxWidth: .infinity)
+            .padding(.vertical, 8)
+            .background(Palette.surface, in: Capsule())
+    }
+
     private func metricPill(value: String, label: LocalizedStringResource) -> some View {
         VStack(alignment: .leading, spacing: 2) {
             Text(value)
@@ -3597,6 +3646,64 @@ struct TopicView: View {
 extension Topic {
     var questionCount: Int {
         lessons.reduce(0) { $0 + $1.questions.count }
+    }
+
+    var useCaseTitle: LocalizedStringResource {
+        switch id {
+        case "prealgebra":
+            return "The base for every next step"
+        case "algebra":
+            return "Turn unknowns into solvable steps"
+        case "calculus":
+            return "Understand change, slopes, and accumulation"
+        case "geometry":
+            return "Make shapes, units, and diagrams predictable"
+        case "trigonometry":
+            return "Connect angles, waves, and right triangles"
+        case "statistics":
+            return "Read data without guessing"
+        case "finance":
+            return "Use math for money decisions"
+        case "linearalgebra":
+            return "Think clearly about systems and vectors"
+        case "discrete":
+            return "Build logic for counting, graphs, and code"
+        case "precalculus":
+            return "Prepare for functions and calculus"
+        case "examreview":
+            return "Protect points under time pressure"
+        default:
+            return "Build durable math confidence"
+        }
+    }
+
+    var useCaseDetail: LocalizedStringResource {
+        switch id {
+        case "prealgebra":
+            return "Fractions, percents, units, and ratios show up everywhere. Master them and harder topics feel lighter."
+        case "algebra":
+            return "Equations and functions help you translate word problems, graphs, and exam questions into a clear plan."
+        case "calculus":
+            return "Calculus explains motion, growth, optimization, and area. It is the language behind many advanced courses."
+        case "geometry":
+            return "Geometry makes diagrams less mysterious by turning angles, area, distance, and volume into repeatable moves."
+        case "trigonometry":
+            return "Trig connects triangles to circles and waves, which makes physics, engineering, and precalculus easier."
+        case "statistics":
+            return "Statistics helps you judge charts, uncertainty, averages, and claims instead of trusting first impressions."
+        case "finance":
+            return "Interest, inflation, discounts, loans, and budgets become easier when the numbers have a method."
+        case "linearalgebra":
+            return "Vectors, matrices, and systems power data science, graphics, economics, and higher-level math."
+        case "discrete":
+            return "Counting, logic, and graph ideas support computer science, probability, algorithms, and proofs."
+        case "precalculus":
+            return "Precalculus ties functions, graphs, growth, and trig together before calculus raises the speed."
+        case "examreview":
+            return "Mixed practice trains switching skills quickly, checking work, and choosing the fastest wins first."
+        default:
+            return "Short lessons connect today’s practice to the skills you will need again later."
+        }
     }
 }
 
