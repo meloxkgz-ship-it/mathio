@@ -3970,6 +3970,31 @@ struct StatsView: View {
     private var hasAnyProgress: Bool {
         store.answered.values.contains { $0.attempts > 0 }
     }
+    private var activeDaysLast7: Int {
+        let calendar = Calendar.current
+        let today = calendar.startOfDay(for: .now)
+        let activity = store.dailyActivity()
+        return (0..<7).reduce(0) { total, offset in
+            guard let day = calendar.date(byAdding: .day, value: -offset, to: today) else { return total }
+            return total + (activity[day, default: 0] > 0 ? 1 : 0)
+        }
+    }
+    private var consistencyScore: Double {
+        min(1, Double(activeDaysLast7) / 5.0)
+    }
+    private var dailyGoalScore: Double {
+        min(1, Double(store.correctToday()) / Double(max(settings.dailyGoal, 1)))
+    }
+    private var reviewHealthScore: Double {
+        let due = store.reviewQueue(in: topics).count
+        return due == 0 ? 1.0 : max(0.0, 1.0 - Double(min(due, 10)) / 10.0)
+    }
+    private var learningHealthScore: Double {
+        min(1, consistencyScore * 0.35 + dailyGoalScore * 0.25 + reviewHealthScore * 0.25 + overallMastery * 0.15)
+    }
+    private var learningHealthPercent: Int {
+        Int((learningHealthScore * 100).rounded())
+    }
     private var lessonTargets: [LessonTarget] {
         topics.flatMap { topic in
             topic.lessons.map { lesson in
@@ -4099,6 +4124,7 @@ struct StatsView: View {
                 VStack(alignment: .leading, spacing: 18) {
                     headerStats
                     forecastCard
+                    learningHealthCard
                     if !lessonTargets.isEmpty { studyTargetsCard }
                     achievementsCard
                     activityCard
@@ -4120,6 +4146,79 @@ struct StatsView: View {
                 PracticeView(lesson: lesson, store: store, isReview: false)
             }
         }
+    }
+
+    private var learningHealthCard: some View {
+        Card(padding: 16, background: Palette.heroSurface) {
+            VStack(alignment: .leading, spacing: 14) {
+                HStack(alignment: .top, spacing: 12) {
+                    Image(systemName: "heart.text.square.fill")
+                        .font(.system(size: 18, weight: .semibold))
+                        .foregroundStyle(Palette.amber)
+                        .frame(width: 40, height: 40)
+                        .background(Palette.amber.opacity(0.18), in: Circle())
+                        .accessibilityHidden(true)
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text("Learning health")
+                            .font(.label)
+                            .foregroundStyle(Palette.heroInkSoft)
+                            .textCase(.uppercase)
+                            .tracking(1.2)
+                        Text("\(learningHealthPercent)% on track")
+                            .font(.titleL)
+                            .foregroundStyle(Palette.heroInk)
+                        Text(learningHealthSubtitle)
+                            .font(.bodyM)
+                            .foregroundStyle(Palette.heroInkSoft)
+                            .fixedSize(horizontal: false, vertical: true)
+                    }
+                    Spacer(minLength: 0)
+                }
+
+                ProgressBar(progress: learningHealthScore, color: Palette.amber, height: 7)
+
+                VStack(spacing: 8) {
+                    healthMetricRow("Consistency", value: "\(activeDaysLast7)/7 days", progress: consistencyScore, color: Palette.success)
+                    healthMetricRow("Reviews", value: "\(store.reviewQueue(in: topics).count) due", progress: reviewHealthScore, color: Palette.terracotta)
+                    healthMetricRow("Daily goal", value: "\(store.correctToday())/\(settings.dailyGoal)", progress: dailyGoalScore, color: Palette.calculus)
+                }
+            }
+        }
+        .accessibilityElement(children: .combine)
+        .accessibilityLabel(Text("Learning health \(learningHealthPercent) percent on track."))
+    }
+
+    private var learningHealthSubtitle: LocalizedStringResource {
+        if store.reviewQueue(in: topics).count > 0 {
+            return "Clear due reviews to protect long-term memory."
+        }
+        if activeDaysLast7 < 3 {
+            return "Add two more short days this week to build rhythm."
+        }
+        if store.correctToday() < settings.dailyGoal {
+            return "Finish today's goal to keep the plan warm."
+        }
+        return "Strong rhythm. Keep reviews and daily sessions balanced."
+    }
+
+    private func healthMetricRow(_ label: LocalizedStringResource,
+                                 value: String,
+                                 progress: Double,
+                                 color: Color) -> some View {
+        VStack(alignment: .leading, spacing: 6) {
+            HStack {
+                Text(label)
+                    .font(.bodyM.weight(.semibold))
+                    .foregroundStyle(Palette.heroInk)
+                Spacer()
+                Text(value)
+                    .font(.caption)
+                    .foregroundStyle(Palette.heroInkSoft)
+            }
+            ProgressBar(progress: progress, color: color, height: 5)
+        }
+        .padding(12)
+        .background(Palette.heroInk.opacity(0.07), in: RoundedRectangle(cornerRadius: 12, style: .continuous))
     }
 
     private var headerStats: some View {

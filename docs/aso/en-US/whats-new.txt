@@ -2,6 +2,7 @@ Mathio now gives learners clearer direction after every launch and more depth ac
 
 New:
 • Study Coach: Home now recommends the single best next action from reviews, missed questions, weak spots, daily goals, or exam sprints
+• Learning Health: Progress now shows an on-track score built from consistency, daily goals, reviews, and mastery
 • Next 3 Sessions: your personal plan now shows the next concrete lessons to study
 • 7-Day Focus: a clearer weekly habit card turns your recommended path into seven small sessions
 • Review Forecast: Home now shows what is due today, tomorrow, and in the next 7 days

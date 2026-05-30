@@ -47,6 +47,7 @@ PROSE: dict[str, str] = {
     "Interest, loans, inflation": "Zinsen, Kredite, Inflation",
     "Keep the chain warm: one short session is enough.": "Halte die Kette warm: Eine kurze Session reicht.",
     "Limits, derivatives, integrals": "Grenzwerte, Ableitungen, Integrale",
+    "Learning health": "Lerngesundheit",
     "Mixed practice across core topics": "Gemischtes Training zu Kernthemen",
     "Money Math": "Finanzmathe",
     "Next focus": "Nächster Fokus",

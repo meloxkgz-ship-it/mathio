@@ -53,7 +53,7 @@ Reasoning:
 ## Promotional Text (170 max — editable without review)
 
 ```
-New: Study Coach, Bayes' Theorem, and 83 lessons.
+New: Learning Health, Study Coach, and 83 lessons.
 ```
 **73 / 170** — highlights current catalog size, retention improvements, and new exam-prep content.
 
@@ -68,7 +68,7 @@ Rotation ideas (swap monthly):
 ```
 Math, made simple. Practice that actually remembers what you know.
 
-Mathio is a calm, focused math trainer for school, homework, exam prep, university foundations, and self-study. It now combines adaptive lessons, a Study Coach, daily challenges, comeback missions, 3-session plans, weak-spot practice, exam readiness, exam sprints, achievements, spaced repetition, and a formula reference in one clean learning flow.
+Mathio is a calm, focused math trainer for school, homework, exam prep, university foundations, and self-study. It now combines adaptive lessons, Learning Health, a Study Coach, daily challenges, comeback missions, 3-session plans, weak-spot practice, exam readiness, exam sprints, achievements, spaced repetition, and a formula reference in one clean learning flow.
 
 WHO MATHIO IS FOR
 • Students who need structured practice for homework, quizzes, finals, SAT-style prep, or university refreshers
@@ -136,6 +136,7 @@ Mathio now gives learners clearer direction after every launch and more depth ac
 
 New:
 • Study Coach: Home now recommends the single best next action from reviews, missed questions, weak spots, daily goals, or exam sprints
+• Learning Health: Progress now shows an on-track score built from consistency, daily goals, reviews, and mastery
 • Next 3 Sessions: your personal plan now shows the next concrete lessons to study
 • 7-Day Focus: a clearer weekly habit card turns your recommended path into seven small sessions
 • Review Forecast: Home now shows what is due today, tomorrow, and in the next 7 days
