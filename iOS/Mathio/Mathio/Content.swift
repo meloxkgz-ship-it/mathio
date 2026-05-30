@@ -2204,6 +2204,59 @@ enum Curriculum {
         ]
     )
 
+    static let coordinateGeometry = Lesson(
+        id: "geo.coord",
+        title: "Coordinate Geometry",
+        intro: "Coordinate geometry uses points, distance, midpoint, and slope to turn shapes into calculations.",
+        formulas: [
+            Formula(key: "geo.coord.f1",
+                    name: "Midpoint",
+                    math: "{var:M} = (({var:x1}+{var:x2})/2, ({var:y1}+{var:y2})/2)",
+                    explanation: "Average the x-values and average the y-values."),
+            Formula(key: "geo.coord.f2",
+                    name: "Distance",
+                    math: "{var:d} = √(({var:x2}−{var:x1}){sup:^2} + ({var:y2}−{var:y1}){sup:^2})",
+                    explanation: "The distance formula is the Pythagorean theorem on a coordinate grid."),
+        ],
+        questions: [
+            Question(id: "geo.coord.q1",
+                     prompt: "Find the midpoint of (2, 4) and (6, 8).",
+                     math: nil,
+                     kind: .freeAnswer(accepted: ["(4,6)", "(4, 6)", "4,6", "4, 6"]),
+                     hint: "Average the x-values and y-values.",
+                     solutionSteps: ["x: (2 + 6)/2 = 4", "y: (4 + 8)/2 = 6", "Midpoint: (4, 6)"]),
+            Question(id: "geo.coord.q2",
+                     prompt: "Distance between (0, 0) and (3, 4)?",
+                     math: nil,
+                     kind: .freeAnswer(accepted: ["5"]),
+                     hint: "This forms a 3-4-5 right triangle.",
+                     solutionSteps: ["d = √(3² + 4²)", "d = √25 = 5"]),
+            Question(id: "geo.coord.q3",
+                     prompt: "The slope from (1, 2) to (3, 6) is:",
+                     math: nil,
+                     kind: .freeAnswer(accepted: ["2"]),
+                     hint: "Slope is rise over run.",
+                     solutionSteps: ["rise = 6 − 2 = 4", "run = 3 − 1 = 2", "slope = 4/2 = 2"]),
+            Question(id: "geo.coord.q4",
+                     prompt: "Which point lies on the x-axis?",
+                     math: nil,
+                     kind: .multipleChoice(options: [
+                        .init(label: "(5, 0)", math: nil),
+                        .init(label: "(0, 5)", math: nil),
+                        .init(label: "(5, 5)", math: nil),
+                        .init(label: "(−5, 2)", math: nil),
+                     ], correctIndex: 0),
+                     hint: "Points on the x-axis have y = 0.",
+                     solutionSteps: ["On the x-axis, y = 0", "So (5, 0) lies on the x-axis"]),
+            Question(id: "geo.coord.q5",
+                     prompt: "True or false: the distance between two points is never negative.",
+                     math: nil,
+                     kind: .trueFalse(answer: true),
+                     hint: "Distance measures length.",
+                     solutionSteps: ["Lengths are zero or positive", "So distance is never negative"]),
+        ]
+    )
+
     // MARK: - Trigonometry (more)
 
     static let radians = Lesson(
@@ -3794,7 +3847,7 @@ enum Curriculum {
               icon: "triangle",
               color: Palette.geometry,
               lessons: [pythagoras, circles, trianglesArea, volumes,
-                        angles, quadrilaterals, geoSurfaceArea]),
+                        angles, quadrilaterals, geoSurfaceArea, coordinateGeometry]),
         Topic(id: "trig",
               title: "Trigonometry",
               subtitle: "Angles & ratios",

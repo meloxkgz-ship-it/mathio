@@ -53,9 +53,9 @@ Reasoning:
 ## Promotional Text (170 max — editable without review)
 
 ```
-New: Unit Prices, Percent Change, Word Problems, Related Rates, and 72 lessons.
+New: Coordinate Geometry, Unit Prices, Percent Change, Word Problems, and 73 lessons.
 ```
-**98 / 170** — highlights current catalog size, retention improvements, and new exam-prep content.
+**85 / 170** — highlights current catalog size, retention improvements, and new exam-prep content.
 
 Rotation ideas (swap monthly):
 - `Free 7-day trial. Master one lesson a day — no leaderboards, no streaks-or-die guilt, just calm progress.` (113)
@@ -110,7 +110,7 @@ Available in English, German, Spanish, French, Italian, and Brazilian Portuguese
 TOPICS
 Pre-Algebra, Algebra, Calculus, Geometry, Trigonometry, Statistics, Linear Algebra, Financial Math, and Discrete Math.
 
-72 lessons and 360 hand-crafted questions cover fractions, percentages, percent change, equations, word problems, functions, derivatives, integrals, related rates, vectors, matrices, probability, regression, confidence intervals, rational expressions, budgeting, unit prices, loans, taxes, discounts, truth tables, logic, graph theory, and more.
+73 lessons and 365 hand-crafted questions cover fractions, percentages, percent change, equations, word problems, functions, derivatives, integrals, related rates, vectors, matrices, probability, regression, confidence intervals, rational expressions, coordinate geometry, budgeting, unit prices, loans, taxes, discounts, truth tables, logic, graph theory, and more.
 
 SUBSCRIPTION
 Mathio is free to try. Unlock all topics with:
@@ -132,11 +132,12 @@ From fractions to derivatives. Two minutes a day is enough.
 ### v1.0.9
 
 ```
-Mathio now gives learners clearer direction after every launch and more depth for exam-ready algebra practice.
+Mathio now gives learners clearer direction after every launch and more depth across exam-ready algebra, geometry, calculus, statistics, and finance practice.
 
 New:
 • Next 3 Sessions: your personal plan now shows the next concrete lessons to study
 • Comeback Mission: a gentle 5-question restart when you return after a break
+• Coordinate Geometry: new geometry practice for midpoint, distance, slope, and coordinate-plane reasoning
 • Unit Prices: new financial math practice for comparing real deals
 • Percent Change: new everyday math practice for discounts, growth, and loss
 • Word Problems: new algebra practice for translating real situations into equations
@@ -149,7 +150,7 @@ New:
 Improved:
 • Clearer learning path guidance on Home
 • Better premium feel with more personalized study flow
-• Expanded curriculum: 72 lessons and 360 guided questions across 9 topics
+• Expanded curriculum: 73 lessons and 365 guided questions across 9 topics
 
 Fixed:
 • Continued cleanup of localized app copy to avoid mixed German/English flows

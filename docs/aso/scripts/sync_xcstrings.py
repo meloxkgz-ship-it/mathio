@@ -23,6 +23,7 @@ PROSE: dict[str, str] = {
     # Home and review UX
     "A quick rating helps more learners find it.": "Eine kurze Bewertung hilft mehr Lernenden, Mathio zu finden.",
     "Algebra Foundation": "Algebra-Grundlagen",
+    "Average the x-values and y-values.": "Bilde den Durchschnitt der x-Werte und der y-Werte.",
     "Calculus Starter": "Analysis-Einstieg",
     "Enjoying Mathio?": "Gefällt dir Mathio?",
     "Equations, lines, factoring": "Gleichungen, Geraden, Faktorisieren",
