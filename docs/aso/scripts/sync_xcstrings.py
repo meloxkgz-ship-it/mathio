@@ -218,6 +218,7 @@ PROSE: dict[str, str] = {
     "total = 21": "gesamt = 21",
     "total = 5 + 2 · 8": "gesamt = 5 + 2 · 8",
     "%lld reviews are scheduled before they fade.": "%lld Wiederholungen sind geplant, bevor sie verblassen.",
+    "A clear start, then a reason to return": "Ein klarer Start und ein Grund zurückzukommen",
     "A quick rating helps more learners find it.": "Eine kurze Bewertung hilft mehr Lernenden, Mathio zu finden.",
     "A concrete week of reviews and next lessons.": "Eine konkrete Woche mit Wiederholungen und nächsten Lektionen.",
     "A clear seven-day path from today's level": "Ein klarer Sieben-Tage-Pfad ab deinem heutigen Level",
@@ -289,6 +290,8 @@ PROSE: dict[str, str] = {
     "One small set keeps momentum": "Ein kleines Set hält den Schwung",
     "Open tomorrow's review plan": "Morgenplan für Wiederholung öffnen",
     "Plan stays unlocked": "Plan bleibt freigeschaltet",
+    "Premium keeps the daily path open so each session knows what came before.":
+        "Premium hält den täglichen Pfad offen, damit jede Session weiß, was davor passiert ist.",
     "Premium keeps the next lesson, review timing, and exam practice available whenever the plan asks for it.":
         "Premium hält die nächste Lektion, Wiederholungszeiten und Prüfungstraining bereit, sobald dein Plan danach fragt.",
     "Premium unlocks every planned lesson, smart reviews, and worked solutions so the next session is always ready.":
@@ -344,6 +347,7 @@ PROSE: dict[str, str] = {
     "Missed": "Verpasst",
     "missed": "verpasst",
     "Session insight": "Session-Auswertung",
+    "Your first 7 days": "Deine ersten 7 Tage",
     "Your math plan is ready": "Dein Mathe-Plan ist bereit",
     "Your plan is ready": "Dein Plan ist bereit",
     "Your answer shapes the first track.": "Deine Antwort formt den ersten Lernpfad.",

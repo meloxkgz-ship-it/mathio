@@ -6046,6 +6046,7 @@ struct PaywallView: View {
                     headline
                     if mode == .onboarding { onboardingPlanPreview }
                     audience
+                    if mode != .retention { firstWeekPreview }
                     if mode != .retention { premiumPlanPreview }
                     premiumValueGrid
                     bullets
@@ -6261,6 +6262,70 @@ struct PaywallView: View {
                 }
             }
         }
+    }
+
+    private var firstWeekPreview: some View {
+        let path = LearningPath.recommended(for: profile)
+        return Card(padding: 16, background: Palette.heroSurface) {
+            VStack(alignment: .leading, spacing: 14) {
+                HStack(alignment: .top, spacing: 12) {
+                    Image(systemName: "calendar.badge.clock")
+                        .font(.system(size: 18, weight: .semibold))
+                        .foregroundStyle(Palette.amber)
+                        .frame(width: 42, height: 42)
+                        .background(Palette.amber.opacity(0.18), in: Circle())
+                        .accessibilityHidden(true)
+
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text("Your first 7 days")
+                            .font(.label)
+                            .foregroundStyle(Palette.heroInkSoft)
+                            .textCase(.uppercase)
+                            .tracking(1.2)
+                        Text("A clear start, then a reason to return")
+                            .font(.titleM)
+                            .foregroundStyle(Palette.heroInk)
+                        Text("Premium keeps the daily path open so each session knows what came before.")
+                            .font(.bodyM)
+                            .foregroundStyle(Palette.heroInkSoft)
+                            .fixedSize(horizontal: false, vertical: true)
+                    }
+                }
+
+                VStack(spacing: 8) {
+                    weekPreviewRow("1", "Start", path.title)
+                    weekPreviewRow("2-3", "Weak spots", "Worked solutions repair missed questions")
+                    weekPreviewRow("4+", "Memory", "Reviews come back before answers fade")
+                    weekPreviewRow("2w", "Next level", "Exam sprints and deeper topics stay unlocked")
+                }
+            }
+        }
+        .accessibilityElement(children: .combine)
+    }
+
+    private func weekPreviewRow(_ badge: String,
+                                _ title: LocalizedStringResource,
+                                _ detail: LocalizedStringResource) -> some View {
+        HStack(alignment: .top, spacing: 10) {
+            Text(verbatim: badge)
+                .font(.caption.weight(.bold))
+                .foregroundStyle(Palette.ink)
+                .frame(width: 34, height: 28)
+                .background(Palette.amber, in: Capsule())
+            VStack(alignment: .leading, spacing: 2) {
+                Text(title)
+                    .font(.bodyM.weight(.semibold))
+                    .foregroundStyle(Palette.heroInk)
+                Text(detail)
+                    .font(.caption)
+                    .foregroundStyle(Palette.heroInkSoft)
+                    .fixedSize(horizontal: false, vertical: true)
+            }
+            Spacer(minLength: 0)
+        }
+        .padding(10)
+        .background(Palette.heroInk.opacity(0.07),
+                    in: RoundedRectangle(cornerRadius: 12, style: .continuous))
     }
 
     private var bullets: some View {

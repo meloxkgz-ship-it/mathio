@@ -117991,6 +117991,108 @@
           }
         }
       }
+    },
+    "A clear start, then a reason to return": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ein klarer Start und ein Grund zurückzukommen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un comienzo claro y una razón para volver"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un départ clair, puis une raison de revenir"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un inizio chiaro e un motivo per tornare"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Um começo claro e um motivo para voltar"
+          }
+        }
+      }
+    },
+    "Premium keeps the daily path open so each session knows what came before.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Premium hält den täglichen Pfad offen, damit jede Session weiß, was davor passiert ist."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Premium mantiene abierto el camino diario para que cada sesión sepa qué vino antes."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Premium garde le parcours quotidien ouvert afin que chaque séance tienne compte de la précédente."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Premium mantiene aperto il percorso quotidiano, così ogni sessione sa cosa è venuto prima."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O Premium mantém o caminho diário aberto para que cada sessão saiba o que veio antes."
+          }
+        }
+      }
+    },
+    "Your first 7 days": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deine ersten 7 Tage"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tus primeros 7 días"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vos 7 premiers jours"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I tuoi primi 7 giorni"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Seus primeiros 7 dias"
+          }
+        }
+      }
     }
   },
   "version": "1.0"
