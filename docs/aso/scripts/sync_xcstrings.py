@@ -50,9 +50,21 @@ PROSE: dict[str, str] = {
     "Not now": "Nicht jetzt",
     "Rate Mathio": "Mathio bewerten",
     "Reminder time": "Erinnerungszeit",
-    "Review forecast": "Review-Vorschau",
+    "Review forecast": "Wiederholungs-Vorschau",
     "Seven small sessions from your recommended path.": "Sieben kleine Sessions aus deinem empfohlenen Pfad.",
-    "Start due review": "Fälliges Review starten",
+    "Start due review": "Fällige Wiederholung starten",
+    "Answer a few questions to start your personal review cycle.":
+        "Beantworte ein paar Fragen, um deinen persönlichen Wiederholungszyklus zu starten.",
+    "Every changing variable gets its own rate when you differentiate.":
+        "Jede veränderliche Variable bekommt beim Ableiten ihre eigene Änderungsrate.",
+    "First, Outer, Inner, Last.": "Erste, Außen, Innen, Letzte.",
+    "First: x²": "Erster Term: x²",
+    "Rate: 2 dollars per mile": "Änderungsrate: 2 Dollar pro Meile",
+    "Review forecast. %lld due today, %lld tomorrow, %lld in seven days.":
+        "Wiederholungs-Vorschau. %lld heute fällig, %lld morgen, %lld in sieben Tagen.",
+    "Start with the fixed fee, then add the per-mile rate.":
+        "Beginne mit der Grundgebühr und addiere dann den Preis pro Meile.",
+    "total = fixed cost + rate · amount": "gesamt = Fixkosten + Preis pro Einheit · Menge",
     "These lessons can move your roadmap fastest right now.": "Diese Lektionen bringen deinen Lernplan gerade am schnellsten voran.",
     "Tomorrow": "Morgen",
     "Missed": "Verpasst",

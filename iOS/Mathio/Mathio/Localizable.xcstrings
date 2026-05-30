@@ -26932,7 +26932,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "First, Outer, Inner, Last (außen und innen ausmultiplizieren)."
+            "value": "Erste, Außen, Innen, Letzte."
           }
         },
         "es": {
@@ -26966,7 +26966,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "First: x²"
+            "value": "Erster Term: x²"
           }
         },
         "es": {
@@ -68843,7 +68843,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Rate: 2 Dollar pro Meile"
+            "value": "Änderungsrate: 2 Dollar pro Meile"
           }
         },
         "es": {
@@ -68979,7 +68979,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Beginne mit der Grundgebühr und addiere dann die Rate pro Meile."
+            "value": "Beginne mit der Grundgebühr und addiere dann den Preis pro Meile."
           }
         },
         "es": {
@@ -76264,7 +76264,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Jede veränderliche Variable bekommt beim Ableiten ihre eigene Rate."
+            "value": "Jede veränderliche Variable bekommt beim Ableiten ihre eigene Änderungsrate."
           }
         },
         "es": {
@@ -78469,7 +78469,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "gesamt = Fixkosten + Rate · Menge"
+            "value": "gesamt = Fixkosten + Preis pro Einheit · Menge"
           }
         },
         "es": {
@@ -88664,7 +88664,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Review-Vorschau"
+            "value": "Wiederholungs-Vorschau"
           }
         },
         "es": {
@@ -88698,7 +88698,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Fälliges Review starten"
+            "value": "Fällige Wiederholung starten"
           }
         },
         "es": {
@@ -88902,7 +88902,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Beantworte ein paar Fragen, um deinen persönlichen Review-Zyklus zu starten."
+            "value": "Beantworte ein paar Fragen, um deinen persönlichen Wiederholungszyklus zu starten."
           }
         },
         "es": {
@@ -88936,7 +88936,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Review-Vorschau. %lld heute fällig, %lld morgen, %lld in sieben Tagen."
+            "value": "Wiederholungs-Vorschau. %lld heute fällig, %lld morgen, %lld in sieben Tagen."
           }
         },
         "es": {

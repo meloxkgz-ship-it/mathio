@@ -67,7 +67,7 @@ Rotations-Ideen (monatlich tauschen):
 ```
 Mathe. Einfach gemacht.
 
-Mathio ist ein ruhiger, fokussierter Mathe-Trainer für Schule, Hausaufgaben, Prüfungsvorbereitung und Selbststudium. Die App deckt Algebra, Geometrie, Analysis, Trigonometrie, Statistik, Finanzmathematik, Lineare Algebra und Diskrete Mathematik ab. Keine Ablenkung. Keine Bestenlisten. Nur du, klare Erklärungen und eine tägliche Serie.
+Mathio ist ein ruhiger, fokussierter Mathe-Trainer für Schule, Hausaufgaben, Prüfungsvorbereitung und Selbststudium. Die App deckt Algebra, Geometrie, Analysis, Trigonometrie, Statistik, Finanzmathematik, Lineare Algebra und Diskrete Mathematik ab. Keine Ablenkung. Keine Bestenlisten. Nur du, klare Erklärungen, Wiederholungen und eine tägliche Serie.
 
 FÜR WEN IST MATHIO GEEIGNET?
 • Schüler, die strukturiert für Hausaufgaben, Tests, Klausuren oder Abitur üben wollen
@@ -130,7 +130,7 @@ Mathio gibt Lernenden jetzt klarere Richtung und mehr Tiefe für tägliches Übe
 
 • Neue Lektion: Standardabweichung für Streuung, quadrierte Abweichungen und Stichprobe-vs-Population
 • Neue Lektion: Implizite Ableitung für dy/dx, Kreise, Produkte und Kettenregel-Denken
-• Home zeigt Mistake Notebook, Review-Vorschau, 7-Tage-Fokus und nächste Lernziele
+• Home zeigt Fehler-Notizbuch, Wiederholungs-Vorschau, 7-Tage-Fokus und nächste Lernziele
 • Mathio wächst auf 81 Lektionen und 405 geführte Aufgaben
 • Premium- und App-Store-Texte passen zum erweiterten Inhalt
 

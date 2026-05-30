@@ -2290,7 +2290,7 @@ struct LearningPath: Identifiable {
             color: Palette.terracotta,
             lessons: [Curriculum.preAlgFractions, Curriculum.linearEquations, Curriculum.pythagoras,
                       Curriculum.wordProblems, Curriculum.trigBasics, Curriculum.descriptiveStats,
-                      Curriculum.correlationRegression],
+                      Curriculum.standardDeviation, Curriculum.correlationRegression],
             durationDays: 14
         ),
         LearningPath(
@@ -2300,7 +2300,8 @@ struct LearningPath: Identifiable {
             icon: "chart.bar.xaxis",
             color: Palette.calculus,
             lessons: [Curriculum.descriptiveStats, Curriculum.probabilityBasics, Curriculum.dataDisplays,
-                      Curriculum.sampling, Curriculum.distributions, Curriculum.correlationRegression,
+                      Curriculum.sampling, Curriculum.distributions, Curriculum.standardDeviation,
+                      Curriculum.correlationRegression,
                       Curriculum.normalDistribution, Curriculum.confidenceIntervals],
             durationDays: 21
         ),
