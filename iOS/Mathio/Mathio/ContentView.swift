@@ -1248,6 +1248,32 @@ struct HomeView: View {
                     planPill("Daily goal", icon: "target")
                     planPill("Review loop", icon: "arrow.triangle.2.circlepath")
                 }
+
+                VStack(alignment: .leading, spacing: 10) {
+                    Text("Roadmap preview")
+                        .font(.label)
+                        .foregroundStyle(Palette.inkFaint)
+                        .textCase(.uppercase)
+                        .tracking(1.2)
+                    roadmapStep(
+                        icon: "1.circle.fill",
+                        title: "Week 1",
+                        subtitle: roadmapFirstStep,
+                        tint: Palette.terracotta
+                    )
+                    roadmapStep(
+                        icon: "2.circle.fill",
+                        title: "Weeks 2-4",
+                        subtitle: "Build momentum through your guided path.",
+                        tint: recommendedPath.color
+                    )
+                    roadmapStep(
+                        icon: "3.circle.fill",
+                        title: "Month 2+",
+                        subtitle: "Use spaced repetition and advanced topics to make it stick.",
+                        tint: Palette.calculus
+                    )
+                }
             }
         }
         .accessibilityElement(children: .combine)
@@ -1260,6 +1286,13 @@ struct HomeView: View {
         return "\(lessonCount) lessons · \(questionCount) questions · about \(monthsOfPractice) months at your current goal"
     }
 
+    private var roadmapFirstStep: LocalizedStringResource {
+        if let lesson = firstLesson(in: recommendedPath) {
+            return "Start with \(lesson.title)."
+        }
+        return "Start with a short diagnostic-friendly lesson."
+    }
+
     private func planPill(_ title: LocalizedStringResource, icon: String) -> some View {
         Label(title, systemImage: icon)
             .font(.caption)
@@ -1268,6 +1301,33 @@ struct HomeView: View {
             .padding(.vertical, 8)
             .frame(maxWidth: .infinity)
             .background(Palette.surface, in: Capsule())
+    }
+
+    private func roadmapStep(
+        icon: String,
+        title: LocalizedStringResource,
+        subtitle: LocalizedStringResource,
+        tint: Color
+    ) -> some View {
+        HStack(alignment: .top, spacing: 10) {
+            Image(systemName: icon)
+                .font(.system(size: 15, weight: .semibold))
+                .foregroundStyle(tint)
+                .frame(width: 28, height: 28)
+                .background(tint.opacity(0.14), in: Circle())
+            VStack(alignment: .leading, spacing: 2) {
+                Text(title)
+                    .font(.bodyM.weight(.semibold))
+                    .foregroundStyle(Palette.ink)
+                Text(subtitle)
+                    .font(.caption)
+                    .foregroundStyle(Palette.inkSoft)
+                    .fixedSize(horizontal: false, vertical: true)
+            }
+            Spacer(minLength: 0)
+        }
+        .padding(12)
+        .background(Palette.surface, in: RoundedRectangle(cornerRadius: 12, style: .continuous))
     }
 
     private func progress(for path: LearningPath) -> Double {
