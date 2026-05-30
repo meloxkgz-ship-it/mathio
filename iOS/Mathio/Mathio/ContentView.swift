@@ -3476,6 +3476,15 @@ private struct Achievement: Identifiable {
     let progress: Double
 }
 
+private struct RoadmapPhase: Identifiable {
+    let id: String
+    let title: LocalizedStringResource
+    let subtitle: LocalizedStringResource
+    let lessonCount: Int
+    let progress: Double
+    let color: Color
+}
+
 private struct MistakeFocus: Identifiable {
     let topic: Topic
     let lesson: Lesson
@@ -3611,6 +3620,31 @@ struct StatsView: View {
     }
     private var unlockedAchievementCount: Int {
         achievements.filter(\.unlocked).count
+    }
+    private var roadmapPhases: [RoadmapPhase] {
+        [
+            phase(
+                id: "foundations",
+                title: "Foundations",
+                subtitle: "Pre-Algebra, Algebra, Geometry",
+                topicIDs: ["prealgebra", "algebra", "geometry"],
+                color: Palette.algebra
+            ),
+            phase(
+                id: "exam-core",
+                title: "Exam core",
+                subtitle: "Trigonometry, Calculus, Statistics",
+                topicIDs: ["trig", "calculus", "statistics"],
+                color: Palette.calculus
+            ),
+            phase(
+                id: "extension",
+                title: "Extension",
+                subtitle: "Finance, Linear Algebra, Discrete Math",
+                topicIDs: ["financialmath", "linearalgebra", "discretemath"],
+                color: Palette.precalc
+            ),
+        ]
     }
 
     var body: some View {
@@ -3749,6 +3783,12 @@ struct StatsView: View {
                     forecastMetric(value: "\(remainingQuestions)", label: "Remaining")
                     forecastMetric(value: forecastTimeValue, label: forecastTimeLabel)
                 }
+
+                VStack(spacing: 10) {
+                    ForEach(roadmapPhases) { phase in
+                        roadmapPhaseRow(phase)
+                    }
+                }
             }
         }
         .accessibilityElement(children: .combine)
@@ -3788,6 +3828,51 @@ struct StatsView: View {
         .frame(maxWidth: .infinity, alignment: .leading)
         .padding(.horizontal, 12)
         .padding(.vertical, 10)
+        .background(Palette.surface, in: RoundedRectangle(cornerRadius: 12, style: .continuous))
+    }
+
+    private func phase(id: String, title: LocalizedStringResource, subtitle: LocalizedStringResource,
+                       topicIDs: Set<String>, color: Color) -> RoadmapPhase {
+        let phaseTopics = topics.filter { topicIDs.contains($0.id) }
+        let questionCount = phaseTopics.reduce(0) { $0 + $1.questionCount }
+        let weightedMastery = phaseTopics.reduce(0.0) { total, topic in
+            total + store.mastery(for: topic) * Double(topic.questionCount)
+        }
+        let progress = questionCount == 0 ? 0 : weightedMastery / Double(questionCount)
+        let lessons = phaseTopics.reduce(0) { $0 + $1.lessons.count }
+        return RoadmapPhase(
+            id: id,
+            title: title,
+            subtitle: subtitle,
+            lessonCount: lessons,
+            progress: progress,
+            color: color
+        )
+    }
+
+    private func roadmapPhaseRow(_ phase: RoadmapPhase) -> some View {
+        VStack(alignment: .leading, spacing: 8) {
+            HStack(alignment: .firstTextBaseline) {
+                VStack(alignment: .leading, spacing: 2) {
+                    Text(phase.title)
+                        .font(.bodyM.weight(.semibold))
+                        .foregroundStyle(Palette.ink)
+                    Text(phase.subtitle)
+                        .font(.caption)
+                        .foregroundStyle(Palette.inkSoft)
+                        .lineLimit(1)
+                        .minimumScaleFactor(0.82)
+                }
+                Spacer(minLength: 8)
+                Text("\(Int((phase.progress * 100).rounded()))% · \(phase.lessonCount) lessons")
+                    .font(.caption)
+                    .foregroundStyle(Palette.inkFaint)
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.78)
+            }
+            ProgressBar(progress: phase.progress, color: phase.color, height: 5)
+        }
+        .padding(12)
         .background(Palette.surface, in: RoundedRectangle(cornerRadius: 12, style: .continuous))
     }
 
