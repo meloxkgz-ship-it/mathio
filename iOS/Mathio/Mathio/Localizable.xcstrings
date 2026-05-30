@@ -3100,6 +3100,40 @@
         }
       }
     },
+    "10 mixed questions from reviews, weak spots, and your next lesson.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "10 gemischte Fragen aus Wiederholungen, Schwächen und deiner nächsten Lektion."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "10 preguntas mixtas de repasos, puntos débiles y tu próxima lección."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "10 questions mixtes issues des révisions, points faibles et de votre prochaine leçon."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "10 domande miste da ripassi, punti deboli e dalla tua prossima lezione."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "10 perguntas mistas de revisões, pontos fracos e sua próxima lição."
+          }
+        }
+      }
+    },
     "12 : 18 = 2 : 3": {
       "localizations": {
         "de": {
@@ -11847,6 +11881,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Uma linha de n vértices tem n − 1 arestas"
+          }
+        }
+      }
+    },
+    "A mixed mini-test built from review, weak spots, and the next useful lesson.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ein gemischter Mini-Test aus Wiederholung, Schwächen und der nächsten sinnvollen Lektion."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una mini prueba mixta con repaso, puntos débiles y la siguiente lección útil."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un mini-test mixte avec révision, points faibles et prochaine leçon utile."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un mini-test misto con ripasso, punti deboli e la prossima lezione utile."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Um mini-teste misto com revisão, pontos fracos e a próxima lição útil."
           }
         }
       }
@@ -25533,6 +25601,40 @@
         }
       }
     },
+    "Exam sprint": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prüfungs-Sprint"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sprint de examen"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sprint d’examen"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sprint d’esame"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sprint de prova"
+          }
+        }
+      }
+    },
     "Exclude inputs that break the rule, like dividing by zero.": {
       "localizations": {
         "de": {
@@ -36220,6 +36322,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Números Negativos"
+          }
+        }
+      }
+    },
+    "New": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Neu"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nuevo"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nouveau"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nuovo"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Novo"
           }
         }
       }
@@ -57907,6 +58043,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Weak positive"
+          }
+        }
+      }
+    },
+    "Weak": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schwach"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Débil"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Faible"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Debole"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fraco"
           }
         }
       }

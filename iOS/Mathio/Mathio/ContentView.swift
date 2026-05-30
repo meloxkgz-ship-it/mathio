@@ -747,6 +747,7 @@ struct HomeView: View {
     @State private var showReview = false
     @State private var showDailyChallenge = false
     @State private var showWeakSpotDrill = false
+    @State private var showExamSprint = false
 
     private var topics: [Topic] { Curriculum.topics }
     private var learningPaths: [LearningPath] { LearningPath.defaultPaths }
@@ -810,6 +811,7 @@ struct HomeView: View {
                     DailyGoalView(progress: store.correctToday(), goal: settings.dailyGoal)
                     dailyChallengeCard
                     if weakSpot != nil { weakSpotCard }
+                    examSprintCard
                     todayPlanCard
                     momentumCard
                     weeklyRhythmCard
@@ -847,6 +849,9 @@ struct HomeView: View {
             }
             .navigationDestination(isPresented: $showWeakSpotDrill) {
                 PracticeView(lesson: weakSpotDrillLesson(), store: store, isReview: false)
+            }
+            .navigationDestination(isPresented: $showExamSprint) {
+                PracticeView(lesson: examSprintLesson(), store: store, isReview: true)
             }
             .sheet(isPresented: $showStats)    { StatsView(store: store, settings: settings, topics: topics) }
             .sheet(isPresented: $showSettings) { SettingsView(store: store, premiumStore: premiumStore, settings: settings) }
@@ -1102,6 +1107,64 @@ struct HomeView: View {
             .buttonStyle(.plain)
             .accessibilityElement(children: .combine)
         )
+    }
+
+    private var examSprintCard: some View {
+        Button {
+            if premiumStore.isPremium {
+                showExamSprint = true
+            } else {
+                showPaywall = true
+            }
+        } label: {
+            Card(padding: 16, background: Palette.surface) {
+                VStack(alignment: .leading, spacing: 12) {
+                    HStack(spacing: 12) {
+                        Image(systemName: "stopwatch.fill")
+                            .font(.system(size: 18, weight: .semibold))
+                            .foregroundStyle(Palette.terracotta)
+                            .frame(width: 42, height: 42)
+                            .background(Palette.terracottaSoft, in: Circle())
+                            .accessibilityHidden(true)
+                        VStack(alignment: .leading, spacing: 4) {
+                            Text("Exam sprint")
+                                .font(.titleM)
+                                .foregroundStyle(Palette.ink)
+                            Text("10 mixed questions from reviews, weak spots, and your next lesson.")
+                                .font(.bodyM)
+                                .foregroundStyle(Palette.inkSoft)
+                                .fixedSize(horizontal: false, vertical: true)
+                        }
+                        Spacer(minLength: 0)
+                        Image(systemName: premiumStore.isPremium ? "arrow.right" : "lock.fill")
+                            .font(.system(size: 13, weight: .semibold))
+                            .foregroundStyle(Palette.inkFaint)
+                    }
+
+                    HStack(spacing: 8) {
+                        sprintChip("Review", value: "\(min(reviewCount, 4))")
+                        sprintChip("Weak", value: weakSpot == nil ? "0" : "3")
+                        sprintChip("New", value: nextUp == nil ? "0" : "3")
+                    }
+                }
+            }
+        }
+        .buttonStyle(.plain)
+        .accessibilityElement(children: .combine)
+    }
+
+    private func sprintChip(_ label: LocalizedStringResource, value: String) -> some View {
+        HStack(spacing: 5) {
+            Text(value)
+                .font(.label)
+                .foregroundStyle(Palette.ink)
+            Text(label)
+                .font(.caption)
+                .foregroundStyle(Palette.inkSoft)
+        }
+        .padding(.horizontal, 10)
+        .padding(.vertical, 7)
+        .background(Palette.surfaceMuted, in: Capsule())
     }
 
     private var dailyGoalSubtitle: LocalizedStringResource {
@@ -1556,6 +1619,49 @@ struct HomeView: View {
             visual: lesson.visual,
             formulas: lesson.formulas,
             questions: Array(lesson.questions.prefix(5))
+        )
+    }
+
+    private func examSprintLesson() -> Lesson {
+        var questions: [Question] = []
+        var seen: Set<String> = []
+
+        func append(_ candidates: [Question], limit: Int) {
+            for question in candidates where questions.count < 10 {
+                guard !seen.contains(question.id) else { continue }
+                questions.append(question)
+                seen.insert(question.id)
+                if questions.count >= limit { break }
+            }
+        }
+
+        append(store.reviewQueue(in: topics, limit: 4), limit: 4)
+        if let (_, lesson) = weakSpot {
+            append(Array(lesson.questions.prefix(3)), limit: 7)
+        }
+        if let (_, lesson) = nextUp {
+            append(Array(lesson.questions.prefix(3)), limit: 10)
+        }
+
+        let lowestMasteryQuestions = topics
+            .flatMap { $0.lessons }
+            .flatMap { lesson in lesson.questions.map { (lesson, $0) } }
+            .sorted { lhs, rhs in
+                let leftMastery = store.answered[lhs.1.id]?.isMastered == true ? 1 : 0
+                let rightMastery = store.answered[rhs.1.id]?.isMastered == true ? 1 : 0
+                if leftMastery == rightMastery { return lhs.0.id < rhs.0.id }
+                return leftMastery < rightMastery
+            }
+            .map(\.1)
+        append(lowestMasteryQuestions, limit: 10)
+
+        return Lesson(
+            id: "__exam_sprint__",
+            title: "Exam sprint",
+            intro: "A mixed mini-test built from review, weak spots, and the next useful lesson.",
+            visual: .barChart,
+            formulas: [],
+            questions: Array(questions.prefix(10))
         )
     }
 }
