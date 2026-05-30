@@ -42,6 +42,7 @@ PROSE: dict[str, str] = {
         "Eine Multiple-Choice-Gleichung hat die Optionen 2, 4, 6, 8. Wenn du x = 4 einsetzt, stimmt die Gleichung. Was ist die Antwort?",
     "A quick estimate catches answers that are far too large or too small.":
         "Eine schnelle Schätzung erkennt Antworten, die viel zu groß oder zu klein sind.",
+    "A few questions before anything longer": "Ein paar Fragen, bevor es länger wird",
     "A study buddy makes tomorrow easier to start.": "Mit Lernpartner fällt der Start morgen leichter.",
     "A result should be close to 50, but your calculator shows 500. What should you do first?":
         "Ein Ergebnis sollte nahe bei 50 liegen, aber dein Rechner zeigt 500. Was solltest du zuerst tun?",
@@ -76,6 +77,7 @@ PROSE: dict[str, str] = {
     "You just finished a strong session. If Mathio is helping, a quick rating helps more learners find it.":
         "Du hast gerade eine starke Einheit abgeschlossen. Wenn Mathio dir hilft, hilft eine kurze Bewertung mehr Lernenden, es zu finden.",
     "Daily goal complete": "Tagesziel erreicht",
+    "Fix one miss": "Einen Fehler beheben",
     "I am building a Mathio streak one short session at a time. Join me here: https://apps.apple.com/app/id6767033115":
         "Ich baue eine Mathio-Serie auf, eine kurze Einheit nach der anderen. Mach hier mit: https://apps.apple.com/app/id6767033115",
     "I hit today's Mathio goal. Tiny math sessions add up: https://apps.apple.com/app/id6767033115":
@@ -84,7 +86,13 @@ PROSE: dict[str, str] = {
         "Ich habe gerade eine perfekte Mathio-Einheit geschafft. Mach mit bei einer kleinen täglichen Mathe-Routine: https://apps.apple.com/app/id6767033115",
     "Invite a study buddy": "Lernpartner einladen",
     "Keep the streak social": "Teile deine Serie",
+    "No urgent reviews": "Keine dringenden Wiederholungen",
     "Perfect run worth sharing": "Perfekte Runde zum Teilen",
+    "Restart small": "Klein neu starten",
+    "Restart with one weak spot": "Mit einer Schwachstelle neu starten",
+    "Restart with reviews": "Mit Wiederholungen neu starten",
+    "Reviews are ready": "Wiederholungen sind bereit",
+    "Reviews first": "Wiederholungen zuerst",
     "Streak": "Serie",
     "This is the right moment to invite a friend: you just proved the habit works.":
         "Das ist der richtige Moment, einen Freund einzuladen: Du hast gerade bewiesen, dass die Routine funktioniert.",
@@ -154,6 +162,7 @@ PROSE: dict[str, str] = {
     "List HH, HT, TH, TT.": "Liste KK, KZ, ZK, ZZ auf.",
     "Many percentages are easier after finding 10%.": "Viele Prozente sind leichter, nachdem du 10 % gefunden hast.",
     "Many word problems combine a starting fee with a repeated rate.": "Viele Textaufgaben verbinden eine Grundgebühr mit einem wiederholten Preis.",
+    "Memory first": "Gedächtnis zuerst",
     "Mental Math Sprint": "Kopfrechnen-Sprint",
     "Mixed Foundations": "Gemischte Grundlagen",
     "Mixed sprints & finals prep": "Gemischte Sprints & Prüfungsvorbereitung",
@@ -176,6 +185,7 @@ PROSE: dict[str, str] = {
     "Slope": "Steigung",
     "Slope measures vertical change per horizontal change.": "Die Steigung misst die vertikale Änderung pro horizontaler Änderung.",
     "Small samples swing more easily.": "Kleine Stichproben schwanken leichter.",
+    "Small target": "Kleines Ziel",
     "Split numbers": "Zahlen zerlegen",
     "So the slope is 4": "Also ist die Steigung 4",
     "Solve: 2(x − 3) = 14.": "Löse: 2(x − 3) = 14.",
@@ -194,6 +204,7 @@ PROSE: dict[str, str] = {
     "The range of 4, 9, 12, 20 is:": "Die Spannweite von 4, 9, 12, 20 ist:",
     "The same operation is applied to both sides.": "Dieselbe Operation wird auf beide Seiten angewendet.",
     "This week's mission": "Wochenmission",
+    "Tiny restart": "Kleiner Neustart",
     "There are 4 equally likely outcomes": "Es gibt 4 gleich wahrscheinliche Ergebnisse",
     "There are 5 tokens total.": "Es gibt insgesamt 5 Chips.",
     "Three times x is 3x; 4 fewer means subtract 4.": "Dreimal x ist 3x; 4 weniger bedeutet 4 subtrahieren.",

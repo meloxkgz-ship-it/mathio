@@ -1818,13 +1818,7 @@ struct HomeView: View {
     }
 
     private var comebackCard: some View {
-        Button {
-            if dailyChallengeRequiresPremium {
-                showPaywall = true
-            } else {
-                showDailyChallenge = true
-            }
-        } label: {
+        Button { startComebackSession() } label: {
             Card(padding: 18, background: Palette.surface) {
                 VStack(alignment: .leading, spacing: 14) {
                     HStack(alignment: .top, spacing: 12) {
@@ -1851,18 +1845,31 @@ struct HomeView: View {
                     }
 
                     HStack(spacing: 10) {
-                        Label("5 questions", systemImage: "timer")
-                        Label("No pressure", systemImage: "leaf")
+                        Label("Tiny restart", systemImage: "timer")
+                        Label(comebackPriorityLabel, systemImage: comebackPriorityIcon)
                     }
                     .font(.caption)
                     .foregroundStyle(Palette.inkSoft)
 
+                    VStack(spacing: 8) {
+                        comebackStepRow(
+                            icon: reviewCount > 0 ? "arrow.triangle.2.circlepath" : "checkmark.circle.fill",
+                            title: "Memory first",
+                            detail: reviewCount > 0 ? "Reviews are ready" : "No urgent reviews"
+                        )
+                        comebackStepRow(
+                            icon: !mistakeFocus.isEmpty ? "exclamationmark.circle.fill" : "target",
+                            title: "Small target",
+                            detail: "A few questions before anything longer"
+                        )
+                    }
+
                     HStack {
-                        Text("Restart with 5 questions")
+                        Text(comebackCTA)
                             .font(.bodyM.weight(.semibold))
                             .foregroundStyle(Palette.ink)
                         Spacer()
-                        Image(systemName: dailyChallengeRequiresPremium ? "lock.fill" : "arrow.right")
+                        Image(systemName: comebackShowsLock ? "lock.fill" : "arrow.right")
                             .font(.system(size: 13, weight: .semibold))
                             .foregroundStyle(Palette.ink)
                             .frame(width: 38, height: 38)
@@ -1875,11 +1882,78 @@ struct HomeView: View {
         .accessibilityElement(children: .combine)
     }
 
+    private var comebackPriorityLabel: LocalizedStringResource {
+        if reviewCount > 0 { return "Reviews first" }
+        if !mistakeFocus.isEmpty { return "Fix one miss" }
+        return "No pressure"
+    }
+
+    private var comebackPriorityIcon: String {
+        if reviewCount > 0 { return "arrow.triangle.2.circlepath" }
+        if !mistakeFocus.isEmpty { return "exclamationmark.circle.fill" }
+        return "leaf"
+    }
+
+    private var comebackCTA: LocalizedStringResource {
+        if reviewCount > 0 { return "Restart with reviews" }
+        if !mistakeFocus.isEmpty { return "Restart with one weak spot" }
+        return "Restart small"
+    }
+
+    private var comebackShowsLock: Bool {
+        reviewCount == 0 && mistakeFocus.isEmpty && dailyChallengeRequiresPremium
+    }
+
     private var comebackSubtitle: LocalizedStringResource {
         guard let days = daysSinceLastPractice else {
             return "A short session is enough to rebuild the rhythm."
         }
+        if days >= 7 {
+            return "\(days) days away. Start with a tiny reset so the app feels easy again."
+        }
         return "\(days) days away. Start with a small set and keep the streak realistic."
+    }
+
+    private func comebackStepRow(icon: String,
+                                 title: LocalizedStringResource,
+                                 detail: LocalizedStringResource) -> some View {
+        HStack(spacing: 10) {
+            Image(systemName: icon)
+                .font(.system(size: 13, weight: .semibold))
+                .foregroundStyle(Palette.success)
+                .frame(width: 28, height: 28)
+                .background(Palette.success.opacity(0.14), in: Circle())
+                .accessibilityHidden(true)
+            VStack(alignment: .leading, spacing: 2) {
+                Text(title)
+                    .font(.bodyM.weight(.semibold))
+                    .foregroundStyle(Palette.ink)
+                Text(detail)
+                    .font(.caption)
+                    .foregroundStyle(Palette.inkFaint)
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.82)
+            }
+            Spacer(minLength: 0)
+        }
+        .padding(10)
+        .background(Palette.surfaceMuted, in: RoundedRectangle(cornerRadius: 12, style: .continuous))
+    }
+
+    private func startComebackSession() {
+        if reviewCount > 0 {
+            showReview = true
+            return
+        }
+        if !mistakeFocus.isEmpty {
+            showMistakeDrill = true
+            return
+        }
+        if dailyChallengeRequiresPremium {
+            showPaywall = true
+        } else {
+            showDailyChallenge = true
+        }
     }
 
     private var dailyChallengeCard: some View {
