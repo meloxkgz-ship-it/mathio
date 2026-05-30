@@ -987,6 +987,7 @@ struct HomeView: View {
                 VStack(alignment: .leading, spacing: 24) {
                     header
                     DailyGoalView(progress: store.correctToday(), goal: settings.dailyGoal)
+                    habitShieldCard
                     studyCoachCard
                     if shouldShowComebackCard { comebackCard }
                     dailyChallengeCard
@@ -1146,6 +1147,131 @@ struct HomeView: View {
         }
         .buttonStyle(.plain)
         .accessibilityElement(children: .combine)
+    }
+
+    private var habitShieldCard: some View {
+        Card(padding: 16, background: Palette.amberSoft) {
+            VStack(alignment: .leading, spacing: 14) {
+                HStack(alignment: .top, spacing: 12) {
+                    Image(systemName: "shield.lefthalf.filled")
+                        .font(.system(size: 17, weight: .semibold))
+                        .foregroundStyle(Palette.terracotta)
+                        .frame(width: 34, height: 34)
+                        .background(Palette.terracottaSoft, in: Circle())
+                        .accessibilityHidden(true)
+
+                    VStack(alignment: .leading, spacing: 3) {
+                        Text("Habit shield")
+                            .font(.label)
+                            .foregroundStyle(Palette.inkFaint)
+                            .textCase(.uppercase)
+                            .tracking(1.2)
+                        Text(habitShieldTitle)
+                            .font(.titleM)
+                            .foregroundStyle(Palette.ink)
+                        Text(habitShieldSubtitle)
+                            .font(.bodyM)
+                            .foregroundStyle(Palette.inkSoft)
+                            .fixedSize(horizontal: false, vertical: true)
+                    }
+
+                    Spacer(minLength: 0)
+                }
+
+                HStack(spacing: 8) {
+                    habitMetric(
+                        icon: store.correctToday() >= settings.dailyGoal ? "checkmark.circle.fill" : "target",
+                        value: "\(max(settings.dailyGoal - store.correctToday(), 0))",
+                        label: store.correctToday() >= settings.dailyGoal
+                            ? LocalizedStringResource("goal done")
+                            : LocalizedStringResource("answers left")
+                    )
+                    habitMetric(icon: "snowflake", value: "\(store.streakFreezes)", label: LocalizedStringResource("freezes"))
+                    habitMetric(icon: "clock.arrow.circlepath", value: "\(reviewsDueTomorrow)", label: LocalizedStringResource("tomorrow"))
+                }
+
+                Button { startHabitShieldAction() } label: {
+                    HStack(spacing: 8) {
+                        Image(systemName: habitShieldCTAIcon)
+                        Text(habitShieldCTA)
+                        Spacer(minLength: 0)
+                        Image(systemName: "arrow.right")
+                            .font(.system(size: 12, weight: .bold))
+                    }
+                    .font(.label)
+                    .foregroundStyle(Palette.heroInk)
+                    .padding(.horizontal, 14)
+                    .padding(.vertical, 12)
+                    .background(Palette.ink, in: RoundedRectangle(cornerRadius: 12, style: .continuous))
+                }
+                .buttonStyle(.plain)
+            }
+        }
+        .accessibilityElement(children: .combine)
+    }
+
+    private var habitShieldTitle: LocalizedStringResource {
+        if store.correctToday() >= settings.dailyGoal {
+            return LocalizedStringResource("Protected today")
+        }
+        if reviewCount > 0 {
+            return LocalizedStringResource("Protect today's memory")
+        }
+        return LocalizedStringResource("One small set keeps momentum")
+    }
+
+    private var habitShieldSubtitle: LocalizedStringResource {
+        if store.correctToday() >= settings.dailyGoal {
+            return LocalizedStringResource("Come back tomorrow before the review queue grows.")
+        }
+        if reviewCount > 0 {
+            return LocalizedStringResource("Clear due reviews first, then your next lesson feels lighter.")
+        }
+        return LocalizedStringResource("Finish the daily goal now so returning tomorrow feels automatic.")
+    }
+
+    private var habitShieldCTA: LocalizedStringResource {
+        if reviewCount > 0 { return LocalizedStringResource("Start review") }
+        if store.correctToday() >= settings.dailyGoal { return LocalizedStringResource("Practice extra") }
+        return LocalizedStringResource("Finish daily goal")
+    }
+
+    private var habitShieldCTAIcon: String {
+        if reviewCount > 0 { return "arrow.triangle.2.circlepath" }
+        if store.correctToday() >= settings.dailyGoal { return "plus.circle.fill" }
+        return "target"
+    }
+
+    private func startHabitShieldAction() {
+        if reviewCount > 0 {
+            showReview = true
+        } else if dailyChallengeRequiresPremium {
+            showPaywall = true
+        } else {
+            showDailyChallenge = true
+        }
+    }
+
+    private func habitMetric(icon: String, value: String, label: LocalizedStringResource) -> some View {
+        HStack(spacing: 7) {
+            Image(systemName: icon)
+                .font(.system(size: 12, weight: .semibold))
+                .foregroundStyle(Palette.terracotta)
+            VStack(alignment: .leading, spacing: 1) {
+                Text(verbatim: value)
+                    .font(.label)
+                    .foregroundStyle(Palette.ink)
+                Text(label)
+                    .font(.caption)
+                    .foregroundStyle(Palette.inkFaint)
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.82)
+            }
+            Spacer(minLength: 0)
+        }
+        .padding(10)
+        .frame(maxWidth: .infinity)
+        .background(Palette.surface, in: RoundedRectangle(cornerRadius: 12, style: .continuous))
     }
 
     private var studyCoachIcon: String {

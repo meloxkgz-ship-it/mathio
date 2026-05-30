@@ -43,9 +43,15 @@ PROSE: dict[str, str] = {
     "Exam core": "Prüfungs-Kern",
     "Extension": "Erweiterung",
     "Finance, Linear Algebra, Discrete Math": "Finanzmathe, Lineare Algebra, Diskrete Mathematik",
+    "Finish daily goal": "Tagesziel abschließen",
+    "Finish the daily goal now so returning tomorrow feels automatic.":
+        "Schließe das Tagesziel jetzt ab, damit Zurückkommen morgen automatisch wirkt.",
+    "freezes": "Freezes",
     "Full roadmap": "Vollständiger Lernplan",
     "Foundations": "Grundlagen",
+    "goal done": "Ziel erreicht",
     "Guided paths": "Geführte Lernpfade",
+    "Habit shield": "Gewohnheits-Schutz",
     "Pre-Algebra, Algebra, Geometry": "Vor-Algebra, Algebra, Geometrie",
     "Trigonometry, Calculus, Statistics": "Trigonometrie, Analysis, Statistik",
     "Interest, loans, inflation": "Zinsen, Kredite, Inflation",
@@ -58,6 +64,7 @@ PROSE: dict[str, str] = {
     "Next study targets": "Nächste Lernziele",
     "Not now": "Nicht jetzt",
     "One best next step every time you open Mathio": "Ein bester nächster Schritt bei jedem Öffnen von Mathio",
+    "One small set keeps momentum": "Ein kleines Set hält den Schwung",
     "Rate Mathio": "Mathio bewerten",
     "Recommended next": "Als Nächstes empfohlen",
     "Reminder time": "Erinnerungszeit",
@@ -79,6 +86,7 @@ PROSE: dict[str, str] = {
         "Wiederholungs-Vorschau. %lld heute fällig, %lld morgen, %lld in sieben Tagen.",
     "Start with the fixed fee, then add the per-mile rate.":
         "Beginne mit der Grundgebühr und addiere dann den Preis pro Meile.",
+    "Start review": "Wiederholung starten",
     "total = fixed cost + rate · amount": "gesamt = Fixkosten + Preis pro Einheit · Menge",
     "These lessons can move your roadmap fastest right now.": "Diese Lektionen bringen deinen Lernplan gerade am schnellsten voran.",
     "Tomorrow": "Morgen",
@@ -102,6 +110,7 @@ PROSE: dict[str, str] = {
     "All equal": "Alle gleich",
     "All possible outcomes": "Alle möglichen Ergebnisse",
     "All 85 lessons and 425 guided questions": "Alle 85 Lektionen und 425 geführten Aufgaben",
+    "answers left": "Antworten übrig",
     "All values equal the mean": "Alle Werte entsprechen dem Mittelwert",
     "Always check in the original equation": "Prüfe immer in der ursprünglichen Gleichung",
     "2 is not one of the payouts": "2 ist keiner der möglichen Auszahlungswerte",
@@ -180,6 +189,10 @@ PROSE: dict[str, str] = {
         "Bedingte Wahrscheinlichkeit fragt, wie wahrscheinlich A ist, wenn B bereits bekannt ist. Sie ist der Schritt zwischen einfacher Wahrscheinlichkeit und Bayes.",
     "Conditional probability changes the denominator to:":
         "Bedingte Wahrscheinlichkeit ändert den Nenner zu:",
+    "Clear due reviews first, then your next lesson feels lighter.":
+        "Erledige zuerst fällige Wiederholungen, dann fühlt sich die nächste Lektion leichter an.",
+    "Come back tomorrow before the review queue grows.":
+        "Komm morgen zurück, bevor die Wiederholungs-Liste wächst.",
     "Divide the overlap by the condition.": "Teile die Überschneidung durch die Bedingung.",
     "Evidence probability": "Wahrscheinlichkeit der Evidenz",
     "Given B means only B outcomes remain": "Gegeben B heißt: Es bleiben nur B-Ergebnisse übrig",
@@ -212,6 +225,9 @@ PROSE: dict[str, str] = {
     "P(pass and studied) = 0.4": "P(bestanden und gelernt) = 0,4",
     "P(pass and studied) = 0.8 · 0.5": "P(bestanden und gelernt) = 0,8 · 0,5",
     "Posterior": "Posterior",
+    "Practice extra": "Extra üben",
+    "Protect today's memory": "Schütze dein Wissen heute",
+    "Protected today": "Heute geschützt",
     "Prior": "Prior",
     "Radical Equations": "Wurzelgleichungen",
     "Radical equations hide the variable under a root. Isolate the root, square both sides, then check for extra solutions.":
@@ -228,6 +244,7 @@ PROSE: dict[str, str] = {
     "The group where the condition is true": "Die Gruppe, in der die Bedingung wahr ist",
     "The larger event": "Das größere Ereignis",
     "The vertical bar means given.": "Der senkrechte Strich bedeutet gegeben.",
+    "tomorrow": "morgen",
     "That is called the prior": "Das nennt man Prior",
     "So B has been observed": "Also wurde B beobachtet",
     "True or false: a rare event can still be unlikely after a positive test if false positives are common.":
