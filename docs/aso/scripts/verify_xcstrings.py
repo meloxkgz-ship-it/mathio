@@ -50,6 +50,9 @@ APP_REVIEW_TRANSLATION_RE: dict[str, re.Pattern[str]] = {
     "it": re.compile(r"\brecension[ei]\b|\bvalutazion[ei]\b|\bvalutare\b", re.IGNORECASE),
     "pt-BR": re.compile(r"\bcoment[aá]rios?\b|\bavalia[cç][aã]o\b|\bavalia[cç][õo]es\b|\bavaliar\b", re.IGNORECASE),
 }
+UNTRANSLATED_VALUE_BLOCKLIST = {
+    "No relationship",
+}
 
 
 def placeholders(value: str) -> list[str]:
@@ -91,6 +94,8 @@ def main() -> int:
             if not value:
                 failures.append(f"{locale}: empty value for {key!r}")
                 continue
+            if locale != "en" and value == key and value in UNTRANSLATED_VALUE_BLOCKLIST:
+                failures.append(f"{locale}: untranslated value for {key!r}")
             if STALE_MARKETING_RE.search(value):
                 failures.append(f"{locale}: stale marketing count for {key!r}: {value!r}")
             if is_learning_review_key(key):

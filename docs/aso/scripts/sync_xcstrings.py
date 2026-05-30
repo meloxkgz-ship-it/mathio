@@ -145,7 +145,7 @@ PROSE: dict[str, str] = {
     "Range label": "Spannweiten-Label",
     "Review the geometry facts that show up again and again: area, angles, circles, volume, and distance.":
         "Wiederhole die Geometrie-Fakten, die immer wieder vorkommen: Fläche, Winkel, Kreise, Volumen und Abstand.",
-    "Reviews soon": "Reviews bald",
+    "Reviews soon": "Baldige Wiederholungen",
     "Round 19 up, then subtract one group of 6.": "Runde 19 auf und ziehe dann eine 6er-Gruppe ab.",
     "Round to 50 · 20.": "Runde auf 50 · 20.",
     "Slope": "Steigung",
@@ -215,7 +215,7 @@ PROSE: dict[str, str] = {
     "A concrete week of reviews and next lessons.": "Eine konkrete Woche mit Wiederholungen und nächsten Lektionen.",
     "A clear seven-day path from today's level": "Ein klarer Sieben-Tage-Pfad ab deinem heutigen Level",
     "A short return session is ready before the review queue grows.":
-        "Eine kurze Rückkehr-Session ist bereit, bevor die Wiederholungsqueue wächst.",
+        "Eine kurze Rückkehr-Session ist bereit, bevor die Wiederholungs-Liste wächst.",
     "A small daily win keeps the plan warm.": "Ein kleiner Tageserfolg hält den Plan warm.",
     "Accuracy": "Trefferquote",
     "active days": "aktive Tage",
@@ -302,7 +302,7 @@ PROSE: dict[str, str] = {
     "Seven small sessions from your recommended path.": "Sieben kleine Sessions aus deinem empfohlenen Pfad.",
     "Seasoned learner": "Erfahrener Lerner",
     "Set plan reminder": "Plan-Erinnerung setzen",
-    "See whether your habit, reviews, and mastery are on track": "Sieh, ob Gewohnheit, Wiederholungen und Mastery auf Kurs sind",
+    "See whether your habit, reviews, and mastery are on track": "Sieh, ob Gewohnheit, Wiederholungen und Können auf Kurs sind",
     "Questions return before you forget them": "Aufgaben kommen zurück, bevor du sie vergisst",
     "Smart review": "Smarte Wiederholung",
     "Start due review": "Fällige Wiederholung starten",
