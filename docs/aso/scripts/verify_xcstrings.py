@@ -6,6 +6,7 @@ The check is intentionally stricter than Xcode's compiler:
 * every declared target locale must have every key
 * every localized value must preserve printf-style placeholders
 * every localized value must be non-empty
+* old premium-roadmap count claims must not linger in the catalog
 
 Usage:
   python3 docs/aso/scripts/verify_xcstrings.py
@@ -24,6 +25,13 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[3]
 CATALOG = ROOT / "iOS/Mathio/Mathio/Localizable.xcstrings"
 PLACEHOLDER_RE = re.compile(r"%(?:\d+\$)?(?:[-+#0]*\d*(?:\.\d+)?)?(?:ll|[hlLzjt])?[@dfiuoxXscC%]")
+STALE_MARKETING_RE = re.compile(
+    r"\b(?:94|95)\s+lessons\b|"
+    r"\b(?:470|475)\s+guided questions\b|"
+    r"\b(?:94|95)\s+Lektionen\b|"
+    r"\b(?:470|475)\s+gef[üu]hrten? Fragen\b",
+    re.IGNORECASE,
+)
 
 
 def placeholders(value: str) -> list[str]:
@@ -44,6 +52,8 @@ def main() -> int:
 
     failures: list[str] = []
     for key, entry in sorted(strings.items()):
+        if STALE_MARKETING_RE.search(key):
+            failures.append(f"stale marketing count in source key {key!r}")
         key_placeholders = placeholders(key)
         localizations = entry.get("localizations", {})
         for locale in locales:
@@ -55,6 +65,8 @@ def main() -> int:
             if not value:
                 failures.append(f"{locale}: empty value for {key!r}")
                 continue
+            if STALE_MARKETING_RE.search(value):
+                failures.append(f"{locale}: stale marketing count for {key!r}: {value!r}")
             value_placeholders = placeholders(value)
             if sorted(key_placeholders) != sorted(value_placeholders):
                 failures.append(
