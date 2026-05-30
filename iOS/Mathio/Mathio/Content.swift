@@ -3520,6 +3520,59 @@ enum Curriculum {
         ]
     )
 
+    static let tipsSplitting = Lesson(
+        id: "fin.tips",
+        title: "Tips & Bill Splitting",
+        intro: "Tips and shared bills use percent changes, totals, and division so everyone knows their fair share.",
+        formulas: [
+            Formula(key: "fin.tips.f1",
+                    name: "Tip amount",
+                    math: "tip = bill · tip rate",
+                    explanation: "Convert the tip percent to a decimal before multiplying."),
+            Formula(key: "fin.tips.f2",
+                    name: "Split total",
+                    math: "each person pays = total / number of people",
+                    explanation: "Divide the final total after tax and tip."),
+        ],
+        questions: [
+            Question(id: "fin.tips.q1",
+                     prompt: "A $40 meal gets a 20% tip. How much is the tip?",
+                     math: nil,
+                     kind: .freeAnswer(accepted: ["8", "$8"]),
+                     hint: "20% = 0.20.",
+                     solutionSteps: ["40 · 0.20 = 8", "Tip = $8"]),
+            Question(id: "fin.tips.q2",
+                     prompt: "A $50 bill plus a 10% tip totals:",
+                     math: nil,
+                     kind: .freeAnswer(accepted: ["55", "$55"]),
+                     hint: "A 10% tip means pay 110% of the bill.",
+                     solutionSteps: ["50 · 1.10 = 55"]),
+            Question(id: "fin.tips.q3",
+                     prompt: "A $72 total is split equally by 4 people. Each person pays:",
+                     math: nil,
+                     kind: .freeAnswer(accepted: ["18", "$18"]),
+                     hint: "Divide the total by 4.",
+                     solutionSteps: ["72 / 4 = 18"]),
+            Question(id: "fin.tips.q4",
+                     prompt: "Which expression finds a 15% tip on bill b?",
+                     math: nil,
+                     kind: .multipleChoice(options: [
+                        .init(label: "b · 0.15", math: nil),
+                        .init(label: "b · 1.15", math: nil),
+                        .init(label: "b / 15", math: nil),
+                        .init(label: "b − 0.15", math: nil),
+                     ], correctIndex: 0),
+                     hint: "This asks for the tip only, not the final total.",
+                     solutionSteps: ["15% = 0.15", "tip = b · 0.15"]),
+            Question(id: "fin.tips.q5",
+                     prompt: "True or false: if you split a bill after adding tip, each share includes part of the tip.",
+                     math: nil,
+                     kind: .trueFalse(answer: true),
+                     hint: "The tip is already inside the total you divide.",
+                     solutionSteps: ["Final total = bill + tip", "Splitting the final total shares the tip too"]),
+        ]
+    )
+
     // MARK: - Discrete Math
 
     static let logic = Lesson(
@@ -3932,7 +3985,7 @@ enum Curriculum {
               icon: "banknote",
               color: Palette.trig,
               lessons: [simpleInterest, compoundInterest, budgeting, unitPrices,
-                        inflationRealValue, loansPayments, taxesDiscounts]),
+                        tipsSplitting, inflationRealValue, loansPayments, taxesDiscounts]),
         Topic(id: "discretemath",
               title: "Discrete Math",
               subtitle: "Logic, sets & graphs",

@@ -4239,7 +4239,7 @@ struct PaywallView: View {
 
     private var bullets: some View {
         VStack(alignment: .leading, spacing: 12) {
-            row("books.vertical.fill", "74 lessons across algebra, calculus, geometry, statistics, finance, and more")
+            row("books.vertical.fill", "75 lessons across algebra, calculus, geometry, statistics, finance, and more")
             row("map.fill", "Guided paths show exactly what to study next")
             row("brain.head.profile", "Adaptive practice focuses on weak spots")
             row("arrow.triangle.2.circlepath", "Spaced repetition brings back what you are about to forget")

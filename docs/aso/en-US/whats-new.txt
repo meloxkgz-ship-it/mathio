@@ -5,6 +5,7 @@ New:
 • 7-Day Focus: a clearer weekly habit card turns your recommended path into seven small sessions
 • Session Insight: every completed session now shows accuracy, misses, mode, and the next best step
 • Normal Distribution: new statistics practice for z-scores, bell curves, and the empirical rule
+• Tips & Bill Splitting: practical finance practice for tips, shared totals, and fair shares
 • Comeback Mission: a gentle 5-question restart when you return after a break
 • Coordinate Geometry: new geometry practice for midpoint, distance, slope, and coordinate-plane reasoning
 • Unit Prices: new financial math practice for comparing real deals
@@ -19,7 +20,7 @@ New:
 Improved:
 • Clearer learning path guidance on Home
 • Better premium feel with more personalized study flow
-• Expanded curriculum: 74 lessons and 370 guided questions across 9 topics
+• Expanded curriculum: 75 lessons and 375 guided questions across 9 topics
 
 Fixed:
 • Continued cleanup of localized app copy to avoid mixed German/English flows

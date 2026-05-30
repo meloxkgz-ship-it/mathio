@@ -83735,6 +83735,1091 @@
           }
         }
       }
+    },
+    "Tips & Bill Splitting": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trinkgeld & Rechnung teilen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Propinas y división de cuentas"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pourboires et partage d’addition"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mance e divisione del conto"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gorjetas e divisão da conta"
+          }
+        }
+      }
+    },
+    "Tips and shared bills use percent changes, totals, and division so everyone knows their fair share.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trinkgeld und geteilte Rechnungen nutzen Prozentänderungen, Summen und Division, damit alle ihren fairen Anteil kennen."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Las propinas y las cuentas compartidas usan porcentajes, totales y división para que todos conozcan su parte justa."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les pourboires et additions partagées utilisent les pourcentages, les totaux et la division pour connaître la juste part de chacun."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mance e conti condivisi usano percentuali, totali e divisione così tutti conoscono la propria quota giusta."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gorjetas e contas divididas usam porcentagens, totais e divisão para que todos saibam sua parte justa."
+          }
+        }
+      }
+    },
+    "Tip amount": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trinkgeldbetrag"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Importe de propina"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Montant du pourboire"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Importo della mancia"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Valor da gorjeta"
+          }
+        }
+      }
+    },
+    "tip = bill · tip rate": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trinkgeld = Rechnung · Trinkgeldsatz"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "propina = cuenta · tasa de propina"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "pourboire = addition · taux de pourboire"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "mancia = conto · tasso di mancia"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "gorjeta = conta · taxa de gorjeta"
+          }
+        }
+      }
+    },
+    "Convert the tip percent to a decimal before multiplying.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wandle den Trinkgeld-Prozentsatz vor dem Multiplizieren in eine Dezimalzahl um."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Convierte el porcentaje de propina en decimal antes de multiplicar."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Convertis le pourcentage de pourboire en décimal avant de multiplier."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Converti la percentuale della mancia in decimale prima di moltiplicare."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Converta a porcentagem da gorjeta para decimal antes de multiplicar."
+          }
+        }
+      }
+    },
+    "Split total": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Summe teilen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dividir el total"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Partager le total"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dividere il totale"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dividir o total"
+          }
+        }
+      }
+    },
+    "each person pays = total / number of people": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "jede Person zahlt = Summe / Anzahl der Personen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "cada persona paga = total / número de personas"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "chaque personne paie = total / nombre de personnes"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ogni persona paga = totale / numero di persone"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "cada pessoa paga = total / número de pessoas"
+          }
+        }
+      }
+    },
+    "Divide the final total after tax and tip.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Teile die endgültige Summe nach Steuer und Trinkgeld."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Divide el total final después de impuestos y propina."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Divise le total final après taxes et pourboire."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dividi il totale finale dopo tasse e mancia."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Divida o total final depois de impostos e gorjeta."
+          }
+        }
+      }
+    },
+    "A $40 meal gets a 20% tip. How much is the tip?": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ein Essen für 40 $ bekommt 20 % Trinkgeld. Wie hoch ist das Trinkgeld?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una comida de $40 recibe una propina del 20 %. ¿Cuánto es la propina?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un repas à 40 $ reçoit un pourboire de 20 %. Quel est le pourboire ?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un pasto da $40 riceve una mancia del 20%. Quanto vale la mancia?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uma refeição de $40 recebe 20% de gorjeta. Quanto é a gorjeta?"
+          }
+        }
+      }
+    },
+    "20% = 0.20.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "20 % = 0,20."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "20 % = 0,20."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "20 % = 0,20."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "20% = 0,20."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "20% = 0,20."
+          }
+        }
+      }
+    },
+    "40 · 0.20 = 8": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "40 · 0,20 = 8"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "40 · 0,20 = 8"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "40 · 0,20 = 8"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "40 · 0,20 = 8"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "40 · 0,20 = 8"
+          }
+        }
+      }
+    },
+    "Tip = $8": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trinkgeld = 8 $"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Propina = $8"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pourboire = 8 $"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mancia = $8"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gorjeta = $8"
+          }
+        }
+      }
+    },
+    "A $50 bill plus a 10% tip totals:": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eine Rechnung über 50 $ plus 10 % Trinkgeld ergibt:"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una cuenta de $50 más 10 % de propina suma:"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Une addition de 50 $ plus 10 % de pourboire donne :"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un conto da $50 più il 10% di mancia fa:"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uma conta de $50 mais 10% de gorjeta totaliza:"
+          }
+        }
+      }
+    },
+    "A 10% tip means pay 110% of the bill.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "10 % Trinkgeld bedeutet, 110 % der Rechnung zu zahlen."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una propina del 10 % significa pagar el 110 % de la cuenta."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un pourboire de 10 % signifie payer 110 % de l’addition."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una mancia del 10% significa pagare il 110% del conto."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uma gorjeta de 10% significa pagar 110% da conta."
+          }
+        }
+      }
+    },
+    "50 · 1.10 = 55": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "50 · 1,10 = 55"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "50 · 1,10 = 55"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "50 · 1,10 = 55"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "50 · 1,10 = 55"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "50 · 1,10 = 55"
+          }
+        }
+      }
+    },
+    "A $72 total is split equally by 4 people. Each person pays:": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eine Summe von 72 $ wird gleichmäßig auf 4 Personen geteilt. Jede Person zahlt:"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un total de $72 se divide por igual entre 4 personas. Cada persona paga:"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un total de 72 $ est partagé également entre 4 personnes. Chaque personne paie :"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un totale di $72 viene diviso equamente tra 4 persone. Ogni persona paga:"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Um total de $72 é dividido igualmente por 4 pessoas. Cada pessoa paga:"
+          }
+        }
+      }
+    },
+    "Divide the total by 4.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Teile die Summe durch 4."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Divide el total entre 4."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Divise le total par 4."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dividi il totale per 4."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Divida o total por 4."
+          }
+        }
+      }
+    },
+    "72 / 4 = 18": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "72 / 4 = 18"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "72 / 4 = 18"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "72 / 4 = 18"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "72 / 4 = 18"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "72 / 4 = 18"
+          }
+        }
+      }
+    },
+    "Which expression finds a 15% tip on bill b?": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Welcher Ausdruck berechnet 15 % Trinkgeld auf Rechnung b?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "¿Qué expresión calcula una propina del 15 % sobre la cuenta b?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quelle expression calcule un pourboire de 15 % sur l’addition b ?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quale espressione calcola una mancia del 15% sul conto b?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Qual expressão encontra uma gorjeta de 15% sobre a conta b?"
+          }
+        }
+      }
+    },
+    "b · 0.15": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "b · 0,15"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "b · 0,15"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "b · 0,15"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "b · 0,15"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "b · 0,15"
+          }
+        }
+      }
+    },
+    "b · 1.15": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "b · 1,15"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "b · 1,15"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "b · 1,15"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "b · 1,15"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "b · 1,15"
+          }
+        }
+      }
+    },
+    "b / 15": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "b / 15"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "b / 15"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "b / 15"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "b / 15"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "b / 15"
+          }
+        }
+      }
+    },
+    "b − 0.15": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "b − 0,15"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "b − 0,15"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "b − 0,15"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "b − 0,15"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "b − 0,15"
+          }
+        }
+      }
+    },
+    "This asks for the tip only, not the final total.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gefragt ist nur das Trinkgeld, nicht die Endsumme."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Esto pide solo la propina, no el total final."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "On demande seulement le pourboire, pas le total final."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Qui si chiede solo la mancia, non il totale finale."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Isso pede apenas a gorjeta, não o total final."
+          }
+        }
+      }
+    },
+    "15% = 0.15": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "15 % = 0,15"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "15 % = 0,15"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "15 % = 0,15"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "15% = 0,15"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "15% = 0,15"
+          }
+        }
+      }
+    },
+    "tip = b · 0.15": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trinkgeld = b · 0,15"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "propina = b · 0,15"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "pourboire = b · 0,15"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "mancia = b · 0,15"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "gorjeta = b · 0,15"
+          }
+        }
+      }
+    },
+    "True or false: if you split a bill after adding tip, each share includes part of the tip.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wahr oder falsch: Wenn du eine Rechnung nach dem Hinzufügen von Trinkgeld teilst, enthält jeder Anteil einen Teil des Trinkgelds."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verdadero o falso: si divides una cuenta después de añadir propina, cada parte incluye parte de la propina."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vrai ou faux : si tu partages une addition après avoir ajouté le pourboire, chaque part inclut une partie du pourboire."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vero o falso: se dividi un conto dopo aver aggiunto la mancia, ogni quota include una parte della mancia."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verdadeiro ou falso: se você divide uma conta depois de adicionar gorjeta, cada parte inclui parte da gorjeta."
+          }
+        }
+      }
+    },
+    "The tip is already inside the total you divide.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Das Trinkgeld ist bereits in der Summe enthalten, die du teilst."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La propina ya está dentro del total que divides."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le pourboire est déjà inclus dans le total que tu divises."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La mancia è già inclusa nel totale che dividi."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A gorjeta já está dentro do total que você divide."
+          }
+        }
+      }
+    },
+    "Final total = bill + tip": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Endsumme = Rechnung + Trinkgeld"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Total final = cuenta + propina"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Total final = addition + pourboire"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Totale finale = conto + mancia"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Total final = conta + gorjeta"
+          }
+        }
+      }
+    },
+    "Splitting the final total shares the tip too": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beim Teilen der Endsumme wird auch das Trinkgeld geteilt"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dividir el total final también reparte la propina"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Partager le total final partage aussi le pourboire"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dividere il totale finale divide anche la mancia"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dividir o total final também divide a gorjeta"
+          }
+        }
+      }
+    },
+    "75 lessons across algebra, calculus, geometry, statistics, finance, and more": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "75 Lektionen in Algebra, Analysis, Geometrie, Statistik, Finanzmathe und mehr"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "75 lecciones de álgebra, cálculo, geometría, estadística, finanzas y más"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "75 leçons d’algèbre, d’analyse, de géométrie, de statistiques, de finance et plus"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "75 lezioni di algebra, analisi, geometria, statistica, finanza e altro"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "75 lições de álgebra, cálculo, geometria, estatística, finanças e mais"
+          }
+        }
+      }
     }
   },
   "version": "1.0"
