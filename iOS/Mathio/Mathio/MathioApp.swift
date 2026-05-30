@@ -27,17 +27,28 @@ enum ReviewPromptGate {
     static func shouldOfferAfterCompletion(store: Store,
                                            sessionCorrect: Int,
                                            questionCount: Int,
+                                           dailyGoal: Int,
                                            isReview: Bool) -> Bool {
         let already = UserDefaults.standard.string(forKey: kPromptedVersion)
         guard already != currentVersion else { return false }
         guard questionCount > 0 else { return false }
 
         let totalCorrect = store.answered.values.reduce(0) { $0 + $1.correct }
+        let totalCorrectBeforeSession = max(0, totalCorrect - sessionCorrect)
+        let correctToday = store.correctToday()
+        let correctTodayBeforeSession = max(0, correctToday - sessionCorrect)
+        let sessionAccuracy = Double(sessionCorrect) / Double(questionCount)
+        let strongSession = sessionCorrect >= min(3, questionCount) && sessionAccuracy >= 0.8
         let perfectLesson = !isReview && sessionCorrect == questionCount
-        let dailyGoalMet = store.correctToday() >= UserSettings().dailyGoal
+        let firstMilestoneReached = totalCorrectBeforeSession < kCorrectMilestone
+            && totalCorrect >= kCorrectMilestone
+        let dailyGoalReached = correctTodayBeforeSession < dailyGoal
+            && correctToday >= dailyGoal
         let streakMoment = store.streakDays >= 3 && sessionCorrect >= max(3, questionCount - 1)
 
-        return totalCorrect >= kCorrectMilestone && (perfectLesson || dailyGoalMet || streakMoment)
+        return strongSession
+            && totalCorrect >= kCorrectMilestone
+            && (firstMilestoneReached || dailyGoalReached || perfectLesson || streakMoment)
     }
 
     static func markPrompted() {

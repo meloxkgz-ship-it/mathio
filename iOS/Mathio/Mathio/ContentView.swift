@@ -3079,6 +3079,7 @@ struct PracticeView: View {
     /// Triggered by `ReviewPromptGate` after a meaningful progress milestone.
     @Environment(\.requestReview) private var requestReview
     @Environment(\.openURL) private var openURL
+    @AppStorage("mathio.dailyGoal") private var dailyGoal: Int = 5
     @AppStorage("mathio.notifications.enabled") private var notificationsEnabled = false
 
     @State private var index: Int = 0
@@ -3352,6 +3353,7 @@ struct PracticeView: View {
             store: store,
             sessionCorrect: sessionCorrect,
             questionCount: lesson.questions.count,
+            dailyGoal: max(dailyGoal, 1),
             isReview: isReview
         )
     }
