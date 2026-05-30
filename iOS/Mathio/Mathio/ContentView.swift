@@ -48,7 +48,7 @@ final class PremiumStore {
     }
 
     private(set) var revenueCatEnabled = false
-    private(set) var revenueCatMessage: String?
+    private(set) var purchaseMessage: LocalizedStringResource?
 
     private var weekly:    StoreKit.Product?
     private var annual:    StoreKit.Product?
@@ -120,11 +120,11 @@ final class PremiumStore {
             let (customerInfo, offerings) = try await (fetchedInfo, fetchedOfferings)
             self.offerings = offerings
             apply(customerInfo: customerInfo)
-            revenueCatMessage = currentOffering == nil
-                ? "RevenueCat offering is missing."
+            purchaseMessage = currentOffering == nil
+                ? "Premium is temporarily unavailable. Please try again soon."
                 : nil
         } catch {
-            revenueCatMessage = error.localizedDescription
+            purchaseMessage = "Premium is temporarily unavailable. Please try again soon."
         }
     }
 
@@ -165,6 +165,7 @@ final class PremiumStore {
 
     func purchase(_ plan: PremiumPlan) async {
         purchaseInFlight = true
+        purchaseMessage = nil
         defer { purchaseInFlight = false }
 
         if revenueCatEnabled {
@@ -176,7 +177,7 @@ final class PremiumStore {
 
     private func purchaseRevenueCat(_ plan: PremiumPlan) async {
         guard let package = package(for: plan) ?? package(for: .annual) else {
-            revenueCatMessage = "No RevenueCat package is available yet."
+            purchaseMessage = "Premium is temporarily unavailable. Please try again soon."
             return
         }
 
@@ -184,8 +185,9 @@ final class PremiumStore {
             let (_, customerInfo, userCancelled) = try await Purchases.shared.purchase(package: package)
             guard !userCancelled else { return }
             apply(customerInfo: customerInfo)
+            purchaseMessage = isPremium ? "Premium unlocked." : nil
         } catch {
-            revenueCatMessage = error.localizedDescription
+            purchaseMessage = "Purchase could not be completed. Please try again."
         }
     }
 
@@ -196,7 +198,10 @@ final class PremiumStore {
         case .annual:    product = annual
         case .retention: product = retention ?? annual
         }
-        guard let product else { return }
+        guard let product else {
+            purchaseMessage = "Premium is temporarily unavailable. Please try again soon."
+            return
+        }
 
         do {
             let result = try await product.purchase()
@@ -204,26 +209,31 @@ final class PremiumStore {
                case .verified(let tx) = verification {
                 await tx.finish()
                 await refreshEntitlements()
+                purchaseMessage = isPremium ? "Premium unlocked." : nil
             }
         } catch {
-            // Silent — store errors and user cancels are equivalent here.
+            purchaseMessage = "Purchase could not be completed. Please try again."
         }
     }
 
     func restore() async {
+        purchaseMessage = nil
         if revenueCatEnabled {
             do {
                 let customerInfo = try await Purchases.shared.restorePurchases()
                 apply(customerInfo: customerInfo)
-                revenueCatMessage = isPremium
+                purchaseMessage = isPremium
                     ? "Purchases restored."
                     : "No active subscription found."
             } catch {
-                revenueCatMessage = error.localizedDescription
+                purchaseMessage = "Restore failed. Please try again."
             }
         } else {
             try? await AppStore.sync()
             await refreshEntitlements()
+            purchaseMessage = isPremium
+                ? "Purchases restored."
+                : "No active subscription found."
         }
     }
 
@@ -3813,6 +3823,14 @@ struct PaywallView: View {
             PrimaryButton(title: ctaTitle, icon: nil,
                           enabled: !premiumStore.purchaseInFlight) {
                 Task { await purchase() }
+            }
+            if let purchaseMessage = premiumStore.purchaseMessage {
+                Text(purchaseMessage)
+                    .font(.caption)
+                    .foregroundStyle(Palette.inkSoft)
+                    .multilineTextAlignment(.center)
+                    .frame(maxWidth: .infinity)
+                    .padding(.top, 2)
             }
             HStack {
                 Button("Restore purchases") { Task { await premiumStore.restore() } }
