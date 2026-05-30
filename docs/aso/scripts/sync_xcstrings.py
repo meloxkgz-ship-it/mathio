@@ -21,7 +21,9 @@ import sys
 # triggers a hard fail so we never silently leave English in the bundle.
 PROSE: dict[str, str] = {
     # Home and review UX
+    "7-day focus": "7-Tage-Fokus",
     "A quick rating helps more learners find it.": "Eine kurze Bewertung hilft mehr Lernenden, Mathio zu finden.",
+    "active days": "aktive Tage",
     "Algebra Foundation": "Algebra-Grundlagen",
     "Average the x-values and y-values.": "Bilde den Durchschnitt der x-Werte und der y-Werte.",
     "Calculus Starter": "Analysis-Einstieg",
@@ -30,11 +32,14 @@ PROSE: dict[str, str] = {
     "Exam Essentials": "Prüfungs-Basics",
     "Guided paths": "Geführte Lernpfade",
     "Interest, loans, inflation": "Zinsen, Kredite, Inflation",
+    "Keep the chain warm: one short session is enough.": "Halte die Kette warm: Eine kurze Session reicht.",
     "Limits, derivatives, integrals": "Grenzwerte, Ableitungen, Integrale",
     "Mixed practice across core topics": "Gemischtes Training zu Kernthemen",
     "Money Math": "Finanzmathe",
+    "Next focus": "Nächster Fokus",
     "Not now": "Nicht jetzt",
     "Rate Mathio": "Mathio bewerten",
+    "Seven small sessions from your recommended path.": "Sieben kleine Sessions aus deinem empfohlenen Pfad.",
 
     # Curriculum: lesson titles
     "Power rule": "Potenzregel",

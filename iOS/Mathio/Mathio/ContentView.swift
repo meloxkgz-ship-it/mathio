@@ -809,6 +809,20 @@ struct HomeView: View {
     private var weeklyCorrect: Int { weeklyActivity.reduce(0) { $0 + $1.correct } }
     private var weeklyTarget: Int { max(settings.dailyGoal * 7, 1) }
     private var weeklyProgress: Double { min(1, Double(weeklyCorrect) / Double(weeklyTarget)) }
+    private var sevenDayFocusLessons: [Lesson] {
+        let unfinished = recommendedPath.lessons.filter { store.mastery(for: $0) < 1.0 }
+        let pool = unfinished.isEmpty ? recommendedPath.lessons : unfinished
+        return Array(pool.prefix(7))
+    }
+    private var sevenDayFocusProgress: Double {
+        min(1, Double(activeDaysThisWeek) / 7.0)
+    }
+    private var nextFocusLesson: Lesson? {
+        sevenDayFocusLessons.first { store.mastery(for: $0) < 1.0 } ?? sevenDayFocusLessons.first
+    }
+    private var nextFocusDay: Int {
+        min(max(activeDaysThisWeek + 1, 1), 7)
+    }
     private var examReadinessProgress: Double {
         let mastery = topics.isEmpty ? 0 : topics.reduce(0.0) { $0 + store.mastery(for: $1) } / Double(topics.count)
         let review = reviewCount == 0 ? 1.0 : max(0.15, 1.0 - Double(min(reviewCount, 10)) / 12.0)
@@ -849,6 +863,7 @@ struct HomeView: View {
                     todayPlanCard
                     momentumCard
                     weeklyRhythmCard
+                    sevenDayFocusCard
                     nextUpCard
                     personalPlanCard
                     learningPathsSection
@@ -1415,6 +1430,98 @@ struct HomeView: View {
         guard correct > 0 else { return 4 }
         let pct = min(1, Double(correct) / Double(max(settings.dailyGoal, 1)))
         return 10 + CGFloat(pct) * 32
+    }
+
+    private var sevenDayFocusCard: some View {
+        Card(padding: 16, background: Palette.surface) {
+            VStack(alignment: .leading, spacing: 14) {
+                HStack(alignment: .top, spacing: 12) {
+                    Image(systemName: "calendar.badge.checkmark")
+                        .font(.system(size: 16, weight: .semibold))
+                        .foregroundStyle(Palette.success)
+                        .frame(width: 34, height: 34)
+                        .background(Palette.success.opacity(0.14), in: Circle())
+                        .accessibilityHidden(true)
+
+                    VStack(alignment: .leading, spacing: 3) {
+                        Text("7-day focus")
+                            .font(.titleM)
+                            .foregroundStyle(Palette.ink)
+                        Text("Seven small sessions from your recommended path.")
+                            .font(.bodyM)
+                            .foregroundStyle(Palette.inkSoft)
+                            .fixedSize(horizontal: false, vertical: true)
+                    }
+
+                    Spacer(minLength: 0)
+
+                    VStack(alignment: .trailing, spacing: 0) {
+                        Text(verbatim: "\(activeDaysThisWeek)/7")
+                            .font(.label)
+                            .foregroundStyle(Palette.ink)
+                        Text("active days")
+                            .font(.caption)
+                            .foregroundStyle(Palette.inkFaint)
+                    }
+                }
+
+                ProgressBar(progress: sevenDayFocusProgress, color: Palette.success, height: 6)
+
+                HStack(spacing: 7) {
+                    ForEach(0..<7, id: \.self) { index in
+                        Circle()
+                            .fill(index < activeDaysThisWeek ? Palette.success : Palette.hairline)
+                            .frame(width: 10, height: 10)
+                            .frame(maxWidth: .infinity)
+                            .accessibilityHidden(true)
+                    }
+                }
+
+                if let lesson = nextFocusLesson {
+                    Button {
+                        if isLocked(lesson) {
+                            showPaywall = true
+                        } else {
+                            presented = lesson
+                        }
+                    } label: {
+                        HStack(spacing: 12) {
+                            VStack(alignment: .leading, spacing: 3) {
+                                Text("Next focus")
+                                    .font(.caption)
+                                    .foregroundStyle(Palette.inkFaint)
+                                    .textCase(.uppercase)
+                                    .tracking(1.0)
+                                Text(lesson.title)
+                                    .font(.bodyM.weight(.semibold))
+                                    .foregroundStyle(Palette.ink)
+                                    .lineLimit(1)
+                                Text("Day \(nextFocusDay) of 7")
+                                    .font(.caption)
+                                    .foregroundStyle(Palette.inkSoft)
+                            }
+                            Spacer(minLength: 0)
+                            Text(isLocked(lesson) ? "Premium session" : "Start next session")
+                                .font(.label)
+                                .foregroundStyle(Palette.ink)
+                                .lineLimit(1)
+                                .minimumScaleFactor(0.76)
+                            Image(systemName: isLocked(lesson) ? "lock.fill" : "arrow.right")
+                                .font(.system(size: 13, weight: .semibold))
+                                .foregroundStyle(Palette.inkFaint)
+                        }
+                        .padding(12)
+                        .background(Palette.surfaceMuted, in: RoundedRectangle(cornerRadius: 12, style: .continuous))
+                    }
+                    .buttonStyle(.plain)
+                }
+
+                Text("Keep the chain warm: one short session is enough.")
+                    .font(.caption)
+                    .foregroundStyle(Palette.inkFaint)
+            }
+        }
+        .accessibilityElement(children: .combine)
     }
 
     private func planRow(
