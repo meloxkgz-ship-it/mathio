@@ -5,8 +5,8 @@ Run top-to-bottom before tapping **Submit for Review** in App Store Connect.
 ## 1 — Xcode project sanity
 
 - [x] Bundle ID: `com.kgz.Mathio`
-- [x] Marketing version: `1.0.4`
-- [x] Build number: `6` (bump for every TestFlight upload)
+- [x] Marketing version: `1.0.9`
+- [x] Build number: `12` (bump for every TestFlight upload)
 - [x] iOS Deployment Target: `18.0` (intentional per README)
 - [x] `INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO` (skips export-compliance dialog)
 - [x] `INFOPLIST_KEY_LSApplicationCategoryType = public.app-category.education`
@@ -51,11 +51,11 @@ xcodebuild -scheme Mathio \
   - Age rating questionnaire — answer No to every "frequent/intense"
 - [ ] **Pricing & Availability** — Free, all territories
 - [ ] **App Privacy** — declare *Data Not Collected* (matches `PrivacyInfo.xcprivacy`)
-- [ ] **In-App Purchases** — create all three products
+- [x] **In-App Purchases** — create all three products
   - Cleared for Sale = ON
   - DE display name + description filled (App Review rejects empty locales)
   - Annual: enable Family Sharing
-  - Submit IAPs *with* the binary (otherwise paywall stays empty in Review)
+  - Promotional images uploaded for annual, weekly, and retention subscriptions
 
 ## 4 — App Store Connect — listing copy
 

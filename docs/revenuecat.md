@@ -18,13 +18,14 @@ screenshots and reviewer override continue to work.
 These App Store products are imported into the RevenueCat App Store app and
 attached to the `premium` entitlement:
 
-| Product ID | App Store subscription ID | RevenueCat package | App Store state | Purpose |
-| --- | --- | --- | --- | --- |
-| `mathio_annual` | `6767033716` | Annual | `APPROVED` | Primary yearly subscription |
-| `mathio_weekly` | `6767033995` | Weekly | `APPROVED` | Weekly subscription |
-| `mathio_retention` | `6767033879` | Custom | `APPROVED` | Retention yearly discount |
+| Product ID | App Store subscription ID | RevenueCat package | App Store state | Promotional image | Purpose |
+| --- | --- | --- | --- | --- | --- |
+| `mathio_annual` | `6767033716` | Annual | `APPROVED` | `ab61d88d-245c-4485-bad4-a68858ecf98c` | Primary yearly subscription |
+| `mathio_weekly` | `6767033995` | Weekly | `APPROVED` | `27d0db42-6fb2-4da0-a69a-a2b2b2d56689` | Weekly subscription |
+| `mathio_retention` | `6767033879` | Custom | `APPROVED` | `25db8f1e-4805-4e03-80b6-476093541482` | Retention yearly discount |
 
-Verified with `asc subscriptions list --group-id 22071889` on 2026-05-23.
+Verified with `asc subscriptions view`, `asc subscriptions images list`, and
+`asc validate subscriptions --app 6767033115` on 2026-05-30.
 
 Default offering `default` (`ofrng2e6dec0fa8`) packages:
 
