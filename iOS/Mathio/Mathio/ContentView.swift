@@ -4174,10 +4174,10 @@ struct PracticeView: View {
                     Image(systemName: "heart.fill")
                         .foregroundStyle(Palette.terracotta)
                     VStack(alignment: .leading, spacing: 2) {
-                        Text("Enjoying Mathio?")
+                        Text(reviewOfferTitle)
                             .font(.titleM)
                             .foregroundStyle(Palette.ink)
-                        Text("Is it helping you learn? A quick rating helps more learners find it.")
+                        Text(reviewOfferSubtitle)
                             .font(.bodyM)
                             .foregroundStyle(Palette.inkSoft)
                     }
@@ -4197,6 +4197,23 @@ struct PracticeView: View {
             }
         }
         .transition(.opacity.combined(with: .move(edge: .bottom)))
+    }
+
+    private var reviewOfferTitle: LocalizedStringResource {
+        if isPerfect {
+            return LocalizedStringResource("Was this session useful?")
+        }
+        if store.correctToday() >= max(dailyGoal, 1) {
+            return LocalizedStringResource("Did Mathio help today?")
+        }
+        return LocalizedStringResource("Enjoying Mathio?")
+    }
+
+    private var reviewOfferSubtitle: LocalizedStringResource {
+        if isPerfect {
+            return LocalizedStringResource("You just finished a perfect run. A quick rating helps more learners find Mathio.")
+        }
+        return LocalizedStringResource("You just finished a strong session. If Mathio is helping, a quick rating helps more learners find it.")
     }
 
     private var reminderOfferCard: some View {

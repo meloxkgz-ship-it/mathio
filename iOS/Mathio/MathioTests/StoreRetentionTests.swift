@@ -119,6 +119,63 @@ final class StoreRetentionTests: XCTestCase {
         XCTAssertNil(Store().lastSession)
     }
 
+    func testReviewPromptAppearsAfterFirstPerfectValueMoment() {
+        let store = Store()
+        let lesson = Curriculum.linearEquations
+
+        lesson.questions.prefix(5).forEach { question in
+            store.record(questionId: question.id, correct: true)
+        }
+
+        XCTAssertTrue(ReviewPromptGate.shouldOfferAfterCompletion(
+            store: store,
+            sessionCorrect: 5,
+            questionCount: 5,
+            dailyGoal: 5,
+            isReview: false,
+            alreadyPromptedVersion: nil,
+            currentVersion: "test"
+        ))
+    }
+
+    func testReviewPromptWaitsForStrongValueMoment() {
+        let store = Store()
+        let lesson = Curriculum.linearEquations
+
+        lesson.questions.prefix(5).enumerated().forEach { index, question in
+            store.record(questionId: question.id, correct: index < 3)
+        }
+
+        XCTAssertFalse(ReviewPromptGate.shouldOfferAfterCompletion(
+            store: store,
+            sessionCorrect: 3,
+            questionCount: 5,
+            dailyGoal: 5,
+            isReview: false,
+            alreadyPromptedVersion: nil,
+            currentVersion: "test"
+        ))
+    }
+
+    func testReviewPromptOnlyAppearsOncePerVersion() {
+        let store = Store()
+        let lesson = Curriculum.linearEquations
+
+        lesson.questions.prefix(5).forEach { question in
+            store.record(questionId: question.id, correct: true)
+        }
+
+        XCTAssertFalse(ReviewPromptGate.shouldOfferAfterCompletion(
+            store: store,
+            sessionCorrect: 5,
+            questionCount: 5,
+            dailyGoal: 5,
+            isReview: false,
+            alreadyPromptedVersion: "test",
+            currentVersion: "test"
+        ))
+    }
+
     private func clearMathioDefaults() {
         let defaults = UserDefaults.standard
         for key in defaults.dictionaryRepresentation().keys where key.hasPrefix("mathio.") {

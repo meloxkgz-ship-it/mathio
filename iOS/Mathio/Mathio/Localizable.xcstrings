@@ -117719,6 +117719,142 @@
           }
         }
       }
+    },
+    "Did Mathio help today?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hat Mathio heute geholfen?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "¿Te ayudó Mathio hoy?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mathio t’a aidé aujourd’hui ?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mathio ti ha aiutato oggi?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O Mathio ajudou você hoje?"
+          }
+        }
+      }
+    },
+    "Was this session useful?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "War diese Einheit hilfreich?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "¿Fue útil esta sesión?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cette session t’a-t-elle été utile ?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Questa sessione è stata utile?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Esta sessão foi útil?"
+          }
+        }
+      }
+    },
+    "You just finished a perfect run. A quick rating helps more learners find Mathio.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Du hast gerade eine perfekte Runde geschafft. Eine kurze Bewertung hilft mehr Lernenden, Mathio zu finden."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acabas de completar una ronda perfecta. Una valoración rápida ayuda a más estudiantes a encontrar Mathio."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tu viens de réussir une série parfaite. Une note rapide aide plus d’apprenants à trouver Mathio."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hai appena completato una sessione perfetta. Una valutazione rapida aiuta più studenti a trovare Mathio."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Você acabou de concluir uma sequência perfeita. Uma avaliação rápida ajuda mais estudantes a encontrar o Mathio."
+          }
+        }
+      }
+    },
+    "You just finished a strong session. If Mathio is helping, a quick rating helps more learners find it.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Du hast gerade eine starke Einheit abgeschlossen. Wenn Mathio dir hilft, hilft eine kurze Bewertung mehr Lernenden, es zu finden."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acabas de completar una sesión sólida. Si Mathio te está ayudando, una valoración rápida ayuda a más estudiantes a encontrarlo."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tu viens de terminer une bonne session. Si Mathio t’aide, une note rapide aide plus d’apprenants à le trouver."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hai appena completato una sessione solida. Se Mathio ti sta aiutando, una valutazione rapida aiuta più studenti a trovarlo."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Você acabou de concluir uma sessão forte. Se o Mathio está ajudando, uma avaliação rápida ajuda mais estudantes a encontrá-lo."
+          }
+        }
+      }
     }
   },
   "version": "1.0"

@@ -18,7 +18,7 @@ enum Links {
 /// Apple's UI to ~3/year.
 enum ReviewPromptGate {
     private static let kPromptedVersion = "mathio.review.promptedVersion"
-    private static let kCorrectMilestone = 10
+    private static let kCorrectMilestone = 5
 
     private static var currentVersion: String {
         Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "1.0"
@@ -28,8 +28,10 @@ enum ReviewPromptGate {
                                            sessionCorrect: Int,
                                            questionCount: Int,
                                            dailyGoal: Int,
-                                           isReview: Bool) -> Bool {
-        let already = UserDefaults.standard.string(forKey: kPromptedVersion)
+                                           isReview: Bool,
+                                           alreadyPromptedVersion: String? = UserDefaults.standard.string(forKey: kPromptedVersion),
+                                           currentVersion: String = Self.currentVersion) -> Bool {
+        let already = alreadyPromptedVersion
         guard already != currentVersion else { return false }
         guard questionCount > 0 else { return false }
 

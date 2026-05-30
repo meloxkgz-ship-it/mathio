@@ -67,6 +67,10 @@ PROSE: dict[str, str] = {
         "Einheiten zeigen oft, ob eine Rechnung zur Frage passt.",
     "You are choosing from a smaller set.": "Du wählst aus einer kleineren Menge.",
     "You need 19% of 82. Which estimate is most useful?": "Du brauchst 19 % von 82. Welche Schätzung ist am nützlichsten?",
+    "You just finished a perfect run. A quick rating helps more learners find Mathio.":
+        "Du hast gerade eine perfekte Runde geschafft. Eine kurze Bewertung hilft mehr Lernenden, Mathio zu finden.",
+    "You just finished a strong session. If Mathio is helping, a quick rating helps more learners find it.":
+        "Du hast gerade eine starke Einheit abgeschlossen. Wenn Mathio dir hilft, hilft eine kurze Bewertung mehr Lernenden, es zu finden.",
     "m² measures area": "m² misst Fläche",
     "4 fewer → 3x − 4": "4 weniger → 3x − 4",
     "A bag has 3 red and 2 blue tokens. P(red) =": "Ein Beutel enthält 3 rote und 2 blaue Chips. P(rot) =",
@@ -231,9 +235,11 @@ PROSE: dict[str, str] = {
     "Continue the plan": "Plan fortsetzen",
     "Daily reminder": "Tägliche Erinnerung",
     "Deep practice": "Tiefes Training",
+    "Did Mathio help today?": "Hat Mathio heute geholfen?",
     "Done for now": "Für jetzt fertig",
     "Enjoying Mathio?": "Gefällt dir Mathio?",
     "Last session": "Letzte Session",
+    "Was this session useful?": "War diese Einheit hilfreich?",
     "accuracy": "Genauigkeit",
     "Equations, lines, factoring": "Gleichungen, Geraden, Faktorisieren",
     "Exam Essentials": "Prüfungs-Basics",
