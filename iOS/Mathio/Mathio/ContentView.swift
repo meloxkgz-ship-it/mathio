@@ -2227,6 +2227,7 @@ struct PracticeView: View {
     /// Triggered by `ReviewPromptGate` after a meaningful progress milestone.
     @Environment(\.requestReview) private var requestReview
     @Environment(\.openURL) private var openURL
+    @AppStorage("mathio.notifications.enabled") private var notificationsEnabled = false
 
     @State private var index: Int = 0
     @State private var input: String = ""
@@ -2238,6 +2239,8 @@ struct PracticeView: View {
     @State private var showQuitConfirm: Bool = false
     @State private var didCelebrate: Bool = false
     @State private var hideReviewOffer: Bool = false
+    @State private var hideReminderOffer: Bool = false
+    @State private var reminderFeedback: LocalizedStringResource?
 
     enum AnswerState: Equatable { case pending, correct, incorrect }
 
@@ -2454,6 +2457,9 @@ struct PracticeView: View {
                 if shouldShowReviewOffer {
                     reviewOfferCard
                 }
+                if shouldShowReminderOffer {
+                    reminderOfferCard
+                }
                 if let next = nextLessonProvider?(), !isReview {
                     nextLessonCard(next)
                 }
@@ -2482,6 +2488,13 @@ struct PracticeView: View {
             questionCount: lesson.questions.count,
             isReview: isReview
         )
+    }
+
+    private var shouldShowReminderOffer: Bool {
+        !notificationsEnabled
+        && !hideReminderOffer
+        && lesson.questions.count > 0
+        && sessionCorrect >= min(3, lesson.questions.count)
     }
 
     private var reviewOfferCard: some View {
@@ -2516,6 +2529,41 @@ struct PracticeView: View {
         .transition(.opacity.combined(with: .move(edge: .bottom)))
     }
 
+    private var reminderOfferCard: some View {
+        Card(padding: 16, background: Palette.amberSoft) {
+            VStack(alignment: .leading, spacing: 12) {
+                HStack(spacing: 10) {
+                    Image(systemName: "bell.badge.fill")
+                        .foregroundStyle(Palette.terracotta)
+                    VStack(alignment: .leading, spacing: 2) {
+                        Text("Practice again tomorrow")
+                            .font(.titleM)
+                            .foregroundStyle(Palette.ink)
+                        Text("Let Mathio remind you at 19:00, after today's progress has settled.")
+                            .font(.bodyM)
+                            .foregroundStyle(Palette.inkSoft)
+                    }
+                }
+                if let reminderFeedback {
+                    Text(reminderFeedback)
+                        .font(.label)
+                        .foregroundStyle(Palette.success)
+                }
+                HStack(spacing: 10) {
+                    SecondaryButton(title: "Not now") {
+                        withAnimation(.easeOut(duration: 0.2)) {
+                            hideReminderOffer = true
+                        }
+                    }
+                    PrimaryButton(title: "Remind me tomorrow", icon: "bell.fill") {
+                        enableTomorrowReminder()
+                    }
+                }
+            }
+        }
+        .transition(.opacity.combined(with: .move(edge: .bottom)))
+    }
+
     private func nextLessonCard(_ next: Lesson) -> some View {
         Card(padding: 16, background: Palette.surfaceMuted) {
             VStack(alignment: .leading, spacing: 12) {
@@ -2536,6 +2584,23 @@ struct PracticeView: View {
                 }
                 PrimaryButton(title: "Next lesson", icon: "arrow.right") {
                     onStartNextLesson?(next)
+                }
+            }
+        }
+    }
+
+    private func enableTomorrowReminder() {
+        Task {
+            let granted = await NotificationManager.requestAuthorization()
+            await MainActor.run {
+                if granted {
+                    notificationsEnabled = true
+                    NotificationManager.scheduleDailyReminder()
+                    reminderFeedback = "Reminder set"
+                } else {
+                    withAnimation(.easeOut(duration: 0.2)) {
+                        hideReminderOffer = true
+                    }
                 }
             }
         }

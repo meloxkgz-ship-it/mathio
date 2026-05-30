@@ -32854,6 +32854,40 @@
         }
       }
     },
+    "Let Mathio remind you at 19:00, after today's progress has settled.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lass Mathio dich um 19:00 erinnern, wenn der heutige Fortschritt sich gesetzt hat."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deja que Mathio te recuerde a las 19:00, cuando el progreso de hoy ya se haya asentado."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Laissez Mathio vous le rappeler à 19h00, une fois les progrès du jour assimilés."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lascia che Mathio te lo ricordi alle 19:00, quando i progressi di oggi si saranno consolidati."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deixe o Mathio lembrar você às 19:00, depois que o progresso de hoje estiver consolidado."
+          }
+        }
+      }
+    },
     "Limits": {
       "localizations": {
         "de": {
@@ -40443,6 +40477,40 @@
         }
       }
     },
+    "Practice again tomorrow": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Morgen wieder üben"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Practica de nuevo mañana"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pratiquez encore demain"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Esercitati di nuovo domani"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pratique de novo amanhã"
+          }
+        }
+      }
+    },
     "Pre-Algebra": {
       "localizations": {
         "de": {
@@ -43677,6 +43745,74 @@
           "stringUnit": {
             "state": "translated",
             "value": "Arredondado: $95.24"
+          }
+        }
+      }
+    },
+    "Remind me tomorrow": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Morgen erinnern"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recuérdame mañana"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Me le rappeler demain"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ricordamelo domani"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lembre-me amanhã"
+          }
+        }
+      }
+    },
+    "Reminder set": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erinnerung aktiviert"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recordatorio activado"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rappel activé"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Promemoria attivato"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lembrete ativado"
           }
         }
       }
