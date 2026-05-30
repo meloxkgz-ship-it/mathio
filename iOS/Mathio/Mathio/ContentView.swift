@@ -818,7 +818,7 @@ struct HomeView: View {
             .navigationDestination(isPresented: $showReview) {
                 PracticeView(lesson: reviewLesson(), store: store, isReview: true)
             }
-            .sheet(isPresented: $showStats)    { StatsView(store: store, topics: topics) }
+            .sheet(isPresented: $showStats)    { StatsView(store: store, settings: settings, topics: topics) }
             .sheet(isPresented: $showSettings) { SettingsView(store: store, premiumStore: premiumStore, settings: settings) }
             .sheet(isPresented: $showPaywall)  { PaywallView(premiumStore: premiumStore, mode: .upgrade) }
             .sheet(isPresented: $showFormulas) { FormulaReferenceView(store: store, topics: topics) }
@@ -2616,14 +2616,31 @@ struct FreeAnswerField: View {
 
 struct StatsView: View {
     @Bindable var store: Store
+    @Bindable var settings: UserSettings
     let topics: [Topic]
     @Environment(\.dismiss) private var dismiss
 
+    private var totalQuestions: Int {
+        topics.reduce(0) { $0 + $1.questionCount }
+    }
     private var totalCorrect: Int {
         store.answered.values.reduce(0) { $0 + $1.correct }
     }
+    private var masteredQuestions: Int {
+        min(totalQuestions, Int((overallMastery * Double(totalQuestions)).rounded()))
+    }
+    private var remainingQuestions: Int {
+        max(0, totalQuestions - masteredQuestions)
+    }
+    private var estimatedDaysRemaining: Int {
+        guard remainingQuestions > 0 else { return 0 }
+        return Int(ceil(Double(remainingQuestions) / Double(max(settings.dailyGoal, 1))))
+    }
+    private var estimatedMonthsRemaining: Int {
+        guard estimatedDaysRemaining > 0 else { return 0 }
+        return max(1, Int(ceil(Double(estimatedDaysRemaining) / 30.0)))
+    }
     private var overallMastery: Double {
-        let totalQuestions = topics.reduce(0) { $0 + $1.questionCount }
         guard totalQuestions > 0 else { return 0 }
         let weighted = topics.reduce(0.0) { total, topic in
             total + store.mastery(for: topic) * Double(topic.questionCount)
@@ -2643,6 +2660,7 @@ struct StatsView: View {
             ScrollView {
                 VStack(alignment: .leading, spacing: 18) {
                     headerStats
+                    forecastCard
                     activityCard
                     masteryCard
                     if hasAnyProgress, let weakest { focusCard(weakest) }
@@ -2691,6 +2709,75 @@ struct StatsView: View {
                 CalendarHeatmap(activity: store.dailyActivity(), weeks: 12)
             }
         }
+    }
+
+    private var forecastCard: some View {
+        Card(padding: 16, background: Palette.surfaceMuted) {
+            VStack(alignment: .leading, spacing: 14) {
+                HStack(alignment: .top, spacing: 12) {
+                    Image(systemName: "map")
+                        .font(.system(size: 18, weight: .semibold))
+                        .foregroundStyle(Palette.calculus)
+                        .frame(width: 38, height: 38)
+                        .background(Palette.calculus.opacity(0.14), in: Circle())
+                    VStack(alignment: .leading, spacing: 3) {
+                        Text("Learning forecast")
+                            .font(.titleM)
+                            .foregroundStyle(Palette.ink)
+                        Text(forecastSummary)
+                            .font(.bodyM)
+                            .foregroundStyle(Palette.inkSoft)
+                            .fixedSize(horizontal: false, vertical: true)
+                    }
+                }
+
+                ProgressBar(progress: overallMastery, color: Palette.calculus, height: 6)
+
+                HStack(spacing: 10) {
+                    forecastMetric(value: "\(masteredQuestions)", label: "Mastered")
+                    forecastMetric(value: "\(remainingQuestions)", label: "Remaining")
+                    forecastMetric(value: forecastTimeValue, label: forecastTimeLabel)
+                }
+            }
+        }
+        .accessibilityElement(children: .combine)
+        .accessibilityLabel(Text("Learning forecast. \(masteredQuestions) mastered, \(remainingQuestions) remaining."))
+    }
+
+    private var forecastSummary: LocalizedStringResource {
+        if remainingQuestions == 0 {
+            return "Full roadmap mastered. Keep reviews warm."
+        }
+        if estimatedMonthsRemaining > 1 {
+            return "About \(estimatedMonthsRemaining) months left at your current daily goal."
+        }
+        return "About \(estimatedDaysRemaining) days left at your current daily goal."
+    }
+
+    private var forecastTimeValue: String {
+        estimatedMonthsRemaining > 1 ? "\(estimatedMonthsRemaining)" : "\(estimatedDaysRemaining)"
+    }
+
+    private var forecastTimeLabel: LocalizedStringResource {
+        estimatedMonthsRemaining > 1 ? "Months" : "Days"
+    }
+
+    private func forecastMetric(value: String, label: LocalizedStringResource) -> some View {
+        VStack(alignment: .leading, spacing: 2) {
+            Text(value)
+                .font(.titleM)
+                .foregroundStyle(Palette.ink)
+                .lineLimit(1)
+                .minimumScaleFactor(0.75)
+            Text(label)
+                .font(.caption)
+                .foregroundStyle(Palette.inkSoft)
+                .lineLimit(1)
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .padding(.horizontal, 12)
+        .padding(.vertical, 10)
+        .background(Palette.surface, in: RoundedRectangle(cornerRadius: 12, style: .continuous))
     }
 
     private var masteryCard: some View {

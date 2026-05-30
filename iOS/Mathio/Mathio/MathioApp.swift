@@ -98,7 +98,7 @@ struct PreviewWrapper: View {
         case "paywall":
             PaywallView(premiumStore: premiumStore, mode: .onboarding)
         case "stats":
-            StatsView(store: store, topics: Curriculum.topics)
+            StatsView(store: store, settings: settings, topics: Curriculum.topics)
         case "settings":
             SettingsView(store: store, premiumStore: premiumStore, settings: settings)
         case "formulas":
