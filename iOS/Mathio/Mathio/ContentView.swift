@@ -835,6 +835,7 @@ struct HomeView: View {
     @State private var showDailyChallenge = false
     @State private var showWeakSpotDrill = false
     @State private var showExamSprint = false
+    @State private var showMistakeDrill = false
 
     private var topics: [Topic] { Curriculum.topics }
     private var learningPaths: [LearningPath] { LearningPath.defaultPaths }
@@ -858,6 +859,34 @@ struct HomeView: View {
             return lhs.2 < rhs.2
         }!
         return (best.0, best.1)
+    }
+    private var mistakeFocus: [MistakeFocus] {
+        topics.flatMap { topic in
+            topic.lessons.flatMap { lesson in
+                lesson.questions.compactMap { question -> MistakeFocus? in
+                    guard let entry = store.answered[question.id],
+                          entry.attempts > 0,
+                          entry.attempts - entry.correct > 0 || !entry.isMastered else { return nil }
+                    return MistakeFocus(topic: topic, lesson: lesson, question: question, entry: entry)
+                }
+            }
+        }
+        .sorted { lhs, rhs in
+            if lhs.misses != rhs.misses { return lhs.misses > rhs.misses }
+            if lhs.entry.attempts != rhs.entry.attempts { return lhs.entry.attempts > rhs.entry.attempts }
+            return lhs.entry.lastAt > rhs.entry.lastAt
+        }
+        .prefix(5)
+        .map { $0 }
+    }
+    private var mistakeDrillLesson: Lesson {
+        Lesson(
+            id: "__home_mistake_drill__",
+            title: "Mistake drill",
+            intro: "A focused set built from questions you have missed before.",
+            formulas: [],
+            questions: mistakeFocus.map(\.question)
+        )
     }
     private var reviewCount: Int { store.reviewQueue(in: topics).count }
     private var lessonCount: Int { topics.reduce(0) { $0 + $1.lessons.count } }
@@ -945,6 +974,7 @@ struct HomeView: View {
                     if shouldShowComebackCard { comebackCard }
                     dailyChallengeCard
                     if weakSpot != nil { weakSpotCard }
+                    if !mistakeFocus.isEmpty { mistakeNotebookCard }
                     examSprintCard
                     todayPlanCard
                     momentumCard
@@ -985,6 +1015,9 @@ struct HomeView: View {
             }
             .navigationDestination(isPresented: $showWeakSpotDrill) {
                 PracticeView(lesson: weakSpotDrillLesson(), store: store, isReview: false)
+            }
+            .navigationDestination(isPresented: $showMistakeDrill) {
+                PracticeView(lesson: mistakeDrillLesson, store: store, isReview: false)
             }
             .navigationDestination(isPresented: $showExamSprint) {
                 PracticeView(lesson: examSprintLesson(), store: store, isReview: true)
@@ -1308,6 +1341,63 @@ struct HomeView: View {
             .buttonStyle(.plain)
             .accessibilityElement(children: .combine)
         )
+    }
+
+    private var mistakeNotebookCard: some View {
+        Card(padding: 16, background: Palette.terracottaSoft.opacity(0.5)) {
+            VStack(alignment: .leading, spacing: 14) {
+                HStack(alignment: .firstTextBaseline) {
+                    Label("Mistake notebook", systemImage: "exclamationmark.circle.fill")
+                        .font(.titleM)
+                        .foregroundStyle(Palette.ink)
+                    Spacer()
+                    Text("\(mistakeFocus.count) to revisit")
+                        .font(.caption)
+                        .foregroundStyle(Palette.inkFaint)
+                }
+
+                Text("Mathio turns missed answers into a focused drill, so weak spots do not disappear into the history.")
+                    .font(.bodyM)
+                    .foregroundStyle(Palette.inkSoft)
+                    .fixedSize(horizontal: false, vertical: true)
+
+                ForEach(mistakeFocus.prefix(2)) { item in
+                    mistakeRow(item)
+                }
+
+                PrimaryButton(title: "Practice missed questions", icon: "scope") {
+                    showMistakeDrill = true
+                }
+            }
+        }
+        .accessibilityElement(children: .contain)
+    }
+
+    private func mistakeRow(_ item: MistakeFocus) -> some View {
+        HStack(alignment: .top, spacing: 12) {
+            Image(systemName: "exclamationmark.circle.fill")
+                .font(.system(size: 17, weight: .semibold))
+                .foregroundStyle(Palette.terracotta)
+                .frame(width: 36, height: 36)
+                .background(Palette.surface, in: Circle())
+                .accessibilityHidden(true)
+            VStack(alignment: .leading, spacing: 4) {
+                Text(item.lesson.title)
+                    .font(.bodyM.weight(.semibold))
+                    .foregroundStyle(Palette.ink)
+                    .lineLimit(1)
+                Text(item.question.prompt)
+                    .font(.caption)
+                    .foregroundStyle(Palette.inkSoft)
+                    .lineLimit(2)
+                Text("\(item.misses) misses · \(item.entry.correct) correct")
+                    .font(.caption)
+                    .foregroundStyle(Palette.inkFaint)
+            }
+            Spacer(minLength: 0)
+        }
+        .padding(12)
+        .background(Palette.surface, in: RoundedRectangle(cornerRadius: 12, style: .continuous))
     }
 
     private var examSprintCard: some View {
