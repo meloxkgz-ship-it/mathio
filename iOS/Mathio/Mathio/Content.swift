@@ -5213,6 +5213,142 @@ enum Curriculum {
         ]
     )
 
+    static let examFormulaRecallSprint = Lesson(
+        id: "exam.formula.recall.sprint",
+        title: "Formula Recall Sprint",
+        intro: "Build quick recall for the formulas that appear again and again: area, slope, percent change, probability, and simple interest.",
+        formulas: [
+            Formula(key: "exam.formula.f1",
+                    name: "Recall trigger",
+                    math: "keyword → formula → substitute",
+                    explanation: "Use the words in the question to choose the formula before calculating."),
+            Formula(key: "exam.formula.f2",
+                    name: "Formula check",
+                    math: "units in → units out",
+                    explanation: "The units should match the type of answer the question asks for."),
+        ],
+        questions: [
+            Question(id: "exam.formula.q1",
+                     prompt: "Which formula matches the area of a triangle?",
+                     math: nil,
+                     kind: .multipleChoice(options: [
+                        .init(label: "A = 1/2 · b · h", math: nil),
+                        .init(label: "A = 2πr", math: nil),
+                        .init(label: "A = πd", math: nil),
+                        .init(label: "A = l + w", math: nil),
+                     ], correctIndex: 0),
+                     hint: "Triangle area uses base and height, then halves the result.",
+                     solutionSteps: ["Triangle area = 1/2 · base · height", "So choose A = 1/2 · b · h"]),
+            Question(id: "exam.formula.q2",
+                     prompt: "A line goes through (2, 5) and (6, 13). Which formula starts the slope calculation?",
+                     math: nil,
+                     kind: .multipleChoice(options: [
+                        .init(label: "(y₂ − y₁) / (x₂ − x₁)", math: nil),
+                        .init(label: "πr²", math: nil),
+                        .init(label: "new − old", math: nil),
+                        .init(label: "part / whole", math: nil),
+                     ], correctIndex: 0),
+                     hint: "Slope compares vertical change to horizontal change.",
+                     solutionSteps: ["Slope = change in y / change in x", "Use (y₂ − y₁) / (x₂ − x₁)"]),
+            Question(id: "exam.formula.q3",
+                     prompt: "A value rises from 40 to 50. Which setup finds percent change?",
+                     math: nil,
+                     kind: .multipleChoice(options: [
+                        .init(label: "(50 − 40) / 40 · 100%", math: nil),
+                        .init(label: "40 / 50 · 100%", math: nil),
+                        .init(label: "50 − 40%", math: nil),
+                        .init(label: "(50 + 40) / 2", math: nil),
+                     ], correctIndex: 0),
+                     hint: "Compare the change to the original value.",
+                     solutionSteps: ["Change = 50 − 40", "Original = 40", "Percent change = (50 − 40) / 40 · 100%"]),
+            Question(id: "exam.formula.q4",
+                     prompt: "A bag has 2 green and 6 total tokens. Which expression gives P(green)?",
+                     math: nil,
+                     kind: .multipleChoice(options: [
+                        .init(label: "2/6", math: nil),
+                        .init(label: "6/2", math: nil),
+                        .init(label: "2 + 6", math: nil),
+                        .init(label: "6 − 2", math: nil),
+                     ], correctIndex: 0),
+                     hint: "Probability is favorable outcomes over total outcomes.",
+                     solutionSteps: ["Favorable green tokens = 2", "Total tokens = 6", "P(green) = 2/6"]),
+            Question(id: "exam.formula.q5",
+                     prompt: "True or false: simple interest can be found with I = P · r · t.",
+                     math: nil,
+                     kind: .trueFalse(answer: true),
+                     hint: "Simple interest multiplies principal, rate, and time.",
+                     solutionSteps: ["P is principal", "r is rate", "t is time", "I = P · r · t"]),
+        ]
+    )
+
+    static let examCalculatorCheckSprint = Lesson(
+        id: "exam.calculator.check.sprint",
+        title: "Calculator Check Sprint",
+        intro: "Use estimation and input checks to catch calculator mistakes before they cost points.",
+        formulas: [
+            Formula(key: "exam.calc.f1",
+                    name: "Estimate before exact",
+                    math: "rough answer → calculator answer → compare",
+                    explanation: "An exact answer should land near the rough answer unless the setup changed."),
+            Formula(key: "exam.calc.f2",
+                    name: "Input audit",
+                    math: "signs · parentheses · decimals · units",
+                    explanation: "Most calculator errors come from typing the right plan in the wrong way."),
+        ],
+        questions: [
+            Question(id: "exam.calc.q1",
+                     prompt: "Before calculating 19.8 · 51, which estimate is useful?",
+                     math: nil,
+                     kind: .multipleChoice(options: [
+                        .init(label: "20 · 50 = 1000", math: nil),
+                        .init(label: "2 · 5 = 10", math: nil),
+                        .init(label: "200 · 500 = 100000", math: nil),
+                        .init(label: "20 + 50 = 70", math: nil),
+                     ], correctIndex: 0),
+                     hint: "Round each factor to a friendly nearby number.",
+                     solutionSteps: ["19.8 is close to 20", "51 is close to 50", "20 · 50 = 1000"]),
+            Question(id: "exam.calc.q2",
+                     prompt: "Your calculator gives 0.04 for 18 ÷ 45. What should you notice?",
+                     math: nil,
+                     kind: .multipleChoice(options: [
+                        .init(label: "18 is almost half of 45, so 0.04 is too small", math: nil),
+                        .init(label: "Any decimal below 1 is reasonable", math: nil),
+                        .init(label: "The answer must be 4", math: nil),
+                        .init(label: "Division always makes a number bigger", math: nil),
+                     ], correctIndex: 0),
+                     hint: "Compare 18 to 45 before trusting the display.",
+                     solutionSteps: ["18/45 is close to 20/40", "20/40 = 0.5", "0.04 is far too small, so recheck input"]),
+            Question(id: "exam.calc.q3",
+                     prompt: "Which input is safest for 2(3 + 5)?",
+                     math: nil,
+                     kind: .multipleChoice(options: [
+                        .init(label: "2*(3+5)", math: nil),
+                        .init(label: "2*3+5", math: nil),
+                        .init(label: "23+5", math: nil),
+                        .init(label: "2/3+5", math: nil),
+                     ], correctIndex: 0),
+                     hint: "Parentheses keep the grouped sum together.",
+                     solutionSteps: ["The expression means 2 times the whole group", "Use 2*(3+5)"]),
+            Question(id: "exam.calc.q4",
+                     prompt: "A percent answer should be near 25%, but the display shows 250%. What is the best check?",
+                     math: nil,
+                     kind: .multipleChoice(options: [
+                        .init(label: "Check whether a decimal point or factor of 10 slipped", math: nil),
+                        .init(label: "Always accept 250%", math: nil),
+                        .init(label: "Change the question to match the answer", math: nil),
+                        .init(label: "Ignore the percent sign", math: nil),
+                     ], correctIndex: 0),
+                     hint: "A factor-of-10 mismatch often means a decimal placement error.",
+                     solutionSteps: ["250% is ten times 25%", "Check decimal placement and percent conversion"]),
+            Question(id: "exam.calc.q5",
+                     prompt: "True or false: if the calculator answer is far from your estimate, you should recheck the input.",
+                     math: nil,
+                     kind: .trueFalse(answer: true),
+                     hint: "The estimate is a warning system.",
+                     solutionSteps: ["A rough estimate gives an expected range", "A far-away exact answer may signal an input mistake"]),
+        ]
+    )
+
     // MARK: - All topics
 
     static let topics: [Topic] = [
@@ -5286,6 +5422,7 @@ enum Curriculum {
               icon: "checkmark.seal",
               color: Palette.terracotta,
                         lessons: [examMixedFoundations, examAlgebraSprint, examGeometrySprint, examDataSprint, examWordProblemSprint,
-                        examStrategySprint, examMentalMathSprint, examErrorCheckSprint, examTimedTriageSprint]),
+                        examStrategySprint, examMentalMathSprint, examErrorCheckSprint, examTimedTriageSprint,
+                        examFormulaRecallSprint, examCalculatorCheckSprint]),
     ]
 }

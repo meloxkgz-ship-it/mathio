@@ -52,7 +52,7 @@ Begründung:
 ## Werbetext (170 max — editierbar ohne Review)
 
 ```
-Neu: Lerngesundheit, Lerncoach, Prüfungstraining und 98 Lektionen.
+Neu: Lerngesundheit, Lerncoach, Prüfungstraining und 100 Lektionen.
 ```
 **113 / 170** — hebt Kataloggröße und neue alltagsnahe Inhalte hervor.
 
@@ -104,7 +104,7 @@ Verfügbar auf Deutsch, Englisch, Spanisch, Französisch, Italienisch und Brasil
 
 — THEMEN —
 Vor-Algebra · Algebra · Geometrie · Trigonometrie · Analysis · Prüfungstraining
-98 Lektionen und 490 handgemachte Fragen in Multiple-Choice, Freitext und Wahr/Falsch. Von Bruchrechnen, Potenzen, Logarithmen, exponentiellem Wachstum, Geraden zeichnen, quadratische Graphen und Wurzelgleichungen bis zu Ableitungen, impliziter Ableitung, Integralen, Statistik, bedingte Wahrscheinlichkeit, Erwartungswert, Satz von Bayes, Standardabweichung, Normalverteilung, Vektoren, Budgetrechnung, Steuern, Rabatten, Funktionsmodellierung, Konfidenzintervallen, Korrelation, Optimierung, Wahrheitstabellen, Logik, Prüfungs-Sprints, Kopfrechnen, Fehlerkontrolle und gemischter Abschlusswiederholung.
+100 Lektionen und 500 handgemachte Fragen in Multiple-Choice, Freitext und Wahr/Falsch. Von Bruchrechnen, Potenzen, Logarithmen, exponentiellem Wachstum, Geraden zeichnen, quadratische Graphen und Wurzelgleichungen bis zu Ableitungen, impliziter Ableitung, Integralen, Statistik, bedingte Wahrscheinlichkeit, Erwartungswert, Satz von Bayes, Standardabweichung, Normalverteilung, Vektoren, Budgetrechnung, Steuern, Rabatten, Funktionsmodellierung, Konfidenzintervallen, Korrelation, Optimierung, Wahrheitstabellen, Logik, Prüfungs-Sprints, Kopfrechnen, Fehlerkontrolle und gemischter Abschlusswiederholung.
 
 — ABO —
 Mathio ist kostenlos zum Ausprobieren. Alle Themen freischalten mit:
@@ -129,8 +129,8 @@ Von Bruchrechnung bis Differentialrechnung. Zwei Minuten täglich genügen.
 Mathio gibt Lernenden jetzt klarere Richtung und mehr Tiefe für tägliches Üben.
 
 • Neuer Lerncoach: Home empfiehlt die beste nächste Aktion aus Wiederholung, Fehlern, Schwächen, Tagesziel oder Prüfungs-Sprint
-• Neue Lerngesundheit: Fortschritt zeigt einen On-Track-Score aus Konsistenz, Tagesziel, Wiederholungen und Mastery
-• Premium-Wert klarer: Die Paywall zeigt jetzt Lerncoach, Lerngesundheit, Smart Review und die volle Roadmap
+• Neue Lerngesundheit: Fortschritt zeigt einen On-Track-Score aus Konsistenz, Tagesziel, Wiederholungen und Können
+• Premium-Wert klarer: Die Paywall zeigt jetzt Lerncoach, Lerngesundheit, smarte Wiederholung und die volle Roadmap
 • Neue Lektion: Erwartungswert für langfristige Durchschnitte, faire Spiele und erwarteten Gewinn
 • Neue Lektion: Bedingte Wahrscheinlichkeit für gegebene Informationen, Überschneidungen und Multiplikationsregel
 • Neue Lektion: Satz von Bayes für Evidenz, Basisraten und Testergebnisse
@@ -138,7 +138,7 @@ Mathio gibt Lernenden jetzt klarere Richtung und mehr Tiefe für tägliches Übe
 • Neue Lektion: Implizite Ableitung für dy/dx, Kreise, Produkte und Kettenregel-Denken
 • Neue Lektion: Wurzelgleichungen für Wurzeln, Quadrieren beider Seiten und Scheinlösungen
 • Home zeigt Fehler-Notizbuch, Wiederholungs-Vorschau, 7-Tage-Fokus und nächste Lernziele
-• Mathio wächst auf 98 Lektionen, 490 geführte Aufgaben und längere Lernpfade
+• Mathio wächst auf 100 Lektionen, 500 geführte Aufgaben und längere Lernpfade
 • Premium- und App-Store-Texte passen zum erweiterten Inhalt
 
 Zwei Minuten am Tag decken jetzt noch mehr relevante Mathematik ab.

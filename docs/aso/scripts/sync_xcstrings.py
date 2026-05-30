@@ -191,7 +191,7 @@ PROSE: dict[str, str] = {
     "Use 1/2 · base · height.": "Nutze 1/2 · Grundseite · Höhe.",
     "Use 2πr.": "Nutze 2πr.",
     "Weekly target complete. Keep reviews light and protect the streak.":
-        "Wochenziel erreicht. Halte Reviews leicht und schütze die Serie.",
+        "Wochenziel erreicht. Halte Wiederholungen leicht und schütze die Serie.",
     "Use base times height, then take half.": "Nutze Grundseite mal Höhe und nimm dann die Hälfte.",
     "Use consistent units before multiplying.": "Nutze einheitliche Einheiten, bevor du multiplizierst.",
     "Use correct / total.": "Nutze richtig / gesamt.",
@@ -1277,9 +1277,9 @@ PROSE: dict[str, str] = {
 }
 
 PROSE.update({
-    "98 lessons across algebra, calculus, geometry, statistics, finance, exam review, and more":
-        "98 Lektionen in Algebra, Analysis, Geometrie, Statistik, Finanzmathe, Prüfungstraining und mehr",
-    "All 98 lessons and 490 guided questions": "Alle 98 Lektionen und 490 geführten Fragen",
+    "100 lessons across algebra, calculus, geometry, statistics, finance, exam review, and more":
+        "100 Lektionen in Algebra, Analysis, Geometrie, Statistik, Finanzmathe, Prüfungstraining und mehr",
+    "All 100 lessons and 500 guided questions": "Alle 100 Lektionen und 500 geführten Fragen",
     "90-Day Core Mastery": "90-Tage-Kernkompetenz",
     "12-Week Exam Prep": "12-Wochen-Prüfungsvorbereitung",
     "12-week and 90-day tracks keep the next session obvious.":
@@ -1395,6 +1395,113 @@ PROSE.update({
     "Five minutes is limited": "Fünf Minuten sind begrenzt",
     "A quick scan finds the fastest remaining win": "Ein kurzer Scan findet den schnellsten verbleibenden Gewinn",
     "Then use any leftover time to check": "Nutze danach Restzeit zum Prüfen",
+    "Formula Recall Sprint": "Formelabruf-Sprint",
+    "Build quick recall for the formulas that appear again and again: area, slope, percent change, probability, and simple interest.":
+        "Baue schnellen Abruf für Formeln auf, die immer wieder vorkommen: Fläche, Steigung, prozentuale Veränderung, Wahrscheinlichkeit und einfache Zinsen.",
+    "Recall trigger": "Abruf-Auslöser",
+    "keyword → formula → substitute": "Schlüsselwort → Formel → einsetzen",
+    "Use the words in the question to choose the formula before calculating.":
+        "Nutze die Wörter in der Aufgabe, um vor dem Rechnen die passende Formel zu wählen.",
+    "Formula check": "Formelcheck",
+    "units in → units out": "Einheiten hinein → Einheiten heraus",
+    "The units should match the type of answer the question asks for.":
+        "Die Einheiten sollten zur Antwortart passen, nach der die Aufgabe fragt.",
+    "Which formula matches the area of a triangle?": "Welche Formel passt zur Fläche eines Dreiecks?",
+    "A = 1/2 · b · h": "A = 1/2 · b · h",
+    "A = 2πr": "A = 2πr",
+    "A = πd": "A = πd",
+    "A = l + w": "A = l + w",
+    "Triangle area uses base and height, then halves the result.":
+        "Dreiecksfläche nutzt Grundseite und Höhe und halbiert dann das Ergebnis.",
+    "Triangle area = 1/2 · base · height": "Dreiecksfläche = 1/2 · Grundseite · Höhe",
+    "So choose A = 1/2 · b · h": "Also wähle A = 1/2 · b · h",
+    "A line goes through (2, 5) and (6, 13). Which formula starts the slope calculation?":
+        "Eine Gerade geht durch (2, 5) und (6, 13). Welche Formel startet die Steigungsberechnung?",
+    "(y₂ − y₁) / (x₂ − x₁)": "(y₂ − y₁) / (x₂ − x₁)",
+    "πr²": "πr²",
+    "new − old": "neu − alt",
+    "part / whole": "Teil / Ganzes",
+    "Slope compares vertical change to horizontal change.": "Steigung vergleicht vertikale mit horizontaler Änderung.",
+    "Slope = change in y / change in x": "Steigung = Änderung in y / Änderung in x",
+    "Use (y₂ − y₁) / (x₂ − x₁)": "Nutze (y₂ − y₁) / (x₂ − x₁)",
+    "A value rises from 40 to 50. Which setup finds percent change?":
+        "Ein Wert steigt von 40 auf 50. Welcher Ansatz findet die prozentuale Veränderung?",
+    "(50 − 40) / 40 · 100%": "(50 − 40) / 40 · 100%",
+    "40 / 50 · 100%": "40 / 50 · 100%",
+    "50 − 40%": "50 − 40%",
+    "(50 + 40) / 2": "(50 + 40) / 2",
+    "Compare the change to the original value.": "Vergleiche die Veränderung mit dem Ausgangswert.",
+    "Change = 50 − 40": "Veränderung = 50 − 40",
+    "Original = 40": "Ausgangswert = 40",
+    "Percent change = (50 − 40) / 40 · 100%":
+        "Prozentuale Veränderung = (50 − 40) / 40 · 100%",
+    "A bag has 2 green and 6 total tokens. Which expression gives P(green)?":
+        "Ein Beutel hat 2 grüne und insgesamt 6 Chips. Welcher Ausdruck ergibt P(grün)?",
+    "Probability is favorable outcomes over total outcomes.":
+        "Wahrscheinlichkeit ist günstige Ergebnisse geteilt durch alle Ergebnisse.",
+    "Favorable green tokens = 2": "Günstige grüne Chips = 2",
+    "Total tokens = 6": "Alle Chips = 6",
+    "P(green) = 2/6": "P(grün) = 2/6",
+    "True or false: simple interest can be found with I = P · r · t.":
+        "Richtig oder falsch: Einfache Zinsen lassen sich mit I = P · r · t berechnen.",
+    "Simple interest multiplies principal, rate, and time.":
+        "Einfache Zinsen multiplizieren Kapital, Zinssatz und Zeit.",
+    "P is principal": "P ist das Kapital",
+    "r is rate": "r ist der Zinssatz",
+    "t is time": "t ist die Zeit",
+    "Calculator Check Sprint": "Rechnercheck-Sprint",
+    "Use estimation and input checks to catch calculator mistakes before they cost points.":
+        "Nutze Schätzungen und Eingabechecks, um Rechnerfehler zu erkennen, bevor sie Punkte kosten.",
+    "Estimate before exact": "Erst schätzen, dann exakt",
+    "rough answer → calculator answer → compare": "grobe Antwort → Rechnerantwort → vergleichen",
+    "An exact answer should land near the rough answer unless the setup changed.":
+        "Eine exakte Antwort sollte nahe an der groben Antwort liegen, wenn der Ansatz gleich geblieben ist.",
+    "Input audit": "Eingabeprüfung",
+    "signs · parentheses · decimals · units": "Vorzeichen · Klammern · Dezimalstellen · Einheiten",
+    "Most calculator errors come from typing the right plan in the wrong way.":
+        "Die meisten Rechnerfehler entstehen, wenn der richtige Plan falsch eingegeben wird.",
+    "Before calculating 19.8 · 51, which estimate is useful?":
+        "Welche Schätzung ist vor dem Berechnen von 19,8 · 51 nützlich?",
+    "20 · 50 = 1000": "20 · 50 = 1000",
+    "2 · 5 = 10": "2 · 5 = 10",
+    "200 · 500 = 100000": "200 · 500 = 100000",
+    "20 + 50 = 70": "20 + 50 = 70",
+    "Round each factor to a friendly nearby number.": "Runde jeden Faktor auf eine einfache nahe Zahl.",
+    "19.8 is close to 20": "19,8 liegt nahe bei 20",
+    "Your calculator gives 0.04 for 18 ÷ 45. What should you notice?":
+        "Dein Rechner zeigt 0,04 für 18 ÷ 45. Was solltest du bemerken?",
+    "18 is almost half of 45, so 0.04 is too small":
+        "18 ist fast die Hälfte von 45, also ist 0,04 zu klein",
+    "Any decimal below 1 is reasonable": "Jede Dezimalzahl unter 1 ist plausibel",
+    "The answer must be 4": "Die Antwort muss 4 sein",
+    "Division always makes a number bigger": "Division macht eine Zahl immer größer",
+    "Compare 18 to 45 before trusting the display.": "Vergleiche 18 mit 45, bevor du der Anzeige vertraust.",
+    "18/45 is close to 20/40": "18/45 liegt nahe bei 20/40",
+    "0.04 is far too small, so recheck input": "0,04 ist viel zu klein, also prüfe die Eingabe erneut",
+    "Which input is safest for 2(3 + 5)?": "Welche Eingabe ist für 2(3 + 5) am sichersten?",
+    "2*(3+5)": "2*(3+5)",
+    "2*3+5": "2*3+5",
+    "23+5": "23+5",
+    "2/3+5": "2/3+5",
+    "Parentheses keep the grouped sum together.": "Klammern halten die gruppierte Summe zusammen.",
+    "The expression means 2 times the whole group": "Der Ausdruck bedeutet 2 mal die ganze Gruppe",
+    "Use 2*(3+5)": "Nutze 2*(3+5)",
+    "A percent answer should be near 25%, but the display shows 250%. What is the best check?":
+        "Eine Prozentantwort sollte nahe bei 25 % liegen, aber die Anzeige zeigt 250 %. Was ist der beste Check?",
+    "Check whether a decimal point or factor of 10 slipped":
+        "Prüfe, ob ein Dezimalpunkt oder Faktor 10 verrutscht ist",
+    "Always accept 250%": "250 % immer akzeptieren",
+    "Change the question to match the answer": "Die Frage an die Antwort anpassen",
+    "Ignore the percent sign": "Das Prozentzeichen ignorieren",
+    "A factor-of-10 mismatch often means a decimal placement error.":
+        "Eine Abweichung um den Faktor 10 bedeutet oft einen Dezimalstellenfehler.",
+    "250% is ten times 25%": "250 % ist zehnmal so viel wie 25 %",
+    "Check decimal placement and percent conversion": "Prüfe Dezimalstelle und Prozentumwandlung",
+    "True or false: if the calculator answer is far from your estimate, you should recheck the input.":
+        "Richtig oder falsch: Wenn die Rechnerantwort weit von deiner Schätzung entfernt ist, solltest du die Eingabe prüfen.",
+    "The estimate is a warning system.": "Die Schätzung ist ein Warnsystem.",
+    "A rough estimate gives an expected range": "Eine grobe Schätzung gibt einen erwarteten Bereich",
+    "A far-away exact answer may signal an input mistake": "Eine weit entfernte exakte Antwort kann auf einen Eingabefehler hinweisen",
 })
 
 # Strings whose value is identical in DE: pure math, single letters, etc.
