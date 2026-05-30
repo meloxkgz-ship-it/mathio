@@ -1044,6 +1044,45 @@ struct HomeView: View {
         let pool = unfinished.isEmpty ? recommendedPath.lessons : unfinished
         return Array(pool.prefix(7))
     }
+    private var seasonStartDate: Date {
+        let activityStart = store.dailyActivity().keys.min()
+        return store.learningProfile?.createdAt ?? activityStart ?? .now
+    }
+    private var seasonTotalWeeks: Int {
+        max(1, Int(ceil(Double(longTermAnchorPath.durationDays) / 7.0)))
+    }
+    private var currentSeasonDay: Int {
+        let calendar = Calendar.current
+        let start = calendar.startOfDay(for: seasonStartDate)
+        let today = calendar.startOfDay(for: .now)
+        let elapsed = calendar.dateComponents([.day], from: start, to: today).day ?? 0
+        return min(max(elapsed + 1, 1), longTermAnchorPath.durationDays)
+    }
+    private var currentSeasonWeek: Int {
+        min(seasonTotalWeeks, max(1, Int(ceil(Double(currentSeasonDay) / 7.0))))
+    }
+    private var seasonLessonsPerWeek: Int {
+        max(1, Int(ceil(Double(longTermAnchorPath.lessons.count) / Double(seasonTotalWeeks))))
+    }
+    private var currentSeasonLessons: [Lesson] {
+        let start = min((currentSeasonWeek - 1) * seasonLessonsPerWeek, longTermAnchorPath.lessons.count)
+        let end = min(start + seasonLessonsPerWeek, longTermAnchorPath.lessons.count)
+        guard start < end else { return Array(longTermAnchorPath.lessons.suffix(seasonLessonsPerWeek)) }
+        return Array(longTermAnchorPath.lessons[start..<end])
+    }
+    private var currentSeasonLesson: Lesson? {
+        currentSeasonLessons.first { store.mastery(for: $0) < 1.0 } ?? currentSeasonLessons.first
+    }
+    private var seasonCalendarProgress: Double {
+        min(1, Double(currentSeasonDay) / Double(max(longTermAnchorPath.durationDays, 1)))
+    }
+    private var seasonMasteryProgress: Double {
+        progress(for: longTermAnchorPath)
+    }
+    private var seasonWeeklyProgress: Double {
+        guard !currentSeasonLessons.isEmpty else { return 0 }
+        return currentSeasonLessons.reduce(0.0) { $0 + store.mastery(for: $1) } / Double(currentSeasonLessons.count)
+    }
     private var sevenDayFocusProgress: Double {
         min(1, Double(activeDaysThisWeek) / 7.0)
     }
@@ -1100,6 +1139,7 @@ struct HomeView: View {
                     if let summary = store.lastSession { lastSessionCard(summary) }
                     habitShieldCard
                     studyCoachCard
+                    learningSeasonCard
                     if shouldShowComebackCard { comebackCard }
                     dailyChallengeCard
                     if weakSpot != nil { weakSpotCard }
@@ -1561,6 +1601,150 @@ struct HomeView: View {
             } else {
                 showPaywall = true
             }
+        }
+    }
+
+    private var learningSeasonCard: some View {
+        Button { openSeasonLesson() } label: {
+            Card(padding: 18, background: Palette.heroSurface) {
+                VStack(alignment: .leading, spacing: 15) {
+                    HStack(alignment: .top, spacing: 12) {
+                        Image(systemName: "map.fill")
+                            .font(.system(size: 19, weight: .semibold))
+                            .foregroundStyle(longTermAnchorPath.color)
+                            .frame(width: 44, height: 44)
+                            .background(longTermAnchorPath.color.opacity(0.16), in: Circle())
+                            .accessibilityHidden(true)
+
+                        VStack(alignment: .leading, spacing: 4) {
+                            Text("Learning season")
+                                .font(.label)
+                                .foregroundStyle(Palette.heroInkSoft)
+                                .textCase(.uppercase)
+                                .tracking(1.2)
+                            Text("Week \(currentSeasonWeek) of \(seasonTotalWeeks)")
+                                .font(.titleL)
+                                .foregroundStyle(Palette.heroInk)
+                            Text(seasonSubtitle)
+                                .font(.bodyM)
+                                .foregroundStyle(Palette.heroInkSoft)
+                                .fixedSize(horizontal: false, vertical: true)
+                        }
+
+                        Spacer(minLength: 0)
+
+                        Image(systemName: currentSeasonLesson.map(isLocked(_:)) == true ? "lock.fill" : "arrow.right")
+                            .font(.system(size: 13, weight: .semibold))
+                            .foregroundStyle(Palette.ink)
+                            .frame(width: 38, height: 38)
+                            .background(Palette.amber, in: Circle())
+                    }
+
+                    VStack(alignment: .leading, spacing: 8) {
+                        HStack {
+                            Text(longTermAnchorPath.title)
+                                .font(.bodyM.weight(.semibold))
+                                .foregroundStyle(Palette.heroInk)
+                                .lineLimit(1)
+                                .minimumScaleFactor(0.82)
+                            Spacer()
+                            Text("\(Int((seasonMasteryProgress * 100).rounded()))%")
+                                .font(.caption.weight(.semibold))
+                                .foregroundStyle(Palette.heroInkSoft)
+                        }
+                        ProgressBar(progress: seasonMasteryProgress, color: longTermAnchorPath.color, height: 7)
+                    }
+
+                    HStack(spacing: 8) {
+                        seasonMetric(value: "\(currentSeasonDay)/\(longTermAnchorPath.durationDays)", label: "days")
+                        seasonMetric(value: "\(Int((seasonWeeklyProgress * 100).rounded()))%", label: "this week")
+                        seasonMetric(value: "\(weeklyAnswersRemaining)", label: "answers left")
+                    }
+
+                    VStack(spacing: 8) {
+                        ForEach(currentSeasonLessons.prefix(3)) { lesson in
+                            seasonLessonRow(lesson)
+                        }
+                    }
+                }
+            }
+        }
+        .buttonStyle(.plain)
+        .accessibilityElement(children: .combine)
+        .accessibilityLabel(Text("Learning season. Week \(currentSeasonWeek) of \(seasonTotalWeeks), \(Int((seasonMasteryProgress * 100).rounded())) percent complete."))
+    }
+
+    private var seasonSubtitle: LocalizedStringResource {
+        if store.correctToday() < settings.dailyGoal {
+            return "Your long-term plan stays alive with today's small target."
+        }
+        if reviewCount > 0 {
+            return "A few reviews protect this week's progress before you move on."
+        }
+        if let currentSeasonLesson {
+            return "This week's anchor: \(currentSeasonLesson.title)."
+        }
+        return "Keep the multi-month roadmap warm with one focused session."
+    }
+
+    private func seasonMetric(value: String, label: LocalizedStringResource) -> some View {
+        VStack(alignment: .leading, spacing: 3) {
+            Text(verbatim: value)
+                .font(.bodyM.weight(.semibold))
+                .foregroundStyle(Palette.heroInk)
+                .lineLimit(1)
+                .minimumScaleFactor(0.78)
+            Text(label)
+                .font(.caption)
+                .foregroundStyle(Palette.heroInkSoft)
+                .lineLimit(1)
+                .minimumScaleFactor(0.78)
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .padding(10)
+        .background(Palette.heroInk.opacity(0.07), in: RoundedRectangle(cornerRadius: 12, style: .continuous))
+    }
+
+    private func seasonLessonRow(_ lesson: Lesson) -> some View {
+        HStack(spacing: 10) {
+            let tint = topic(containing: lesson)?.color ?? longTermAnchorPath.color
+            Image(systemName: topic(containing: lesson)?.icon ?? "book.closed")
+                .font(.system(size: 13, weight: .semibold))
+                .foregroundStyle(tint)
+                .frame(width: 28, height: 28)
+                .background(tint.opacity(0.16), in: Circle())
+                .accessibilityHidden(true)
+
+            VStack(alignment: .leading, spacing: 4) {
+                Text(lesson.title)
+                    .font(.bodyM.weight(.semibold))
+                    .foregroundStyle(Palette.heroInk)
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.82)
+                ProgressBar(progress: store.mastery(for: lesson), color: tint, height: 4)
+                    .frame(maxWidth: 120)
+            }
+
+            Spacer(minLength: 0)
+
+            Text("\(Int((store.mastery(for: lesson) * 100).rounded()))%")
+                .font(.caption.weight(.semibold))
+                .foregroundStyle(Palette.heroInkSoft)
+                .frame(width: 38, alignment: .trailing)
+        }
+        .padding(11)
+        .background(Palette.heroInk.opacity(0.07), in: RoundedRectangle(cornerRadius: 12, style: .continuous))
+    }
+
+    private func openSeasonLesson() {
+        guard let lesson = currentSeasonLesson else {
+            open(longTermAnchorPath)
+            return
+        }
+        if isLocked(lesson) {
+            showPaywall = true
+        } else {
+            presented = lesson
         }
     }
 
