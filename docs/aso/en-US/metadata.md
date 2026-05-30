@@ -138,6 +138,7 @@ New:
 • Next 3 Sessions: your personal plan now shows the next concrete lessons to study
 • 7-Day Focus: a clearer weekly habit card turns your recommended path into seven small sessions
 • Review Forecast: Home now shows what is due today, tomorrow, and in the next 7 days
+• Next Study Targets: Progress now highlights the concrete lessons that can move your roadmap fastest
 • Sequences & Series: new algebra practice for arithmetic sequences, geometric sequences, and sums
 • Roadmap Phases: Progress now groups the curriculum into Foundations, Exam Core, and Extension tracks
 • Rich Path Previews: guided paths now show duration, lesson count, and the next concrete lesson
@@ -159,6 +160,7 @@ New:
 • Exam Sprint and Weak Spot Drill for faster focused practice
 
 Improved:
+• Progress now includes lesson-level study targets, not only topic percentages
 • Clearer learning path guidance on Home
 • Better premium feel with more personalized study flow
 • Expanded curriculum: 79 lessons and 395 guided questions across 9 topics

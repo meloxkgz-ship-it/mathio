@@ -3609,6 +3609,17 @@ private struct MistakeFocus: Identifiable {
     var misses: Int { max(0, entry.attempts - entry.correct) }
 }
 
+private struct LessonTarget: Identifiable {
+    let topic: Topic
+    let lesson: Lesson
+    let mastery: Double
+
+    var id: String { lesson.id }
+    var remainingQuestions: Int {
+        max(0, lesson.questions.count - Int((mastery * Double(lesson.questions.count)).rounded()))
+    }
+}
+
 struct StatsView: View {
     @Bindable var store: Store
     @Bindable var settings: UserSettings
@@ -3651,6 +3662,20 @@ struct StatsView: View {
     }
     private var hasAnyProgress: Bool {
         store.answered.values.contains { $0.attempts > 0 }
+    }
+    private var lessonTargets: [LessonTarget] {
+        topics.flatMap { topic in
+            topic.lessons.map { lesson in
+                LessonTarget(topic: topic, lesson: lesson, mastery: store.mastery(for: lesson))
+            }
+        }
+        .filter { $0.mastery < 1.0 }
+        .sorted { lhs, rhs in
+            if lhs.mastery != rhs.mastery { return lhs.mastery < rhs.mastery }
+            return lhs.lesson.questions.count > rhs.lesson.questions.count
+        }
+        .prefix(4)
+        .map { $0 }
     }
     private var mistakeFocus: [MistakeFocus] {
         topics.flatMap { topic in
@@ -3767,6 +3792,7 @@ struct StatsView: View {
                 VStack(alignment: .leading, spacing: 18) {
                     headerStats
                     forecastCard
+                    if !lessonTargets.isEmpty { studyTargetsCard }
                     achievementsCard
                     activityCard
                     masteryCard
@@ -3988,6 +4014,72 @@ struct StatsView: View {
         }
         .padding(12)
         .background(Palette.surface, in: RoundedRectangle(cornerRadius: 12, style: .continuous))
+    }
+
+    private var studyTargetsCard: some View {
+        Card(padding: 16, background: Palette.surface) {
+            VStack(alignment: .leading, spacing: 14) {
+                HStack(alignment: .top, spacing: 12) {
+                    Image(systemName: "scope")
+                        .font(.system(size: 17, weight: .semibold))
+                        .foregroundStyle(Palette.terracotta)
+                        .frame(width: 38, height: 38)
+                        .background(Palette.terracottaSoft, in: Circle())
+                    VStack(alignment: .leading, spacing: 3) {
+                        Text("Next study targets")
+                            .font(.titleM)
+                            .foregroundStyle(Palette.ink)
+                        Text("These lessons can move your roadmap fastest right now.")
+                            .font(.bodyM)
+                            .foregroundStyle(Palette.inkSoft)
+                            .fixedSize(horizontal: false, vertical: true)
+                    }
+                }
+
+                ForEach(lessonTargets) { target in
+                    lessonTargetRow(target)
+                }
+            }
+        }
+        .accessibilityElement(children: .contain)
+    }
+
+    private func lessonTargetRow(_ target: LessonTarget) -> some View {
+        VStack(alignment: .leading, spacing: 8) {
+            HStack(alignment: .top, spacing: 10) {
+                Image(systemName: target.topic.icon)
+                    .font(.system(size: 15, weight: .semibold))
+                    .foregroundStyle(target.topic.color)
+                    .frame(width: 30, height: 30)
+                    .background(target.topic.color.opacity(0.14), in: Circle())
+                VStack(alignment: .leading, spacing: 2) {
+                    Text(target.lesson.title)
+                        .font(.bodyM.weight(.semibold))
+                        .foregroundStyle(Palette.ink)
+                        .lineLimit(1)
+                    Text(target.topic.title)
+                        .font(.caption)
+                        .foregroundStyle(Palette.inkSoft)
+                        .lineLimit(1)
+                }
+                Spacer(minLength: 8)
+                Text("\(target.remainingQuestions) left")
+                    .font(.caption)
+                    .foregroundStyle(Palette.inkFaint)
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.78)
+            }
+
+            HStack(spacing: 8) {
+                ProgressBar(progress: target.mastery, color: target.topic.color, height: 5)
+                Text("\(Int((target.mastery * 100).rounded()))%")
+                    .font(.caption)
+                    .foregroundStyle(Palette.inkFaint)
+                    .frame(width: 36, alignment: .trailing)
+            }
+        }
+        .padding(12)
+        .background(Palette.surfaceMuted, in: RoundedRectangle(cornerRadius: 12, style: .continuous))
     }
 
     private var masteryCard: some View {
