@@ -6111,7 +6111,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "12-Wochen- und 90-Tage-Pfade machen die nächste Session klar."
+            "value": "12-Wochen- und 90-Tage-Pfade machen die nächste Einheit klar."
           }
         },
         "es": {
@@ -23799,7 +23799,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Eine kurze Rückkehr-Session ist bereit, bevor die Wiederholungsqueue wächst."
+            "value": "Eine kurze Rückkehr-Einheit ist bereit, bevor die Wiederholungsliste wächst."
           }
         },
         "es": {
@@ -23833,7 +23833,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Ein kurzer zweiter Durchlauf durch die Fragen, die du in dieser Session verpasst hast."
+            "value": "Ein kurzer zweiter Durchlauf durch die Fragen, die du in dieser Einheit verpasst hast."
           }
         },
         "es": {
@@ -23868,7 +23868,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Eine kurze Session reicht, um den Rhythmus wieder aufzubauen."
+            "value": "Eine kurze Einheit reicht, um den Rhythmus wieder aufzubauen."
           }
         },
         "es": {
@@ -32235,7 +32235,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Baue eine volle Woche kurzer Übungssessions auf."
+            "value": "Baue eine volle Woche mit kurzen Übungseinheiten auf."
           }
         },
         "es": {
@@ -35004,7 +35004,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Komm für drei kurze Sessions zurück, damit Mathio automatisch dazugehört."
+            "value": "Komm für drei kurze Einheiten zurück, damit Mathio automatisch dazugehört."
           }
         },
         "es": {
@@ -35891,7 +35891,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Letzte Session abgeschlossen"
+            "value": "Letzte Einheit abgeschlossen"
           }
         },
         "es": {
@@ -44048,7 +44048,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Abendsession?"
+            "value": "Abendeinheit?"
           }
         },
         "es": {
@@ -49441,7 +49441,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Komplette Roadmap gemeistert. Halte die Wiederholungen frisch."
+            "value": "Kompletten Lernplan gemeistert. Halte die Wiederholungen frisch."
           }
         },
         "es": {
@@ -56639,7 +56639,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Sammle weiter richtige Antworten, solange die Session warm ist."
+            "value": "Sammle weiter richtige Antworten, solange die Einheit warm ist."
           }
         },
         "es": {
@@ -56673,7 +56673,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Halte die Kette warm: Eine kurze Session reicht."
+            "value": "Halte die Kette warm: Eine kurze Einheit reicht."
           }
         },
         "es": {
@@ -57119,7 +57119,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Letzte Session"
+            "value": "Letzte Einheit"
           }
         },
         "es": {
@@ -59575,7 +59575,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Beherrsche 50 % der Roadmap."
+            "value": "Beherrsche 50 % des Lernplans."
           }
         },
         "es": {
@@ -59881,7 +59881,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Mathio macht aus falschen Antworten einen fokussierten Drill, damit Schwachstellen nicht in der Historie verschwinden."
+            "value": "Mathio macht aus falschen Antworten ein fokussiertes Training, damit Schwachstellen nicht in der Historie verschwinden."
           }
         },
         "es": {
@@ -60906,7 +60906,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Fehler-Drill"
+            "value": "Fehlertraining"
           }
         },
         "es": {
@@ -63742,7 +63742,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Nächste 3 Sessions"
+            "value": "Nächste 3 Einheiten"
           }
         },
         "es": {
@@ -70836,7 +70836,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Premium schaltet jede geplante Lektion, smarte Wiederholungen und Lösungswege frei, damit die nächste Session immer bereit ist."
+            "value": "Premium schaltet jede geplante Lektion, smarte Wiederholungen und Lösungswege frei, damit die nächste Einheit immer bereit ist."
           }
         },
         "es": {
@@ -76510,7 +76510,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Roadmap-Vorschau"
+            "value": "Lernplan-Vorschau"
           }
         },
         "es": {
@@ -78181,7 +78181,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Session-Auswertung"
+            "value": "Auswertung der Einheit"
           }
         },
         "es": {
@@ -78487,7 +78487,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Sieben geplante Sessions statt eines gesperrten Pfads"
+            "value": "Sieben geplante Einheiten statt eines gesperrten Pfads"
           }
         },
         "es": {
@@ -78521,7 +78521,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Sieben kleine Sessions aus deinem empfohlenen Pfad."
+            "value": "Sieben kleine Einheiten aus deinem empfohlenen Pfad."
           }
         },
         "es": {
@@ -84050,7 +84050,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Starte heute mit einer kurzen Session."
+            "value": "Starte heute mit einer kurzen Einheit."
           }
         },
         "es": {
@@ -102029,7 +102029,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Schwachstellen-Drill"
+            "value": "Schwachstellentraining"
           }
         },
         "es": {
@@ -105550,7 +105550,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Du hast gerade eine fokussierte Mathio-Session beendet. Zeig einem Freund, dass du die Gewohnheit aufbaust."
+            "value": "Du hast gerade eine fokussierte Mathio-Einheit beendet. Zeig einem Freund, dass du die Gewohnheit aufbaust."
           }
         },
         "es": {
@@ -106064,7 +106064,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Deine nächste Lektion ist für eine kurze Rückkehr-Session bereit."
+            "value": "Deine nächste Lektion ist für eine kurze Rückkehr-Einheit bereit."
           }
         },
         "es": {
@@ -108905,7 +108905,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Freezes"
+            "value": "Schutz"
           }
         },
         "es": {
@@ -118031,7 +118031,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Premium hält den täglichen Pfad offen, damit jede Session weiß, was davor passiert ist."
+            "value": "Premium hält den täglichen Pfad offen, damit jede Einheit weiß, was davor passiert ist."
           }
         },
         "es": {
@@ -119187,7 +119187,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Das Tagesziel ist erledigt. Die nächste Session kann mit Schwung starten."
+            "value": "Das Tagesziel ist erledigt. Die nächste Einheit kann mit Schwung starten."
           }
         },
         "es": {
@@ -119221,7 +119221,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Deine Serie wird zur Routine. Halte die nächste Session klein."
+            "value": "Deine Serie wird zur Routine. Halte die nächste Einheit klein."
           }
         },
         "es": {

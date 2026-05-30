@@ -53,6 +53,14 @@ APP_REVIEW_TRANSLATION_RE: dict[str, re.Pattern[str]] = {
 UNTRANSLATED_VALUE_BLOCKLIST = {
     "No relationship",
 }
+GERMAN_UI_MIX_RE = re.compile(
+    r"\b(?:Session|Sessions|Roadmap|Drill|Freezes)\b|Wiederholungsqueue",
+    re.IGNORECASE,
+)
+GERMAN_UI_MIX_EXCEPTIONS = (
+    "App Store",
+    "RevenueCat",
+)
 
 
 def placeholders(value: str) -> list[str]:
@@ -98,6 +106,12 @@ def main() -> int:
                 failures.append(f"{locale}: untranslated value for {key!r}")
             if STALE_MARKETING_RE.search(value):
                 failures.append(f"{locale}: stale marketing count for {key!r}: {value!r}")
+            if (
+                locale == "de"
+                and GERMAN_UI_MIX_RE.search(value)
+                and not any(exception in value for exception in GERMAN_UI_MIX_EXCEPTIONS)
+            ):
+                failures.append(f"{locale}: English UI term in German translation for {key!r}: {value!r}")
             if is_learning_review_key(key):
                 app_review_re = APP_REVIEW_TRANSLATION_RE.get(locale)
                 if app_review_re and app_review_re.search(value):
