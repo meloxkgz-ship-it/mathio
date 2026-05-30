@@ -1,13 +1,9 @@
-Willkommen bei Mathio.
+Dieses Update macht Mathio breiter und nützlicher für tägliches Üben.
 
-Eine ruhige, fokussierte Art, Mathe zu üben — Algebra, Geometrie, Analysis, Statistik, Lineare Algebra, Finanzmathematik und Diskrete Mathematik — Schritt für Schritt.
+• Neue Lektion: Steuern & Rabatte für Alltags- und Finanzmathe
+• Neue Lektion: Wahrheitstabellen für Logik und diskrete Mathematik
+• Mathio wächst auf 63 Lektionen und 315 geführte Aufgaben
+• Der persönliche Startplan und das zielbasierte Onboarding bleiben drin
+• Premium- und App-Store-Texte passen jetzt zum erweiterten Inhalt
 
-• Neue App-Sprachen: Spanisch, Französisch, Italienisch und Brasilianisches Portugiesisch
-• Neue Lektionsvisualisierungen für Graphen, Dreiecke, Zahlenstrahlen, Einheitskreis, Vektoren, Statistik und Zinswachstum
-• Dunkelmodus-Kontrast bei Primärbuttons und Lernkarten korrigiert
-• Schritt-für-Schritt-Lösung bei jeder falschen Antwort
-• Adaptive Lektionswahl, tägliche Serie mit Auto-Freezes, Spaced-Repetition-Wiederholung
-• Siri-Kurzbefehl („Mathe üben"), iPad-Layout, Branded Launch-Screen
-• Dunkelmodus, VoiceOver, vollständig DE + EN
-
-Zwei Minuten am Tag genügen. Keine Bestenlisten. Kein Tracking.
+Zwei Minuten am Tag decken jetzt noch mehr relevante Mathematik ab.

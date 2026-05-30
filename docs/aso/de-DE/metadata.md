@@ -52,9 +52,9 @@ Begründung:
 ## Werbetext (170 max — editierbar ohne Review)
 
 ```
-Neu: Sag „Hey Siri, Mathe üben" und du landest direkt in deiner heutigen Wiederholungs-Liste. Zwei Minuten am Tag genügen.
+Neu: 63 Lektionen und 315 geführte Aufgaben, jetzt mit Steuern, Rabatten, Wahrheitstabellen und klarem Tagesplan.
 ```
-**127 / 170**
+**113 / 170** — hebt Kataloggröße und neue alltagsnahe Inhalte hervor.
 
 Rotations-Ideen (monatlich tauschen):
 - `7 Tage gratis testen. Eine Lektion pro Tag — keine Bestenlisten, kein Streak-Druck. Einfach ruhiger Fortschritt.` (115)
@@ -122,6 +122,20 @@ Von Bruchrechnung bis Differentialrechnung. Zwei Minuten täglich genügen.
 ---
 
 ## Neuheiten (Whats New, 4000 max)
+
+### v1.0.9
+
+```
+Dieses Update macht Mathio breiter und nützlicher für tägliches Üben.
+
+• Neue Lektion: Steuern & Rabatte für Alltags- und Finanzmathe
+• Neue Lektion: Wahrheitstabellen für Logik und diskrete Mathematik
+• Mathio wächst auf 63 Lektionen und 315 geführte Aufgaben
+• Der persönliche Startplan und das zielbasierte Onboarding bleiben drin
+• Premium- und App-Store-Texte passen jetzt zum erweiterten Inhalt
+
+Zwei Minuten am Tag decken jetzt noch mehr relevante Mathematik ab.
+```
 
 ### v1.0 (Launch)
 

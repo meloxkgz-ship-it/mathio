@@ -53,9 +53,9 @@ Reasoning:
 ## Promotional Text (170 max — editable without review)
 
 ```
-New: tap "Practice math" with Siri to jump straight into your daily review queue. Two minutes a day is enough.
+New: 63 lessons and 315 guided questions, now with taxes, discounts, truth tables, and a clearer daily plan.
 ```
-**125 / 170** — leaves 45 chars to add a launch promo or seasonal hook.
+**108 / 170** — highlights current catalog size and new retention-oriented content.
 
 Rotation ideas (swap monthly):
 - `Free 7-day trial. Master one lesson a day — no leaderboards, no streaks-or-die guilt, just calm progress.` (113)
@@ -123,6 +123,20 @@ From fractions to derivatives. Two minutes a day is enough.
 ---
 
 ## What's New (per-release, 4000 max)
+
+### v1.0.9
+
+```
+This update makes Mathio broader and more useful for daily practice.
+
+• Adds Taxes & Discounts for real-world financial math
+• Adds Truth Tables for logic and discrete math foundations
+• Expands Mathio to 63 lessons and 315 guided questions
+• Keeps the new personalized start plan and goal-based onboarding
+• Updates premium and App Store copy so the content matches the app
+
+Two minutes a day now covers more of the math people actually need.
+```
 
 ### v1.0 (launch)
 
