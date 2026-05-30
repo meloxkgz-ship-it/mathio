@@ -2532,7 +2532,7 @@ struct LearningPath: Identifiable {
             subtitle: "Equations, lines, factoring",
             icon: "function",
             color: Palette.algebra,
-            lessons: [Curriculum.linearEquations, Curriculum.linesAndSlope, Curriculum.factoring,
+            lessons: [Curriculum.linearEquations, Curriculum.linesAndSlope, Curriculum.graphingLines, Curriculum.factoring,
                       Curriculum.inequalities, Curriculum.systems, Curriculum.absoluteValueEquations,
                       Curriculum.wordProblems, Curriculum.rationalExpressions],
             durationDays: 21
@@ -2543,7 +2543,7 @@ struct LearningPath: Identifiable {
             subtitle: "Lines, functions, exponents, growth",
             icon: "point.topleft.down.curvedto.point.bottomright.up",
             color: Palette.algebra,
-            lessons: [Curriculum.linesAndSlope, Curriculum.algFunctions, Curriculum.exponents,
+            lessons: [Curriculum.linesAndSlope, Curriculum.graphingLines, Curriculum.algFunctions, Curriculum.exponents,
                       Curriculum.exponentialGrowth, Curriculum.logarithms, Curriculum.quadratics, Curriculum.polynomials,
                       Curriculum.rationalExpressions],
             durationDays: 21
@@ -2566,7 +2566,7 @@ struct LearningPath: Identifiable {
             icon: "checklist",
             color: Palette.terracotta,
             lessons: [Curriculum.preAlgFractions, Curriculum.linearEquations, Curriculum.pythagoras,
-                      Curriculum.exponentialGrowth, Curriculum.wordProblems, Curriculum.trigBasics, Curriculum.descriptiveStats,
+                      Curriculum.exponentialGrowth, Curriculum.graphingLines, Curriculum.wordProblems, Curriculum.trigBasics, Curriculum.descriptiveStats,
                       Curriculum.conditionalProbability, Curriculum.standardDeviation,
                       Curriculum.correlationRegression],
             durationDays: 14
@@ -5212,7 +5212,7 @@ struct PaywallView: View {
 
     private var bullets: some View {
         VStack(alignment: .leading, spacing: 12) {
-            row("books.vertical.fill", "87 lessons across algebra, calculus, geometry, statistics, finance, and more")
+            row("books.vertical.fill", "88 lessons across algebra, calculus, geometry, statistics, finance, and more")
             row("map.fill", "Guided paths show exactly what to study next")
             row("brain.head.profile", "Adaptive practice focuses on weak spots")
             row("arrow.triangle.2.circlepath", "Spaced repetition brings back what you are about to forget")
@@ -5231,7 +5231,7 @@ struct PaywallView: View {
                 valueProof("sparkles", "Study coach", "One best next step every time you open Mathio")
                 valueProof("heart.text.square.fill", "Learning health", "See whether your habit, reviews, and mastery are on track")
                 valueProof("arrow.triangle.2.circlepath", "Smart review", "Questions return before you forget them")
-                valueProof("map.fill", "Full roadmap", "All 87 lessons and 435 guided questions")
+                valueProof("map.fill", "Full roadmap", "All 88 lessons and 440 guided questions")
             }
         }
     }

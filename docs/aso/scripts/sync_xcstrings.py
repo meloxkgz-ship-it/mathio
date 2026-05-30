@@ -29,8 +29,8 @@ PROSE: dict[str, str] = {
         "84 Lektionen in Algebra, Analysis, Geometrie, Statistik, Finanzmathe und mehr",
     "85 lessons across algebra, calculus, geometry, statistics, finance, and more":
         "85 Lektionen in Algebra, Analysis, Geometrie, Statistik, Finanzmathe und mehr",
-    "87 lessons across algebra, calculus, geometry, statistics, finance, and more":
-        "87 Lektionen in Algebra, Analysis, Geometrie, Statistik, Finanzmathe und mehr",
+    "88 lessons across algebra, calculus, geometry, statistics, finance, and more":
+        "88 Lektionen in Algebra, Analysis, Geometrie, Statistik, Finanzmathe und mehr",
     "A quick rating helps more learners find it.": "Eine kurze Bewertung hilft mehr Lernenden, Mathio zu finden.",
     "Accuracy": "Trefferquote",
     "active days": "aktive Tage",
@@ -117,8 +117,10 @@ PROSE: dict[str, str] = {
     "All equal": "Alle gleich",
     "All possible outcomes": "Alle möglichen Ergebnisse",
     "All 85 lessons and 425 guided questions": "Alle 85 Lektionen und 425 geführten Aufgaben",
-    "All 87 lessons and 435 guided questions": "Alle 87 Lektionen und 435 geführten Aufgaben",
+    "All 88 lessons and 440 guided questions": "Alle 88 Lektionen und 440 geführten Aufgaben",
     "answers left": "Antworten übrig",
+    "A line has slope 3. From point (0, 2), what point do you reach after run 1?":
+        "Eine Gerade hat Steigung 3. Welchen Punkt erreichst du von (0, 2) aus nach einem Schritt nach rechts?",
     "A bacteria count doubles every hour. Starting from 50, how many after 3 hours?":
         "Eine Bakterienzahl verdoppelt sich jede Stunde. Start bei 50: Wie viele sind es nach 3 Stunden?",
     "A phone worth $800 loses 25% of its value. What is it worth after one year?":
@@ -138,22 +140,52 @@ PROSE: dict[str, str] = {
         "Exponentielles Wachstum addiert in jedem Schritt denselben Betrag.",
     "Exponential models multiply by the same factor each step. They explain interest, population growth, depreciation, half-life, and many real-world change problems.":
         "Exponentielle Modelle multiplizieren in jedem Schritt mit demselben Faktor. Sie erklären Zinsen, Bevölkerungswachstum, Wertverlust, Halbwertszeit und viele reale Veränderungsprobleme.",
+    "Every point on a vertical line has the same x-value.":
+        "Jeder Punkt auf einer vertikalen Gerade hat denselben x-Wert.",
+    "For y = 2x + 3, what is the y-intercept?":
+        "Wie groß ist der y-Achsenabschnitt von y = 2x + 3?",
+    "For y = 2x + 3, which point is on the line when x = 1?":
+        "Welcher Punkt liegt bei x = 1 auf der Gerade y = 2x + 3?",
+    "Graphing Lines": "Geraden zeichnen",
+    "Graphing a line means turning an equation into points. Start at the y-intercept, use slope as rise over run, and check with a second point.":
+        "Eine Gerade zu zeichnen bedeutet, eine Gleichung in Punkte zu übersetzen. Starte am y-Achsenabschnitt, nutze die Steigung als Anstieg pro Schritt und prüfe mit einem zweiten Punkt.",
     "For decay, multiply by a factor below 1 each period.":
         "Bei Zerfall multiplizierst du pro Zeitraum mit einem Faktor unter 1.",
     "Growth factor: 1.10": "Wachstumsfaktor: 1,10",
     "Growth means a factor above 1.": "Wachstum bedeutet einen Faktor über 1.",
     "Growth or decay model": "Wachstums- oder Zerfallsmodell",
+    "In y = mx + b, b is the y-intercept.": "In y = mx + b ist b der y-Achsenabschnitt.",
     "Linear adds the same amount; exponential multiplies.": "Linear addiert denselben Betrag; exponentiell multipliziert.",
     "Lines, functions, exponents, growth": "Geraden, Funktionen, Potenzen, Wachstum",
     "Model: 200(1.05)^t": "Modell: 200(1,05)^t",
+    "New point: (1, 5)": "Neuer Punkt: (1, 5)",
     "Percent to factor": "Prozent zu Faktor",
+    "Plot b on the y-axis, then use slope m to move rise over run.":
+        "Trage b auf der y-Achse ein und nutze dann die Steigung m als Anstieg pro Schritt.",
+    "Plug x = 1 into the equation.": "Setze x = 1 in die Gleichung ein.",
+    "Run 1 right and rise 3": "Gehe 1 nach rechts und 3 nach oben",
+    "Set y = 0.": "Setze y = 0.",
+    "Slope 3 means rise 3 for run 1.": "Steigung 3 bedeutet: 3 nach oben bei 1 nach rechts.",
+    "Slope-intercept graph": "Graph aus Steigung und Achsenabschnitt",
+    "So (1, 5) is on the line.": "Also liegt (1, 5) auf der Gerade.",
+    "So x = constant is vertical.": "Also ist x = konstant vertikal.",
+    "Start at (0, 2)": "Starte bei (0, 2)",
     "Starting amount = 200": "Startwert = 200",
+    "The graph crosses the y-axis at (0, 3).": "Der Graph schneidet die y-Achse bei (0, 3).",
+    "The x-intercept is (4, 0).": "Der x-Achsenabschnitt ist (4, 0).",
     "The added amount usually changes each step": "Der addierte Betrag ändert sich normalerweise in jedem Schritt",
     "True or false: Exponential growth adds the same amount each step.":
         "Wahr oder falsch: Exponentielles Wachstum addiert in jedem Schritt denselben Betrag.",
+    "True or false: A vertical line has equation x = constant.":
+        "Wahr oder falsch: Eine vertikale Gerade hat die Gleichung x = konstant.",
     "Use 100(1.10)².": "Nutze 100(1,10)².",
+    "Vertical lines keep x fixed": "Vertikale Geraden halten x fest",
+    "What is the x-intercept of y = x − 4?": "Wie groß ist der x-Achsenabschnitt von y = x − 4?",
+    "Where the line crosses the x-axis, y equals 0.": "Wo die Gerade die x-Achse schneidet, gilt y = 0.",
+    "Where the line crosses the y-axis, x equals 0.": "Wo die Gerade die y-Achse schneidet, gilt x = 0.",
     "Which expression models 5% growth for t years from 200?":
         "Welcher Ausdruck modelliert 5 % Wachstum über t Jahre ausgehend von 200?",
+    "x-intercept": "x-Achsenabschnitt",
     "All values equal the mean": "Alle Werte entsprechen dem Mittelwert",
     "Always check in the original equation": "Prüfe immer in der ursprünglichen Gleichung",
     "2 is not one of the payouts": "2 ist keiner der möglichen Auszahlungswerte",

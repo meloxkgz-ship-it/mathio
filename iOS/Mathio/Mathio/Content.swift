@@ -1125,6 +1125,63 @@ enum Curriculum {
         ]
     )
 
+    static let graphingLines = Lesson(
+        id: "alg.graphlines",
+        title: "Graphing Lines",
+        intro: "Graphing a line means turning an equation into points. Start at the y-intercept, use slope as rise over run, and check with a second point.",
+        formulas: [
+            Formula(key: "alg.graphlines.f1",
+                    name: "Slope-intercept graph",
+                    math: "{var:y} = {var:m}{var:x} + {var:b}",
+                    explanation: "Plot b on the y-axis, then use slope m to move rise over run."),
+            Formula(key: "alg.graphlines.f2",
+                    name: "x-intercept",
+                    math: "set {var:y} = 0",
+                    explanation: "Where the line crosses the x-axis, y equals 0."),
+            Formula(key: "alg.graphlines.f3",
+                    name: "y-intercept",
+                    math: "set {var:x} = 0",
+                    explanation: "Where the line crosses the y-axis, x equals 0."),
+        ],
+        questions: [
+            Question(id: "alg.graphlines.q1",
+                     prompt: "For y = 2x + 3, what is the y-intercept?",
+                     math: nil,
+                     kind: .freeAnswer(accepted: ["3", "(0,3)", "(0, 3)"]),
+                     hint: "In y = mx + b, b is the y-intercept.",
+                     solutionSteps: ["b = 3", "The graph crosses the y-axis at (0, 3)."]),
+            Question(id: "alg.graphlines.q2",
+                     prompt: "For y = 2x + 3, which point is on the line when x = 1?",
+                     math: nil,
+                     kind: .multipleChoice(options: [
+                        .init(label: "(1, 5)", math: nil),
+                        .init(label: "(1, 3)", math: nil),
+                        .init(label: "(5, 1)", math: nil),
+                        .init(label: "(0, 2)", math: nil),
+                     ], correctIndex: 0),
+                     hint: "Plug x = 1 into the equation.",
+                     solutionSteps: ["y = 2(1) + 3", "y = 5", "So (1, 5) is on the line."]),
+            Question(id: "alg.graphlines.q3",
+                     prompt: "A line has slope 3. From point (0, 2), what point do you reach after run 1?",
+                     math: nil,
+                     kind: .freeAnswer(accepted: ["(1,5)", "(1, 5)"]),
+                     hint: "Slope 3 means rise 3 for run 1.",
+                     solutionSteps: ["Start at (0, 2)", "Run 1 right and rise 3", "New point: (1, 5)"]),
+            Question(id: "alg.graphlines.q4",
+                     prompt: "What is the x-intercept of y = x − 4?",
+                     math: nil,
+                     kind: .freeAnswer(accepted: ["4", "(4,0)", "(4, 0)"]),
+                     hint: "Set y = 0.",
+                     solutionSteps: ["0 = x − 4", "x = 4", "The x-intercept is (4, 0)."]),
+            Question(id: "alg.graphlines.q5",
+                     prompt: "True or false: A vertical line has equation x = constant.",
+                     math: nil,
+                     kind: .trueFalse(answer: true),
+                     hint: "Every point on a vertical line has the same x-value.",
+                     solutionSteps: ["Vertical lines keep x fixed", "So x = constant is vertical."]),
+        ]
+    )
+
     // MARK: - Calculus (extended)
 
     static let chainRule = Lesson(
@@ -4590,7 +4647,7 @@ enum Curriculum {
               icon: "function",
               color: Palette.algebra,
               lessons: [linearEquations, quadratics, completingSquare, exponents, logarithms, exponentialGrowth, factoring,
-                        linesAndSlope, inequalities, systems, polynomials, algFunctions,
+                        linesAndSlope, graphingLines, inequalities, systems, polynomials, algFunctions,
                         functionModeling, sequencesSeries, wordProblems, absoluteValueEquations,
                         radicalEquations, rationalExpressions]),
         Topic(id: "calculus",
