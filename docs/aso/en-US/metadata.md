@@ -53,9 +53,9 @@ Reasoning:
 ## Promotional Text (170 max — editable without review)
 
 ```
-New: Rich Path Previews, Tips & Bill Splitting, 7-Day Focus, and 75 lessons.
+New: Composite Areas, Rich Path Previews, 7-Day Focus, and 76 lessons.
 ```
-**78 / 170** — highlights current catalog size, retention improvements, and new exam-prep content.
+**73 / 170** — highlights current catalog size, retention improvements, and new exam-prep content.
 
 Rotation ideas (swap monthly):
 - `Free 7-day trial. Master one lesson a day — no leaderboards, no streaks-or-die guilt, just calm progress.` (113)
@@ -110,7 +110,7 @@ Available in English, German, Spanish, French, Italian, and Brazilian Portuguese
 TOPICS
 Pre-Algebra, Algebra, Calculus, Geometry, Trigonometry, Statistics, Linear Algebra, Financial Math, and Discrete Math.
 
-75 lessons and 375 hand-crafted questions cover fractions, percentages, percent change, equations, word problems, functions, derivatives, integrals, related rates, vectors, matrices, probability, regression, normal distribution, confidence intervals, rational expressions, coordinate geometry, budgeting, unit prices, tips, bill splitting, loans, taxes, discounts, truth tables, logic, graph theory, and more.
+76 lessons and 380 hand-crafted questions cover fractions, percentages, percent change, equations, word problems, functions, derivatives, integrals, related rates, vectors, matrices, probability, regression, normal distribution, confidence intervals, rational expressions, coordinate geometry, composite areas, budgeting, unit prices, tips, bill splitting, loans, taxes, discounts, truth tables, logic, graph theory, and more.
 
 SUBSCRIPTION
 Mathio is free to try. Unlock all topics with:
@@ -143,6 +143,7 @@ New:
 • Tips & Bill Splitting: practical finance practice for tips, shared totals, and fair shares
 • Comeback Mission: a gentle 5-question restart when you return after a break
 • Coordinate Geometry: new geometry practice for midpoint, distance, slope, and coordinate-plane reasoning
+• Composite Areas: new geometry practice for splitting shapes, subtracting cutouts, and avoiding overlap mistakes
 • Unit Prices: new financial math practice for comparing real deals
 • Percent Change: new everyday math practice for discounts, growth, and loss
 • Word Problems: new algebra practice for translating real situations into equations
@@ -155,7 +156,7 @@ New:
 Improved:
 • Clearer learning path guidance on Home
 • Better premium feel with more personalized study flow
-• Expanded curriculum: 75 lessons and 375 guided questions across 9 topics
+• Expanded curriculum: 76 lessons and 380 guided questions across 9 topics
 
 Fixed:
 • Continued cleanup of localized app copy to avoid mixed German/English flows

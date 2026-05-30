@@ -2204,6 +2204,59 @@ enum Curriculum {
         ]
     )
 
+    static let compositeAreas = Lesson(
+        id: "geo.composite",
+        title: "Composite Areas",
+        intro: "Composite areas come from splitting a shape into familiar pieces, then adding or subtracting their areas.",
+        formulas: [
+            Formula(key: "geo.composite.f1",
+                    name: "Add pieces",
+                    math: "total area = area 1 + area 2 + …",
+                    explanation: "Use this when the shape is built from non-overlapping parts."),
+            Formula(key: "geo.composite.f2",
+                    name: "Subtract cutouts",
+                    math: "remaining area = outer area − cutout area",
+                    explanation: "Use this when a smaller shape is removed from a larger one."),
+        ],
+        questions: [
+            Question(id: "geo.composite.q1",
+                     prompt: "A shape is made from a 6 by 4 rectangle and a triangle with base 6 and height 3. Total area?",
+                     math: nil,
+                     kind: .freeAnswer(accepted: ["33"]),
+                     hint: "Add rectangle area and triangle area.",
+                     solutionSteps: ["Rectangle: 6 · 4 = 24", "Triangle: 1/2 · 6 · 3 = 9", "Total: 24 + 9 = 33"]),
+            Question(id: "geo.composite.q2",
+                     prompt: "A 10 by 8 rectangle has a 2 by 3 rectangle cut out. Remaining area?",
+                     math: nil,
+                     kind: .freeAnswer(accepted: ["74"]),
+                     hint: "Subtract the cutout from the outer rectangle.",
+                     solutionSteps: ["Outer area: 10 · 8 = 80", "Cutout: 2 · 3 = 6", "Remaining: 80 − 6 = 74"]),
+            Question(id: "geo.composite.q3",
+                     prompt: "Which strategy is best for an L-shaped area?",
+                     math: nil,
+                     kind: .multipleChoice(options: [
+                        .init(label: "Split into rectangles", math: nil),
+                        .init(label: "Ignore the missing part", math: nil),
+                        .init(label: "Use only circumference", math: nil),
+                        .init(label: "Always use π", math: nil),
+                     ], correctIndex: 0),
+                     hint: "L-shapes are usually rectangles joined or cut.",
+                     solutionSteps: ["Break the L-shape into rectangles", "Add the pieces or subtract the missing rectangle"]),
+            Question(id: "geo.composite.q4",
+                     prompt: "A square of side 5 has a circle of area 9π removed. Remaining area?",
+                     math: nil,
+                     kind: .freeAnswer(accepted: ["25-9pi", "25 - 9pi", "25-9π", "25 - 9π"]),
+                     hint: "Square area minus circle area.",
+                     solutionSteps: ["Square area: 5² = 25", "Remaining area: 25 − 9π"]),
+            Question(id: "geo.composite.q5",
+                     prompt: "True or false: when two parts overlap, you can add both full areas without adjustment.",
+                     math: nil,
+                     kind: .trueFalse(answer: false),
+                     hint: "Overlapping area would be counted twice.",
+                     solutionSteps: ["Adding full overlapping parts double-counts the overlap", "You must subtract the overlap once"]),
+        ]
+    )
+
     static let coordinateGeometry = Lesson(
         id: "geo.coord",
         title: "Coordinate Geometry",
@@ -3958,7 +4011,7 @@ enum Curriculum {
               icon: "triangle",
               color: Palette.geometry,
               lessons: [pythagoras, circles, trianglesArea, volumes,
-                        angles, quadrilaterals, geoSurfaceArea, coordinateGeometry]),
+                        angles, quadrilaterals, geoSurfaceArea, compositeAreas, coordinateGeometry]),
         Topic(id: "trig",
               title: "Trigonometry",
               subtitle: "Angles & ratios",

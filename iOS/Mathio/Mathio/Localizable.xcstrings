@@ -4032,13 +4032,13 @@
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "17 dividido por 5 hojas resto 2"
+            "value": "17 dividido entre 5 deja resto 2"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "17 divisé par 5 feuilles reste 2"
+            "value": "17 divisé par 5 laisse un reste de 2"
           }
         },
         "it": {
@@ -5326,13 +5326,13 @@
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "23 dividido por 10 hojas resto 3"
+            "value": "23 dividido entre 10 deja resto 3"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "23 divisé par 10 feuilles reste 3"
+            "value": "23 divisé par 10 laisse un reste de 3"
           }
         },
         "it": {
@@ -84817,6 +84817,1231 @@
           "stringUnit": {
             "state": "translated",
             "value": "75 lições de álgebra, cálculo, geometria, estatística, finanças e mais"
+          }
+        }
+      }
+    },
+    "Composite Areas": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zusammengesetzte Flächen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Áreas compuestas"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aires composées"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aree composte"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Áreas compostas"
+          }
+        }
+      }
+    },
+    "Composite areas come from splitting a shape into familiar pieces, then adding or subtracting their areas.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zusammengesetzte Flächen entstehen, indem du eine Figur in bekannte Teile zerlegst und deren Flächen addierst oder subtrahierst."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Las áreas compuestas se obtienen al dividir una figura en partes conocidas y luego sumar o restar sus áreas."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les aires composées viennent du découpage d’une figure en parties familières, puis de l’addition ou de la soustraction de leurs aires."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le aree composte si trovano dividendo una figura in parti note e poi sommando o sottraendo le loro aree."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Áreas compostas vêm da divisão de uma figura em partes conhecidas e depois da soma ou subtração de suas áreas."
+          }
+        }
+      }
+    },
+    "Add pieces": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Teile addieren"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sumar partes"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Additionner les parties"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Somma le parti"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Somar partes"
+          }
+        }
+      }
+    },
+    "total area = area 1 + area 2 + …": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gesamtfläche = Fläche 1 + Fläche 2 + …"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "área total = área 1 + área 2 + …"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "aire totale = aire 1 + aire 2 + …"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "area totale = area 1 + area 2 + …"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "área total = área 1 + área 2 + …"
+          }
+        }
+      }
+    },
+    "Use this when the shape is built from non-overlapping parts.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nutze das, wenn die Figur aus nicht überlappenden Teilen besteht."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Úsalo cuando la figura está formada por partes que no se superponen."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Utilise cela quand la figure est construite avec des parties qui ne se chevauchent pas."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usalo quando la figura è composta da parti che non si sovrappongono."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Use isso quando a figura é formada por partes que não se sobrepõem."
+          }
+        }
+      }
+    },
+    "Subtract cutouts": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ausschnitte subtrahieren"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Restar recortes"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Soustraire les découpes"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sottrai i ritagli"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Subtrair recortes"
+          }
+        }
+      }
+    },
+    "remaining area = outer area − cutout area": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Restfläche = Außenfläche − Ausschnittsfläche"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "área restante = área exterior − área recortada"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "aire restante = aire extérieure − aire découpée"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "area rimanente = area esterna − area ritagliata"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "área restante = área externa − área recortada"
+          }
+        }
+      }
+    },
+    "Use this when a smaller shape is removed from a larger one.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nutze das, wenn eine kleinere Figur aus einer größeren entfernt wird."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Úsalo cuando se quita una figura más pequeña de una más grande."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Utilise cela quand une petite figure est retirée d’une plus grande."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usalo quando una figura più piccola viene rimossa da una più grande."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Use isso quando uma figura menor é removida de uma maior."
+          }
+        }
+      }
+    },
+    "A shape is made from a 6 by 4 rectangle and a triangle with base 6 and height 3. Total area?": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eine Figur besteht aus einem 6-mal-4-Rechteck und einem Dreieck mit Basis 6 und Höhe 3. Gesamtfläche?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una figura está hecha de un rectángulo de 6 por 4 y un triángulo con base 6 y altura 3. ¿Área total?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Une figure est composée d’un rectangle 6 par 4 et d’un triangle de base 6 et hauteur 3. Aire totale ?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una figura è composta da un rettangolo 6 per 4 e da un triangolo con base 6 e altezza 3. Area totale?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uma figura é feita de um retângulo 6 por 4 e um triângulo com base 6 e altura 3. Área total?"
+          }
+        }
+      }
+    },
+    "Add rectangle area and triangle area.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Addiere Rechtecksfläche und Dreiecksfläche."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Suma el área del rectángulo y el área del triángulo."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Additionne l’aire du rectangle et l’aire du triangle."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Somma l’area del rettangolo e l’area del triangolo."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Some a área do retângulo e a área do triângulo."
+          }
+        }
+      }
+    },
+    "Rectangle: 6 · 4 = 24": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rechteck: 6 · 4 = 24"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rectángulo: 6 · 4 = 24"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rectangle : 6 · 4 = 24"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rettangolo: 6 · 4 = 24"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Retângulo: 6 · 4 = 24"
+          }
+        }
+      }
+    },
+    "Triangle: 1/2 · 6 · 3 = 9": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dreieck: 1/2 · 6 · 3 = 9"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Triángulo: 1/2 · 6 · 3 = 9"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Triangle : 1/2 · 6 · 3 = 9"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Triangolo: 1/2 · 6 · 3 = 9"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Triângulo: 1/2 · 6 · 3 = 9"
+          }
+        }
+      }
+    },
+    "Total: 24 + 9 = 33": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gesamt: 24 + 9 = 33"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Total: 24 + 9 = 33"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Total : 24 + 9 = 33"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Totale: 24 + 9 = 33"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Total: 24 + 9 = 33"
+          }
+        }
+      }
+    },
+    "A 10 by 8 rectangle has a 2 by 3 rectangle cut out. Remaining area?": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aus einem 10-mal-8-Rechteck wird ein 2-mal-3-Rechteck ausgeschnitten. Restfläche?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un rectángulo de 10 por 8 tiene recortado un rectángulo de 2 por 3. ¿Área restante?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un rectangle 10 par 8 a une découpe rectangulaire 2 par 3. Aire restante ?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Da un rettangolo 10 per 8 viene ritagliato un rettangolo 2 per 3. Area rimanente?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Um retângulo 10 por 8 tem um retângulo 2 por 3 recortado. Área restante?"
+          }
+        }
+      }
+    },
+    "Subtract the cutout from the outer rectangle.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Subtrahiere den Ausschnitt vom äußeren Rechteck."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Resta el recorte del rectángulo exterior."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Soustrais la découpe du rectangle extérieur."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sottrai il ritaglio dal rettangolo esterno."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Subtraia o recorte do retângulo externo."
+          }
+        }
+      }
+    },
+    "Outer area: 10 · 8 = 80": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Außenfläche: 10 · 8 = 80"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Área exterior: 10 · 8 = 80"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aire extérieure : 10 · 8 = 80"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Area esterna: 10 · 8 = 80"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Área externa: 10 · 8 = 80"
+          }
+        }
+      }
+    },
+    "Cutout: 2 · 3 = 6": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ausschnitt: 2 · 3 = 6"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recorte: 2 · 3 = 6"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Découpe : 2 · 3 = 6"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ritaglio: 2 · 3 = 6"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recorte: 2 · 3 = 6"
+          }
+        }
+      }
+    },
+    "Remaining: 80 − 6 = 74": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rest: 80 − 6 = 74"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Restante: 80 − 6 = 74"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Restant : 80 − 6 = 74"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rimanente: 80 − 6 = 74"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Restante: 80 − 6 = 74"
+          }
+        }
+      }
+    },
+    "Which strategy is best for an L-shaped area?": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Welche Strategie ist am besten für eine L-förmige Fläche?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "¿Qué estrategia es mejor para un área en forma de L?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quelle stratégie est la meilleure pour une aire en forme de L ?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quale strategia è migliore per un’area a forma di L?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Qual estratégia é melhor para uma área em forma de L?"
+          }
+        }
+      }
+    },
+    "Split into rectangles": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In Rechtecke zerlegen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dividir en rectángulos"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Découper en rectangles"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dividere in rettangoli"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dividir em retângulos"
+          }
+        }
+      }
+    },
+    "Ignore the missing part": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Den fehlenden Teil ignorieren"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ignorar la parte faltante"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ignorer la partie manquante"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ignorare la parte mancante"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ignorar a parte faltante"
+          }
+        }
+      }
+    },
+    "Use only circumference": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nur Umfang verwenden"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usar solo la circunferencia"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Utiliser seulement le périmètre"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usare solo la circonferenza"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usar apenas a circunferência"
+          }
+        }
+      }
+    },
+    "Always use π": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Immer π verwenden"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usar siempre π"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toujours utiliser π"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usare sempre π"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sempre usar π"
+          }
+        }
+      }
+    },
+    "L-shapes are usually rectangles joined or cut.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L-Formen sind meist zusammengesetzte oder ausgeschnittene Rechtecke."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Las formas en L suelen ser rectángulos unidos o recortados."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les formes en L sont généralement des rectangles assemblés ou découpés."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le forme a L sono di solito rettangoli uniti o ritagliati."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Formas em L geralmente são retângulos unidos ou recortados."
+          }
+        }
+      }
+    },
+    "Break the L-shape into rectangles": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zerlege die L-Form in Rechtecke"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Divide la forma en L en rectángulos"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Découpe la forme en L en rectangles"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dividi la forma a L in rettangoli"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Divida a forma em L em retângulos"
+          }
+        }
+      }
+    },
+    "Add the pieces or subtract the missing rectangle": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Addiere die Teile oder subtrahiere das fehlende Rechteck"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Suma las partes o resta el rectángulo faltante"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Additionne les parties ou soustrais le rectangle manquant"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Somma le parti o sottrai il rettangolo mancante"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Some as partes ou subtraia o retângulo faltante"
+          }
+        }
+      }
+    },
+    "A square of side 5 has a circle of area 9π removed. Remaining area?": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aus einem Quadrat mit Seitenlänge 5 wird ein Kreis mit Fläche 9π entfernt. Restfläche?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A un cuadrado de lado 5 se le quita un círculo de área 9π. ¿Área restante?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dans un carré de côté 5, on retire un cercle d’aire 9π. Aire restante ?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Da un quadrato di lato 5 viene rimosso un cerchio di area 9π. Area rimanente?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "De um quadrado de lado 5 é removido um círculo de área 9π. Área restante?"
+          }
+        }
+      }
+    },
+    "Square area minus circle area.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quadratfläche minus Kreisfläche."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Área del cuadrado menos área del círculo."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aire du carré moins aire du cercle."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Area del quadrato meno area del cerchio."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Área do quadrado menos área do círculo."
+          }
+        }
+      }
+    },
+    "Square area: 5² = 25": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quadratfläche: 5² = 25"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Área del cuadrado: 5² = 25"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aire du carré : 5² = 25"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Area del quadrato: 5² = 25"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Área do quadrado: 5² = 25"
+          }
+        }
+      }
+    },
+    "Remaining area: 25 − 9π": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Restfläche: 25 − 9π"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Área restante: 25 − 9π"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aire restante : 25 − 9π"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Area rimanente: 25 − 9π"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Área restante: 25 − 9π"
+          }
+        }
+      }
+    },
+    "True or false: when two parts overlap, you can add both full areas without adjustment.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wahr oder falsch: Wenn sich zwei Teile überlappen, kannst du beide ganzen Flächen ohne Anpassung addieren."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verdadero o falso: cuando dos partes se superponen, puedes sumar ambas áreas completas sin ajuste."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vrai ou faux : quand deux parties se chevauchent, tu peux additionner les deux aires complètes sans ajustement."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vero o falso: quando due parti si sovrappongono, puoi sommare entrambe le aree complete senza correzione."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verdadeiro ou falso: quando duas partes se sobrepõem, você pode somar as duas áreas completas sem ajuste."
+          }
+        }
+      }
+    },
+    "Overlapping area would be counted twice.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die überlappende Fläche würde doppelt gezählt."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El área superpuesta se contaría dos veces."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L’aire superposée serait comptée deux fois."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L’area sovrapposta verrebbe contata due volte."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A área sobreposta seria contada duas vezes."
+          }
+        }
+      }
+    },
+    "Adding full overlapping parts double-counts the overlap": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beim Addieren ganzer überlappender Teile wird die Überlappung doppelt gezählt"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sumar partes completas que se superponen cuenta dos veces la superposición"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Additionner des parties entières qui se chevauchent compte deux fois le chevauchement"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sommare parti sovrapposte intere conta due volte la sovrapposizione"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Somar partes sobrepostas inteiras conta a sobreposição duas vezes"
+          }
+        }
+      }
+    },
+    "You must subtract the overlap once": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Du musst die Überlappung einmal subtrahieren"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Debes restar la superposición una vez"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tu dois soustraire le chevauchement une fois"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Devi sottrarre la sovrapposizione una volta"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Você deve subtrair a sobreposição uma vez"
+          }
+        }
+      }
+    },
+    "76 lessons across algebra, calculus, geometry, statistics, finance, and more": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "76 Lektionen in Algebra, Analysis, Geometrie, Statistik, Finanzmathe und mehr"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "76 lecciones de álgebra, cálculo, geometría, estadística, finanzas y más"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "76 leçons d’algèbre, d’analyse, de géométrie, de statistiques, de finance et plus"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "76 lezioni di algebra, analisi, geometria, statistica, finanza e altro"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "76 lições de álgebra, cálculo, geometria, estatística, finanças e mais"
           }
         }
       }
