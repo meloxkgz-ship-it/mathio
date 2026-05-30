@@ -53,9 +53,9 @@ Reasoning:
 ## Promotional Text (170 max — editable without review)
 
 ```
-New: 65 lessons and 325 guided questions, now with taxes, discounts, function modeling, inference basics, truth tables, and a clearer daily plan.
+New: comeback missions, Next 3 Sessions, Confidence Intervals, Exam Sprint, and 67 lessons for focused math practice.
 ```
-**108 / 170** — highlights current catalog size and new retention-oriented content.
+**117 / 170** — highlights current catalog size, retention improvements, and new statistics content.
 
 Rotation ideas (swap monthly):
 - `Free 7-day trial. Master one lesson a day — no leaderboards, no streaks-or-die guilt, just calm progress.` (113)
@@ -66,56 +66,61 @@ Rotation ideas (swap monthly):
 ## Description (4000 max)
 
 ```
-Math, made simple.
+Math, made simple. Practice that actually remembers what you know.
 
-Mathio is a calm, focused math trainer for school, homework, exam prep, and self-study. It covers algebra, geometry, calculus, trigonometry, statistics, financial math, linear algebra, and discrete math. No distractions. No leaderboards. Just you, clear explanations, and a daily streak.
+Mathio is a calm, focused math trainer for school, homework, exam prep, university foundations, and self-study. It now combines adaptive lessons, daily challenges, comeback missions, 3-session plans, weak-spot practice, exam sprints, achievements, spaced repetition, and a formula reference in one clean learning flow.
 
 WHO MATHIO IS FOR
-• Students who need structured practice for homework, quizzes, finals, SAT-style prep, or university foundations
-• Parents who want a clear math practice app without random drills or noisy gamification
-• Self-learners who want to rebuild fundamentals before moving into algebra, calculus, statistics, or finance
-• Anyone who prefers short daily sessions instead of long, unfocused study blocks
+• Students who need structured practice for homework, quizzes, finals, SAT-style prep, or university refreshers
+• Learners preparing for exams who want short, mixed sessions instead of random worksheets
+• Parents who want a clear math practice app without noisy gamification or ads
+• Self-learners rebuilding fundamentals before algebra, calculus, statistics, finance, or discrete math
+• Anyone who learns better with two focused minutes every day than one stressful cram session
 
-▸ ADAPTIVE LESSONS
-We pick the next topic for you based on your mastery — never wasting time on what you already know.
+▸ PERSONAL DAILY PLAN
+Mathio recommends what to do next: review due questions, continue the right lesson, follow your next 3 sessions, hit your daily goal, or open a focused weak-spot drill.
+
+▸ EXAM SPRINTS
+Premium users get 10-question mixed mini-tests built from review, weak spots, and the next useful lesson. Perfect for quick exam prep and confidence checks.
+
+▸ DAILY CHALLENGE
+A short daily entry point keeps the habit alive and makes it easy to return without deciding what to study.
 
 ▸ STEP-BY-STEP SOLUTIONS
-Wrong answer? You see the full worked solution inline. Never just "Not quite."
+Wrong answer? You see the full worked solution inline. No vague feedback, no guesswork.
 
 ▸ SPACED REPETITION
-Overdue questions surface in a daily Review queue using Leitner intervals (1 day → 3 days → 1 week → 2 weeks → 1 month). Scientifically proven to stick.
+Overdue questions surface in a Review queue using Leitner intervals: 1 day, 3 days, 1 week, 2 weeks, then 1 month.
 
-▸ DAILY STREAK + FREEZES
-Build the habit without the guilt. Auto-spent freezes protect your streak when life gets busy. One refill per week, max two banked.
+▸ ACHIEVEMENTS + STREAKS
+Progress milestones, daily streaks, and freeze protection help you stay consistent without pressure.
 
 ▸ FORMULA REFERENCE
-Bookmark formulas as you learn them. Bilingual reference always one tap away.
+Bookmark formulas as you learn them. Your reference is always one tap away.
 
-▸ NO LATEX KEYBOARD
-Just type plain text — `6x+2`, `sqrt(2)`, `pi` — and we parse it. No special symbols required.
+▸ PLAIN-TEXT ANSWERS
+Type answers like 6x+2, sqrt(2), or pi. No LaTeX keyboard required.
 
 ▸ PRIVACY-CONSCIOUS
 Learning progress stays on your device. Mathio does not run ads or sell personal data. RevenueCat is used only for subscription entitlement validation.
 
-▸ DARK MODE + ACCESSIBILITY
-Full semantic palette adapts to system. VoiceOver labels on every interactive element, including spoken-form math.
-
 ▸ MULTI-LANGUAGE LEARNING
 Available in English, German, Spanish, French, Italian, and Brazilian Portuguese, including formulas and step-by-step explanations.
 
-— TOPICS —
-Pre-Algebra · Algebra · Geometry · Trigonometry · Calculus
-65 lessons, 325 hand-crafted questions across multiple-choice, free-answer, and true/false formats. From fractions, exponents, and logarithms through derivatives, integrals, statistics, vectors, budgeting, taxes, discounts, function modeling, inference basics, correlation, optimization, truth tables, and logic.
+TOPICS
+Pre-Algebra, Algebra, Calculus, Geometry, Trigonometry, Statistics, Linear Algebra, Financial Math, and Discrete Math.
 
-— SUBSCRIPTION —
+67 lessons and 335 hand-crafted questions cover fractions, percentages, equations, functions, derivatives, integrals, vectors, matrices, probability, regression, confidence intervals, budgeting, loans, taxes, discounts, truth tables, logic, graph theory, and more.
+
+SUBSCRIPTION
 Mathio is free to try. Unlock all topics with:
-• Annual — $59.99/year, 7-day free trial, Family Sharing enabled (~$1.15/week)
+• Annual — $59.99/year, 7-day free trial, Family Sharing enabled
 • Weekly — $12.99/week, 3-day free trial
 
 Subscriptions auto-renew unless cancelled at least 24 hours before the end of the current period. Manage or cancel any time in your Apple ID settings.
 
 Privacy: https://meloxkgz-ship-it.github.io/mathio/privacy
-Terms:   https://meloxkgz-ship-it.github.io/mathio/terms
+Terms: https://meloxkgz-ship-it.github.io/mathio/terms
 
 From fractions to derivatives. Two minutes a day is enough.
 ```
@@ -127,15 +132,21 @@ From fractions to derivatives. Two minutes a day is enough.
 ### v1.0.9
 
 ```
-This update makes Mathio broader and more useful for daily practice.
+Mathio now gives learners clearer direction after every launch and more depth for statistics practice.
 
-• Adds Function Modeling for real-world algebra
-• Adds Inference Basics for statistics and sampling
-• Expands Mathio to 65 lessons and 325 guided questions
-• Keeps the new personalized start plan and goal-based onboarding
-• Updates premium and App Store copy so the content matches the app
+New:
+• Next 3 Sessions: your personal plan now shows the next concrete lessons to study
+• Comeback Mission: a gentle 5-question restart when you return after a break
+• Confidence Intervals: a new guided statistics lesson with formulas and worked solutions
+• Exam Sprint and Weak Spot Drill for faster focused practice
 
-Two minutes a day now covers more of the math people actually need.
+Improved:
+• Clearer learning path guidance on Home
+• Better premium feel with more personalized study flow
+• Expanded curriculum: 67 lessons and 335 guided questions across 9 topics
+
+Fixed:
+• Continued cleanup of localized app copy to avoid mixed German/English flows
 ```
 
 ### v1.0 (launch)
