@@ -24,7 +24,10 @@ cd "$REPO_ROOT/iOS/Mathio"
 
 ARCHIVE_PATH="/tmp/Mathio.xcarchive"
 EXPORT_PATH="/tmp/Mathio-export"
-PLIST="$REPO_ROOT/docs/aso/scripts/export-options.plist"
+PLIST="$REPO_ROOT/docs/aso/scripts/export-options-local.plist"
+ASC="${ASC:-/opt/homebrew/bin/asc}"
+PROFILE="${PROFILE:-industrietrainer}"
+APP_ID="${APP_ID:-6767033115}"
 
 bold() { printf "\033[1m%s\033[0m\n" "$*"; }
 hr()   { printf -- '%.0s—' {1..60}; printf '\n'; }
@@ -56,4 +59,9 @@ xcodebuild -exportArchive \
   -exportOptionsPlist "$PLIST" \
   -allowProvisioningUpdates
 
-bold "Done. Build is in App Store Connect within ~10 min (TestFlight tab)."
+"$ASC" --profile "$PROFILE" builds upload \
+  --app "$APP_ID" \
+  --ipa "$EXPORT_PATH/Mathio.ipa" \
+  --wait
+
+bold "Done. Build is in App Store Connect. Check processing in the TestFlight tab."
