@@ -366,6 +366,7 @@ PROSE: dict[str, str] = {
     "All possible outcomes": "Alle möglichen Ergebnisse",
     "%lld-day first track will appear on Home": "Der erste %lld-Tage-Plan erscheint auf Home",
     "answers left": "Antworten übrig",
+    "reviews soon": "Wiederholungen bald",
     "A line has slope 3. From point (0, 2), what point do you reach after run 1?":
         "Eine Gerade hat Steigung 3. Welchen Punkt erreichst du von (0, 2) aus nach einem Schritt nach rechts?",
     "A bacteria count doubles every hour. Starting from 50, how many after 3 hours?":

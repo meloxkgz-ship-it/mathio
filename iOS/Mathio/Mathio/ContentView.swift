@@ -1029,6 +1029,7 @@ struct HomeView: View {
     private var weeklyCorrect: Int { weeklyActivity.reduce(0) { $0 + $1.correct } }
     private var weeklyTarget: Int { max(settings.dailyGoal * 7, 1) }
     private var weeklyProgress: Double { min(1, Double(weeklyCorrect) / Double(weeklyTarget)) }
+    private var weeklyAnswersRemaining: Int { max(weeklyTarget - weeklyCorrect, 0) }
     private var hasReviewHistory: Bool {
         store.answered.values.contains { $0.attempts > 0 }
     }
@@ -1052,6 +1053,9 @@ struct HomeView: View {
             focusLessons: sevenDayFocusLessons,
             dailyGoal: settings.dailyGoal
         )
+    }
+    private var nextPlannedStudyDay: StudyPlanDay? {
+        sevenDayStudyPlan.first { $0.reviewCount > 0 || $0.lesson != nil }
     }
     private var examReadinessProgress: Double {
         let mastery = topics.isEmpty ? 0 : topics.reduce(0.0) { $0 + store.mastery(for: $1) } / Double(topics.count)
@@ -2184,7 +2188,7 @@ struct HomeView: View {
                         Text("7-day focus")
                             .font(.titleM)
                             .foregroundStyle(Palette.ink)
-                        Text("A concrete week of reviews and next lessons.")
+                        Text(sevenDayFocusSubtitle)
                             .font(.bodyM)
                             .foregroundStyle(Palette.inkSoft)
                             .fixedSize(horizontal: false, vertical: true)
@@ -2204,6 +2208,12 @@ struct HomeView: View {
 
                 ProgressBar(progress: sevenDayFocusProgress, color: Palette.success, height: 6)
 
+                HStack(spacing: 8) {
+                    focusMetric(value: "\(weeklyAnswersRemaining)", label: LocalizedStringResource("answers left"), active: weeklyAnswersRemaining > 0)
+                    focusMetric(value: "\(reviewsDueThisWeek)", label: LocalizedStringResource("reviews soon"), active: reviewsDueThisWeek > 0)
+                    focusMetric(value: "\(activeDaysThisWeek)", label: LocalizedStringResource("active days"), active: activeDaysThisWeek >= 3)
+                }
+
                 VStack(spacing: 8) {
                     ForEach(sevenDayStudyPlan) { day in
                         Button { openStudyPlanDay(day) } label: {
@@ -2214,12 +2224,60 @@ struct HomeView: View {
                     }
                 }
 
-                Text("Keep the chain warm: one short session is enough.")
+                Text(sevenDayFocusFooter)
                     .font(.caption)
                     .foregroundStyle(Palette.inkFaint)
             }
         }
         .accessibilityElement(children: .combine)
+    }
+
+    private var sevenDayFocusSubtitle: LocalizedStringResource {
+        if weeklyAnswersRemaining == 0 {
+            return "Weekly target complete. Keep the next reviews light."
+        }
+        if reviewCount > 0 {
+            return "Start with due reviews, then continue the next lesson."
+        }
+        if let nextPlannedStudyDay, nextPlannedStudyDay.offset == 1, nextPlannedStudyDay.reviewCount > 0 {
+            return "\(nextPlannedStudyDay.reviewCount) reviews are already planned for tomorrow."
+        }
+        if activeDaysThisWeek < 3 {
+            return "Aim for three short study days before adding longer sessions."
+        }
+        return "A concrete week of reviews and next lessons."
+    }
+
+    private var sevenDayFocusFooter: LocalizedStringResource {
+        if weeklyAnswersRemaining == 0 {
+            return "You can stop here today or keep the habit warm with a bonus set."
+        }
+        if let nextPlannedStudyDay, nextPlannedStudyDay.offset > 0 {
+            if nextPlannedStudyDay.offset == 1 {
+                return "Next planned touchpoint: tomorrow."
+            }
+            return "Next planned touchpoint: later this week."
+        }
+        return "Keep the chain warm: one short session is enough."
+    }
+
+    private func focusMetric(value: String, label: LocalizedStringResource, active: Bool) -> some View {
+        VStack(spacing: 3) {
+            Text(verbatim: value)
+                .font(.titleM)
+                .foregroundStyle(active ? Palette.ink : Palette.inkSoft)
+                .lineLimit(1)
+                .minimumScaleFactor(0.75)
+            Text(label)
+                .font(.caption)
+                .foregroundStyle(Palette.inkFaint)
+                .lineLimit(1)
+                .minimumScaleFactor(0.78)
+        }
+        .frame(maxWidth: .infinity)
+        .padding(.vertical, 10)
+        .background(active ? Palette.success.opacity(0.10) : Palette.surfaceMuted,
+                    in: RoundedRectangle(cornerRadius: 12, style: .continuous))
     }
 
     private func openStudyPlanDay(_ day: StudyPlanDay) {
