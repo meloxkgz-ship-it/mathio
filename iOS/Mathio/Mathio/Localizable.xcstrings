@@ -205,6 +205,40 @@
         }
       }
     },
+    "$50 plus 8% tax totals:": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "50 $ plus 8 % Steuer ergeben insgesamt:"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "$50 más 8 % de impuesto suman:"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "50 $ plus 8 % de taxe donnent un total de :"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "50 $ più l'8% di tasse fanno:"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "$50 mais 8% de imposto totalizam:"
+          }
+        }
+      }
+    },
     "$500 earns 4% simple interest for 3 years. Final amount?": {
       "localizations": {
         "de": {
@@ -235,6 +269,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "$500 ganha 4% juros simples por 3 anos. Valor final?"
+          }
+        }
+      }
+    },
+    "$80 with a 25% discount costs:": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "80 $ mit 25 % Rabatt kosten:"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "$80 con un 25 % de descuento cuestan:"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "80 $ avec une remise de 25 % coûtent :"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "80 $ con uno sconto del 25% costano:"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "$80 com 25% de desconto custam:"
           }
         }
       }
@@ -2692,6 +2760,40 @@
         }
       }
     },
+    "100% + 6% = 106% = 1.06": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "100 % + 6 % = 106 % = 1,06"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "100 % + 6 % = 106 % = 1,06"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "100 % + 6 % = 106 % = 1,06"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "100% + 6% = 106% = 1,06"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "100% + 6% = 106% = 1,06"
+          }
+        }
+      }
+    },
     "100% of the original is one more original.": {
       "localizations": {
         "de": {
@@ -2722,6 +2824,74 @@
           "stringUnit": {
             "state": "translated",
             "value": "100% do original é mais um original."
+          }
+        }
+      }
+    },
+    "100% − 30% = 70%": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "100 % − 30 % = 70 %"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "100 % − 30 % = 70 %"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "100 % − 30 % = 70 %"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "100% − 30% = 70%"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "100% − 30% = 70%"
+          }
+        }
+      }
+    },
+    "100% − 30%.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "100 % − 30 %."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "100 % − 30 %."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "100 % − 30 %."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "100% − 30%."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "100% − 30%."
           }
         }
       }
@@ -3916,6 +4086,74 @@
         }
       }
     },
+    "2 choices for P and 2 choices for Q": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2 Möglichkeiten für P und 2 Möglichkeiten für Q"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2 opciones para P y 2 opciones para Q"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2 choix pour P et 2 choix pour Q"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2 scelte per P e 2 scelte per Q"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2 escolhas para P e 2 escolhas para Q"
+          }
+        }
+      }
+    },
+    "2 statements → 4 truth rows": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2 Aussagen → 4 Wahrheitszeilen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2 proposiciones → 4 filas de verdad"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2 énoncés → 4 lignes de vérité"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2 proposizioni → 4 righe di verità"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2 afirmações → 4 linhas de verdade"
+          }
+        }
+      }
+    },
     "2 triangles × 180° = 360°": {
       "localizations": {
         "de": {
@@ -3946,6 +4184,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "2 triângulos × 180° = 360°"
+          }
+        }
+      }
+    },
+    "2 · 2 = 4 rows": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2 · 2 = 4 Zeilen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2 · 2 = 4 filas"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2 · 2 = 4 lignes"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2 · 2 = 4 righe"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2 · 2 = 4 linhas"
           }
         }
       }
@@ -7700,6 +7972,40 @@
         }
       }
     },
+    "50 · 1.08 = 54": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "50 · 1,08 = 54"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "50 · 1,08 = 54"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "50 · 1,08 = 54"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "50 · 1,08 = 54"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "50 · 1,08 = 54"
+          }
+        }
+      }
+    },
     "500 + 5 − 80 = 425": {
       "localizations": {
         "de": {
@@ -8346,37 +8652,36 @@
         }
       }
     },
-    "61 lessons across algebra, calculus, geometry, statistics, finance, and more": {
-      "extractionState": "manual",
+    "63 lessons across algebra, calculus, geometry, statistics, finance, and more": {
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "61 Lektionen zu Algebra, Analysis, Geometrie, Statistik, Finanzen und mehr"
+            "value": "63 Lektionen zu Algebra, Analysis, Geometrie, Statistik, Finanzen und mehr"
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "61 lecciones de álgebra, cálculo, geometría, estadística, finanzas y más"
+            "value": "63 lecciones de álgebra, cálculo, geometría, estadística, finanzas y más"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "61 leçons en algèbre, analyse, géométrie, statistiques, finance et plus encore"
+            "value": "63 leçons d’algèbre, d’analyse, de géométrie, de statistiques, de finance et plus"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "61 lezioni su algebra, analisi, geometria, statistica, finanza e altro"
+            "value": "63 lezioni di algebra, analisi, geometria, statistica, finanza e altro"
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "61 lições de álgebra, cálculo, geometria, estatística, finanças e mais"
+            "value": "63 aulas de álgebra, cálculo, geometria, estatística, finanças e muito mais"
           }
         }
       }
@@ -9108,25 +9413,25 @@
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "80 · 0.75 = 60"
+            "value": "80 · 0,75 = 60"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "80 · 0.75 = 60"
+            "value": "80 · 0,75 = 60"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "80 · 0.75 = 60"
+            "value": "80 · 0,75 = 60"
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "80 · 0.75 = 60"
+            "value": "80 · 0,75 = 60"
           }
         }
       }
@@ -9604,6 +9909,74 @@
           "stringUnit": {
             "state": "translated",
             "value": "Uma matriz 2 × 3 possui 2 linhas e 3 colunas."
+          }
+        }
+      }
+    },
+    "A 20% discount means you pay 80% of the original price.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "20 % Rabatt bedeutet, dass du 80 % des ursprünglichen Preises zahlst."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un 20 % de descuento significa que pagas el 80 % del precio original."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Une remise de 20 % signifie que tu paies 80 % du prix d'origine."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uno sconto del 20% significa che paghi l'80% del prezzo originale."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Um desconto de 20% significa que você paga 80% do preço original."
+          }
+        }
+      }
+    },
+    "A 30% discount means you pay what percent of the original price?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "30 % Rabatt bedeutet, dass du wie viel Prozent des Originalpreises zahlst?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un 30 % de descuento significa que pagas qué porcentaje del precio original?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Une remise de 30 % signifie que tu paies quel pourcentage du prix d'origine ?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uno sconto del 30% significa che paghi quale percentuale del prezzo originale?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Um desconto de 30% significa que você paga qual percentual do preço original?"
           }
         }
       }
@@ -10556,6 +10929,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "A concave-up critical point is a minimum"
+          }
+        }
+      }
+    },
+    "A conjunction is true only when every part is true": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eine Konjunktion ist nur wahr, wenn jeder Teil wahr ist"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una conjunción es verdadera solo cuando todas las partes son verdaderas"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Une conjonction est vraie seulement quand chaque partie est vraie"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una congiunzione è vera solo quando ogni parte è vera"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uma conjunção é verdadeira apenas quando todas as partes são verdadeiras"
           }
         }
       }
@@ -13247,6 +13654,40 @@
         }
       }
     },
+    "AND needs both parts.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "UND braucht beide Teile."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Y necesita ambas partes."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ET a besoin des deux parties."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "E richiede entrambe le parti."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "E precisa das duas partes."
+          }
+        }
+      }
+    },
     "ANNUAL · 25 % OFF": {
       "extractionState": "manual",
       "localizations": {
@@ -14061,6 +14502,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Adicione a mesma diferença em cada etapa."
+          }
+        }
+      }
+    },
+    "Add the tax percent after converting it to a decimal.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Addiere den Steuerprozentsatz, nachdem du ihn in eine Dezimalzahl umgewandelt hast."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Añade el porcentaje de impuesto después de convertirlo en decimal."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ajoute le pourcentage de taxe après l'avoir converti en décimal."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aggiungi la percentuale di tassa dopo averla convertita in decimale."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adicione o percentual de imposto depois de convertê-lo em decimal."
           }
         }
       }
@@ -16823,6 +17298,74 @@
         }
       }
     },
+    "Both are false": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beide falsch sind"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ambas son falsas"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les deux sont faux"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Entrambe sono false"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ambas são falsas"
+          }
+        }
+      }
+    },
+    "Both are true": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beide wahr sind"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ambas son verdaderas"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les deux sont vrais"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Entrambe sono vere"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ambas são verdadeiras"
+          }
+        }
+      }
+    },
     "Both conditions must hold.": {
       "localizations": {
         "de": {
@@ -18657,6 +19200,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Compare lugar por lugar após o ponto."
+          }
+        }
+      }
+    },
+    "Compare the final columns row by row.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vergleiche die letzten Spalten Zeile für Zeile."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Compara las columnas finales fila por fila."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Compare les colonnes finales ligne par ligne."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Confronta le colonne finali riga per riga."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Compare as colunas finais linha por linha."
           }
         }
       }
@@ -22472,6 +23049,40 @@
         }
       }
     },
+    "Discount price": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rabattpreis"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Precio con descuento"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prix remisé"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prezzo scontato"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Preço com desconto"
+          }
+        }
+      }
+    },
     "Discrete Math": {
       "localizations": {
         "de": {
@@ -23658,6 +24269,74 @@
           "stringUnit": {
             "state": "translated",
             "value": "Cada lado sobre o seno do seu ângulo oposto."
+          }
+        }
+      }
+    },
+    "Each statement can be true or false, so 2 · 2 = 4 rows.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jede Aussage kann wahr oder falsch sein, also 2 · 2 = 4 Zeilen."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cada proposición puede ser verdadera o falsa, así que 2 · 2 = 4 filas."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chaque énoncé peut être vrai ou faux, donc 2 · 2 = 4 lignes."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ogni proposizione può essere vera o falsa, quindi 2 · 2 = 4 righe."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cada afirmação pode ser verdadeira ou falsa, então 2 · 2 = 4 linhas."
+          }
+        }
+      }
+    },
+    "Each statement has 2 possible truth values.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jede Aussage hat 2 mögliche Wahrheitswerte."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cada proposición tiene 2 valores de verdad posibles."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chaque énoncé a 2 valeurs de vérité possibles."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ogni proposizione ha 2 possibili valori di verità."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cada afirmação tem 2 valores de verdade possíveis."
           }
         }
       }
@@ -28431,6 +29110,40 @@
         }
       }
     },
+    "How many rows does a truth table for two statements P and Q have?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wie viele Zeilen hat eine Wahrheitstabelle für zwei Aussagen P und Q?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cuántas filas tiene una tabla de verdad para dos proposiciones P y Q?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Combien de lignes a une table de vérité pour deux énoncés P et Q ?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quante righe ha una tabella di verità per due proposizioni P e Q?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quantas linhas tem uma tabela-verdade para duas afirmações P e Q?"
+          }
+        }
+      }
+    },
     "How many solutions does the system y = x, y = x + 1 have?": {
       "localizations": {
         "de": {
@@ -29145,6 +29858,40 @@
         }
       }
     },
+    "If both final columns match in every row, the statements are equivalent": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wenn beide Endspalten in jeder Zeile übereinstimmen, sind die Aussagen äquivalent"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Si ambas columnas finales coinciden en cada fila, las proposiciones son equivalentes"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Si les deux colonnes finales correspondent à chaque ligne, les énoncés sont équivalents"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se entrambe le colonne finali coincidono in ogni riga, le proposizioni sono equivalenti"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se as duas colunas finais coincidem em todas as linhas, as afirmações são equivalentes"
+          }
+        }
+      }
+    },
     "If cos θ = 0, sin θ equals?": {
       "localizations": {
         "de": {
@@ -29549,6 +30296,74 @@
           "stringUnit": {
             "state": "translated",
             "value": "If x increases and y usually increases too, the correlation is:"
+          }
+        }
+      }
+    },
+    "Implication": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Implikation"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Implicación"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Implication"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Implicazione"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Implicação"
+          }
+        }
+      }
+    },
+    "Implication is about whether the promise fails.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bei Implikation geht es darum, ob das Versprechen scheitert."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La implicación trata de si la promesa falla."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L'implication vérifie si la promesse échoue."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L'implicazione riguarda se la promessa fallisce."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A implicação verifica se a promessa falha."
           }
         }
       }
@@ -30945,6 +31760,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "It does not by itself prove cause and effect"
+          }
+        }
+      }
+    },
+    "It fails when P is true and Q is false": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sie scheitert, wenn P wahr und Q falsch ist"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Falla cuando P es verdadera y Q es falsa"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Elle échoue quand P est vrai et Q est faux"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fallisce quando P è vera e Q è falsa"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ela falha quando P é verdadeira e Q é falsa"
           }
         }
       }
@@ -34457,6 +35306,40 @@
         }
       }
     },
+    "Multiply by 1.08.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Multipliziere mit 1,08."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Multiplica por 1,08."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Multiplie par 1,08."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Moltiplica per 1,08."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Multiplique por 1,08."
+          }
+        }
+      }
+    },
     "Multiply by 1.10 twice.": {
       "localizations": {
         "de": {
@@ -36157,12 +37040,46 @@
         }
       }
     },
+    "OR fails only when there is no true part": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ODER scheitert nur, wenn kein Teil wahr ist"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O falla solo cuando no hay ninguna parte verdadera"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OU échoue seulement quand aucune partie n'est vraie"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O fallisce solo quando nessuna parte è vera"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OU falha apenas quando não há nenhuma parte verdadeira"
+          }
+        }
+      }
+    },
     "OR needs at least one true part.": {
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "OR benötigt mindestens einen wahren Teil."
+            "value": "ODER braucht mindestens einen wahren Teil."
           }
         },
         "es": {
@@ -36174,19 +37091,19 @@
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "OR a besoin d'au moins une vraie partie."
+            "value": "OU a besoin d'au moins une partie vraie."
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "OR necessita di almeno una parte vera."
+            "value": "O richiede almeno una parte vera."
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "OR precisa de pelo menos uma parte verdadeira."
+            "value": "OU precisa de pelo menos uma parte verdadeira."
           }
         }
       }
@@ -36630,6 +37547,74 @@
           "stringUnit": {
             "state": "translated",
             "value": "Apenas 3 aparecem em ambos"
+          }
+        }
+      }
+    },
+    "Only P is true": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nur P wahr ist"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Solo P es verdadera"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Seul P est vrai"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Solo P è vera"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apenas P é verdadeira"
+          }
+        }
+      }
+    },
+    "Only Q is true": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nur Q wahr ist"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Solo Q es verdadera"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Seul Q est vrai"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Solo Q è vera"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apenas Q é verdadeira"
           }
         }
       }
@@ -37586,6 +38571,176 @@
         }
       }
     },
+    "P AND Q is true when:": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P UND Q ist wahr, wenn:"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P Y Q es verdadera cuando:"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P ET Q est vrai quand :"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P E Q è vera quando:"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P E Q é verdadeira quando:"
+          }
+        }
+      }
+    },
+    "P OR Q is false when:": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P ODER Q ist falsch, wenn:"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P O Q es falsa cuando:"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P OU Q est faux quand :"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P O Q è falsa quando:"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P OU Q é falsa quando:"
+          }
+        }
+      }
+    },
+    "P and Q are both false": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P und Q beide falsch sind"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P y Q son ambas falsas"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P et Q sont tous les deux faux"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P e Q sono entrambe false"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P e Q são ambas falsas"
+          }
+        }
+      }
+    },
+    "P and Q are both true": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P und Q beide wahr sind"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P y Q son ambas verdaderas"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P et Q sont tous les deux vrais"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P e Q sono entrambe vere"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P e Q são ambas verdadeiras"
+          }
+        }
+      }
+    },
+    "P is false and Q is true": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P falsch und Q wahr ist"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P es falsa y Q es verdadera"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P est faux et Q est vrai"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P è falsa e Q è vera"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P é falsa e Q é verdadeira"
+          }
+        }
+      }
+    },
     "P is principal, r is the decimal rate, and t is time.": {
       "localizations": {
         "de": {
@@ -37616,6 +38771,74 @@
           "stringUnit": {
             "state": "translated",
             "value": "P é o principal, r é a taxa decimal e t é o tempo."
+          }
+        }
+      }
+    },
+    "P is true and Q is false": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P wahr und Q falsch ist"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P es verdadera y Q es falsa"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P est vrai et Q est faux"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P è vera e Q è falsa"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P é verdadeira e Q é falsa"
+          }
+        }
+      }
+    },
+    "P → Q means if P, then Q": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P → Q bedeutet: Wenn P, dann Q"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P → Q significa: si P, entonces Q"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P → Q signifie : si P, alors Q"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P → Q significa: se P, allora Q"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P → Q significa: se P, então Q"
           }
         }
       }
@@ -37830,25 +39053,25 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Zahlen Sie 75% des Originals."
+            "value": "Zahle 75 % des Originals."
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Paga 75% del original."
+            "value": "Paga el 75 % del original."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Payez 75% de l'original."
+            "value": "Paie 75 % du prix original."
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Paga 75% dell'originale."
+            "value": "Paga il 75% dell'originale."
           }
         },
         "pt-BR": {
@@ -39115,6 +40338,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "O Premium libera o currículo completo, trilhas guiadas e todas as soluções explicadas."
+          }
+        }
+      }
+    },
+    "Price becomes 0.90p": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der Preis wird zu 0,90p"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El precio se convierte en 0,90p"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le prix devient 0,90p"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il prezzo diventa 0,90p"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O preço vira 0,90p"
           }
         }
       }
@@ -45013,6 +46270,40 @@
         }
       }
     },
+    "So the total is p · 1.06": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Also ist der Gesamtpreis p · 1,06"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Así que el total es p · 1,06"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Donc le total est p · 1,06"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quindi il totale è p · 1,06"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Então o total é p · 1,06"
+          }
+        }
+      }
+    },
     "So their probabilities add to 1": {
       "localizations": {
         "de": {
@@ -48219,6 +49510,142 @@
         }
       }
     },
+    "Tax keeps the original price and adds 6%.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Steuer behält den Originalpreis und addiert 6 %."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El impuesto conserva el precio original y añade 6 %."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La taxe garde le prix original et ajoute 6 %."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La tassa mantiene il prezzo originale e aggiunge il 6%."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O imposto mantém o preço original e adiciona 6%."
+          }
+        }
+      }
+    },
+    "Taxed total": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gesamtpreis mit Steuer"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Total con impuesto"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Total avec taxe"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Totale con tasse"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Total com imposto"
+          }
+        }
+      }
+    },
+    "Taxes & Discounts": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Steuern und Rabatte"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impuestos y descuentos"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Taxes et remises"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tasse e sconti"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impostos e descontos"
+          }
+        }
+      }
+    },
+    "Taxes and discounts are percent changes you meet in stores, subscriptions, invoices, and tips.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Steuern und Rabatte sind Prozentänderungen, die dir in Geschäften, Abos, Rechnungen und Trinkgeldern begegnen."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Los impuestos y descuentos son cambios porcentuales que encuentras en tiendas, suscripciones, facturas y propinas."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les taxes et les remises sont des variations en pourcentage que tu rencontres dans les magasins, abonnements, factures et pourboires."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tasse e sconti sono variazioni percentuali che incontri in negozi, abbonamenti, fatture e mance."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impostos e descontos são mudanças percentuais que aparecem em lojas, assinaturas, faturas e gorjetas."
+          }
+        }
+      }
+    },
     "Terms": {
       "extractionState": "manual",
       "localizations": {
@@ -49070,6 +50497,40 @@
         }
       }
     },
+    "The implication P → Q is false when:": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Implikation P → Q ist falsch, wenn:"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La implicación P → Q es falsa cuando:"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L'implication P → Q est fausse quand :"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L'implicazione P → Q è falsa quando:"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A implicação P → Q é falsa quando:"
+          }
+        }
+      }
+    },
     "The interior angles of any quadrilateral sum to:": {
       "localizations": {
         "de": {
@@ -49750,6 +51211,40 @@
         }
       }
     },
+    "The promise fails only if P happens but Q does not.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Das Versprechen scheitert nur, wenn P eintritt, aber Q nicht."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La promesa falla solo si P ocurre pero Q no."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La promesse échoue seulement si P arrive mais pas Q."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La promessa fallisce solo se P accade ma Q no."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A promessa falha apenas se P acontece, mas Q não."
+          }
+        }
+      }
+    },
     "The rate is always zero": {
       "localizations": {
         "de": {
@@ -50260,6 +51755,40 @@
         }
       }
     },
+    "The tax applies to the smaller discounted price.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Steuer wird auf den kleineren rabattierten Preis angewendet."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El impuesto se aplica al precio reducido más pequeño."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La taxe s'applique au prix réduit, plus petit."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La tassa si applica al prezzo scontato più basso."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O imposto se aplica ao preço menor com desconto."
+          }
+        }
+      }
+    },
     "The two cases cover all outcomes": {
       "localizations": {
         "de": {
@@ -50460,6 +51989,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Tema"
+          }
+        }
+      }
+    },
+    "Then tax gives 0.90p · 1.10 = 0.99p": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Danach ergibt die Steuer 0,90p · 1,10 = 0,99p"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Luego el impuesto da 0,90p · 1,10 = 0,99p"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ensuite la taxe donne 0,90p · 1,10 = 0,99p"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Poi la tassa dà 0,90p · 1,10 = 0,99p"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Depois o imposto dá 0,90p · 1,10 = 0,99p"
           }
         }
       }
@@ -52368,6 +53931,40 @@
         }
       }
     },
+    "True or false: a truth table can prove two logic statements are equivalent.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wahr oder falsch: Eine Wahrheitstabelle kann beweisen, dass zwei logische Aussagen äquivalent sind."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verdadero o falso: una tabla de verdad puede demostrar que dos proposiciones lógicas son equivalentes."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vrai ou faux : une table de vérité peut prouver que deux énoncés logiques sont équivalents."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vero o falso: una tabella di verità può dimostrare che due proposizioni logiche sono equivalenti."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verdadeiro ou falso: uma tabela-verdade pode provar que duas afirmações lógicas são equivalentes."
+          }
+        }
+      }
+    },
     "True or false: an edge connects two vertices.": {
       "localizations": {
         "de": {
@@ -52432,6 +54029,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Verdadeiro ou falso: quaisquer dois triângulos com a mesma base e altura têm a mesma área."
+          }
+        }
+      }
+    },
+    "True or false: applying a 10% discount and then 10% tax always returns to the original price.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wahr oder falsch: 10 % Rabatt und danach 10 % Steuer führen immer zurück zum Originalpreis."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verdadero o falso: aplicar un 10 % de descuento y luego 10 % de impuesto siempre vuelve al precio original."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vrai ou faux : appliquer 10 % de remise puis 10 % de taxe revient toujours au prix original."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vero o falso: applicare uno sconto del 10% e poi una tassa del 10% riporta sempre al prezzo originale."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verdadeiro ou falso: aplicar 10% de desconto e depois 10% de imposto sempre volta ao preço original."
           }
         }
       }
@@ -53728,6 +55359,74 @@
         }
       }
     },
+    "Truth Tables": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wahrheitstabellen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tablas de verdad"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tables de vérité"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tabelle di verità"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tabelas-verdade"
+          }
+        }
+      }
+    },
+    "Truth tables check every possible case so compound statements are easier to trust.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wahrheitstabellen prüfen jeden möglichen Fall, damit zusammengesetzte Aussagen verlässlicher werden."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Las tablas de verdad revisan todos los casos posibles para que las proposiciones compuestas sean más fiables."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les tables de vérité vérifient tous les cas possibles pour rendre les énoncés composés plus fiables."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le tabelle di verità controllano ogni caso possibile, così le proposizioni composte sono più affidabili."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tabelas-verdade verificam todos os casos possíveis para tornar afirmações compostas mais confiáveis."
+          }
+        }
+      }
+    },
     "Two": {
       "localizations": {
         "de": {
@@ -54234,6 +55933,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Dois quadrados perfeitos menos → produto da soma e da diferença."
+          }
+        }
+      }
+    },
+    "Two statements": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zwei Aussagen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dos proposiciones"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deux énoncés"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Due proposizioni"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Duas afirmações"
           }
         }
       }
@@ -56856,6 +58589,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "O que é igual a 17?"
+          }
+        }
+      }
+    },
+    "Which expression adds 6% sales tax to a price p?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Welcher Ausdruck addiert 6 % Umsatzsteuer zu einem Preis p?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Qué expresión añade 6 % de impuesto sobre ventas a un precio p?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quelle expression ajoute 6 % de taxe de vente à un prix p ?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quale espressione aggiunge il 6% di imposta sulle vendite a un prezzo p?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Qual expressão adiciona 6% de imposto sobre vendas a um preço p?"
           }
         }
       }
@@ -60366,6 +62133,142 @@
         }
       }
     },
+    "p / 6": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "p / 6"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "p / 6"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "p / 6"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "p / 6"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "p / 6"
+          }
+        }
+      }
+    },
+    "p · 0.06": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "p · 0,06"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "p · 0,06"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "p · 0,06"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "p · 0,06"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "p · 0,06"
+          }
+        }
+      }
+    },
+    "p · 1.06": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "p · 1,06"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "p · 1,06"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "p · 1,06"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "p · 1,06"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "p · 1,06"
+          }
+        }
+      }
+    },
+    "p − 0.06": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "p − 0,06"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "p − 0,06"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "p − 0,06"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "p − 0,06"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "p − 0,06"
+          }
+        }
+      }
+    },
     "r = d/2 = 4": {
       "localizations": {
         "de": {
@@ -60430,6 +62333,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "s = (a+b+c)/2 é o semiperímetro."
+          }
+        }
+      }
+    },
+    "sale price = original · (1 − discount rate)": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verkaufspreis = Original · (1 − Rabattsatz)"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "precio final = original · (1 − tasa de descuento)"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "prix remisé = original · (1 − taux de remise)"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "prezzo scontato = originale · (1 − tasso di sconto)"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "preço com desconto = original · (1 − taxa de desconto)"
           }
         }
       }
@@ -60974,6 +62911,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "tan = sen/cos e cos 90° = 0."
+          }
+        }
+      }
+    },
+    "total = price · (1 + tax rate)": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gesamtpreis = Preis · (1 + Steuersatz)"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "total = precio · (1 + tasa de impuesto)"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "total = prix · (1 + taux de taxe)"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "totale = prezzo · (1 + aliquota fiscale)"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "total = preço · (1 + taxa de imposto)"
           }
         }
       }
@@ -62849,6 +64820,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "interceptação y"
+          }
+        }
+      }
+    },
+    "{var:P} → {var:Q} is false only when P is true and Q is false": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "{var:P} → {var:Q} ist nur falsch, wenn P wahr und Q falsch ist"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "{var:P} → {var:Q} es falsa solo cuando P es verdadera y Q es falsa"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "{var:P} → {var:Q} est faux seulement quand P est vrai et Q est faux"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "{var:P} → {var:Q} è falsa solo quando P è vera e Q è falsa"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "{var:P} → {var:Q} é falsa apenas quando P é verdadeira e Q é falsa"
           }
         }
       }

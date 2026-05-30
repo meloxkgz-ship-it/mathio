@@ -2860,6 +2860,54 @@ enum Curriculum {
         ]
     )
 
+    static let taxesDiscounts = Lesson(
+        id: "fin.taxdiscount",
+        title: "Taxes & Discounts",
+        intro: "Taxes and discounts are percent changes you meet in stores, subscriptions, invoices, and tips.",
+        formulas: [
+            Formula(key: "fin.taxdiscount.f1",
+                    name: "Discount price",
+                    math: "sale price = original · (1 − discount rate)",
+                    explanation: "A 20% discount means you pay 80% of the original price."),
+            Formula(key: "fin.taxdiscount.f2",
+                    name: "Taxed total",
+                    math: "total = price · (1 + tax rate)",
+                    explanation: "Add the tax percent after converting it to a decimal."),
+        ],
+        questions: [
+            Question(id: "fin.taxdiscount.q1",
+                     prompt: "$80 with a 25% discount costs:", math: nil,
+                     kind: .freeAnswer(accepted: ["60", "$60"]),
+                     hint: "Pay 75% of the original.",
+                     solutionSteps: ["80 · 0.75 = 60"]),
+            Question(id: "fin.taxdiscount.q2",
+                     prompt: "$50 plus 8% tax totals:", math: nil,
+                     kind: .freeAnswer(accepted: ["54", "$54"]),
+                     hint: "Multiply by 1.08.",
+                     solutionSteps: ["50 · 1.08 = 54"]),
+            Question(id: "fin.taxdiscount.q3",
+                     prompt: "A 30% discount means you pay what percent of the original price?", math: nil,
+                     kind: .freeAnswer(accepted: ["70", "70%"]),
+                     hint: "100% − 30%.",
+                     solutionSteps: ["100% − 30% = 70%"]),
+            Question(id: "fin.taxdiscount.q4",
+                     prompt: "Which expression adds 6% sales tax to a price p?", math: nil,
+                     kind: .multipleChoice(options: [
+                        .init(label: "p · 1.06", math: nil),
+                        .init(label: "p · 0.06", math: nil),
+                        .init(label: "p − 0.06", math: nil),
+                        .init(label: "p / 6", math: nil),
+                     ], correctIndex: 0),
+                     hint: "Tax keeps the original price and adds 6%.",
+                     solutionSteps: ["100% + 6% = 106% = 1.06", "So the total is p · 1.06"]),
+            Question(id: "fin.taxdiscount.q5",
+                     prompt: "True or false: applying a 10% discount and then 10% tax always returns to the original price.", math: nil,
+                     kind: .trueFalse(answer: false),
+                     hint: "The tax applies to the smaller discounted price.",
+                     solutionSteps: ["Price becomes 0.90p", "Then tax gives 0.90p · 1.10 = 0.99p"]),
+        ]
+    )
+
     // MARK: - Discrete Math
 
     static let logic = Lesson(
@@ -3003,6 +3051,64 @@ enum Curriculum {
                      kind: .trueFalse(answer: true),
                      hint: "The name gives it away.",
                      solutionSteps: ["Product means multiply"]),
+        ]
+    )
+
+    static let truthTables = Lesson(
+        id: "disc.truth",
+        title: "Truth Tables",
+        intro: "Truth tables check every possible case so compound statements are easier to trust.",
+        formulas: [
+            Formula(key: "disc.truth.f1",
+                    name: "Two statements",
+                    math: "2 statements → 4 truth rows",
+                    explanation: "Each statement can be true or false, so 2 · 2 = 4 rows."),
+            Formula(key: "disc.truth.f2",
+                    name: "Implication",
+                    math: "{var:P} → {var:Q} is false only when P is true and Q is false",
+                    explanation: "Implication is about whether the promise fails."),
+        ],
+        questions: [
+            Question(id: "disc.truth.q1",
+                     prompt: "How many rows does a truth table for two statements P and Q have?", math: nil,
+                     kind: .freeAnswer(accepted: ["4"]),
+                     hint: "Each statement has 2 possible truth values.",
+                     solutionSteps: ["2 choices for P and 2 choices for Q", "2 · 2 = 4 rows"]),
+            Question(id: "disc.truth.q2",
+                     prompt: "P AND Q is true when:", math: nil,
+                     kind: .multipleChoice(options: [
+                        .init(label: "P and Q are both true", math: nil),
+                        .init(label: "Only P is true", math: nil),
+                        .init(label: "Only Q is true", math: nil),
+                        .init(label: "Both are false", math: nil),
+                     ], correctIndex: 0),
+                     hint: "AND needs both parts.",
+                     solutionSteps: ["A conjunction is true only when every part is true"]),
+            Question(id: "disc.truth.q3",
+                     prompt: "P OR Q is false when:", math: nil,
+                     kind: .multipleChoice(options: [
+                        .init(label: "P and Q are both false", math: nil),
+                        .init(label: "P is true", math: nil),
+                        .init(label: "Q is true", math: nil),
+                        .init(label: "Both are true", math: nil),
+                     ], correctIndex: 0),
+                     hint: "OR needs at least one true part.",
+                     solutionSteps: ["OR fails only when there is no true part"]),
+            Question(id: "disc.truth.q4",
+                     prompt: "The implication P → Q is false when:", math: nil,
+                     kind: .multipleChoice(options: [
+                        .init(label: "P is true and Q is false", math: nil),
+                        .init(label: "P is false and Q is true", math: nil),
+                        .init(label: "Both are true", math: nil),
+                        .init(label: "Both are false", math: nil),
+                     ], correctIndex: 0),
+                     hint: "The promise fails only if P happens but Q does not.",
+                     solutionSteps: ["P → Q means if P, then Q", "It fails when P is true and Q is false"]),
+            Question(id: "disc.truth.q5",
+                     prompt: "True or false: a truth table can prove two logic statements are equivalent.", math: nil,
+                     kind: .trueFalse(answer: true),
+                     hint: "Compare the final columns row by row.",
+                     solutionSteps: ["If both final columns match in every row, the statements are equivalent"]),
         ]
     )
 
@@ -3211,12 +3317,12 @@ enum Curriculum {
               subtitle: "Loans, inflation & budgets",
               icon: "banknote",
               color: Palette.trig,
-              lessons: [simpleInterest, compoundInterest, budgeting, inflationRealValue, loansPayments]),
+              lessons: [simpleInterest, compoundInterest, budgeting, inflationRealValue, loansPayments, taxesDiscounts]),
         Topic(id: "discretemath",
               title: "Discrete Math",
               subtitle: "Logic, sets & graphs",
               icon: "switch.2",
               color: Palette.precalc,
-              lessons: [logic, sets, counting, modularArithmetic, graphs, sequencesDiscrete]),
+              lessons: [logic, sets, counting, truthTables, modularArithmetic, graphs, sequencesDiscrete]),
     ]
 }

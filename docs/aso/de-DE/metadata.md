@@ -104,7 +104,7 @@ Verfügbar auf Deutsch, Englisch, Spanisch, Französisch, Italienisch und Brasil
 
 — THEMEN —
 Vor-Algebra · Algebra · Geometrie · Trigonometrie · Analysis
-61 Lektionen, 305 handgemachte Aufgaben in Multiple-Choice, Freitext und Wahr/Falsch. Von Bruchrechnen, Potenzen und Logarithmen bis zu Ableitungen, Integralen, Statistik, Vektoren, Budgetrechnung, Korrelation, Optimierung und Logik.
+63 Lektionen, 315 handgemachte Aufgaben in Multiple-Choice, Freitext und Wahr/Falsch. Von Bruchrechnen, Potenzen und Logarithmen bis zu Ableitungen, Integralen, Statistik, Vektoren, Budgetrechnung, Steuern, Rabatten, Korrelation, Optimierung, Wahrheitstabellen und Logik.
 
 — ABO —
 Mathio ist kostenlos zum Ausprobieren. Alle Themen freischalten mit:

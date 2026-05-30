@@ -105,7 +105,7 @@ Available in English, German, Spanish, French, Italian, and Brazilian Portuguese
 
 — TOPICS —
 Pre-Algebra · Algebra · Geometry · Trigonometry · Calculus
-61 lessons, 305 hand-crafted questions across multiple-choice, free-answer, and true/false formats. From fractions, exponents, and logarithms through derivatives, integrals, statistics, vectors, budgeting, correlation, optimization, and logic.
+63 lessons, 315 hand-crafted questions across multiple-choice, free-answer, and true/false formats. From fractions, exponents, and logarithms through derivatives, integrals, statistics, vectors, budgeting, taxes, discounts, correlation, optimization, truth tables, and logic.
 
 — SUBSCRIPTION —
 Mathio is free to try. Unlock all topics with:
