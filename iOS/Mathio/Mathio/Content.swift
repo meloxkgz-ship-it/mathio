@@ -324,6 +324,54 @@ enum Curriculum {
         ]
     )
 
+    static let completingSquare = Lesson(
+        id: "alg.square",
+        title: "Completing the Square",
+        intro: "Completing the square rewrites a quadratic as a perfect square plus or minus a constant.",
+        formulas: [
+            Formula(key: "alg.square.f1",
+                    name: "Perfect square pattern",
+                    math: "{var:x}{sup:^2} + 2{var:a}{var:x} + {var:a}{sup:^2} = ({var:x}+{var:a}){sup:^2}",
+                    explanation: "Half the x-coefficient, then square it."),
+            Formula(key: "alg.square.f2",
+                    name: "Vertex form",
+                    math: "{var:y} = {var:a}({var:x}−{var:h}){sup:^2} + {var:k}",
+                    explanation: "The vertex is (h, k), which makes graphing easier."),
+        ],
+        questions: [
+            Question(id: "alg.square.q1",
+                     prompt: "Complete the square: x² + 6x + __",
+                     math: nil,
+                     kind: .freeAnswer(accepted: ["9"]),
+                     hint: "Half of 6 is 3, then square it.",
+                     solutionSteps: ["6 / 2 = 3", "3² = 9", "x² + 6x + 9 = (x + 3)²"]),
+            Question(id: "alg.square.q2",
+                     prompt: "Rewrite x² + 8x + 16 as a square.",
+                     math: nil,
+                     kind: .freeAnswer(accepted: ["(x+4)^2", "(x + 4)^2", "(x+4)²", "(x + 4)²"]),
+                     hint: "Which binomial squared gives 8x in the middle?",
+                     solutionSteps: ["Half of 8 is 4", "x² + 8x + 16 = (x + 4)²"]),
+            Question(id: "alg.square.q3",
+                     prompt: "Solve by completing the square: x² + 4x = 5.",
+                     math: nil,
+                     kind: .freeAnswer(accepted: ["-5,1", "-5, 1", "1,-5", "1, -5"]),
+                     hint: "Add 4 to both sides.",
+                     solutionSteps: ["x² + 4x + 4 = 9", "(x + 2)² = 9", "x + 2 = ±3", "x = 1 or x = −5"]),
+            Question(id: "alg.square.q4",
+                     prompt: "Vertex of y = (x − 3)² + 2?",
+                     math: nil,
+                     kind: .freeAnswer(accepted: ["(3,2)", "3,2", "(3, 2)", "3, 2"]),
+                     hint: "Vertex form is y = a(x − h)² + k.",
+                     solutionSteps: ["h = 3 and k = 2", "Vertex: (3, 2)"]),
+            Question(id: "alg.square.q5",
+                     prompt: "True or false: x² − 10x + 25 = (x − 5)².",
+                     math: nil,
+                     kind: .trueFalse(answer: true),
+                     hint: "Square x − 5.",
+                     solutionSteps: ["(x − 5)² = x² − 10x + 25", "So the statement is true"]),
+        ]
+    )
+
     static let exponents = Lesson(
         id: "alg.exp",
         title: "Exponent Rules",
@@ -3994,7 +4042,7 @@ enum Curriculum {
               subtitle: "Equations & expressions",
               icon: "function",
               color: Palette.algebra,
-              lessons: [linearEquations, quadratics, exponents, logarithms, factoring,
+              lessons: [linearEquations, quadratics, completingSquare, exponents, logarithms, factoring,
                         linesAndSlope, inequalities, systems, polynomials, algFunctions,
                         functionModeling, wordProblems, absoluteValueEquations, rationalExpressions]),
         Topic(id: "calculus",

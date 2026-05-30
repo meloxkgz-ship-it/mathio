@@ -86045,6 +86045,1091 @@
           }
         }
       }
+    },
+    "Completing the Square": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quadratische Ergänzung"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Completar el cuadrado"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Compléter le carré"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Completamento del quadrato"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Completar o quadrado"
+          }
+        }
+      }
+    },
+    "Completing the square rewrites a quadratic as a perfect square plus or minus a constant.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mit quadratischer Ergänzung schreibst du eine quadratische Funktion als vollständiges Quadrat plus oder minus eine Konstante."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Completar el cuadrado reescribe una cuadrática como un cuadrado perfecto más o menos una constante."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Compléter le carré réécrit un trinôme du second degré comme un carré parfait plus ou moins une constante."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il completamento del quadrato riscrive una quadratica come un quadrato perfetto più o meno una costante."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Completar o quadrado reescreve uma quadrática como um quadrado perfeito mais ou menos uma constante."
+          }
+        }
+      }
+    },
+    "Perfect square pattern": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Muster des vollständigen Quadrats"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Patrón de cuadrado perfecto"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modèle de carré parfait"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schema del quadrato perfetto"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Padrão de quadrado perfeito"
+          }
+        }
+      }
+    },
+    "{var:x}{sup:^2} + 2{var:a}{var:x} + {var:a}{sup:^2} = ({var:x}+{var:a}){sup:^2}": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "{var:x}{sup:^2} + 2{var:a}{var:x} + {var:a}{sup:^2} = ({var:x}+{var:a}){sup:^2}"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "{var:x}{sup:^2} + 2{var:a}{var:x} + {var:a}{sup:^2} = ({var:x}+{var:a}){sup:^2}"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "{var:x}{sup:^2} + 2{var:a}{var:x} + {var:a}{sup:^2} = ({var:x}+{var:a}){sup:^2}"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "{var:x}{sup:^2} + 2{var:a}{var:x} + {var:a}{sup:^2} = ({var:x}+{var:a}){sup:^2}"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "{var:x}{sup:^2} + 2{var:a}{var:x} + {var:a}{sup:^2} = ({var:x}+{var:a}){sup:^2}"
+          }
+        }
+      }
+    },
+    "Half the x-coefficient, then square it.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Halbiere den x-Koeffizienten und quadriere ihn."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toma la mitad del coeficiente de x y luego elévala al cuadrado."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prends la moitié du coefficient de x, puis mets-la au carré."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prendi metà del coefficiente di x, poi elevalo al quadrato."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pegue metade do coeficiente de x e depois eleve ao quadrado."
+          }
+        }
+      }
+    },
+    "Vertex form": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scheitelpunktform"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Forma de vértice"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Forme canonique"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Forma del vertice"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Forma de vértice"
+          }
+        }
+      }
+    },
+    "{var:y} = {var:a}({var:x}−{var:h}){sup:^2} + {var:k}": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "{var:y} = {var:a}({var:x}−{var:h}){sup:^2} + {var:k}"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "{var:y} = {var:a}({var:x}−{var:h}){sup:^2} + {var:k}"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "{var:y} = {var:a}({var:x}−{var:h}){sup:^2} + {var:k}"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "{var:y} = {var:a}({var:x}−{var:h}){sup:^2} + {var:k}"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "{var:y} = {var:a}({var:x}−{var:h}){sup:^2} + {var:k}"
+          }
+        }
+      }
+    },
+    "The vertex is (h, k), which makes graphing easier.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der Scheitelpunkt ist (h, k), das macht das Zeichnen leichter."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El vértice es (h, k), lo que facilita graficar."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le sommet est (h, k), ce qui facilite le tracé."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il vertice è (h, k), il che rende più semplice il grafico."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O vértice é (h, k), o que facilita desenhar o gráfico."
+          }
+        }
+      }
+    },
+    "Complete the square: x² + 6x + __": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ergänze zum Quadrat: x² + 6x + __"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Completa el cuadrado: x² + 6x + __"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Complète le carré : x² + 6x + __"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Completa il quadrato: x² + 6x + __"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Complete o quadrado: x² + 6x + __"
+          }
+        }
+      }
+    },
+    "Half of 6 is 3, then square it.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Hälfte von 6 ist 3, dann quadrieren."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La mitad de 6 es 3; luego elévala al cuadrado."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La moitié de 6 est 3, puis on la met au carré."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La metà di 6 è 3, poi elevala al quadrato."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Metade de 6 é 3; depois eleve ao quadrado."
+          }
+        }
+      }
+    },
+    "6 / 2 = 3": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "6 / 2 = 3"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "6 / 2 = 3"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "6 / 2 = 3"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "6 / 2 = 3"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "6 / 2 = 3"
+          }
+        }
+      }
+    },
+    "3² = 9": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3² = 9"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3² = 9"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3² = 9"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3² = 9"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3² = 9"
+          }
+        }
+      }
+    },
+    "Rewrite x² + 8x + 16 as a square.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schreibe x² + 8x + 16 als Quadrat."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reescribe x² + 8x + 16 como un cuadrado."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Réécris x² + 8x + 16 sous forme de carré."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Riscrivi x² + 8x + 16 come un quadrato."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reescreva x² + 8x + 16 como um quadrado."
+          }
+        }
+      }
+    },
+    "Which binomial squared gives 8x in the middle?": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Welches quadrierte Binom ergibt in der Mitte 8x?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "¿Qué binomio al cuadrado da 8x en el término central?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quel binôme au carré donne 8x au milieu ?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quale binomio al quadrato dà 8x al centro?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Qual binômio ao quadrado dá 8x no termo do meio?"
+          }
+        }
+      }
+    },
+    "Half of 8 is 4": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Hälfte von 8 ist 4"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La mitad de 8 es 4"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La moitié de 8 est 4"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La metà di 8 è 4"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Metade de 8 é 4"
+          }
+        }
+      }
+    },
+    "x² + 8x + 16 = (x + 4)²": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x² + 8x + 16 = (x + 4)²"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x² + 8x + 16 = (x + 4)²"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x² + 8x + 16 = (x + 4)²"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x² + 8x + 16 = (x + 4)²"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x² + 8x + 16 = (x + 4)²"
+          }
+        }
+      }
+    },
+    "Solve by completing the square: x² + 4x = 5.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Löse mit quadratischer Ergänzung: x² + 4x = 5."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Resuelve completando el cuadrado: x² + 4x = 5."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Résous en complétant le carré : x² + 4x = 5."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Risolvi completando il quadrato: x² + 4x = 5."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Resolva completando o quadrado: x² + 4x = 5."
+          }
+        }
+      }
+    },
+    "Add 4 to both sides.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Addiere 4 auf beiden Seiten."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Suma 4 a ambos lados."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ajoute 4 aux deux côtés."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aggiungi 4 a entrambi i lati."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Some 4 aos dois lados."
+          }
+        }
+      }
+    },
+    "x² + 4x + 4 = 9": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x² + 4x + 4 = 9"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x² + 4x + 4 = 9"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x² + 4x + 4 = 9"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x² + 4x + 4 = 9"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x² + 4x + 4 = 9"
+          }
+        }
+      }
+    },
+    "(x + 2)² = 9": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(x + 2)² = 9"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(x + 2)² = 9"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(x + 2)² = 9"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(x + 2)² = 9"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(x + 2)² = 9"
+          }
+        }
+      }
+    },
+    "x + 2 = ±3": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x + 2 = ±3"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x + 2 = ±3"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x + 2 = ±3"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x + 2 = ±3"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x + 2 = ±3"
+          }
+        }
+      }
+    },
+    "x = 1 or x = −5": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x = 1 oder x = −5"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x = 1 o x = −5"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x = 1 ou x = −5"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x = 1 oppure x = −5"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x = 1 ou x = −5"
+          }
+        }
+      }
+    },
+    "Vertex of y = (x − 3)² + 2?": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scheitelpunkt von y = (x − 3)² + 2?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "¿Vértice de y = (x − 3)² + 2?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sommet de y = (x − 3)² + 2 ?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vertice di y = (x − 3)² + 2?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vértice de y = (x − 3)² + 2?"
+          }
+        }
+      }
+    },
+    "Vertex form is y = a(x − h)² + k.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Scheitelpunktform ist y = a(x − h)² + k."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La forma de vértice es y = a(x − h)² + k."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La forme canonique est y = a(x − h)² + k."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La forma del vertice è y = a(x − h)² + k."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A forma de vértice é y = a(x − h)² + k."
+          }
+        }
+      }
+    },
+    "h = 3 and k = 2": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "h = 3 und k = 2"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "h = 3 y k = 2"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "h = 3 et k = 2"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "h = 3 e k = 2"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "h = 3 e k = 2"
+          }
+        }
+      }
+    },
+    "Vertex: (3, 2)": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scheitelpunkt: (3, 2)"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vértice: (3, 2)"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sommet : (3, 2)"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vertice: (3, 2)"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vértice: (3, 2)"
+          }
+        }
+      }
+    },
+    "True or false: x² − 10x + 25 = (x − 5)².": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wahr oder falsch: x² − 10x + 25 = (x − 5)²."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verdadero o falso: x² − 10x + 25 = (x − 5)²."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vrai ou faux : x² − 10x + 25 = (x − 5)²."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vero o falso: x² − 10x + 25 = (x − 5)²."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verdadeiro ou falso: x² − 10x + 25 = (x − 5)²."
+          }
+        }
+      }
+    },
+    "Square x − 5.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quadriere x − 5."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eleva x − 5 al cuadrado."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mets x − 5 au carré."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eleva x − 5 al quadrato."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eleve x − 5 ao quadrado."
+          }
+        }
+      }
+    },
+    "(x − 5)² = x² − 10x + 25": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(x − 5)² = x² − 10x + 25"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(x − 5)² = x² − 10x + 25"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(x − 5)² = x² − 10x + 25"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(x − 5)² = x² − 10x + 25"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(x − 5)² = x² − 10x + 25"
+          }
+        }
+      }
+    },
+    "So the statement is true": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Aussage ist also wahr"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Así que la afirmación es verdadera"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L’énoncé est donc vrai"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quindi l’affermazione è vera"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Então a afirmação é verdadeira"
+          }
+        }
+      }
+    },
+    "77 lessons across algebra, calculus, geometry, statistics, finance, and more": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "77 Lektionen zu Algebra, Analysis, Geometrie, Statistik, Finanzmathe und mehr"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "77 lecciones de álgebra, cálculo, geometría, estadística, finanzas y más"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "77 leçons d’algèbre, d’analyse, de géométrie, de statistiques, de finance et plus"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "77 lezioni su algebra, analisi, geometria, statistica, finanza e altro"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "77 aulas de álgebra, cálculo, geometria, estatística, finanças e mais"
+          }
+        }
+      }
     }
   },
   "version": "1.0"
