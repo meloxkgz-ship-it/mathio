@@ -21,7 +21,19 @@
 		1A0000010000000000000009 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 1A0000010000000000000019 /* Localizable.xcstrings */; };
 		1A000001000000000000000A /* Mathio.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 1A000001000000000000001A /* Mathio.storekit */; };
 		1A000001000000000000000E /* RevenueCat in Frameworks */ = {isa = PBXBuildFile; productRef = 1A0000010000000000000091 /* RevenueCat */; };
+		1A0000020000000000000001 /* MathExpressionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000020000000000000011 /* MathExpressionTests.swift */; };
+		1A0000020000000000000002 /* StoreRetentionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000020000000000000012 /* StoreRetentionTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1A0000020000000000000060 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A0000010000000000000060 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A0000010000000000000040;
+			remoteInfo = Mathio;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1A0000010000000000000010 /* Mathio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mathio.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,6 +51,10 @@
 		1A000001000000000000001C /* AppIntents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntents.swift; sourceTree = "<group>"; };
 		1A000001000000000000001D /* SeedActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeedActivity.swift; sourceTree = "<group>"; };
 		1A000001000000000000001E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A0000020000000000000010 /* MathioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MathioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A0000020000000000000011 /* MathExpressionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathExpressionTests.swift; sourceTree = "<group>"; };
+		1A0000020000000000000012 /* StoreRetentionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreRetentionTests.swift; sourceTree = "<group>"; };
+		1A0000020000000000000013 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +66,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1A0000020000000000000020 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -57,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				1A0000010000000000000031 /* Mathio */,
+				1A0000020000000000000031 /* MathioTests */,
 				1A0000010000000000000032 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,8 +110,19 @@
 			isa = PBXGroup;
 			children = (
 				1A0000010000000000000010 /* Mathio.app */,
+				1A0000020000000000000010 /* MathioTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		1A0000020000000000000031 /* MathioTests */ = {
+			isa = PBXGroup;
+			children = (
+				1A0000020000000000000011 /* MathExpressionTests.swift */,
+				1A0000020000000000000012 /* StoreRetentionTests.swift */,
+				1A0000020000000000000013 /* README.md */,
+			);
+			path = MathioTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -113,6 +148,23 @@
 			productReference = 1A0000010000000000000010 /* Mathio.app */;
 			productType = "com.apple.product-type.application";
 		};
+		1A0000020000000000000040 /* MathioTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A0000020000000000000041 /* Build configuration list for PBXNativeTarget "MathioTests" */;
+			buildPhases = (
+				1A0000020000000000000050 /* Sources */,
+				1A0000020000000000000020 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A0000020000000000000061 /* PBXTargetDependency */,
+			);
+			name = MathioTests;
+			productName = MathioTests;
+			productReference = 1A0000020000000000000010 /* MathioTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -125,6 +177,10 @@
 				TargetAttributes = {
 					1A0000010000000000000040 = {
 						CreatedOnToolsVersion = 26.3;
+					};
+					1A0000020000000000000040 = {
+						CreatedOnToolsVersion = 26.3;
+						TestTargetID = 1A0000010000000000000040;
 					};
 				};
 			};
@@ -150,6 +206,7 @@
 			projectRoot = "";
 			targets = (
 				1A0000010000000000000040 /* Mathio */,
+				1A0000020000000000000040 /* MathioTests */,
 			);
 		};
 /* End PBXProject section */
@@ -185,7 +242,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1A0000020000000000000050 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A0000020000000000000001 /* MathExpressionTests.swift in Sources */,
+				1A0000020000000000000002 /* StoreRetentionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1A0000020000000000000061 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A0000010000000000000040 /* Mathio */;
+			targetProxy = 1A0000020000000000000060 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1A0000010000000000000070 /* Debug */ = {
@@ -359,6 +433,54 @@
 			};
 			name = Release;
 		};
+		1A0000020000000000000080 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T3BRJDPUGM;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kgz.MathioTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mathio.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Mathio";
+			};
+			name = Debug;
+		};
+		1A0000020000000000000081 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T3BRJDPUGM;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kgz.MathioTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mathio.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Mathio";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -376,6 +498,15 @@
 			buildConfigurations = (
 				1A0000010000000000000070 /* Debug */,
 				1A0000010000000000000071 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A0000020000000000000041 /* Build configuration list for PBXNativeTarget "MathioTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A0000020000000000000080 /* Debug */,
+				1A0000020000000000000081 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

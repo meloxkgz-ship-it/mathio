@@ -1,16 +1,12 @@
 # Mathio Tests
 
-XCTest suite for the answer normalizer.
+XCTest suite for answer normalization and retention logic.
 
-The project ships without a test target wired up — adding one via `pbxproj`
-surgery is risky to do automatically. To enable the tests:
+Run from the repository root:
 
-1. Open `Mathio.xcodeproj` in Xcode.
-2. **File → New → Target… → iOS → Unit Testing Bundle**.
-3. Name it `MathioTests`, target Mathio.
-4. Drag `MathExpressionTests.swift` from this folder into the new test target's
-   Sources build phase.
-5. **⌘U** to run.
+```sh
+xcodebuild test -scheme Mathio -project iOS/Mathio/Mathio.xcodeproj -destination 'platform=iOS Simulator,name=iPhone 17'
+```
 
 The test cases are real:
 
@@ -28,3 +24,4 @@ The test cases are real:
 | `emptyInputDoesNotMatch` | Empty / whitespace input rejected |
 | `equationsArePreservedNotReordered` | Equations not reordered around `=` |
 | `acceptedListVariants` | The `accepted: [String]` list is normalized too |
+| `reviewPlan` | Completion memory plan counts tomorrow/week review timing |
