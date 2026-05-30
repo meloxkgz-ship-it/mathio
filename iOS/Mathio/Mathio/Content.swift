@@ -1888,6 +1888,64 @@ enum Curriculum {
         ]
     )
 
+    static let relatedRates = Lesson(
+        id: "calc.related",
+        title: "Related Rates",
+        intro: "Related rates problems connect changing quantities. Build an equation first, then differentiate with respect to time.",
+        formulas: [
+            Formula(key: "calc.related.f1",
+                    name: "Differentiate with time",
+                    math: "if {var:A} = {var:s}{sup:^2}, then d{var:A}/dt = 2{var:s} · d{var:s}/dt",
+                    explanation: "Every changing variable gets its own rate when you differentiate."),
+            Formula(key: "calc.related.f2",
+                    name: "Circle area rate",
+                    math: "{var:A} = π{var:r}{sup:^2}  ⟹  d{var:A}/dt = 2π{var:r} · d{var:r}/dt",
+                    explanation: "The area changes faster when the radius is already large."),
+        ],
+        questions: [
+            Question(id: "calc.related.q1",
+                     prompt: "If s = 5 and ds/dt = 2, find dA/dt for A = s².",
+                     math: nil,
+                     kind: .freeAnswer(accepted: ["20"]),
+                     hint: "Use dA/dt = 2s · ds/dt.",
+                     solutionSteps: ["dA/dt = 2(5)(2)", "dA/dt = 20"]),
+            Question(id: "calc.related.q2",
+                     prompt: "A circle has radius r = 3 and dr/dt = 2. Find dA/dt.",
+                     math: nil,
+                     kind: .freeAnswer(accepted: ["12pi", "12π"]),
+                     hint: "Use dA/dt = 2πr · dr/dt.",
+                     solutionSteps: ["dA/dt = 2π(3)(2)", "dA/dt = 12π"]),
+            Question(id: "calc.related.q3",
+                     prompt: "In related rates, you usually differentiate with respect to:",
+                     math: nil,
+                     kind: .multipleChoice(options: [
+                        .init(label: "time", math: nil),
+                        .init(label: "only x", math: nil),
+                        .init(label: "only y", math: nil),
+                        .init(label: "the answer choices", math: nil),
+                     ], correctIndex: 0),
+                     hint: "Rates describe change over time.",
+                     solutionSteps: ["Related rates track changing quantities", "So we differentiate with respect to time"]),
+            Question(id: "calc.related.q4",
+                     prompt: "If V = x³, then dV/dt equals:",
+                     math: nil,
+                     kind: .multipleChoice(options: [
+                        .init(label: "3x² · dx/dt", math: nil),
+                        .init(label: "3x", math: nil),
+                        .init(label: "x²", math: nil),
+                        .init(label: "dx/dt only", math: nil),
+                     ], correctIndex: 0),
+                     hint: "Use the chain rule because x changes with time.",
+                     solutionSteps: ["d/dt(x³) = 3x² · dx/dt"]),
+            Question(id: "calc.related.q5",
+                     prompt: "True or false: You should plug in the given numbers before building the equation.",
+                     math: nil,
+                     kind: .trueFalse(answer: false),
+                     hint: "Build the relationship first.",
+                     solutionSteps: ["First build the equation connecting variables", "Then differentiate", "Then substitute the given values"]),
+        ]
+    )
+
     // MARK: - Geometry (more)
 
     static let angles = Lesson(
@@ -3569,7 +3627,8 @@ enum Curriculum {
               icon: "chart.xyaxis.line",
               color: Palette.calculus,
               lessons: [limits, derivatives, integrals, chainRule,
-                        productQuotient, definiteIntegrals, calcApplications, optimizationBasics]),
+                        productQuotient, definiteIntegrals, calcApplications, optimizationBasics,
+                        relatedRates]),
         Topic(id: "geometry",
               title: "Geometry",
               subtitle: "Shapes & distance",
