@@ -23,16 +23,6 @@ PROSE: dict[str, str] = {
     # Home and review UX
     "7 days": "7 Tage",
     "7-day focus": "7-Tage-Fokus",
-    "82 lessons across algebra, calculus, geometry, statistics, finance, and more":
-        "82 Lektionen in Algebra, Analysis, Geometrie, Statistik, Finanzmathe und mehr",
-    "84 lessons across algebra, calculus, geometry, statistics, finance, and more":
-        "84 Lektionen in Algebra, Analysis, Geometrie, Statistik, Finanzmathe und mehr",
-    "85 lessons across algebra, calculus, geometry, statistics, finance, and more":
-        "85 Lektionen in Algebra, Analysis, Geometrie, Statistik, Finanzmathe und mehr",
-    "88 lessons across algebra, calculus, geometry, statistics, finance, and more":
-        "88 Lektionen in Algebra, Analysis, Geometrie, Statistik, Finanzmathe und mehr",
-    "89 lessons across algebra, calculus, geometry, statistics, finance, and more":
-        "89 Lektionen in Algebra, Analysis, Geometrie, Statistik, Finanzmathe und mehr",
     "0.8 is greatest": "0,8 ist am größten",
     "10% is 8 and 5% is half of that.": "10 % sind 8 und 5 % ist die Hälfte davon.",
     "19% is close to 20%": "19 % liegt nahe bei 20 %",
@@ -368,9 +358,6 @@ PROSE: dict[str, str] = {
     "Add the values and divide by 3.": "Addiere die Werte und teile durch 3.",
     "All equal": "Alle gleich",
     "All possible outcomes": "Alle möglichen Ergebnisse",
-    "All 85 lessons and 425 guided questions": "Alle 85 Lektionen und 425 geführten Aufgaben",
-    "All 88 lessons and 440 guided questions": "Alle 88 Lektionen und 440 geführten Aufgaben",
-    "All 89 lessons and 445 guided questions": "Alle 89 Lektionen und 445 geführten Aufgaben",
     "%lld-day first track will appear on Home": "Der erste %lld-Tage-Plan erscheint auf Home",
     "answers left": "Antworten übrig",
     "A line has slope 3. From point (0, 2), what point do you reach after run 1?":
