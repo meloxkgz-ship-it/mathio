@@ -1880,7 +1880,7 @@ struct LearningPath: Identifiable {
             color: Palette.algebra,
             lessons: [Curriculum.linearEquations, Curriculum.linesAndSlope, Curriculum.factoring,
                       Curriculum.inequalities, Curriculum.systems, Curriculum.absoluteValueEquations,
-                      Curriculum.rationalExpressions],
+                      Curriculum.wordProblems, Curriculum.rationalExpressions],
             durationDays: 21
         ),
         LearningPath(
@@ -1912,7 +1912,8 @@ struct LearningPath: Identifiable {
             icon: "checklist",
             color: Palette.terracotta,
             lessons: [Curriculum.preAlgFractions, Curriculum.linearEquations, Curriculum.pythagoras,
-                      Curriculum.trigBasics, Curriculum.descriptiveStats, Curriculum.correlationRegression],
+                      Curriculum.wordProblems, Curriculum.trigBasics, Curriculum.descriptiveStats,
+                      Curriculum.correlationRegression],
             durationDays: 14
         ),
         LearningPath(
@@ -4056,7 +4057,7 @@ struct PaywallView: View {
 
     private var bullets: some View {
         VStack(alignment: .leading, spacing: 12) {
-            row("books.vertical.fill", "69 lessons across algebra, calculus, geometry, statistics, finance, and more")
+            row("books.vertical.fill", "70 lessons across algebra, calculus, geometry, statistics, finance, and more")
             row("map.fill", "Guided paths show exactly what to study next")
             row("brain.head.profile", "Adaptive practice focuses on weak spots")
             row("arrow.triangle.2.circlepath", "Spaced repetition brings back what you are about to forget")

@@ -53,7 +53,7 @@ Reasoning:
 ## Promotional Text (170 max — editable without review)
 
 ```
-New: Related Rates, Exam Readiness, Rational Expressions, Next 3 Sessions, and 69 focused lessons.
+New: Word Problems, Related Rates, Exam Readiness, Next 3 Sessions, and 70 focused lessons.
 ```
 **98 / 170** — highlights current catalog size, retention improvements, and new exam-prep content.
 
@@ -110,7 +110,7 @@ Available in English, German, Spanish, French, Italian, and Brazilian Portuguese
 TOPICS
 Pre-Algebra, Algebra, Calculus, Geometry, Trigonometry, Statistics, Linear Algebra, Financial Math, and Discrete Math.
 
-69 lessons and 345 hand-crafted questions cover fractions, percentages, equations, functions, derivatives, integrals, related rates, vectors, matrices, probability, regression, confidence intervals, rational expressions, budgeting, loans, taxes, discounts, truth tables, logic, graph theory, and more.
+70 lessons and 350 hand-crafted questions cover fractions, percentages, equations, word problems, functions, derivatives, integrals, related rates, vectors, matrices, probability, regression, confidence intervals, rational expressions, budgeting, loans, taxes, discounts, truth tables, logic, graph theory, and more.
 
 SUBSCRIPTION
 Mathio is free to try. Unlock all topics with:
@@ -132,11 +132,12 @@ From fractions to derivatives. Two minutes a day is enough.
 ### v1.0.9
 
 ```
-Mathio now gives learners clearer direction after every launch and more depth for statistics practice.
+Mathio now gives learners clearer direction after every launch and more depth for exam-ready algebra practice.
 
 New:
 • Next 3 Sessions: your personal plan now shows the next concrete lessons to study
 • Comeback Mission: a gentle 5-question restart when you return after a break
+• Word Problems: new algebra practice for translating real situations into equations
 • Related Rates: new calculus practice for classic exam-style rate problems
 • Rational Expressions: algebra practice for simplifying variable fractions
 • Confidence Intervals: guided statistics practice with formulas and worked solutions
@@ -146,7 +147,7 @@ New:
 Improved:
 • Clearer learning path guidance on Home
 • Better premium feel with more personalized study flow
-• Expanded curriculum: 69 lessons and 345 guided questions across 9 topics
+• Expanded curriculum: 70 lessons and 350 guided questions across 9 topics
 
 Fixed:
 • Continued cleanup of localized app copy to avoid mixed German/English flows

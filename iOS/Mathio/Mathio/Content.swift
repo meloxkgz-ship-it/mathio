@@ -1627,6 +1627,59 @@ enum Curriculum {
         ]
     )
 
+    static let wordProblems = Lesson(
+        id: "alg.words",
+        title: "Word Problems",
+        intro: "Word problems become manageable when you name the unknown, translate each clue, and check whether the answer makes sense.",
+        formulas: [
+            Formula(key: "alg.words.f1",
+                    name: "Translate to an equation",
+                    math: "unknown → {var:x},  story → equation",
+                    explanation: "Choose what x represents first, then turn each sentence into math."),
+            Formula(key: "alg.words.f2",
+                    name: "Total cost model",
+                    math: "total = fixed cost + rate · amount",
+                    explanation: "Many real-world problems combine a starting cost with a repeated cost."),
+        ],
+        questions: [
+            Question(id: "alg.words.q1",
+                     prompt: "A gym charges 20 per month plus a 30 signup fee. Cost after x months?",
+                     math: nil,
+                     kind: .freeAnswer(accepted: ["20x+30"]),
+                     hint: "Monthly cost repeats, signup fee happens once.",
+                     solutionSteps: ["20 per month gives 20x", "Add the one-time 30 fee", "Cost = 20x + 30"]),
+            Question(id: "alg.words.q2",
+                     prompt: "Two notebooks and one pen cost 11. A pen costs 3. What is one notebook?",
+                     math: nil,
+                     kind: .freeAnswer(accepted: ["4"]),
+                     hint: "Let n be the notebook price.",
+                     solutionSteps: ["2n + 3 = 11", "2n = 8", "n = 4"]),
+            Question(id: "alg.words.q3",
+                     prompt: "A number is doubled and then increased by 5 to get 17. What is the number?",
+                     math: nil,
+                     kind: .freeAnswer(accepted: ["6"]),
+                     hint: "Translate doubled to 2x.",
+                     solutionSteps: ["2x + 5 = 17", "2x = 12", "x = 6"]),
+            Question(id: "alg.words.q4",
+                     prompt: "Which equation matches: 7 less than a number is 12?",
+                     math: nil,
+                     kind: .multipleChoice(options: [
+                        .init(label: "x − 7 = 12", math: nil),
+                        .init(label: "7 − x = 12", math: nil),
+                        .init(label: "7x = 12", math: nil),
+                        .init(label: "x + 7 = 12", math: nil),
+                     ], correctIndex: 0),
+                     hint: "Start with the number, then subtract 7.",
+                     solutionSteps: ["A number is x", "7 less than it is x − 7", "Equation: x − 7 = 12"]),
+            Question(id: "alg.words.q5",
+                     prompt: "True or false: If x is the number of tickets and each ticket costs 8, total cost is 8x.",
+                     math: nil,
+                     kind: .trueFalse(answer: true),
+                     hint: "Repeated cost means multiply.",
+                     solutionSteps: ["Each ticket costs 8", "x tickets cost 8 · x", "Total cost = 8x"]),
+        ]
+    )
+
     static let absoluteValueEquations = Lesson(
         id: "alg.abs",
         title: "Absolute Value Equations",
@@ -3620,7 +3673,7 @@ enum Curriculum {
               color: Palette.algebra,
               lessons: [linearEquations, quadratics, exponents, logarithms, factoring,
                         linesAndSlope, inequalities, systems, polynomials, algFunctions,
-                        functionModeling, absoluteValueEquations, rationalExpressions]),
+                        functionModeling, wordProblems, absoluteValueEquations, rationalExpressions]),
         Topic(id: "calculus",
               title: "Calculus",
               subtitle: "Change & accumulation",

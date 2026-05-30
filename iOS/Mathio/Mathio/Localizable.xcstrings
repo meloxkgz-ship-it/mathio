@@ -77307,6 +77307,1371 @@
           }
         }
       }
+    },
+    "20 per month gives 20x": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "20 pro Monat ergibt 20x"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "20 por mes da 20x"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "20 par mois donne 20x"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "20 al mese dà 20x"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "20 por mês dá 20x"
+          }
+        }
+      }
+    },
+    "20x+30": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "20x+30"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "20x+30"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "20x+30"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "20x+30"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "20x+30"
+          }
+        }
+      }
+    },
+    "2n + 3 = 11": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2n + 3 = 11"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2n + 3 = 11"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2n + 3 = 11"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2n + 3 = 11"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2n + 3 = 11"
+          }
+        }
+      }
+    },
+    "2n = 8": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2n = 8"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2n = 8"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2n = 8"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2n = 8"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2n = 8"
+          }
+        }
+      }
+    },
+    "2x + 5 = 17": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2x + 5 = 17"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2x + 5 = 17"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2x + 5 = 17"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2x + 5 = 17"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2x + 5 = 17"
+          }
+        }
+      }
+    },
+    "2x = 12": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2x = 12"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2x = 12"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2x = 12"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2x = 12"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2x = 12"
+          }
+        }
+      }
+    },
+    "7 less than it is x − 7": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "7 weniger davon ist x − 7"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "7 menos que eso es x − 7"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "7 de moins que lui donne x − 7"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "7 in meno di esso è x − 7"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "7 a menos que ele é x − 7"
+          }
+        }
+      }
+    },
+    "7 − x = 12": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "7 − x = 12"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "7 − x = 12"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "7 − x = 12"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "7 − x = 12"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "7 − x = 12"
+          }
+        }
+      }
+    },
+    "70 lessons across algebra, calculus, geometry, statistics, finance, and more": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "70 Lektionen zu Algebra, Analysis, Geometrie, Statistik, Finanzmathe und mehr"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "70 lecciones de álgebra, cálculo, geometría, estadística, finanzas y más"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "70 leçons d’algèbre, de calcul, de géométrie, de statistiques, de finance et plus"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "70 lezioni di algebra, analisi, geometria, statistica, finanza e altro"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "70 lições de álgebra, cálculo, geometria, estatística, finanças e mais"
+          }
+        }
+      }
+    },
+    "7x = 12": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "7x = 12"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "7x = 12"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "7x = 12"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "7x = 12"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "7x = 12"
+          }
+        }
+      }
+    },
+    "A gym charges 20 per month plus a 30 signup fee. Cost after x months?": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ein Fitnessstudio verlangt 20 pro Monat plus 30 Anmeldegebühr. Kosten nach x Monaten?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un gimnasio cobra 20 al mes más una cuota de inscripción de 30. ¿Costo después de x meses?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Une salle de sport facture 20 par mois plus 30 d’inscription. Coût après x mois ?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una palestra costa 20 al mese più 30 di iscrizione. Costo dopo x mesi?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uma academia cobra 20 por mês mais 30 de matrícula. Custo depois de x meses?"
+          }
+        }
+      }
+    },
+    "A number is doubled and then increased by 5 to get 17. What is the number?": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eine Zahl wird verdoppelt und dann um 5 erhöht, sodass 17 entsteht. Wie lautet die Zahl?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un número se duplica y luego aumenta en 5 para obtener 17. ¿Cuál es el número?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un nombre est doublé puis augmenté de 5 pour obtenir 17. Quel est ce nombre ?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un numero viene raddoppiato e poi aumentato di 5 per ottenere 17. Qual è il numero?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Um número é dobrado e depois aumentado em 5 para obter 17. Qual é o número?"
+          }
+        }
+      }
+    },
+    "A number is x": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eine Zahl ist x"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un número es x"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un nombre est x"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un numero è x"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Um número é x"
+          }
+        }
+      }
+    },
+    "Add the one-time 30 fee": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Addiere die einmalige Gebühr von 30"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Suma la cuota única de 30"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ajoute les frais uniques de 30"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aggiungi la quota una tantum di 30"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Some a taxa única de 30"
+          }
+        }
+      }
+    },
+    "Choose what x represents first, then turn each sentence into math.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lege zuerst fest, wofür x steht, und übersetze dann jeden Satz in Mathematik."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Primero decide qué representa x y luego convierte cada oración en matemáticas."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Décide d’abord ce que représente x, puis transforme chaque phrase en mathématiques."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prima decidi cosa rappresenta x, poi trasforma ogni frase in matematica."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Primeiro decida o que x representa; depois transforme cada frase em matemática."
+          }
+        }
+      }
+    },
+    "Cost = 20x + 30": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kosten = 20x + 30"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Costo = 20x + 30"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Coût = 20x + 30"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Costo = 20x + 30"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Custo = 20x + 30"
+          }
+        }
+      }
+    },
+    "Each ticket costs 8": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jedes Ticket kostet 8"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cada entrada cuesta 8"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chaque billet coûte 8"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ogni biglietto costa 8"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cada ingresso custa 8"
+          }
+        }
+      }
+    },
+    "Equation: x − 7 = 12": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gleichung: x − 7 = 12"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ecuación: x − 7 = 12"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Équation : x − 7 = 12"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Equazione: x − 7 = 12"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Equação: x − 7 = 12"
+          }
+        }
+      }
+    },
+    "Let n be the notebook price.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sei n der Preis eines Hefts."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sea n el precio del cuaderno."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Soit n le prix du cahier."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sia n il prezzo del quaderno."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Seja n o preço do caderno."
+          }
+        }
+      }
+    },
+    "Many real-world problems combine a starting cost with a repeated cost.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Viele Alltagsprobleme kombinieren Startkosten mit wiederholten Kosten."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Muchos problemas reales combinan un costo inicial con un costo repetido."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beaucoup de problèmes réels combinent un coût de départ et un coût répété."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Molti problemi reali combinano un costo iniziale con un costo ripetuto."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Muitos problemas reais combinam um custo inicial com um custo repetido."
+          }
+        }
+      }
+    },
+    "Monthly cost repeats, signup fee happens once.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Monatskosten wiederholen sich, die Anmeldegebühr fällt einmal an."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El costo mensual se repite; la inscripción ocurre una sola vez."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le coût mensuel se répète, les frais d’inscription arrivent une seule fois."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il costo mensile si ripete, la quota di iscrizione si paga una volta."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O custo mensal se repete; a matrícula acontece uma vez."
+          }
+        }
+      }
+    },
+    "Repeated cost means multiply.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wiederholte Kosten bedeuten multiplizieren."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un costo repetido significa multiplicar."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un coût répété signifie multiplier."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un costo ripetuto significa moltiplicare."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Custo repetido significa multiplicar."
+          }
+        }
+      }
+    },
+    "Start with the number, then subtract 7.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beginne mit der Zahl und ziehe dann 7 ab."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Empieza con el número y luego resta 7."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Commence par le nombre, puis soustrais 7."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Parti dal numero, poi sottrai 7."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Comece com o número e depois subtraia 7."
+          }
+        }
+      }
+    },
+    "Total cost = 8x": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gesamtkosten = 8x"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Costo total = 8x"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Coût total = 8x"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Costo totale = 8x"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Custo total = 8x"
+          }
+        }
+      }
+    },
+    "Total cost model": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gesamtkosten-Modell"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modelo de costo total"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modèle du coût total"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modello del costo totale"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modelo de custo total"
+          }
+        }
+      }
+    },
+    "Translate doubled to 2x.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Übersetze verdoppelt als 2x."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Traduce duplicado como 2x."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Traduis doublé par 2x."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Traduci raddoppiato come 2x."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Traduza dobrado como 2x."
+          }
+        }
+      }
+    },
+    "Translate to an equation": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In eine Gleichung übersetzen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Traducir a una ecuación"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Traduire en équation"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Traduci in un’equazione"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Traduza para uma equação"
+          }
+        }
+      }
+    },
+    "True or false: If x is the number of tickets and each ticket costs 8, total cost is 8x.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wahr oder falsch: Wenn x die Anzahl der Tickets ist und jedes Ticket 8 kostet, sind die Gesamtkosten 8x."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verdadero o falso: si x es el número de entradas y cada entrada cuesta 8, el costo total es 8x."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vrai ou faux : si x est le nombre de billets et chaque billet coûte 8, le coût total est 8x."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vero o falso: se x è il numero di biglietti e ogni biglietto costa 8, il costo totale è 8x."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verdadeiro ou falso: se x é o número de ingressos e cada ingresso custa 8, o custo total é 8x."
+          }
+        }
+      }
+    },
+    "Two notebooks and one pen cost 11. A pen costs 3. What is one notebook?": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zwei Hefte und ein Stift kosten 11. Ein Stift kostet 3. Was kostet ein Heft?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dos cuadernos y un bolígrafo cuestan 11. Un bolígrafo cuesta 3. ¿Cuánto cuesta un cuaderno?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deux cahiers et un stylo coûtent 11. Un stylo coûte 3. Combien coûte un cahier ?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Due quaderni e una penna costano 11. Una penna costa 3. Quanto costa un quaderno?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dois cadernos e uma caneta custam 11. Uma caneta custa 3. Quanto custa um caderno?"
+          }
+        }
+      }
+    },
+    "Which equation matches: 7 less than a number is 12?": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Welche Gleichung passt: 7 weniger als eine Zahl ist 12?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "¿Qué ecuación corresponde: 7 menos que un número es 12?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quelle équation correspond : 7 de moins qu’un nombre donne 12 ?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quale equazione corrisponde: 7 in meno di un numero è 12?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Qual equação corresponde: 7 a menos que um número é 12?"
+          }
+        }
+      }
+    },
+    "Word Problems": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Textaufgaben"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Problemas de palabras"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Problèmes énoncés"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Problemi testuali"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Problemas contextualizados"
+          }
+        }
+      }
+    },
+    "Word problems become manageable when you name the unknown, translate each clue, and check whether the answer makes sense.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Textaufgaben werden machbar, wenn du die Unbekannte benennst, jeden Hinweis übersetzt und prüfst, ob die Antwort sinnvoll ist."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Los problemas de palabras se vuelven manejables cuando nombras la incógnita, traduces cada pista y compruebas si la respuesta tiene sentido."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les problèmes énoncés deviennent plus simples quand tu nommes l’inconnue, traduis chaque indice et vérifies si la réponse a du sens."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I problemi testuali diventano gestibili quando dai un nome all’incognita, traduci ogni indizio e controlli se la risposta ha senso."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Problemas contextualizados ficam mais fáceis quando você nomeia a incógnita, traduz cada pista e verifica se a resposta faz sentido."
+          }
+        }
+      }
+    },
+    "n = 4": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "n = 4"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "n = 4"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "n = 4"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "n = 4"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "n = 4"
+          }
+        }
+      }
+    },
+    "total = fixed cost + rate · amount": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "gesamt = Fixkosten + Rate · Menge"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "total = costo fijo + tarifa · cantidad"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "total = coût fixe + tarif · quantité"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "totale = costo fisso + tariffa · quantità"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "total = custo fixo + taxa · quantidade"
+          }
+        }
+      }
+    },
+    "unknown → {var:x},  story → equation": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "unknown → {var:x},  story → equation"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "unknown → {var:x},  story → equation"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "unknown → {var:x},  story → equation"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "unknown → {var:x},  story → equation"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "unknown → {var:x},  story → equation"
+          }
+        }
+      }
+    },
+    "x + 7 = 12": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x + 7 = 12"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x + 7 = 12"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x + 7 = 12"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x + 7 = 12"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x + 7 = 12"
+          }
+        }
+      }
+    },
+    "x = 6": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x = 6"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x = 6"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x = 6"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x = 6"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x = 6"
+          }
+        }
+      }
+    },
+    "x tickets cost 8 · x": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x Tickets kosten 8 · x"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x entradas cuestan 8 · x"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x billets coûtent 8 · x"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x biglietti costano 8 · x"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x ingressos custam 8 · x"
+          }
+        }
+      }
+    },
+    "x − 7 = 12": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x − 7 = 12"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x − 7 = 12"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x − 7 = 12"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x − 7 = 12"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x − 7 = 12"
+          }
+        }
+      }
     }
   },
   "version": "1.0"
