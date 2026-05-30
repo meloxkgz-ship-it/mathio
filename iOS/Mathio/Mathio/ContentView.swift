@@ -3327,11 +3327,10 @@ struct PracticeView: View {
                 if shouldShowReminderOffer {
                     reminderOfferCard
                 }
-                if let next = nextLessonProvider?(), !isReview {
+                if let next = suggestedNextLesson {
                     nextLessonCard(next)
                 }
-                PrimaryButton(title: "Done", icon: "checkmark") { dismiss() }
-                    .padding(.top, 12)
+                completionActions
             }
             .frame(maxWidth: .infinity)
         }
@@ -3374,6 +3373,11 @@ struct PracticeView: View {
         !sessionMissedQuestions.isEmpty
     }
 
+    private var suggestedNextLesson: Lesson? {
+        guard !isReview else { return nil }
+        return nextLessonProvider?()
+    }
+
     private var sessionAccuracyPercent: Int {
         guard lesson.questions.count > 0 else { return 0 }
         return Int((Double(sessionCorrect) / Double(lesson.questions.count) * 100).rounded())
@@ -3394,7 +3398,7 @@ struct PracticeView: View {
         if isReview {
             return "Your review queue is cleaner. Continue with the next lesson."
         }
-        if nextLessonProvider?() != nil {
+        if suggestedNextLesson != nil {
             return "Start the next lesson while the rhythm is warm."
         }
         return "Come back tomorrow for another short session."
@@ -3589,6 +3593,11 @@ struct PracticeView: View {
                         .font(.system(size: 20, weight: .semibold))
                         .foregroundStyle(Palette.calculus)
                     VStack(alignment: .leading, spacing: 2) {
+                        Text("Recommended next")
+                            .font(.caption)
+                            .foregroundStyle(Palette.inkFaint)
+                            .textCase(.uppercase)
+                            .tracking(1)
                         Text("Keep learning")
                             .font(.titleM)
                             .foregroundStyle(Palette.ink)
@@ -3596,6 +3605,11 @@ struct PracticeView: View {
                             .font(.bodyM)
                             .foregroundStyle(Palette.inkSoft)
                             .lineLimit(2)
+                        Text(next.intro)
+                            .font(.caption)
+                            .foregroundStyle(Palette.inkFaint)
+                            .lineLimit(2)
+                            .fixedSize(horizontal: false, vertical: true)
                     }
                     Spacer(minLength: 0)
                 }
@@ -3603,6 +3617,17 @@ struct PracticeView: View {
                     onStartNextLesson?(next)
                 }
             }
+        }
+    }
+
+    @ViewBuilder
+    private var completionActions: some View {
+        if suggestedNextLesson != nil {
+            SecondaryButton(title: "Done for now", icon: "checkmark") { dismiss() }
+                .padding(.top, 4)
+        } else {
+            PrimaryButton(title: "Done", icon: "checkmark") { dismiss() }
+                .padding(.top, 12)
         }
     }
 
