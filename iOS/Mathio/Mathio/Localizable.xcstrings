@@ -273,6 +273,41 @@
         }
       }
     },
+    "%@ · %@ · %lld-day first track": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ · %@ · erster %lld-Tage-Track"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ · %@ · primera ruta de %lld días"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ · %@ · premier parcours de %lld jours"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ · %@ · primo percorso di %lld giorni"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ · %@ · primeira trilha de %lld dias"
+          }
+        }
+      }
+    },
     "%@, %lld percent mastered": {
       "localizations": {
         "de": {
@@ -2042,6 +2077,41 @@
         }
       }
     },
+    "1 = lost, 5 = ready for a challenge": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1 = verloren, 5 = bereit für eine Herausforderung"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1 = perdido, 5 = listo para un reto"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1 = perdu, 5 = prêt pour un défi"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1 = perso, 5 = pronto per una sfida"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1 = perdido, 5 = pronto para um desafio"
+          }
+        }
+      }
+    },
     "1 and 2 both appear in {1,2,3}": {
       "localizations": {
         "de": {
@@ -2382,6 +2452,41 @@
         }
       }
     },
+    "1/2 + 1/4 = ?": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1/2 + 1/4 = ?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1/2 + 1/4 = ?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1/2 + 1/4 = ?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1/2 + 1/4 = ?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1/2 + 1/4 = ?"
+          }
+        }
+      }
+    },
     "1/2 = 3/6": {
       "localizations": {
         "de": {
@@ -2446,6 +2551,41 @@
           "stringUnit": {
             "state": "translated",
             "value": "1/3 = 2/6"
+          }
+        }
+      }
+    },
+    "1/8": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1/8"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1/8"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1/8"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1/8"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1/8"
           }
         }
       }
@@ -4082,6 +4222,76 @@
         }
       }
     },
+    "2/6": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2/6"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2/6"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2/6"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2/6"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2/6"
+          }
+        }
+      }
+    },
+    "20": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "20"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "20"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "20"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "20"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "20"
+          }
+        }
+      }
+    },
     "20 / 4 = 5": {
       "localizations": {
         "de": {
@@ -4354,6 +4564,41 @@
         }
       }
     },
+    "21-Day Functions Bootcamp": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "21-Tage-Funktionen-Bootcamp"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bootcamp de funciones en 21 días"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bootcamp fonctions en 21 jours"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bootcamp funzioni in 21 giorni"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bootcamp de funções em 21 dias"
+          }
+        }
+      }
+    },
     "23 = 2 · 10 + 3.": {
       "localizations": {
         "de": {
@@ -4490,6 +4735,41 @@
         }
       }
     },
+    "25": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "25"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "25"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "25"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "25"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "25"
+          }
+        }
+      }
+    },
     "25 + 144 = 169 = 13²": {
       "localizations": {
         "de": {
@@ -4520,6 +4800,41 @@
           "stringUnit": {
             "state": "translated",
             "value": "25 + 144 = 169 = 13²"
+          }
+        }
+      }
+    },
+    "25% of 80 = ?": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "25 % von 80 = ?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "25 % de 80 = ?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "25 % de 80 = ?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "25% di 80 = ?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "25% de 80 = ?"
           }
         }
       }
@@ -4690,6 +5005,41 @@
           "stringUnit": {
             "state": "translated",
             "value": "2s"
+          }
+        }
+      }
+    },
+    "2x": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2x"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2x"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2x"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2x"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2x"
           }
         }
       }
@@ -5818,6 +6168,7 @@
       }
     },
     "3/4": {
+      "extractionState": "manual",
       "localizations": {
         "de": {
           "stringUnit": {
@@ -5949,6 +6300,41 @@
           "stringUnit": {
             "state": "translated",
             "value": "30 = 10t"
+          }
+        }
+      }
+    },
+    "30-Day Foundation Reset": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "30-Tage-Grundlagen-Neustart"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reinicio de fundamentos en 30 días"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Remise à niveau en 30 jours"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ripartenza dalle basi in 30 giorni"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recomeço dos fundamentos em 30 dias"
           }
         }
       }
@@ -6595,6 +6981,41 @@
           "stringUnit": {
             "state": "translated",
             "value": "4/6 − 1/6 = 3/6 = 1/2"
+          }
+        }
+      }
+    },
+    "40": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "40"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "40"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "40"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "40"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "40"
           }
         }
       }
@@ -9114,6 +9535,41 @@
           "stringUnit": {
             "state": "translated",
             "value": "Um aumento de 100% significa original + original = 2 vezes original"
+          }
+        }
+      }
+    },
+    "A 14-day starter path will appear on Home": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ein 14-Tage-Startpfad erscheint auf Home"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una ruta inicial de 14 días aparecerá en Inicio"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un parcours de départ de 14 jours apparaîtra sur l’accueil"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un percorso iniziale di 14 giorni apparirà nella Home"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uma trilha inicial de 14 dias aparecerá no Início"
           }
         }
       }
@@ -11702,6 +12158,41 @@
         }
       }
     },
+    "A right triangle uses which idea?": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Welche Idee nutzt ein rechtwinkliges Dreieck?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "¿Qué idea usa un triángulo rectángulo?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quelle idée utilise un triangle rectangle ?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quale idea usa un triangolo rettangolo?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Que ideia um triângulo retângulo usa?"
+          }
+        }
+      }
+    },
     "A rising line has positive slope": {
       "localizations": {
         "de": {
@@ -13880,6 +14371,41 @@
         }
       }
     },
+    "Advanced push": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fortgeschrittener Schub"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impulso avanzado"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Accélération avancée"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spinta avanzata"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Avanço acelerado"
+          }
+        }
+      }
+    },
     "Algebra": {
       "localizations": {
         "de": {
@@ -15815,6 +16341,41 @@
           "stringUnit": {
             "state": "translated",
             "value": "Base vezes altura perpendicular."
+          }
+        }
+      }
+    },
+    "Based on %lld of %lld and your goal, Mathio will start small and adapt each day.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Basierend auf %lld von %lld und deinem Ziel startet Mathio klein und passt sich täglich an."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Según %lld de %lld y tu objetivo, Mathio empieza pequeño y se adapta cada día."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Avec %lld sur %lld et votre objectif, Mathio démarre doucement et s’adapte chaque jour."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In base a %lld su %lld e al tuo obiettivo, Mathio parte in piccolo e si adatta ogni giorno."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Com base em %lld de %lld e no seu objetivo, o Mathio começa leve e se adapta a cada dia."
           }
         }
       }
@@ -20447,6 +21008,7 @@
       }
     },
     "Daily goal": {
+      "extractionState": "manual",
       "localizations": {
         "de": {
           "stringUnit": {
@@ -20469,7 +21031,7 @@
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Obiettivo quotidiano"
+            "value": "Obiettivo giornaliero"
           }
         },
         "pt-BR": {
@@ -20748,6 +21310,41 @@
           "stringUnit": {
             "state": "translated",
             "value": "Dados, acaso e decisões"
+          }
+        }
+      }
+    },
+    "Data, probability, regression": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Daten, Wahrscheinlichkeit, Regression"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Datos, probabilidad, regresión"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Données, probabilités, régression"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dati, probabilità, regressione"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dados, probabilidade, regressão"
           }
         }
       }
@@ -21088,6 +21685,41 @@
           "stringUnit": {
             "state": "translated",
             "value": "Derivada do primeiro vezes o segundo, mais o primeiro vezes a derivada do segundo."
+          }
+        }
+      }
+    },
+    "Derivative of x²?": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ableitung von x²?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "¿Derivada de x²?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dérivée de x² ?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Derivata di x²?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Derivada de x²?"
           }
         }
       }
@@ -23914,6 +24546,41 @@
         }
       }
     },
+    "Everyday money math": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mathe für Geld im Alltag"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Matemática financiera diaria"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Maths d’argent au quotidien"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Matematica finanziaria quotidiana"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Matemática financeira do dia a dia"
+          }
+        }
+      }
+    },
     "Exactly one": {
       "localizations": {
         "de": {
@@ -24080,6 +24747,41 @@
           "stringUnit": {
             "state": "translated",
             "value": "Essenciais para provas"
+          }
+        }
+      }
+    },
+    "Exam prep": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prüfungsvorbereitung"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Preparación de exámenes"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Préparation aux examens"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Preparazione agli esami"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Preparação para provas"
           }
         }
       }
@@ -25478,6 +26180,41 @@
         }
       }
     },
+    "Five tiny questions. No pressure — this just tunes your first plan.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fünf kleine Fragen. Kein Druck — damit stimmen wir nur deinen ersten Plan ab."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cinco preguntas pequeñas. Sin presión: solo ajustan tu primer plan."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cinq petites questions. Pas de pression : cela ajuste simplement votre premier plan."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cinque domande brevi. Nessuna pressione: servono solo a regolare il primo piano."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cinco perguntas pequenas. Sem pressão: isso só ajusta seu primeiro plano."
+          }
+        }
+      }
+    },
     "Flat tangent means slope 0": {
       "localizations": {
         "de": {
@@ -25610,6 +26347,41 @@
           "stringUnit": {
             "state": "translated",
             "value": "Concentre-se em seguida"
+          }
+        }
+      }
+    },
+    "Focused practice for an upcoming test": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fokussiertes Üben für eine kommende Prüfung"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Práctica enfocada para una próxima prueba"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Entraînement ciblé pour un examen à venir"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Esercizio mirato per una prova imminente"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prática focada para uma prova próxima"
           }
         }
       }
@@ -25852,6 +26624,41 @@
         }
       }
     },
+    "Foundation reset": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Grundlagen-Neustart"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reinicio de fundamentos"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Remise à niveau"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ripartenza dalle basi"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recomeço dos fundamentos"
+          }
+        }
+      }
+    },
     "Four equal sides.": {
       "localizations": {
         "de": {
@@ -26086,6 +26893,41 @@
           "stringUnit": {
             "state": "translated",
             "value": "Frações, porcentagens, princípios básicos"
+          }
+        }
+      }
+    },
+    "Fractions, percents, ratios, roots": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Brüche, Prozente, Verhältnisse, Wurzeln"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fracciones, porcentajes, razones, raíces"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fractions, pourcentages, ratios, racines"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Frazioni, percentuali, rapporti, radici"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Frações, porcentagens, razões, raízes"
           }
         }
       }
@@ -27417,6 +28259,41 @@
         }
       }
     },
+    "Homework, tests, and steady confidence": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hausaufgaben, Tests und sichere Routine"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tareas, pruebas y confianza constante"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Devoirs, contrôles et confiance régulière"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Compiti, verifiche e sicurezza costante"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tarefas, provas e confiança constante"
+          }
+        }
+      }
+    },
     "How Mathio works": {
       "localizations": {
         "de": {
@@ -27447,6 +28324,41 @@
           "stringUnit": {
             "state": "translated",
             "value": "Como funciona Mathio"
+          }
+        }
+      }
+    },
+    "How confident do you feel right now?": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wie sicher fühlst du dich gerade?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "¿Qué tan seguro te sientes ahora?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "À quel point vous sentez-vous à l’aise maintenant ?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quanto ti senti sicuro adesso?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quão confiante você se sente agora?"
           }
         }
       }
@@ -29491,6 +30403,41 @@
         }
       }
     },
+    "Interest": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zinsen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Interés"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Intérêt"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Interesse"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Juros"
+          }
+        }
+      }
+    },
     "Interest adds to the balance before a payment reduces it.": {
       "localizations": {
         "de": {
@@ -29793,6 +30740,41 @@
           "stringUnit": {
             "state": "translated",
             "value": "5-12-13 é um triângulo retângulo?"
+          }
+        }
+      }
+    },
+    "Is it helping you learn? A quick rating helps more learners find it.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hilft es dir beim Lernen? Eine kurze Bewertung hilft mehr Lernenden, Mathio zu finden."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "¿Te está ayudando a aprender? Una valoración rápida ayuda a que más estudiantes lo encuentren."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Est-ce que cela vous aide à apprendre ? Une note rapide aide plus d’apprenants à le trouver."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ti sta aiutando a imparare? Una valutazione rapida aiuta altri studenti a trovarla."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Está ajudando você a aprender? Uma avaliação rápida ajuda mais estudantes a encontrarem o app."
           }
         }
       }
@@ -31295,6 +32277,41 @@
         }
       }
     },
+    "Lines, functions, exponents, logs": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Geraden, Funktionen, Potenzen, Logarithmen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rectas, funciones, exponentes, logaritmos"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Droites, fonctions, exposants, logarithmes"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rette, funzioni, esponenti, logaritmi"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Retas, funções, expoentes, logaritmos"
+          }
+        }
+      }
+    },
     "List each item once.": {
       "localizations": {
         "de": {
@@ -32248,35 +33265,36 @@
       }
     },
     "Mean": {
+      "extractionState": "manual",
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Bedeuten"
+            "value": "Mittelwert"
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Significar"
+            "value": "Media"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Signifier"
+            "value": "Moyenne"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Significare"
+            "value": "Media"
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Significar"
+            "value": "Média"
           }
         }
       }
@@ -32549,6 +33567,41 @@
           "stringUnit": {
             "state": "translated",
             "value": "Ausente"
+          }
+        }
+      }
+    },
+    "Mix new lessons with review to keep momentum.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kombiniere neue Lektionen mit Wiederholung, damit du dranbleibst."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Combina lecciones nuevas con repaso para mantener el impulso."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mélangez nouvelles leçons et révision pour garder l’élan."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mescola nuove lezioni e ripasso per mantenere il ritmo."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Misture novas lições com revisão para manter o ritmo."
           }
         }
       }
@@ -32957,6 +34010,41 @@
           "stringUnit": {
             "state": "translated",
             "value": "Mova todo x para um lado primeiro."
+          }
+        }
+      }
+    },
+    "Move faster into algebra, calculus, and stats.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gehe schneller zu Algebra, Analysis und Statistik über."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Avanza más rápido hacia álgebra, cálculo y estadística."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Passez plus vite à l’algèbre, l’analyse et les stats."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Passa più velocemente ad algebra, analisi e statistica."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Avance mais rápido para álgebra, cálculo e estatística."
           }
         }
       }
@@ -36907,6 +37995,41 @@
         }
       }
     },
+    "Percentages, interest, loans, and budgets": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prozente, Zinsen, Kredite und Budgets"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Porcentajes, intereses, préstamos y presupuestos"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pourcentages, intérêts, prêts et budgets"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Percentuali, interessi, prestiti e budget"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Porcentagens, juros, empréstimos e orçamentos"
+          }
+        }
+      }
+    },
     "Perfect run.": {
       "localizations": {
         "de": {
@@ -38575,6 +39698,41 @@
         }
       }
     },
+    "Pythagoras": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pythagoras"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pitágoras"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pythagore"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pitagora"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pitágoras"
+          }
+        }
+      }
+    },
     "Pythagorean": {
       "localizations": {
         "de": {
@@ -38979,6 +40137,41 @@
           "stringUnit": {
             "state": "translated",
             "value": "As perguntas retornam logo antes de você esquecê-las, então elas realmente permanecem."
+          }
+        }
+      }
+    },
+    "Quick level check": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kurzer Level-Check"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chequeo rápido de nivel"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vérification rapide du niveau"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Controllo rapido del livello"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Checagem rápida de nível"
           }
         }
       }
@@ -39731,6 +40924,41 @@
         }
       }
     },
+    "Rebuild foundations without pressure": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Grundlagen ohne Druck neu aufbauen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reconstruir bases sin presión"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reconstruire les bases sans pression"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ricostruire le basi senza pressione"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reconstruir fundamentos sem pressão"
+          }
+        }
+      }
+    },
     "Recognize the pattern → square it back.": {
       "localizations": {
         "de": {
@@ -39931,6 +41159,41 @@
           "stringUnit": {
             "state": "translated",
             "value": "Reflexão sobre o eixo x"
+          }
+        }
+      }
+    },
+    "Refresh algebra, calculus, and statistics": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Algebra, Analysis und Statistik auffrischen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Repasar álgebra, cálculo y estadística"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Revoir algèbre, analyse et statistiques"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ripassare algebra, analisi e statistica"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Revisar álgebra, cálculo e estatística"
           }
         }
       }
@@ -40646,6 +41909,41 @@
           "stringUnit": {
             "state": "translated",
             "value": "Revisão vencida"
+          }
+        }
+      }
+    },
+    "Review loop": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wiederholungsrunde"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ciclo de repaso"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Boucle de révision"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ciclo di ripasso"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ciclo de revisão"
           }
         }
       }
@@ -41568,6 +42866,41 @@
         }
       }
     },
+    "School support": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unterstützung für die Schule"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apoyo escolar"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Soutien scolaire"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Supporto scolastico"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apoio escolar"
+          }
+        }
+      }
+    },
     "Scientific Notation": {
       "localizations": {
         "de": {
@@ -41770,6 +43103,76 @@
           "stringUnit": {
             "state": "translated",
             "value": "Self-learners who want structure without noisy gamification"
+          }
+        }
+      }
+    },
+    "Self-study": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Selbststudium"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Autoestudio"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Auto-apprentissage"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Studio autonomo"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Autoestudo"
+          }
+        }
+      }
+    },
+    "Send feedback": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Feedback senden"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enviar comentarios"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Envoyer un avis"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Invia feedback"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enviar feedback"
           }
         }
       }
@@ -44222,6 +45625,41 @@
         }
       }
     },
+    "Solve: 2x + 3 = 11": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Löse: 2x + 3 = 11"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Resuelve: 2x + 3 = 11"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Résolvez : 2x + 3 = 11"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Risolvi: 2x + 3 = 11"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Resolva: 2x + 3 = 11"
+          }
+        }
+      }
+    },
     "Solve: 7 = x + 4.": {
       "localizations": {
         "de": {
@@ -44871,6 +46309,41 @@
         }
       }
     },
+    "Start my plan": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Meinen Plan starten"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Empezar mi plan"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Commencer mon plan"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inizia il mio piano"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Começar meu plano"
+          }
+        }
+      }
+    },
     "Start practice": {
       "localizations": {
         "de": {
@@ -44905,6 +46378,41 @@
         }
       }
     },
+    "Start with core skills and short wins.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Starte mit Kernfähigkeiten und schnellen Erfolgserlebnissen."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Empieza con habilidades básicas y logros rápidos."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Commencez par les bases et de petites victoires."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inizia con competenze fondamentali e piccoli successi."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Comece com habilidades centrais e vitórias rápidas."
+          }
+        }
+      }
+    },
     "Statistics": {
       "localizations": {
         "de": {
@@ -44935,6 +46443,41 @@
           "stringUnit": {
             "state": "translated",
             "value": "Estatísticas"
+          }
+        }
+      }
+    },
+    "Statistics Starter": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Statistik-Einstieg"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inicio de estadística"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Départ en statistiques"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Primi passi in statistica"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Introdução à estatística"
           }
         }
       }
@@ -45004,6 +46547,41 @@
           "stringUnit": {
             "state": "translated",
             "value": "Permanece o mesmo"
+          }
+        }
+      }
+    },
+    "Steady builder": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stabiler Aufbau"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Construcción constante"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Progression régulière"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Crescita costante"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Construção constante"
           }
         }
       }
@@ -53000,6 +54578,41 @@
         }
       }
     },
+    "University basics": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uni-Grundlagen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bases universitarias"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bases universitaires"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Basi universitarie"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fundamentos universitários"
+          }
+        }
+      }
+    },
     "Unlock all of Mathio": {
       "localizations": {
         "de": {
@@ -54872,6 +56485,41 @@
         }
       }
     },
+    "What should Mathio help with?": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wobei soll Mathio helfen?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "¿En qué debería ayudar Mathio?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Avec quoi Mathio doit-il aider ?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In cosa deve aiutarti Mathio?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Em que o Mathio deve ajudar?"
+          }
+        }
+      }
+    },
     "What's the discriminant of 2x² + 3x − 5?": {
       "localizations": {
         "de": {
@@ -56097,6 +57745,76 @@
         }
       }
     },
+    "Your answer shapes the first two weeks.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deine Antwort formt die ersten zwei Wochen."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tu respuesta define las dos primeras semanas."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Votre réponse façonne les deux premières semaines."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La tua risposta definisce le prime due settimane."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sua resposta molda as duas primeiras semanas."
+          }
+        }
+      }
+    },
+    "Your first plan is ready": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dein erster Plan ist bereit"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tu primer plan está listo"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Votre premier plan est prêt"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il tuo primo piano è pronto"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Seu primeiro plano está pronto"
+          }
+        }
+      }
+    },
     "Your progress": {
       "localizations": {
         "de": {
@@ -56127,6 +57845,41 @@
           "stringUnit": {
             "state": "translated",
             "value": "Seu progresso"
+          }
+        }
+      }
+    },
+    "Your start plan": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dein Startplan"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tu plan inicial"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Votre plan de départ"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il tuo piano iniziale"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Seu plano inicial"
           }
         }
       }
@@ -59226,6 +60979,7 @@
       }
     },
     "x": {
+      "extractionState": "manual",
       "localizations": {
         "de": {
           "stringUnit": {
@@ -59668,6 +61422,7 @@
       }
     },
     "x = 4": {
+      "extractionState": "manual",
       "localizations": {
         "de": {
           "stringUnit": {
@@ -59804,6 +61559,7 @@
       }
     },
     "x = 7": {
+      "extractionState": "manual",
       "localizations": {
         "de": {
           "stringUnit": {
@@ -59867,6 +61623,41 @@
           "stringUnit": {
             "state": "translated",
             "value": "x = 7 − 4 = 3"
+          }
+        }
+      }
+    },
+    "x = 8": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x = 8"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x = 8"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x = 8"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x = 8"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x = 8"
           }
         }
       }
@@ -60411,6 +62202,41 @@
           "stringUnit": {
             "state": "translated",
             "value": "coordenada x no topo do círculo."
+          }
+        }
+      }
+    },
+    "x²": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x²"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x²"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x²"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x²"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x²"
           }
         }
       }

@@ -316,7 +316,7 @@ struct RootView: View {
             Palette.background.ignoresSafeArea()
 
             if !store.hasOnboarded {
-                OnboardingView(store: store) {
+                OnboardingView(store: store, settings: settings) {
                     store.completeOnboarding()
                     showPaywall = true
                 }
@@ -343,18 +343,30 @@ struct RootView: View {
 
 struct OnboardingView: View {
     let store: Store
+    @Bindable var settings: UserSettings
     let onContinue: () -> Void
 
     @State private var page = 0
-    private let pageCount = 3
+    @State private var selectedGoal: LearningGoal = .exam
+    @State private var confidence = 3
+    @State private var diagnosticAnswers: [Int?] = Array(repeating: nil, count: DiagnosticQuestion.samples.count)
+    private let pageCount = 5
+
+    private var diagnosticCorrect: Int {
+        zip(diagnosticAnswers, DiagnosticQuestion.samples).reduce(0) { total, item in
+            total + (item.0 == item.1.correctIndex ? 1 : 0)
+        }
+    }
 
     var body: some View {
         VStack(spacing: 0) {
             skipBar
             TabView(selection: $page) {
                 welcomePage.tag(0)
-                howItWorksPage.tag(1)
-                habitPage.tag(2)
+                goalPage.tag(1)
+                diagnosticPage.tag(2)
+                planPage.tag(3)
+                habitPage.tag(4)
             }
             .tabViewStyle(.page(indexDisplayMode: .never))
             bottomBar
@@ -391,12 +403,19 @@ struct OnboardingView: View {
             .accessibilityHidden(true)
 
             PrimaryButton(
-                title: page == pageCount - 1 ? "Get started" : "Continue",
+                title: page == pageCount - 1 ? "Start my plan" : "Continue",
                 icon: page == pageCount - 1 ? "arrow.right" : nil
             ) {
                 if page < pageCount - 1 {
                     withAnimation(.easeInOut(duration: 0.3)) { page += 1 }
                 } else {
+                    store.saveLearningProfile(
+                        goal: selectedGoal,
+                        confidence: confidence,
+                        diagnosticCorrect: diagnosticCorrect,
+                        diagnosticTotal: DiagnosticQuestion.samples.count
+                    )
+                    settings.dailyGoal = selectedGoal == .exam ? 8 : 5
                     onContinue()
                 }
             }
@@ -447,6 +466,99 @@ struct OnboardingView: View {
                             "Miss a question and you'll see exactly how to reach the answer, line by line.")
                 featureCard("arrow.triangle.2.circlepath", "Spaced repetition",
                             "Questions return right before you'd forget them, so it actually sticks.")
+            }
+        }
+    }
+
+    private var goalPage: some View {
+        OnboardingPage {
+            VStack(spacing: 10) {
+                Text("What should Mathio help with?")
+                    .font(.displayM).foregroundStyle(Palette.ink)
+                    .multilineTextAlignment(.center)
+                Text("Your answer shapes the first two weeks.")
+                    .font(.bodyL).foregroundStyle(Palette.inkSoft)
+                    .multilineTextAlignment(.center)
+            }
+
+            VStack(spacing: 10) {
+                ForEach(LearningGoal.allCases) { goal in
+                    Button { selectedGoal = goal } label: {
+                        goalOption(goal)
+                    }
+                    .buttonStyle(.plain)
+                }
+            }
+        }
+    }
+
+    private var diagnosticPage: some View {
+        OnboardingPage {
+            VStack(spacing: 10) {
+                Text("Quick level check")
+                    .font(.displayM).foregroundStyle(Palette.ink)
+                    .multilineTextAlignment(.center)
+                Text("Five tiny questions. No pressure — this just tunes your first plan.")
+                    .font(.bodyL).foregroundStyle(Palette.inkSoft)
+                    .multilineTextAlignment(.center)
+            }
+
+            VStack(spacing: 14) {
+                ForEach(Array(DiagnosticQuestion.samples.enumerated()), id: \.offset) { index, item in
+                    diagnosticCard(item, index: index)
+                }
+            }
+
+            VStack(spacing: 12) {
+                Text("How confident do you feel right now?")
+                    .font(.titleM)
+                    .foregroundStyle(Palette.ink)
+                HStack(spacing: 8) {
+                    ForEach(1...5, id: \.self) { value in
+                        Button { confidence = value } label: {
+                            Text("\(value)")
+                                .font(.titleM)
+                                .foregroundStyle(confidence == value ? Palette.heroInk : Palette.ink)
+                                .frame(width: 42, height: 42)
+                                .background(confidence == value ? Palette.terracotta : Palette.surfaceMuted)
+                                .clipShape(Circle())
+                        }
+                        .buttonStyle(.plain)
+                    }
+                }
+                Text("1 = lost, 5 = ready for a challenge")
+                    .font(.caption)
+                    .foregroundStyle(Palette.inkFaint)
+            }
+            .padding(.top, 4)
+        }
+    }
+
+    private var planPage: some View {
+        OnboardingPage {
+            ZStack {
+                Circle().fill(Palette.calculus.opacity(0.14)).frame(width: 152, height: 152)
+                Image(systemName: selectedGoal.icon)
+                    .font(.system(size: 58, weight: .semibold))
+                    .foregroundStyle(Palette.calculus)
+            }
+            .accessibilityHidden(true)
+
+            VStack(spacing: 12) {
+                Text("Your first plan is ready")
+                    .font(.displayL).foregroundStyle(Palette.ink)
+                    .multilineTextAlignment(.center)
+                Text(profilePreviewLine)
+                    .font(.bodyL).foregroundStyle(Palette.inkSoft)
+                    .multilineTextAlignment(.center)
+            }
+
+            VStack(spacing: 10) {
+                miniStat("target", selectedGoal.title)
+                miniStat("chart.line.uptrend.xyaxis", DiagnosticQuestion.level(for: diagnosticCorrect,
+                                                                               total: DiagnosticQuestion.samples.count,
+                                                                               confidence: confidence).title)
+                miniStat("calendar.badge.clock", "A 14-day starter path will appear on Home")
             }
         }
     }
@@ -503,6 +615,57 @@ struct OnboardingView: View {
         .accessibilityElement(children: .combine)
     }
 
+    private func goalOption(_ goal: LearningGoal) -> some View {
+        let active = selectedGoal == goal
+        return Card(padding: 14, background: active ? Palette.terracottaSoft : Palette.surface) {
+            HStack(spacing: 12) {
+                Image(systemName: goal.icon)
+                    .font(.system(size: 18, weight: .semibold))
+                    .foregroundStyle(Palette.terracotta)
+                    .frame(width: 38, height: 38)
+                    .background(Palette.surfaceMuted)
+                    .clipShape(Circle())
+                VStack(alignment: .leading, spacing: 3) {
+                    Text(goal.title).font(.titleM).foregroundStyle(Palette.ink)
+                    Text(goal.subtitle).font(.bodyM).foregroundStyle(Palette.inkSoft)
+                }
+                Spacer()
+                Image(systemName: active ? "checkmark.circle.fill" : "circle")
+                    .foregroundStyle(active ? Palette.success : Palette.inkFaint)
+            }
+        }
+    }
+
+    private func diagnosticCard(_ item: DiagnosticQuestion, index: Int) -> some View {
+        Card(padding: 14) {
+            VStack(alignment: .leading, spacing: 10) {
+                Text(item.prompt)
+                    .font(.titleM)
+                    .foregroundStyle(Palette.ink)
+                HStack(spacing: 8) {
+                    ForEach(Array(item.options.enumerated()), id: \.offset) { optionIndex, option in
+                        Button { diagnosticAnswers[index] = optionIndex } label: {
+                            Text(option)
+                                .font(.bodyM)
+                                .foregroundStyle(diagnosticAnswers[index] == optionIndex ? Palette.heroInk : Palette.ink)
+                                .frame(maxWidth: .infinity)
+                                .padding(.vertical, 10)
+                                .background(diagnosticAnswers[index] == optionIndex ? Palette.terracotta : Palette.surfaceMuted)
+                                .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
+                        }
+                        .buttonStyle(.plain)
+                    }
+                }
+            }
+        }
+    }
+
+    private var profilePreviewLine: LocalizedStringResource {
+        let correct = diagnosticCorrect
+        let total = DiagnosticQuestion.samples.count
+        return "Based on \(correct) of \(total) and your goal, Mathio will start small and adapt each day."
+    }
+
     private func miniStat(_ icon: String, _ text: LocalizedStringResource) -> some View {
         HStack(spacing: 12) {
             Image(systemName: icon)
@@ -514,6 +677,30 @@ struct OnboardingView: View {
                 .fixedSize(horizontal: false, vertical: true)
             Spacer(minLength: 0)
         }
+    }
+}
+
+private struct DiagnosticQuestion {
+    let prompt: LocalizedStringResource
+    let options: [LocalizedStringResource]
+    let correctIndex: Int
+
+    static let samples: [DiagnosticQuestion] = [
+        DiagnosticQuestion(prompt: "1/2 + 1/4 = ?", options: ["3/4", "2/6", "1/8"], correctIndex: 0),
+        DiagnosticQuestion(prompt: "Solve: 2x + 3 = 11", options: ["x = 4", "x = 7", "x = 8"], correctIndex: 0),
+        DiagnosticQuestion(prompt: "25% of 80 = ?", options: ["20", "25", "40"], correctIndex: 0),
+        DiagnosticQuestion(prompt: "A right triangle uses which idea?", options: ["Pythagoras", "Mean", "Interest"], correctIndex: 0),
+        DiagnosticQuestion(prompt: "Derivative of x²?", options: ["2x", "x", "x²"], correctIndex: 0)
+    ]
+
+    static func level(for correct: Int, total: Int, confidence: Int) -> DiagnosticLevel {
+        LearningProfile(
+            goal: .exam,
+            confidence: confidence,
+            diagnosticCorrect: correct,
+            diagnosticTotal: total,
+            createdAt: .now
+        ).level
     }
 }
 
@@ -552,6 +739,7 @@ struct HomeView: View {
 
     private var topics: [Topic] { Curriculum.topics }
     private var learningPaths: [LearningPath] { LearningPath.defaultPaths }
+    private var recommendedPath: LearningPath { LearningPath.recommended(for: store.learningProfile) }
     private var nextUp: (Topic, Lesson)? { store.nextLesson(in: topics, premium: premiumStore.isPremium) }
     private var reviewCount: Int { store.reviewQueue(in: topics).count }
     private var lessonCount: Int { topics.reduce(0) { $0 + $1.lessons.count } }
@@ -571,7 +759,7 @@ struct HomeView: View {
                     DailyGoalView(progress: store.correctToday(), goal: settings.dailyGoal)
                     if reviewCount > 0 { reviewBanner }
                     nextUpCard
-                    learningPlanCard
+                    personalPlanCard
                     learningPathsSection
                     topicsList
                     Spacer(minLength: 40)
@@ -747,35 +935,65 @@ struct HomeView: View {
         }
     }
 
-    private var learningPlanCard: some View {
+    private var personalPlanCard: some View {
         Card(padding: 18, background: Palette.surfaceMuted) {
             VStack(alignment: .leading, spacing: 14) {
                 HStack(alignment: .top, spacing: 12) {
-                    Image(systemName: "calendar.badge.clock")
+                    Image(systemName: store.learningProfile?.goal.icon ?? "calendar.badge.clock")
                         .font(.system(size: 20, weight: .semibold))
                         .foregroundStyle(Palette.calculus)
                         .frame(width: 42, height: 42)
                         .background(Palette.calculus.opacity(0.14))
                         .clipShape(Circle())
                     VStack(alignment: .leading, spacing: 3) {
-                        Text("Multi-month path")
+                        Text("Your start plan")
                             .font(.titleM)
                             .foregroundStyle(Palette.ink)
-                        Text("\(lessonCount) lessons · \(questionCount) questions · about \(monthsOfPractice) months at your current goal")
+                        Text(planSummary)
                             .font(.bodyM)
                             .foregroundStyle(Palette.inkSoft)
                             .fixedSize(horizontal: false, vertical: true)
                     }
                 }
 
+                Button { open(recommendedPath) } label: {
+                    HStack(spacing: 12) {
+                        ZStack {
+                            Circle().fill(recommendedPath.color.opacity(0.15)).frame(width: 42, height: 42)
+                            Image(systemName: recommendedPath.icon)
+                                .foregroundStyle(recommendedPath.color)
+                        }
+                        VStack(alignment: .leading, spacing: 3) {
+                            Text(recommendedPath.title).font(.titleM).foregroundStyle(Palette.ink)
+                            Text(recommendedPath.subtitle).font(.bodyM).foregroundStyle(Palette.inkSoft)
+                        }
+                        Spacer()
+                        Text("\(recommendedPath.durationDays)d")
+                            .font(.label)
+                            .foregroundStyle(Palette.inkFaint)
+                        Image(systemName: isLocked(firstLesson(in: recommendedPath) ?? recommendedPath.lessons[0]) ? "lock.fill" : "arrow.right")
+                            .foregroundStyle(Palette.inkFaint)
+                    }
+                    .padding(12)
+                    .background(Palette.surface, in: RoundedRectangle(cornerRadius: 14, style: .continuous))
+                }
+                .buttonStyle(.plain)
+
                 HStack(spacing: 10) {
-                    planPill("Foundation", icon: "1.circle.fill")
-                    planPill("Practice", icon: "2.circle.fill")
-                    planPill("Review", icon: "3.circle.fill")
+                    planPill(store.learningProfile?.level.title ?? "Foundation", icon: "1.circle.fill")
+                    planPill("Daily goal", icon: "target")
+                    planPill("Review loop", icon: "arrow.triangle.2.circlepath")
                 }
             }
         }
         .accessibilityElement(children: .combine)
+    }
+
+    private var planSummary: LocalizedStringResource {
+        if let profile = store.learningProfile {
+            return "\(profile.goal.title) · \(profile.level.title) · \(recommendedPath.durationDays)-day first track"
+        }
+        return "\(lessonCount) lessons · \(questionCount) questions · about \(monthsOfPractice) months at your current goal"
     }
 
     private func planPill(_ title: LocalizedStringResource, icon: String) -> some View {
@@ -835,8 +1053,19 @@ struct LearningPath: Identifiable {
     let icon: String
     let color: Color
     let lessons: [Lesson]
+    let durationDays: Int
 
     static let defaultPaths: [LearningPath] = [
+        LearningPath(
+            id: "foundation-reset",
+            title: "30-Day Foundation Reset",
+            subtitle: "Fractions, percents, ratios, roots",
+            icon: "number",
+            color: Palette.terracotta,
+            lessons: [Curriculum.preAlgFractions, Curriculum.preAlgDecimals, Curriculum.preAlgPercents,
+                      Curriculum.preAlgRatios, Curriculum.preAlgRoots, Curriculum.scientificNotation],
+            durationDays: 30
+        ),
         LearningPath(
             id: "algebra-foundation",
             title: "Algebra Foundation",
@@ -844,7 +1073,18 @@ struct LearningPath: Identifiable {
             icon: "function",
             color: Palette.algebra,
             lessons: [Curriculum.linearEquations, Curriculum.linesAndSlope, Curriculum.factoring,
-                      Curriculum.inequalities, Curriculum.systems, Curriculum.absoluteValueEquations]
+                      Curriculum.inequalities, Curriculum.systems, Curriculum.absoluteValueEquations],
+            durationDays: 21
+        ),
+        LearningPath(
+            id: "functions-bootcamp",
+            title: "21-Day Functions Bootcamp",
+            subtitle: "Lines, functions, exponents, logs",
+            icon: "point.topleft.down.curvedto.point.bottomright.up",
+            color: Palette.algebra,
+            lessons: [Curriculum.linesAndSlope, Curriculum.algFunctions, Curriculum.exponents,
+                      Curriculum.logarithms, Curriculum.quadratics, Curriculum.polynomials],
+            durationDays: 21
         ),
         LearningPath(
             id: "calculus-starter",
@@ -853,7 +1093,8 @@ struct LearningPath: Identifiable {
             icon: "chart.xyaxis.line",
             color: Palette.calculus,
             lessons: [Curriculum.limits, Curriculum.derivatives, Curriculum.chainRule,
-                      Curriculum.integrals, Curriculum.definiteIntegrals, Curriculum.optimizationBasics]
+                      Curriculum.integrals, Curriculum.definiteIntegrals, Curriculum.optimizationBasics],
+            durationDays: 30
         ),
         LearningPath(
             id: "exam-essentials",
@@ -862,7 +1103,18 @@ struct LearningPath: Identifiable {
             icon: "checklist",
             color: Palette.terracotta,
             lessons: [Curriculum.preAlgFractions, Curriculum.linearEquations, Curriculum.pythagoras,
-                      Curriculum.trigBasics, Curriculum.descriptiveStats, Curriculum.correlationRegression]
+                      Curriculum.trigBasics, Curriculum.descriptiveStats, Curriculum.correlationRegression],
+            durationDays: 14
+        ),
+        LearningPath(
+            id: "stats-starter",
+            title: "Statistics Starter",
+            subtitle: "Data, probability, regression",
+            icon: "chart.bar.xaxis",
+            color: Palette.calculus,
+            lessons: [Curriculum.descriptiveStats, Curriculum.probabilityBasics, Curriculum.dataDisplays,
+                      Curriculum.sampling, Curriculum.distributions, Curriculum.correlationRegression],
+            durationDays: 21
         ),
         LearningPath(
             id: "money-math",
@@ -871,9 +1123,30 @@ struct LearningPath: Identifiable {
             icon: "banknote",
             color: Palette.trig,
             lessons: [Curriculum.simpleInterest, Curriculum.compoundInterest, Curriculum.budgeting,
-                      Curriculum.inflationRealValue, Curriculum.loansPayments]
+                      Curriculum.inflationRealValue, Curriculum.loansPayments],
+            durationDays: 14
         )
     ]
+
+    static func recommended(for profile: LearningProfile?) -> LearningPath {
+        guard let profile else { return defaultPaths[0] }
+        switch profile.goal {
+        case .school:
+            return profile.level == .starter ? defaultPaths[0] : defaultPaths[1]
+        case .exam:
+            return defaultPaths.first { $0.id == "exam-essentials" } ?? defaultPaths[0]
+        case .selfStudy:
+            return profile.level == .advanced
+                ? (defaultPaths.first { $0.id == "functions-bootcamp" } ?? defaultPaths[1])
+                : defaultPaths[0]
+        case .university:
+            return profile.level == .advanced
+                ? (defaultPaths.first { $0.id == "calculus-starter" } ?? defaultPaths[0])
+                : (defaultPaths.first { $0.id == "algebra-foundation" } ?? defaultPaths[0])
+        case .money:
+            return defaultPaths.first { $0.id == "money-math" } ?? defaultPaths[0]
+        }
+    }
 }
 
 struct LearningPathRow: View {
@@ -1386,6 +1659,7 @@ struct PracticeView: View {
     /// version per device by Apple, regardless of how often we call it.
     /// Triggered by `ReviewPromptGate` after a meaningful progress milestone.
     @Environment(\.requestReview) private var requestReview
+    @Environment(\.openURL) private var openURL
 
     @State private var index: Int = 0
     @State private var input: String = ""
@@ -1650,15 +1924,16 @@ struct PracticeView: View {
                         Text("Enjoying Mathio?")
                             .font(.titleM)
                             .foregroundStyle(Palette.ink)
-                        Text("A quick rating helps more learners find it.")
+                        Text("Is it helping you learn? A quick rating helps more learners find it.")
                             .font(.bodyM)
                             .foregroundStyle(Palette.inkSoft)
                     }
                 }
                 HStack(spacing: 10) {
-                    SecondaryButton(title: "Not now") {
+                    SecondaryButton(title: "Send feedback") {
                         ReviewPromptGate.markPrompted()
                         hideReviewOffer = true
+                        openURL(Links.support)
                     }
                     PrimaryButton(title: "Rate Mathio", icon: "star.fill") {
                         ReviewPromptGate.markPrompted()

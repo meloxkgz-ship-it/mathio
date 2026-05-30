@@ -89,6 +89,84 @@ struct Question: Identifiable, Hashable {
     }
 }
 
+enum LearningGoal: String, Codable, CaseIterable, Identifiable {
+    case school
+    case exam
+    case selfStudy
+    case university
+    case money
+
+    var id: String { rawValue }
+
+    var title: LocalizedStringResource {
+        switch self {
+        case .school: "School support"
+        case .exam: "Exam prep"
+        case .selfStudy: "Self-study"
+        case .university: "University basics"
+        case .money: "Everyday money math"
+        }
+    }
+
+    var subtitle: LocalizedStringResource {
+        switch self {
+        case .school: "Homework, tests, and steady confidence"
+        case .exam: "Focused practice for an upcoming test"
+        case .selfStudy: "Rebuild foundations without pressure"
+        case .university: "Refresh algebra, calculus, and statistics"
+        case .money: "Percentages, interest, loans, and budgets"
+        }
+    }
+
+    var icon: String {
+        switch self {
+        case .school: "graduationcap.fill"
+        case .exam: "checklist.checked"
+        case .selfStudy: "person.fill.checkmark"
+        case .university: "function"
+        case .money: "banknote.fill"
+        }
+    }
+}
+
+enum DiagnosticLevel: String, Codable {
+    case starter
+    case steady
+    case advanced
+
+    var title: LocalizedStringResource {
+        switch self {
+        case .starter: "Foundation reset"
+        case .steady: "Steady builder"
+        case .advanced: "Advanced push"
+        }
+    }
+
+    var subtitle: LocalizedStringResource {
+        switch self {
+        case .starter: "Start with core skills and short wins."
+        case .steady: "Mix new lessons with review to keep momentum."
+        case .advanced: "Move faster into algebra, calculus, and stats."
+        }
+    }
+}
+
+struct LearningProfile: Codable, Equatable {
+    var goal: LearningGoal
+    var confidence: Int
+    var diagnosticCorrect: Int
+    var diagnosticTotal: Int
+    var createdAt: Date
+
+    var level: DiagnosticLevel {
+        guard diagnosticTotal > 0 else { return confidence >= 4 ? .advanced : .starter }
+        let ratio = Double(diagnosticCorrect) / Double(diagnosticTotal)
+        if ratio >= 0.75 || confidence >= 5 { return .advanced }
+        if ratio >= 0.45 || confidence >= 3 { return .steady }
+        return .starter
+    }
+}
+
 // MARK: - Persisted progress
 //
 // A single source of truth: per-question history. Everything else (streak,
@@ -181,6 +259,7 @@ final class Store {
     private let kFreezes       = "mathio.streak.freezes"
     private let kFreezeRefill  = "mathio.streak.freezeRefillDate"
     private let kDailyCorrect  = "mathio.dailyCorrect.v1"
+    private let kLearningProfile = "mathio.learningProfile.v1"
 
     static let maxFreezes = 2
 
@@ -188,6 +267,7 @@ final class Store {
     private(set) var streakDays: Int = 0
     private(set) var bookmarks: Set<String> = []
     private(set) var dailyCorrect: [String: Int] = [:]
+    private(set) var learningProfile: LearningProfile?
     /// Available "streak freezes" — auto-spent if a day is missed. Refills weekly.
     private(set) var streakFreezes: Int = 2
     var hasOnboarded: Bool
@@ -206,6 +286,10 @@ final class Store {
         if let data = defaults.data(forKey: kDailyCorrect),
            let decoded = try? JSONDecoder().decode([String: Int].self, from: data) {
             self.dailyCorrect = decoded
+        }
+        if let data = defaults.data(forKey: kLearningProfile),
+           let decoded = try? JSONDecoder().decode(LearningProfile.self, from: data) {
+            self.learningProfile = decoded
         }
         // Default freezes if never set (defaults.integer returns 0 for unset).
         if defaults.object(forKey: kFreezes) == nil {
@@ -244,6 +328,18 @@ final class Store {
     func completeOnboarding() {
         hasOnboarded = true
         defaults.set(true, forKey: kOnboarded)
+    }
+
+    func saveLearningProfile(goal: LearningGoal, confidence: Int,
+                             diagnosticCorrect: Int, diagnosticTotal: Int) {
+        learningProfile = LearningProfile(
+            goal: goal,
+            confidence: confidence,
+            diagnosticCorrect: diagnosticCorrect,
+            diagnosticTotal: diagnosticTotal,
+            createdAt: .now
+        )
+        persistLearningProfile()
     }
 
     /// Wipe all answer history + streak. Onboarding flag is preserved.
@@ -416,6 +512,12 @@ final class Store {
     private func persistDailyCorrect() {
         if let data = try? JSONEncoder().encode(dailyCorrect) {
             defaults.set(data, forKey: kDailyCorrect)
+        }
+    }
+
+    private func persistLearningProfile() {
+        if let data = try? JSONEncoder().encode(learningProfile) {
+            defaults.set(data, forKey: kLearningProfile)
         }
     }
 
