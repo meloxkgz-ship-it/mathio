@@ -1,9 +1,12 @@
-Dieses Update macht Mathio breiter und nützlicher für tägliches Üben.
+Mathio fühlt sich ab der ersten Woche klarer an und bietet mehr Tiefe im gesamten Curriculum.
 
-• Neue Lektion: Funktionsmodellierung für alltagsnahe Algebra
-• Neue Lektion: Inferenz-Grundlagen für Statistik und Stichproben
-• Mathio wächst auf 100 Lektionen und 500 geführte Aufgaben
-• Der persönliche Startplan und das zielbasierte Onboarding bleiben drin
-• Premium- und App-Store-Texte passen jetzt zum erweiterten Inhalt
+Neu und verbessert:
+• Realistischer Wochenfokus: Mathio passt das Wochenziel jetzt an das Lernprofil an, statt alle auf 7/7 Tage zu drücken
+• Das Onboarding zeigt jetzt denselben erreichbaren Wochenplan wie Home
+• Neue Nutzenkarten erklären, warum jedes Thema wichtig ist, von Algebra und Geometrie bis Finanzmathe, Statistik und Prüfungstraining
+• Jede Lektion hat jetzt mindestens zwei Referenzkarten, mit neuen Erklärungen zu Rechenreihenfolge, Satz des Pythagoras und Kettenregel
+• Der Lerncoach empfiehlt weiter die beste nächste Aktion aus Wiederholungen, Fehlern, Schwachstellen, Tagesziel und Prüfungs-Sprints
+• Lernsaison und längere Pfade helfen beim Dranbleiben über 30, 45, 60, 84 oder 90 Tage
+• Deutsche Texte wurden weiter bereinigt, damit Lern- und Paywall-Flows nicht Deutsch/Englisch mischen
 
-Zwei Minuten am Tag decken jetzt noch mehr relevante Mathematik ab.
+Mathio umfasst jetzt 100 Lektionen, 500 geführte Aufgaben, verteiltes Wiederholen, Wochenziele und klareren Premium-Wert für Lernende, die über Monate besser werden wollen.

@@ -34,8 +34,8 @@ REPO_ROOT="$(cd "$(dirname "$0")/../../.." && pwd)"
 cd "$REPO_ROOT"
 
 BUNDLE="com.kgz.Mathio"
-TARGET_VERSION="${TARGET_VERSION:-1.0.4}"
-TARGET_BUILD="${TARGET_BUILD:-6}"
+TARGET_VERSION="${TARGET_VERSION:-1.0.10}"
+TARGET_BUILD="${TARGET_BUILD:-14}"
 PROFILE="${PROFILE:-industrietrainer}"
 ASC=/opt/homebrew/bin/asc
 
@@ -49,13 +49,17 @@ do_run(){
   fi
 }
 
-bold "[0/6] Verify asc auth (profile: $PROFILE)"
+bold "[0/7] Verify local metadata"
+python3 docs/aso/scripts/verify_metadata.py
+echo
+
+bold "[1/7] Verify asc auth (profile: $PROFILE)"
 $ASC --profile "$PROFILE" auth status >/dev/null 2>&1 \
   || { echo "Profile '$PROFILE' missing or invalid. Run: asc auth login --name $PROFILE …" >&2; exit 1; }
 say "profile '$PROFILE' is healthy"
 echo
 
-bold "[1/6] Resolve App Store Connect app ID"
+bold "[2/7] Resolve App Store Connect app ID"
 APP_JSON=$($ASC --profile "$PROFILE" apps list --bundle-id "$BUNDLE" --output json 2>/dev/null || true)
 APP_ID=$(echo "$APP_JSON" | python3 -c "import json,sys; d=json.load(sys.stdin); print(d['data'][0]['id'] if d.get('data') else '')")
 if [[ -z "$APP_ID" ]]; then
@@ -66,7 +70,7 @@ fi
 say "app ID: $APP_ID"
 echo
 
-bold "[2/6] Resolve target version $TARGET_VERSION"
+bold "[3/7] Resolve target version $TARGET_VERSION"
 VER_JSON=$($ASC --profile "$PROFILE" versions list --app "$APP_ID" --output json 2>/dev/null || true)
 VERSION_ID=$(echo "$VER_JSON" | python3 -c "
 import json,sys
@@ -88,7 +92,7 @@ fi
 say "version ID: $VERSION_ID"
 echo
 
-bold "[3/6] App-info localisation (subtitle, EN + DE)"
+bold "[4/7] App-info localisation (subtitle, EN + DE)"
 do_run "$ASC --profile $PROFILE localizations update \
   --app $APP_ID --type app-info --locale en-US \
   --subtitle 'Algebra, geometry & calculus' --output table"
@@ -97,7 +101,7 @@ do_run "$ASC --profile $PROFILE localizations update \
   --subtitle 'Algebra, Analysis & Geometrie' --output table"
 echo
 
-bold "[4/6] Version localisation (description, keywords, promo, what's-new)"
+bold "[5/7] Version localisation (description, keywords, promo, what's-new)"
 
 # Read the listing copy from plain-text so it round-trips through the CLI
 # without markdown contamination.
@@ -158,7 +162,7 @@ else
 fi
 echo
 
-bold "[5/6] Screenshots — iPhone 6.9-inch (12 PNGs total)"
+bold "[6/7] Screenshots — iPhone 6.9-inch (12 PNGs total)"
 # Fan-out across locales: docs/screenshots/<locale>/iphone/*.png.
 do_run "$ASC --profile $PROFILE screenshots upload \
   --app $APP_ID --version-id $VERSION_ID \
@@ -172,7 +176,7 @@ if [[ $DO_SUBMIT -eq 0 ]]; then
   exit 0
 fi
 
-bold "[6/6] Submit for review"
+bold "[7/7] Submit for review"
 echo "  Reviewer notes are in SUBMIT.md — paste them into App Store Connect"
 echo "  → Version → App Review Information **before** confirming below."
 echo "  (asc review submit doesn't write that field.)"

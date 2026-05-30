@@ -2,6 +2,8 @@
 
 Copy-paste targets for **App Store Connect → My Apps → Mathio**.
 Two locales: `en-US/` (primary) and `de-DE/` (German market).
+The plain-text `description.txt` and `whats-new.txt` files are the source of
+truth used by `scripts/submit.sh`.
 
 ## Field length limits (App Store Connect)
 
@@ -44,3 +46,12 @@ Two locales: `en-US/` (primary) and `de-DE/` (German market).
 - `keyword-research.md` — competitor mapping + reasoning for the chosen keywords
 - `screenshots-spec.md` — screenshot list, captions, sizes per device
 - `release-checklist.md` — final pre-submit checklist
+
+## Pre-submit checks
+
+Run these before using `scripts/submit.sh`:
+
+```bash
+python3 docs/aso/scripts/verify_metadata.py
+python3 docs/aso/scripts/verify_xcstrings.py
+```

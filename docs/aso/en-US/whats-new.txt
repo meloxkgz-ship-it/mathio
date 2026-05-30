@@ -1,49 +1,13 @@
-Mathio now gives learners clearer direction after every launch and more depth across exam-ready algebra, geometry, calculus, statistics, and finance practice.
+Mathio now feels clearer from the first week and deeper across the full curriculum.
 
-New:
-• Study Coach: Home now recommends the single best next action from reviews, missed questions, weak spots, daily goals, or exam sprints
-• Learning Health: Progress now shows an on-track score built from consistency, daily goals, reviews, and mastery
-• Premium value proof: the paywall now highlights Study Coach, Learning Health, Smart Review, and the full roadmap
-• Next 3 Sessions: your personal plan now shows the next concrete lessons to study
-• 7-Day Focus: a clearer weekly habit card turns your recommended path into seven small sessions
-• Review Forecast: Home now shows what is due today, tomorrow, and in the next 7 days
-• Next Study Targets: Progress now highlights the concrete lessons that can move your roadmap fastest
-• Sequences & Series: new algebra practice for arithmetic sequences, geometric sequences, and sums
-• Implicit Differentiation: new calculus practice for dy/dx, circles, products, and chain-rule reasoning
-• Roadmap Phases: Progress now groups the curriculum into Foundations, Exam Core, and Extension tracks
-• Rich Path Previews: guided paths now show duration, lesson count, and the next concrete lesson
-• Session Insight: every completed session now shows accuracy, misses, mode, and the next best step
-• Expected Value: new statistics practice for long-run averages, fair games, and expected gain
-• Conditional Probability: new statistics practice for given information, overlaps, and multiplication rules
-• Bayes' Theorem: new probability practice for evidence, base rates, and test results
-• Standard Deviation: new statistics practice for spread, squared deviations, and sample vs population formulas
-• Normal Distribution: new statistics practice for z-scores, bell curves, and the empirical rule
-• Box Plots & Quartiles: new statistics practice for five-number summaries, IQR, and spread
-• Tips & Bill Splitting: practical finance practice for tips, shared totals, and fair shares
-• Comeback Mission: a gentle 5-question restart when you return after a break
-• Coordinate Geometry: new geometry practice for midpoint, distance, slope, and coordinate-plane reasoning
-• Completing the Square: new algebra practice for rewriting quadratics, solving by square roots, and reading vertex form
-• Composite Areas: new geometry practice for splitting shapes, subtracting cutouts, and avoiding overlap mistakes
-• Unit Prices: new financial math practice for comparing real deals
-• Unit Conversions: new foundation practice for metric moves, conversion factors, and real-world units
-• Exponential Growth & Decay: new algebra practice for interest, depreciation, doubling, and growth factors
-• Graphing Lines: new algebra practice for y-intercepts, x-intercepts, slope moves, and reading points
-• Quadratic Graphs: new algebra practice for vertex form, symmetry, opening direction, and intercepts
-• Percent Change: new everyday math practice for discounts, growth, and loss
-• Word Problems: new algebra practice for translating real situations into equations
-• Related Rates: new calculus practice for classic exam-style rate problems
-• Rational Expressions: algebra practice for simplifying variable fractions
-• Radical Equations: new algebra practice for roots, squaring both sides, and checking extraneous solutions
-• Confidence Intervals: guided statistics practice with formulas and worked solutions
-• Exam Readiness score on the Sprint card so learners see what to improve next
-• Exam Sprint and Weak Spot Drill for faster focused practice
+New and improved:
+• Realistic weekly focus: Mathio now adapts the weekly target to the learner's profile instead of pushing everyone toward 7/7 days
+• First-week onboarding now matches the Home plan, so new learners see a reachable goal immediately
+• Topic purpose cards explain why each area matters, from algebra and geometry to finance, statistics, and exam prep
+• Every lesson now has at least two reference cards, with added guidance for order of operations, the Pythagorean theorem, and the chain rule
+• Study Coach continues to pick the best next action from reviews, missed questions, weak spots, daily goals, and exam sprints
+• Learning Season and long-term paths help learners stay with a 30-, 45-, 60-, 84-, or 90-day plan
+• German copy has been polished further to avoid mixed English/German UI in learning and paywall flows
+• Localized strings are verified across German, Spanish, French, Italian, and Brazilian Portuguese
 
-Improved:
-• Progress now includes lesson-level study targets, not only topic percentages
-• Achievements now extend into longer-term streak, review, 250-answer, 500-answer, and full-roadmap goals
-• Clearer learning path guidance on Home
-• Better premium feel with more personalized study flow
-• Expanded curriculum: 100 lessons, 500 guided questions, and longer 12-week/90-day learning paths across 10 study areas
-
-Fixed:
-• Continued cleanup of localized app copy to avoid mixed German/English flows
+Mathio now has 100 lessons, 500 guided questions, spaced repetition, focused review, weekly habit targets, and clearer premium value for learners who want to keep improving over months.

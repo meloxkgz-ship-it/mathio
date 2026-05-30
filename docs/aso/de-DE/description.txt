@@ -1,52 +1,59 @@
 Mathe. Einfach gemacht.
 
-Mathio ist ein ruhiger, fokussierter Mathe-Trainer für Schule, Hausaufgaben, Prüfungsvorbereitung und Selbststudium. Die App deckt Algebra, Geometrie, Analysis, Trigonometrie, Statistik, Finanzmathematik, Lineare Algebra und Diskrete Mathematik ab. Keine Ablenkung. Keine Bestenlisten. Nur du, klare Erklärungen und eine tägliche Serie.
+Mathio ist ein ruhiger Mathe-Trainer für Schule, Hausaufgaben, Prüfungsvorbereitung, Studium, Alltagsmathe und Selbststudium. Die App verbindet adaptive Lektionen, Schritt-für-Schritt-Lösungen, realistische Wochenziele, verteiltes Wiederholen, Lerncoach-Empfehlungen, Lerngesundheit, Prüfungs-Sprints, Schwachstellen-Training, Erfolge und eine Formelsammlung in einem klaren Lernfluss.
 
 FÜR WEN IST MATHIO GEEIGNET?
 • Schüler, die strukturiert für Hausaufgaben, Tests, Klausuren oder Abitur üben wollen
-• Eltern, die eine klare Mathe-App ohne zufällige Aufgabenflut und laute Gamification suchen
-• Selbstlerner, die Grundlagen auffrischen und danach Algebra, Analysis, Statistik oder Finanzmathe aufbauen möchten
-• Alle, die lieber kurze tägliche Einheiten machen als lange, unklare Lernblöcke
+• Lernende, die kurze gemischte Einheiten statt zufälliger Aufgabenblätter möchten
+• Eltern, die eine klare Mathe-App ohne laute Gamification und ohne Werbung suchen
+• Selbstlerner, die Grundlagen auffrischen und Algebra, Analysis, Statistik, Finanzmathe oder Diskrete Mathematik aufbauen möchten
+• Alle, die lieber mehrmals kurz pro Woche lernen als seltene Stress-Marathons zu machen
 
-▸ ADAPTIVE LEKTIONEN
-Wir wählen die nächste Lektion nach deinem Wissensstand — keine Zeit für Stoff, den du längst kannst.
+WAS MATHIO ANDERS MACHT
+
+▸ PERSÖNLICHER LERNCOACH
+Home empfiehlt die beste nächste Aktion: Wiederholungen, Fehler, Schwachstellen, Tagesziel, nächste Lektion oder Prüfungs-Sprint.
+
+▸ REALISTISCHER WOCHENFOKUS
+Mathio passt das Wochenziel an dein Profil an. Starter beginnen z. B. mit 3 kurzen Lerntagen, Prüfung oder Studium eher mit 4-5. Fortschritt soll erreichbar bleiben.
+
+▸ LÄNGERE LERNPFADE
+Folge geführten 30-, 45-, 60-, 84- und 90-Tage-Pfaden für Algebra, Prüfungsvorbereitung, Datenverständnis, Finanzmathe und Grundlagen.
 
 ▸ SCHRITT-FÜR-SCHRITT-LÖSUNGEN
-Falsche Antwort? Du siehst die komplette Herleitung inline. Nie nur „Leider falsch."
+Falsche Antwort? Du siehst die komplette Herleitung inline. Kein Rätselraten, was falsch gelaufen ist.
 
-▸ VERTEILTES ÜBEN (Spaced Repetition)
-Fällige Aufgaben tauchen täglich in der Wiederholungs-Liste auf — mit Leitner-Intervallen (1 Tag → 3 Tage → 1 Woche → 2 Wochen → 1 Monat). Wissenschaftlich bewährt.
+▸ VERTEILTES WIEDERHOLEN
+Fällige Aufgaben kommen mit Leitner-Intervallen zurück: 1 Tag, 3 Tage, 1 Woche, 2 Wochen, dann 1 Monat.
 
-▸ TÄGLICHE SERIE + FREEZES
-Gewohnheit aufbauen ohne Stress. Auto-Freezes schützen deine Serie, wenn der Tag mal eng wird. Eine Auffüllung pro Woche, maximal zwei auf Vorrat.
+▸ PRÜFUNGS-SPRINTS
+Premium-Lernende üben gemischte Mini-Sessions für Algebra, Geometrie, Daten, Textaufgaben, Kopfrechnen, Formeln, Fehlerkontrolle, Rechner-Checks und Zeitdruck.
 
 ▸ FORMELSAMMLUNG
-Lese-Zeichen für Formeln direkt in der Lektion. Zweisprachige Referenz ist immer einen Tap entfernt.
+Jede Lektion enthält Referenzkarten und Beispiele. Wichtige Formeln kannst du merken.
 
 ▸ KEINE LATEX-TASTATUR
-Tippe einfach Klartext — `6x+2`, `sqrt(2)`, `pi` — wir parsen den Rest. Keine Sondersymbole nötig.
+Tippe Klartext wie 6x+2, sqrt(2) oder pi. Keine Sondersymbole nötig.
 
 ▸ DATENSCHUTZBEWUSST
 Dein Lernfortschritt bleibt auf deinem Gerät. Mathio zeigt keine Werbung und verkauft keine persönlichen Daten. RevenueCat wird nur zur Verwaltung von Abo-Freischaltungen genutzt.
 
-▸ DUNKELMODUS + BARRIEREFREIHEIT
-Vollständige semantische Palette passt sich dem System an. VoiceOver-Beschriftungen auf jedem interaktiven Element, inklusive Mathe-Aussprache.
-
 ▸ MEHRSPRACHIGES LERNEN
-Verfügbar auf Deutsch, Englisch, Spanisch, Französisch, Italienisch und Brasilianischem Portugiesisch — inklusive Formeln und Schritt-für-Schritt-Erklärungen.
+Verfügbar auf Deutsch, Englisch, Spanisch, Französisch, Italienisch und Brasilianischem Portugiesisch, inklusive Formeln und Erklärungen.
 
-— THEMEN —
-Vor-Algebra · Algebra · Geometrie · Trigonometrie · Analysis
-100 Lektionen, 500 handgemachte Aufgaben in Multiple-Choice, Freitext und Wahr/Falsch. Von Bruchrechnen, Potenzen und Logarithmen bis zu Ableitungen, Integralen, Statistik, Vektoren, Budgetrechnung, Steuern, Rabatten, Funktionsmodellierung, Inferenz-Grundlagen, Korrelation, Optimierung, Wahrheitstabellen und Logik.
+THEMEN
+Vor-Algebra, Algebra, Analysis, Geometrie, Trigonometrie, Statistik, Lineare Algebra, Finanzmathematik, Diskrete Mathematik und Prüfungstraining.
 
-— ABO —
+100 Lektionen und 500 handgemachte Aufgaben decken Brüche, Prozente, Einheiten, Gleichungen, Geraden, quadratische Graphen, Textaufgaben, Funktionen, exponentielles Wachstum, Folgen, Ableitungen, Integrale, Vektoren, Matrizen, Wahrscheinlichkeit, Erwartungswert, Satz von Bayes, Regression, Standardabweichung, Normalverteilung, Konfidenzintervalle, Wurzelgleichungen, quadratische Ergänzung, Koordinatengeometrie, Budgetrechnung, Einheitenpreise, Trinkgeld, Kredite, Steuern, Rabatte, Wahrheitstabellen, Logik, Graphentheorie, Prüfungsstrategie, Kopfrechnen, Fehlerkontrolle und gemischte Abschlusswiederholung ab.
+
+ABO
 Mathio ist kostenlos zum Ausprobieren. Alle Themen freischalten mit:
-• Jahresabo — 59,99 $/Jahr, 7-tägige Gratis-Testphase, Familienfreigabe aktiv (~1,15 $/Woche)
+• Jahresabo — 59,99 $/Jahr, 7-tägige Gratis-Testphase, Familienfreigabe aktiv
 • Wochenabo — 12,99 $/Woche, 3-tägige Gratis-Testphase
 
 Abos verlängern sich automatisch, sofern du nicht mindestens 24 Stunden vor Ende der Periode kündigst. Verwaltung jederzeit in den Apple-ID-Einstellungen.
 
 Datenschutz: https://meloxkgz-ship-it.github.io/mathio/privacy
-AGB:         https://meloxkgz-ship-it.github.io/mathio/terms
+AGB: https://meloxkgz-ship-it.github.io/mathio/terms
 
-Von Bruchrechnung bis Differentialrechnung. Zwei Minuten täglich genügen.
+Von Bruchrechnung bis Differentialrechnung. Ein paar fokussierte Minuten reichen, um dranzubleiben.

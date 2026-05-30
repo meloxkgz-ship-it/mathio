@@ -1,34 +1,36 @@
-Math, made simple. Practice that actually remembers what you know.
+Math, made simple. Practice that remembers what you know and guides what to do next.
 
-Mathio is a calm, focused math trainer for school, homework, exam prep, university foundations, and self-study. It now combines adaptive lessons, Learning Health, a Study Coach, session insights, daily challenges, 7-day focus plans, comeback missions, 3-session plans, weak-spot practice, exam readiness, exam sprints, achievements, spaced repetition, and a formula reference in one clean learning flow.
+Mathio is a calm math trainer for school, homework, exam prep, university refreshers, everyday money math, and self-study. It combines adaptive lessons, step-by-step solutions, realistic weekly goals, spaced repetition, Study Coach recommendations, Learning Health, exam sprints, weak-spot practice, achievements, and a formula reference in one clean flow.
 
 WHO MATHIO IS FOR
-• Students who need structured practice for homework, quizzes, finals, SAT-style prep, or university refreshers
-• Learners preparing for exams who want short, mixed sessions instead of random worksheets
-• Parents who want a clear math practice app without noisy gamification or ads
-• Self-learners rebuilding fundamentals before algebra, calculus, statistics, finance, or discrete math
-• Anyone who learns better with two focused minutes every day than one stressful cram session
+• Students who need structured practice for homework, quizzes, finals, or SAT-style prep
+• Learners preparing for exams who want short mixed sessions instead of random worksheets
+• Parents who want a focused math practice app without noisy gamification or ads
+• Self-learners rebuilding foundations before algebra, calculus, statistics, finance, or discrete math
+• Anyone who learns better with a few short sessions each week than one stressful cram session
 
-▸ PERSONAL DAILY PLAN
-Mathio recommends what to do next: review due questions, continue the right lesson, follow your next 3 sessions, hit your daily goal, or open a focused weak-spot drill.
+WHAT MAKES MATHIO DIFFERENT
 
-▸ EXAM SPRINTS
-Premium users get 10-question mixed mini-tests built from review, weak spots, and the next useful lesson. Perfect for quick exam prep and confidence checks.
+▸ PERSONAL STUDY COACH
+Home recommends the best next action: clear reviews, fix missed questions, train a weak spot, finish the daily goal, continue the right lesson, or start an exam sprint.
 
-▸ DAILY CHALLENGE
-A short daily entry point keeps the habit alive and makes it easy to return without deciding what to study.
+▸ REALISTIC WEEKLY FOCUS
+Mathio adapts the weekly target to the learner. A starter may begin with 3 short study days, while exam or university learners can move toward 4-5 days. Progress should feel reachable, not punishing.
+
+▸ LONG-TERM LEARNING PATHS
+Follow guided 30-, 45-, 60-, 84-, and 90-day paths for algebra, exam prep, data confidence, money math, and core mastery.
 
 ▸ STEP-BY-STEP SOLUTIONS
-Wrong answer? You see the full worked solution inline. No vague feedback, no guesswork.
+Wrong answer? You see the worked solution inline. No vague feedback, no guessing what went wrong.
 
 ▸ SPACED REPETITION
-Overdue questions surface in a Review queue using Leitner intervals: 1 day, 3 days, 1 week, 2 weeks, then 1 month.
+Overdue questions return in a Review queue using Leitner intervals: 1 day, 3 days, 1 week, 2 weeks, then 1 month.
 
-▸ ACHIEVEMENTS + STREAKS
-Progress milestones, daily streaks, and freeze protection help you stay consistent without pressure.
+▸ EXAM SPRINTS
+Premium learners get focused mixed practice for algebra, geometry, data, word problems, mental math, formula recall, error checking, calculator checks, and timed triage.
 
 ▸ FORMULA REFERENCE
-Bookmark formulas as you learn them. Your reference is always one tap away.
+Each lesson includes reference cards and worked examples. Bookmark formulas as you learn them.
 
 ▸ PLAIN-TEXT ANSWERS
 Type answers like 6x+2, sqrt(2), or pi. No LaTeX keyboard required.
@@ -42,7 +44,7 @@ Available in English, German, Spanish, French, Italian, and Brazilian Portuguese
 TOPICS
 Pre-Algebra, Algebra, Calculus, Geometry, Trigonometry, Statistics, Linear Algebra, Financial Math, Discrete Math, and Exam Review.
 
-100 lessons and 500 hand-crafted questions cover fractions, percentages, percent change, unit conversions, equations, graphing lines, quadratic graphs, word problems, functions, exponential growth, sequences, series, derivatives, implicit differentiation, integrals, related rates, vectors, matrices, probability, conditional probability, expected value, Bayes' theorem, regression, standard deviation, normal distribution, box plots, confidence intervals, rational expressions, radical equations, completing the square, coordinate geometry, composite areas, budgeting, unit prices, tips, bill splitting, loans, taxes, discounts, truth tables, logic, graph theory, exam sprints, strategy checks, mental math, error checking, and mixed final review.
+100 lessons and 500 hand-crafted questions cover fractions, percentages, unit conversions, equations, graphing lines, quadratic graphs, word problems, functions, exponential growth, sequences, derivatives, integrals, related rates, vectors, matrices, probability, expected value, Bayes' theorem, regression, standard deviation, normal distribution, confidence intervals, rational expressions, radical equations, completing the square, coordinate geometry, composite areas, budgeting, unit prices, tips, bill splitting, loans, taxes, discounts, truth tables, logic, graph theory, exam strategy, mental math, error checking, and mixed final review.
 
 SUBSCRIPTION
 Mathio is free to try. Unlock all topics with:
@@ -54,4 +56,4 @@ Subscriptions auto-renew unless cancelled at least 24 hours before the end of th
 Privacy: https://meloxkgz-ship-it.github.io/mathio/privacy
 Terms: https://meloxkgz-ship-it.github.io/mathio/terms
 
-From fractions to derivatives. Two minutes a day is enough.
+From fractions to derivatives. A few focused minutes are enough to keep moving.

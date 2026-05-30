@@ -2,6 +2,8 @@
 
 > Felder 1:1 in App Store Connect → Sprachen → Deutsch einfügen.
 > Zeichenzahlen sind exakt — kein abschließendes Whitespace.
+> Quelle der Wahrheit für Beschreibung und Neuheiten ist jetzt:
+> `docs/aso/de-DE/description.txt` und `docs/aso/de-DE/whats-new.txt`.
 
 ---
 

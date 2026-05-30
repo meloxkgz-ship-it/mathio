@@ -2,6 +2,8 @@
 
 > Paste each block into the matching App Store Connect field. Character
 > counts are exact (no trailing whitespace).
+> Source of truth for Description and What's New is now:
+> `docs/aso/en-US/description.txt` and `docs/aso/en-US/whats-new.txt`.
 
 ---
 
