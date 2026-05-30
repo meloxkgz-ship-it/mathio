@@ -4903,6 +4903,7 @@ struct PaywallView: View {
                     headline
                     if mode == .onboarding { onboardingPlanPreview }
                     audience
+                    premiumValueGrid
                     bullets
                     plans
                     if mode != .retention { footnote }
@@ -5063,6 +5064,50 @@ struct PaywallView: View {
             row("arrow.triangle.2.circlepath", "Spaced repetition brings back what you are about to forget")
             row("lightbulb.max.fill", "Worked solutions explain every missed answer")
         }
+    }
+
+    private var premiumValueGrid: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            Text("What Premium keeps active")
+                .font(.label)
+                .foregroundStyle(Palette.inkFaint)
+                .textCase(.uppercase)
+                .tracking(1.2)
+            LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 10) {
+                valueProof("sparkles", "Study coach", "One best next step every time you open Mathio")
+                valueProof("heart.text.square.fill", "Learning health", "See whether your habit, reviews, and mastery are on track")
+                valueProof("arrow.triangle.2.circlepath", "Smart review", "Questions return before you forget them")
+                valueProof("map.fill", "Full roadmap", "All 83 lessons and 415 guided questions")
+            }
+        }
+    }
+
+    private func valueProof(_ icon: String,
+                            _ title: LocalizedStringResource,
+                            _ detail: LocalizedStringResource) -> some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Image(systemName: icon)
+                .font(.system(size: 17, weight: .semibold))
+                .foregroundStyle(Palette.terracotta)
+                .frame(width: 34, height: 34)
+                .background(Palette.terracottaSoft, in: Circle())
+                .accessibilityHidden(true)
+            Text(title)
+                .font(.bodyL.weight(.semibold))
+                .foregroundStyle(Palette.ink)
+            Text(detail)
+                .font(.caption)
+                .foregroundStyle(Palette.inkSoft)
+                .fixedSize(horizontal: false, vertical: true)
+        }
+        .frame(maxWidth: .infinity, minHeight: 142, alignment: .topLeading)
+        .padding(14)
+        .background(Palette.surface,
+                    in: RoundedRectangle(cornerRadius: 16, style: .continuous))
+        .overlay(
+            RoundedRectangle(cornerRadius: 16, style: .continuous)
+                .stroke(Palette.hairline, lineWidth: 0.5)
+        )
     }
 
     private func row(_ icon: String, _ text: LocalizedStringResource) -> some View {

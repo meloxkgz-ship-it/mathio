@@ -130,6 +130,7 @@ Mathio gibt Lernenden jetzt klarere Richtung und mehr Tiefe für tägliches Übe
 
 • Neuer Lerncoach: Home empfiehlt die beste nächste Aktion aus Wiederholung, Fehlern, Schwächen, Tagesziel oder Prüfungs-Sprint
 • Neue Lerngesundheit: Fortschritt zeigt einen On-Track-Score aus Konsistenz, Tagesziel, Wiederholungen und Mastery
+• Premium-Wert klarer: Die Paywall zeigt jetzt Lerncoach, Lerngesundheit, Smart Review und die volle Roadmap
 • Neue Lektion: Erwartungswert für langfristige Durchschnitte, faire Spiele und erwarteten Gewinn
 • Neue Lektion: Satz von Bayes für Evidenz, Basisraten und Testergebnisse
 • Neue Lektion: Standardabweichung für Streuung, quadrierte Abweichungen und Stichprobe-vs-Population

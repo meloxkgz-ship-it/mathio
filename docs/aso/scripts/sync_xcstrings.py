@@ -75,6 +75,7 @@ PROSE: dict[str, str] = {
     "Tomorrow": "Morgen",
     "Unlock the full roadmap Mathio built from your goal and level check.":
         "Schalte den vollständigen Lernplan frei, den Mathio aus deinem Ziel und Level-Check erstellt hat.",
+    "What Premium keeps active": "Was Premium aktiv hält",
     "Missed": "Verpasst",
     "Session insight": "Session-Auswertung",
     "Your math plan is ready": "Dein Mathe-Plan ist bereit",

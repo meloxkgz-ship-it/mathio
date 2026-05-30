@@ -94914,6 +94914,40 @@
           }
         }
       }
+    },
+    "What Premium keeps active": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Was Premium aktiv hält"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lo que Premium mantiene activo"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ce que Premium garde actif"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cosa mantiene attivo Premium"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O que o Premium mantem ativo"
+          }
+        }
+      }
     }
   },
   "version": "1.0"
