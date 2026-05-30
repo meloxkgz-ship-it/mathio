@@ -4225,6 +4225,7 @@ struct PracticeView: View {
                 }
                 if lesson.questions.count > 0 {
                     sessionInsightCard
+                    progressRewardCard
                 }
                 if shouldShowMemoryPlan {
                     memoryPlanCard
@@ -4330,6 +4331,23 @@ struct PracticeView: View {
         return Int((Double(sessionCorrect) / Double(lesson.questions.count) * 100).rounded())
     }
 
+    private var lifetimeCorrect: Int {
+        store.answered.values.reduce(0) { $0 + $1.correct }
+    }
+
+    private var nextLifetimeMilestone: Int {
+        [25, 50, 100, 250, 500, 1_000].first { $0 > lifetimeCorrect }
+            ?? ((lifetimeCorrect / 500) + 1) * 500
+    }
+
+    private var lifetimeMilestoneProgress: Double {
+        min(1, Double(lifetimeCorrect) / Double(max(nextLifetimeMilestone, 1)))
+    }
+
+    private var lifetimeAnswersLeft: Int {
+        max(nextLifetimeMilestone - lifetimeCorrect, 0)
+    }
+
     private var sessionModeLabel: LocalizedStringResource {
         if isReview { return "Review" }
         if lesson.id.hasPrefix("__exam_sprint__") { return "Exam sprint" }
@@ -4377,6 +4395,67 @@ struct PracticeView: View {
             }
         }
         .transition(.opacity.combined(with: .move(edge: .bottom)))
+    }
+
+    private var progressRewardCard: some View {
+        Card(padding: 16, background: Palette.heroSurface) {
+            VStack(alignment: .leading, spacing: 14) {
+                HStack(spacing: 10) {
+                    Image(systemName: progressRewardIcon)
+                        .font(.system(size: 22, weight: .semibold))
+                        .foregroundStyle(Palette.amber)
+                    VStack(alignment: .leading, spacing: 2) {
+                        Text("Progress unlocked")
+                            .font(.titleM)
+                            .foregroundStyle(Palette.heroInk)
+                        Text(progressRewardSubtitle)
+                            .font(.bodyM)
+                            .foregroundStyle(Palette.heroInkSoft)
+                            .fixedSize(horizontal: false, vertical: true)
+                    }
+                }
+
+                VStack(alignment: .leading, spacing: 8) {
+                    HStack {
+                        Text("Next milestone")
+                            .font(.caption.weight(.semibold))
+                            .foregroundStyle(Palette.heroInkSoft)
+                        Spacer()
+                        Text("\(lifetimeCorrect)/\(nextLifetimeMilestone)")
+                            .font(.caption.weight(.semibold))
+                            .foregroundStyle(Palette.heroInkSoft)
+                    }
+                    ProgressBar(progress: lifetimeMilestoneProgress, color: Palette.amber, height: 7)
+                }
+
+                HStack(spacing: 10) {
+                    insightMetric(value: "\(store.correctToday())", label: "Today")
+                    insightMetric(value: "\(store.streakDays)", label: "Streak")
+                    insightMetric(value: "\(lifetimeAnswersLeft)", label: "to go")
+                }
+            }
+        }
+        .transition(.opacity.combined(with: .move(edge: .bottom)))
+    }
+
+    private var progressRewardIcon: String {
+        if isPerfect { return "rosette" }
+        if store.correctToday() >= max(dailyGoal, 1) { return "target" }
+        if store.streakDays >= 3 { return "flame.fill" }
+        return "chart.line.uptrend.xyaxis"
+    }
+
+    private var progressRewardSubtitle: LocalizedStringResource {
+        if isPerfect {
+            return "Perfect accuracy is the strongest signal to keep this lesson warm."
+        }
+        if store.correctToday() >= max(dailyGoal, 1) {
+            return "Today's goal is done. The next session can start from momentum."
+        }
+        if store.streakDays >= 3 {
+            return "Your streak is becoming a routine. Keep the next session small."
+        }
+        return "Every correct answer moves the long-term roadmap forward."
     }
 
     private var memoryPlanCard: some View {

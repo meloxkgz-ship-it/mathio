@@ -98,6 +98,10 @@ PROSE: dict[str, str] = {
         "Das ist der richtige Moment, einen Freund einzuladen: Du hast gerade bewiesen, dass die Routine funktioniert.",
     "You just reached today's target. Invite someone to build the same small routine.":
         "Du hast gerade dein heutiges Ziel erreicht. Lade jemanden ein, dieselbe kleine Routine aufzubauen.",
+    "Your streak is becoming a routine. Keep the next session small.":
+        "Deine Serie wird zur Routine. Halte die nächste Session klein.",
+    "Every correct answer moves the long-term roadmap forward.":
+        "Jede richtige Antwort bringt den langfristigen Lernplan voran.",
     "m² measures area": "m² misst Fläche",
     "4 fewer → 3x − 4": "4 weniger → 3x − 4",
     "A bag has 3 red and 2 blue tokens. P(red) =": "Ein Beutel enthält 3 rote und 2 blaue Chips. P(rot) =",
@@ -174,6 +178,9 @@ PROSE: dict[str, str] = {
     "Percentages, budgets, loans, decisions": "Prozente, Budgets, Kredite, Entscheidungen",
     "Practice reading data, choosing summaries, and making probability decisions under time pressure.":
         "Übe, Daten zu lesen, passende Kennzahlen zu wählen und Wahrscheinlichkeiten unter Zeitdruck zu entscheiden.",
+    "Perfect accuracy is the strongest signal to keep this lesson warm.":
+        "Perfekte Genauigkeit ist das stärkste Signal, diese Lektion warm zu halten.",
+    "Progress unlocked": "Fortschritt freigeschaltet",
     "Probability": "Wahrscheinlichkeit",
     "Quadratic zeros": "Nullstellen quadratischer Funktionen",
     "Range label": "Spannweiten-Label",
@@ -245,6 +252,9 @@ PROSE: dict[str, str] = {
     "Write 2x + 7 = 25.": "Schreibe 2x + 7 = 25.",
     "Zeros are the x-values where the graph crosses the x-axis.": "Nullstellen sind die x-Werte, an denen der Graph die x-Achse schneidet.",
     "days": "Tage",
+    "Today's goal is done. The next session can start from momentum.":
+        "Das Tagesziel ist erledigt. Die nächste Session kann mit Schwung starten.",
+    "to go": "offen",
     "three times x → 3x": "dreimal x → 3x",
     "this week": "diese Woche",
     "total = 21": "gesamt = 21",

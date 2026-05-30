@@ -119079,6 +119079,210 @@
           }
         }
       }
+    },
+    "Progress unlocked": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fortschritt freigeschaltet"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Progreso desbloqueado"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Progrès débloqué"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Progressi sbloccati"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Progresso desbloqueado"
+          }
+        }
+      }
+    },
+    "to go": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "offen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "faltan"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "restant"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "mancano"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "faltam"
+          }
+        }
+      }
+    },
+    "Perfect accuracy is the strongest signal to keep this lesson warm.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Perfekte Genauigkeit ist das stärkste Signal, diese Lektion warm zu halten."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La precisión perfecta es la señal más fuerte para mantener esta lección activa."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Une précision parfaite est le signal le plus fort pour garder cette leçon active."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La precisione perfetta è il segnale più forte per tenere viva questa lezione."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A precisão perfeita é o sinal mais forte para manter esta lição ativa."
+          }
+        }
+      }
+    },
+    "Today's goal is done. The next session can start from momentum.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Das Tagesziel ist erledigt. Die nächste Session kann mit Schwung starten."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El objetivo de hoy está hecho. La próxima sesión puede empezar con impulso."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L'objectif du jour est atteint. La prochaine session peut repartir avec de l'élan."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L'obiettivo di oggi è completato. La prossima sessione può partire con slancio."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A meta de hoje está concluída. A próxima sessão pode começar com impulso."
+          }
+        }
+      }
+    },
+    "Your streak is becoming a routine. Keep the next session small.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deine Serie wird zur Routine. Halte die nächste Session klein."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tu racha se está convirtiendo en rutina. Mantén pequeña la próxima sesión."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ta série devient une routine. Garde la prochaine session courte."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La tua serie sta diventando una routine. Mantieni breve la prossima sessione."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sua sequência está virando rotina. Mantenha a próxima sessão pequena."
+          }
+        }
+      }
+    },
+    "Every correct answer moves the long-term roadmap forward.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jede richtige Antwort bringt den langfristigen Lernplan voran."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cada respuesta correcta hace avanzar el plan a largo plazo."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chaque bonne réponse fait avancer le parcours à long terme."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ogni risposta corretta fa avanzare il percorso a lungo termine."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cada resposta correta avança o plano de longo prazo."
+          }
+        }
+      }
     }
   },
   "version": "1.0"
