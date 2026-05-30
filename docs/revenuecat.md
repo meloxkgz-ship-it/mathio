@@ -27,6 +27,19 @@ attached to the `premium` entitlement:
 Verified with `asc subscriptions view`, `asc subscriptions images list`, and
 `asc validate subscriptions --app 6767033115` on 2026-05-30.
 
+Subscription group and product localizations are present for:
+
+- `en-US`
+- `de-DE`
+- `es-ES`
+- `fr-FR`
+- `it`
+- `pt-BR`
+
+The added Store-facing subscription descriptions keep paywall/product text
+aligned with the app's in-app localizations, reducing mixed-language checkout
+surfaces for German, Spanish, French, Italian, and Brazilian Portuguese users.
+
 Default offering `default` (`ofrng2e6dec0fa8`) packages:
 
 | Package identifier | RevenueCat package | Product ID |
@@ -64,6 +77,18 @@ docs/aso/scripts/verify_revenuecat_release.sh \
 
 The preflight fails if the key is missing, is not an iOS public SDK key, still
 looks like a placeholder, or was not copied into the built app's Info.plist.
+To also verify App Store subscription localizations against the live App Store
+Connect catalog, run:
+
+```bash
+CHECK_ASC_LOCALIZATIONS=1 docs/aso/scripts/verify_revenuecat_release.sh
+```
+
+or:
+
+```bash
+docs/aso/scripts/verify_revenuecat_release.sh --asc-localizations
+```
 
 RevenueCat's current setup docs require configuring the SDK once with the
 platform public SDK key, and the dashboard must contain products, entitlements,
