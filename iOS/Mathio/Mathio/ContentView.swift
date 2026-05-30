@@ -1441,6 +1441,38 @@ struct LearningPath: Identifiable {
             durationDays: 21
         ),
         LearningPath(
+            id: "geometry-trig-lab",
+            title: "Geometry & Trig Lab",
+            subtitle: "Shapes, angles, unit circle",
+            icon: "angle",
+            color: Palette.geometry,
+            lessons: [Curriculum.pythagoras, Curriculum.trianglesArea, Curriculum.angles,
+                      Curriculum.circles, Curriculum.trigBasics, Curriculum.unitCircle,
+                      Curriculum.radians, Curriculum.lawOfSinesCosines],
+            durationDays: 28
+        ),
+        LearningPath(
+            id: "linear-algebra-starter",
+            title: "Linear Algebra Starter",
+            subtitle: "Vectors, matrices, transformations",
+            icon: "square.grid.3x3",
+            color: Palette.algebra,
+            lessons: [Curriculum.vectors, Curriculum.matrices, Curriculum.dotProducts,
+                      Curriculum.transformations, Curriculum.systemsMatrices],
+            durationDays: 21
+        ),
+        LearningPath(
+            id: "discrete-thinking",
+            title: "Discrete Thinking",
+            subtitle: "Logic, sets, counting, graphs",
+            icon: "switch.2",
+            color: Palette.precalc,
+            lessons: [Curriculum.logic, Curriculum.sets, Curriculum.counting,
+                      Curriculum.truthTables, Curriculum.modularArithmetic, Curriculum.graphs,
+                      Curriculum.sequencesDiscrete],
+            durationDays: 28
+        ),
+        LearningPath(
             id: "money-math",
             title: "Money Math",
             subtitle: "Interest, loans, inflation",
