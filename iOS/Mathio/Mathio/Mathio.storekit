@@ -25,7 +25,11 @@
       "id" : "22071889",
       "localizations" : [
         { "description" : "All topics, step-by-step solutions, no ads.", "displayName" : "Mathio Premium", "locale" : "en_US" },
-        { "description" : "Alle Themen, Schritt-für-Schritt-Lösungen, werbefrei.", "displayName" : "Mathio Premium", "locale" : "de_DE" }
+        { "description" : "Alle Themen, Schritt-für-Schritt-Lösungen, werbefrei.", "displayName" : "Mathio Premium", "locale" : "de_DE" },
+        { "description" : "Todos los temas, soluciones paso a paso, sin anuncios.", "displayName" : "Mathio Premium", "locale" : "es_ES" },
+        { "description" : "Tous les chapitres, solutions guidées, sans pub.", "displayName" : "Mathio Premium", "locale" : "fr_FR" },
+        { "description" : "Tutti gli argomenti, soluzioni guidate, senza spot.", "displayName" : "Mathio Premium", "locale" : "it_IT" },
+        { "description" : "Todos os temas, soluções guiadas, sem anúncios.", "displayName" : "Mathio Premium", "locale" : "pt_BR" }
       ],
       "name" : "Premium",
       "subscriptions" : [
@@ -44,7 +48,11 @@
           },
           "localizations" : [
             { "description" : "All topics, step-by-step solutions, no ads.", "displayName" : "Mathio Premium", "locale" : "en_US" },
-            { "description" : "Alle Themen, Schritt-für-Schritt-Lösungen, werbefrei.", "displayName" : "Mathio Premium", "locale" : "de_DE" }
+            { "description" : "Alle Themen, Schritt-für-Schritt-Lösungen, werbefrei.", "displayName" : "Mathio Premium", "locale" : "de_DE" },
+            { "description" : "Todos los temas, soluciones paso a paso, sin anuncios.", "displayName" : "Mathio Premium", "locale" : "es_ES" },
+            { "description" : "Tous les chapitres, solutions guidées, sans pub.", "displayName" : "Mathio Premium", "locale" : "fr_FR" },
+            { "description" : "Tutti gli argomenti, soluzioni guidate, senza spot.", "displayName" : "Mathio Premium", "locale" : "it_IT" },
+            { "description" : "Todos os temas, soluções guiadas, sem anúncios.", "displayName" : "Mathio Premium", "locale" : "pt_BR" }
           ],
           "productID" : "mathio_annual",
           "recurringSubscriptionPeriod" : "P1Y",
@@ -67,7 +75,11 @@
           },
           "localizations" : [
             { "description" : "All topics, step-by-step solutions, no ads.", "displayName" : "Mathio Premium", "locale" : "en_US" },
-            { "description" : "Alle Themen, Schritt-für-Schritt-Lösungen, werbefrei.", "displayName" : "Mathio Premium", "locale" : "de_DE" }
+            { "description" : "Alle Themen, Schritt-für-Schritt-Lösungen, werbefrei.", "displayName" : "Mathio Premium", "locale" : "de_DE" },
+            { "description" : "Todos los temas, soluciones paso a paso, sin anuncios.", "displayName" : "Mathio Premium", "locale" : "es_ES" },
+            { "description" : "Tous les chapitres, solutions guidées, sans pub.", "displayName" : "Mathio Premium", "locale" : "fr_FR" },
+            { "description" : "Tutti gli argomenti, soluzioni guidate, senza spot.", "displayName" : "Mathio Premium", "locale" : "it_IT" },
+            { "description" : "Todos os temas, soluções guiadas, sem anúncios.", "displayName" : "Mathio Premium", "locale" : "pt_BR" }
           ],
           "productID" : "mathio_weekly",
           "recurringSubscriptionPeriod" : "P1W",
@@ -85,7 +97,11 @@
           "introductoryOffer" : null,
           "localizations" : [
             { "description" : "All topics, step-by-step solutions, no ads.", "displayName" : "Mathio Premium", "locale" : "en_US" },
-            { "description" : "Alle Themen, Schritt-für-Schritt-Lösungen, werbefrei.", "displayName" : "Mathio Premium", "locale" : "de_DE" }
+            { "description" : "Alle Themen, Schritt-für-Schritt-Lösungen, werbefrei.", "displayName" : "Mathio Premium", "locale" : "de_DE" },
+            { "description" : "Todos los temas, soluciones paso a paso, sin anuncios.", "displayName" : "Mathio Premium", "locale" : "es_ES" },
+            { "description" : "Tous les chapitres, solutions guidées, sans pub.", "displayName" : "Mathio Premium", "locale" : "fr_FR" },
+            { "description" : "Tutti gli argomenti, soluzioni guidate, senza spot.", "displayName" : "Mathio Premium", "locale" : "it_IT" },
+            { "description" : "Todos os temas, soluções guiadas, sem anúncios.", "displayName" : "Mathio Premium", "locale" : "pt_BR" }
           ],
           "productID" : "mathio_retention",
           "recurringSubscriptionPeriod" : "P1Y",

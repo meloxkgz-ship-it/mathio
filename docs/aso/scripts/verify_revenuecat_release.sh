@@ -5,6 +5,7 @@ APP_BUNDLE="${1:-}"
 ENV_KEY="${REVENUECAT_API_KEY:-}"
 BUILT_KEY=""
 CHECK_ASC_LOCALIZATIONS="${CHECK_ASC_LOCALIZATIONS:-0}"
+CHECK_LOCAL_STOREKIT="${CHECK_LOCAL_STOREKIT:-1}"
 APP_ID="${ASC_APP_ID:-6767033115}"
 SUBSCRIPTION_GROUP_ID="${MATHIO_SUBSCRIPTION_GROUP_ID:-22071889}"
 SUBSCRIPTION_IDS="${MATHIO_SUBSCRIPTION_IDS:-6767033716 6767033995 6767033879}"
@@ -57,6 +58,11 @@ fi
 
 if [[ -n "$KEY" ]]; then
   echo "RevenueCat release key check passed."
+fi
+
+if [[ "$CHECK_LOCAL_STOREKIT" == "1" ]]; then
+  SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+  python3 "$SCRIPT_DIR/verify_storekit_localizations.py"
 fi
 
 if [[ "$CHECK_ASC_LOCALIZATIONS" != "1" ]]; then

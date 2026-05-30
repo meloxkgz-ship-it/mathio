@@ -39,6 +39,8 @@ Subscription group and product localizations are present for:
 The added Store-facing subscription descriptions keep paywall/product text
 aligned with the app's in-app localizations, reducing mixed-language checkout
 surfaces for German, Spanish, French, Italian, and Brazilian Portuguese users.
+The local `Mathio.storekit` fallback mirrors the same language coverage using
+StoreKit locale IDs `en_US`, `de_DE`, `es_ES`, `fr_FR`, `it_IT`, and `pt_BR`.
 
 Default offering `default` (`ofrng2e6dec0fa8`) packages:
 
@@ -77,6 +79,9 @@ docs/aso/scripts/verify_revenuecat_release.sh \
 
 The preflight fails if the key is missing, is not an iOS public SDK key, still
 looks like a placeholder, or was not copied into the built app's Info.plist.
+It also verifies local StoreKit fallback subscription metadata by default, so
+screenshots and StoreKit fallback purchases do not drift back to English-only
+or German-only product text.
 To also verify App Store subscription localizations against the live App Store
 Connect catalog, run:
 
