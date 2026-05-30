@@ -16457,19 +16457,19 @@
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "secuencia aritmética"
+            "value": "Sucesión aritmética"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Séquence arithmétique"
+            "value": "Suite arithmétique"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Sequenza aritmetica"
+            "value": "Successione aritmetica"
           }
         },
         "pt-BR": {
@@ -28166,19 +28166,19 @@
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "secuencia geométrica"
+            "value": "Sucesión geométrica"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Séquence géométrique"
+            "value": "Suite géométrique"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Sequenza geometrica"
+            "value": "Successione geometrica"
           }
         },
         "pt-BR": {
@@ -88961,6 +88961,992 @@
           "stringUnit": {
             "state": "translated",
             "value": "Previsão de revisão. %lld para hoje, %lld amanhã, %lld em sete dias."
+          }
+        }
+      }
+    },
+    "79 lessons across algebra, calculus, geometry, statistics, finance, and more": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "79 Lektionen zu Algebra, Analysis, Geometrie, Statistik, Finanzmathe und mehr"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "79 lecciones de álgebra, cálculo, geometría, estadística, finanzas y más"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "79 leçons en algèbre, analyse, géométrie, statistiques, finance et plus"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "79 lezioni di algebra, analisi, geometria, statistica, finanza e altro"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "79 aulas de álgebra, cálculo, geometria, estatística, finanças e mais"
+          }
+        }
+      }
+    },
+    "Sequences & Series": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Folgen & Reihen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sucesiones y series"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Suites et séries"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Successioni e serie"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sequências e séries"
+          }
+        }
+      }
+    },
+    "Sequences list values in order. Arithmetic sequences add a constant difference; geometric sequences multiply by a constant ratio.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Folgen listen Werte der Reihe nach auf. Arithmetische Folgen addieren eine konstante Differenz; geometrische Folgen multiplizieren mit einem konstanten Verhältnis."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Las sucesiones listan valores en orden. Las aritméticas suman una diferencia constante; las geométricas multiplican por una razón constante."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les suites listent des valeurs dans l’ordre. Les suites arithmétiques ajoutent une différence constante ; les suites géométriques multiplient par un rapport constant."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le successioni elencano valori in ordine. Le successioni aritmetiche aggiungono una differenza costante; quelle geometriche moltiplicano per un rapporto costante."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sequências listam valores em ordem. Sequências aritméticas somam uma diferença constante; sequências geométricas multiplicam por uma razão constante."
+          }
+        }
+      }
+    },
+    "Arithmetic sum": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arithmetische Summe"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Suma aritmética"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Somme arithmétique"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Somma aritmetica"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Soma aritmética"
+          }
+        }
+      }
+    },
+    "d is the common difference between terms.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "d ist die gemeinsame Differenz zwischen den Gliedern."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "d es la diferencia común entre términos."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "d est la différence commune entre les termes."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "d è la differenza comune tra i termini."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "d é a diferença comum entre os termos."
+          }
+        }
+      }
+    },
+    "r is the common ratio between terms.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "r ist das gemeinsame Verhältnis zwischen den Gliedern."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "r es la razón común entre términos."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "r est le rapport commun entre les termes."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "r è il rapporto comune tra i termini."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "r é a razão comum entre os termos."
+          }
+        }
+      }
+    },
+    "Use the first and last terms to sum an arithmetic series.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nutze das erste und letzte Glied, um eine arithmetische Reihe zu summieren."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usa el primer y el último término para sumar una serie aritmética."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Utilise le premier et le dernier terme pour sommer une série arithmétique."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usa il primo e l’ultimo termine per sommare una serie aritmetica."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Use o primeiro e o último termos para somar uma série aritmética."
+          }
+        }
+      }
+    },
+    "Find the next term: 4, 7, 10, 13, ...": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Finde das nächste Glied: 4, 7, 10, 13, ..."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Encuentra el siguiente término: 4, 7, 10, 13, ..."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trouve le terme suivant : 4, 7, 10, 13, ..."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trova il termine successivo: 4, 7, 10, 13, ..."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Encontre o próximo termo: 4, 7, 10, 13, ..."
+          }
+        }
+      }
+    },
+    "The sequence adds the same amount each time.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Folge addiert jedes Mal denselben Betrag."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La sucesión suma la misma cantidad cada vez."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La suite ajoute la même quantité à chaque fois."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La successione aggiunge ogni volta la stessa quantità."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A sequência soma a mesma quantidade a cada vez."
+          }
+        }
+      }
+    },
+    "The common difference is 3": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die gemeinsame Differenz ist 3"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La diferencia común es 3"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La différence commune est 3"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La differenza comune è 3"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A diferença comum é 3"
+          }
+        }
+      }
+    },
+    "13 + 3 = 16": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "13 + 3 = 16"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "13 + 3 = 16"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "13 + 3 = 16"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "13 + 3 = 16"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "13 + 3 = 16"
+          }
+        }
+      }
+    },
+    "For the arithmetic sequence 5, 9, 13, ..., what is a₁₀?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Für die arithmetische Folge 5, 9, 13, ...: Was ist a₁₀?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Para la sucesión aritmética 5, 9, 13, ..., ¿cuánto es a₁₀?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pour la suite arithmétique 5, 9, 13, ..., que vaut a₁₀ ?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Per la successione aritmetica 5, 9, 13, ..., quanto vale a₁₀?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Na sequência aritmética 5, 9, 13, ..., quanto é a₁₀?"
+          }
+        }
+      }
+    },
+    "Use aₙ = a₁ + (n − 1)d.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nutze aₙ = a₁ + (n − 1)d."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usa aₙ = a₁ + (n − 1)d."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Utilise aₙ = a₁ + (n − 1)d."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usa aₙ = a₁ + (n − 1)d."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Use aₙ = a₁ + (n − 1)d."
+          }
+        }
+      }
+    },
+    "a₁ = 5 and d = 4": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "a₁ = 5 und d = 4"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "a₁ = 5 y d = 4"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "a₁ = 5 et d = 4"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "a₁ = 5 e d = 4"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "a₁ = 5 e d = 4"
+          }
+        }
+      }
+    },
+    "a₁₀ = 5 + 9·4": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "a₁₀ = 5 + 9·4"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "a₁₀ = 5 + 9·4"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "a₁₀ = 5 + 9·4"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "a₁₀ = 5 + 9·4"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "a₁₀ = 5 + 9·4"
+          }
+        }
+      }
+    },
+    "= 41": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "= 41"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "= 41"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "= 41"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "= 41"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "= 41"
+          }
+        }
+      }
+    },
+    "Find the next term: 3, 6, 12, 24, ...": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Finde das nächste Glied: 3, 6, 12, 24, ..."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Encuentra el siguiente término: 3, 6, 12, 24, ..."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trouve le terme suivant : 3, 6, 12, 24, ..."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trova il termine successivo: 3, 6, 12, 24, ..."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Encontre o próximo termo: 3, 6, 12, 24, ..."
+          }
+        }
+      }
+    },
+    "Each term is multiplied by the same ratio.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jedes Glied wird mit demselben Verhältnis multipliziert."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cada término se multiplica por la misma razón."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chaque terme est multiplié par le même rapport."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ogni termine viene moltiplicato per lo stesso rapporto."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cada termo é multiplicado pela mesma razão."
+          }
+        }
+      }
+    },
+    "The common ratio is 2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Das gemeinsame Verhältnis ist 2"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La razón común es 2"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le rapport commun est 2"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il rapporto comune è 2"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A razão comum é 2"
+          }
+        }
+      }
+    },
+    "24 · 2 = 48": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "24 · 2 = 48"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "24 · 2 = 48"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "24 · 2 = 48"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "24 · 2 = 48"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "24 · 2 = 48"
+          }
+        }
+      }
+    },
+    "A geometric sequence starts 2, 6, 18, ... What is the common ratio?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eine geometrische Folge beginnt mit 2, 6, 18, ... Wie groß ist das gemeinsame Verhältnis?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una sucesión geométrica empieza 2, 6, 18, ... ¿Cuál es la razón común?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Une suite géométrique commence par 2, 6, 18, ... Quel est le rapport commun ?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una successione geometrica inizia 2, 6, 18, ... Qual è il rapporto comune?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uma sequência geométrica começa 2, 6, 18, ... Qual é a razão comum?"
+          }
+        }
+      }
+    },
+    "Divide a term by the previous term.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Teile ein Glied durch das vorherige Glied."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Divide un término por el término anterior."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Divise un terme par le terme précédent."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dividi un termine per il termine precedente."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Divida um termo pelo termo anterior."
+          }
+        }
+      }
+    },
+    "6 ÷ 2 = 3": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "6 ÷ 2 = 3"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "6 ÷ 2 = 3"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "6 ÷ 2 = 3"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "6 ÷ 2 = 3"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "6 ÷ 2 = 3"
+          }
+        }
+      }
+    },
+    "18 ÷ 6 = 3": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "18 ÷ 6 = 3"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "18 ÷ 6 = 3"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "18 ÷ 6 = 3"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "18 ÷ 6 = 3"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "18 ÷ 6 = 3"
+          }
+        }
+      }
+    },
+    "The common ratio is 3": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Das gemeinsame Verhältnis ist 3"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La razón común es 3"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le rapport commun est 3"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il rapporto comune è 3"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A razão comum é 3"
+          }
+        }
+      }
+    },
+    "Sum the arithmetic series 2 + 4 + 6 + 8 + 10.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Summiere die arithmetische Reihe 2 + 4 + 6 + 8 + 10."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Suma la serie aritmética 2 + 4 + 6 + 8 + 10."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Calcule la somme de la série arithmétique 2 + 4 + 6 + 8 + 10."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Somma la serie aritmetica 2 + 4 + 6 + 8 + 10."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Some a série aritmética 2 + 4 + 6 + 8 + 10."
+          }
+        }
+      }
+    },
+    "Pair first with last, or add the terms.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paare erstes mit letztem Glied oder addiere die Terme."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Empareja el primero con el último, o suma los términos."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Associe le premier au dernier, ou additionne les termes."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abbina il primo con l’ultimo, oppure somma i termini."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Agrupe o primeiro com o último, ou some os termos."
+          }
+        }
+      }
+    },
+    "2 + 10 = 12 and 4 + 8 = 12": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2 + 10 = 12 und 4 + 8 = 12"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2 + 10 = 12 y 4 + 8 = 12"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2 + 10 = 12 et 4 + 8 = 12"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2 + 10 = 12 e 4 + 8 = 12"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2 + 10 = 12 e 4 + 8 = 12"
+          }
+        }
+      }
+    },
+    "12 + 12 + 6 = 30": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "12 + 12 + 6 = 30"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "12 + 12 + 6 = 30"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "12 + 12 + 6 = 30"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "12 + 12 + 6 = 30"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "12 + 12 + 6 = 30"
           }
         }
       }
