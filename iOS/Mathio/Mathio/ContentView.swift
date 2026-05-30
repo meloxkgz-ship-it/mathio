@@ -4223,7 +4223,11 @@ struct PracticeView: View {
 
     private var shouldShowShareOffer: Bool {
         lesson.questions.count > 0
-        && sessionCorrect >= min(3, lesson.questions.count)
+        && (
+            isPerfect
+            || store.correctToday() >= max(dailyGoal, 1)
+            || store.streakDays >= 3
+        )
     }
 
     private var shouldShowRetryOffer: Bool {
@@ -4435,29 +4439,46 @@ struct PracticeView: View {
     }
 
     private var shareMessage: String {
-        String(localized: "I practiced with Mathio today. Building my math streak one day at a time: https://apps.apple.com/app/id6767033115")
+        if isPerfect {
+            return String(localized: "I just finished a perfect Mathio session. Join me for a tiny daily math habit: https://apps.apple.com/app/id6767033115")
+        }
+        if store.streakDays >= 3 {
+            return String(localized: "I am building a Mathio streak one short session at a time. Join me here: https://apps.apple.com/app/id6767033115")
+        }
+        if store.correctToday() >= max(dailyGoal, 1) {
+            return String(localized: "I hit today's Mathio goal. Tiny math sessions add up: https://apps.apple.com/app/id6767033115")
+        }
+        return String(localized: "I practiced with Mathio today. Building my math streak one day at a time: https://apps.apple.com/app/id6767033115")
     }
 
     private var shareWinCard: some View {
         Card(padding: 16, background: Palette.surfaceMuted) {
-            VStack(alignment: .leading, spacing: 12) {
+            VStack(alignment: .leading, spacing: 14) {
                 HStack(spacing: 10) {
                     Image(systemName: "square.and.arrow.up.circle.fill")
                         .font(.system(size: 22, weight: .semibold))
                         .foregroundStyle(Palette.calculus)
                     VStack(alignment: .leading, spacing: 2) {
-                        Text("Share your progress")
+                        Text(shareMomentTitle)
                             .font(.titleM)
                             .foregroundStyle(Palette.ink)
-                        Text("You just finished a focused Mathio session. Let a friend know you're building the habit.")
+                        Text(shareMomentSubtitle)
                             .font(.bodyM)
                             .foregroundStyle(Palette.inkSoft)
+                            .fixedSize(horizontal: false, vertical: true)
                     }
                 }
+
+                HStack(spacing: 10) {
+                    insightMetric(value: "\(sessionAccuracyPercent)%", label: "Accuracy")
+                    insightMetric(value: "\(store.streakDays)", label: "Streak")
+                    insightMetric(value: "\(store.correctToday())/\(max(dailyGoal, 1))", label: "Today")
+                }
+
                 ShareLink(item: shareMessage) {
                     HStack(spacing: 8) {
                         Image(systemName: "square.and.arrow.up")
-                        Text("Share progress").fontWeight(.semibold)
+                        Text("Invite a study buddy").fontWeight(.semibold)
                     }
                     .frame(maxWidth: .infinity, minHeight: 48)
                     .foregroundStyle(Palette.ink)
@@ -4468,6 +4489,26 @@ struct PracticeView: View {
             }
         }
         .transition(.opacity.combined(with: .move(edge: .bottom)))
+    }
+
+    private var shareMomentTitle: LocalizedStringResource {
+        if isPerfect {
+            return LocalizedStringResource("Perfect run worth sharing")
+        }
+        if store.streakDays >= 3 {
+            return LocalizedStringResource("Keep the streak social")
+        }
+        return LocalizedStringResource("Daily goal complete")
+    }
+
+    private var shareMomentSubtitle: LocalizedStringResource {
+        if isPerfect {
+            return LocalizedStringResource("This is the right moment to invite a friend: you just proved the habit works.")
+        }
+        if store.streakDays >= 3 {
+            return LocalizedStringResource("A study buddy makes tomorrow easier to start.")
+        }
+        return LocalizedStringResource("You just reached today's target. Invite someone to build the same small routine.")
     }
 
     private var reviewOfferCard: some View {

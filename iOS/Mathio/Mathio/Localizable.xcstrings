@@ -118297,6 +118297,380 @@
           }
         }
       }
+    },
+    "A study buddy makes tomorrow easier to start.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mit Lernpartner fällt der Start morgen leichter."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un compañero de estudio hace más fácil empezar mañana."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un partenaire d'étude rend demain plus facile à commencer."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un compagno di studio rende più facile iniziare domani."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Um parceiro de estudo facilita começar amanhã."
+          }
+        }
+      }
+    },
+    "Daily goal complete": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tagesziel erreicht"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Meta diaria completada"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Objectif quotidien atteint"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Obiettivo giornaliero completato"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Meta diária concluída"
+          }
+        }
+      }
+    },
+    "I am building a Mathio streak one short session at a time. Join me here: https://apps.apple.com/app/id6767033115": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ich baue eine Mathio-Serie auf, eine kurze Einheit nach der anderen. Mach hier mit: https://apps.apple.com/app/id6767033115"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Estoy creando una racha en Mathio, una sesión corta a la vez. Únete aquí: https://apps.apple.com/app/id6767033115"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Je construis une série Mathio, une courte session à la fois. Rejoins-moi ici : https://apps.apple.com/app/id6767033115"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sto costruendo una serie su Mathio, una breve sessione alla volta. Unisciti qui: https://apps.apple.com/app/id6767033115"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Estou construindo uma sequência no Mathio, uma sessão curta por vez. Entre aqui: https://apps.apple.com/app/id6767033115"
+          }
+        }
+      }
+    },
+    "I hit today's Mathio goal. Tiny math sessions add up: https://apps.apple.com/app/id6767033115": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ich habe mein heutiges Mathio-Ziel erreicht. Kleine Mathe-Einheiten summieren sich: https://apps.apple.com/app/id6767033115"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cumplí mi objetivo de Mathio de hoy. Las mini sesiones de matemáticas suman: https://apps.apple.com/app/id6767033115"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "J'ai atteint mon objectif Mathio du jour. Les petites séances de maths s'accumulent : https://apps.apple.com/app/id6767033115"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ho raggiunto l'obiettivo Mathio di oggi. Le piccole sessioni di matematica si sommano: https://apps.apple.com/app/id6767033115"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bati minha meta do Mathio de hoje. Pequenas sessões de matemática se somam: https://apps.apple.com/app/id6767033115"
+          }
+        }
+      }
+    },
+    "I just finished a perfect Mathio session. Join me for a tiny daily math habit: https://apps.apple.com/app/id6767033115": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ich habe gerade eine perfekte Mathio-Einheit geschafft. Mach mit bei einer kleinen täglichen Mathe-Routine: https://apps.apple.com/app/id6767033115"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acabo de terminar una sesión perfecta en Mathio. Únete a este pequeño hábito diario de matemáticas: https://apps.apple.com/app/id6767033115"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Je viens de terminer une session Mathio parfaite. Rejoins-moi pour une petite habitude quotidienne de maths : https://apps.apple.com/app/id6767033115"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ho appena completato una sessione perfetta su Mathio. Unisciti a questa piccola abitudine quotidiana di matematica: https://apps.apple.com/app/id6767033115"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acabei de terminar uma sessão perfeita no Mathio. Entre nesse pequeno hábito diário de matemática: https://apps.apple.com/app/id6767033115"
+          }
+        }
+      }
+    },
+    "Invite a study buddy": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lernpartner einladen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Invitar a un compañero de estudio"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inviter un partenaire d'étude"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Invita un compagno di studio"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Convide um colega de estudo"
+          }
+        }
+      }
+    },
+    "Keep the streak social": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Teile deine Serie"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Comparte tu racha"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Partage ta série"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Condividi la tua serie"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Compartilhe sua sequência"
+          }
+        }
+      }
+    },
+    "Perfect run worth sharing": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Perfekte Runde zum Teilen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una ronda perfecta para compartir"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Une session parfaite à partager"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una sessione perfetta da condividere"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uma sessão perfeita para compartilhar"
+          }
+        }
+      }
+    },
+    "Streak": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Serie"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Racha"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Série"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Serie"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sequência"
+          }
+        }
+      }
+    },
+    "This is the right moment to invite a friend: you just proved the habit works.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Das ist der richtige Moment, einen Freund einzuladen: Du hast gerade bewiesen, dass die Routine funktioniert."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Este es el momento adecuado para invitar a un amigo: acabas de demostrar que el hábito funciona."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "C'est le bon moment pour inviter un ami : vous venez de prouver que cette habitude fonctionne."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Questo è il momento giusto per invitare un amico: hai appena dimostrato che l'abitudine funziona."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Este é o momento certo para convidar um amigo: você acabou de provar que o hábito funciona."
+          }
+        }
+      }
+    },
+    "You just reached today's target. Invite someone to build the same small routine.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Du hast gerade dein heutiges Ziel erreicht. Lade jemanden ein, dieselbe kleine Routine aufzubauen."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acabas de alcanzar el objetivo de hoy. Invita a alguien a crear la misma pequeña rutina."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vous venez d'atteindre l'objectif d'aujourd'hui. Invitez quelqu'un à construire la même petite routine."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hai appena raggiunto l'obiettivo di oggi. Invita qualcuno a costruire la stessa piccola routine."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Você acabou de atingir a meta de hoje. Convide alguém para construir a mesma pequena rotina."
+          }
+        }
+      }
     }
   },
   "version": "1.0"

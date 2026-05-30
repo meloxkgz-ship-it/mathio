@@ -42,6 +42,7 @@ PROSE: dict[str, str] = {
         "Eine Multiple-Choice-Gleichung hat die Optionen 2, 4, 6, 8. Wenn du x = 4 einsetzt, stimmt die Gleichung. Was ist die Antwort?",
     "A quick estimate catches answers that are far too large or too small.":
         "Eine schnelle Schätzung erkennt Antworten, die viel zu groß oder zu klein sind.",
+    "A study buddy makes tomorrow easier to start.": "Mit Lernpartner fällt der Start morgen leichter.",
     "A result should be close to 50, but your calculator shows 500. What should you do first?":
         "Ein Ergebnis sollte nahe bei 50 liegen, aber dein Rechner zeigt 500. Was solltest du zuerst tun?",
     "Area units do not answer a length question.": "Flächeneinheiten beantworten keine Längenfrage.",
@@ -74,6 +75,21 @@ PROSE: dict[str, str] = {
         "Du hast gerade eine perfekte Runde geschafft. Eine kurze Bewertung hilft mehr Lernenden, Mathio zu finden.",
     "You just finished a strong session. If Mathio is helping, a quick rating helps more learners find it.":
         "Du hast gerade eine starke Einheit abgeschlossen. Wenn Mathio dir hilft, hilft eine kurze Bewertung mehr Lernenden, es zu finden.",
+    "Daily goal complete": "Tagesziel erreicht",
+    "I am building a Mathio streak one short session at a time. Join me here: https://apps.apple.com/app/id6767033115":
+        "Ich baue eine Mathio-Serie auf, eine kurze Einheit nach der anderen. Mach hier mit: https://apps.apple.com/app/id6767033115",
+    "I hit today's Mathio goal. Tiny math sessions add up: https://apps.apple.com/app/id6767033115":
+        "Ich habe mein heutiges Mathio-Ziel erreicht. Kleine Mathe-Einheiten summieren sich: https://apps.apple.com/app/id6767033115",
+    "I just finished a perfect Mathio session. Join me for a tiny daily math habit: https://apps.apple.com/app/id6767033115":
+        "Ich habe gerade eine perfekte Mathio-Einheit geschafft. Mach mit bei einer kleinen täglichen Mathe-Routine: https://apps.apple.com/app/id6767033115",
+    "Invite a study buddy": "Lernpartner einladen",
+    "Keep the streak social": "Teile deine Serie",
+    "Perfect run worth sharing": "Perfekte Runde zum Teilen",
+    "Streak": "Serie",
+    "This is the right moment to invite a friend: you just proved the habit works.":
+        "Das ist der richtige Moment, einen Freund einzuladen: Du hast gerade bewiesen, dass die Routine funktioniert.",
+    "You just reached today's target. Invite someone to build the same small routine.":
+        "Du hast gerade dein heutiges Ziel erreicht. Lade jemanden ein, dieselbe kleine Routine aufzubauen.",
     "m² measures area": "m² misst Fläche",
     "4 fewer → 3x − 4": "4 weniger → 3x − 4",
     "A bag has 3 red and 2 blue tokens. P(red) =": "Ein Beutel enthält 3 rote und 2 blaue Chips. P(rot) =",
