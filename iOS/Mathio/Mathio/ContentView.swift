@@ -382,6 +382,16 @@ struct OnboardingView: View {
         }
     }
 
+    private var selectedPath: LearningPath {
+        LearningPath.recommended(for: LearningProfile(
+            goal: selectedGoal,
+            confidence: confidence,
+            diagnosticCorrect: diagnosticCorrect,
+            diagnosticTotal: DiagnosticQuestion.samples.count,
+            createdAt: .now
+        ))
+    }
+
     var body: some View {
         VStack(spacing: 0) {
             skipBar
@@ -501,7 +511,7 @@ struct OnboardingView: View {
                 Text("What should Mathio help with?")
                     .font(.displayM).foregroundStyle(Palette.ink)
                     .multilineTextAlignment(.center)
-                Text("Your answer shapes the first two weeks.")
+                Text("Your answer shapes the first track.")
                     .font(.bodyL).foregroundStyle(Palette.inkSoft)
                     .multilineTextAlignment(.center)
             }
@@ -583,7 +593,7 @@ struct OnboardingView: View {
                 miniStat("chart.line.uptrend.xyaxis", DiagnosticQuestion.level(for: diagnosticCorrect,
                                                                                total: DiagnosticQuestion.samples.count,
                                                                                confidence: confidence).title)
-                miniStat("calendar.badge.clock", "A 14-day starter path will appear on Home")
+                miniStat("calendar.badge.clock", "\(selectedPath.durationDays)-day first track will appear on Home")
             }
 
             firstWeekPreview

@@ -97668,6 +97668,40 @@
         }
       }
     },
+    "Your answer shapes the first track.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deine Antwort formt den ersten Lernpfad."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tu respuesta da forma a la primera pista."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Votre réponse façonne la première piste."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La tua risposta modella la prima traccia."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sua resposta molda a primeira faixa."
+          }
+        }
+      }
+    },
     "Your answer shapes the first two weeks.": {
       "extractionState": "manual",
       "localizations": {

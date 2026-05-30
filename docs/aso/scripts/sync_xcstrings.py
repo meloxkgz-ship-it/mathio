@@ -259,6 +259,7 @@ PROSE: dict[str, str] = {
     "Session insight": "Session-Auswertung",
     "Your math plan is ready": "Dein Mathe-Plan ist bereit",
     "Your plan is ready": "Dein Plan ist bereit",
+    "Your answer shapes the first track.": "Deine Antwort formt den ersten Lernpfad.",
     "Your week does not stop at the first free lesson": "Deine Woche endet nicht bei der ersten kostenlosen Lektion",
     "Your next lesson is ready for a short return session.":
         "Deine nächste Lektion ist für eine kurze Rückkehr-Session bereit.",
@@ -282,6 +283,7 @@ PROSE: dict[str, str] = {
     "All 85 lessons and 425 guided questions": "Alle 85 Lektionen und 425 geführten Aufgaben",
     "All 88 lessons and 440 guided questions": "Alle 88 Lektionen und 440 geführten Aufgaben",
     "All 89 lessons and 445 guided questions": "Alle 89 Lektionen und 445 geführten Aufgaben",
+    "%lld-day first track will appear on Home": "Der erste %lld-Tage-Plan erscheint auf Home",
     "answers left": "Antworten übrig",
     "A line has slope 3. From point (0, 2), what point do you reach after run 1?":
         "Eine Gerade hat Steigung 3. Welchen Punkt erreichst du von (0, 2) aus nach einem Schritt nach rechts?",
