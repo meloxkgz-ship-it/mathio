@@ -53,7 +53,7 @@ Reasoning:
 ## Promotional Text (170 max — editable without review)
 
 ```
-New: Tips & Bill Splitting, Normal Distribution, 7-Day Focus, and 75 lessons.
+New: Rich Path Previews, Tips & Bill Splitting, 7-Day Focus, and 75 lessons.
 ```
 **78 / 170** — highlights current catalog size, retention improvements, and new exam-prep content.
 
@@ -137,6 +137,7 @@ Mathio now gives learners clearer direction after every launch and more depth ac
 New:
 • Next 3 Sessions: your personal plan now shows the next concrete lessons to study
 • 7-Day Focus: a clearer weekly habit card turns your recommended path into seven small sessions
+• Rich Path Previews: guided paths now show duration, lesson count, and the next concrete lesson
 • Session Insight: every completed session now shows accuracy, misses, mode, and the next best step
 • Normal Distribution: new statistics practice for z-scores, bell curves, and the empirical rule
 • Tips & Bill Splitting: practical finance practice for tips, shared totals, and fair shares

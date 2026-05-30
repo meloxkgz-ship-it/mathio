@@ -1631,7 +1631,8 @@ struct HomeView: View {
                     LearningPathRow(
                         path: path,
                         progress: progress(for: path),
-                        locked: firstLesson(in: path).map(isLocked(_:)) ?? false
+                        locked: firstLesson(in: path).map(isLocked(_:)) ?? false,
+                        nextLessonTitle: firstLesson(in: path)?.title ?? path.title
                     )
                 }
                 .buttonStyle(.plain)
@@ -2105,28 +2106,52 @@ struct LearningPathRow: View {
     let path: LearningPath
     let progress: Double
     let locked: Bool
+    let nextLessonTitle: LocalizedStringResource
 
     var body: some View {
         Card(padding: 16) {
-            HStack(spacing: 14) {
-                ZStack {
-                    Circle().fill(path.color.opacity(0.15)).frame(width: 46, height: 46)
-                    Image(systemName: path.icon)
-                        .font(.system(size: 19, weight: .semibold))
-                        .foregroundStyle(path.color)
+            VStack(alignment: .leading, spacing: 12) {
+                HStack(spacing: 14) {
+                    ZStack {
+                        Circle().fill(path.color.opacity(0.15)).frame(width: 46, height: 46)
+                        Image(systemName: path.icon)
+                            .font(.system(size: 19, weight: .semibold))
+                            .foregroundStyle(path.color)
+                    }
+                    VStack(alignment: .leading, spacing: 5) {
+                        HStack(alignment: .firstTextBaseline, spacing: 8) {
+                            Text(path.title)
+                                .font(.titleM)
+                                .foregroundStyle(Palette.ink)
+                                .lineLimit(1)
+                                .minimumScaleFactor(0.82)
+                            Spacer(minLength: 0)
+                            Text("\(path.durationDays)d")
+                                .font(.caption.weight(.semibold))
+                                .foregroundStyle(Palette.inkSoft)
+                                .padding(.horizontal, 8)
+                                .padding(.vertical, 5)
+                                .background(Palette.surfaceMuted, in: Capsule())
+                        }
+                        Text(path.subtitle)
+                            .font(.bodyM)
+                            .foregroundStyle(Palette.inkSoft)
+                            .lineLimit(2)
+                        ProgressBar(progress: progress, color: path.color, height: 4)
+                    }
+                    Image(systemName: locked ? "lock.fill" : "arrow.right")
+                        .foregroundStyle(Palette.inkFaint)
                 }
-                VStack(alignment: .leading, spacing: 5) {
-                    Text(path.title)
-                        .font(.titleM)
-                        .foregroundStyle(Palette.ink)
-                    Text(path.subtitle)
-                        .font(.bodyM)
-                        .foregroundStyle(Palette.inkSoft)
-                    ProgressBar(progress: progress, color: path.color, height: 4)
+
+                HStack(spacing: 8) {
+                    Label("\(path.lessons.count) lessons", systemImage: "books.vertical.fill")
+                    Spacer(minLength: 8)
+                    Label("Next: \(nextLessonTitle)", systemImage: "arrow.turn.down.right")
+                        .lineLimit(1)
+                        .minimumScaleFactor(0.75)
                 }
-                Spacer()
-                Image(systemName: locked ? "lock.fill" : "arrow.right")
                     .foregroundStyle(Palette.inkFaint)
+                    .font(.caption)
             }
         }
     }
