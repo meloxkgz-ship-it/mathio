@@ -24121,6 +24121,40 @@
         }
       }
     },
+    "Active days": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aktive Tage"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Días activos"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Journées actives"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Giornate attive"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dias ativos"
+          }
+        }
+      }
+    },
     "Activity": {
       "localizations": {
         "de": {
@@ -27092,6 +27126,40 @@
         }
       }
     },
+    "Answers": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Antworten"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Respuestas"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Réponses"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Risposte"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Respostas"
+          }
+        }
+      }
+    },
     "Antiderivative of 1 is x.": {
       "localizations": {
         "de": {
@@ -29065,6 +29133,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Melhor para tendências em valores ordenados."
+          }
+        }
+      }
+    },
+    "Best next lesson": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beste nächste Lektion"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mejor próxima lección"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Meilleure prochaine leçon"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La migliore lezione successiva"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Melhor próxima lição"
           }
         }
       }
@@ -44398,6 +44500,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Termine a meta diária agora para que retornar amanhã pareça automático."
+          }
+        }
+      }
+    },
+    "Finish this to unlock faster visible progress.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schließe das ab, um schneller sichtbaren Fortschritt freizuschalten."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Termine esto para desbloquear un progreso visible más rápido."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Terminez ceci pour débloquer des progrès visibles plus rapides."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Completalo per sbloccare progressi visibili più rapidi."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Termine isso para desbloquear um progresso visível mais rápido."
           }
         }
       }
@@ -71855,6 +71991,40 @@
         }
       }
     },
+    "Reviews soon": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reviews bald"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reseñas próximamente"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bientôt des avis"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Presto le recensioni"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Comentários em breve"
+          }
+        }
+      }
+    },
     "Rewrite in exponential form.": {
       "localizations": {
         "de": {
@@ -87430,6 +87600,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Esta semana"
+          }
+        }
+      }
+    },
+    "This week's mission": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wochenmission"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La misión de esta semana"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La mission de cette semaine"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La missione di questa settimana"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A missão desta semana"
           }
         }
       }

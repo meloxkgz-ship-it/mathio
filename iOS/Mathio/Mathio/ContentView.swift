@@ -4525,6 +4525,30 @@ struct StatsView: View {
             return total + (activity[day, default: 0] > 0 ? 1 : 0)
         }
     }
+    private var correctLast7: Int {
+        let calendar = Calendar.current
+        let today = calendar.startOfDay(for: .now)
+        let activity = store.dailyActivity()
+        return (0..<7).reduce(0) { total, offset in
+            guard let day = calendar.date(byAdding: .day, value: -offset, to: today) else { return total }
+            return total + activity[day, default: 0]
+        }
+    }
+    private var weekTarget: Int {
+        max(settings.dailyGoal * 7, 1)
+    }
+    private var weeklyMissionProgress: Double {
+        min(1, Double(correctLast7) / Double(weekTarget))
+    }
+    private var reviewsDueThisWeek: Int {
+        let calendar = Calendar.current
+        let now = Date.now
+        let week = calendar.date(byAdding: .day, value: 7, to: now) ?? now.addingTimeInterval(60 * 60 * 24 * 7)
+        return store.reviewDueCount(in: topics, after: now, through: week)
+    }
+    private var firstStudyTarget: LessonTarget? {
+        lessonTargets.first
+    }
     private var consistencyScore: Double {
         min(1, Double(activeDaysLast7) / 5.0)
     }
@@ -4736,6 +4760,7 @@ struct StatsView: View {
                 VStack(alignment: .leading, spacing: 18) {
                     headerStats
                     forecastCard
+                    weeklyMissionCard
                     learningHealthCard
                     if !lessonTargets.isEmpty { studyTargetsCard }
                     achievementsCard
@@ -4758,6 +4783,81 @@ struct StatsView: View {
                 PracticeView(lesson: lesson, store: store, isReview: false)
             }
         }
+    }
+
+    private var weeklyMissionCard: some View {
+        Card(padding: 16, background: Palette.surface) {
+            VStack(alignment: .leading, spacing: 14) {
+                HStack(alignment: .top, spacing: 12) {
+                    Image(systemName: "calendar.badge.checkmark")
+                        .font(.system(size: 18, weight: .semibold))
+                        .foregroundStyle(Palette.success)
+                        .frame(width: 40, height: 40)
+                        .background(Palette.success.opacity(0.14), in: Circle())
+                        .accessibilityHidden(true)
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text("This week's mission")
+                            .font(.titleM)
+                            .foregroundStyle(Palette.ink)
+                        Text(weeklyMissionSubtitle)
+                            .font(.bodyM)
+                            .foregroundStyle(Palette.inkSoft)
+                            .fixedSize(horizontal: false, vertical: true)
+                    }
+                }
+
+                ProgressBar(progress: weeklyMissionProgress, color: Palette.success, height: 7)
+
+                HStack(spacing: 10) {
+                    forecastMetric(value: "\(correctLast7)/\(weekTarget)", label: "Answers")
+                    forecastMetric(value: "\(activeDaysLast7)/7", label: "Active days")
+                    forecastMetric(value: "\(reviewsDueThisWeek)", label: "Reviews soon")
+                }
+
+                if let firstStudyTarget {
+                    HStack(alignment: .top, spacing: 10) {
+                        Image(systemName: firstStudyTarget.topic.icon)
+                            .font(.system(size: 15, weight: .semibold))
+                            .foregroundStyle(firstStudyTarget.topic.color)
+                            .frame(width: 30, height: 30)
+                            .background(firstStudyTarget.topic.color.opacity(0.14), in: Circle())
+                        VStack(alignment: .leading, spacing: 3) {
+                            Text("Best next lesson")
+                                .font(.caption)
+                                .foregroundStyle(Palette.inkFaint)
+                                .textCase(.uppercase)
+                                .tracking(1)
+                            Text(firstStudyTarget.lesson.title)
+                                .font(.bodyM.weight(.semibold))
+                                .foregroundStyle(Palette.ink)
+                                .lineLimit(1)
+                            Text("Finish this to unlock faster visible progress.")
+                                .font(.caption)
+                                .foregroundStyle(Palette.inkSoft)
+                                .fixedSize(horizontal: false, vertical: true)
+                        }
+                        Spacer(minLength: 0)
+                    }
+                    .padding(12)
+                    .background(Palette.surfaceMuted, in: RoundedRectangle(cornerRadius: 12, style: .continuous))
+                }
+            }
+        }
+        .accessibilityElement(children: .combine)
+        .accessibilityLabel(Text("This week's mission. \(correctLast7) of \(weekTarget) answers, \(activeDaysLast7) active days."))
+    }
+
+    private var weeklyMissionSubtitle: LocalizedStringResource {
+        if correctLast7 >= weekTarget {
+            return "Weekly target complete. Keep reviews light and protect the streak."
+        }
+        if activeDaysLast7 < 3 {
+            return "Aim for three short practice days before chasing longer sessions."
+        }
+        if reviewsDueThisWeek > 0 {
+            return "\(reviewsDueThisWeek) reviews are coming up. A few calm sessions will keep them manageable."
+        }
+        return "Your week has room for one more focused session."
     }
 
     private var learningHealthCard: some View {
