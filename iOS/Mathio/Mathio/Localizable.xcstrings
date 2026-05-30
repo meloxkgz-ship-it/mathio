@@ -3379,6 +3379,40 @@
         }
       }
     },
+    "0.5 m": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0.5 m"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0.5 m"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0.5 m"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0.5 m"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0.5 m"
+          }
+        }
+      }
+    },
     "0.65": {
       "localizations": {
         "de": {
@@ -4778,6 +4812,40 @@
         }
       }
     },
+    "100 cm": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "100 cm"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "100 centímetros"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "100 cm"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "100cm"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "100 centímetros"
+          }
+        }
+      }
+    },
     "100 cm / 1 m": {
       "localizations": {
         "de": {
@@ -4911,6 +4979,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "100% + 6% = 106% = 1,06"
+          }
+        }
+      }
+    },
+    "100% of 19 ≈ 19": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "100% of 19 ≈ 19"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "100% de 19 ≈ 19"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "100% de 19 ≈ 19"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "100% di 19 ≈ 19"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "100% de 19 ≈ 19"
           }
         }
       }
@@ -5456,6 +5558,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "12 is not less than 10"
+          }
+        }
+      }
+    },
+    "12 m²": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "12 m²"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "12 m²"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "12 m²"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "12 m²"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "12 m²"
           }
         }
       }
@@ -6415,6 +6551,40 @@
         }
       }
     },
+    "19% is close to 20%": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "19 % liegt nahe bei 20 %"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "19% está cerca del 20%"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "19% est proche de 20%"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il 19% è vicino al 20%"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "19% está perto de 20%"
+          }
+        }
+      }
+    },
     "19:00": {
       "localizations": {
         "de": {
@@ -7369,6 +7539,40 @@
         }
       }
     },
+    "2% of 800 ≈ 16": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2% of 800 ≈ 16"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2% de 800 ≈ 16"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2% de 800 ≈ 16"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2% di 800 ≈ 16"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2% de 800 ≈ 16"
+          }
+        }
+      }
+    },
     "2, 4, 6": {
       "localizations": {
         "de": {
@@ -7845,6 +8049,74 @@
           "stringUnit": {
             "state": "translated",
             "value": "20% de crescimento → 1.20,  20% de decaimento → 0.80"
+          }
+        }
+      }
+    },
+    "20% of 80 = 16": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "20% of 80 = 16"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "20% de 80 = 16"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "20% de 80 = 16"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "20% di 80 = 16"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "20% de 80 = 16"
+          }
+        }
+      }
+    },
+    "20% of 80 ≈ 16": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "20% of 80 ≈ 16"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "20% de 80 ≈ 16"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "20% de 80 ≈ 16"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "20% di 80 ≈ 16"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "20% de 80 ≈ 16"
           }
         }
       }
@@ -12768,6 +13040,40 @@
         }
       }
     },
+    "50 and 500 differ by a factor of 10": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "50 und 500 unterscheiden sich um den Faktor 10"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "50 y 500 difieren en un factor de 10"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "50 et 500 diffèrent d'un facteur 10"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "50 e 500 differiscono di un fattore 10"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "50 e 500 diferem por um fator de 10"
+          }
+        }
+      }
+    },
     "50 · 1.08 = 54": {
       "localizations": {
         "de": {
@@ -15446,6 +15752,40 @@
         }
       }
     },
+    "8 m": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "8 m"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "8 m"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "8 m"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "8 m"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "8 m"
+          }
+        }
+      }
+    },
     "8 · 3 = 24": {
       "localizations": {
         "de": {
@@ -15719,6 +16059,40 @@
         }
       }
     },
+    "82 is close to 80": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "82 liegt nahe bei 80"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "82 está cerca de 80"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "82 est proche de 80"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "82 è vicino a 80"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "82 está perto de 80"
+          }
+        }
+      }
+    },
     "82 lessons across algebra, calculus, geometry, statistics, finance, and more": {
       "localizations": {
         "de": {
@@ -15957,6 +16331,40 @@
         }
       }
     },
+    "90% of 20 ≈ 18": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "90% of 20 ≈ 18"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "90% de 20 ≈ 18"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "90% de 20 ≈ 18"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "90% di 20 ≈ 18"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "90% de 20 ≈ 18"
+          }
+        }
+      }
+    },
     "90°": {
       "localizations": {
         "de": {
@@ -16055,6 +16463,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "94 aulas de álgebra, cálculo, geometria, estatística, finanças, revisão de exames e muito mais"
+          }
+        }
+      }
+    },
+    "95 lessons across algebra, calculus, geometry, statistics, finance, exam review, and more": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "95 Lektionen in Algebra, Analysis, Geometrie, Statistik, Finanzmathe, Prüfungstraining und mehr"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "95 lecciones de álgebra, cálculo, geometría, estadística, finanzas, revisión de exámenes y más"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "95 leçons sur l'algèbre, le calcul, la géométrie, les statistiques, la finance, la révision des examens et bien plus encore"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "95 lezioni di algebra, calcolo infinitesimale, geometria, statistica, finanza, revisione degli esami e altro ancora"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "95 aulas de álgebra, cálculo, geometria, estatística, finanças, revisão de exames e muito mais"
           }
         }
       }
@@ -19439,6 +19881,40 @@
         }
       }
     },
+    "A length question asks for meters. Which answer can you eliminate immediately?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eine Längenaufgabe fragt nach Metern. Welche Antwort kannst du sofort ausschließen?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una pregunta de longitud pide metros. ¿Qué respuesta puedes eliminar inmediatamente?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Une question de longueur demande des mètres. Quelle réponse pouvez-vous éliminer immédiatement ?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una domanda sulla lunghezza richiede metri. Quale risposta puoi eliminare immediatamente?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uma pergunta sobre comprimento pede metros. Qual resposta você pode eliminar imediatamente?"
+          }
+        }
+      }
+    },
     "A limit is the value a function approaches as the input approaches a point.": {
       "localizations": {
         "de": {
@@ -19814,6 +20290,40 @@
         }
       }
     },
+    "A mismatch by a factor of 10 is a warning sign.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eine Abweichung um den Faktor 10 ist ein Warnzeichen."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una discrepancia por un factor de 10 es una señal de advertencia."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Une inadéquation d’un facteur 10 est un signe d’avertissement."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una mancata corrispondenza di un fattore 10 è un segnale di avvertimento."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uma incompatibilidade por um fator de 10 é um sinal de alerta."
+          }
+        }
+      }
+    },
     "A mixed mini-test built from review, weak spots, and the next useful lesson.": {
       "localizations": {
         "de": {
@@ -19844,6 +20354,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Um mini-teste misto com revisão, pontos fracos e a próxima lição útil."
+          }
+        }
+      }
+    },
+    "A multiple-choice equation has options 2, 4, 6, 8. Plugging in x = 4 makes the equation true. What is the answer?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eine Multiple-Choice-Gleichung hat die Optionen 2, 4, 6, 8. Wenn du x = 4 einsetzt, stimmt die Gleichung. Was ist die Antwort?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una ecuación de opción múltiple tiene las opciones 2, 4, 6, 8. Al reemplazar x = 4, la ecuación es verdadera. ¿Cuál es la respuesta?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Une équation à choix multiples a les options 2, 4, 6, 8. Brancher x = 4 rend l'équation vraie. Quelle est la réponse ?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un'equazione a scelta multipla ha le opzioni 2, 4, 6, 8. Inserendo x = 4 l'equazione diventa vera. Qual è la risposta?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uma equação de múltipla escolha tem as opções 2, 4, 6, 8. Inserir x = 4 torna a equação verdadeira. Qual é a resposta?"
           }
         }
       }
@@ -20568,6 +21112,40 @@
         }
       }
     },
+    "A quick estimate catches answers that are far too large or too small.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eine schnelle Schätzung erkennt Antworten, die viel zu groß oder zu klein sind."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una estimación rápida detecta respuestas que son demasiado grandes o demasiado pequeñas."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Une estimation rapide détecte les réponses beaucoup trop grandes ou trop petites."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una stima rapida consente di individuare risposte troppo grandi o troppo piccole."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uma estimativa rápida detecta respostas que são muito grandes ou muito pequenas."
+          }
+        }
+      }
+    },
     "A quick measure of spread.": {
       "localizations": {
         "de": {
@@ -20905,6 +21483,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "A regression line summarizes a linear trend."
+          }
+        }
+      }
+    },
+    "A result should be close to 50, but your calculator shows 500. What should you do first?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ein Ergebnis sollte nahe bei 50 liegen, aber dein Rechner zeigt 500. Was solltest du zuerst tun?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un resultado debería estar cerca de 50, pero tu calculadora muestra 500. ¿Qué debes hacer primero?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un résultat devrait être proche de 50, mais votre calculatrice affiche 500. Que devez-vous faire en premier ?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un risultato dovrebbe essere vicino a 50, ma la tua calcolatrice mostra 500. Cosa dovresti fare prima?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O resultado deve ser próximo de 50, mas sua calculadora mostra 500. O que você deve fazer primeiro?"
           }
         }
       }
@@ -25253,6 +25865,40 @@
         }
       }
     },
+    "All 95 lessons and 475 guided questions": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alle 95 Lektionen und 475 geführten Fragen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Las 95 lecciones y 475 preguntas guiadas."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les 95 leçons et 475 questions guidées"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tutte le 95 lezioni e 475 domande guidate"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Todas as 95 lições e 475 perguntas guiadas"
+          }
+        }
+      }
+    },
     "All entries to zero": {
       "localizations": {
         "de": {
@@ -26990,6 +27636,40 @@
         }
       }
     },
+    "Area units do not answer a length question.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Flächeneinheiten beantworten keine Längenfrage."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Las unidades de área no responden a una pregunta de longitud."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les unités de superficie ne répondent pas à une question de longueur."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le unità di area non rispondono a domande sulla lunghezza."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "As unidades de área não respondem a uma questão de comprimento."
+          }
+        }
+      }
+    },
     "Area → square units; volume → cubic units": {
       "localizations": {
         "de": {
@@ -27670,6 +28350,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Eixo de simetria: x = 4"
+          }
+        }
+      }
+    },
+    "Back-substitution is a valid check.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Einsetzen zur Kontrolle ist ein gültiger Check."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La sustitución hacia atrás es un cheque válido."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La rétro-substitution est un contrôle valide."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La sostituzione all'indietro è un assegno valido."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A substituição reversa é uma verificação válida."
           }
         }
       }
@@ -30550,6 +31264,40 @@
         }
       }
     },
+    "Change the answer to 5": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Antwort auf 5 ändern"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cambia la respuesta a 5"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Change la réponse en 5"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cambia la risposta in 5"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mude a resposta para 5"
+          }
+        }
+      }
+    },
     "Changing balance each month": {
       "localizations": {
         "de": {
@@ -30750,6 +31498,74 @@
           "stringUnit": {
             "state": "translated",
             "value": "Verifique 6² + 8²."
+          }
+        }
+      }
+    },
+    "Check decimal places, conversion factors, and units first": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prüfe zuerst Dezimalstellen, Umrechnungsfaktoren und Einheiten"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Primero verifique los decimales, los factores de conversión y las unidades."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vérifiez d'abord les décimales, les facteurs de conversion et les unités"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Controlla prima le cifre decimali, i fattori di conversione e le unità"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verifique primeiro as casas decimais, os fatores de conversão e as unidades"
+          }
+        }
+      }
+    },
+    "Check place value and units": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stellenwert und Einheiten prüfen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verifique el valor posicional y las unidades"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vérifier la valeur de position et les unités"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Controlla il valore del luogo e le unità"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verifique valor posicional e unidades"
           }
         }
       }
@@ -39697,6 +40513,40 @@
         }
       }
     },
+    "Elimination removes answers that cannot work": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ausschließen entfernt Antworten, die nicht funktionieren können"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La eliminación elimina las respuestas que no pueden funcionar."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L'élimination supprime les réponses qui ne peuvent pas fonctionner"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L'eliminazione rimuove le risposte che non possono funzionare"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A eliminação remove respostas que não funcionam"
+          }
+        }
+      }
+    },
     "Empirical rule": {
       "extractionState": "manual",
       "localizations": {
@@ -40036,6 +40886,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Estimativa = 50 e margem de erro = 6. Qual intervalo você informa?"
+          }
+        }
+      }
+    },
+    "Estimate first": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zuerst schätzen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Estimar primero"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Estimez d’abord"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stima prima"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Faça uma estimativa primeiro"
           }
         }
       }
@@ -40991,6 +41875,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Revisão do exame"
+          }
+        }
+      }
+    },
+    "Exam Strategy Sprint": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prüfungsstrategie-Sprint"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sprint de estrategia de examen"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sprint de stratégie d'examen"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sprint strategico per l'esame"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sprint de estratégia de exame"
           }
         }
       }
@@ -42558,6 +43476,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Resultados favoráveis: 1"
+          }
+        }
+      }
+    },
+    "Fewer plausible choices means better odds": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weniger plausible Auswahlmöglichkeiten bedeuten bessere Chancen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Menos opciones plausibles significan mejores probabilidades"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Moins de choix plausibles signifient de meilleures chances"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Meno scelte plausibili significano probabilità migliori"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Menos escolhas plausíveis significam melhores probabilidades"
           }
         }
       }
@@ -49184,6 +50136,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "If x increases and y usually increases too, the correlation is:"
+          }
+        }
+      }
+    },
+    "Ignore the estimate": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Schätzung ignorieren"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ignorar la estimación"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ignorer l'estimation"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ignora la stima"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ignorar a estimativa"
           }
         }
       }
@@ -55940,6 +56926,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Plano de memória"
+          }
+        }
+      }
+    },
+    "Meters measure length": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Meter messen Länge"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Los metros miden la longitud."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les mètres mesurent la longueur"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I metri misurano la lunghezza"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Metros medem comprimento"
           }
         }
       }
@@ -65536,6 +66556,40 @@
         }
       }
     },
+    "Practice the habits that protect points under time pressure: estimate first, eliminate impossible answers, and check units before committing.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Übe Gewohnheiten, die unter Zeitdruck Punkte schützen: zuerst schätzen, unmögliche Antworten ausschließen und Einheiten prüfen, bevor du dich festlegst."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Practique los hábitos que protegen los puntos bajo presión de tiempo: calcule primero, elimine las respuestas imposibles y verifique las unidades antes de comprometerse."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adoptez les habitudes qui protègent les points sous la pression du temps : estimez d'abord, éliminez les réponses impossibles et vérifiez les unités avant de vous engager."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Esercita le abitudini che proteggono i punti sotto pressione temporale: stima prima, elimina le risposte impossibili e controlla le unità prima di impegnarti."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pratique os hábitos que protegem os pontos sob pressão de tempo: estime primeiro, elimine respostas impossíveis e verifique as unidades antes de se comprometer."
+          }
+        }
+      }
+    },
     "Pre-Algebra": {
       "localizations": {
         "de": {
@@ -71176,6 +72230,40 @@
         }
       }
     },
+    "Round both numbers slightly.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Runde beide Zahlen leicht."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Redondea ligeramente ambos números."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arrondissez légèrement les deux nombres."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arrotonda leggermente entrambi i numeri."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arredonde ligeiramente ambos os números."
+          }
+        }
+      }
+    },
     "Rounded: $95.24": {
       "localizations": {
         "de": {
@@ -74619,6 +75707,40 @@
         }
       }
     },
+    "So 12 m² cannot be a length answer": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Also kann 12 m² keine Längenantwort sein"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Entonces 12 m² no puede ser una respuesta larga"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Donc 12 m² ne peut pas être une réponse de longueur"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quindi 12 m² non possono essere una risposta in termini di lunghezza"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Portanto, 12 m² não pode ser uma resposta de comprimento"
+          }
+        }
+      }
+    },
     "So 4500 = 4.5 × 10³": {
       "localizations": {
         "de": {
@@ -74751,6 +75873,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Então P(A | B) é igual a P(A)"
+          }
+        }
+      }
+    },
+    "So choose 4": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Also wähle 4"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Así que elige 4"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alors choisis 4"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quindi scegline 4"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Então escolha 4"
           }
         }
       }
@@ -78787,6 +79943,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Coach de estudo"
+          }
+        }
+      }
+    },
+    "Submit 500 immediately": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "500 sofort abgeben"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enviar 500 inmediatamente"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Soumettez 500 immédiatement"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Invia 500 immediatamente"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Envie 500 imediatamente"
           }
         }
       }
@@ -83609,6 +84799,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "O oposto de verdadeiro é falso"
+          }
+        }
+      }
+    },
+    "The option x = 4 satisfies the equation": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Option x = 4 erfüllt die Gleichung"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La opción x = 4 satisface la ecuación"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L'option x = 4 satisfait l'équation"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L'opzione x = 4 soddisfa l'equazione"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A opção x = 4 satisfaz a equação"
           }
         }
       }
@@ -89561,6 +90785,40 @@
         }
       }
     },
+    "True or false: if two choices are mathematically impossible, eliminating them improves your odds.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Richtig oder falsch: Wenn zwei Antwortmöglichkeiten mathematisch unmöglich sind, verbessert ihr Ausschluss deine Chancen."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verdadero o falso: si dos opciones son matemáticamente imposibles, eliminarlas mejora tus probabilidades."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vrai ou faux : si deux choix sont mathématiquement impossibles, les éliminer augmente vos chances."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vero o falso: se due scelte sono matematicamente impossibili, eliminarle aumenta le tue probabilità."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verdadeiro ou falso: se duas escolhas são matematicamente impossíveis, eliminá-las aumenta as suas probabilidades."
+          }
+        }
+      }
+    },
     "True or false: if you split a bill after adding tip, each share includes part of the tip.": {
       "extractionState": "manual",
       "localizations": {
@@ -91881,6 +93139,40 @@
         }
       }
     },
+    "Unit check": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Einheitencheck"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "verificación de unidad"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vérification de l'unité"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Controllo dell'unità"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verificação da unidade"
+          }
+        }
+      }
+    },
     "Unit conversions keep the same amount but change the label. Multiply by a conversion factor so the old unit cancels.": {
       "localizations": {
         "de": {
@@ -92016,6 +93308,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Preços unitários comparam o custo por item, grama, litro ou mês. Eles ajudam a encontrar a melhor oferta sem adivinhar pelo tamanho da embalagem."
+          }
+        }
+      }
+    },
+    "Units often reveal whether a calculation matches the question.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Einheiten zeigen oft, ob eine Rechnung zur Frage passt."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Las unidades suelen revelar si un cálculo coincide con la pregunta."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les unités révèlent souvent si un calcul correspond à la question."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le unità spesso rivelano se un calcolo corrisponde alla domanda."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "As unidades muitas vezes revelam se um cálculo corresponde à pergunta."
           }
         }
       }
@@ -97835,6 +99161,40 @@
         }
       }
     },
+    "You are choosing from a smaller set.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Du wählst aus einer kleineren Menge."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Estás eligiendo entre un conjunto más pequeño."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vous choisissez parmi un ensemble plus petit."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stai scegliendo da un set più piccolo."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Você está escolhendo entre um conjunto menor."
+          }
+        }
+      }
+    },
     "You can't divide by zero.": {
       "localizations": {
         "de": {
@@ -98038,6 +99398,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Você deve subtrair a sobreposição uma vez"
+          }
+        }
+      }
+    },
+    "You need 19% of 82. Which estimate is most useful?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Du brauchst 19 % von 82. Welche Schätzung ist am nützlichsten?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Necesitas el 19% de 82. ¿Qué estimación es más útil?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il vous faut 19 % de 82. Quelle estimation est la plus utile ?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hai bisogno del 19% di 82. Quale stima è più utile?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Você precisa de 19% de 82. Qual estimativa é mais útil?"
           }
         }
       }
@@ -102549,6 +103943,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "perdido"
+          }
+        }
+      }
+    },
+    "m² measures area": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "m² misst Fläche"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "m² mide área"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "m² mesure la surface"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "m² misura l'area"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "m² mede área"
           }
         }
       }

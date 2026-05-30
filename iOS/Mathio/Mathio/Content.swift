@@ -4961,6 +4961,69 @@ enum Curriculum {
         ]
     )
 
+    static let examStrategySprint = Lesson(
+        id: "exam.strategy.sprint",
+        title: "Exam Strategy Sprint",
+        intro: "Practice the habits that protect points under time pressure: estimate first, eliminate impossible answers, and check units before committing.",
+        formulas: [
+            Formula(key: "exam.strategy.f1",
+                    name: "Estimate first",
+                    math: "round → solve → compare",
+                    explanation: "A quick estimate catches answers that are far too large or too small."),
+            Formula(key: "exam.strategy.f2",
+                    name: "Unit check",
+                    math: "answer unit = question unit",
+                    explanation: "Units often reveal whether a calculation matches the question."),
+        ],
+        questions: [
+            Question(id: "exam.strategy.q1",
+                     prompt: "A result should be close to 50, but your calculator shows 500. What should you do first?",
+                     math: nil,
+                     kind: .multipleChoice(options: [
+                        .init(label: "Check place value and units", math: nil),
+                        .init(label: "Submit 500 immediately", math: nil),
+                        .init(label: "Change the answer to 5", math: nil),
+                        .init(label: "Ignore the estimate", math: nil),
+                     ], correctIndex: 0),
+                     hint: "A mismatch by a factor of 10 is a warning sign.",
+                     solutionSteps: ["50 and 500 differ by a factor of 10", "Check decimal places, conversion factors, and units first"]),
+            Question(id: "exam.strategy.q2",
+                     prompt: "You need 19% of 82. Which estimate is most useful?",
+                     math: nil,
+                     kind: .multipleChoice(options: [
+                        .init(label: "20% of 80 ≈ 16", math: nil),
+                        .init(label: "2% of 800 ≈ 16", math: nil),
+                        .init(label: "90% of 20 ≈ 18", math: nil),
+                        .init(label: "100% of 19 ≈ 19", math: nil),
+                     ], correctIndex: 0),
+                     hint: "Round both numbers slightly.",
+                     solutionSteps: ["19% is close to 20%", "82 is close to 80", "20% of 80 = 16"]),
+            Question(id: "exam.strategy.q3",
+                     prompt: "A length question asks for meters. Which answer can you eliminate immediately?",
+                     math: nil,
+                     kind: .multipleChoice(options: [
+                        .init(label: "12 m²", math: nil),
+                        .init(label: "8 m", math: nil),
+                        .init(label: "0.5 m", math: nil),
+                        .init(label: "100 cm", math: nil),
+                     ], correctIndex: 0),
+                     hint: "Area units do not answer a length question.",
+                     solutionSteps: ["Meters measure length", "m² measures area", "So 12 m² cannot be a length answer"]),
+            Question(id: "exam.strategy.q4",
+                     prompt: "A multiple-choice equation has options 2, 4, 6, 8. Plugging in x = 4 makes the equation true. What is the answer?",
+                     math: nil,
+                     kind: .freeAnswer(accepted: ["4", "x=4", "x = 4"]),
+                     hint: "Back-substitution is a valid check.",
+                     solutionSteps: ["The option x = 4 satisfies the equation", "So choose 4"]),
+            Question(id: "exam.strategy.q5",
+                     prompt: "True or false: if two choices are mathematically impossible, eliminating them improves your odds.",
+                     math: nil,
+                     kind: .trueFalse(answer: true),
+                     hint: "You are choosing from a smaller set.",
+                     solutionSteps: ["Elimination removes answers that cannot work", "Fewer plausible choices means better odds"]),
+        ]
+    )
+
     // MARK: - All topics
 
     static let topics: [Topic] = [
@@ -5033,6 +5096,6 @@ enum Curriculum {
               subtitle: "Mixed sprints & finals prep",
               icon: "checkmark.seal",
               color: Palette.terracotta,
-              lessons: [examMixedFoundations, examAlgebraSprint, examGeometrySprint, examDataSprint, examWordProblemSprint]),
+              lessons: [examMixedFoundations, examAlgebraSprint, examGeometrySprint, examDataSprint, examWordProblemSprint, examStrategySprint]),
     ]
 }

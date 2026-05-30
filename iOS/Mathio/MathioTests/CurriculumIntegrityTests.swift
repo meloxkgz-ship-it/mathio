@@ -7,8 +7,8 @@ final class CurriculumIntegrityTests: XCTestCase {
         let lessonCount = Curriculum.topics.reduce(0) { $0 + $1.lessons.count }
         let questionCount = Curriculum.topics.reduce(0) { $0 + $1.questionCount }
 
-        XCTAssertEqual(lessonCount, 94)
-        XCTAssertEqual(questionCount, 470)
+        XCTAssertEqual(lessonCount, 95)
+        XCTAssertEqual(questionCount, 475)
     }
 
     func testCurriculumIdsAreUnique() {
@@ -34,14 +34,15 @@ final class CurriculumIntegrityTests: XCTestCase {
         let topic = Curriculum.topics.first { $0.id == "examreview" }
 
         XCTAssertNotNil(topic)
-        XCTAssertEqual(topic?.lessons.count, 5)
-        XCTAssertEqual(topic?.questionCount, 25)
+        XCTAssertEqual(topic?.lessons.count, 6)
+        XCTAssertEqual(topic?.questionCount, 30)
         XCTAssertEqual(topic?.lessons.map(\.id), [
             "exam.mixed.foundations",
             "exam.algebra.sprint",
             "exam.geometry.sprint",
             "exam.data.sprint",
             "exam.word.sprint",
+            "exam.strategy.sprint",
         ])
     }
 

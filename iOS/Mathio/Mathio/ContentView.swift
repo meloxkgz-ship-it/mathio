@@ -2839,7 +2839,8 @@ struct LearningPath: Identifiable {
                       Curriculum.exponentialGrowth, Curriculum.graphingLines, Curriculum.quadraticGraphs, Curriculum.wordProblems, Curriculum.trigBasics, Curriculum.descriptiveStats,
                       Curriculum.conditionalProbability, Curriculum.standardDeviation,
                       Curriculum.correlationRegression, Curriculum.examMixedFoundations, Curriculum.examAlgebraSprint,
-                      Curriculum.examGeometrySprint, Curriculum.examDataSprint, Curriculum.examWordProblemSprint],
+                      Curriculum.examGeometrySprint, Curriculum.examDataSprint, Curriculum.examWordProblemSprint,
+                      Curriculum.examStrategySprint],
             durationDays: 21
         ),
         LearningPath(
@@ -5771,7 +5772,7 @@ struct PaywallView: View {
 
     private var bullets: some View {
         VStack(alignment: .leading, spacing: 12) {
-            row("books.vertical.fill", "94 lessons across algebra, calculus, geometry, statistics, finance, exam review, and more")
+            row("books.vertical.fill", "95 lessons across algebra, calculus, geometry, statistics, finance, exam review, and more")
             row("map.fill", "Guided paths show exactly what to study next")
             row("brain.head.profile", "Adaptive practice focuses on weak spots")
             row("arrow.triangle.2.circlepath", "Spaced repetition brings back what you are about to forget")
@@ -5790,7 +5791,7 @@ struct PaywallView: View {
                 valueProof("sparkles", "Study coach", "One best next step every time you open Mathio")
                 valueProof("calendar.badge.checkmark", "Weekly plan", "A clear seven-day path from today's level")
                 valueProof("arrow.triangle.2.circlepath", "Smart review", "Questions return before you forget them")
-                valueProof("map.fill", "Full roadmap", "All 94 lessons and 470 guided questions")
+                valueProof("map.fill", "Full roadmap", "All 95 lessons and 475 guided questions")
             }
         }
     }

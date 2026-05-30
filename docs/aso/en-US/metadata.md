@@ -53,7 +53,7 @@ Reasoning:
 ## Promotional Text (170 max — editable without review)
 
 ```
-New: Learning Health, Study Coach, exam review, and 94 lessons.
+New: Learning Health, Study Coach, exam review, and 95 lessons.
 ```
 **73 / 170** — highlights current catalog size, retention improvements, and new exam-prep content.
 
@@ -110,7 +110,7 @@ Available in English, German, Spanish, French, Italian, and Brazilian Portuguese
 TOPICS
 Pre-Algebra, Algebra, Calculus, Geometry, Trigonometry, Statistics, Linear Algebra, Financial Math, Discrete Math, and Exam Review.
 
-94 lessons and 470 hand-crafted questions cover fractions, percentages, percent change, unit conversions, equations, graphing lines, quadratic graphs, word problems, functions, exponential growth, sequences, series, derivatives, implicit differentiation, integrals, related rates, vectors, matrices, probability, conditional probability, expected value, Bayes' theorem, regression, standard deviation, normal distribution, box plots, confidence intervals, rational expressions, radical equations, completing the square, coordinate geometry, composite areas, budgeting, unit prices, tips, bill splitting, loans, taxes, discounts, truth tables, logic, graph theory, exam sprints, and mixed final review.
+95 lessons and 475 hand-crafted questions cover fractions, percentages, percent change, unit conversions, equations, graphing lines, quadratic graphs, word problems, functions, exponential growth, sequences, series, derivatives, implicit differentiation, integrals, related rates, vectors, matrices, probability, conditional probability, expected value, Bayes' theorem, regression, standard deviation, normal distribution, box plots, confidence intervals, rational expressions, radical equations, completing the square, coordinate geometry, composite areas, budgeting, unit prices, tips, bill splitting, loans, taxes, discounts, truth tables, logic, graph theory, exam sprints, strategy checks, and mixed final review.
 
 SUBSCRIPTION
 Mathio is free to try. Unlock all topics with:
@@ -177,7 +177,7 @@ Improved:
 • Achievements now extend into longer-term streak, review, 250-answer, 500-answer, and full-roadmap goals
 • Clearer learning path guidance on Home
 • Better premium feel with more personalized study flow
-• Expanded curriculum: 94 lessons and 470 guided questions across 10 study areas
+• Expanded curriculum: 95 lessons and 475 guided questions across 10 study areas
 
 Fixed:
 • Continued cleanup of localized app copy to avoid mixed German/English flows

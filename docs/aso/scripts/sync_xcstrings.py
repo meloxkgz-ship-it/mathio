@@ -33,9 +33,48 @@ PROSE: dict[str, str] = {
         "88 Lektionen in Algebra, Analysis, Geometrie, Statistik, Finanzmathe und mehr",
     "89 lessons across algebra, calculus, geometry, statistics, finance, and more":
         "89 Lektionen in Algebra, Analysis, Geometrie, Statistik, Finanzmathe und mehr",
-    "94 lessons across algebra, calculus, geometry, statistics, finance, exam review, and more":
-        "94 Lektionen in Algebra, Analysis, Geometrie, Statistik, Finanzmathe, Prüfungstraining und mehr",
+    "95 lessons across algebra, calculus, geometry, statistics, finance, exam review, and more":
+        "95 Lektionen in Algebra, Analysis, Geometrie, Statistik, Finanzmathe, Prüfungstraining und mehr",
     "0.8 is greatest": "0,8 ist am größten",
+    "19% is close to 20%": "19 % liegt nahe bei 20 %",
+    "50 and 500 differ by a factor of 10": "50 und 500 unterscheiden sich um den Faktor 10",
+    "82 is close to 80": "82 liegt nahe bei 80",
+    "A length question asks for meters. Which answer can you eliminate immediately?":
+        "Eine Längenaufgabe fragt nach Metern. Welche Antwort kannst du sofort ausschließen?",
+    "A mismatch by a factor of 10 is a warning sign.": "Eine Abweichung um den Faktor 10 ist ein Warnzeichen.",
+    "A multiple-choice equation has options 2, 4, 6, 8. Plugging in x = 4 makes the equation true. What is the answer?":
+        "Eine Multiple-Choice-Gleichung hat die Optionen 2, 4, 6, 8. Wenn du x = 4 einsetzt, stimmt die Gleichung. Was ist die Antwort?",
+    "A quick estimate catches answers that are far too large or too small.":
+        "Eine schnelle Schätzung erkennt Antworten, die viel zu groß oder zu klein sind.",
+    "A result should be close to 50, but your calculator shows 500. What should you do first?":
+        "Ein Ergebnis sollte nahe bei 50 liegen, aber dein Rechner zeigt 500. Was solltest du zuerst tun?",
+    "Area units do not answer a length question.": "Flächeneinheiten beantworten keine Längenfrage.",
+    "Back-substitution is a valid check.": "Einsetzen zur Kontrolle ist ein gültiger Check.",
+    "Change the answer to 5": "Die Antwort auf 5 ändern",
+    "Check decimal places, conversion factors, and units first":
+        "Prüfe zuerst Dezimalstellen, Umrechnungsfaktoren und Einheiten",
+    "Check place value and units": "Stellenwert und Einheiten prüfen",
+    "Elimination removes answers that cannot work": "Ausschließen entfernt Antworten, die nicht funktionieren können",
+    "Estimate first": "Zuerst schätzen",
+    "Exam Strategy Sprint": "Prüfungsstrategie-Sprint",
+    "Fewer plausible choices means better odds": "Weniger plausible Auswahlmöglichkeiten bedeuten bessere Chancen",
+    "Ignore the estimate": "Die Schätzung ignorieren",
+    "Meters measure length": "Meter messen Länge",
+    "Practice the habits that protect points under time pressure: estimate first, eliminate impossible answers, and check units before committing.":
+        "Übe Gewohnheiten, die unter Zeitdruck Punkte schützen: zuerst schätzen, unmögliche Antworten ausschließen und Einheiten prüfen, bevor du dich festlegst.",
+    "Round both numbers slightly.": "Runde beide Zahlen leicht.",
+    "So 12 m² cannot be a length answer": "Also kann 12 m² keine Längenantwort sein",
+    "So choose 4": "Also wähle 4",
+    "Submit 500 immediately": "500 sofort abgeben",
+    "The option x = 4 satisfies the equation": "Die Option x = 4 erfüllt die Gleichung",
+    "True or false: if two choices are mathematically impossible, eliminating them improves your odds.":
+        "Richtig oder falsch: Wenn zwei Antwortmöglichkeiten mathematisch unmöglich sind, verbessert ihr Ausschluss deine Chancen.",
+    "Unit check": "Einheitencheck",
+    "Units often reveal whether a calculation matches the question.":
+        "Einheiten zeigen oft, ob eine Rechnung zur Frage passt.",
+    "You are choosing from a smaller set.": "Du wählst aus einer kleineren Menge.",
+    "You need 19% of 82. Which estimate is most useful?": "Du brauchst 19 % von 82. Welche Schätzung ist am nützlichsten?",
+    "m² measures area": "m² misst Fläche",
     "4 fewer → 3x − 4": "4 weniger → 3x − 4",
     "A bag has 3 red and 2 blue tokens. P(red) =": "Ein Beutel enthält 3 rote und 2 blaue Chips. P(rot) =",
     "A circle has radius 5. Its circumference is:": "Ein Kreis hat Radius 5. Sein Umfang ist:",
@@ -57,7 +96,7 @@ PROSE: dict[str, str] = {
     "A variable names the unknown clearly.": "Eine Variable benennt die Unbekannte klar.",
     "Add, then divide by 3.": "Addiere und teile dann durch 3.",
     "Algebra Sprint": "Algebra-Sprint",
-    "All 94 lessons and 470 guided questions": "Alle 94 Lektionen und 470 geführten Fragen",
+    "All 95 lessons and 475 guided questions": "Alle 95 Lektionen und 475 geführten Fragen",
     "An extreme value changes the sum": "Ein Extremwert verändert die Summe",
     "Balanced steps keep an equation true.": "Ausgeglichene Schritte halten eine Gleichung wahr.",
     "Change in y divided by change in x.": "Änderung in y geteilt durch Änderung in x.",
