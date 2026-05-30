@@ -74892,6 +74892,1126 @@
           }
         }
       }
+    },
+    "Rational Expressions": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rationale Ausdrücke"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Expresiones racionales"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Expressions rationnelles"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Espressioni razionali"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Expressões racionais"
+          }
+        }
+      }
+    },
+    "Rational expressions are fractions with variables. Simplify by factoring, canceling common factors, and tracking excluded values.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rationale Ausdrücke sind Brüche mit Variablen. Vereinfache durch Faktorisieren, Kürzen gemeinsamer Faktoren und Beachten ausgeschlossener Werte."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Las expresiones racionales son fracciones con variables. Simplifica factorizando, cancelando factores comunes y controlando los valores excluidos."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les expressions rationnelles sont des fractions avec des variables. Simplifiez en factorisant, en annulant les facteurs communs et en suivant les valeurs exclues."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le espressioni razionali sono frazioni con variabili. Semplifica fattorizzando, cancellando fattori comuni e tenendo traccia dei valori esclusi."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Expressões racionais são frações com variáveis. Simplifique fatorando, cancelando fatores comuns e acompanhando valores excluídos."
+          }
+        }
+      }
+    },
+    "Cancel common factors": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gemeinsame Faktoren kürzen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancela factores comunes"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Annuler les facteurs communs"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancella i fattori comuni"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancele fatores comuns"
+          }
+        }
+      }
+    },
+    "Cancel factors, not terms. Values that make the original denominator zero stay excluded.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kürze Faktoren, nicht Terme. Werte, die den ursprünglichen Nenner null machen, bleiben ausgeschlossen."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancela factores, no términos. Los valores que hacen cero el denominador original siguen excluidos."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Annulez les facteurs, pas les termes. Les valeurs qui rendent le dénominateur initial nul restent exclues."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancella fattori, non termini. I valori che rendono zero il denominatore originale restano esclusi."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancele fatores, não termos. Valores que tornam o denominador original zero continuam excluídos."
+          }
+        }
+      }
+    },
+    "Multiply rational expressions": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rationale Ausdrücke multiplizieren"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Multiplica expresiones racionales"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Multiplier des expressions rationnelles"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Moltiplicare espressioni razionali"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Multiplicar expressões racionais"
+          }
+        }
+      }
+    },
+    "Factor first, cancel common factors, then multiply what remains.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Faktorisiere zuerst, kürze gemeinsame Faktoren und multipliziere dann den Rest."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Factoriza primero, cancela factores comunes y luego multiplica lo que queda."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Factorisez d’abord, annulez les facteurs communs, puis multipliez ce qui reste."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fattorizza prima, cancella i fattori comuni, poi moltiplica ciò che resta."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fatore primeiro, cancele fatores comuns e depois multiplique o que restar."
+          }
+        }
+      }
+    },
+    "Simplify 6x/3x, with x ≠ 0.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vereinfache 6x/3x, mit x ≠ 0."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Simplifica 6x/3x, con x ≠ 0."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Simplifiez 6x/3x, avec x ≠ 0."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Semplifica 6x/3x, con x ≠ 0."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Simplifique 6x/3x, com x ≠ 0."
+          }
+        }
+      }
+    },
+    "Cancel the common factor 3x.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kürze den gemeinsamen Faktor 3x."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancela el factor común 3x."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Annulez le facteur commun 3x."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancella il fattore comune 3x."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancele o fator comum 3x."
+          }
+        }
+      }
+    },
+    "6x/3x = (3x·2)/(3x)": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "6x/3x = (3x·2)/(3x)"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "6x/3x = (3x·2)/(3x)"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "6x/3x = (3x·2)/(3x)"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "6x/3x = (3x·2)/(3x)"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "6x/3x = (3x·2)/(3x)"
+          }
+        }
+      }
+    },
+    "Cancel 3x": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3x kürzen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancela 3x"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Annulez 3x"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancella 3x"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancele 3x"
+          }
+        }
+      }
+    },
+    "Result: 2": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ergebnis: 2"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Resultado: 2"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Résultat : 2"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Risultato: 2"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Resultado: 2"
+          }
+        }
+      }
+    },
+    "Which value is excluded from 1/(x − 4)?": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Welcher Wert ist bei 1/(x − 4) ausgeschlossen?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "¿Qué valor queda excluido de 1/(x − 4)?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quelle valeur est exclue de 1/(x − 4) ?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quale valore è escluso da 1/(x − 4)?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Qual valor é excluído de 1/(x − 4)?"
+          }
+        }
+      }
+    },
+    "The denominator cannot be zero.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der Nenner darf nicht null sein."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El denominador no puede ser cero."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le dénominateur ne peut pas être nul."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il denominatore non può essere zero."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O denominador não pode ser zero."
+          }
+        }
+      }
+    },
+    "x − 4 = 0": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x − 4 = 0"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x − 4 = 0"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x − 4 = 0"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x − 4 = 0"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x − 4 = 0"
+          }
+        }
+      }
+    },
+    "x = 4 is excluded": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x = 4 ist ausgeschlossen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x = 4 queda excluido"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x = 4 est exclu"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x = 4 è escluso"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x = 4 é excluído"
+          }
+        }
+      }
+    },
+    "Simplify (x² − 9)/(x − 3), with x ≠ 3.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vereinfache (x² − 9)/(x − 3), mit x ≠ 3."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Simplifica (x² − 9)/(x − 3), con x ≠ 3."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Simplifiez (x² − 9)/(x − 3), avec x ≠ 3."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Semplifica (x² − 9)/(x − 3), con x ≠ 3."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Simplifique (x² − 9)/(x − 3), com x ≠ 3."
+          }
+        }
+      }
+    },
+    "Factor the difference of squares.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Faktorisiere die Differenz von Quadraten."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Factoriza la diferencia de cuadrados."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Factorisez la différence de carrés."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fattorizza la differenza di quadrati."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fatore a diferença de quadrados."
+          }
+        }
+      }
+    },
+    "x² − 9 = (x − 3)(x + 3)": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x² − 9 = (x − 3)(x + 3)"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x² − 9 = (x − 3)(x + 3)"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x² − 9 = (x − 3)(x + 3)"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x² − 9 = (x − 3)(x + 3)"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x² − 9 = (x − 3)(x + 3)"
+          }
+        }
+      }
+    },
+    "Cancel x − 3": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x − 3 kürzen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancela x − 3"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Annulez x − 3"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancella x − 3"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancele x − 3"
+          }
+        }
+      }
+    },
+    "Result: x + 3, with x ≠ 3": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ergebnis: x + 3, mit x ≠ 3"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Resultado: x + 3, con x ≠ 3"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Résultat : x + 3, avec x ≠ 3"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Risultato: x + 3, con x ≠ 3"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Resultado: x + 3, com x ≠ 3"
+          }
+        }
+      }
+    },
+    "Multiply (2/x)(3/5).": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Multipliziere (2/x)(3/5)."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Multiplica (2/x)(3/5)."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Multipliez (2/x)(3/5)."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Moltiplica (2/x)(3/5)."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Multiplique (2/x)(3/5)."
+          }
+        }
+      }
+    },
+    "Multiply numerators and denominators.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Multipliziere Zähler und Nenner."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Multiplica numeradores y denominadores."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Multipliez les numérateurs et les dénominateurs."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Moltiplica numeratori e denominatori."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Multiplique numeradores e denominadores."
+          }
+        }
+      }
+    },
+    "Numerator: 2·3 = 6": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zähler: 2·3 = 6"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Numerador: 2·3 = 6"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Numérateur : 2·3 = 6"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Numeratore: 2·3 = 6"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Numerador: 2·3 = 6"
+          }
+        }
+      }
+    },
+    "Denominator: x·5 = 5x": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nenner: x·5 = 5x"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Denominador: x·5 = 5x"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dénominateur : x·5 = 5x"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Denominatore: x·5 = 5x"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Denominador: x·5 = 5x"
+          }
+        }
+      }
+    },
+    "Result: 6/(5x)": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ergebnis: 6/(5x)"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Resultado: 6/(5x)"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Résultat : 6/(5x)"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Risultato: 6/(5x)"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Resultado: 6/(5x)"
+          }
+        }
+      }
+    },
+    "True or false: (x + 2)/(x + 5) simplifies to 2/5.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wahr oder falsch: (x + 2)/(x + 5) vereinfacht sich zu 2/5."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verdadero o falso: (x + 2)/(x + 5) se simplifica a 2/5."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vrai ou faux : (x + 2)/(x + 5) se simplifie en 2/5."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vero o falso: (x + 2)/(x + 5) si semplifica in 2/5."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verdadeiro ou falso: (x + 2)/(x + 5) simplifica para 2/5."
+          }
+        }
+      }
+    },
+    "You may cancel factors, not pieces of sums.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Du darfst Faktoren kürzen, nicht Teile von Summen."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Puedes cancelar factores, no partes de sumas."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vous pouvez annuler des facteurs, pas des morceaux de sommes."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Puoi cancellare fattori, non parti di somme."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Você pode cancelar fatores, não partes de somas."
+          }
+        }
+      }
+    },
+    "x + 2 and x + 5 are not common factors": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x + 2 und x + 5 sind keine gemeinsamen Faktoren"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x + 2 y x + 5 no son factores comunes"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x + 2 et x + 5 ne sont pas des facteurs communs"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x + 2 e x + 5 non sono fattori comuni"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x + 2 e x + 5 não são fatores comuns"
+          }
+        }
+      }
+    },
+    "Nothing cancels": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nichts lässt sich kürzen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nada se cancela"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rien ne s’annule"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Non si cancella nulla"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nada cancela"
+          }
+        }
+      }
+    },
+    "The expression does not simplify to 2/5": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der Ausdruck vereinfacht sich nicht zu 2/5"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La expresión no se simplifica a 2/5"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L’expression ne se simplifie pas en 2/5"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L’espressione non si semplifica in 2/5"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A expressão não simplifica para 2/5"
+          }
+        }
+      }
+    },
+    "x + 3": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x + 3"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x + 3"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x + 3"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x + 3"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x + 3"
+          }
+        }
+      }
+    },
+    "x² + 9": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x² + 9"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x² + 9"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x² + 9"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x² + 9"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "x² + 9"
+          }
+        }
+      }
     }
   },
   "version": "1.0"

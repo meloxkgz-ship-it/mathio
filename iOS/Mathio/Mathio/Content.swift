@@ -1468,6 +1468,58 @@ enum Curriculum {
         ]
     )
 
+    static let rationalExpressions = Lesson(
+        id: "alg.rational",
+        title: "Rational Expressions",
+        intro: "Rational expressions are fractions with variables. Simplify by factoring, canceling common factors, and tracking excluded values.",
+        formulas: [
+            Formula(key: "alg.rational.f1",
+                    name: "Cancel common factors",
+                    math: "({var:a}{var:x})/({var:b}{var:x}) = {var:a}/{var:b},  {var:x} ≠ 0",
+                    explanation: "Cancel factors, not terms. Values that make the original denominator zero stay excluded."),
+            Formula(key: "alg.rational.f2",
+                    name: "Multiply rational expressions",
+                    math: "({var:a}/{var:b})({var:c}/{var:d}) = {var:ac}/{var:bd}",
+                    explanation: "Factor first, cancel common factors, then multiply what remains."),
+        ],
+        questions: [
+            Question(id: "alg.rational.q1",
+                     prompt: "Simplify 6x/3x, with x ≠ 0.", math: nil,
+                     kind: .freeAnswer(accepted: ["2"]),
+                     hint: "Cancel the common factor 3x.",
+                     solutionSteps: ["6x/3x = (3x·2)/(3x)", "Cancel 3x", "Result: 2"]),
+            Question(id: "alg.rational.q2",
+                     prompt: "Which value is excluded from 1/(x − 4)?",
+                     math: nil,
+                     kind: .freeAnswer(accepted: ["4", "x=4"]),
+                     hint: "The denominator cannot be zero.",
+                     solutionSteps: ["x − 4 = 0", "x = 4 is excluded"]),
+            Question(id: "alg.rational.q3",
+                     prompt: "Simplify (x² − 9)/(x − 3), with x ≠ 3.",
+                     math: nil,
+                     kind: .multipleChoice(options: [
+                        .init(label: "x + 3", math: nil),
+                        .init(label: "x − 3", math: nil),
+                        .init(label: "x² + 9", math: nil),
+                        .init(label: "1", math: nil),
+                     ], correctIndex: 0),
+                     hint: "Factor the difference of squares.",
+                     solutionSteps: ["x² − 9 = (x − 3)(x + 3)", "Cancel x − 3", "Result: x + 3, with x ≠ 3"]),
+            Question(id: "alg.rational.q4",
+                     prompt: "Multiply (2/x)(3/5).",
+                     math: nil,
+                     kind: .freeAnswer(accepted: ["6/5x", "6/(5x)"]),
+                     hint: "Multiply numerators and denominators.",
+                     solutionSteps: ["Numerator: 2·3 = 6", "Denominator: x·5 = 5x", "Result: 6/(5x)"]),
+            Question(id: "alg.rational.q5",
+                     prompt: "True or false: (x + 2)/(x + 5) simplifies to 2/5.",
+                     math: nil,
+                     kind: .trueFalse(answer: false),
+                     hint: "You may cancel factors, not pieces of sums.",
+                     solutionSteps: ["x + 2 and x + 5 are not common factors", "Nothing cancels", "The expression does not simplify to 2/5"]),
+        ]
+    )
+
     static let algFunctions = Lesson(
         id: "alg.func",
         title: "Functions",
@@ -3510,7 +3562,7 @@ enum Curriculum {
               color: Palette.algebra,
               lessons: [linearEquations, quadratics, exponents, logarithms, factoring,
                         linesAndSlope, inequalities, systems, polynomials, algFunctions,
-                        functionModeling, absoluteValueEquations]),
+                        functionModeling, absoluteValueEquations, rationalExpressions]),
         Topic(id: "calculus",
               title: "Calculus",
               subtitle: "Change & accumulation",

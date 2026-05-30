@@ -53,9 +53,9 @@ Reasoning:
 ## Promotional Text (170 max — editable without review)
 
 ```
-New: comeback missions, Next 3 Sessions, Confidence Intervals, Exam Sprint, and 67 lessons for focused math practice.
+New: Rational Expressions, comeback missions, Next 3 Sessions, Exam Sprint, and 68 lessons for focused practice.
 ```
-**117 / 170** — highlights current catalog size, retention improvements, and new statistics content.
+**112 / 170** — highlights current catalog size, retention improvements, and new statistics content.
 
 Rotation ideas (swap monthly):
 - `Free 7-day trial. Master one lesson a day — no leaderboards, no streaks-or-die guilt, just calm progress.` (113)
@@ -110,7 +110,7 @@ Available in English, German, Spanish, French, Italian, and Brazilian Portuguese
 TOPICS
 Pre-Algebra, Algebra, Calculus, Geometry, Trigonometry, Statistics, Linear Algebra, Financial Math, and Discrete Math.
 
-67 lessons and 335 hand-crafted questions cover fractions, percentages, equations, functions, derivatives, integrals, vectors, matrices, probability, regression, confidence intervals, budgeting, loans, taxes, discounts, truth tables, logic, graph theory, and more.
+68 lessons and 340 hand-crafted questions cover fractions, percentages, equations, functions, derivatives, integrals, vectors, matrices, probability, regression, confidence intervals, rational expressions, budgeting, loans, taxes, discounts, truth tables, logic, graph theory, and more.
 
 SUBSCRIPTION
 Mathio is free to try. Unlock all topics with:
@@ -137,13 +137,14 @@ Mathio now gives learners clearer direction after every launch and more depth fo
 New:
 • Next 3 Sessions: your personal plan now shows the next concrete lessons to study
 • Comeback Mission: a gentle 5-question restart when you return after a break
-• Confidence Intervals: a new guided statistics lesson with formulas and worked solutions
+• Rational Expressions: new algebra practice for simplifying variable fractions
+• Confidence Intervals: guided statistics practice with formulas and worked solutions
 • Exam Sprint and Weak Spot Drill for faster focused practice
 
 Improved:
 • Clearer learning path guidance on Home
 • Better premium feel with more personalized study flow
-• Expanded curriculum: 67 lessons and 335 guided questions across 9 topics
+• Expanded curriculum: 68 lessons and 340 guided questions across 9 topics
 
 Fixed:
 • Continued cleanup of localized app copy to avoid mixed German/English flows

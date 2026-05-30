@@ -42,7 +42,7 @@ Available in English, German, Spanish, French, Italian, and Brazilian Portuguese
 TOPICS
 Pre-Algebra, Algebra, Calculus, Geometry, Trigonometry, Statistics, Linear Algebra, Financial Math, and Discrete Math.
 
-67 lessons and 335 hand-crafted questions cover fractions, percentages, equations, functions, derivatives, integrals, vectors, matrices, probability, regression, confidence intervals, budgeting, loans, taxes, discounts, truth tables, logic, graph theory, and more.
+68 lessons and 340 hand-crafted questions cover fractions, percentages, equations, functions, derivatives, integrals, vectors, matrices, probability, regression, confidence intervals, rational expressions, budgeting, loans, taxes, discounts, truth tables, logic, graph theory, and more.
 
 SUBSCRIPTION
 Mathio is free to try. Unlock all topics with:

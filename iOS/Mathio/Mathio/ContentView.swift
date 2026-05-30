@@ -1843,7 +1843,8 @@ struct LearningPath: Identifiable {
             icon: "function",
             color: Palette.algebra,
             lessons: [Curriculum.linearEquations, Curriculum.linesAndSlope, Curriculum.factoring,
-                      Curriculum.inequalities, Curriculum.systems, Curriculum.absoluteValueEquations],
+                      Curriculum.inequalities, Curriculum.systems, Curriculum.absoluteValueEquations,
+                      Curriculum.rationalExpressions],
             durationDays: 21
         ),
         LearningPath(
@@ -1853,7 +1854,8 @@ struct LearningPath: Identifiable {
             icon: "point.topleft.down.curvedto.point.bottomright.up",
             color: Palette.algebra,
             lessons: [Curriculum.linesAndSlope, Curriculum.algFunctions, Curriculum.exponents,
-                      Curriculum.logarithms, Curriculum.quadratics, Curriculum.polynomials],
+                      Curriculum.logarithms, Curriculum.quadratics, Curriculum.polynomials,
+                      Curriculum.rationalExpressions],
             durationDays: 21
         ),
         LearningPath(
