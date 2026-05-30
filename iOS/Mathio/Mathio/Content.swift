@@ -1934,6 +1934,56 @@ enum Curriculum {
         ]
     )
 
+    static let radicalEquations = Lesson(
+        id: "alg.radical",
+        title: "Radical Equations",
+        intro: "Radical equations hide the variable under a root. Isolate the root, square both sides, then check for extra solutions.",
+        formulas: [
+            Formula(key: "alg.radical.f1",
+                    name: "Square both sides",
+                    math: "√{var:x} = {var:a}  ⟹  {var:x} = {var:a}{sup:^2}",
+                    explanation: "Squaring removes a square root, but it can also create extra answers."),
+            Formula(key: "alg.radical.f2",
+                    name: "Check solutions",
+                    math: "plug answers back into the original equation",
+                    explanation: "A squared step can make false answers appear, so always check."),
+        ],
+        questions: [
+            Question(id: "alg.radical.q1",
+                     prompt: "Solve √x = 5.", math: nil,
+                     kind: .freeAnswer(accepted: ["25"]),
+                     hint: "Square both sides.",
+                     solutionSteps: ["√x = 5", "x = 5²", "x = 25"]),
+            Question(id: "alg.radical.q2",
+                     prompt: "Solve √(x + 3) = 4.", math: nil,
+                     kind: .freeAnswer(accepted: ["13"]),
+                     hint: "Square both sides, then subtract 3.",
+                     solutionSteps: ["x + 3 = 16", "x = 13"]),
+            Question(id: "alg.radical.q3",
+                     prompt: "Solve √x + 2 = 6.", math: nil,
+                     kind: .freeAnswer(accepted: ["16"]),
+                     hint: "Isolate the root first.",
+                     solutionSteps: ["√x = 4", "x = 16"]),
+            Question(id: "alg.radical.q4",
+                     prompt: "If squaring √x = −3 gives x = 9, what happens when you check?",
+                     math: nil,
+                     kind: .multipleChoice(options: [
+                        .init(label: "It works", math: nil),
+                        .init(label: "It fails because √9 = 3, not −3", math: nil),
+                        .init(label: "It has two solutions", math: nil),
+                        .init(label: "It becomes x = 0", math: nil),
+                     ], correctIndex: 1),
+                     hint: "A square root is not negative.",
+                     solutionSteps: ["√9 = 3", "3 ≠ −3", "So x = 9 is extraneous"]),
+            Question(id: "alg.radical.q5",
+                     prompt: "True or false: squaring both sides can introduce an extraneous solution.",
+                     math: nil,
+                     kind: .trueFalse(answer: true),
+                     hint: "That is why checking matters.",
+                     solutionSteps: ["Squaring can make two different sides look equal", "Always check in the original equation"]),
+        ]
+    )
+
     // MARK: - Calculus (more)
 
     static let productQuotient = Lesson(
@@ -4382,7 +4432,8 @@ enum Curriculum {
               color: Palette.algebra,
               lessons: [linearEquations, quadratics, completingSquare, exponents, logarithms, factoring,
                         linesAndSlope, inequalities, systems, polynomials, algFunctions,
-                        functionModeling, sequencesSeries, wordProblems, absoluteValueEquations, rationalExpressions]),
+                        functionModeling, sequencesSeries, wordProblems, absoluteValueEquations,
+                        radicalEquations, rationalExpressions]),
         Topic(id: "calculus",
               title: "Calculus",
               subtitle: "Change & accumulation",

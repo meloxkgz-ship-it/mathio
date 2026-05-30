@@ -53,7 +53,7 @@ Reasoning:
 ## Promotional Text (170 max — editable without review)
 
 ```
-New: Learning Health, Study Coach, and 83 lessons.
+New: Learning Health, Study Coach, and 84 lessons.
 ```
 **73 / 170** — highlights current catalog size, retention improvements, and new exam-prep content.
 
@@ -110,7 +110,7 @@ Available in English, German, Spanish, French, Italian, and Brazilian Portuguese
 TOPICS
 Pre-Algebra, Algebra, Calculus, Geometry, Trigonometry, Statistics, Linear Algebra, Financial Math, and Discrete Math.
 
-83 lessons and 415 hand-crafted questions cover fractions, percentages, percent change, equations, word problems, functions, sequences, series, derivatives, implicit differentiation, integrals, related rates, vectors, matrices, probability, expected value, Bayes' theorem, regression, standard deviation, normal distribution, box plots, confidence intervals, rational expressions, completing the square, coordinate geometry, composite areas, budgeting, unit prices, tips, bill splitting, loans, taxes, discounts, truth tables, logic, graph theory, and more.
+84 lessons and 420 hand-crafted questions cover fractions, percentages, percent change, equations, word problems, functions, sequences, series, derivatives, implicit differentiation, integrals, related rates, vectors, matrices, probability, expected value, Bayes' theorem, regression, standard deviation, normal distribution, box plots, confidence intervals, rational expressions, radical equations, completing the square, coordinate geometry, composite areas, budgeting, unit prices, tips, bill splitting, loans, taxes, discounts, truth tables, logic, graph theory, and more.
 
 SUBSCRIPTION
 Mathio is free to try. Unlock all topics with:
@@ -162,6 +162,7 @@ New:
 • Word Problems: new algebra practice for translating real situations into equations
 • Related Rates: new calculus practice for classic exam-style rate problems
 • Rational Expressions: algebra practice for simplifying variable fractions
+• Radical Equations: new algebra practice for roots, squaring both sides, and checking extraneous solutions
 • Confidence Intervals: guided statistics practice with formulas and worked solutions
 • Exam Readiness score on the Sprint card so learners see what to improve next
 • Exam Sprint and Weak Spot Drill for faster focused practice
@@ -170,7 +171,7 @@ Improved:
 • Progress now includes lesson-level study targets, not only topic percentages
 • Clearer learning path guidance on Home
 • Better premium feel with more personalized study flow
-• Expanded curriculum: 83 lessons and 415 guided questions across 9 topics
+• Expanded curriculum: 84 lessons and 420 guided questions across 9 topics
 
 Fixed:
 • Continued cleanup of localized app copy to avoid mixed German/English flows

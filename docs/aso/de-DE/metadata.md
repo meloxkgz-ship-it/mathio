@@ -52,7 +52,7 @@ Begründung:
 ## Werbetext (170 max — editierbar ohne Review)
 
 ```
-Neu: Lerngesundheit, Lerncoach und 83 Lektionen.
+Neu: Lerngesundheit, Lerncoach und 84 Lektionen.
 ```
 **113 / 170** — hebt Kataloggröße und neue alltagsnahe Inhalte hervor.
 
@@ -104,7 +104,7 @@ Verfügbar auf Deutsch, Englisch, Spanisch, Französisch, Italienisch und Brasil
 
 — THEMEN —
 Vor-Algebra · Algebra · Geometrie · Trigonometrie · Analysis
-83 Lektionen und 415 handgemachte Aufgaben in Multiple-Choice, Freitext und Wahr/Falsch. Von Bruchrechnen, Potenzen und Logarithmen bis zu Ableitungen, impliziter Ableitung, Integralen, Statistik, Erwartungswert, Satz von Bayes, Standardabweichung, Normalverteilung, Vektoren, Budgetrechnung, Steuern, Rabatten, Funktionsmodellierung, Konfidenzintervallen, Korrelation, Optimierung, Wahrheitstabellen und Logik.
+84 Lektionen und 420 handgemachte Aufgaben in Multiple-Choice, Freitext und Wahr/Falsch. Von Bruchrechnen, Potenzen, Logarithmen und Wurzelgleichungen bis zu Ableitungen, impliziter Ableitung, Integralen, Statistik, Erwartungswert, Satz von Bayes, Standardabweichung, Normalverteilung, Vektoren, Budgetrechnung, Steuern, Rabatten, Funktionsmodellierung, Konfidenzintervallen, Korrelation, Optimierung, Wahrheitstabellen und Logik.
 
 — ABO —
 Mathio ist kostenlos zum Ausprobieren. Alle Themen freischalten mit:
@@ -135,8 +135,9 @@ Mathio gibt Lernenden jetzt klarere Richtung und mehr Tiefe für tägliches Übe
 • Neue Lektion: Satz von Bayes für Evidenz, Basisraten und Testergebnisse
 • Neue Lektion: Standardabweichung für Streuung, quadrierte Abweichungen und Stichprobe-vs-Population
 • Neue Lektion: Implizite Ableitung für dy/dx, Kreise, Produkte und Kettenregel-Denken
+• Neue Lektion: Wurzelgleichungen für Wurzeln, Quadrieren beider Seiten und Scheinlösungen
 • Home zeigt Fehler-Notizbuch, Wiederholungs-Vorschau, 7-Tage-Fokus und nächste Lernziele
-• Mathio wächst auf 83 Lektionen und 415 geführte Aufgaben
+• Mathio wächst auf 84 Lektionen und 420 geführte Aufgaben
 • Premium- und App-Store-Texte passen zum erweiterten Inhalt
 
 Zwei Minuten am Tag decken jetzt noch mehr relevante Mathematik ab.

@@ -25,8 +25,8 @@ PROSE: dict[str, str] = {
     "7-day focus": "7-Tage-Fokus",
     "82 lessons across algebra, calculus, geometry, statistics, finance, and more":
         "82 Lektionen in Algebra, Analysis, Geometrie, Statistik, Finanzmathe und mehr",
-    "83 lessons across algebra, calculus, geometry, statistics, finance, and more":
-        "83 Lektionen in Algebra, Analysis, Geometrie, Statistik, Finanzmathe und mehr",
+    "84 lessons across algebra, calculus, geometry, statistics, finance, and more":
+        "84 Lektionen in Algebra, Analysis, Geometrie, Statistik, Finanzmathe und mehr",
     "A quick rating helps more learners find it.": "Eine kurze Bewertung hilft mehr Lernenden, Mathio zu finden.",
     "Accuracy": "Trefferquote",
     "active days": "aktive Tage",
@@ -86,9 +86,13 @@ PROSE: dict[str, str] = {
     "A larger standard deviation usually means the data are:":
         "Eine größere Standardabweichung bedeutet meistens, dass die Daten:",
     "A square root is not negative": "Eine Quadratwurzel ist nicht negativ",
+    "A square root is not negative.": "Eine Quadratwurzel ist nicht negativ.",
+    "A squared step can make false answers appear, so always check.":
+        "Ein Quadrierschritt kann falsche Lösungen erzeugen, also prüfe immer nach.",
     "Add the values and divide by 3.": "Addiere die Werte und teile durch 3.",
     "All equal": "Alle gleich",
     "All values equal the mean": "Alle Werte entsprechen dem Mittelwert",
+    "Always check in the original equation": "Prüfe immer in der ursprünglichen Gleichung",
     "2 is not one of the payouts": "2 ist keiner der möglichen Auszahlungswerte",
     "A coin game paying 0 or 4 has expected payout 2":
         "Ein Münzspiel mit Auszahlung 0 oder 4 hat den erwarteten Auszahlungswert 2",
@@ -103,6 +107,7 @@ PROSE: dict[str, str] = {
     "Always positive": "Immer positiv",
     "Averages can fall between possible outcomes.":
         "Durchschnittswerte können zwischen möglichen Ergebnissen liegen.",
+    "Check solutions": "Lösungen prüfen",
     "Each side has probability 1/2.": "Jede Seite hat Wahrscheinlichkeit 1/2.",
     "Expected Value": "Erwartungswert",
     "Expected gain = 2 − 3": "Erwarteter Gewinn = 2 − 3",
@@ -116,15 +121,36 @@ PROSE: dict[str, str] = {
     "Gain = payout − cost.": "Gewinn = Auszahlung − Kosten.",
     "If a ticket costs $3 and the expected payout is $2, expected gain is:":
         "Wenn ein Ticket 3 $ kostet und der erwartete Auszahlungswert 2 $ ist, ist der erwartete Gewinn:",
+    "If squaring √x = −3 gives x = 9, what happens when you check?":
+        "Wenn Quadrieren von √x = −3 zu x = 9 führt: Was passiert beim Prüfen?",
+    "Isolate the root first.": "Isoliere zuerst die Wurzel.",
+    "It becomes x = 0": "Es wird zu x = 0",
     "Multiply each outcome by its probability, then add the results.":
         "Multipliziere jedes Ergebnis mit seiner Wahrscheinlichkeit und addiere die Ergebnisse.",
     "Multiply each payout by its probability.":
         "Multipliziere jede Auszahlung mit ihrer Wahrscheinlichkeit.",
     "Over many repeats, average gain is neither profit nor loss":
         "Über viele Wiederholungen ist der durchschnittliche Gewinn weder positiv noch negativ",
+    "It fails because √9 = 3, not −3": "Es scheitert, weil √9 = 3 ist, nicht −3",
+    "It has two solutions": "Es hat zwei Lösungen",
+    "It works": "Es funktioniert",
     "So expected gain is 0": "Also ist der erwartete Gewinn 0",
+    "So x = 9 is extraneous": "Also ist x = 9 eine Scheinlösung",
+    "Solve √(x + 3) = 4.": "Löse √(x + 3) = 4.",
+    "Solve √x + 2 = 6.": "Löse √x + 2 = 6.",
+    "Solve √x = 5.": "Löse √x = 5.",
+    "Square both sides": "Beide Seiten quadrieren",
+    "Square both sides, then subtract 3.": "Quadriere beide Seiten und subtrahiere dann 3.",
+    "Square both sides.": "Quadriere beide Seiten.",
+    "Squaring can make two different sides look equal":
+        "Quadrieren kann zwei unterschiedliche Seiten gleich aussehen lassen",
+    "Squaring removes a square root, but it can also create extra answers.":
+        "Quadrieren entfernt eine Quadratwurzel, kann aber auch zusätzliche Antworten erzeugen.",
+    "That is why checking matters.": "Deshalb ist das Prüfen wichtig.",
     "True or false: expected value must be one of the possible outcomes.":
         "Wahr oder falsch: Der Erwartungswert muss eines der möglichen Ergebnisse sein.",
+    "True or false: squaring both sides can introduce an extraneous solution.":
+        "Wahr oder falsch: Das Quadrieren beider Seiten kann eine Scheinlösung erzeugen.",
     "0.10 / 0.25 = 0.4": "0,10 / 0,25 = 0,4",
     "A condition affects 1% of people. A test is positive for 90% with the condition and 10% without it. What is P(positive)?":
         "Eine Krankheit betrifft 1 % der Menschen. Ein Test ist bei 90 % mit Krankheit positiv und bei 10 % ohne Krankheit positiv. Wie groß ist P(positiv)?",
@@ -153,6 +179,9 @@ PROSE: dict[str, str] = {
     "P(positive) = 0.90 · 0.01 + 0.10 · 0.99": "P(positiv) = 0,90 · 0,01 + 0,10 · 0,99",
     "Posterior": "Posterior",
     "Prior": "Prior",
+    "Radical Equations": "Wurzelgleichungen",
+    "Radical equations hide the variable under a root. Isolate the root, square both sides, then check for extra solutions.":
+        "Wurzelgleichungen verstecken die Variable unter einer Wurzel. Isoliere die Wurzel, quadriere beide Seiten und prüfe dann auf zusätzliche Lösungen.",
     "The evidence can happen through A or through not A.":
         "Die Evidenz kann durch A oder durch nicht A eintreten.",
     "The vertical bar means given.": "Der senkrechte Strich bedeutet gegeben.",
