@@ -25,6 +25,8 @@ PROSE: dict[str, str] = {
     "7-day focus": "7-Tage-Fokus",
     "82 lessons across algebra, calculus, geometry, statistics, finance, and more":
         "82 Lektionen in Algebra, Analysis, Geometrie, Statistik, Finanzmathe und mehr",
+    "83 lessons across algebra, calculus, geometry, statistics, finance, and more":
+        "83 Lektionen in Algebra, Analysis, Geometrie, Statistik, Finanzmathe und mehr",
     "A quick rating helps more learners find it.": "Eine kurze Bewertung hilft mehr Lernenden, Mathio zu finden.",
     "Accuracy": "Trefferquote",
     "active days": "aktive Tage",
@@ -120,6 +122,48 @@ PROSE: dict[str, str] = {
     "So expected gain is 0": "Also ist der erwartete Gewinn 0",
     "True or false: expected value must be one of the possible outcomes.":
         "Wahr oder falsch: Der Erwartungswert muss eines der möglichen Ergebnisse sein.",
+    "0.10 / 0.25 = 0.4": "0,10 / 0,25 = 0,4",
+    "A condition affects 1% of people. A test is positive for 90% with the condition and 10% without it. What is P(positive)?":
+        "Eine Krankheit betrifft 1 % der Menschen. Ein Test ist bei 90 % mit Krankheit positiv und bei 10 % ohne Krankheit positiv. Wie groß ist P(positiv)?",
+    "After observing B": "Nach Beobachtung von B",
+    "Base rates still matter.": "Basisraten sind trotzdem wichtig.",
+    "Bayes' Theorem": "Satz von Bayes",
+    "Bayes' theorem": "Satz von Bayes",
+    "Bayes' theorem updates a probability when new evidence appears. It is useful for tests, risk, and real decisions.":
+        "Der Satz von Bayes aktualisiert eine Wahrscheinlichkeit, wenn neue Evidenz auftaucht. Das ist nützlich für Tests, Risiken und echte Entscheidungen.",
+    "Bayes' theorem keeps the base rate in the calculation":
+        "Der Satz von Bayes behält die Basisrate in der Rechnung",
+    "Before any evidence": "Vor jeder Evidenz",
+    "Evidence probability": "Wahrscheinlichkeit der Evidenz",
+    "Ignoring B": "B ignorieren",
+    "In Bayes' theorem, P(A) before new evidence is called the:":
+        "Im Satz von Bayes heißt P(A) vor neuer Evidenz:",
+    "It is the probability you start with.": "Das ist die Wahrscheinlichkeit, mit der du startest.",
+    "Multiply the top, then divide by P(B).": "Multipliziere den Zähler und teile dann durch P(B).",
+    "Only when B is impossible": "Nur wenn B unmöglich ist",
+    "Outlier": "Ausreißer",
+    "P(A) is the starting probability": "P(A) ist die Startwahrscheinlichkeit",
+    "P(A|B) is the probability of A:": "P(A|B) ist die Wahrscheinlichkeit von A:",
+    "P(A|B) reads as probability of A given B": "P(A|B) liest sich als Wahrscheinlichkeit von A gegeben B",
+    "P(A|B) = 0.5 · 0.2 / 0.25": "P(A|B) = 0,5 · 0,2 / 0,25",
+    "P(positive) = 0.009 + 0.099 = 0.108": "P(positiv) = 0,009 + 0,099 = 0,108",
+    "P(positive) = 0.90 · 0.01 + 0.10 · 0.99": "P(positiv) = 0,90 · 0,01 + 0,10 · 0,99",
+    "Posterior": "Posterior",
+    "Prior": "Prior",
+    "The evidence can happen through A or through not A.":
+        "Die Evidenz kann durch A oder durch nicht A eintreten.",
+    "The vertical bar means given.": "Der senkrechte Strich bedeutet gegeben.",
+    "That is called the prior": "Das nennt man Prior",
+    "So B has been observed": "Also wurde B beobachtet",
+    "True or false: a rare event can still be unlikely after a positive test if false positives are common.":
+        "Wahr oder falsch: Ein seltenes Ereignis kann nach einem positiven Test weiterhin unwahrscheinlich sein, wenn falsch positive Ergebnisse häufig sind.",
+    "Update the probability of A after seeing evidence B.":
+        "Aktualisiere die Wahrscheinlichkeit von A, nachdem Evidenz B beobachtet wurde.",
+    "Use both ways a positive result can happen.": "Nutze beide Wege, wie ein positives Ergebnis entstehen kann.",
+    "Using P(A)=0.2, P(B|A)=0.5, and P(B)=0.25, find P(A|B).":
+        "Mit P(A)=0,2, P(B|A)=0,5 und P(B)=0,25: Bestimme P(A|B).",
+    "When A is rare, many positives may come from not A":
+        "Wenn A selten ist, können viele positive Ergebnisse von nicht A kommen",
     "Always smaller": "Immer kleiner",
     "Every deviation is 0": "Jede Abweichung ist 0",
     "Find each distance from the mean, square it, average those squares, then take the square root.":

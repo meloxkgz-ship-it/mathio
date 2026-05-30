@@ -53,7 +53,7 @@ Reasoning:
 ## Promotional Text (170 max — editable without review)
 
 ```
-New: Expected Value, Standard Deviation, and 82 lessons.
+New: Bayes' Theorem, Expected Value, and 83 lessons.
 ```
 **73 / 170** — highlights current catalog size, retention improvements, and new exam-prep content.
 
@@ -110,7 +110,7 @@ Available in English, German, Spanish, French, Italian, and Brazilian Portuguese
 TOPICS
 Pre-Algebra, Algebra, Calculus, Geometry, Trigonometry, Statistics, Linear Algebra, Financial Math, and Discrete Math.
 
-82 lessons and 410 hand-crafted questions cover fractions, percentages, percent change, equations, word problems, functions, sequences, series, derivatives, implicit differentiation, integrals, related rates, vectors, matrices, probability, expected value, regression, standard deviation, normal distribution, box plots, confidence intervals, rational expressions, completing the square, coordinate geometry, composite areas, budgeting, unit prices, tips, bill splitting, loans, taxes, discounts, truth tables, logic, graph theory, and more.
+83 lessons and 415 hand-crafted questions cover fractions, percentages, percent change, equations, word problems, functions, sequences, series, derivatives, implicit differentiation, integrals, related rates, vectors, matrices, probability, expected value, Bayes' theorem, regression, standard deviation, normal distribution, box plots, confidence intervals, rational expressions, completing the square, coordinate geometry, composite areas, budgeting, unit prices, tips, bill splitting, loans, taxes, discounts, truth tables, logic, graph theory, and more.
 
 SUBSCRIPTION
 Mathio is free to try. Unlock all topics with:
@@ -145,6 +145,7 @@ New:
 • Rich Path Previews: guided paths now show duration, lesson count, and the next concrete lesson
 • Session Insight: every completed session now shows accuracy, misses, mode, and the next best step
 • Expected Value: new statistics practice for long-run averages, fair games, and expected gain
+• Bayes' Theorem: new probability practice for evidence, base rates, and test results
 • Standard Deviation: new statistics practice for spread, squared deviations, and sample vs population formulas
 • Normal Distribution: new statistics practice for z-scores, bell curves, and the empirical rule
 • Box Plots & Quartiles: new statistics practice for five-number summaries, IQR, and spread
@@ -166,7 +167,7 @@ Improved:
 • Progress now includes lesson-level study targets, not only topic percentages
 • Clearer learning path guidance on Home
 • Better premium feel with more personalized study flow
-• Expanded curriculum: 82 lessons and 410 guided questions across 9 topics
+• Expanded curriculum: 83 lessons and 415 guided questions across 9 topics
 
 Fixed:
 • Continued cleanup of localized app copy to avoid mixed German/English flows

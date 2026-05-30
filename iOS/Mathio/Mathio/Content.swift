@@ -2723,6 +2723,64 @@ enum Curriculum {
         ]
     )
 
+    static let bayesTheorem = Lesson(
+        id: "stats.bayes",
+        title: "Bayes' Theorem",
+        intro: "Bayes' theorem updates a probability when new evidence appears. It is useful for tests, risk, and real decisions.",
+        formulas: [
+            Formula(key: "stats.bayes.f1",
+                    name: "Bayes' theorem",
+                    math: "P(A | B) = P(B | A) · P(A) / P(B)",
+                    explanation: "Update the probability of A after seeing evidence B."),
+            Formula(key: "stats.bayes.f2",
+                    name: "Evidence probability",
+                    math: "P(B) = P(B | A)P(A) + P(B | not A)P(not A)",
+                    explanation: "The evidence can happen through A or through not A."),
+        ],
+        questions: [
+            Question(id: "stats.bayes.q1",
+                     prompt: "A condition affects 1% of people. A test is positive for 90% with the condition and 10% without it. What is P(positive)?",
+                     math: nil,
+                     kind: .freeAnswer(accepted: ["0.108", "10.8%", ".108"]),
+                     hint: "Use both ways a positive result can happen.",
+                     solutionSteps: ["P(positive) = 0.90 · 0.01 + 0.10 · 0.99", "P(positive) = 0.009 + 0.099 = 0.108"]),
+            Question(id: "stats.bayes.q2",
+                     prompt: "Using P(A)=0.2, P(B|A)=0.5, and P(B)=0.25, find P(A|B).",
+                     math: nil,
+                     kind: .freeAnswer(accepted: ["0.4", ".4", "40%"]),
+                     hint: "Multiply the top, then divide by P(B).",
+                     solutionSteps: ["P(A|B) = 0.5 · 0.2 / 0.25", "0.10 / 0.25 = 0.4"]),
+            Question(id: "stats.bayes.q3",
+                     prompt: "In Bayes' theorem, P(A) before new evidence is called the:",
+                     math: nil,
+                     kind: .multipleChoice(options: [
+                        .init(label: "Prior", math: nil),
+                        .init(label: "Posterior", math: nil),
+                        .init(label: "Median", math: nil),
+                        .init(label: "Outlier", math: nil),
+                     ], correctIndex: 0),
+                     hint: "It is the probability you start with.",
+                     solutionSteps: ["P(A) is the starting probability", "That is called the prior"]),
+            Question(id: "stats.bayes.q4",
+                     prompt: "P(A|B) is the probability of A:",
+                     math: nil,
+                     kind: .multipleChoice(options: [
+                        .init(label: "After observing B", math: nil),
+                        .init(label: "Before any evidence", math: nil),
+                        .init(label: "Ignoring B", math: nil),
+                        .init(label: "Only when B is impossible", math: nil),
+                     ], correctIndex: 0),
+                     hint: "The vertical bar means given.",
+                     solutionSteps: ["P(A|B) reads as probability of A given B", "So B has been observed"]),
+            Question(id: "stats.bayes.q5",
+                     prompt: "True or false: a rare event can still be unlikely after a positive test if false positives are common.",
+                     math: nil,
+                     kind: .trueFalse(answer: true),
+                     hint: "Base rates still matter.",
+                     solutionSteps: ["When A is rare, many positives may come from not A", "Bayes' theorem keeps the base rate in the calculation"]),
+        ]
+    )
+
     static let dataDisplays = Lesson(
         id: "stats.display",
         title: "Data Displays",
@@ -4351,7 +4409,7 @@ enum Curriculum {
               subtitle: "Data, chance & decisions",
               icon: "chart.bar.doc.horizontal",
               color: Palette.stats,
-              lessons: [descriptiveStats, probabilityBasics, expectedValue, dataDisplays, boxPlots, sampling,
+              lessons: [descriptiveStats, probabilityBasics, expectedValue, bayesTheorem, dataDisplays, boxPlots, sampling,
                         distributions, standardDeviation, correlationRegression, inferenceBasics, normalDistribution,
                         confidenceIntervals, hypothesisTests]),
         Topic(id: "linearalgebra",

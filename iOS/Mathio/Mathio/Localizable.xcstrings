@@ -93724,6 +93724,1128 @@
           }
         }
       }
+    },
+    "0.10 / 0.25 = 0.4": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0,10 / 0,25 = 0,4"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0,10 / 0,25 = 0,4"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0,10 / 0,25 = 0,4"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0,10 / 0,25 = 0,4"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0,10 / 0,25 = 0,4"
+          }
+        }
+      }
+    },
+    "A condition affects 1% of people. A test is positive for 90% with the condition and 10% without it. What is P(positive)?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eine Krankheit betrifft 1 % der Menschen. Ein Test ist bei 90 % mit Krankheit positiv und bei 10 % ohne Krankheit positiv. Wie groß ist P(positiv)?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una condicion afecta al 1 % de las personas. Una prueba da positivo en el 90 % con la condicion y en el 10 % sin ella. ¿Cual es P(positivo)?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Une condition touche 1 % des personnes. Un test est positif pour 90 % avec la condition et 10 % sans elle. Quelle est P(positif) ?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una condizione riguarda l'1% delle persone. Un test e positivo nel 90% dei casi con la condizione e nel 10% senza. Qual e P(positivo)?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uma condicao afeta 1% das pessoas. Um teste da positivo em 90% com a condicao e em 10% sem ela. Qual e P(positivo)?"
+          }
+        }
+      }
+    },
+    "After observing B": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nach Beobachtung von B"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Despues de observar B"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apres avoir observe B"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dopo aver osservato B"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Depois de observar B"
+          }
+        }
+      }
+    },
+    "Base rates still matter.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Basisraten sind trotzdem wichtig."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Las tasas base siguen importando."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les taux de base comptent toujours."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I tassi di base contano ancora."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "As taxas de base ainda importam."
+          }
+        }
+      }
+    },
+    "Bayes' Theorem": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Satz von Bayes"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Teorema de Bayes"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Theoreme de Bayes"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Teorema di Bayes"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Teorema de Bayes"
+          }
+        }
+      }
+    },
+    "Bayes' theorem": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Satz von Bayes"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Teorema de Bayes"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Theoreme de Bayes"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Teorema di Bayes"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Teorema de Bayes"
+          }
+        }
+      }
+    },
+    "Bayes' theorem keeps the base rate in the calculation": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der Satz von Bayes behält die Basisrate in der Rechnung"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El teorema de Bayes mantiene la tasa base en el calculo"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le theoreme de Bayes garde le taux de base dans le calcul"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il teorema di Bayes mantiene il tasso di base nel calcolo"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O teorema de Bayes mantem a taxa de base no calculo"
+          }
+        }
+      }
+    },
+    "Bayes' theorem updates a probability when new evidence appears. It is useful for tests, risk, and real decisions.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der Satz von Bayes aktualisiert eine Wahrscheinlichkeit, wenn neue Evidenz auftaucht. Das ist nützlich für Tests, Risiken und echte Entscheidungen."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El teorema de Bayes actualiza una probabilidad cuando aparece nueva evidencia. Es util para pruebas, riesgos y decisiones reales."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le theoreme de Bayes met a jour une probabilite quand une nouvelle preuve apparait. Il sert pour les tests, les risques et les decisions reelles."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il teorema di Bayes aggiorna una probabilita quando compare una nuova evidenza. E utile per test, rischi e decisioni reali."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O teorema de Bayes atualiza uma probabilidade quando surge nova evidencia. Ele e util para testes, riscos e decisoes reais."
+          }
+        }
+      }
+    },
+    "Before any evidence": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vor jeder Evidenz"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Antes de cualquier evidencia"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Avant toute preuve"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prima di qualsiasi evidenza"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Antes de qualquer evidencia"
+          }
+        }
+      }
+    },
+    "Evidence probability": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wahrscheinlichkeit der Evidenz"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Probabilidad de la evidencia"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Probabilite de la preuve"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Probabilita dell'evidenza"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Probabilidade da evidencia"
+          }
+        }
+      }
+    },
+    "Ignoring B": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "B ignorieren"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ignorando B"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En ignorant B"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ignorando B"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ignorando B"
+          }
+        }
+      }
+    },
+    "In Bayes' theorem, P(A) before new evidence is called the:": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Im Satz von Bayes heißt P(A) vor neuer Evidenz:"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En el teorema de Bayes, P(A) antes de nueva evidencia se llama:"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dans le theoreme de Bayes, P(A) avant une nouvelle preuve s'appelle :"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nel teorema di Bayes, P(A) prima di una nuova evidenza si chiama:"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No teorema de Bayes, P(A) antes de nova evidencia e chamado de:"
+          }
+        }
+      }
+    },
+    "It is the probability you start with.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Das ist die Wahrscheinlichkeit, mit der du startest."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Es la probabilidad con la que empiezas."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "C'est la probabilite de depart."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "E la probabilita da cui parti."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "E a probabilidade com que voce comeca."
+          }
+        }
+      }
+    },
+    "Multiply the top, then divide by P(B).": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Multipliziere den Zähler und teile dann durch P(B)."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Multiplica la parte superior y luego divide por P(B)."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Multiplie le numerateur, puis divise par P(B)."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Moltiplica il numeratore, poi dividi per P(B)."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Multiplique a parte de cima e depois divida por P(B)."
+          }
+        }
+      }
+    },
+    "Only when B is impossible": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nur wenn B unmöglich ist"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Solo cuando B es imposible"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Seulement quand B est impossible"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Solo quando B e impossibile"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Somente quando B e impossivel"
+          }
+        }
+      }
+    },
+    "Outlier": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ausreißer"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Valor atipico"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Valeur aberrante"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Valore anomalo"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Valor atipico"
+          }
+        }
+      }
+    },
+    "P(A) is the starting probability": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P(A) ist die Startwahrscheinlichkeit"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P(A) es la probabilidad inicial"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P(A) est la probabilite de depart"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P(A) e la probabilita iniziale"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P(A) e a probabilidade inicial"
+          }
+        }
+      }
+    },
+    "P(A|B) = 0.5 · 0.2 / 0.25": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P(A|B) = 0,5 · 0,2 / 0,25"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P(A|B) = 0,5 · 0,2 / 0,25"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P(A|B) = 0,5 · 0,2 / 0,25"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P(A|B) = 0,5 · 0,2 / 0,25"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P(A|B) = 0,5 · 0,2 / 0,25"
+          }
+        }
+      }
+    },
+    "P(A|B) is the probability of A:": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P(A|B) ist die Wahrscheinlichkeit von A:"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P(A|B) es la probabilidad de A:"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P(A|B) est la probabilite de A :"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P(A|B) e la probabilita di A:"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P(A|B) e a probabilidade de A:"
+          }
+        }
+      }
+    },
+    "P(A|B) reads as probability of A given B": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P(A|B) liest sich als Wahrscheinlichkeit von A gegeben B"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P(A|B) se lee como probabilidad de A dado B"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P(A|B) se lit comme la probabilite de A sachant B"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P(A|B) si legge come probabilita di A dato B"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P(A|B) se le como probabilidade de A dado B"
+          }
+        }
+      }
+    },
+    "P(positive) = 0.009 + 0.099 = 0.108": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P(positiv) = 0,009 + 0,099 = 0,108"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P(positivo) = 0,009 + 0,099 = 0,108"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P(positif) = 0,009 + 0,099 = 0,108"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P(positivo) = 0,009 + 0,099 = 0,108"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P(positivo) = 0,009 + 0,099 = 0,108"
+          }
+        }
+      }
+    },
+    "P(positive) = 0.90 · 0.01 + 0.10 · 0.99": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P(positiv) = 0,90 · 0,01 + 0,10 · 0,99"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P(positivo) = 0,90 · 0,01 + 0,10 · 0,99"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P(positif) = 0,90 · 0,01 + 0,10 · 0,99"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P(positivo) = 0,90 · 0,01 + 0,10 · 0,99"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P(positivo) = 0,90 · 0,01 + 0,10 · 0,99"
+          }
+        }
+      }
+    },
+    "Posterior": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Posterior"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Posterior"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Posterieur"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Posterior"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Posterior"
+          }
+        }
+      }
+    },
+    "Prior": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prior"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prior"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A priori"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prior"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prior"
+          }
+        }
+      }
+    },
+    "So B has been observed": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Also wurde B beobachtet"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Entonces B ha sido observado"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Donc B a ete observe"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quindi B e stato osservato"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Entao B foi observado"
+          }
+        }
+      }
+    },
+    "That is called the prior": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Das nennt man Prior"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eso se llama prior"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cela s'appelle l'a priori"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Questo si chiama prior"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Isso e chamado de prior"
+          }
+        }
+      }
+    },
+    "The evidence can happen through A or through not A.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Evidenz kann durch A oder durch nicht A eintreten."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La evidencia puede ocurrir por A o por no A."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La preuve peut arriver par A ou par non A."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L'evidenza puo verificarsi tramite A o tramite non A."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A evidencia pode acontecer por A ou por nao A."
+          }
+        }
+      }
+    },
+    "The vertical bar means given.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der senkrechte Strich bedeutet gegeben."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La barra vertical significa dado."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La barre verticale signifie sachant."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La barra verticale significa dato."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A barra vertical significa dado."
+          }
+        }
+      }
+    },
+    "True or false: a rare event can still be unlikely after a positive test if false positives are common.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wahr oder falsch: Ein seltenes Ereignis kann nach einem positiven Test weiterhin unwahrscheinlich sein, wenn falsch positive Ergebnisse häufig sind."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verdadero o falso: un evento raro puede seguir siendo improbable tras una prueba positiva si los falsos positivos son comunes."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vrai ou faux : un evenement rare peut rester peu probable apres un test positif si les faux positifs sont courants."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vero o falso: un evento raro puo restare improbabile dopo un test positivo se i falsi positivi sono comuni."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verdadeiro ou falso: um evento raro ainda pode ser improvavel depois de um teste positivo se falsos positivos forem comuns."
+          }
+        }
+      }
+    },
+    "Update the probability of A after seeing evidence B.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aktualisiere die Wahrscheinlichkeit von A, nachdem Evidenz B beobachtet wurde."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Actualiza la probabilidad de A despues de ver la evidencia B."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mets a jour la probabilite de A apres avoir vu la preuve B."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aggiorna la probabilita di A dopo aver visto l'evidenza B."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Atualize a probabilidade de A depois de ver a evidencia B."
+          }
+        }
+      }
+    },
+    "Use both ways a positive result can happen.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nutze beide Wege, wie ein positives Ergebnis entstehen kann."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usa las dos formas en que puede ocurrir un resultado positivo."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Utilise les deux facons dont un resultat positif peut arriver."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usa entrambi i modi in cui puo verificarsi un risultato positivo."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Use as duas formas pelas quais um resultado positivo pode acontecer."
+          }
+        }
+      }
+    },
+    "Using P(A)=0.2, P(B|A)=0.5, and P(B)=0.25, find P(A|B).": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mit P(A)=0,2, P(B|A)=0,5 und P(B)=0,25: Bestimme P(A|B)."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usando P(A)=0,2, P(B|A)=0,5 y P(B)=0,25, encuentra P(A|B)."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Avec P(A)=0,2, P(B|A)=0,5 et P(B)=0,25, trouve P(A|B)."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usando P(A)=0,2, P(B|A)=0,5 e P(B)=0,25, trova P(A|B)."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usando P(A)=0,2, P(B|A)=0,5 e P(B)=0,25, encontre P(A|B)."
+          }
+        }
+      }
+    },
+    "When A is rare, many positives may come from not A": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wenn A selten ist, können viele positive Ergebnisse von nicht A kommen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cuando A es raro, muchos positivos pueden venir de no A"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quand A est rare, beaucoup de positifs peuvent venir de non A"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quando A e raro, molti positivi possono venire da non A"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quando A e raro, muitos positivos podem vir de nao A"
+          }
+        }
+      }
     }
   },
   "version": "1.0"
