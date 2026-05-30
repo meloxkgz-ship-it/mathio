@@ -998,6 +998,7 @@ struct HomeView: View {
                 VStack(alignment: .leading, spacing: 24) {
                     header
                     DailyGoalView(progress: store.correctToday(), goal: settings.dailyGoal)
+                    if let summary = store.lastSession { lastSessionCard(summary) }
                     habitShieldCard
                     studyCoachCard
                     if shouldShowComebackCard { comebackCard }
@@ -1118,6 +1119,90 @@ struct HomeView: View {
             }
         }
         .buttonStyle(.plain)
+    }
+
+    private func lastSessionCard(_ summary: SessionSummary) -> some View {
+        Card(padding: 16, background: Palette.surface) {
+            VStack(alignment: .leading, spacing: 14) {
+                HStack(alignment: .top, spacing: 12) {
+                    Image(systemName: "checkmark.seal.fill")
+                        .font(.system(size: 18, weight: .semibold))
+                        .foregroundStyle(Palette.success)
+                        .frame(width: 38, height: 38)
+                        .background(Palette.success.opacity(0.14), in: Circle())
+                        .accessibilityHidden(true)
+
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text("Last session")
+                            .font(.label)
+                            .foregroundStyle(Palette.inkFaint)
+                            .textCase(.uppercase)
+                            .tracking(1.2)
+                        Text("Completed last session")
+                            .font(.titleM)
+                            .foregroundStyle(Palette.ink)
+                            .fixedSize(horizontal: false, vertical: true)
+                        Text(verbatim: summary.lessonTitle)
+                            .font(.bodyM.weight(.semibold))
+                            .foregroundStyle(Palette.ink)
+                            .fixedSize(horizontal: false, vertical: true)
+                        Text(lastSessionSubtitle(summary))
+                            .font(.bodyM)
+                            .foregroundStyle(Palette.inkSoft)
+                            .fixedSize(horizontal: false, vertical: true)
+                    }
+
+                    Spacer(minLength: 0)
+                }
+
+                HStack(spacing: 8) {
+                    habitMetric(icon: "percent", value: "\(summary.accuracy)%", label: "accuracy")
+                    habitMetric(icon: "xmark.circle", value: "\(summary.missed)", label: "missed")
+                    habitMetric(icon: "clock.arrow.circlepath", value: "\(summary.nextReviewCount)", label: "tomorrow")
+                }
+
+                Button { continueFromLastSession(summary) } label: {
+                    HStack(spacing: 8) {
+                        Image(systemName: summary.nextReviewCount > 0 ? "arrow.triangle.2.circlepath" : "arrow.right")
+                        Text(lastSessionCTA(summary))
+                        Spacer(minLength: 0)
+                        Image(systemName: "arrow.right")
+                            .font(.system(size: 12, weight: .bold))
+                    }
+                    .font(.label)
+                    .foregroundStyle(Palette.ink)
+                    .padding(12)
+                    .background(Palette.surfaceMuted, in: RoundedRectangle(cornerRadius: 12, style: .continuous))
+                }
+                .buttonStyle(.plain)
+            }
+        }
+        .accessibilityElement(children: .combine)
+    }
+
+    private func lastSessionSubtitle(_ summary: SessionSummary) -> LocalizedStringResource {
+        if summary.nextReviewCount > 0 {
+            return "\(summary.nextReviewCount) reviews are scheduled before they fade."
+        }
+        if summary.nextLessonTitle != nil {
+            return "Your next lesson is ready for a short return session."
+        }
+        return "A short return session is ready before the review queue grows."
+    }
+
+    private func lastSessionCTA(_ summary: SessionSummary) -> LocalizedStringResource {
+        if summary.nextReviewCount > 0 {
+            return LocalizedStringResource("Open tomorrow's review plan")
+        }
+        return LocalizedStringResource("Continue the plan")
+    }
+
+    private func continueFromLastSession(_ summary: SessionSummary) {
+        if summary.nextReviewCount > 0 || reviewCount > 0 {
+            showReview = true
+            return
+        }
+        startStudyCoachAction()
     }
 
     private var studyCoachCard: some View {
@@ -3267,6 +3352,7 @@ struct PracticeView: View {
     @State private var retryLesson: Lesson?
     @State private var showQuitConfirm: Bool = false
     @State private var didCelebrate: Bool = false
+    @State private var didRecordSessionSummary: Bool = false
     @State private var hideReviewOffer: Bool = false
     @State private var hideReminderOffer: Bool = false
     @State private var reminderFeedback: LocalizedStringResource?
@@ -3517,10 +3603,24 @@ struct PracticeView: View {
         .onAppear {
             guard !didCelebrate, lesson.questions.count > 0 else { return }
             didCelebrate = true
+            recordSessionSummaryOnce()
             if isPerfect {
                 AudioServicesPlaySystemSound(1025)   // Tink — gentle success ping
             }
         }
+    }
+
+    private func recordSessionSummaryOnce() {
+        guard !didRecordSessionSummary, lesson.questions.count > 0 else { return }
+        didRecordSessionSummary = true
+        store.recordSessionCompletion(
+            lesson: lesson,
+            mode: String(localized: sessionModeLabel),
+            correct: sessionCorrect,
+            total: lesson.questions.count,
+            missed: sessionMissedQuestions.count,
+            nextLessonTitle: suggestedNextLesson.map { String(localized: $0.title) }
+        )
     }
 
     private var isPerfect: Bool {

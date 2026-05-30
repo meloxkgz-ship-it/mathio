@@ -32359,6 +32359,40 @@
         }
       }
     },
+    "Completed last session": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Letzte Session abgeschlossen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Última sesión completada"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dernière séance terminée"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ultima sessione completata"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Última sessão concluída"
+          }
+        }
+      }
+    },
     "Completing the Square": {
       "extractionState": "manual",
       "localizations": {
@@ -34028,6 +34062,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Continuar"
+          }
+        }
+      }
+    },
+    "Continue the plan": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Plan fortsetzen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "continuar el plan"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continuer le plan"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continua il piano"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continuar o plano"
           }
         }
       }
@@ -52499,6 +52567,40 @@
         }
       }
     },
+    "Last session": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Letzte Session"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Última sesión"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dernière séance"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ultima sessione"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Última sessão"
+          }
+        }
+      }
+    },
     "Last: 6": {
       "localizations": {
         "de": {
@@ -61337,6 +61439,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Somente quando B e impossivel"
+          }
+        }
+      }
+    },
+    "Open tomorrow's review plan": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Morgenplan für Wiederholung öffnen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abrir el plan de revisión de mañana."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ouvrir le plan de révision de demain"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apri il piano di revisione di domani"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abra o plano de revisão de amanhã"
           }
         }
       }
@@ -98387,6 +98523,40 @@
         }
       }
     },
+    "accuracy": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Genauigkeit"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "exactitud"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "précision"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "precisione"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "precisão"
+          }
+        }
+      }
+    },
     "active days": {
       "localizations": {
         "de": {
@@ -102005,6 +102175,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "mín, Q1, mediana, Q3, máx"
+          }
+        }
+      }
+    },
+    "missed": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "verpasst"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "omitido"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "manqué"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "mancato"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "perdido"
           }
         }
       }

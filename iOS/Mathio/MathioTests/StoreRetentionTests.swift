@@ -78,6 +78,47 @@ final class StoreRetentionTests: XCTestCase {
         XCTAssertEqual(plan[1].lesson?.id, Curriculum.quadratics.id)
     }
 
+    func testSessionSummaryPersistsForNextLaunch() {
+        let store = Store()
+        let lesson = Curriculum.linearEquations
+
+        lesson.questions.prefix(4).forEach { question in
+            store.record(questionId: question.id, correct: true)
+        }
+        store.recordSessionCompletion(
+            lesson: lesson,
+            mode: "Lesson",
+            correct: 4,
+            total: 5,
+            missed: 1,
+            nextLessonTitle: "Quadratics"
+        )
+
+        let relaunched = Store()
+
+        XCTAssertEqual(relaunched.lastSession?.lessonTitle, String(localized: lesson.title))
+        XCTAssertEqual(relaunched.lastSession?.accuracy, 80)
+        XCTAssertEqual(relaunched.lastSession?.nextReviewCount, 4)
+        XCTAssertEqual(relaunched.lastSession?.nextLessonTitle, "Quadratics")
+    }
+
+    func testResetClearsSessionSummary() {
+        let store = Store()
+        let lesson = Curriculum.linearEquations
+
+        store.recordSessionCompletion(
+            lesson: lesson,
+            mode: "Lesson",
+            correct: 1,
+            total: 5,
+            missed: 4,
+            nextLessonTitle: nil
+        )
+        store.reset()
+
+        XCTAssertNil(Store().lastSession)
+    }
+
     private func clearMathioDefaults() {
         let defaults = UserDefaults.standard
         for key in defaults.dictionaryRepresentation().keys where key.hasPrefix("mathio.") {

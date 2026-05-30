@@ -100,6 +100,22 @@ struct StudyPlanDay: Identifiable, Hashable {
     var isToday: Bool { offset == 0 }
 }
 
+struct SessionSummary: Codable, Equatable {
+    let lessonTitle: String
+    let mode: String
+    let correct: Int
+    let total: Int
+    let missed: Int
+    let completedAt: Date
+    let nextReviewCount: Int
+    let nextLessonTitle: String?
+
+    var accuracy: Int {
+        guard total > 0 else { return 0 }
+        return Int((Double(correct) / Double(total) * 100).rounded())
+    }
+}
+
 enum LearningGoal: String, Codable, CaseIterable, Identifiable {
     case school
     case exam
@@ -277,6 +293,7 @@ final class Store {
     private let kFreezeRefill  = "mathio.streak.freezeRefillDate"
     private let kDailyCorrect  = "mathio.dailyCorrect.v1"
     private let kLearningProfile = "mathio.learningProfile.v1"
+    private let kLastSession   = "mathio.lastSession.v1"
 
     static let maxFreezes = 2
 
@@ -285,6 +302,7 @@ final class Store {
     private(set) var bookmarks: Set<String> = []
     private(set) var dailyCorrect: [String: Int] = [:]
     private(set) var learningProfile: LearningProfile?
+    private(set) var lastSession: SessionSummary?
     /// Available "streak freezes" — auto-spent if a day is missed. Refills weekly.
     private(set) var streakFreezes: Int = 2
     var hasOnboarded: Bool
@@ -307,6 +325,10 @@ final class Store {
         if let data = defaults.data(forKey: kLearningProfile),
            let decoded = try? JSONDecoder().decode(LearningProfile.self, from: data) {
             self.learningProfile = decoded
+        }
+        if let data = defaults.data(forKey: kLastSession),
+           let decoded = try? JSONDecoder().decode(SessionSummary.self, from: data) {
+            self.lastSession = decoded
         }
         // Default freezes if never set (defaults.integer returns 0 for unset).
         if defaults.object(forKey: kFreezes) == nil {
@@ -359,6 +381,26 @@ final class Store {
         persistLearningProfile()
     }
 
+    func recordSessionCompletion(lesson: Lesson,
+                                 mode: String,
+                                 correct: Int,
+                                 total: Int,
+                                 missed: Int,
+                                 nextLessonTitle: String?) {
+        let plan = reviewPlan(for: lesson)
+        lastSession = SessionSummary(
+            lessonTitle: String(localized: lesson.title),
+            mode: mode,
+            correct: correct,
+            total: total,
+            missed: missed,
+            completedAt: .now,
+            nextReviewCount: plan.tomorrow,
+            nextLessonTitle: nextLessonTitle
+        )
+        persistLastSession()
+    }
+
     /// Wipe all answer history + streak. Onboarding flag is preserved.
     func reset() {
         answered = [:]
@@ -369,8 +411,10 @@ final class Store {
         defaults.removeObject(forKey: kStreakCount)
         defaults.removeObject(forKey: kStreakDay)
         defaults.removeObject(forKey: kDailyCorrect)
+        defaults.removeObject(forKey: kLastSession)
         defaults.set(Self.maxFreezes, forKey: kFreezes)
         defaults.removeObject(forKey: kFreezeRefill)
+        lastSession = nil
     }
 
     // MARK: Bookmarks (formula reference)
@@ -608,6 +652,12 @@ final class Store {
     private func persistLearningProfile() {
         if let data = try? JSONEncoder().encode(learningProfile) {
             defaults.set(data, forKey: kLearningProfile)
+        }
+    }
+
+    private func persistLastSession() {
+        if let data = try? JSONEncoder().encode(lastSession) {
+            defaults.set(data, forKey: kLastSession)
         }
     }
 

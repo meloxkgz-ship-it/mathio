@@ -25,4 +25,5 @@ The test cases are real:
 | `equationsArePreservedNotReordered` | Equations not reordered around `=` |
 | `acceptedListVariants` | The `accepted: [String]` list is normalized too |
 | `reviewPlan` | Completion memory plan counts tomorrow/week review timing |
+| `sessionSummary` | Last completed session persists for Home coach continuity and clears on reset |
 | `curriculumIntegrity` | Roadmap counts, unique IDs, 5-question lessons, and Exam Review path coverage |
