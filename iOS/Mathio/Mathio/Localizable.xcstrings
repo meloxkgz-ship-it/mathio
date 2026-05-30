@@ -43748,6 +43748,142 @@
         }
       }
     },
+    "Share progress": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fortschritt teilen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Compartir progreso"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Partager les progrès"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Condividi i progressi"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Compartilhar progresso"
+          }
+        }
+      }
+    },
+    "Share your progress": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Teile deinen Fortschritt"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Comparte tu progreso"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Partage tes progrès"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Condividi i tuoi progressi"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Compartilhe seu progresso"
+          }
+        }
+      }
+    },
+    "I practiced with Mathio today. Building my math streak one day at a time: https://apps.apple.com/app/id6767033115": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ich habe heute mit Mathio geübt. Ich baue meine Mathe-Serie Tag für Tag auf: https://apps.apple.com/app/id6767033115"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hoy practiqué con Mathio. Estoy creando mi racha de matemáticas día a día: https://apps.apple.com/app/id6767033115"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "J'ai travaillé avec Mathio aujourd'hui. Je construis ma série de maths jour après jour : https://apps.apple.com/app/id6767033115"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oggi mi sono allenato con Mathio. Costruisco la mia serie di matematica un giorno alla volta: https://apps.apple.com/app/id6767033115"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pratiquei com o Mathio hoje. Estou construindo minha sequência de matemática um dia de cada vez: https://apps.apple.com/app/id6767033115"
+          }
+        }
+      }
+    },
+    "You just finished a focused Mathio session. Let a friend know you're building the habit.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Du hast gerade eine fokussierte Mathio-Session beendet. Zeig einem Freund, dass du die Gewohnheit aufbaust."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acabas de terminar una sesión enfocada de Mathio. Cuéntale a alguien que estás creando el hábito."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tu viens de terminer une session Mathio concentrée. Dis à un ami que tu construis l'habitude."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hai appena completato una sessione Mathio concentrata. Fai sapere a un amico che stai costruendo l'abitudine."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Você acabou de concluir uma sessão focada no Mathio. Conte a alguém que está criando o hábito."
+          }
+        }
+      }
+    },
     "Review due": {
       "localizations": {
         "de": {

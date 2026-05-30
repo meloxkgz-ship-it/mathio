@@ -2570,6 +2570,9 @@ struct PracticeView: View {
                         .font(.titleM).foregroundStyle(Palette.terracotta)
                         .padding(.top, -8)
                 }
+                if shouldShowShareOffer {
+                    shareWinCard
+                }
                 if shouldShowReviewOffer {
                     reviewOfferCard
                 }
@@ -2611,6 +2614,47 @@ struct PracticeView: View {
         && !hideReminderOffer
         && lesson.questions.count > 0
         && sessionCorrect >= min(3, lesson.questions.count)
+    }
+
+    private var shouldShowShareOffer: Bool {
+        lesson.questions.count > 0
+        && sessionCorrect >= min(3, lesson.questions.count)
+    }
+
+    private var shareMessage: String {
+        String(localized: "I practiced with Mathio today. Building my math streak one day at a time: https://apps.apple.com/app/id6767033115")
+    }
+
+    private var shareWinCard: some View {
+        Card(padding: 16, background: Palette.surfaceMuted) {
+            VStack(alignment: .leading, spacing: 12) {
+                HStack(spacing: 10) {
+                    Image(systemName: "square.and.arrow.up.circle.fill")
+                        .font(.system(size: 22, weight: .semibold))
+                        .foregroundStyle(Palette.calculus)
+                    VStack(alignment: .leading, spacing: 2) {
+                        Text("Share your progress")
+                            .font(.titleM)
+                            .foregroundStyle(Palette.ink)
+                        Text("You just finished a focused Mathio session. Let a friend know you're building the habit.")
+                            .font(.bodyM)
+                            .foregroundStyle(Palette.inkSoft)
+                    }
+                }
+                ShareLink(item: shareMessage) {
+                    HStack(spacing: 8) {
+                        Image(systemName: "square.and.arrow.up")
+                        Text("Share progress").fontWeight(.semibold)
+                    }
+                    .frame(maxWidth: .infinity, minHeight: 48)
+                    .foregroundStyle(Palette.ink)
+                    .background(Palette.surface)
+                    .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
+                }
+                .buttonStyle(.plain)
+            }
+        }
+        .transition(.opacity.combined(with: .move(edge: .bottom)))
     }
 
     private var reviewOfferCard: some View {
