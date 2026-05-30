@@ -3356,6 +3356,59 @@ enum Curriculum {
         ]
     )
 
+    static let unitPrices = Lesson(
+        id: "fin.unitprices",
+        title: "Unit Prices",
+        intro: "Unit prices compare cost per item, gram, liter, or month. They help you spot the better deal instead of guessing from package size.",
+        formulas: [
+            Formula(key: "fin.unitprices.f1",
+                    name: "Unit price",
+                    math: "unit price = total price / number of units",
+                    explanation: "Divide by the amount you receive to compare different package sizes."),
+            Formula(key: "fin.unitprices.f2",
+                    name: "Total from unit price",
+                    math: "total price = unit price · units",
+                    explanation: "Multiply when the price per unit is already known."),
+        ],
+        questions: [
+            Question(id: "fin.unitprices.q1",
+                     prompt: "A 4-pack costs $8. What is the price per item?",
+                     math: nil,
+                     kind: .freeAnswer(accepted: ["2", "$2"]),
+                     hint: "Divide total price by 4 items.",
+                     solutionSteps: ["8 / 4 = 2", "Unit price = $2 per item"]),
+            Question(id: "fin.unitprices.q2",
+                     prompt: "Which is cheaper per item: 6 for $15 or 4 for $12?",
+                     math: nil,
+                     kind: .multipleChoice(options: [
+                        .init(label: "6 for $15", math: nil),
+                        .init(label: "4 for $12", math: nil),
+                        .init(label: "They are equal", math: nil),
+                        .init(label: "Cannot compare", math: nil),
+                     ], correctIndex: 0),
+                     hint: "Find each unit price.",
+                     solutionSteps: ["15 / 6 = 2.50 per item", "12 / 4 = 3.00 per item", "6 for $15 is cheaper per item"]),
+            Question(id: "fin.unitprices.q3",
+                     prompt: "A subscription costs $60 for 12 months. Monthly unit price?",
+                     math: nil,
+                     kind: .freeAnswer(accepted: ["5", "$5"]),
+                     hint: "Divide by 12 months.",
+                     solutionSteps: ["60 / 12 = 5", "Monthly price = $5"]),
+            Question(id: "fin.unitprices.q4",
+                     prompt: "If one notebook costs $3, how much do 7 notebooks cost?",
+                     math: nil,
+                     kind: .freeAnswer(accepted: ["21", "$21"]),
+                     hint: "Multiply unit price by units.",
+                     solutionSteps: ["3 · 7 = 21", "Total cost = $21"]),
+            Question(id: "fin.unitprices.q5",
+                     prompt: "True or false: the lowest total price is always the best unit price.",
+                     math: nil,
+                     kind: .trueFalse(answer: false),
+                     hint: "A small package can have a higher price per item.",
+                     solutionSteps: ["Compare price per unit, not just total price", "The lowest total price may include fewer units"]),
+        ]
+    )
+
     // MARK: - Discrete Math
 
     static let logic = Lesson(
@@ -3767,7 +3820,8 @@ enum Curriculum {
               subtitle: "Loans, inflation & budgets",
               icon: "banknote",
               color: Palette.trig,
-              lessons: [simpleInterest, compoundInterest, budgeting, inflationRealValue, loansPayments, taxesDiscounts]),
+              lessons: [simpleInterest, compoundInterest, budgeting, unitPrices,
+                        inflationRealValue, loansPayments, taxesDiscounts]),
         Topic(id: "discretemath",
               title: "Discrete Math",
               subtitle: "Logic, sets & graphs",

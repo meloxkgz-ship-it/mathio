@@ -53,7 +53,7 @@ Reasoning:
 ## Promotional Text (170 max — editable without review)
 
 ```
-New: Percent Change, Word Problems, Related Rates, and 71 focused lessons.
+New: Unit Prices, Percent Change, Word Problems, Related Rates, and 72 lessons.
 ```
 **98 / 170** — highlights current catalog size, retention improvements, and new exam-prep content.
 
@@ -110,7 +110,7 @@ Available in English, German, Spanish, French, Italian, and Brazilian Portuguese
 TOPICS
 Pre-Algebra, Algebra, Calculus, Geometry, Trigonometry, Statistics, Linear Algebra, Financial Math, and Discrete Math.
 
-71 lessons and 355 hand-crafted questions cover fractions, percentages, percent change, equations, word problems, functions, derivatives, integrals, related rates, vectors, matrices, probability, regression, confidence intervals, rational expressions, budgeting, loans, taxes, discounts, truth tables, logic, graph theory, and more.
+72 lessons and 360 hand-crafted questions cover fractions, percentages, percent change, equations, word problems, functions, derivatives, integrals, related rates, vectors, matrices, probability, regression, confidence intervals, rational expressions, budgeting, unit prices, loans, taxes, discounts, truth tables, logic, graph theory, and more.
 
 SUBSCRIPTION
 Mathio is free to try. Unlock all topics with:
@@ -137,6 +137,7 @@ Mathio now gives learners clearer direction after every launch and more depth fo
 New:
 • Next 3 Sessions: your personal plan now shows the next concrete lessons to study
 • Comeback Mission: a gentle 5-question restart when you return after a break
+• Unit Prices: new financial math practice for comparing real deals
 • Percent Change: new everyday math practice for discounts, growth, and loss
 • Word Problems: new algebra practice for translating real situations into equations
 • Related Rates: new calculus practice for classic exam-style rate problems
@@ -148,7 +149,7 @@ New:
 Improved:
 • Clearer learning path guidance on Home
 • Better premium feel with more personalized study flow
-• Expanded curriculum: 71 lessons and 355 guided questions across 9 topics
+• Expanded curriculum: 72 lessons and 360 guided questions across 9 topics
 
 Fixed:
 • Continued cleanup of localized app copy to avoid mixed German/English flows

@@ -3,6 +3,7 @@ Mathio now gives learners clearer direction after every launch and more depth fo
 New:
 • Next 3 Sessions: your personal plan now shows the next concrete lessons to study
 • Comeback Mission: a gentle 5-question restart when you return after a break
+• Unit Prices: new financial math practice for comparing real deals
 • Percent Change: new everyday math practice for discounts, growth, and loss
 • Word Problems: new algebra practice for translating real situations into equations
 • Related Rates: new calculus practice for classic exam-style rate problems
@@ -14,7 +15,7 @@ New:
 Improved:
 • Clearer learning path guidance on Home
 • Better premium feel with more personalized study flow
-• Expanded curriculum: 71 lessons and 355 guided questions across 9 topics
+• Expanded curriculum: 72 lessons and 360 guided questions across 9 topics
 
 Fixed:
 • Continued cleanup of localized app copy to avoid mixed German/English flows
