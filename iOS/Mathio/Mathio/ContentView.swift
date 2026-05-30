@@ -745,6 +745,7 @@ struct HomeView: View {
     @State private var showPaywall = false
     @State private var showFormulas = false
     @State private var showReview = false
+    @State private var showDailyChallenge = false
 
     private var topics: [Topic] { Curriculum.topics }
     private var learningPaths: [LearningPath] { LearningPath.defaultPaths }
@@ -787,6 +788,7 @@ struct HomeView: View {
                 VStack(alignment: .leading, spacing: 24) {
                     header
                     DailyGoalView(progress: store.correctToday(), goal: settings.dailyGoal)
+                    dailyChallengeCard
                     todayPlanCard
                     momentumCard
                     weeklyRhythmCard
@@ -818,6 +820,9 @@ struct HomeView: View {
             }
             .navigationDestination(isPresented: $showReview) {
                 PracticeView(lesson: reviewLesson(), store: store, isReview: true)
+            }
+            .navigationDestination(isPresented: $showDailyChallenge) {
+                PracticeView(lesson: dailyChallengeLesson(), store: store, isReview: reviewCount > 0)
             }
             .sheet(isPresented: $showStats)    { StatsView(store: store, settings: settings, topics: topics) }
             .sheet(isPresented: $showSettings) { SettingsView(store: store, premiumStore: premiumStore, settings: settings) }
@@ -958,6 +963,80 @@ struct HomeView: View {
             }
         }
         .accessibilityElement(children: .contain)
+    }
+
+    private var dailyChallengeCard: some View {
+        Button {
+            if dailyChallengeRequiresPremium {
+                showPaywall = true
+            } else {
+                showDailyChallenge = true
+            }
+        } label: {
+            Card(padding: 18, background: Palette.heroSurface) {
+                HStack(alignment: .center, spacing: 14) {
+                    ZStack {
+                        Circle().fill(Palette.amber.opacity(0.18)).frame(width: 54, height: 54)
+                        Image(systemName: dailyChallengeIcon)
+                            .font(.system(size: 22, weight: .semibold))
+                            .foregroundStyle(Palette.amber)
+                    }
+                    .accessibilityHidden(true)
+
+                    VStack(alignment: .leading, spacing: 5) {
+                        Text("Daily challenge")
+                            .font(.label)
+                            .foregroundStyle(Palette.heroInkSoft)
+                            .textCase(.uppercase)
+                            .tracking(1.2)
+                        Text(dailyChallengeTitle)
+                            .font(.titleL)
+                            .foregroundStyle(Palette.heroInk)
+                        Text(dailyChallengeSubtitle)
+                            .font(.bodyM)
+                            .foregroundStyle(Palette.heroInkSoft)
+                            .fixedSize(horizontal: false, vertical: true)
+                    }
+                    Spacer(minLength: 0)
+                    Image(systemName: dailyChallengeRequiresPremium ? "lock.fill" : "arrow.right")
+                        .font(.system(size: 15, weight: .semibold))
+                        .foregroundStyle(Palette.ink)
+                        .frame(width: 42, height: 42)
+                        .background(Palette.amber, in: Circle())
+                }
+            }
+        }
+        .buttonStyle(.plain)
+        .accessibilityElement(children: .combine)
+    }
+
+    private var dailyChallengeIcon: String {
+        if reviewCount > 0 { return "arrow.triangle.2.circlepath" }
+        if store.correctToday() >= settings.dailyGoal { return "sparkles" }
+        return "target"
+    }
+
+    private var dailyChallengeTitle: LocalizedStringResource {
+        if reviewCount > 0 { return "Refresh before you forget" }
+        if store.correctToday() >= settings.dailyGoal { return "Bonus round" }
+        return "Finish today's goal"
+    }
+
+    private var dailyChallengeSubtitle: LocalizedStringResource {
+        if reviewCount > 0 {
+            return "\(min(reviewCount, 5)) quick review questions waiting."
+        }
+        let remaining = max(settings.dailyGoal - store.correctToday(), 1)
+        if store.correctToday() >= settings.dailyGoal {
+            return "You hit your goal. Keep the session warm with 5 more questions."
+        }
+        return "\(remaining) correct answers left. Start with a short, focused set."
+    }
+
+    private var dailyChallengeRequiresPremium: Bool {
+        guard reviewCount == 0,
+              let (topic, lesson) = nextUp else { return false }
+        return !premiumStore.isPremium && !lesson.isFree(in: topic)
     }
 
     private var dailyGoalSubtitle: LocalizedStringResource {
@@ -1367,6 +1446,37 @@ struct HomeView: View {
             intro: "Refresh what you've learned.",
             formulas: [],
             questions: qs
+        )
+    }
+
+    /// A short daily entry point: review comes first; otherwise use the next
+    /// adaptive lesson and cap the set so starting never feels heavy.
+    private func dailyChallengeLesson() -> Lesson {
+        if reviewCount > 0 {
+            return Lesson(
+                id: "__daily_review__",
+                title: "Daily challenge",
+                intro: "Refresh what is about to fade.",
+                formulas: [],
+                questions: store.reviewQueue(in: topics, limit: 5)
+            )
+        }
+        guard let (_, lesson) = nextUp else {
+            return Lesson(
+                id: "__daily_mastered__",
+                title: "Daily challenge",
+                intro: "Keep your math rhythm alive.",
+                formulas: [],
+                questions: Array(topics.flatMap { $0.lessons.flatMap(\.questions) }.prefix(5))
+            )
+        }
+        return Lesson(
+            id: "__daily_\(lesson.id)__",
+            title: "Daily challenge",
+            intro: "A short focused set from your next lesson.",
+            visual: lesson.visual,
+            formulas: lesson.formulas,
+            questions: Array(lesson.questions.prefix(5))
         )
     }
 }
