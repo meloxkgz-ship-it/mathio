@@ -2725,6 +2725,15 @@ struct FreeAnswerField: View {
 
 // MARK: - Stats
 
+private struct Achievement: Identifiable {
+    let id: String
+    let title: LocalizedStringResource
+    let subtitle: LocalizedStringResource
+    let icon: String
+    let unlocked: Bool
+    let progress: Double
+}
+
 struct StatsView: View {
     @Bindable var store: Store
     @Bindable var settings: UserSettings
@@ -2767,6 +2776,61 @@ struct StatsView: View {
     private var hasAnyProgress: Bool {
         store.answered.values.contains { $0.attempts > 0 }
     }
+    private var achievements: [Achievement] {
+        [
+            Achievement(
+                id: "first-spark",
+                title: "First spark",
+                subtitle: "Answer one question correctly.",
+                icon: "sparkles",
+                unlocked: totalCorrect >= 1,
+                progress: min(1, Double(totalCorrect))
+            ),
+            Achievement(
+                id: "daily-finisher",
+                title: "Daily finisher",
+                subtitle: "Hit today's daily goal.",
+                icon: "target",
+                unlocked: store.correctToday() >= settings.dailyGoal,
+                progress: min(1, Double(store.correctToday()) / Double(max(settings.dailyGoal, 1)))
+            ),
+            Achievement(
+                id: "three-day-rhythm",
+                title: "Three-day rhythm",
+                subtitle: "Build a 3-day streak.",
+                icon: "flame.fill",
+                unlocked: store.streakDays >= 3,
+                progress: min(1, Double(store.streakDays) / 3.0)
+            ),
+            Achievement(
+                id: "momentum-maker",
+                title: "Momentum maker",
+                subtitle: "Reach 25 correct answers.",
+                icon: "bolt.fill",
+                unlocked: totalCorrect >= 25,
+                progress: min(1, Double(totalCorrect) / 25.0)
+            ),
+            Achievement(
+                id: "halfway-explorer",
+                title: "Halfway explorer",
+                subtitle: "Master 50% of the roadmap.",
+                icon: "map.fill",
+                unlocked: overallMastery >= 0.5,
+                progress: min(1, overallMastery / 0.5)
+            ),
+            Achievement(
+                id: "century-club",
+                title: "Century club",
+                subtitle: "Reach 100 correct answers.",
+                icon: "100.circle.fill",
+                unlocked: totalCorrect >= 100,
+                progress: min(1, Double(totalCorrect) / 100.0)
+            )
+        ]
+    }
+    private var unlockedAchievementCount: Int {
+        achievements.filter(\.unlocked).count
+    }
 
     var body: some View {
         NavigationStack {
@@ -2774,6 +2838,7 @@ struct StatsView: View {
                 VStack(alignment: .leading, spacing: 18) {
                     headerStats
                     forecastCard
+                    achievementsCard
                     activityCard
                     masteryCard
                     if hasAnyProgress, !focusTopics.isEmpty { focusCard }
@@ -2822,6 +2887,54 @@ struct StatsView: View {
                 CalendarHeatmap(activity: store.dailyActivity(), weeks: 12)
             }
         }
+    }
+
+    private var achievementsCard: some View {
+        Card(padding: 16) {
+            VStack(alignment: .leading, spacing: 14) {
+                HStack(alignment: .firstTextBaseline) {
+                    SectionLabel(title: "Achievements")
+                    Spacer()
+                    Text("\(unlockedAchievementCount)/\(achievements.count) unlocked")
+                        .font(.caption)
+                        .foregroundStyle(Palette.inkFaint)
+                }
+
+                ForEach(achievements) { achievement in
+                    achievementRow(achievement)
+                }
+            }
+        }
+        .accessibilityElement(children: .contain)
+    }
+
+    private func achievementRow(_ achievement: Achievement) -> some View {
+        HStack(spacing: 12) {
+            Image(systemName: achievement.unlocked ? "checkmark.seal.fill" : achievement.icon)
+                .font(.system(size: 17, weight: .semibold))
+                .foregroundStyle(achievement.unlocked ? Palette.success : Palette.terracotta)
+                .frame(width: 38, height: 38)
+                .background((achievement.unlocked ? Palette.success : Palette.terracotta).opacity(0.14), in: Circle())
+            VStack(alignment: .leading, spacing: 5) {
+                HStack {
+                    Text(achievement.title)
+                        .font(.bodyM.weight(.semibold))
+                        .foregroundStyle(Palette.ink)
+                    Spacer()
+                    Text(achievement.unlocked ? "Unlocked" : "\(Int(achievement.progress * 100))%")
+                        .font(.caption)
+                        .foregroundStyle(achievement.unlocked ? Palette.success : Palette.inkFaint)
+                }
+                Text(achievement.subtitle)
+                    .font(.caption)
+                    .foregroundStyle(Palette.inkSoft)
+                ProgressBar(progress: achievement.progress,
+                            color: achievement.unlocked ? Palette.success : Palette.terracotta,
+                            height: 4)
+            }
+        }
+        .padding(12)
+        .background(Palette.surfaceMuted, in: RoundedRectangle(cornerRadius: 12, style: .continuous))
     }
 
     private var forecastCard: some View {
