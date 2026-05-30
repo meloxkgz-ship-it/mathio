@@ -53,7 +53,7 @@ Reasoning:
 ## Promotional Text (170 max — editable without review)
 
 ```
-New: Box Plots, Roadmap Phases, Completing the Square, and 78 lessons.
+New: Review Forecast, Box Plots, Roadmap Phases, and 78 lessons.
 ```
 **73 / 170** — highlights current catalog size, retention improvements, and new exam-prep content.
 
@@ -137,6 +137,7 @@ Mathio now gives learners clearer direction after every launch and more depth ac
 New:
 • Next 3 Sessions: your personal plan now shows the next concrete lessons to study
 • 7-Day Focus: a clearer weekly habit card turns your recommended path into seven small sessions
+• Review Forecast: Home now shows what is due today, tomorrow, and in the next 7 days
 • Roadmap Phases: Progress now groups the curriculum into Foundations, Exam Core, and Extension tracks
 • Rich Path Previews: guided paths now show duration, lesson count, and the next concrete lesson
 • Session Insight: every completed session now shows accuracy, misses, mode, and the next best step

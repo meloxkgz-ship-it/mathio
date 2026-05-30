@@ -822,6 +822,15 @@ struct HomeView: View {
     private var weeklyCorrect: Int { weeklyActivity.reduce(0) { $0 + $1.correct } }
     private var weeklyTarget: Int { max(settings.dailyGoal * 7, 1) }
     private var weeklyProgress: Double { min(1, Double(weeklyCorrect) / Double(weeklyTarget)) }
+    private var hasReviewHistory: Bool {
+        store.answered.values.contains { $0.attempts > 0 }
+    }
+    private var reviewsDueTomorrow: Int {
+        reviewDueCount(daysAhead: 1)
+    }
+    private var reviewsDueThisWeek: Int {
+        reviewDueCount(daysAhead: 7)
+    }
     private var sevenDayFocusLessons: [Lesson] {
         let unfinished = recommendedPath.lessons.filter { store.mastery(for: $0) < 1.0 }
         let pool = unfinished.isEmpty ? recommendedPath.lessons : unfinished
@@ -876,6 +885,7 @@ struct HomeView: View {
                     todayPlanCard
                     momentumCard
                     weeklyRhythmCard
+                    reviewForecastCard
                     sevenDayFocusCard
                     nextUpCard
                     personalPlanCard
@@ -1443,6 +1453,97 @@ struct HomeView: View {
         guard correct > 0 else { return 4 }
         let pct = min(1, Double(correct) / Double(max(settings.dailyGoal, 1)))
         return 10 + CGFloat(pct) * 32
+    }
+
+    private var reviewForecastCard: some View {
+        Card(padding: 16, background: Palette.surface) {
+            VStack(alignment: .leading, spacing: 14) {
+                HStack(alignment: .top, spacing: 12) {
+                    Image(systemName: "clock.arrow.circlepath")
+                        .font(.system(size: 16, weight: .semibold))
+                        .foregroundStyle(Palette.terracotta)
+                        .frame(width: 34, height: 34)
+                        .background(Palette.terracottaSoft, in: Circle())
+                        .accessibilityHidden(true)
+
+                    VStack(alignment: .leading, spacing: 3) {
+                        Text("Review forecast")
+                            .font(.titleM)
+                            .foregroundStyle(Palette.ink)
+                        Text(reviewForecastSubtitle)
+                            .font(.bodyM)
+                            .foregroundStyle(Palette.inkSoft)
+                            .fixedSize(horizontal: false, vertical: true)
+                    }
+                }
+
+                HStack(spacing: 8) {
+                    forecastPill(value: "\(reviewCount)", label: "Today", active: reviewCount > 0)
+                    forecastPill(value: "\(reviewsDueTomorrow)", label: "Tomorrow", active: reviewsDueTomorrow > 0)
+                    forecastPill(value: "\(reviewsDueThisWeek)", label: "7 days", active: reviewsDueThisWeek > 0)
+                }
+
+                if reviewCount > 0 {
+                    Button { showReview = true } label: {
+                        HStack {
+                            Text("Start due review")
+                                .font(.bodyM.weight(.semibold))
+                                .foregroundStyle(Palette.ink)
+                            Spacer()
+                            Image(systemName: "arrow.right")
+                                .font(.system(size: 13, weight: .semibold))
+                                .foregroundStyle(Palette.inkFaint)
+                        }
+                        .padding(12)
+                        .background(Palette.surfaceMuted, in: RoundedRectangle(cornerRadius: 12, style: .continuous))
+                    }
+                    .buttonStyle(.plain)
+                }
+            }
+        }
+        .accessibilityElement(children: .combine)
+        .accessibilityLabel(Text("Review forecast. \(reviewCount) due today, \(reviewsDueTomorrow) tomorrow, \(reviewsDueThisWeek) in seven days."))
+    }
+
+    private var reviewForecastSubtitle: LocalizedStringResource {
+        if reviewCount > 0 {
+            return "Clear today's due questions before they fade."
+        }
+        if reviewsDueTomorrow > 0 {
+            return "\(reviewsDueTomorrow) questions are scheduled for tomorrow."
+        }
+        if reviewsDueThisWeek > 0 {
+            return "\(reviewsDueThisWeek) questions are coming back this week."
+        }
+        if hasReviewHistory {
+            return "No reviews are due yet. New lessons will seed the next cycle."
+        }
+        return "Answer a few questions to start your personal review cycle."
+    }
+
+    private func forecastPill(value: String, label: LocalizedStringResource, active: Bool) -> some View {
+        VStack(spacing: 3) {
+            Text(value)
+                .font(.titleM)
+                .foregroundStyle(active ? Palette.ink : Palette.inkSoft)
+                .lineLimit(1)
+                .minimumScaleFactor(0.75)
+            Text(label)
+                .font(.caption)
+                .foregroundStyle(Palette.inkFaint)
+                .lineLimit(1)
+                .minimumScaleFactor(0.8)
+        }
+        .frame(maxWidth: .infinity)
+        .padding(.vertical, 10)
+        .background(active ? Palette.amberSoft : Palette.surfaceMuted,
+                    in: RoundedRectangle(cornerRadius: 12, style: .continuous))
+    }
+
+    private func reviewDueCount(daysAhead: Int) -> Int {
+        let calendar = Calendar.current
+        guard let deadline = calendar.date(byAdding: .day, value: daysAhead, to: .now) else { return 0 }
+        return store.reviewDueCount(in: topics, after: .now, through: deadline)
     }
 
     private var sevenDayFocusCard: some View {

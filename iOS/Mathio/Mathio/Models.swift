@@ -440,6 +440,19 @@ final class Store {
         .map(\.0)
     }
 
+    /// Count attempted questions that will become due in a future window.
+    /// Used for the home review forecast so learners can see why returning
+    /// tomorrow matters before they forget.
+    func reviewDueCount(in topics: [Topic], after start: Date, through deadline: Date) -> Int {
+        let all = topics.flatMap { $0.lessons.flatMap(\.questions) }
+        return all.reduce(0) { total, question in
+            guard let entry = answered[question.id], entry.attempts > 0,
+                  entry.nextReviewAt > start,
+                  entry.nextReviewAt <= deadline else { return total }
+            return total + 1
+        }
+    }
+
     // MARK: Daily goal progress
 
     /// Number of correct answers today.

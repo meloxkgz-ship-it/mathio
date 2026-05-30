@@ -21,6 +21,7 @@ import sys
 # triggers a hard fail so we never silently leave English in the bundle.
 PROSE: dict[str, str] = {
     # Home and review UX
+    "7 days": "7 Tage",
     "7-day focus": "7-Tage-Fokus",
     "A quick rating helps more learners find it.": "Eine kurze Bewertung hilft mehr Lernenden, Mathio zu finden.",
     "Accuracy": "Trefferquote",
@@ -48,7 +49,10 @@ PROSE: dict[str, str] = {
     "Not now": "Nicht jetzt",
     "Rate Mathio": "Mathio bewerten",
     "Reminder time": "Erinnerungszeit",
+    "Review forecast": "Review-Vorschau",
     "Seven small sessions from your recommended path.": "Sieben kleine Sessions aus deinem empfohlenen Pfad.",
+    "Start due review": "Fälliges Review starten",
+    "Tomorrow": "Morgen",
     "Missed": "Verpasst",
     "Session insight": "Session-Auswertung",
 
