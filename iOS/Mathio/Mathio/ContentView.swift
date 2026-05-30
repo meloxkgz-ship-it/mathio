@@ -4294,6 +4294,9 @@ struct StatsView: View {
     private var unlockedAchievementCount: Int {
         achievements.filter(\.unlocked).count
     }
+    private var nextAchievement: Achievement? {
+        achievements.first { !$0.unlocked }
+    }
     private var roadmapPhases: [RoadmapPhase] {
         [
             phase(
@@ -4467,12 +4470,50 @@ struct StatsView: View {
                         .foregroundStyle(Palette.inkFaint)
                 }
 
+                if let nextAchievement {
+                    nextAchievementCallout(nextAchievement)
+                }
+
                 ForEach(achievements) { achievement in
                     achievementRow(achievement)
                 }
             }
         }
         .accessibilityElement(children: .contain)
+    }
+
+    private func nextAchievementCallout(_ achievement: Achievement) -> some View {
+        HStack(spacing: 12) {
+            Image(systemName: achievement.icon)
+                .font(.system(size: 18, weight: .semibold))
+                .foregroundStyle(Palette.amber)
+                .frame(width: 40, height: 40)
+                .background(Palette.amberSoft, in: Circle())
+            VStack(alignment: .leading, spacing: 6) {
+                Text("Next goal")
+                    .font(.caption)
+                    .foregroundStyle(Palette.inkFaint)
+                    .textCase(.uppercase)
+                    .tracking(1.0)
+                Text(achievement.title)
+                    .font(.titleM)
+                    .foregroundStyle(Palette.ink)
+                Text(achievement.subtitle)
+                    .font(.caption)
+                    .foregroundStyle(Palette.inkSoft)
+                ProgressBar(progress: achievement.progress, color: Palette.amber, height: 5)
+            }
+            VStack(alignment: .trailing, spacing: 2) {
+                Text("\(Int((achievement.progress * 100).rounded()))%")
+                    .font(.titleM)
+                    .foregroundStyle(Palette.ink)
+                Text("complete")
+                    .font(.caption)
+                    .foregroundStyle(Palette.inkFaint)
+            }
+        }
+        .padding(12)
+        .background(Palette.surfaceMuted, in: RoundedRectangle(cornerRadius: 12, style: .continuous))
     }
 
     private func achievementRow(_ achievement: Achievement) -> some View {

@@ -68,6 +68,7 @@ PROSE: dict[str, str] = {
     "Mixed practice across core topics": "Gemischtes Training zu Kernthemen",
     "Money Math": "Finanzmathe",
     "Next focus": "Nächster Fokus",
+    "Next goal": "Nächstes Ziel",
     "Next study targets": "Nächste Lernziele",
     "Not now": "Nicht jetzt",
     "One best next step every time you open Mathio": "Ein bester nächster Schritt bei jedem Öffnen von Mathio",
@@ -198,6 +199,7 @@ PROSE: dict[str, str] = {
     "Which expression models 5% growth for t years from 200?":
         "Welcher Ausdruck modelliert 5 % Wachstum über t Jahre ausgehend von 200?",
     "x-intercept": "x-Achsenabschnitt",
+    "complete": "abgeschlossen",
     "All values equal the mean": "Alle Werte entsprechen dem Mittelwert",
     "Always check in the original equation": "Prüfe immer in der ursprünglichen Gleichung",
     "2 is not one of the payouts": "2 ist keiner der möglichen Auszahlungswerte",
