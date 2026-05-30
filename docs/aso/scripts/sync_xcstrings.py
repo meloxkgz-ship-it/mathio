@@ -33,12 +33,17 @@ PROSE: dict[str, str] = {
         "88 Lektionen in Algebra, Analysis, Geometrie, Statistik, Finanzmathe und mehr",
     "89 lessons across algebra, calculus, geometry, statistics, finance, and more":
         "89 Lektionen in Algebra, Analysis, Geometrie, Statistik, Finanzmathe und mehr",
-    "95 lessons across algebra, calculus, geometry, statistics, finance, exam review, and more":
-        "95 Lektionen in Algebra, Analysis, Geometrie, Statistik, Finanzmathe, Prüfungstraining und mehr",
+    "96 lessons across algebra, calculus, geometry, statistics, finance, exam review, and more":
+        "96 Lektionen in Algebra, Analysis, Geometrie, Statistik, Finanzmathe, Prüfungstraining und mehr",
     "0.8 is greatest": "0,8 ist am größten",
+    "10% is 8 and 5% is half of that.": "10 % sind 8 und 5 % ist die Hälfte davon.",
     "19% is close to 20%": "19 % liegt nahe bei 20 %",
+    "21 is close to 20": "21 liegt nahe bei 20",
+    "25% is one quarter.": "25 % ist ein Viertel.",
+    "48 is close to 50": "48 liegt nahe bei 50",
     "50 and 500 differ by a factor of 10": "50 und 500 unterscheiden sich um den Faktor 10",
     "82 is close to 80": "82 liegt nahe bei 80",
+    "99 is one less than 100.": "99 ist eins weniger als 100.",
     "A length question asks for meters. Which answer can you eliminate immediately?":
         "Eine Längenaufgabe fragt nach Metern. Welche Antwort kannst du sofort ausschließen?",
     "A mismatch by a factor of 10 is a warning sign.": "Eine Abweichung um den Faktor 10 ist ein Warnzeichen.",
@@ -96,7 +101,7 @@ PROSE: dict[str, str] = {
     "A variable names the unknown clearly.": "Eine Variable benennt die Unbekannte klar.",
     "Add, then divide by 3.": "Addiere und teile dann durch 3.",
     "Algebra Sprint": "Algebra-Sprint",
-    "All 95 lessons and 475 guided questions": "Alle 95 Lektionen und 475 geführten Fragen",
+    "All 96 lessons and 480 guided questions": "Alle 96 Lektionen und 480 geführten Fragen",
     "An extreme value changes the sum": "Ein Extremwert verändert die Summe",
     "Active days": "Aktive Tage",
     "Aim for three short practice days before chasing longer sessions.":
@@ -104,6 +109,9 @@ PROSE: dict[str, str] = {
     "Answers": "Antworten",
     "Balanced steps keep an equation true.": "Ausgeglichene Schritte halten eine Gleichung wahr.",
     "Best next lesson": "Beste nächste Lektion",
+    "Break awkward products into friendly chunks.": "Zerlege unhandliche Produkte in einfache Teilstücke.",
+    "Build fast number sense for exam moments: split numbers, use friendly percentages, and check answers without reaching for a calculator.":
+        "Baue schnelles Zahlgefühl für Prüfungsmomente auf: Zahlen zerlegen, einfache Prozente nutzen und Antworten prüfen, ohne zum Rechner zu greifen.",
     "Change in y divided by change in x.": "Änderung in y geteilt durch Änderung in x.",
     "Changing the sum shifts the mean": "Eine veränderte Summe verschiebt den Mittelwert",
     "Check 6² + 8².": "Prüfe 6² + 8².",
@@ -121,6 +129,7 @@ PROSE: dict[str, str] = {
         "Prüfungen fragen selten nur ein Thema ab. Dieser Sprint mischt Brüche, Prozente, Gleichungen und Daten, damit du ruhig zwischen Fähigkeiten wechseln kannst.",
     "Exam Review": "Prüfungstraining",
     "Exam sprinter": "Prüfungs-Sprinter",
+    "Estimate 48 · 21. Which answer is closest?": "Schätze 48 · 21. Welche Antwort liegt am nächsten?",
     "Favorable outcomes = 3": "Günstige Ergebnisse = 3",
     "Find two numbers that multiply to 6 and add to 5.": "Finde zwei Zahlen, die 6 ergeben, wenn man sie multipliziert, und 5, wenn man sie addiert.",
     "Fixed cost plus rate times miles.": "Grundgebühr plus Preis pro Meile mal Meilen.",
@@ -132,13 +141,16 @@ PROSE: dict[str, str] = {
     "Larger samples reduce random variation": "Größere Stichproben verringern zufällige Schwankungen",
     "Largest minus smallest.": "Größter Wert minus kleinster Wert.",
     "List HH, HT, TH, TT.": "Liste KK, KZ, ZK, ZZ auf.",
+    "Many percentages are easier after finding 10%.": "Viele Prozente sind leichter, nachdem du 10 % gefunden hast.",
     "Many word problems combine a starting fee with a repeated rate.": "Viele Textaufgaben verbinden eine Grundgebühr mit einem wiederholten Preis.",
+    "Mental Math Sprint": "Kopfrechnen-Sprint",
     "Mixed Foundations": "Gemischte Grundlagen",
     "Mixed sprints & finals prep": "Gemischte Sprints & Prüfungsvorbereitung",
     "Mixed sprints and finals prep": "Gemischte Sprints und Prüfungsvorbereitung",
     "Multiply length, width, and height.": "Multipliziere Länge, Breite und Höhe.",
     "Only HH has two heads": "Nur KK hat zweimal Kopf",
     "P(red) = 3/5": "P(rot) = 3/5",
+    "Percent shortcut": "Prozent-Abkürzung",
     "Practice reading data, choosing summaries, and making probability decisions under time pressure.":
         "Übe, Daten zu lesen, passende Kennzahlen zu wählen und Wahrscheinlichkeiten unter Zeitdruck zu entscheiden.",
     "Probability": "Wahrscheinlichkeit",
@@ -147,9 +159,12 @@ PROSE: dict[str, str] = {
     "Review the geometry facts that show up again and again: area, angles, circles, volume, and distance.":
         "Wiederhole die Geometrie-Fakten, die immer wieder vorkommen: Fläche, Winkel, Kreise, Volumen und Abstand.",
     "Reviews soon": "Reviews bald",
+    "Round 19 up, then subtract one group of 6.": "Runde 19 auf und ziehe dann eine 6er-Gruppe ab.",
+    "Round to 50 · 20.": "Runde auf 50 · 20.",
     "Slope": "Steigung",
     "Slope measures vertical change per horizontal change.": "Die Steigung misst die vertikale Änderung pro horizontaler Änderung.",
     "Small samples swing more easily.": "Kleine Stichproben schwanken leichter.",
+    "Split numbers": "Zahlen zerlegen",
     "So the slope is 4": "Also ist die Steigung 4",
     "Solve: 2(x − 3) = 14.": "Löse: 2(x − 3) = 14.",
     "Solve: 3x + 4 = 19.": "Löse: 3x + 4 = 19.",
@@ -177,6 +192,8 @@ PROSE: dict[str, str] = {
     "Triangle area": "Dreiecksfläche",
     "True or false: a larger sample is usually more reliable than a very small sample.":
         "Richtig oder falsch: Eine größere Stichprobe ist meistens verlässlicher als eine sehr kleine Stichprobe.",
+    "True or false: 9 · 99 can be found as 9 · 100 − 9.":
+        "Richtig oder falsch: 9 · 99 kann man als 9 · 100 − 9 berechnen.",
     "True or false: a right triangle with legs 6 and 8 has hypotenuse 10.":
         "Richtig oder falsch: Ein rechtwinkliges Dreieck mit Katheten 6 und 8 hat Hypotenuse 10.",
     "True or false: defining a variable can make a word problem easier to solve.":
@@ -192,7 +209,10 @@ PROSE: dict[str, str] = {
     "Use consistent units before multiplying.": "Nutze einheitliche Einheiten, bevor du multiplizierst.",
     "Use correct / total.": "Nutze richtig / gesamt.",
     "Variables turn unknowns into equation pieces": "Variablen machen Unbekannte zu Teilen einer Gleichung",
+    "What is 15% of 80?": "Was sind 15 % von 80?",
+    "What is 25% of 64?": "Was sind 25 % von 64?",
     "What is the slope through (1, 2) and (3, 8)?": "Wie groß ist die Steigung durch (1, 2) und (3, 8)?",
+    "Which is the fastest mental split for 19 · 6?": "Welche Zerlegung ist für 19 · 6 im Kopf am schnellsten?",
     "Which equation matches: 4 fewer than three times x is 11?": "Welche Gleichung passt zu: 4 weniger als dreimal x ist 11?",
     "Which expression factors x² + 5x + 6?": "Welcher Ausdruck faktorisiert x² + 5x + 6?",
     "Which statistic is most affected by one extreme outlier?": "Welche Kennzahl wird am stärksten von einem extremen Ausreißer beeinflusst?",

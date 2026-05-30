@@ -4196,6 +4196,40 @@
         }
       }
     },
+    "1,000": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1,000"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1,000"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1,000"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1,000"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1,000"
+          }
+        }
+      }
+    },
     "1.10 · 0.90 = 0.99": {
       "localizations": {
         "de": {
@@ -4670,6 +4704,142 @@
           "stringUnit": {
             "state": "translated",
             "value": "10 · 0.2 = 2"
+          }
+        }
+      }
+    },
+    "10 · 19 + 6": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "10 · 19 + 6"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "10 · 19 + 6"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "10 · 19 + 6"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "10 · 19 + 6"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "10 · 19 + 6"
+          }
+        }
+      }
+    },
+    "10% is 8 and 5% is half of that.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "10 % sind 8 und 5 % ist die Hälfte davon."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El 10% es 8 y el 5% es la mitad."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "10 % équivaut à 8 et 5 % équivaut à la moitié de cela."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il 10% è 8 e il 5% è la metà."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "10% é 8 e 5% é metade disso."
+          }
+        }
+      }
+    },
+    "10% of 80 = 8": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "10% of 80 = 8"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "10% de 80 = 8"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "10% de 80 = 8"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "10% di 80 = 8"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "10% de 80 = 8"
+          }
+        }
+      }
+    },
+    "10,000": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "10,000"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "10,000"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "10,000"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "10,000"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "10,000"
           }
         }
       }
@@ -5664,6 +5834,40 @@
         }
       }
     },
+    "120 − 6 = 114": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "120 − 6 = 114"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "120 − 6 = 114"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "120 − 6 = 114"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "120 − 6 = 114"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "120 − 6 = 114"
+          }
+        }
+      }
+    },
     "1200 − 950 = 250": {
       "localizations": {
         "de": {
@@ -6070,6 +6274,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "15% = 0,15"
+          }
+        }
+      }
+    },
+    "15% = 12": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "15% = 12"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "15% = 12"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "15% = 12"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "15% = 12"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "15% = 12"
           }
         }
       }
@@ -6512,6 +6750,74 @@
           "stringUnit": {
             "state": "translated",
             "value": "180° − 50° − 60° = 70°"
+          }
+        }
+      }
+    },
+    "19 + 6": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "19 + 6"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "19 + 6"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "19 + 6"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "19 + 6"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "19 + 6"
+          }
+        }
+      }
+    },
+    "19 · 6 = (20 − 1) · 6": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "19 · 6 = (20 − 1) · 6"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "19 · 6 = (20 − 1) · 6"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "19 · 6 = (20 − 1) · 6"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "19 · 6 = (20 − 1) · 6"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "19 · 6 = (20 − 1) · 6"
           }
         }
       }
@@ -7882,6 +8188,74 @@
         }
       }
     },
+    "20 · 6 = 120": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "20 · 6 = 120"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "20 · 6 = 120"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "20 · 6 = 120"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "20 · 6 = 120"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "20 · 6 = 120"
+          }
+        }
+      }
+    },
+    "20 · 6 − 6": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "20 · 6 − 6"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "20 · 6 − 6"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "20 · 6 − 6"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "20 · 6 − 6"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "20 · 6 − 6"
+          }
+        }
+      }
+    },
     "20 − 4 + 1": {
       "localizations": {
         "de": {
@@ -8531,6 +8905,40 @@
         }
       }
     },
+    "21 is close to 20": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "21 liegt nahe bei 20"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "21 está cerca de 20"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "21 est proche de 20"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "21 è vicino a 20"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "21 está perto de 20"
+          }
+        }
+      }
+    },
     "21-Day Functions Bootcamp": {
       "extractionState": "manual",
       "localizations": {
@@ -8873,6 +9281,74 @@
         }
       }
     },
+    "25% = 1/4": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "25% = 1/4"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "25% = 1/4"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "25% = 1/4"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "25% = 1/4"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "25% = 1/4"
+          }
+        }
+      }
+    },
+    "25% is one quarter.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "25 % ist ein Viertel."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El 25% es un cuarto."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "25%, c'est un quart."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il 25% è un quarto."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "25% é um quarto."
+          }
+        }
+      }
+    },
     "25% loss leaves 75%.": {
       "localizations": {
         "de": {
@@ -8938,6 +9414,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "25% de 80 = ?"
+          }
+        }
+      }
+    },
+    "250": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "250"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "250"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "250"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "250"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "250"
           }
         }
       }
@@ -12256,6 +12766,40 @@
         }
       }
     },
+    "48 is close to 50": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "48 liegt nahe bei 50"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "48 está cerca de 50"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "48 est proche de 50"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "48 è vicino a 50"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "48 está perto de 50"
+          }
+        }
+      }
+    },
     "49 < 50 < 64": {
       "localizations": {
         "de": {
@@ -12903,6 +13447,40 @@
         }
       }
     },
+    "5% of 80 = 4": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "5% of 80 = 4"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "5% de 80 = 4"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "5% de 80 = 4"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "5% di 80 = 4"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "5% de 80 = 4"
+          }
+        }
+      }
+    },
     "5(200)^t": {
       "localizations": {
         "de": {
@@ -13139,6 +13717,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "50 · 1,10 = 55"
+          }
+        }
+      }
+    },
+    "50 · 20 = 1,000": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "50 · 20 = 1,000"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "50 · 20 = 1,000"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "50 · 20 = 1,000"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "50 · 20 = 1,000"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "50 · 20 = 1,000"
           }
         }
       }
@@ -14306,6 +14918,40 @@
         }
       }
     },
+    "64 / 4 = 16": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "64 / 4 = 16"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "64 / 4 = 16"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "64 / 4 = 16"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "64 / 4 = 16"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "64 / 4 = 16"
+          }
+        }
+      }
+    },
     "64% + 4% = 68%": {
       "extractionState": "manual",
       "localizations": {
@@ -14474,6 +15120,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "6x/3x = (3x·2)/(3x)"
+          }
+        }
+      }
+    },
+    "6² + 19": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "6² + 19"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "6² + 19"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "6² + 19"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "6² + 19"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "6² + 19"
           }
         }
       }
@@ -16331,6 +17011,40 @@
         }
       }
     },
+    "9 · 99 = 9 · 100 − 9": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "9 · 99 = 9 · 100 − 9"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "9 · 99 = 9 · 100 − 9"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "9 · 99 = 9 · 100 − 9"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "9 · 99 = 9 · 100 − 9"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "9 · 99 = 9 · 100 − 9"
+          }
+        }
+      }
+    },
     "90% of 20 ≈ 18": {
       "localizations": {
         "de": {
@@ -16497,6 +17211,108 @@
           "stringUnit": {
             "state": "translated",
             "value": "95 aulas de álgebra, cálculo, geometria, estatística, finanças, revisão de exames e muito mais"
+          }
+        }
+      }
+    },
+    "96 lessons across algebra, calculus, geometry, statistics, finance, exam review, and more": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "96 Lektionen in Algebra, Analysis, Geometrie, Statistik, Finanzmathe, Prüfungstraining und mehr"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "96 lecciones de álgebra, cálculo, geometría, estadística, finanzas, revisión de exámenes y más"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "96 leçons sur l'algèbre, le calcul, la géométrie, les statistiques, la finance, la révision des examens et bien plus encore"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "96 lezioni di algebra, calcolo infinitesimale, geometria, statistica, finanza, revisione degli esami e altro ancora"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "96 aulas de álgebra, cálculo, geometria, estatística, finanças, revisão de exames e muito mais"
+          }
+        }
+      }
+    },
+    "99 = 100 − 1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "99 = 100 − 1"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "99 = 100 − 1"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "99 = 100 − 1"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "99 = 100 − 1"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "99 = 100 − 1"
+          }
+        }
+      }
+    },
+    "99 is one less than 100.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "99 ist eins weniger als 100."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "99 es uno menos que 100."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "99 est un de moins que 100."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "99 è uno in meno di 100."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "99 é um a menos que 100."
           }
         }
       }
@@ -25933,6 +26749,40 @@
         }
       }
     },
+    "All 96 lessons and 480 guided questions": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alle 96 Lektionen und 480 geführten Fragen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Las 96 lecciones y 480 preguntas guiadas."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les 96 leçons et 480 questions guidées"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tutte le 96 lezioni e 480 domande guidate"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Todas as 96 lições e 480 perguntas guiadas"
+          }
+        }
+      }
+    },
     "All entries to zero": {
       "localizations": {
         "de": {
@@ -29959,6 +30809,40 @@
         }
       }
     },
+    "Break awkward products into friendly chunks.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zerlege unhandliche Produkte in einfache Teilstücke."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Divida los productos incómodos en trozos amigables."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cassez les produits difficiles en morceaux conviviaux."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Suddividi i prodotti scomodi in pezzi amichevoli."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Divida produtos estranhos em pedaços amigáveis."
+          }
+        }
+      }
+    },
     "Break the L-shape into rectangles": {
       "extractionState": "manual",
       "localizations": {
@@ -30263,6 +31147,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Crie uma semana inteira de sessões práticas curtas."
+          }
+        }
+      }
+    },
+    "Build fast number sense for exam moments: split numbers, use friendly percentages, and check answers without reaching for a calculator.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Baue schnelles Zahlgefühl für Prüfungsmomente auf: Zahlen zerlegen, einfache Prozente nutzen und Antworten prüfen, ohne zum Rechner zu greifen."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Desarrolle un rápido sentido numérico para los momentos de exámenes: divida números, use porcentajes amigables y verifique las respuestas sin tener que usar una calculadora."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Développez un sens rapide des nombres pour les moments d'examen : divisez les nombres, utilisez des pourcentages conviviaux et vérifiez les réponses sans avoir recours à une calculatrice."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sviluppa un rapido senso dei numeri per i momenti dell'esame: dividi i numeri, usa percentuali semplici e controlla le risposte senza prendere la calcolatrice."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Desenvolva um senso numérico rápido para os momentos do exame: divida os números, use porcentagens amigáveis ​​e verifique as respostas sem precisar usar uma calculadora."
           }
         }
       }
@@ -40953,6 +41871,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Triângulo equilátero com lado 2. Área?"
+          }
+        }
+      }
+    },
+    "Estimate 48 · 21. Which answer is closest?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schätze 48 · 21. Welche Antwort liegt am nächsten?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Estima 48 · 21. ¿Qué respuesta es la más cercana?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Devis 48 · 21. Quelle réponse est la plus proche ?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stima 48 · 21. Qual è la risposta più vicina?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Estimativa 48 · 21. Qual resposta é mais próxima?"
           }
         }
       }
@@ -55904,6 +56856,40 @@
         }
       }
     },
+    "Many percentages are easier after finding 10%.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Viele Prozente sind leichter, nachdem du 10 % gefunden hast."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Muchos porcentajes son más fáciles después de encontrar el 10%."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "De nombreux pourcentages sont plus faciles après avoir trouvé 10 %."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Molte percentuali sono più facili dopo aver trovato il 10%."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Muitas porcentagens são mais fáceis depois de encontrar 10%."
+          }
+        }
+      }
+    },
     "Many real-world problems combine a starting cost with a repeated cost.": {
       "extractionState": "manual",
       "localizations": {
@@ -57062,6 +58048,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Plano de memória"
+          }
+        }
+      }
+    },
+    "Mental Math Sprint": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kopfrechnen-Sprint"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sprint de matemáticas mentales"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sprint de calcul mental"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sprint di matematica mentale"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sprint de matemática mental"
           }
         }
       }
@@ -65159,6 +66179,40 @@
         }
       }
     },
+    "Percent shortcut": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prozent-Abkürzung"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Atajo de porcentaje"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Raccourci en pourcentage"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scorciatoia percentuale"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Atalho de porcentagem"
+          }
+        }
+      }
+    },
     "Percent to factor": {
       "localizations": {
         "de": {
@@ -72400,6 +73454,40 @@
         }
       }
     },
+    "Round 19 up, then subtract one group of 6.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Runde 19 auf und ziehe dann eine 6er-Gruppe ab."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Redondea 19 hacia arriba y luego resta un grupo de 6."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arrondissez 19, puis soustrayez un groupe de 6."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arrotonda 19 per eccesso, quindi sottrai un gruppo di 6."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arredonde 19 para cima e subtraia um grupo de 6."
+          }
+        }
+      }
+    },
     "Round both numbers slightly.": {
       "localizations": {
         "de": {
@@ -72430,6 +73518,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Arredonde ligeiramente ambos os números."
+          }
+        }
+      }
+    },
+    "Round to 50 · 20.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Runde auf 50 · 20."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Redondear a 50 · 20."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arrondir à 50 · 20."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arrotondare a 50 · 20."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arredonde para 50 · 20."
           }
         }
       }
@@ -78125,6 +79247,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Split into x − 2 = 5 and x − 2 = −5."
+          }
+        }
+      }
+    },
+    "Split numbers": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zahlen zerlegen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "números divididos"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Diviser les numéros"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Numeri divisi"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dividir números"
           }
         }
       }
@@ -89488,6 +90644,40 @@
         }
       }
     },
+    "True or false: 9 · 99 can be found as 9 · 100 − 9.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Richtig oder falsch: 9 · 99 kann man als 9 · 100 − 9 berechnen."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verdadero o falso: 9 · 99 se puede encontrar como 9 · 100 − 9."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vrai ou faux : 9 · 99 peut être trouvé comme 9 · 100 − 9."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vero o falso: 9 · 99 può essere trovato come 9 · 100 − 9."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verdadeiro ou falso: 9 · 99 pode ser encontrado como 9 · 100 − 9."
+          }
+        }
+      }
+    },
     "True or false: A larger absolute z-score means a value is farther from the mean.": {
       "extractionState": "manual",
       "localizations": {
@@ -96663,6 +97853,40 @@
         }
       }
     },
+    "What is 15% of 80?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Was sind 15 % von 80?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "¿Cuánto es el 15% de 80?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Combien font 15 % de 80 ?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Qual è il 15% di 80?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quanto é 15% de 80?"
+          }
+        }
+      }
+    },
     "What is 20% of 80?": {
       "localizations": {
         "de": {
@@ -96693,6 +97917,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Quanto é 20% de 80?"
+          }
+        }
+      }
+    },
+    "What is 25% of 64?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Was sind 25 % von 64?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "¿Cuánto es el 25% de 64?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Combien font 25 % de 64 ?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Qual è il 25% di 64?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quanto é 25% de 64?"
           }
         }
       }
@@ -98297,6 +99555,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Qual é a derivada de 5x⁴?"
+          }
+        }
+      }
+    },
+    "Which is the fastest mental split for 19 · 6?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Welche Zerlegung ist für 19 · 6 im Kopf am schnellsten?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "¿Cuál es la división mental más rápida para 19 · 6?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quelle est la division mentale la plus rapide pour 19 · 6 ?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Qual è la divisione mentale più veloce per 19 · 6?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Qual é a divisão mental mais rápida para 19 · 6?"
           }
         }
       }

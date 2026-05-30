@@ -5024,6 +5024,64 @@ enum Curriculum {
         ]
     )
 
+    static let examMentalMathSprint = Lesson(
+        id: "exam.mental.sprint",
+        title: "Mental Math Sprint",
+        intro: "Build fast number sense for exam moments: split numbers, use friendly percentages, and check answers without reaching for a calculator.",
+        formulas: [
+            Formula(key: "exam.mental.f1",
+                    name: "Split numbers",
+                    math: "a(b + c) = ab + ac",
+                    explanation: "Break awkward products into friendly chunks."),
+            Formula(key: "exam.mental.f2",
+                    name: "Percent shortcut",
+                    math: "10% first → scale",
+                    explanation: "Many percentages are easier after finding 10%."),
+        ],
+        questions: [
+            Question(id: "exam.mental.q1",
+                     prompt: "What is 15% of 80?",
+                     math: nil,
+                     kind: .freeAnswer(accepted: ["12"]),
+                     hint: "10% is 8 and 5% is half of that.",
+                     solutionSteps: ["10% of 80 = 8", "5% of 80 = 4", "15% = 12"]),
+            Question(id: "exam.mental.q2",
+                     prompt: "Which is the fastest mental split for 19 · 6?",
+                     math: nil,
+                     kind: .multipleChoice(options: [
+                        .init(label: "20 · 6 − 6", math: nil),
+                        .init(label: "10 · 19 + 6", math: nil),
+                        .init(label: "19 + 6", math: nil),
+                        .init(label: "6² + 19", math: nil),
+                     ], correctIndex: 0),
+                     hint: "Round 19 up, then subtract one group of 6.",
+                     solutionSteps: ["19 · 6 = (20 − 1) · 6", "20 · 6 = 120", "120 − 6 = 114"]),
+            Question(id: "exam.mental.q3",
+                     prompt: "Estimate 48 · 21. Which answer is closest?",
+                     math: nil,
+                     kind: .multipleChoice(options: [
+                        .init(label: "1,000", math: nil),
+                        .init(label: "100", math: nil),
+                        .init(label: "10,000", math: nil),
+                        .init(label: "250", math: nil),
+                     ], correctIndex: 0),
+                     hint: "Round to 50 · 20.",
+                     solutionSteps: ["48 is close to 50", "21 is close to 20", "50 · 20 = 1,000"]),
+            Question(id: "exam.mental.q4",
+                     prompt: "What is 25% of 64?",
+                     math: nil,
+                     kind: .freeAnswer(accepted: ["16"]),
+                     hint: "25% is one quarter.",
+                     solutionSteps: ["25% = 1/4", "64 / 4 = 16"]),
+            Question(id: "exam.mental.q5",
+                     prompt: "True or false: 9 · 99 can be found as 9 · 100 − 9.",
+                     math: nil,
+                     kind: .trueFalse(answer: true),
+                     hint: "99 is one less than 100.",
+                     solutionSteps: ["99 = 100 − 1", "9 · 99 = 9 · 100 − 9"]),
+        ]
+    )
+
     // MARK: - All topics
 
     static let topics: [Topic] = [
@@ -5096,6 +5154,7 @@ enum Curriculum {
               subtitle: "Mixed sprints & finals prep",
               icon: "checkmark.seal",
               color: Palette.terracotta,
-              lessons: [examMixedFoundations, examAlgebraSprint, examGeometrySprint, examDataSprint, examWordProblemSprint, examStrategySprint]),
+              lessons: [examMixedFoundations, examAlgebraSprint, examGeometrySprint, examDataSprint, examWordProblemSprint,
+                        examStrategySprint, examMentalMathSprint]),
     ]
 }

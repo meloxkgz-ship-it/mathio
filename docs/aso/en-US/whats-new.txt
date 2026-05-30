@@ -43,7 +43,7 @@ Improved:
 • Achievements now extend into longer-term streak, review, 250-answer, 500-answer, and full-roadmap goals
 • Clearer learning path guidance on Home
 • Better premium feel with more personalized study flow
-• Expanded curriculum: 95 lessons and 475 guided questions across 10 study areas
+• Expanded curriculum: 96 lessons and 480 guided questions across 10 study areas
 
 Fixed:
 • Continued cleanup of localized app copy to avoid mixed German/English flows
