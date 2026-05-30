@@ -52,7 +52,7 @@ Begründung:
 ## Werbetext (170 max — editierbar ohne Review)
 
 ```
-Neu: Satz von Bayes, Erwartungswert und 83 Lektionen.
+Neu: Lerncoach, Satz von Bayes und 83 Lektionen.
 ```
 **113 / 170** — hebt Kataloggröße und neue alltagsnahe Inhalte hervor.
 
@@ -67,7 +67,7 @@ Rotations-Ideen (monatlich tauschen):
 ```
 Mathe. Einfach gemacht.
 
-Mathio ist ein ruhiger, fokussierter Mathe-Trainer für Schule, Hausaufgaben, Prüfungsvorbereitung und Selbststudium. Die App deckt Algebra, Geometrie, Analysis, Trigonometrie, Statistik, Finanzmathematik, Lineare Algebra und Diskrete Mathematik ab. Keine Ablenkung. Keine Bestenlisten. Nur du, klare Erklärungen, Wiederholungen und eine tägliche Serie.
+Mathio ist ein ruhiger, fokussierter Mathe-Trainer für Schule, Hausaufgaben, Prüfungsvorbereitung und Selbststudium. Die App deckt Algebra, Geometrie, Analysis, Trigonometrie, Statistik, Finanzmathematik, Lineare Algebra und Diskrete Mathematik ab. Keine Ablenkung. Keine Bestenlisten. Nur du, ein klarer Lerncoach, Erklärungen, Wiederholungen und eine tägliche Serie.
 
 FÜR WEN IST MATHIO GEEIGNET?
 • Schüler, die strukturiert für Hausaufgaben, Tests, Klausuren oder Abitur üben wollen
@@ -128,6 +128,7 @@ Von Bruchrechnung bis Differentialrechnung. Zwei Minuten täglich genügen.
 ```
 Mathio gibt Lernenden jetzt klarere Richtung und mehr Tiefe für tägliches Üben.
 
+• Neuer Lerncoach: Home empfiehlt die beste nächste Aktion aus Wiederholung, Fehlern, Schwächen, Tagesziel oder Prüfungs-Sprint
 • Neue Lektion: Erwartungswert für langfristige Durchschnitte, faire Spiele und erwarteten Gewinn
 • Neue Lektion: Satz von Bayes für Evidenz, Basisraten und Testergebnisse
 • Neue Lektion: Standardabweichung für Streuung, quadrierte Abweichungen und Stichprobe-vs-Population

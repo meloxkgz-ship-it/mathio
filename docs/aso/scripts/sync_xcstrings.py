@@ -57,6 +57,7 @@ PROSE: dict[str, str] = {
     "Review forecast": "Wiederholungs-Vorschau",
     "Seven small sessions from your recommended path.": "Sieben kleine Sessions aus deinem empfohlenen Pfad.",
     "Start due review": "Fällige Wiederholung starten",
+    "Study coach": "Lerncoach",
     "Answer a few questions to start your personal review cycle.":
         "Beantworte ein paar Fragen, um deinen persönlichen Wiederholungszyklus zu starten.",
     "Every changing variable gets its own rate when you differentiate.":

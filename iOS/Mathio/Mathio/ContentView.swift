@@ -838,6 +838,14 @@ struct HomeView: View {
     @State private var showExamSprint = false
     @State private var showMistakeDrill = false
 
+    private enum StudyCoachAction {
+        case review
+        case mistakes
+        case weakSpot
+        case dailyGoal
+        case examSprint
+    }
+
     private var topics: [Topic] { Curriculum.topics }
     private var learningPaths: [LearningPath] { LearningPath.defaultPaths }
     private var recommendedPath: LearningPath { LearningPath.recommended(for: store.learningProfile) }
@@ -962,6 +970,13 @@ struct HomeView: View {
     private var shouldShowComebackCard: Bool {
         store.correctToday() == 0 && daysSinceLastPractice != nil && totalCorrect > 0
     }
+    private var studyCoachAction: StudyCoachAction {
+        if reviewCount > 0 { return .review }
+        if !mistakeFocus.isEmpty { return .mistakes }
+        if weakSpot != nil { return .weakSpot }
+        if store.correctToday() < settings.dailyGoal { return .dailyGoal }
+        return .examSprint
+    }
 
     /// Set by `PracticeMathIntent` (Siri / Spotlight). Honored once on appear.
     private static let pendingPracticeKey = "mathio.intent.pendingPractice"
@@ -972,6 +987,7 @@ struct HomeView: View {
                 VStack(alignment: .leading, spacing: 24) {
                     header
                     DailyGoalView(progress: store.correctToday(), goal: settings.dailyGoal)
+                    studyCoachCard
                     if shouldShowComebackCard { comebackCard }
                     dailyChallengeCard
                     if weakSpot != nil { weakSpotCard }
@@ -1090,6 +1106,140 @@ struct HomeView: View {
             }
         }
         .buttonStyle(.plain)
+    }
+
+    private var studyCoachCard: some View {
+        Button { startStudyCoachAction() } label: {
+            Card(padding: 18, background: Palette.surface) {
+                HStack(alignment: .center, spacing: 14) {
+                    Image(systemName: studyCoachIcon)
+                        .font(.system(size: 20, weight: .semibold))
+                        .foregroundStyle(studyCoachTint)
+                        .frame(width: 46, height: 46)
+                        .background(studyCoachTint.opacity(0.14), in: Circle())
+                        .accessibilityHidden(true)
+
+                    VStack(alignment: .leading, spacing: 5) {
+                        Text("Study coach")
+                            .font(.label)
+                            .foregroundStyle(Palette.inkFaint)
+                            .textCase(.uppercase)
+                            .tracking(1.2)
+                        Text(studyCoachTitle)
+                            .font(.titleL)
+                            .foregroundStyle(Palette.ink)
+                        Text(studyCoachSubtitle)
+                            .font(.bodyM)
+                            .foregroundStyle(Palette.inkSoft)
+                            .fixedSize(horizontal: false, vertical: true)
+                    }
+
+                    Spacer(minLength: 0)
+
+                    Image(systemName: studyCoachShowsLock ? "lock.fill" : "arrow.right")
+                        .font(.system(size: 14, weight: .semibold))
+                        .foregroundStyle(Palette.ink)
+                        .frame(width: 40, height: 40)
+                        .background(Palette.amberSoft, in: Circle())
+                }
+            }
+        }
+        .buttonStyle(.plain)
+        .accessibilityElement(children: .combine)
+    }
+
+    private var studyCoachIcon: String {
+        switch studyCoachAction {
+        case .review: return "arrow.triangle.2.circlepath"
+        case .mistakes: return "exclamationmark.circle.fill"
+        case .weakSpot: return "scope"
+        case .dailyGoal: return "target"
+        case .examSprint: return "stopwatch.fill"
+        }
+    }
+
+    private var studyCoachTint: Color {
+        switch studyCoachAction {
+        case .review, .mistakes, .examSprint: return Palette.terracotta
+        case .weakSpot: return weakSpot?.0.color ?? Palette.calculus
+        case .dailyGoal: return Palette.calculus
+        }
+    }
+
+    private var studyCoachShowsLock: Bool {
+        switch studyCoachAction {
+        case .examSprint:
+            return !premiumStore.isPremium
+        case .weakSpot:
+            guard let (_, lesson) = weakSpot else { return false }
+            return isLocked(lesson)
+        case .dailyGoal:
+            return dailyChallengeRequiresPremium
+        case .review, .mistakes:
+            return false
+        }
+    }
+
+    private var studyCoachTitle: LocalizedStringResource {
+        switch studyCoachAction {
+        case .review:
+            return "Clear your review queue"
+        case .mistakes:
+            return "Fix recent misses"
+        case .weakSpot:
+            return "Train your weakest spot"
+        case .dailyGoal:
+            return "Hit today's goal"
+        case .examSprint:
+            return "Take an exam sprint"
+        }
+    }
+
+    private var studyCoachSubtitle: LocalizedStringResource {
+        switch studyCoachAction {
+        case .review:
+            return "\(min(reviewCount, 10)) due questions are the fastest win right now."
+        case .mistakes:
+            return "\(mistakeFocus.count) missed questions are ready for a focused repair session."
+        case .weakSpot:
+            if let (_, lesson) = weakSpot {
+                return "\(lesson.title) has the most room to improve."
+            }
+            return "A short focused set will move your progress fastest."
+        case .dailyGoal:
+            let remaining = max(settings.dailyGoal - store.correctToday(), 1)
+            return "\(remaining) correct answers left to finish today."
+        case .examSprint:
+            return "Your goal is done. Keep skills sharp with a mixed mini-test."
+        }
+    }
+
+    private func startStudyCoachAction() {
+        switch studyCoachAction {
+        case .review:
+            showReview = true
+        case .mistakes:
+            showMistakeDrill = true
+        case .weakSpot:
+            guard let (_, lesson) = weakSpot else { return }
+            if isLocked(lesson) {
+                showPaywall = true
+            } else {
+                showWeakSpotDrill = true
+            }
+        case .dailyGoal:
+            if dailyChallengeRequiresPremium {
+                showPaywall = true
+            } else {
+                showDailyChallenge = true
+            }
+        case .examSprint:
+            if premiumStore.isPremium {
+                showExamSprint = true
+            } else {
+                showPaywall = true
+            }
+        }
     }
 
     private var todayPlanCard: some View {
