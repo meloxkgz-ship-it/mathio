@@ -5221,6 +5221,7 @@ struct PaywallView: View {
                     headline
                     if mode == .onboarding { onboardingPlanPreview }
                     audience
+                    if mode != .retention { premiumPlanPreview }
                     premiumValueGrid
                     bullets
                     plans
@@ -5270,8 +5271,8 @@ struct PaywallView: View {
                 Text("Unlock the full roadmap Mathio built from your goal and level check.")
                     .font(.bodyL).foregroundStyle(Palette.inkSoft)
             case .upgrade:
-                Text("Learn math with a full roadmap").font(.displayL).foregroundStyle(Palette.ink)
-                Text("Premium unlocks the complete curriculum, guided paths, and every worked solution.")
+                Text("Keep your weekly plan open").font(.displayL).foregroundStyle(Palette.ink)
+                Text("Premium unlocks every planned lesson, smart reviews, and worked solutions so the next session is always ready.")
                     .font(.bodyL).foregroundStyle(Palette.inkSoft)
             case .retention:
                 Text("Wait — special offer").font(.displayL).foregroundStyle(Palette.ink)
@@ -5311,6 +5312,7 @@ struct PaywallView: View {
                 VStack(spacing: 8) {
                     planPreviewRow("target", "Daily goal", "\(dailyGoal ?? 5) correct answers")
                     planPreviewRow(path.icon, "First track", path.title)
+                    planPreviewRow("calendar.badge.checkmark", "7-day rhythm", "A concrete week of reviews and next lessons.")
                     planPreviewRow("arrow.triangle.2.circlepath", "Review loop", "Questions return before you forget them")
                 }
             }
@@ -5357,6 +5359,68 @@ struct PaywallView: View {
                     in: RoundedRectangle(cornerRadius: 12, style: .continuous))
     }
 
+    private var premiumPlanPreview: some View {
+        Card(padding: 16, background: Palette.surface) {
+            VStack(alignment: .leading, spacing: 14) {
+                HStack(alignment: .top, spacing: 12) {
+                    Image(systemName: "calendar.badge.checkmark")
+                        .font(.system(size: 18, weight: .semibold))
+                        .foregroundStyle(Palette.success)
+                        .frame(width: 42, height: 42)
+                        .background(Palette.success.opacity(0.14), in: Circle())
+                        .accessibilityHidden(true)
+
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text("Plan stays unlocked")
+                            .font(.label)
+                            .foregroundStyle(Palette.inkFaint)
+                            .textCase(.uppercase)
+                            .tracking(1.2)
+                        Text("Your week does not stop at the first free lesson")
+                            .font(.titleM)
+                            .foregroundStyle(Palette.ink)
+                        Text("Premium keeps the next lesson, review timing, and exam practice available whenever the plan asks for it.")
+                            .font(.bodyM)
+                            .foregroundStyle(Palette.inkSoft)
+                            .fixedSize(horizontal: false, vertical: true)
+                    }
+                }
+
+                VStack(spacing: 8) {
+                    premiumPlanRow("map.fill", "Full weekly plan", "Seven planned sessions instead of a locked path")
+                    premiumPlanRow("arrow.triangle.2.circlepath", "Memory loop", "Reviews return on the day they matter")
+                    premiumPlanRow("stopwatch.fill", "Exam sprint", "Mixed practice when the daily goal is done")
+                }
+            }
+        }
+        .accessibilityElement(children: .combine)
+    }
+
+    private func premiumPlanRow(_ icon: String,
+                                _ title: LocalizedStringResource,
+                                _ detail: LocalizedStringResource) -> some View {
+        HStack(alignment: .top, spacing: 10) {
+            Image(systemName: icon)
+                .font(.system(size: 14, weight: .semibold))
+                .foregroundStyle(Palette.terracotta)
+                .frame(width: 24)
+                .accessibilityHidden(true)
+            VStack(alignment: .leading, spacing: 2) {
+                Text(title)
+                    .font(.bodyM.weight(.semibold))
+                    .foregroundStyle(Palette.ink)
+                Text(detail)
+                    .font(.caption)
+                    .foregroundStyle(Palette.inkSoft)
+                    .fixedSize(horizontal: false, vertical: true)
+            }
+            Spacer(minLength: 0)
+        }
+        .padding(10)
+        .background(Palette.surfaceMuted,
+                    in: RoundedRectangle(cornerRadius: 12, style: .continuous))
+    }
+
     private var audience: some View {
         Card(padding: 16, background: Palette.surfaceMuted) {
             VStack(alignment: .leading, spacing: 10) {
@@ -5393,7 +5457,7 @@ struct PaywallView: View {
                 .tracking(1.2)
             LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 10) {
                 valueProof("sparkles", "Study coach", "One best next step every time you open Mathio")
-                valueProof("heart.text.square.fill", "Learning health", "See whether your habit, reviews, and mastery are on track")
+                valueProof("calendar.badge.checkmark", "Weekly plan", "A clear seven-day path from today's level")
                 valueProof("arrow.triangle.2.circlepath", "Smart review", "Questions return before you forget them")
                 valueProof("map.fill", "Full roadmap", "All 89 lessons and 445 guided questions")
             }

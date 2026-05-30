@@ -103074,6 +103074,414 @@
           }
         }
       }
+    },
+    "A clear seven-day path from today's level": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ein klarer Sieben-Tage-Pfad ab deinem heutigen Level"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un camino claro de siete días desde tu nivel actual"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un parcours clair de sept jours depuis ton niveau actuel"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un percorso chiaro di sette giorni dal tuo livello attuale"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Um caminho claro de sete dias a partir do seu nível atual"
+          }
+        }
+      }
+    },
+    "Keep your weekly plan open": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Halte deinen Wochenplan offen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mantén abierto tu plan semanal"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Garde ton plan hebdomadaire ouvert"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mantieni aperto il tuo piano settimanale"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mantenha seu plano semanal aberto"
+          }
+        }
+      }
+    },
+    "Plan stays unlocked": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Plan bleibt freigeschaltet"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El plan sigue desbloqueado"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le plan reste débloqué"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il piano resta sbloccato"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O plano continua desbloqueado"
+          }
+        }
+      }
+    },
+    "Premium keeps the next lesson, review timing, and exam practice available whenever the plan asks for it.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Premium hält die nächste Lektion, Wiederholungszeiten und Prüfungstraining bereit, sobald dein Plan danach fragt."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Premium mantiene disponible la próxima lección, el ritmo de repaso y la práctica de examen cuando el plan lo pide."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Premium garde la prochaine leçon, le rythme de révision et l’entraînement d’examen disponibles quand le plan le demande."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Premium mantiene disponibili la prossima lezione, i tempi di ripasso e la pratica d’esame quando il piano lo richiede."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O Premium mantém a próxima aula, o ritmo de revisão e a prática para provas disponíveis quando o plano pedir."
+          }
+        }
+      }
+    },
+    "Premium unlocks every planned lesson, smart reviews, and worked solutions so the next session is always ready.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Premium schaltet jede geplante Lektion, smarte Wiederholungen und Lösungswege frei, damit die nächste Session immer bereit ist."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Premium desbloquea cada lección planificada, repasos inteligentes y soluciones explicadas para que la próxima sesión esté siempre lista."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Premium débloque chaque leçon planifiée, les révisions intelligentes et les solutions détaillées pour que la prochaine session soit toujours prête."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Premium sblocca ogni lezione pianificata, ripassi intelligenti e soluzioni spiegate, così la prossima sessione è sempre pronta."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O Premium libera cada aula planejada, revisões inteligentes e soluções explicadas para que a próxima sessão esteja sempre pronta."
+          }
+        }
+      }
+    },
+    "Weekly plan": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wochenplan"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Plan semanal"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Plan hebdomadaire"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Piano settimanale"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Plano semanal"
+          }
+        }
+      }
+    },
+    "Your week does not stop at the first free lesson": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deine Woche endet nicht bei der ersten kostenlosen Lektion"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tu semana no se detiene en la primera lección gratis"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ta semaine ne s’arrête pas à la première leçon gratuite"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La tua settimana non si ferma alla prima lezione gratuita"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sua semana não para na primeira aula gratuita"
+          }
+        }
+      }
+    },
+    "Full weekly plan": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vollständiger Wochenplan"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Plan semanal completo"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Plan hebdomadaire complet"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Piano settimanale completo"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Plano semanal completo"
+          }
+        }
+      }
+    },
+    "Seven planned sessions instead of a locked path": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sieben geplante Sessions statt eines gesperrten Pfads"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siete sesiones planificadas en lugar de una ruta bloqueada"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sept séances planifiées au lieu d’un parcours verrouillé"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sette sessioni pianificate invece di un percorso bloccato"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sete sessões planejadas em vez de um caminho bloqueado"
+          }
+        }
+      }
+    },
+    "Memory loop": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gedächtnis-Schleife"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bucle de memoria"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Boucle de mémorisation"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ciclo di memoria"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ciclo de memória"
+          }
+        }
+      }
+    },
+    "Reviews return on the day they matter": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wiederholungen kommen an dem Tag zurück, an dem sie zählen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Los repasos vuelven el día en que importan"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les révisions reviennent le jour où elles comptent"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I ripassi tornano nel giorno in cui contano"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "As revisões voltam no dia em que importam"
+          }
+        }
+      }
+    },
+    "Mixed practice when the daily goal is done": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gemischtes Training, wenn das Tagesziel erledigt ist"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Práctica mixta cuando terminas el objetivo diario"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Exercices mixtes quand l’objectif quotidien est terminé"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pratica mista quando l’obiettivo giornaliero è completato"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prática mista quando a meta diária termina"
+          }
+        }
+      }
     }
   },
   "version": "1.0"
