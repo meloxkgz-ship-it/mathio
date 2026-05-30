@@ -746,11 +746,31 @@ struct HomeView: View {
     @State private var showFormulas = false
     @State private var showReview = false
     @State private var showDailyChallenge = false
+    @State private var showWeakSpotDrill = false
 
     private var topics: [Topic] { Curriculum.topics }
     private var learningPaths: [LearningPath] { LearningPath.defaultPaths }
     private var recommendedPath: LearningPath { LearningPath.recommended(for: store.learningProfile) }
     private var nextUp: (Topic, Lesson)? { store.nextLesson(in: topics, premium: premiumStore.isPremium) }
+    private var weakSpot: (Topic, Lesson)? {
+        let candidates: [(Topic, Lesson, Double)] = topics.flatMap { topic in
+            topic.lessons.map { lesson in
+                (topic, lesson, store.mastery(for: lesson))
+            }
+        }
+        .filter { $0.2 < 1.0 }
+
+        guard !candidates.isEmpty else { return nil }
+        let accessible = candidates.filter { topic, lesson, _ in
+            premiumStore.isPremium || lesson.isFree(in: topic)
+        }
+        let pool = accessible.isEmpty ? candidates : accessible
+        let best = pool.min { lhs, rhs in
+            if lhs.2 == rhs.2 { return lhs.1.questions.count > rhs.1.questions.count }
+            return lhs.2 < rhs.2
+        }!
+        return (best.0, best.1)
+    }
     private var reviewCount: Int { store.reviewQueue(in: topics).count }
     private var lessonCount: Int { topics.reduce(0) { $0 + $1.lessons.count } }
     private var questionCount: Int { topics.reduce(0) { $0 + $1.questionCount } }
@@ -789,6 +809,7 @@ struct HomeView: View {
                     header
                     DailyGoalView(progress: store.correctToday(), goal: settings.dailyGoal)
                     dailyChallengeCard
+                    if weakSpot != nil { weakSpotCard }
                     todayPlanCard
                     momentumCard
                     weeklyRhythmCard
@@ -823,6 +844,9 @@ struct HomeView: View {
             }
             .navigationDestination(isPresented: $showDailyChallenge) {
                 PracticeView(lesson: dailyChallengeLesson(), store: store, isReview: reviewCount > 0)
+            }
+            .navigationDestination(isPresented: $showWeakSpotDrill) {
+                PracticeView(lesson: weakSpotDrillLesson(), store: store, isReview: false)
             }
             .sheet(isPresented: $showStats)    { StatsView(store: store, settings: settings, topics: topics) }
             .sheet(isPresented: $showSettings) { SettingsView(store: store, premiumStore: premiumStore, settings: settings) }
@@ -1037,6 +1061,47 @@ struct HomeView: View {
         guard reviewCount == 0,
               let (topic, lesson) = nextUp else { return false }
         return !premiumStore.isPremium && !lesson.isFree(in: topic)
+    }
+
+    private var weakSpotCard: some View {
+        guard let (topic, lesson) = weakSpot else {
+            return AnyView(EmptyView())
+        }
+        return AnyView(
+            Button {
+                if !premiumStore.isPremium && !lesson.isFree(in: topic) {
+                    showPaywall = true
+                } else {
+                    showWeakSpotDrill = true
+                }
+            } label: {
+                Card(padding: 16, background: Palette.surfaceMuted) {
+                    HStack(spacing: 12) {
+                        Image(systemName: "scope")
+                            .font(.system(size: 18, weight: .semibold))
+                            .foregroundStyle(topic.color)
+                            .frame(width: 42, height: 42)
+                            .background(topic.color.opacity(0.14), in: Circle())
+                            .accessibilityHidden(true)
+                        VStack(alignment: .leading, spacing: 4) {
+                            Text("Weak spot drill")
+                                .font(.titleM)
+                                .foregroundStyle(Palette.ink)
+                            Text("\(lesson.title) · \(Int(store.mastery(for: lesson) * 100))% mastery")
+                                .font(.bodyM)
+                                .foregroundStyle(Palette.inkSoft)
+                                .fixedSize(horizontal: false, vertical: true)
+                        }
+                        Spacer(minLength: 0)
+                        Image(systemName: (!premiumStore.isPremium && !lesson.isFree(in: topic)) ? "lock.fill" : "arrow.right")
+                            .font(.system(size: 13, weight: .semibold))
+                            .foregroundStyle(Palette.inkFaint)
+                    }
+                }
+            }
+            .buttonStyle(.plain)
+            .accessibilityElement(children: .combine)
+        )
     }
 
     private var dailyGoalSubtitle: LocalizedStringResource {
@@ -1474,6 +1539,20 @@ struct HomeView: View {
             id: "__daily_\(lesson.id)__",
             title: "Daily challenge",
             intro: "A short focused set from your next lesson.",
+            visual: lesson.visual,
+            formulas: lesson.formulas,
+            questions: Array(lesson.questions.prefix(5))
+        )
+    }
+
+    private func weakSpotDrillLesson() -> Lesson {
+        guard let (topic, lesson) = weakSpot else {
+            return dailyChallengeLesson()
+        }
+        return Lesson(
+            id: "__weak_\(lesson.id)__",
+            title: "Weak spot drill",
+            intro: "A quick set from \(topic.title), focused where practice pays off fastest.",
             visual: lesson.visual,
             formulas: lesson.formulas,
             questions: Array(lesson.questions.prefix(5))
