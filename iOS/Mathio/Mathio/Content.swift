@@ -2812,6 +2812,64 @@ enum Curriculum {
         ]
     )
 
+    static let normalDistribution = Lesson(
+        id: "stats.normal",
+        title: "Normal Distribution",
+        intro: "The normal distribution is a bell-shaped model where values near the mean are common and values far away are rare.",
+        formulas: [
+            Formula(key: "stats.normal.f1",
+                    name: "Z-score",
+                    math: "{var:z} = ({var:x} − {var:μ}) / {var:σ}",
+                    explanation: "A z-score counts how many standard deviations a value is from the mean."),
+            Formula(key: "stats.normal.f2",
+                    name: "Empirical rule",
+                    math: "about 68%, 95%, 99.7% within 1, 2, 3 standard deviations",
+                    explanation: "For normal data, most values sit close to the mean."),
+        ],
+        questions: [
+            Question(id: "stats.normal.q1",
+                     prompt: "If x = 70, mean = 60, and standard deviation = 10, what is the z-score?",
+                     math: nil,
+                     kind: .freeAnswer(accepted: ["1", "1.0"]),
+                     hint: "Subtract the mean, then divide by the standard deviation.",
+                     solutionSteps: ["z = (70 − 60) / 10", "z = 10 / 10 = 1"]),
+            Question(id: "stats.normal.q2",
+                     prompt: "A z-score of −2 means the value is:",
+                     math: nil,
+                     kind: .multipleChoice(options: [
+                        .init(label: "2 standard deviations below the mean", math: nil),
+                        .init(label: "2 standard deviations above the mean", math: nil),
+                        .init(label: "Exactly the mean", math: nil),
+                        .init(label: "Impossible", math: nil),
+                     ], correctIndex: 0),
+                     hint: "Negative z-scores are below the mean.",
+                     solutionSteps: ["The sign is negative, so the value is below the mean", "The size is 2, so it is 2 standard deviations away"]),
+            Question(id: "stats.normal.q3",
+                     prompt: "By the empirical rule, about what percent of normal data lies within 1 standard deviation of the mean?",
+                     math: nil,
+                     kind: .freeAnswer(accepted: ["68", "68%"]),
+                     hint: "Remember 68-95-99.7.",
+                     solutionSteps: ["Within 1 standard deviation: about 68%"]),
+            Question(id: "stats.normal.q4",
+                     prompt: "In a normal distribution, the mean is located:",
+                     math: nil,
+                     kind: .multipleChoice(options: [
+                        .init(label: "At the center of the bell", math: nil),
+                        .init(label: "Only at the far left", math: nil),
+                        .init(label: "Only at the far right", math: nil),
+                        .init(label: "Outside the data", math: nil),
+                     ], correctIndex: 0),
+                     hint: "The normal curve is symmetric.",
+                     solutionSteps: ["A normal distribution is symmetric", "The mean sits at the center"]),
+            Question(id: "stats.normal.q5",
+                     prompt: "True or false: A larger absolute z-score means a value is farther from the mean.",
+                     math: nil,
+                     kind: .trueFalse(answer: true),
+                     hint: "Distance from zero tells how far from the mean.",
+                     solutionSteps: ["z = 0 is at the mean", "Larger |z| means more standard deviations away"]),
+        ]
+    )
+
     static let confidenceIntervals = Lesson(
         id: "stats.confidence",
         title: "Confidence Intervals",
@@ -3860,7 +3918,7 @@ enum Curriculum {
               icon: "chart.bar.doc.horizontal",
               color: Palette.stats,
               lessons: [descriptiveStats, probabilityBasics, dataDisplays, sampling,
-                        distributions, correlationRegression, inferenceBasics, confidenceIntervals,
+                        distributions, correlationRegression, inferenceBasics, normalDistribution, confidenceIntervals,
                         hypothesisTests]),
         Topic(id: "linearalgebra",
               title: "Linear Algebra",

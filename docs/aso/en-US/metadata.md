@@ -53,9 +53,9 @@ Reasoning:
 ## Promotional Text (170 max — editable without review)
 
 ```
-New: Session Insight, 7-Day Focus, Coordinate Geometry, Unit Prices, and 73 lessons.
+New: Normal Distribution, Session Insight, 7-Day Focus, and 74 lessons.
 ```
-**81 / 170** — highlights current catalog size, retention improvements, and new exam-prep content.
+**72 / 170** — highlights current catalog size, retention improvements, and new exam-prep content.
 
 Rotation ideas (swap monthly):
 - `Free 7-day trial. Master one lesson a day — no leaderboards, no streaks-or-die guilt, just calm progress.` (113)
@@ -110,7 +110,7 @@ Available in English, German, Spanish, French, Italian, and Brazilian Portuguese
 TOPICS
 Pre-Algebra, Algebra, Calculus, Geometry, Trigonometry, Statistics, Linear Algebra, Financial Math, and Discrete Math.
 
-73 lessons and 365 hand-crafted questions cover fractions, percentages, percent change, equations, word problems, functions, derivatives, integrals, related rates, vectors, matrices, probability, regression, confidence intervals, rational expressions, coordinate geometry, budgeting, unit prices, loans, taxes, discounts, truth tables, logic, graph theory, and more.
+74 lessons and 370 hand-crafted questions cover fractions, percentages, percent change, equations, word problems, functions, derivatives, integrals, related rates, vectors, matrices, probability, regression, normal distribution, confidence intervals, rational expressions, coordinate geometry, budgeting, unit prices, loans, taxes, discounts, truth tables, logic, graph theory, and more.
 
 SUBSCRIPTION
 Mathio is free to try. Unlock all topics with:
@@ -138,6 +138,7 @@ New:
 • Next 3 Sessions: your personal plan now shows the next concrete lessons to study
 • 7-Day Focus: a clearer weekly habit card turns your recommended path into seven small sessions
 • Session Insight: every completed session now shows accuracy, misses, mode, and the next best step
+• Normal Distribution: new statistics practice for z-scores, bell curves, and the empirical rule
 • Comeback Mission: a gentle 5-question restart when you return after a break
 • Coordinate Geometry: new geometry practice for midpoint, distance, slope, and coordinate-plane reasoning
 • Unit Prices: new financial math practice for comparing real deals
@@ -152,7 +153,7 @@ New:
 Improved:
 • Clearer learning path guidance on Home
 • Better premium feel with more personalized study flow
-• Expanded curriculum: 73 lessons and 365 guided questions across 9 topics
+• Expanded curriculum: 74 lessons and 370 guided questions across 9 topics
 
 Fixed:
 • Continued cleanup of localized app copy to avoid mixed German/English flows
