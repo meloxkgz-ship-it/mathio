@@ -33948,31 +33948,31 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Mathio wählt deine nächste Lektion nach dem, was du beherrschst — nie sinnlose Beschäftigung."
+            "value": "Mathio wählt deine nächste Lektion nach dem, was du schon kannst - kein unnötiges Üben."
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Mathio elige tu próxima lección a partir de lo que ya dominas: nunca trabajar demasiado."
+            "value": "Mathio elige tu próxima lección según lo que ya dominas, sin ejercicios de relleno."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Mathio choisit votre prochaine leçon à partir de ce que vous maîtrisez – ne vous occupez jamais de travail."
+            "value": "Mathio choisit votre prochaine leçon selon ce que vous maîtrisez déjà, sans exercices inutiles."
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Mathio sceglie la tua prossima lezione da ciò che hai imparato, mai lavoro impegnativo."
+            "value": "Mathio sceglie la prossima lezione in base a ciò che già padroneggi, senza esercizi inutili."
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Mathio escolhe sua próxima lição com base no que você domina - nunca é muito trabalho."
+            "value": "O Mathio escolhe sua próxima lição com base no que você já domina, sem exercícios desnecessários."
           }
         }
       }
@@ -70124,6 +70124,111 @@
           "stringUnit": {
             "state": "translated",
             "value": "%lld %% domínio · %lld lições"
+          }
+        }
+      }
+    },
+    "Stay one more year for 25% off.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bleib ein weiteres Jahr mit 25 % Rabatt dabei."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quédate un año más con un 25 % de descuento."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Restez une année de plus avec 25 % de réduction."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Resta un altro anno con il 25% di sconto."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continue por mais um ano com 25% de desconto."
+          }
+        }
+      }
+    },
+    "ANNUAL · 25% OFF": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "JÄHRLICH · 25 % RABATT"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ANUAL · 25 % DTO."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ANNUEL · -25 %"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ANNUALE · 25% DI SCONTO"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ANUAL · 25% OFF"
+          }
+        }
+      }
+    },
+    "Keep my access at 25% off": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zugang mit 25 % Rabatt behalten"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mantener mi acceso con 25 % de descuento"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Garder mon accès avec 25 % de réduction"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mantieni il mio accesso con il 25% di sconto"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Manter meu acesso com 25% de desconto"
           }
         }
       }

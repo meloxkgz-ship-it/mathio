@@ -350,7 +350,7 @@ struct OnboardingView: View {
     @State private var selectedGoal: LearningGoal = .exam
     @State private var confidence = 3
     @State private var diagnosticAnswers: [Int?] = Array(repeating: nil, count: DiagnosticQuestion.samples.count)
-    private let pageCount = 5
+    private let pageCount = 6
 
     private var diagnosticCorrect: Int {
         zip(diagnosticAnswers, DiagnosticQuestion.samples).reduce(0) { total, item in
@@ -363,10 +363,11 @@ struct OnboardingView: View {
             skipBar
             TabView(selection: $page) {
                 welcomePage.tag(0)
-                goalPage.tag(1)
-                diagnosticPage.tag(2)
-                planPage.tag(3)
-                habitPage.tag(4)
+                howItWorksPage.tag(1)
+                goalPage.tag(2)
+                diagnosticPage.tag(3)
+                planPage.tag(4)
+                habitPage.tag(5)
             }
             .tabViewStyle(.page(indexDisplayMode: .never))
             bottomBar
@@ -3178,7 +3179,7 @@ struct PaywallView: View {
                     .font(.bodyL).foregroundStyle(Palette.inkSoft)
             case .retention:
                 Text("Wait — special offer").font(.displayL).foregroundStyle(Palette.ink)
-                Text("Stay one more year for 25 % off.")
+                Text("Stay one more year for 25% off.")
                     .font(.bodyL).foregroundStyle(Palette.inkSoft)
             }
         }
@@ -3269,7 +3270,7 @@ struct PaywallView: View {
         Card {
             VStack(alignment: .leading, spacing: 8) {
                 HStack(spacing: 8) {
-                    Text("ANNUAL · 25 % OFF").font(.label).foregroundStyle(Palette.terracotta)
+                    Text("ANNUAL · 25% OFF").font(.label).foregroundStyle(Palette.terracotta)
                     Spacer()
                 }
                 HStack(alignment: .lastTextBaseline, spacing: 8) {
@@ -3353,7 +3354,7 @@ struct PaywallView: View {
 
     private var ctaTitle: LocalizedStringResource {
         switch mode {
-        case .retention: return "Keep my access at 25 % off"
+        case .retention: return "Keep my access at 25% off"
         default:
             return selected == .weekly
                 ? "Start 3-day free trial"
