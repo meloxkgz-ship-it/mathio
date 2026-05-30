@@ -724,6 +724,14 @@ private struct OnboardingPage<Content: View>: View {
 
 // MARK: - Home
 
+private struct WeeklyActivityDay: Identifiable {
+    let date: Date
+    let correct: Int
+    let isToday: Bool
+
+    var id: Date { date }
+}
+
 struct HomeView: View {
     @Bindable var store: Store
     @Bindable var premiumStore: PremiumStore
@@ -755,6 +763,19 @@ struct HomeView: View {
     private var milestoneProgress: Double {
         min(1, Double(totalCorrect) / Double(max(nextCorrectMilestone, 1)))
     }
+    private var weeklyActivity: [WeeklyActivityDay] {
+        let calendar = Calendar.current
+        let today = calendar.startOfDay(for: .now)
+        let activity = store.dailyActivity()
+        return (-6...0).compactMap { offset in
+            guard let date = calendar.date(byAdding: .day, value: offset, to: today) else { return nil }
+            return WeeklyActivityDay(date: date, correct: activity[date, default: 0], isToday: offset == 0)
+        }
+    }
+    private var activeDaysThisWeek: Int { weeklyActivity.filter { $0.correct > 0 }.count }
+    private var weeklyCorrect: Int { weeklyActivity.reduce(0) { $0 + $1.correct } }
+    private var weeklyTarget: Int { max(settings.dailyGoal * 7, 1) }
+    private var weeklyProgress: Double { min(1, Double(weeklyCorrect) / Double(weeklyTarget)) }
 
     /// Set by `PracticeMathIntent` (Siri / Spotlight). Honored once on appear.
     private static let pendingPracticeKey = "mathio.intent.pendingPractice"
@@ -767,6 +788,7 @@ struct HomeView: View {
                     DailyGoalView(progress: store.correctToday(), goal: settings.dailyGoal)
                     todayPlanCard
                     momentumCard
+                    weeklyRhythmCard
                     nextUpCard
                     personalPlanCard
                     learningPathsSection
@@ -978,6 +1000,87 @@ struct HomeView: View {
             }
         }
         .accessibilityElement(children: .combine)
+    }
+
+    private var weeklyRhythmCard: some View {
+        Card(padding: 16, background: Palette.surfaceMuted) {
+            VStack(alignment: .leading, spacing: 14) {
+                HStack(alignment: .top, spacing: 12) {
+                    Image(systemName: "calendar.badge.clock")
+                        .font(.system(size: 15, weight: .semibold))
+                        .foregroundStyle(Palette.calculus)
+                        .frame(width: 30, height: 30)
+                        .background(Palette.calculus.opacity(0.14), in: Circle())
+                    VStack(alignment: .leading, spacing: 3) {
+                        Text("This week")
+                            .font(.titleM)
+                            .foregroundStyle(Palette.ink)
+                        Text(weeklyRhythmSubtitle)
+                            .font(.bodyM)
+                            .foregroundStyle(Palette.inkSoft)
+                            .fixedSize(horizontal: false, vertical: true)
+                    }
+                    Spacer(minLength: 0)
+                    Text("\(activeDaysThisWeek)/7 days")
+                        .font(.label)
+                        .foregroundStyle(Palette.inkSoft)
+                        .padding(.horizontal, 10)
+                        .padding(.vertical, 6)
+                        .background(Palette.surface, in: Capsule())
+                }
+
+                ProgressBar(progress: weeklyProgress, color: Palette.calculus, height: 6)
+
+                HStack(alignment: .bottom, spacing: 8) {
+                    ForEach(weeklyActivity) { day in
+                        VStack(spacing: 6) {
+                            ZStack(alignment: .bottom) {
+                                RoundedRectangle(cornerRadius: 7, style: .continuous)
+                                    .fill(Palette.surface)
+                                RoundedRectangle(cornerRadius: 7, style: .continuous)
+                                    .fill(day.correct > 0 ? Palette.calculus : Palette.hairline)
+                                    .frame(height: weeklyDayHeight(for: day.correct))
+                            }
+                            .frame(height: 42)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 7, style: .continuous)
+                                    .stroke(day.isToday ? Palette.calculus : Palette.hairline, lineWidth: day.isToday ? 1.2 : 0.5)
+                            )
+                            Text(day.date, format: .dateTime.weekday(.narrow))
+                                .font(.caption)
+                                .foregroundStyle(day.isToday ? Palette.ink : Palette.inkFaint)
+                        }
+                        .frame(maxWidth: .infinity)
+                    }
+                }
+
+                Text(weeklyRhythmPrompt)
+                    .font(.caption)
+                    .foregroundStyle(Palette.inkFaint)
+            }
+        }
+        .accessibilityElement(children: .combine)
+        .accessibilityLabel(Text("Weekly rhythm. \(activeDaysThisWeek) active days, \(weeklyCorrect) correct answers."))
+    }
+
+    private var weeklyRhythmSubtitle: LocalizedStringResource {
+        if weeklyCorrect == 0 {
+            return "Start with one short session today."
+        }
+        return "\(activeDaysThisWeek) active days, \(weeklyCorrect) correct answers"
+    }
+
+    private var weeklyRhythmPrompt: LocalizedStringResource {
+        if store.correctToday() >= settings.dailyGoal {
+            return "Come back tomorrow to keep the rhythm."
+        }
+        return "Great rhythm. A short review keeps it alive."
+    }
+
+    private func weeklyDayHeight(for correct: Int) -> CGFloat {
+        guard correct > 0 else { return 4 }
+        let pct = min(1, Double(correct) / Double(max(settings.dailyGoal, 1)))
+        return 10 + CGFloat(pct) * 32
     }
 
     private func planRow(
