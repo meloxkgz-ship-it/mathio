@@ -1548,6 +1548,26 @@ struct HomeView: View {
                 }
 
                 VStack(alignment: .leading, spacing: 10) {
+                    Text("Next 3 sessions")
+                        .font(.label)
+                        .foregroundStyle(Palette.inkFaint)
+                        .textCase(.uppercase)
+                        .tracking(1.2)
+                    ForEach(Array(nextPlanLessons.enumerated()), id: \.element.id) { index, lesson in
+                        Button {
+                            if isLocked(lesson) {
+                                showPaywall = true
+                            } else {
+                                presented = lesson
+                            }
+                        } label: {
+                            sessionStep(index: index + 1, lesson: lesson)
+                        }
+                        .buttonStyle(.plain)
+                    }
+                }
+
+                VStack(alignment: .leading, spacing: 10) {
                     Text("Roadmap preview")
                         .font(.label)
                         .foregroundStyle(Palette.inkFaint)
@@ -1582,6 +1602,12 @@ struct HomeView: View {
             return "\(profile.goal.title) · \(profile.level.title) · \(recommendedPath.durationDays)-day first track"
         }
         return "\(lessonCount) lessons · \(questionCount) questions · about \(monthsOfPractice) months at your current goal"
+    }
+
+    private var nextPlanLessons: [Lesson] {
+        let unfinished = recommendedPath.lessons.filter { store.mastery(for: $0) < 1.0 }
+        let pool = unfinished.isEmpty ? recommendedPath.lessons : unfinished
+        return Array(pool.prefix(3))
     }
 
     private var roadmapFirstStep: LocalizedStringResource {
@@ -1623,6 +1649,40 @@ struct HomeView: View {
                     .fixedSize(horizontal: false, vertical: true)
             }
             Spacer(minLength: 0)
+        }
+        .padding(12)
+        .background(Palette.surface, in: RoundedRectangle(cornerRadius: 12, style: .continuous))
+    }
+
+    private func sessionStep(index: Int, lesson: Lesson) -> some View {
+        HStack(spacing: 12) {
+            Text(verbatim: "\(index)")
+                .font(.label)
+                .foregroundStyle(Palette.ink)
+                .frame(width: 30, height: 30)
+                .background(Palette.amberSoft, in: Circle())
+
+            VStack(alignment: .leading, spacing: 3) {
+                Text(lesson.title)
+                    .font(.bodyM.weight(.semibold))
+                    .foregroundStyle(Palette.ink)
+                    .lineLimit(1)
+                HStack(spacing: 6) {
+                    ProgressBar(progress: store.mastery(for: lesson),
+                                color: topic(containing: lesson)?.color ?? Palette.amber,
+                                height: 5)
+                        .frame(maxWidth: 86)
+                    Text(verbatim: "\(Int(store.mastery(for: lesson) * 100))%")
+                        .font(.caption)
+                        .foregroundStyle(Palette.inkFaint)
+                }
+            }
+
+            Spacer(minLength: 0)
+
+            Image(systemName: isLocked(lesson) ? "lock.fill" : "arrow.right")
+                .font(.system(size: 13, weight: .semibold))
+                .foregroundStyle(Palette.inkFaint)
         }
         .padding(12)
         .background(Palette.surface, in: RoundedRectangle(cornerRadius: 12, style: .continuous))
