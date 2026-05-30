@@ -53,7 +53,7 @@ Reasoning:
 ## Promotional Text (170 max — editable without review)
 
 ```
-New: 63 lessons and 315 guided questions, now with taxes, discounts, truth tables, and a clearer daily plan.
+New: 65 lessons and 325 guided questions, now with taxes, discounts, function modeling, inference basics, truth tables, and a clearer daily plan.
 ```
 **108 / 170** — highlights current catalog size and new retention-oriented content.
 
@@ -105,7 +105,7 @@ Available in English, German, Spanish, French, Italian, and Brazilian Portuguese
 
 — TOPICS —
 Pre-Algebra · Algebra · Geometry · Trigonometry · Calculus
-63 lessons, 315 hand-crafted questions across multiple-choice, free-answer, and true/false formats. From fractions, exponents, and logarithms through derivatives, integrals, statistics, vectors, budgeting, taxes, discounts, correlation, optimization, truth tables, and logic.
+65 lessons, 325 hand-crafted questions across multiple-choice, free-answer, and true/false formats. From fractions, exponents, and logarithms through derivatives, integrals, statistics, vectors, budgeting, taxes, discounts, function modeling, inference basics, correlation, optimization, truth tables, and logic.
 
 — SUBSCRIPTION —
 Mathio is free to try. Unlock all topics with:
@@ -129,9 +129,9 @@ From fractions to derivatives. Two minutes a day is enough.
 ```
 This update makes Mathio broader and more useful for daily practice.
 
-• Adds Taxes & Discounts for real-world financial math
-• Adds Truth Tables for logic and discrete math foundations
-• Expands Mathio to 63 lessons and 315 guided questions
+• Adds Function Modeling for real-world algebra
+• Adds Inference Basics for statistics and sampling
+• Expands Mathio to 65 lessons and 325 guided questions
 • Keeps the new personalized start plan and goal-based onboarding
 • Updates premium and App Store copy so the content matches the app
 

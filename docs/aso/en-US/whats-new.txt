@@ -1,8 +1,8 @@
 This update makes Mathio broader and more useful for daily practice.
 
-• Adds Taxes & Discounts for real-world financial math
-• Adds Truth Tables for logic and discrete math foundations
-• Expands Mathio to 63 lessons and 315 guided questions
+• Adds Function Modeling for real-world algebra
+• Adds Inference Basics for statistics and sampling
+• Expands Mathio to 65 lessons and 325 guided questions
 • Keeps the new personalized start plan and goal-based onboarding
 • Updates premium and App Store copy so the content matches the app
 

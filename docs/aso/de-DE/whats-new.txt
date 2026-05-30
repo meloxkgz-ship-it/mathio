@@ -1,8 +1,8 @@
 Dieses Update macht Mathio breiter und nützlicher für tägliches Üben.
 
-• Neue Lektion: Steuern & Rabatte für Alltags- und Finanzmathe
-• Neue Lektion: Wahrheitstabellen für Logik und diskrete Mathematik
-• Mathio wächst auf 63 Lektionen und 315 geführte Aufgaben
+• Neue Lektion: Funktionsmodellierung für alltagsnahe Algebra
+• Neue Lektion: Inferenz-Grundlagen für Statistik und Stichproben
+• Mathio wächst auf 65 Lektionen und 325 geführte Aufgaben
 • Der persönliche Startplan und das zielbasierte Onboarding bleiben drin
 • Premium- und App-Store-Texte passen jetzt zum erweiterten Inhalt
 

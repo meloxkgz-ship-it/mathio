@@ -52,7 +52,7 @@ Begründung:
 ## Werbetext (170 max — editierbar ohne Review)
 
 ```
-Neu: 63 Lektionen und 315 geführte Aufgaben, jetzt mit Steuern, Rabatten, Wahrheitstabellen und klarem Tagesplan.
+Neu: 65 Lektionen und 325 geführte Aufgaben, jetzt mit Steuern, Rabatten, Funktionsmodellierung, Inferenz-Grundlagen, Wahrheitstabellen und klarem Tagesplan.
 ```
 **113 / 170** — hebt Kataloggröße und neue alltagsnahe Inhalte hervor.
 
@@ -104,7 +104,7 @@ Verfügbar auf Deutsch, Englisch, Spanisch, Französisch, Italienisch und Brasil
 
 — THEMEN —
 Vor-Algebra · Algebra · Geometrie · Trigonometrie · Analysis
-63 Lektionen, 315 handgemachte Aufgaben in Multiple-Choice, Freitext und Wahr/Falsch. Von Bruchrechnen, Potenzen und Logarithmen bis zu Ableitungen, Integralen, Statistik, Vektoren, Budgetrechnung, Steuern, Rabatten, Korrelation, Optimierung, Wahrheitstabellen und Logik.
+65 Lektionen, 325 handgemachte Aufgaben in Multiple-Choice, Freitext und Wahr/Falsch. Von Bruchrechnen, Potenzen und Logarithmen bis zu Ableitungen, Integralen, Statistik, Vektoren, Budgetrechnung, Steuern, Rabatten, Funktionsmodellierung, Inferenz-Grundlagen, Korrelation, Optimierung, Wahrheitstabellen und Logik.
 
 — ABO —
 Mathio ist kostenlos zum Ausprobieren. Alle Themen freischalten mit:
@@ -128,9 +128,9 @@ Von Bruchrechnung bis Differentialrechnung. Zwei Minuten täglich genügen.
 ```
 Dieses Update macht Mathio breiter und nützlicher für tägliches Üben.
 
-• Neue Lektion: Steuern & Rabatte für Alltags- und Finanzmathe
-• Neue Lektion: Wahrheitstabellen für Logik und diskrete Mathematik
-• Mathio wächst auf 63 Lektionen und 315 geführte Aufgaben
+• Neue Lektion: Funktionsmodellierung für alltagsnahe Algebra
+• Neue Lektion: Inferenz-Grundlagen für Statistik und Stichproben
+• Mathio wächst auf 65 Lektionen und 325 geführte Aufgaben
 • Der persönliche Startplan und das zielbasierte Onboarding bleiben drin
 • Premium- und App-Store-Texte passen jetzt zum erweiterten Inhalt
 
