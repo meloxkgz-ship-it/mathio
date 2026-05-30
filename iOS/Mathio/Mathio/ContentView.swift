@@ -809,6 +809,20 @@ struct HomeView: View {
     private var weeklyCorrect: Int { weeklyActivity.reduce(0) { $0 + $1.correct } }
     private var weeklyTarget: Int { max(settings.dailyGoal * 7, 1) }
     private var weeklyProgress: Double { min(1, Double(weeklyCorrect) / Double(weeklyTarget)) }
+    private var daysSinceLastPractice: Int? {
+        let calendar = Calendar.current
+        let today = calendar.startOfDay(for: .now)
+        let pastPracticeDays = store.dailyActivity().keys
+            .map { calendar.startOfDay(for: $0) }
+            .filter { $0 < today }
+        guard let last = pastPracticeDays.max(),
+              let days = calendar.dateComponents([.day], from: last, to: today).day,
+              days > 0 else { return nil }
+        return days
+    }
+    private var shouldShowComebackCard: Bool {
+        store.correctToday() == 0 && daysSinceLastPractice != nil && totalCorrect > 0
+    }
 
     /// Set by `PracticeMathIntent` (Siri / Spotlight). Honored once on appear.
     private static let pendingPracticeKey = "mathio.intent.pendingPractice"
@@ -819,6 +833,7 @@ struct HomeView: View {
                 VStack(alignment: .leading, spacing: 24) {
                     header
                     DailyGoalView(progress: store.correctToday(), goal: settings.dailyGoal)
+                    if shouldShowComebackCard { comebackCard }
                     dailyChallengeCard
                     if weakSpot != nil { weakSpotCard }
                     examSprintCard
@@ -1002,6 +1017,71 @@ struct HomeView: View {
             }
         }
         .accessibilityElement(children: .contain)
+    }
+
+    private var comebackCard: some View {
+        Button {
+            if dailyChallengeRequiresPremium {
+                showPaywall = true
+            } else {
+                showDailyChallenge = true
+            }
+        } label: {
+            Card(padding: 18, background: Palette.surface) {
+                VStack(alignment: .leading, spacing: 14) {
+                    HStack(alignment: .top, spacing: 12) {
+                        Image(systemName: "arrow.uturn.left.circle.fill")
+                            .font(.system(size: 22, weight: .semibold))
+                            .foregroundStyle(Palette.success)
+                            .frame(width: 44, height: 44)
+                            .background(Palette.success.opacity(0.14), in: Circle())
+                            .accessibilityHidden(true)
+                        VStack(alignment: .leading, spacing: 4) {
+                            Text("Welcome back")
+                                .font(.label)
+                                .foregroundStyle(Palette.inkFaint)
+                                .textCase(.uppercase)
+                                .tracking(1.2)
+                            Text("Restart gently")
+                                .font(.titleL)
+                                .foregroundStyle(Palette.ink)
+                            Text(comebackSubtitle)
+                                .font(.bodyM)
+                                .foregroundStyle(Palette.inkSoft)
+                                .fixedSize(horizontal: false, vertical: true)
+                        }
+                    }
+
+                    HStack(spacing: 10) {
+                        Label("5 questions", systemImage: "timer")
+                        Label("No pressure", systemImage: "leaf")
+                    }
+                    .font(.caption)
+                    .foregroundStyle(Palette.inkSoft)
+
+                    HStack {
+                        Text("Restart with 5 questions")
+                            .font(.bodyM.weight(.semibold))
+                            .foregroundStyle(Palette.ink)
+                        Spacer()
+                        Image(systemName: dailyChallengeRequiresPremium ? "lock.fill" : "arrow.right")
+                            .font(.system(size: 13, weight: .semibold))
+                            .foregroundStyle(Palette.ink)
+                            .frame(width: 38, height: 38)
+                            .background(Palette.success.opacity(0.2), in: Circle())
+                    }
+                }
+            }
+        }
+        .buttonStyle(.plain)
+        .accessibilityElement(children: .combine)
+    }
+
+    private var comebackSubtitle: LocalizedStringResource {
+        guard let days = daysSinceLastPractice else {
+            return "A short session is enough to rebuild the rhythm."
+        }
+        return "\(days) days away. Start with a small set and keep the streak realistic."
     }
 
     private var dailyChallengeCard: some View {
@@ -1743,7 +1823,8 @@ struct LearningPath: Identifiable {
             icon: "chart.bar.xaxis",
             color: Palette.calculus,
             lessons: [Curriculum.descriptiveStats, Curriculum.probabilityBasics, Curriculum.dataDisplays,
-                      Curriculum.sampling, Curriculum.distributions, Curriculum.correlationRegression],
+                      Curriculum.sampling, Curriculum.distributions, Curriculum.correlationRegression,
+                      Curriculum.confidenceIntervals],
             durationDays: 21
         ),
         LearningPath(

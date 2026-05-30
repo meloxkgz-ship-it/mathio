@@ -2543,6 +2543,59 @@ enum Curriculum {
         ]
     )
 
+    static let confidenceIntervals = Lesson(
+        id: "stats.confidence",
+        title: "Confidence Intervals",
+        intro: "Confidence intervals turn a sample estimate into a realistic range, so uncertainty is visible instead of hidden.",
+        formulas: [
+            Formula(key: "stats.confidence.f1",
+                    name: "Confidence interval",
+                    math: "estimate ± margin of error",
+                    explanation: "The estimate sits in the middle; the margin shows how far the plausible values stretch."),
+            Formula(key: "stats.confidence.f2",
+                    name: "Margin of error",
+                    math: "critical value × standard error",
+                    explanation: "More certainty or more variation makes the interval wider; larger samples usually make it narrower."),
+        ],
+        questions: [
+            Question(id: "stats.confidence.q1",
+                     prompt: "A survey reports 64% ± 4%. What is the upper end of the interval?",
+                     math: nil,
+                     kind: .freeAnswer(accepted: ["68", "68%"]),
+                     hint: "Add the margin of error.",
+                     solutionSteps: ["64% + 4% = 68%", "Upper end: 68%"]),
+            Question(id: "stats.confidence.q2",
+                     prompt: "A confidence interval from 18 to 26 has what midpoint?",
+                     math: nil,
+                     kind: .freeAnswer(accepted: ["22"]),
+                     hint: "Average the endpoints.",
+                     solutionSteps: ["(18 + 26) / 2 = 22", "The midpoint estimate is 22"]),
+            Question(id: "stats.confidence.q3",
+                     prompt: "Which change usually makes a confidence interval narrower?",
+                     math: nil,
+                     kind: .multipleChoice(options: [
+                        .init(label: "Using a larger random sample", math: nil),
+                        .init(label: "Asking fewer people", math: nil),
+                        .init(label: "Choosing a higher confidence level", math: nil),
+                        .init(label: "Adding more bias", math: nil),
+                     ], correctIndex: 0),
+                     hint: "Larger random samples reduce typical sampling error.",
+                     solutionSteps: ["A larger sample lowers standard error", "Lower standard error usually means a narrower interval"]),
+            Question(id: "stats.confidence.q4",
+                     prompt: "True or false: A wider confidence interval shows more uncertainty.",
+                     math: nil,
+                     kind: .trueFalse(answer: true),
+                     hint: "A wider range means the estimate is less precise.",
+                     solutionSteps: ["Wider intervals contain more plausible values", "That means more uncertainty"]),
+            Question(id: "stats.confidence.q5",
+                     prompt: "Estimate = 50 and margin of error = 6. What interval do you report?",
+                     math: nil,
+                     kind: .freeAnswer(accepted: ["44 to 56", "44-56", "44–56", "[44,56]", "[44, 56]"]),
+                     hint: "Subtract and add the margin.",
+                     solutionSteps: ["50 − 6 = 44", "50 + 6 = 56", "Interval: 44 to 56"]),
+        ]
+    )
+
     // MARK: - Linear Algebra
 
     static let vectors = Lesson(
@@ -3484,7 +3537,8 @@ enum Curriculum {
               icon: "chart.bar.doc.horizontal",
               color: Palette.stats,
               lessons: [descriptiveStats, probabilityBasics, dataDisplays, sampling,
-                        distributions, correlationRegression, inferenceBasics, hypothesisTests]),
+                        distributions, correlationRegression, inferenceBasics, confidenceIntervals,
+                        hypothesisTests]),
         Topic(id: "linearalgebra",
               title: "Linear Algebra",
               subtitle: "Vectors, matrices & systems",

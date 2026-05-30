@@ -16723,7 +16723,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Der Saldo beträgt $500,, der monatliche Zins beträgt $5,, die Zahlung beträgt $80.. Neuer Saldo?"
+            "value": "Der Saldo beträgt $500, der monatliche Zins beträgt $5, die Zahlung beträgt $80.. Neuer Saldo?"
           }
         },
         "es": {
@@ -16735,7 +16735,7 @@
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Le solde est de $500,, les intérêts mensuels sont de $5,, le paiement est de $80. Nouveau solde ?"
+            "value": "Le solde est de $500, les intérêts mensuels sont de $5, le paiement est de $80. Nouveau solde ?"
           }
         },
         "it": {
@@ -67647,6 +67647,7 @@
       }
     },
     "Average the endpoints.": {
+      "extractionState": "manual",
       "localizations": {
         "de": {
           "stringUnit": {
@@ -67663,7 +67664,7 @@
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Fais la moyenne des extrémités."
+            "value": "Faites la moyenne des bornes."
           }
         },
         "it": {
@@ -68429,6 +68430,7 @@
       }
     },
     "Margin of error": {
+      "extractionState": "manual",
       "localizations": {
         "de": {
           "stringUnit": {
@@ -73487,6 +73489,1371 @@
           "stringUnit": {
             "state": "translated",
             "value": "%lld perguntas erradas estão prontas para uma segunda rodada rápida."
+          }
+        }
+      }
+    },
+    "5 questions": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "5 Fragen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "5 preguntas"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "5 questions"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "5 domande"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "5 perguntas"
+          }
+        }
+      }
+    },
+    "No pressure": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ohne Druck"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sin presión"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sans pression"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Senza pressione"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sem pressão"
+          }
+        }
+      }
+    },
+    "Welcome back": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Willkommen zurück"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Qué bueno verte de nuevo"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bon retour"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bentornato"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Boas-vindas de volta"
+          }
+        }
+      }
+    },
+    "Restart gently": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sanft wieder einsteigen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Retoma con calma"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reprenez doucement"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Riparti con calma"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Retome com calma"
+          }
+        }
+      }
+    },
+    "Restart with 5 questions": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mit 5 Fragen neu starten"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Retomar con 5 preguntas"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reprendre avec 5 questions"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Riparti con 5 domande"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Retomar com 5 perguntas"
+          }
+        }
+      }
+    },
+    "A short session is enough to rebuild the rhythm.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eine kurze Session reicht, um den Rhythmus wieder aufzubauen."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una sesión corta basta para recuperar el ritmo."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Une courte session suffit pour retrouver le rythme."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una sessione breve basta per ritrovare il ritmo."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uma sessão curta basta para reconstruir o ritmo."
+          }
+        }
+      }
+    },
+    "%lld days away. Start with a small set and keep the streak realistic.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld Tage Pause. Starte mit einem kleinen Set und halte die Serie realistisch."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld días sin practicar. Empieza con una serie pequeña y mantén una racha realista."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld jours sans pratique. Commencez par une petite série et gardez une série réaliste."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld giorni di pausa. Inizia con una piccola serie e mantieni la striscia realistica."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld dias sem praticar. Comece com uma série pequena e mantenha a sequência realista."
+          }
+        }
+      }
+    },
+    "Confidence Intervals": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Konfidenzintervalle"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Intervalos de confianza"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Intervalles de confiance"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Intervalli di confidenza"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Intervalos de confiança"
+          }
+        }
+      }
+    },
+    "Confidence interval": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Konfidenzintervall"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Intervalo de confianza"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Intervalle de confiance"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Intervallo di confidenza"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Intervalo de confiança"
+          }
+        }
+      }
+    },
+    "Confidence intervals turn a sample estimate into a realistic range, so uncertainty is visible instead of hidden.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Konfidenzintervalle machen aus einer Stichprobenschätzung einen realistischen Bereich, damit Unsicherheit sichtbar statt versteckt ist."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Los intervalos de confianza convierten una estimación muestral en un rango realista, para que la incertidumbre sea visible y no quede oculta."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les intervalles de confiance transforment une estimation d’échantillon en une plage réaliste, afin que l’incertitude soit visible plutôt que cachée."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gli intervalli di confidenza trasformano una stima campionaria in un intervallo realistico, così l’incertezza resta visibile invece di nascosta."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Intervalos de confiança transformam uma estimativa amostral em uma faixa realista, deixando a incerteza visível em vez de escondida."
+          }
+        }
+      }
+    },
+    "estimate ± margin of error": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schätzung ± Fehlermarge"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "estimación ± margen de error"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "estimation ± marge d’erreur"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "stima ± margine di errore"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "estimativa ± margem de erro"
+          }
+        }
+      }
+    },
+    "The estimate sits in the middle; the margin shows how far the plausible values stretch.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Schätzung liegt in der Mitte; die Marge zeigt, wie weit die plausiblen Werte reichen."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La estimación queda en el centro; el margen muestra hasta dónde se extienden los valores plausibles."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L’estimation se trouve au centre; la marge montre jusqu’où s’étendent les valeurs plausibles."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La stima sta al centro; il margine mostra fin dove arrivano i valori plausibili."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A estimativa fica no meio; a margem mostra até onde os valores plausíveis podem ir."
+          }
+        }
+      }
+    },
+    "critical value × standard error": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "kritischer Wert × Standardfehler"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "valor crítico × error estándar"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "valeur critique × erreur standard"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "valore critico × errore standard"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "valor crítico × erro padrão"
+          }
+        }
+      }
+    },
+    "More certainty or more variation makes the interval wider; larger samples usually make it narrower.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mehr Sicherheit oder mehr Streuung macht das Intervall breiter; größere Stichproben machen es meist schmaler."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Más certeza o más variación ensancha el intervalo; las muestras más grandes suelen estrecharlo."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Plus de confiance ou plus de variation élargit l’intervalle; les grands échantillons le rendent souvent plus étroit."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Più certezza o più variabilità rendono l’intervallo più ampio; campioni più grandi di solito lo restringono."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mais certeza ou mais variação amplia o intervalo; amostras maiores geralmente o tornam mais estreito."
+          }
+        }
+      }
+    },
+    "A survey reports 64% ± 4%. What is the upper end of the interval?": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eine Umfrage meldet 64 % ± 4 %. Was ist die obere Grenze des Intervalls?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una encuesta informa 64 % ± 4 %. ¿Cuál es el extremo superior del intervalo?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un sondage indique 64 % ± 4 %. Quelle est la borne supérieure de l’intervalle ?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un sondaggio riporta 64% ± 4%. Qual è l’estremo superiore dell’intervallo?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uma pesquisa informa 64% ± 4%. Qual é o limite superior do intervalo?"
+          }
+        }
+      }
+    },
+    "Add the margin of error.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Addiere die Fehlermarge."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Suma el margen de error."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ajoutez la marge d’erreur."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aggiungi il margine di errore."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Some a margem de erro."
+          }
+        }
+      }
+    },
+    "64% + 4% = 68%": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "64 % + 4 % = 68 %"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "64 % + 4 % = 68 %"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "64 % + 4 % = 68 %"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "64% + 4% = 68%"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "64% + 4% = 68%"
+          }
+        }
+      }
+    },
+    "Upper end: 68%": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Obere Grenze: 68 %"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Extremo superior: 68 %"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Borne supérieure : 68 %"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Estremo superiore: 68%"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Limite superior: 68%"
+          }
+        }
+      }
+    },
+    "A confidence interval from 18 to 26 has what midpoint?": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ein Konfidenzintervall von 18 bis 26 hat welchen Mittelpunkt?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un intervalo de confianza de 18 a 26 tiene ¿qué punto medio?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quel est le milieu d’un intervalle de confiance allant de 18 à 26 ?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Qual è il punto medio di un intervallo di confidenza da 18 a 26?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Qual é o ponto médio de um intervalo de confiança de 18 a 26?"
+          }
+        }
+      }
+    },
+    "(18 + 26) / 2 = 22": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(18 + 26) / 2 = 22"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(18 + 26) / 2 = 22"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(18 + 26) / 2 = 22"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(18 + 26) / 2 = 22"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(18 + 26) / 2 = 22"
+          }
+        }
+      }
+    },
+    "The midpoint estimate is 22": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Mittelpunkt-Schätzung ist 22"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La estimación central es 22"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L’estimation au milieu est 22"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La stima centrale è 22"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A estimativa central é 22"
+          }
+        }
+      }
+    },
+    "Which change usually makes a confidence interval narrower?": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Welche Änderung macht ein Konfidenzintervall normalerweise schmaler?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "¿Qué cambio suele hacer más estrecho un intervalo de confianza?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quel changement rend généralement un intervalle de confiance plus étroit ?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quale cambiamento di solito rende più stretto un intervallo di confidenza?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Qual mudança geralmente torna um intervalo de confiança mais estreito?"
+          }
+        }
+      }
+    },
+    "Using a larger random sample": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eine größere Zufallsstichprobe verwenden"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usar una muestra aleatoria más grande"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Utiliser un échantillon aléatoire plus grand"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usare un campione casuale più grande"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usar uma amostra aleatória maior"
+          }
+        }
+      }
+    },
+    "Asking fewer people": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weniger Personen befragen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Preguntar a menos personas"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Interroger moins de personnes"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chiedere a meno persone"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Perguntar a menos pessoas"
+          }
+        }
+      }
+    },
+    "Choosing a higher confidence level": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ein höheres Konfidenzniveau wählen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Elegir un nivel de confianza más alto"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Choisir un niveau de confiance plus élevé"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scegliere un livello di confidenza più alto"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Escolher um nível de confiança mais alto"
+          }
+        }
+      }
+    },
+    "Adding more bias": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mehr Verzerrung hinzufügen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Añadir más sesgo"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ajouter plus de biais"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aggiungere più distorsione"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adicionar mais viés"
+          }
+        }
+      }
+    },
+    "Larger random samples reduce typical sampling error.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Größere Zufallsstichproben verringern den typischen Stichprobenfehler."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Las muestras aleatorias más grandes reducen el error muestral típico."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les grands échantillons aléatoires réduisent l’erreur d’échantillonnage typique."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Campioni casuali più grandi riducono l’errore campionario tipico."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Amostras aleatórias maiores reduzem o erro amostral típico."
+          }
+        }
+      }
+    },
+    "A larger sample lowers standard error": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eine größere Stichprobe senkt den Standardfehler"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una muestra más grande reduce el error estándar"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un échantillon plus grand réduit l’erreur standard"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un campione più grande riduce l’errore standard"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uma amostra maior reduz o erro padrão"
+          }
+        }
+      }
+    },
+    "Lower standard error usually means a narrower interval": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ein niedrigerer Standardfehler bedeutet meist ein schmaleres Intervall"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un error estándar menor suele significar un intervalo más estrecho"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Une erreur standard plus faible signifie souvent un intervalle plus étroit"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un errore standard più basso di solito significa un intervallo più stretto"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Um erro padrão menor geralmente significa um intervalo mais estreito"
+          }
+        }
+      }
+    },
+    "True or false: A wider confidence interval shows more uncertainty.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wahr oder falsch: Ein breiteres Konfidenzintervall zeigt mehr Unsicherheit."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verdadero o falso: un intervalo de confianza más ancho muestra más incertidumbre."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vrai ou faux : un intervalle de confiance plus large montre plus d’incertitude."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vero o falso: un intervallo di confidenza più ampio mostra più incertezza."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verdadeiro ou falso: um intervalo de confiança mais amplo mostra mais incerteza."
+          }
+        }
+      }
+    },
+    "A wider range means the estimate is less precise.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ein breiterer Bereich bedeutet, dass die Schätzung weniger präzise ist."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un rango más amplio significa que la estimación es menos precisa."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Une plage plus large signifie que l’estimation est moins précise."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un intervallo più ampio significa che la stima è meno precisa."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uma faixa mais ampla significa que a estimativa é menos precisa."
+          }
+        }
+      }
+    },
+    "Wider intervals contain more plausible values": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Breitere Intervalle enthalten mehr plausible Werte"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Los intervalos más anchos contienen más valores plausibles"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les intervalles plus larges contiennent plus de valeurs plausibles"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Intervalli più ampi contengono più valori plausibili"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Intervalos mais amplos contêm mais valores plausíveis"
+          }
+        }
+      }
+    },
+    "That means more uncertainty": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Das bedeutet mehr Unsicherheit"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eso significa más incertidumbre"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cela signifie plus d’incertitude"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Questo significa più incertezza"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Isso significa mais incerteza"
+          }
+        }
+      }
+    },
+    "Estimate = 50 and margin of error = 6. What interval do you report?": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schätzung = 50 und Fehlermarge = 6. Welches Intervall gibst du an?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Estimación = 50 y margen de error = 6. ¿Qué intervalo reportas?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Estimation = 50 et marge d’erreur = 6. Quel intervalle indiquez-vous ?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stima = 50 e margine di errore = 6. Quale intervallo riporti?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Estimativa = 50 e margem de erro = 6. Qual intervalo você informa?"
+          }
+        }
+      }
+    },
+    "Subtract and add the margin.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Subtrahiere und addiere die Marge."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Resta y suma el margen."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Soustrayez puis ajoutez la marge."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sottrai e aggiungi il margine."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Subtraia e some a margem."
+          }
+        }
+      }
+    },
+    "50 − 6 = 44": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "50 − 6 = 44"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "50 − 6 = 44"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "50 − 6 = 44"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "50 − 6 = 44"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "50 − 6 = 44"
+          }
+        }
+      }
+    },
+    "50 + 6 = 56": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "50 + 6 = 56"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "50 + 6 = 56"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "50 + 6 = 56"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "50 + 6 = 56"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "50 + 6 = 56"
+          }
+        }
+      }
+    },
+    "Interval: 44 to 56": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Intervall: 44 bis 56"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Intervalo: 44 a 56"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Intervalle : 44 à 56"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Intervallo: da 44 a 56"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Intervalo: 44 a 56"
+          }
+        }
+      }
+    },
+    "0.03 < 0.05": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0,03 < 0,05"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0,03 < 0,05"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0,03 < 0,05"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0,03 < 0,05"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0,03 < 0,05"
           }
         }
       }
