@@ -2480,6 +2480,69 @@ enum Curriculum {
         ]
     )
 
+    static let hypothesisTests = Lesson(
+        id: "stats.hypothesis",
+        title: "Hypothesis Tests",
+        intro: "Hypothesis tests use sample evidence to decide whether a claim is unusually unlikely under a starting assumption.",
+        formulas: [
+            Formula(key: "stats.hypothesis.f1",
+                    name: "Null and alternative",
+                    math: "{var:H}{sub:_0}: no effect    {var:H}{sub:_a}: effect or difference",
+                    explanation: "Start with a neutral claim, then ask whether the data gives enough evidence against it."),
+            Formula(key: "stats.hypothesis.f2",
+                    name: "Decision rule",
+                    math: "if p-value < α, reject {var:H}{sub:_0}",
+                    explanation: "A small p-value means the sample would be unusual if the null claim were true."),
+        ],
+        questions: [
+            Question(id: "stats.hypothesis.q1",
+                     prompt: "A test has p-value 0.03 and α = 0.05. What should you do?",
+                     math: nil,
+                     kind: .multipleChoice(options: [
+                        .init(label: "Reject the null hypothesis", math: nil),
+                        .init(label: "Fail to reject the null hypothesis", math: nil),
+                        .init(label: "Increase the sample size automatically", math: nil),
+                        .init(label: "Prove the alternative is 100% true", math: nil),
+                     ], correctIndex: 0),
+                     hint: "Compare p-value to α.",
+                     solutionSteps: ["0.03 < 0.05", "The result is statistically significant at the 5% level", "Reject the null hypothesis"]),
+            Question(id: "stats.hypothesis.q2",
+                     prompt: "In a new tutoring method study, which statement is a typical null hypothesis?",
+                     math: nil,
+                     kind: .multipleChoice(options: [
+                        .init(label: "The method has no effect", math: nil),
+                        .init(label: "The method works for everyone", math: nil),
+                        .init(label: "The sample is always biased", math: nil),
+                        .init(label: "The p-value must be zero", math: nil),
+                     ], correctIndex: 0),
+                     hint: "The null usually says no change, no difference, or no effect.",
+                     solutionSteps: ["A null hypothesis is the starting assumption", "For an effect study, the neutral claim is no effect"]),
+            Question(id: "stats.hypothesis.q3",
+                     prompt: "True or false: If p = 0.04 and α = 0.01, you reject the null hypothesis.",
+                     math: nil,
+                     kind: .trueFalse(answer: false),
+                     hint: "Reject only when p-value is smaller than α.",
+                     solutionSteps: ["0.04 is greater than 0.01", "The evidence is not strong enough at the 1% level"]),
+            Question(id: "stats.hypothesis.q4",
+                     prompt: "A Type I error means:",
+                     math: nil,
+                     kind: .multipleChoice(options: [
+                        .init(label: "Rejecting a true null hypothesis", math: nil),
+                        .init(label: "Failing to reject a false null hypothesis", math: nil),
+                        .init(label: "Using a larger sample", math: nil),
+                        .init(label: "Calculating the mean", math: nil),
+                     ], correctIndex: 0),
+                     hint: "Type I is a false alarm.",
+                     solutionSteps: ["A false alarm rejects the null", "But the null was actually true"]),
+            Question(id: "stats.hypothesis.q5",
+                     prompt: "Compute the test statistic: estimate = 12, null value = 10, standard error = 1.",
+                     math: nil,
+                     kind: .freeAnswer(accepted: ["2", "2.0"]),
+                     hint: "Use (estimate − null value) / standard error.",
+                     solutionSteps: ["(12 − 10) / 1 = 2", "The test statistic is 2"]),
+        ]
+    )
+
     // MARK: - Linear Algebra
 
     static let vectors = Lesson(
@@ -3421,7 +3484,7 @@ enum Curriculum {
               icon: "chart.bar.doc.horizontal",
               color: Palette.stats,
               lessons: [descriptiveStats, probabilityBasics, dataDisplays, sampling,
-                        distributions, correlationRegression, inferenceBasics]),
+                        distributions, correlationRegression, inferenceBasics, hypothesisTests]),
         Topic(id: "linearalgebra",
               title: "Linear Algebra",
               subtitle: "Vectors, matrices & systems",

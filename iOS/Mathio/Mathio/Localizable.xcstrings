@@ -1,6 +1,451 @@
 {
   "sourceLanguage": "en",
   "strings": {
+    "0": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0"
+          }
+        }
+      }
+    },
+    "1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1"
+          }
+        }
+      }
+    },
+    "2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2"
+          }
+        }
+      }
+    },
+    "3": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3"
+          }
+        }
+      }
+    },
+    "4": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "4"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "4"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "4"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "4"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "4"
+          }
+        }
+      }
+    },
+    "6": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "6"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "6"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "6"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "6"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "6"
+          }
+        }
+      }
+    },
+    "7": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "7"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "7"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "7"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "7"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "7"
+          }
+        }
+      }
+    },
+    "8": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "8"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "8"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "8"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "8"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "8"
+          }
+        }
+      }
+    },
+    "20": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "20"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "20"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "20"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "20"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "20"
+          }
+        }
+      }
+    },
+    "25": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "25"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "25"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "25"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "25"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "25"
+          }
+        }
+      }
+    },
+    "40": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "40"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "40"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "40"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "40"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "40"
+          }
+        }
+      }
+    },
+    "72": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "72"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "72"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "72"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "72"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "72"
+          }
+        }
+      }
+    },
+    "720": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "720"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "720"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "720"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "720"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "720"
+          }
+        }
+      }
+    },
     "!": {
       "localizations": {
         "de": {
@@ -1533,40 +1978,6 @@
         }
       }
     },
-    "0": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "0"
-          }
-        },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "0"
-          }
-        },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "0"
-          }
-        },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "0"
-          }
-        },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "0"
-          }
-        }
-      }
-    },
     "0 + 5 = 5": {
       "localizations": {
         "de": {
@@ -2107,40 +2518,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "0°"
-          }
-        }
-      }
-    },
-    "1": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "1"
-          }
-        },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "1"
-          }
-        },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "1"
-          }
-        },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "1"
-          }
-        },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "1"
           }
         }
       }
@@ -3984,40 +4361,6 @@
         }
       }
     },
-    "2": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "2"
-          }
-        },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "2"
-          }
-        },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "2"
-          }
-        },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "2"
-          }
-        },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "2"
-          }
-        }
-      }
-    },
     "2 + 4 + 6 + 8 = 20": {
       "localizations": {
         "de": {
@@ -4631,41 +4974,6 @@
         }
       }
     },
-    "20": {
-      "extractionState": "manual",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "20"
-          }
-        },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "20"
-          }
-        },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "20"
-          }
-        },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "20"
-          }
-        },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "20"
-          }
-        }
-      }
-    },
     "20 / 4 = 5": {
       "localizations": {
         "de": {
@@ -5105,41 +5413,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "240 / 12 = 20"
-          }
-        }
-      }
-    },
-    "25": {
-      "extractionState": "manual",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "25"
-          }
-        },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "25"
-          }
-        },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "25"
-          }
-        },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "25"
-          }
-        },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "25"
           }
         }
       }
@@ -5992,40 +6265,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "2π radianos é igual a:"
-          }
-        }
-      }
-    },
-    "3": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "3"
-          }
-        },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "3"
-          }
-        },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "3"
-          }
-        },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "3"
-          }
-        },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "3"
           }
         }
       }
@@ -7053,40 +7292,6 @@
         }
       }
     },
-    "4": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "4"
-          }
-        },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "4"
-          }
-        },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "4"
-          }
-        },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "4"
-          }
-        },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "4"
-          }
-        }
-      }
-    },
     "4 + 7 = 11": {
       "localizations": {
         "de": {
@@ -7355,41 +7560,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "4/6 − 1/6 = 3/6 = 1/2"
-          }
-        }
-      }
-    },
-    "40": {
-      "extractionState": "manual",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "40"
-          }
-        },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "40"
-          }
-        },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "40"
-          }
-        },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "40"
-          }
-        },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "40"
           }
         }
       }
@@ -8278,40 +8448,6 @@
         }
       }
     },
-    "6": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "6"
-          }
-        },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "6"
-          }
-        },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "6"
-          }
-        },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "6"
-          }
-        },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "6"
-          }
-        }
-      }
-    },
     "6 = 2 · 3 + 0": {
       "localizations": {
         "de": {
@@ -8890,40 +9026,6 @@
         }
       }
     },
-    "7": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "7"
-          }
-        },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "7"
-          }
-        },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "7"
-          }
-        },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "7"
-          }
-        },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "7"
-          }
-        }
-      }
-    },
     "7 + y = 10": {
       "localizations": {
         "de": {
@@ -9198,74 +9300,6 @@
         }
       }
     },
-    "72": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "72"
-          }
-        },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "72"
-          }
-        },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "72"
-          }
-        },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "72"
-          }
-        },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "72"
-          }
-        }
-      }
-    },
-    "720": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "720"
-          }
-        },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "720"
-          }
-        },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "720"
-          }
-        },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "720"
-          }
-        },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "720"
-          }
-        }
-      }
-    },
     "7² = 49 and 8² = 64.": {
       "localizations": {
         "de": {
@@ -9296,40 +9330,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "7² = 49 e 8² = 64."
-          }
-        }
-      }
-    },
-    "8": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "8"
-          }
-        },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "8"
-          }
-        },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "8"
-          }
-        },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "8"
-          }
-        },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "8"
           }
         }
       }
@@ -71855,6 +71855,1264 @@
           "stringUnit": {
             "state": "translated",
             "value": "Uma série rápida de %@, focada onde a prática rende mais rápido."
+          }
+        }
+      }
+    },
+    "Hypothesis Tests": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hypothesentests"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pruebas de hipótesis"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tests d’hypothèse"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Test di ipotesi"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Testes de hipótese"
+          }
+        }
+      }
+    },
+    "Hypothesis tests use sample evidence to decide whether a claim is unusually unlikely under a starting assumption.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hypothesentests nutzen Stichprobendaten, um zu entscheiden, ob eine Behauptung unter einer Ausgangsannahme ungewöhnlich unwahrscheinlich ist."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Las pruebas de hipótesis usan evidencia de una muestra para decidir si una afirmación es inusualmente improbable bajo una suposición inicial."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les tests d’hypothèse utilisent les données d’un échantillon pour décider si une affirmation est inhabituellement improbable sous une hypothèse de départ."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I test di ipotesi usano dati campionari per decidere se un'affermazione è insolitamente improbabile sotto un'ipotesi iniziale."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Testes de hipótese usam evidências de uma amostra para decidir se uma afirmação é incomumente improvável sob uma suposição inicial."
+          }
+        }
+      }
+    },
+    "Null and alternative": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Null- und Alternativhypothese"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nula y alternativa"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nulle et alternative"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nulla e alternativa"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nula e alternativa"
+          }
+        }
+      }
+    },
+    "Start with a neutral claim, then ask whether the data gives enough evidence against it.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beginne mit einer neutralen Behauptung und frage dann, ob die Daten genug Belege dagegen liefern."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Empieza con una afirmación neutral y pregunta si los datos dan suficiente evidencia en contra."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Commence par une affirmation neutre, puis demande si les données fournissent assez de preuves contre elle."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Parti da un'affermazione neutra, poi chiediti se i dati danno abbastanza prove contro di essa."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Comece com uma afirmação neutra e pergunte se os dados dão evidência suficiente contra ela."
+          }
+        }
+      }
+    },
+    "Decision rule": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Entscheidungsregel"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Regla de decisión"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Règle de décision"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Regola decisionale"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Regra de decisão"
+          }
+        }
+      }
+    },
+    "A small p-value means the sample would be unusual if the null claim were true.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ein kleiner p-Wert bedeutet, dass die Stichprobe ungewöhnlich wäre, wenn die Nullhypothese wahr wäre."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un valor p pequeño significa que la muestra sería inusual si la hipótesis nula fuera verdadera."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Une petite valeur p signifie que l’échantillon serait inhabituel si l’hypothèse nulle était vraie."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un p-value piccolo significa che il campione sarebbe insolito se l'ipotesi nulla fosse vera."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Um valor-p pequeno significa que a amostra seria incomum se a hipótese nula fosse verdadeira."
+          }
+        }
+      }
+    },
+    "A test has p-value 0.03 and α = 0.05. What should you do?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ein Test hat den p-Wert 0,03 und α = 0,05. Was solltest du tun?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una prueba tiene valor p 0,03 y α = 0,05. ¿Qué debes hacer?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un test a une valeur p de 0,03 et α = 0,05. Que dois-tu faire ?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un test ha p-value 0,03 e α = 0,05. Che cosa dovresti fare?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Um teste tem valor-p 0,03 e α = 0,05. O que você deve fazer?"
+          }
+        }
+      }
+    },
+    "Reject the null hypothesis": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Nullhypothese verwerfen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rechazar la hipótesis nula"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rejeter l’hypothèse nulle"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rifiutare l'ipotesi nulla"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rejeitar a hipótese nula"
+          }
+        }
+      }
+    },
+    "Fail to reject the null hypothesis": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Nullhypothese nicht verwerfen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No rechazar la hipótesis nula"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ne pas rejeter l’hypothèse nulle"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Non rifiutare l'ipotesi nulla"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não rejeitar a hipótese nula"
+          }
+        }
+      }
+    },
+    "Increase the sample size automatically": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Stichprobengröße automatisch erhöhen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aumentar automáticamente el tamaño de la muestra"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Augmenter automatiquement la taille de l’échantillon"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aumentare automaticamente la dimensione del campione"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aumentar automaticamente o tamanho da amostra"
+          }
+        }
+      }
+    },
+    "Prove the alternative is 100% true": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beweisen, dass die Alternative zu 100 % wahr ist"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Probar que la alternativa es 100 % verdadera"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prouver que l’alternative est vraie à 100 %"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dimostrare che l'alternativa è vera al 100%"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Provar que a alternativa é 100% verdadeira"
+          }
+        }
+      }
+    },
+    "Compare p-value to α.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vergleiche den p-Wert mit α."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Compara el valor p con α."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Compare la valeur p à α."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Confronta il p-value con α."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Compare o valor-p com α."
+          }
+        }
+      }
+    },
+    "The result is statistically significant at the 5% level": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Das Ergebnis ist auf dem 5%-Niveau statistisch signifikant"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El resultado es estadísticamente significativo al nivel del 5%"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le résultat est statistiquement significatif au niveau de 5 %"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il risultato è statisticamente significativo al livello del 5%"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O resultado é estatisticamente significativo no nível de 5%"
+          }
+        }
+      }
+    },
+    "In a new tutoring method study, which statement is a typical null hypothesis?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Welche Aussage ist in einer Studie zu einer neuen Nachhilfemethode eine typische Nullhypothese?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En un estudio sobre un nuevo método de tutoría, ¿qué enunciado es una hipótesis nula típica?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dans une étude sur une nouvelle méthode de tutorat, quelle affirmation est une hypothèse nulle typique ?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In uno studio su un nuovo metodo di tutoraggio, quale affermazione è una tipica ipotesi nulla?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Em um estudo sobre um novo método de tutoria, qual afirmação é uma hipótese nula típica?"
+          }
+        }
+      }
+    },
+    "The method has no effect": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Methode hat keinen Effekt"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El método no tiene efecto"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La méthode n’a aucun effet"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il metodo non ha effetto"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O método não tem efeito"
+          }
+        }
+      }
+    },
+    "The method works for everyone": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Methode funktioniert für alle"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El método funciona para todos"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La méthode fonctionne pour tout le monde"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il metodo funziona per tutti"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O método funciona para todos"
+          }
+        }
+      }
+    },
+    "The sample is always biased": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Stichprobe ist immer verzerrt"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La muestra siempre está sesgada"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L’échantillon est toujours biaisé"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il campione è sempre distorto"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A amostra é sempre enviesada"
+          }
+        }
+      }
+    },
+    "The p-value must be zero": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der p-Wert muss null sein"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El valor p debe ser cero"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La valeur p doit être zéro"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il p-value deve essere zero"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O valor-p deve ser zero"
+          }
+        }
+      }
+    },
+    "The null usually says no change, no difference, or no effect.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Nullhypothese sagt meist: keine Veränderung, kein Unterschied oder kein Effekt."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La nula suele decir que no hay cambio, diferencia ni efecto."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La nulle dit généralement qu’il n’y a pas de changement, de différence ni d’effet."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La nulla di solito afferma nessun cambiamento, nessuna differenza o nessun effetto."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A nula geralmente diz que não há mudança, diferença ou efeito."
+          }
+        }
+      }
+    },
+    "A null hypothesis is the starting assumption": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eine Nullhypothese ist die Ausgangsannahme"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una hipótesis nula es la suposición inicial"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Une hypothèse nulle est l’hypothèse de départ"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un'ipotesi nulla è l'assunzione iniziale"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uma hipótese nula é a suposição inicial"
+          }
+        }
+      }
+    },
+    "For an effect study, the neutral claim is no effect": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bei einer Effektstudie lautet die neutrale Behauptung: kein Effekt"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En un estudio de efecto, la afirmación neutral es que no hay efecto"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dans une étude d’effet, l’affirmation neutre est l’absence d’effet"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In uno studio sull'effetto, l'affermazione neutra è nessun effetto"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Em um estudo de efeito, a afirmação neutra é ausência de efeito"
+          }
+        }
+      }
+    },
+    "True or false: If p = 0.04 and α = 0.01, you reject the null hypothesis.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Richtig oder falsch: Wenn p = 0,04 und α = 0,01, verwirfst du die Nullhypothese."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verdadero o falso: Si p = 0,04 y α = 0,01, rechazas la hipótesis nula."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vrai ou faux : si p = 0,04 et α = 0,01, tu rejettes l’hypothèse nulle."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vero o falso: se p = 0,04 e α = 0,01, rifiuti l'ipotesi nulla."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verdadeiro ou falso: se p = 0,04 e α = 0,01, você rejeita a hipótese nula."
+          }
+        }
+      }
+    },
+    "Reject only when p-value is smaller than α.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verwirf nur, wenn der p-Wert kleiner als α ist."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rechaza solo cuando el valor p sea menor que α."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rejette seulement si la valeur p est plus petite que α."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rifiuta solo quando il p-value è minore di α."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rejeite apenas quando o valor-p for menor que α."
+          }
+        }
+      }
+    },
+    "0.04 is greater than 0.01": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0,04 ist größer als 0,01"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0,04 es mayor que 0,01"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0,04 est supérieur à 0,01"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0,04 è maggiore di 0,01"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0,04 é maior que 0,01"
+          }
+        }
+      }
+    },
+    "The evidence is not strong enough at the 1% level": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Belege sind auf dem 1%-Niveau nicht stark genug"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La evidencia no es lo bastante fuerte al nivel del 1%"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les preuves ne sont pas assez fortes au niveau de 1 %"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L'evidenza non è abbastanza forte al livello dell'1%"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A evidência não é forte o suficiente no nível de 1%"
+          }
+        }
+      }
+    },
+    "A Type I error means:": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ein Fehler 1. Art bedeutet:"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un error de tipo I significa:"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Une erreur de type I signifie :"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un errore di tipo I significa:"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Um erro do tipo I significa:"
+          }
+        }
+      }
+    },
+    "Rejecting a true null hypothesis": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eine wahre Nullhypothese zu verwerfen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rechazar una hipótesis nula verdadera"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rejeter une hypothèse nulle vraie"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rifiutare un'ipotesi nulla vera"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rejeitar uma hipótese nula verdadeira"
+          }
+        }
+      }
+    },
+    "Failing to reject a false null hypothesis": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eine falsche Nullhypothese nicht zu verwerfen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No rechazar una hipótesis nula falsa"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ne pas rejeter une hypothèse nulle fausse"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Non rifiutare un'ipotesi nulla falsa"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não rejeitar uma hipótese nula falsa"
+          }
+        }
+      }
+    },
+    "Type I is a false alarm.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fehler 1. Art ist ein falscher Alarm."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El tipo I es una falsa alarma."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le type I est une fausse alerte."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il tipo I è un falso allarme."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O tipo I é um alarme falso."
+          }
+        }
+      }
+    },
+    "A false alarm rejects the null": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ein falscher Alarm verwirft die Nullhypothese"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una falsa alarma rechaza la nula"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Une fausse alerte rejette la nulle"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un falso allarme rifiuta la nulla"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Um alarme falso rejeita a nula"
+          }
+        }
+      }
+    },
+    "But the null was actually true": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aber die Nullhypothese war tatsächlich wahr"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pero la nula en realidad era verdadera"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mais la nulle était en réalité vraie"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ma la nulla era in realtà vera"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mas a nula era verdadeira"
+          }
+        }
+      }
+    },
+    "Compute the test statistic: estimate = 12, null value = 10, standard error = 1.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Berechne die Teststatistik: Schätzwert = 12, Nullwert = 10, Standardfehler = 1."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Calcula el estadístico de prueba: estimación = 12, valor nulo = 10, error estándar = 1."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Calcule la statistique de test : estimation = 12, valeur nulle = 10, erreur standard = 1."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Calcola la statistica del test: stima = 12, valore nullo = 10, errore standard = 1."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Calcule a estatística de teste: estimativa = 12, valor nulo = 10, erro padrão = 1."
+          }
+        }
+      }
+    },
+    "Use (estimate − null value) / standard error.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nutze (Schätzwert − Nullwert) / Standardfehler."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usa (estimación − valor nulo) / error estándar."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Utilise (estimation − valeur nulle) / erreur standard."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usa (stima − valore nullo) / errore standard."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Use (estimativa − valor nulo) / erro padrão."
+          }
+        }
+      }
+    },
+    "(12 − 10) / 1 = 2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(12 − 10) / 1 = 2"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(12 − 10) / 1 = 2"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(12 − 10) / 1 = 2"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(12 − 10) / 1 = 2"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(12 − 10) / 1 = 2"
+          }
+        }
+      }
+    },
+    "The test statistic is 2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Teststatistik ist 2"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El estadístico de prueba es 2"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La statistique de test est 2"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La statistica del test è 2"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A estatística de teste é 2"
+          }
+        }
+      }
+    },
+    "Using a larger sample": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eine größere Stichprobe verwenden"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usar una muestra más grande"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Utiliser un échantillon plus grand"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usare un campione più grande"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usar uma amostra maior"
+          }
+        }
+      }
+    },
+    "Calculating the mean": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Den Mittelwert berechnen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Calcular la media"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Calculer la moyenne"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Calcolare la media"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Calcular a média"
           }
         }
       }
