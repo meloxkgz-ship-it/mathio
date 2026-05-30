@@ -1869,7 +1869,8 @@ struct LearningPath: Identifiable {
             icon: "number",
             color: Palette.terracotta,
             lessons: [Curriculum.preAlgFractions, Curriculum.preAlgDecimals, Curriculum.preAlgPercents,
-                      Curriculum.preAlgRatios, Curriculum.preAlgRoots, Curriculum.scientificNotation],
+                      Curriculum.percentChange, Curriculum.preAlgRatios, Curriculum.preAlgRoots,
+                      Curriculum.scientificNotation],
             durationDays: 30
         ),
         LearningPath(
@@ -4057,7 +4058,7 @@ struct PaywallView: View {
 
     private var bullets: some View {
         VStack(alignment: .leading, spacing: 12) {
-            row("books.vertical.fill", "70 lessons across algebra, calculus, geometry, statistics, finance, and more")
+            row("books.vertical.fill", "71 lessons across algebra, calculus, geometry, statistics, finance, and more")
             row("map.fill", "Guided paths show exactly what to study next")
             row("brain.head.profile", "Adaptive practice focuses on weak spots")
             row("arrow.triangle.2.circlepath", "Spaced repetition brings back what you are about to forget")

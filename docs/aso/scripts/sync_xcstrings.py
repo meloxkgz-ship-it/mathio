@@ -101,6 +101,7 @@ PROSE: dict[str, str] = {
         "Ein Preis steigt um 10 % und fällt dann um 10 %. Resultat:",
     "15 is what percent of 60?": "Wieviel Prozent von 60 sind 15?",
     "True or false: 200% of 5 equals 10.": "Wahr oder falsch: 200 % von 5 ergibt 10.",
+    "Percent increase = 25%": "Prozentuale Erhöhung = 25%",
     "Compute (3 + 4) · 2.": "Berechne (3 + 4) · 2.",
     "Compute 3 + 4 · 2.": "Berechne 3 + 4 · 2.",
     "Compute 12 ÷ 4 + 2.": "Berechne 12 ÷ 4 + 2.",

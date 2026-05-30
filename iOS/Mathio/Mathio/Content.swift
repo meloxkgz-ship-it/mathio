@@ -115,6 +115,59 @@ enum Curriculum {
         ]
     )
 
+    static let percentChange = Lesson(
+        id: "pre.pctchange",
+        title: "Percent Change",
+        intro: "Percent change compares the difference to the original amount. It helps you read discounts, growth, loss, and exam word problems.",
+        formulas: [
+            Formula(key: "pre.pctchange.f1",
+                    name: "Percent change",
+                    math: "percent change = (new − old) / old · 100%",
+                    explanation: "Compare the change to the original value, not the new value."),
+            Formula(key: "pre.pctchange.f2",
+                    name: "Change amount",
+                    math: "change = new − old",
+                    explanation: "A positive change is an increase. A negative change is a decrease."),
+        ],
+        questions: [
+            Question(id: "pre.pctchange.q1",
+                     prompt: "A price rises from 50 to 60. What is the percent increase?",
+                     math: nil,
+                     kind: .freeAnswer(accepted: ["20", "20%"]),
+                     hint: "The change is 10, compared to the original 50.",
+                     solutionSteps: ["60 − 50 = 10", "10/50 = 0.20", "Percent increase = 20%"]),
+            Question(id: "pre.pctchange.q2",
+                     prompt: "A score drops from 80 to 60. What is the percent decrease?",
+                     math: nil,
+                     kind: .freeAnswer(accepted: ["25", "25%"]),
+                     hint: "The change is 20, compared to the original 80.",
+                     solutionSteps: ["80 − 60 = 20", "20/80 = 0.25", "Percent decrease = 25%"]),
+            Question(id: "pre.pctchange.q3",
+                     prompt: "Which value goes in the denominator for percent change?",
+                     math: nil,
+                     kind: .multipleChoice(options: [
+                        .init(label: "The original value", math: nil),
+                        .init(label: "The new value", math: nil),
+                        .init(label: "The larger value", math: nil),
+                        .init(label: "The smaller value", math: nil),
+                     ], correctIndex: 0),
+                     hint: "Percent change asks: change compared to what you started with?",
+                     solutionSteps: ["Use the original value in the denominator", "Then multiply by 100%"]),
+            Question(id: "pre.pctchange.q4",
+                     prompt: "A population grows from 200 to 250. Percent increase?",
+                     math: nil,
+                     kind: .freeAnswer(accepted: ["25", "25%"]),
+                     hint: "Find the change first.",
+                     solutionSteps: ["250 − 200 = 50", "50/200 = 0.25", "Percent increase = 25%"]),
+            Question(id: "pre.pctchange.q5",
+                     prompt: "True or false: Going from 100 to 90 is a 10% decrease.",
+                     math: nil,
+                     kind: .trueFalse(answer: true),
+                     hint: "The decrease is 10 out of the original 100.",
+                     solutionSteps: ["100 − 90 = 10", "10/100 = 10%", "So it is a 10% decrease"]),
+        ]
+    )
+
     static let preAlgOrder = Lesson(
         id: "pre.order",
         title: "Order of Operations",
@@ -3664,7 +3717,7 @@ enum Curriculum {
               subtitle: "Fractions, percents, basics",
               icon: "number",
               color: Palette.stats,
-              lessons: [preAlgFractions, preAlgPercents, preAlgOrder, preAlgNegatives,
+              lessons: [preAlgFractions, preAlgPercents, percentChange, preAlgOrder, preAlgNegatives,
                         preAlgDecimals, preAlgRatios, preAlgRoots, scientificNotation]),
         Topic(id: "algebra",
               title: "Algebra",
