@@ -192,6 +192,19 @@ struct LearningProfile: Codable, Equatable {
         if ratio >= 0.45 || confidence >= 3 { return .steady }
         return .starter
     }
+
+    var weeklyHabitTargetDays: Int {
+        switch (goal, level) {
+        case (.exam, .advanced), (.university, .advanced):
+            return 5
+        case (.exam, _), (.university, _), (_, .steady):
+            return 4
+        case (_, .advanced):
+            return 5
+        case (_, .starter):
+            return 3
+        }
+    }
 }
 
 // MARK: - Persisted progress

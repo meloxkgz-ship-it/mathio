@@ -120235,6 +120235,244 @@
           }
         }
       }
+    },
+    "%lld/%lld days": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld/%lld Tage"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld/%lld días"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld/%lld jours"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld/%lld giorni"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld/%lld dias"
+          }
+        }
+      }
+    },
+    "Weekly rhythm. %lld of %lld target days, %lld correct answers.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wochenrhythmus. %lld von %lld Zieltagen, %lld richtige Antworten."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ritmo semanal. %lld de %lld días objetivo, %lld respuestas correctas."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rythme hebdomadaire. %lld sur %lld jours cibles, %lld bonnes réponses."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ritmo settimanale. %lld di %lld giorni obiettivo, %lld risposte corrette."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ritmo semanal. %lld de %lld dias-alvo, %lld respostas corretas."
+          }
+        }
+      }
+    },
+    "Your weekly rhythm is protected. Bonus practice is optional.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dein Wochenrhythmus ist geschützt. Bonus-Übung ist optional."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tu ritmo semanal está protegido. La práctica extra es opcional."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ton rythme hebdomadaire est protégé. La pratique bonus est facultative."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il tuo ritmo settimanale è protetto. La pratica extra è facoltativa."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Seu ritmo semanal está protegido. A prática extra é opcional."
+          }
+        }
+      }
+    },
+    "%lld short study days left to protect this week.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Noch %lld kurze Lerntage, um diese Woche zu schützen."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quedan %lld días cortos de estudio para proteger esta semana."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Encore %lld courts jours d’étude pour protéger cette semaine."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Restano %lld brevi giorni di studio per proteggere questa settimana."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Faltam %lld dias curtos de estudo para proteger esta semana."
+          }
+        }
+      }
+    },
+    "Today counts. Stop while it still feels easy or open a bonus set.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Heute zählt. Hör auf, solange es leicht bleibt, oder öffne ein Bonus-Set."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hoy cuenta. Para mientras aún se siente fácil o abre una serie extra."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aujourd’hui compte. Arrête tant que ça reste facile ou ouvre une série bonus."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oggi conta. Fermati finché sembra ancora facile oppure apri un set extra."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hoje conta. Pare enquanto ainda parece fácil ou abra uma série extra."
+          }
+        }
+      }
+    },
+    "One tiny session is enough to count today.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eine winzige Einheit reicht, damit heute zählt."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una sesión diminuta basta para que hoy cuente."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Une toute petite session suffit pour que la journée compte."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una sessione minuscola basta per far contare oggi."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uma sessão bem pequena basta para hoje contar."
+          }
+        }
+      }
+    },
+    "Keep it realistic: short sessions win over rare marathons.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bleib realistisch: kurze Einheiten schlagen seltene Marathons."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sé realista: las sesiones cortas ganan a los maratones esporádicos."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reste réaliste : les courtes sessions battent les rares marathons."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sii realistico: le sessioni brevi battono le rare maratone."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mantenha realista: sessões curtas vencem maratonas raras."
+          }
+        }
+      }
     }
   },
   "version": "1.0"

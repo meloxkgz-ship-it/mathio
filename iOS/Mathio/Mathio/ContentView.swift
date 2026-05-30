@@ -1025,8 +1025,14 @@ struct HomeView: View {
     private var activeDaysThisWeek: Int { weeklyActivity.filter { $0.correct > 0 }.count }
     private var weeklyCorrect: Int { weeklyActivity.reduce(0) { $0 + $1.correct } }
     private var weeklyTarget: Int { max(settings.dailyGoal * 7, 1) }
-    private var weeklyProgress: Double { min(1, Double(weeklyCorrect) / Double(weeklyTarget)) }
     private var weeklyAnswersRemaining: Int { max(weeklyTarget - weeklyCorrect, 0) }
+    private var weeklyHabitTargetDays: Int { store.learningProfile?.weeklyHabitTargetDays ?? 3 }
+    private var weeklyHabitProgress: Double {
+        min(1, Double(activeDaysThisWeek) / Double(max(weeklyHabitTargetDays, 1)))
+    }
+    private var weeklyHabitDaysRemaining: Int {
+        max(weeklyHabitTargetDays - activeDaysThisWeek, 0)
+    }
     private var hasReviewHistory: Bool {
         store.answered.values.contains { $0.attempts > 0 }
     }
@@ -2275,7 +2281,7 @@ struct HomeView: View {
                             .fixedSize(horizontal: false, vertical: true)
                     }
                     Spacer(minLength: 0)
-                    Text("\(activeDaysThisWeek)/7 days")
+                    Text("\(activeDaysThisWeek)/\(weeklyHabitTargetDays) days")
                         .font(.label)
                         .foregroundStyle(Palette.inkSoft)
                         .padding(.horizontal, 10)
@@ -2283,7 +2289,7 @@ struct HomeView: View {
                         .background(Palette.surface, in: Capsule())
                 }
 
-                ProgressBar(progress: weeklyProgress, color: Palette.calculus, height: 6)
+                ProgressBar(progress: weeklyHabitProgress, color: Palette.calculus, height: 6)
 
                 HStack(alignment: .bottom, spacing: 8) {
                     ForEach(weeklyActivity) { day in
@@ -2314,21 +2320,27 @@ struct HomeView: View {
             }
         }
         .accessibilityElement(children: .combine)
-        .accessibilityLabel(Text("Weekly rhythm. \(activeDaysThisWeek) active days, \(weeklyCorrect) correct answers."))
+        .accessibilityLabel(Text("Weekly rhythm. \(activeDaysThisWeek) of \(weeklyHabitTargetDays) target days, \(weeklyCorrect) correct answers."))
     }
 
     private var weeklyRhythmSubtitle: LocalizedStringResource {
+        if weeklyHabitDaysRemaining == 0 {
+            return "Your weekly rhythm is protected. Bonus practice is optional."
+        }
         if weeklyCorrect == 0 {
             return "Start with one short session today."
         }
-        return "\(activeDaysThisWeek) active days, \(weeklyCorrect) correct answers"
+        return "\(weeklyHabitDaysRemaining) short study days left to protect this week."
     }
 
     private var weeklyRhythmPrompt: LocalizedStringResource {
         if store.correctToday() >= settings.dailyGoal {
-            return "Come back tomorrow to keep the rhythm."
+            return "Today counts. Stop while it still feels easy or open a bonus set."
         }
-        return "Great rhythm. A short review keeps it alive."
+        if activeDaysThisWeek == 0 {
+            return "One tiny session is enough to count today."
+        }
+        return "Keep it realistic: short sessions win over rare marathons."
     }
 
     private func weeklyDayHeight(for correct: Int) -> CGFloat {

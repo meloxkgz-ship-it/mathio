@@ -78,6 +78,36 @@ final class StoreRetentionTests: XCTestCase {
         XCTAssertEqual(plan[1].lesson?.id, Curriculum.quadratics.id)
     }
 
+    func testLearningProfileSetsRealisticWeeklyHabitTargets() {
+        let createdAt = Date(timeIntervalSince1970: 0)
+
+        let starter = LearningProfile(
+            goal: .selfStudy,
+            confidence: 1,
+            diagnosticCorrect: 0,
+            diagnosticTotal: 4,
+            createdAt: createdAt
+        )
+        let steadyExam = LearningProfile(
+            goal: .exam,
+            confidence: 3,
+            diagnosticCorrect: 2,
+            diagnosticTotal: 4,
+            createdAt: createdAt
+        )
+        let advancedUniversity = LearningProfile(
+            goal: .university,
+            confidence: 5,
+            diagnosticCorrect: 4,
+            diagnosticTotal: 4,
+            createdAt: createdAt
+        )
+
+        XCTAssertEqual(starter.weeklyHabitTargetDays, 3)
+        XCTAssertEqual(steadyExam.weeklyHabitTargetDays, 4)
+        XCTAssertEqual(advancedUniversity.weeklyHabitTargetDays, 5)
+    }
+
     func testSessionSummaryPersistsForNextLaunch() {
         let store = Store()
         let lesson = Curriculum.linearEquations
