@@ -5,6 +5,7 @@ New:
 • Comeback Mission: a gentle 5-question restart when you return after a break
 • Rational Expressions: new algebra practice for simplifying variable fractions
 • Confidence Intervals: guided statistics practice with formulas and worked solutions
+• Exam Readiness score on the Sprint card so learners see what to improve next
 • Exam Sprint and Weak Spot Drill for faster focused practice
 
 Improved:

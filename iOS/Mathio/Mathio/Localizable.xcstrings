@@ -76012,6 +76012,146 @@
           }
         }
       }
+    },
+    "Readiness": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bereitschaft"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Preparación"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Préparation"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Preparazione"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prontidão"
+          }
+        }
+      }
+    },
+    "%lld review questions can lift your readiness.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld Wiederholungsfragen können deine Bereitschaft verbessern."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld preguntas de repaso pueden mejorar tu preparación."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld questions de révision peuvent améliorer votre préparation."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld domande di ripasso possono migliorare la tua preparazione."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld perguntas de revisão podem aumentar sua prontidão."
+          }
+        }
+      }
+    },
+    "Finish today's goal to raise your exam rhythm.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erreiche heute dein Ziel, um deinen Prüfungsrhythmus zu stärken."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Completa la meta de hoy para mejorar tu ritmo de examen."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Terminez l’objectif du jour pour renforcer votre rythme d’examen."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Completa l’obiettivo di oggi per migliorare il ritmo da esame."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Conclua a meta de hoje para melhorar seu ritmo de prova."
+          }
+        }
+      }
+    },
+    "Strong rhythm. Use a sprint to keep exam skills sharp.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Starker Rhythmus. Nutze einen Sprint, um Prüfungsfähigkeiten scharf zu halten."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Buen ritmo. Usa un sprint para mantener afinadas tus habilidades de examen."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bon rythme. Utilisez un sprint pour garder vos compétences d’examen affûtées."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ottimo ritmo. Usa uno sprint per mantenere allenate le abilità da esame."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ritmo forte. Use um sprint para manter suas habilidades de prova afiadas."
+          }
+        }
+      }
     }
   },
   "version": "1.0"

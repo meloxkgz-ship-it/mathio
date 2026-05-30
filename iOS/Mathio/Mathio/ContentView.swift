@@ -809,6 +809,15 @@ struct HomeView: View {
     private var weeklyCorrect: Int { weeklyActivity.reduce(0) { $0 + $1.correct } }
     private var weeklyTarget: Int { max(settings.dailyGoal * 7, 1) }
     private var weeklyProgress: Double { min(1, Double(weeklyCorrect) / Double(weeklyTarget)) }
+    private var examReadinessProgress: Double {
+        let mastery = topics.isEmpty ? 0 : topics.reduce(0.0) { $0 + store.mastery(for: $1) } / Double(topics.count)
+        let review = reviewCount == 0 ? 1.0 : max(0.15, 1.0 - Double(min(reviewCount, 10)) / 12.0)
+        let daily = min(1.0, Double(store.correctToday()) / Double(max(settings.dailyGoal, 1)))
+        return min(1.0, mastery * 0.55 + review * 0.25 + daily * 0.20)
+    }
+    private var examReadinessPercent: Int {
+        Int((examReadinessProgress * 100).rounded())
+    }
     private var daysSinceLastPractice: Int? {
         let calendar = Calendar.current
         let today = calendar.startOfDay(for: .now)
@@ -1231,6 +1240,23 @@ struct HomeView: View {
                             .foregroundStyle(Palette.inkFaint)
                     }
 
+                    VStack(alignment: .leading, spacing: 7) {
+                        HStack {
+                            Text("Readiness")
+                                .font(.caption)
+                                .foregroundStyle(Palette.inkFaint)
+                            Spacer()
+                            Text("\(examReadinessPercent)%")
+                                .font(.label)
+                                .foregroundStyle(Palette.ink)
+                        }
+                        ProgressBar(progress: examReadinessProgress, color: Palette.terracotta, height: 6)
+                        Text(examReadinessSubtitle)
+                            .font(.caption)
+                            .foregroundStyle(Palette.inkFaint)
+                            .fixedSize(horizontal: false, vertical: true)
+                    }
+
                     HStack(spacing: 8) {
                         sprintChip("Review", value: "\(min(reviewCount, 4))")
                         sprintChip("Weak", value: weakSpot == nil ? "0" : "3")
@@ -1241,6 +1267,16 @@ struct HomeView: View {
         }
         .buttonStyle(.plain)
         .accessibilityElement(children: .combine)
+    }
+
+    private var examReadinessSubtitle: LocalizedStringResource {
+        if reviewCount > 0 {
+            return "\(min(reviewCount, 10)) review questions can lift your readiness."
+        }
+        if store.correctToday() < settings.dailyGoal {
+            return "Finish today's goal to raise your exam rhythm."
+        }
+        return "Strong rhythm. Use a sprint to keep exam skills sharp."
     }
 
     private func sprintChip(_ label: LocalizedStringResource, value: String) -> some View {

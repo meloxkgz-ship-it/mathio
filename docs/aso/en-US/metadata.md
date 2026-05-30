@@ -53,9 +53,9 @@ Reasoning:
 ## Promotional Text (170 max — editable without review)
 
 ```
-New: Rational Expressions, comeback missions, Next 3 Sessions, Exam Sprint, and 68 lessons for focused practice.
+New: Exam Readiness, Rational Expressions, comeback missions, Next 3 Sessions, and 68 focused lessons.
 ```
-**112 / 170** — highlights current catalog size, retention improvements, and new statistics content.
+**102 / 170** — highlights current catalog size, retention improvements, and new statistics content.
 
 Rotation ideas (swap monthly):
 - `Free 7-day trial. Master one lesson a day — no leaderboards, no streaks-or-die guilt, just calm progress.` (113)
@@ -68,7 +68,7 @@ Rotation ideas (swap monthly):
 ```
 Math, made simple. Practice that actually remembers what you know.
 
-Mathio is a calm, focused math trainer for school, homework, exam prep, university foundations, and self-study. It now combines adaptive lessons, daily challenges, comeback missions, 3-session plans, weak-spot practice, exam sprints, achievements, spaced repetition, and a formula reference in one clean learning flow.
+Mathio is a calm, focused math trainer for school, homework, exam prep, university foundations, and self-study. It now combines adaptive lessons, daily challenges, comeback missions, 3-session plans, weak-spot practice, exam readiness, exam sprints, achievements, spaced repetition, and a formula reference in one clean learning flow.
 
 WHO MATHIO IS FOR
 • Students who need structured practice for homework, quizzes, finals, SAT-style prep, or university refreshers
@@ -139,6 +139,7 @@ New:
 • Comeback Mission: a gentle 5-question restart when you return after a break
 • Rational Expressions: new algebra practice for simplifying variable fractions
 • Confidence Intervals: guided statistics practice with formulas and worked solutions
+• Exam Readiness score on the Sprint card so learners see what to improve next
 • Exam Sprint and Weak Spot Drill for faster focused practice
 
 Improved:
