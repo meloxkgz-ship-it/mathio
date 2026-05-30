@@ -7,6 +7,7 @@ The check is intentionally stricter than Xcode's compiler:
 * every localized value must preserve printf-style placeholders
 * every localized value must be non-empty
 * old premium-roadmap count claims must not linger in the catalog
+* learning-review copy must not be translated as App Store ratings/reviews
 
 Usage:
   python3 docs/aso/scripts/verify_xcstrings.py
@@ -32,10 +33,35 @@ STALE_MARKETING_RE = re.compile(
     r"\bAlle\s+(?:[1-8]\d|9[0-7])\s+Lektionen\s+und\s+(?:[1-4]\d{2})\s+gef[üu]hrte[n]?\s+(?:Fragen|Aufgaben)\b",
     re.IGNORECASE,
 )
+LEARNING_REVIEW_TERMS = ("review", "reviews")
+APP_REVIEW_KEY_EXCEPTIONS = (
+    "app review",
+    "quick rating",
+    "rate mathio",
+    "reviewer",
+    "send feedback",
+    "enjoying mathio",
+    "unlocked for review",
+)
+APP_REVIEW_TRANSLATION_RE: dict[str, re.Pattern[str]] = {
+    "de": re.compile(r"\bReviews?\b|\bBewertungen?\b|\bbewerten\b", re.IGNORECASE),
+    "es": re.compile(r"\breseñas?\b|\bvaloraciones?\b|\bvalorar\b", re.IGNORECASE),
+    "fr": re.compile(r"\bavis\b|\bcritiques?\b|\bnotes?\b|\bnoter\b", re.IGNORECASE),
+    "it": re.compile(r"\brecension[ei]\b|\bvalutazion[ei]\b|\bvalutare\b", re.IGNORECASE),
+    "pt-BR": re.compile(r"\bcoment[aá]rios?\b|\bavalia[cç][aã]o\b|\bavalia[cç][õo]es\b|\bavaliar\b", re.IGNORECASE),
+}
 
 
 def placeholders(value: str) -> list[str]:
     return [m.group(0) for m in PLACEHOLDER_RE.finditer(value) if m.group(0) != "%%"]
+
+
+def is_learning_review_key(key: str) -> bool:
+    lowered = key.lower()
+    return (
+        any(term in lowered for term in LEARNING_REVIEW_TERMS)
+        and not any(exception in lowered for exception in APP_REVIEW_KEY_EXCEPTIONS)
+    )
 
 
 def main() -> int:
@@ -67,6 +93,10 @@ def main() -> int:
                 continue
             if STALE_MARKETING_RE.search(value):
                 failures.append(f"{locale}: stale marketing count for {key!r}: {value!r}")
+            if is_learning_review_key(key):
+                app_review_re = APP_REVIEW_TRANSLATION_RE.get(locale)
+                if app_review_re and app_review_re.search(value):
+                    failures.append(f"{locale}: learning review mistranslated as App Store review for {key!r}: {value!r}")
             value_placeholders = placeholders(value)
             if sorted(key_placeholders) != sorted(value_placeholders):
                 failures.append(

@@ -32534,7 +32534,7 @@
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Revenez demain avant que la file d'attente des critiques ne s'allonge."
+            "value": "Revenez demain avant que la file d'attente des révisions ne s'allonge."
           }
         },
         "it": {
@@ -60854,7 +60854,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Noch keine Reviews fällig. Neue Lektionen starten den nächsten Zyklus."
+            "value": "Noch keine Wiederholungen fällig. Neue Lektionen starten den nächsten Zyklus."
           }
         },
         "es": {
@@ -71987,31 +71987,31 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Reviews bald"
+            "value": "Baldige Wiederholungen"
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Reseñas próximamente"
+            "value": "Repasos pronto"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Bientôt des avis"
+            "value": "Révisions bientôt"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Presto le recensioni"
+            "value": "Ripassi in arrivo"
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Comentários em breve"
+            "value": "Revisões em breve"
           }
         }
       }
@@ -73451,31 +73451,31 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Sieh, ob Gewohnheit, Wiederholungen und Mastery auf Kurs sind"
+            "value": "Sieh, ob Gewohnheit, Wiederholungen und Können auf Kurs sind"
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Vea si su hábito, sus revisiones y su dominio van por buen camino"
+            "value": "Comprueba si tu hábito, tus repasos y tu dominio van por buen camino"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Vérifiez si vos habitudes, vos critiques et votre maîtrise sont sur la bonne voie"
+            "value": "Vérifiez si vos habitudes, vos révisions et votre maîtrise sont sur la bonne voie"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Verifica se le tue abitudini, le tue recensioni e la tua padronanza sono sulla buona strada"
+            "value": "Verifica se abitudine, ripassi e padronanza sono sulla strada giusta"
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Veja se seu hábito, avaliações e domínio estão no caminho certo"
+            "value": "Veja se seu hábito, revisões e domínio estão no caminho certo"
           }
         }
       }
@@ -75816,13 +75816,13 @@
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Examen intelligent"
+            "value": "Révision intelligente"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Recensione intelligente"
+            "value": "Ripasso intelligente"
           }
         },
         "pt-BR": {
