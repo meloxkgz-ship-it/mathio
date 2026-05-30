@@ -33,9 +33,12 @@ PROSE: dict[str, str] = {
         "88 Lektionen in Algebra, Analysis, Geometrie, Statistik, Finanzmathe und mehr",
     "89 lessons across algebra, calculus, geometry, statistics, finance, and more":
         "89 Lektionen in Algebra, Analysis, Geometrie, Statistik, Finanzmathe und mehr",
+    "%lld reviews are scheduled before they fade.": "%lld Wiederholungen sind geplant, bevor sie verblassen.",
     "A quick rating helps more learners find it.": "Eine kurze Bewertung hilft mehr Lernenden, Mathio zu finden.",
     "A concrete week of reviews and next lessons.": "Eine konkrete Woche mit Wiederholungen und nächsten Lektionen.",
     "A clear seven-day path from today's level": "Ein klarer Sieben-Tage-Pfad ab deinem heutigen Level",
+    "A short return session is ready before the review queue grows.":
+        "Eine kurze Rückkehr-Session ist bereit, bevor die Wiederholungsqueue wächst.",
     "Accuracy": "Trefferquote",
     "active days": "aktive Tage",
     "Algebra Foundation": "Algebra-Grundlagen",
@@ -101,6 +104,7 @@ PROSE: dict[str, str] = {
     "Seven planned sessions instead of a locked path": "Sieben geplante Sessions statt eines gesperrten Pfads",
     "Seven small sessions from your recommended path.": "Sieben kleine Sessions aus deinem empfohlenen Pfad.",
     "Seasoned learner": "Erfahrener Lerner",
+    "Set plan reminder": "Plan-Erinnerung setzen",
     "See whether your habit, reviews, and mastery are on track": "Sieh, ob Gewohnheit, Wiederholungen und Mastery auf Kurs sind",
     "Questions return before you forget them": "Aufgaben kommen zurück, bevor du sie vergisst",
     "Smart review": "Smarte Wiederholung",
@@ -122,6 +126,8 @@ PROSE: dict[str, str] = {
     "These lessons can move your roadmap fastest right now.": "Diese Lektionen bringen deinen Lernplan gerade am schnellsten voran.",
     "This week": "Diese Woche",
     "Tomorrow": "Morgen",
+    "Tomorrow's plan": "Morgenplan",
+    "Target": "Ziel",
     "Unlock the full roadmap Mathio built from your goal and level check.":
         "Schalte den vollständigen Lernplan frei, den Mathio aus deinem Ziel und Level-Check erstellt hat.",
     "What Premium keeps active": "Was Premium aktiv hält",
@@ -132,6 +138,8 @@ PROSE: dict[str, str] = {
     "Your math plan is ready": "Dein Mathe-Plan ist bereit",
     "Your plan is ready": "Dein Plan ist bereit",
     "Your week does not stop at the first free lesson": "Deine Woche endet nicht bei der ersten kostenlosen Lektion",
+    "Your next lesson is ready for a short return session.":
+        "Deine nächste Lektion ist für eine kurze Rückkehr-Session bereit.",
     "2 − 4 = −2, squared is 4": "2 − 4 = −2, quadriert ist das 4",
     "4 − 4 = 0, squared is 0": "4 − 4 = 0, quadriert ist das 0",
     "6 − 4 = 2, squared is 4": "6 − 4 = 2, quadriert ist das 4",

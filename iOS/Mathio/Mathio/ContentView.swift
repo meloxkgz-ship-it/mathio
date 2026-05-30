@@ -3481,6 +3481,9 @@ struct PracticeView: View {
                 if shouldShowMemoryPlan {
                     memoryPlanCard
                 }
+                if shouldShowTomorrowPlan {
+                    tomorrowPlanCard
+                }
                 if shouldShowShareOffer {
                     shareWinCard
                 }
@@ -3545,6 +3548,10 @@ struct PracticeView: View {
 
     private var shouldShowMemoryPlan: Bool {
         lesson.questions.count > 0 && sessionReviewPlan.week > 0
+    }
+
+    private var shouldShowTomorrowPlan: Bool {
+        lesson.questions.count > 0
     }
 
     private var suggestedNextLesson: Lesson? {
@@ -3632,6 +3639,61 @@ struct PracticeView: View {
             }
         }
         .transition(.opacity.combined(with: .move(edge: .bottom)))
+    }
+
+    private var tomorrowPlanCard: some View {
+        Card(padding: 16, background: Palette.surface) {
+            VStack(alignment: .leading, spacing: 14) {
+                HStack(spacing: 10) {
+                    Image(systemName: "calendar.badge.clock")
+                        .font(.system(size: 22, weight: .semibold))
+                        .foregroundStyle(Palette.calculus)
+                    VStack(alignment: .leading, spacing: 2) {
+                        Text("Tomorrow's plan")
+                            .font(.titleM)
+                            .foregroundStyle(Palette.ink)
+                        Text(tomorrowPlanSubtitle)
+                            .font(.bodyM)
+                            .foregroundStyle(Palette.inkSoft)
+                            .fixedSize(horizontal: false, vertical: true)
+                    }
+                }
+
+                HStack(spacing: 10) {
+                    insightMetric(value: "\(sessionReviewPlan.tomorrow)", label: "Review")
+                    insightMetric(value: "\(max(dailyGoal, 1))", label: "Target")
+                    insightMetric(value: suggestedNextLesson == nil ? "0" : "1", label: "Next lesson")
+                }
+
+                if !notificationsEnabled {
+                    Button { enableTomorrowReminder() } label: {
+                        HStack(spacing: 8) {
+                            Image(systemName: "bell.badge.fill")
+                            Text("Set plan reminder")
+                            Spacer(minLength: 0)
+                            Image(systemName: "arrow.right")
+                                .font(.system(size: 12, weight: .bold))
+                        }
+                        .font(.bodyM.weight(.semibold))
+                        .foregroundStyle(Palette.ink)
+                        .padding(12)
+                        .background(Palette.surfaceMuted, in: RoundedRectangle(cornerRadius: 12, style: .continuous))
+                    }
+                    .buttonStyle(.plain)
+                }
+            }
+        }
+        .transition(.opacity.combined(with: .move(edge: .bottom)))
+    }
+
+    private var tomorrowPlanSubtitle: LocalizedStringResource {
+        if sessionReviewPlan.tomorrow > 0 {
+            return "\(sessionReviewPlan.tomorrow) reviews are scheduled before they fade."
+        }
+        if suggestedNextLesson != nil {
+            return "Your next lesson is ready for a short return session."
+        }
+        return "A short return session is ready before the review queue grows."
     }
 
     private func insightMetric(value: String, label: LocalizedStringResource) -> some View {
