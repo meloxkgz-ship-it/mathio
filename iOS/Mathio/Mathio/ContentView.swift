@@ -3442,6 +3442,9 @@ struct PracticeView: View {
                 if lesson.questions.count > 0 {
                     sessionInsightCard
                 }
+                if shouldShowMemoryPlan {
+                    memoryPlanCard
+                }
                 if shouldShowShareOffer {
                     shareWinCard
                 }
@@ -3500,6 +3503,14 @@ struct PracticeView: View {
         !sessionMissedQuestions.isEmpty
     }
 
+    private var sessionReviewPlan: (tomorrow: Int, week: Int) {
+        store.reviewPlan(for: lesson)
+    }
+
+    private var shouldShowMemoryPlan: Bool {
+        lesson.questions.count > 0 && sessionReviewPlan.week > 0
+    }
+
     private var suggestedNextLesson: Lesson? {
         guard !isReview else { return nil }
         return nextLessonProvider?()
@@ -3553,6 +3564,34 @@ struct PracticeView: View {
                     insightMetric(value: "\(sessionAccuracyPercent)%", label: "Accuracy")
                     insightMetric(value: "\(sessionMissedQuestions.count)", label: "Missed")
                     insightMetric(value: String(localized: sessionModeLabel), label: "Mode")
+                }
+            }
+        }
+        .transition(.opacity.combined(with: .move(edge: .bottom)))
+    }
+
+    private var memoryPlanCard: some View {
+        let plan = sessionReviewPlan
+        return Card(padding: 16, background: Palette.amberSoft.opacity(0.72)) {
+            VStack(alignment: .leading, spacing: 14) {
+                HStack(spacing: 10) {
+                    Image(systemName: "brain.head.profile")
+                        .font(.system(size: 22, weight: .semibold))
+                        .foregroundStyle(Palette.terracotta)
+                    VStack(alignment: .leading, spacing: 2) {
+                        Text("Memory plan")
+                            .font(.titleM)
+                            .foregroundStyle(Palette.ink)
+                        Text("Mathio will bring this back before it fades.")
+                            .font(.bodyM)
+                            .foregroundStyle(Palette.inkSoft)
+                            .fixedSize(horizontal: false, vertical: true)
+                    }
+                }
+
+                HStack(spacing: 10) {
+                    insightMetric(value: "\(plan.tomorrow)", label: "Tomorrow")
+                    insightMetric(value: "\(plan.week)", label: "This week")
                 }
             }
         }

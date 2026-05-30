@@ -67,6 +67,8 @@ PROSE: dict[str, str] = {
     "Learning health": "Lerngesundheit",
     "Master 25% of the roadmap.": "Meistere 25 % des Lernplans.",
     "Master the full Mathio roadmap.": "Meistere den vollständigen Mathio-Lernplan.",
+    "Mathio will bring this back before it fades.": "Mathio bringt es zurück, bevor es verblasst.",
+    "Memory plan": "Gedächtnisplan",
     "Mixed practice across core topics": "Gemischtes Training zu Kernthemen",
     "Money Math": "Finanzmathe",
     "Next focus": "Nächster Fokus",
@@ -105,6 +107,7 @@ PROSE: dict[str, str] = {
     "Start review": "Wiederholung starten",
     "total = fixed cost + rate · amount": "gesamt = Fixkosten + Preis pro Einheit · Menge",
     "These lessons can move your roadmap fastest right now.": "Diese Lektionen bringen deinen Lernplan gerade am schnellsten voran.",
+    "This week": "Diese Woche",
     "Tomorrow": "Morgen",
     "Unlock the full roadmap Mathio built from your goal and level check.":
         "Schalte den vollständigen Lernplan frei, den Mathio aus deinem Ziel und Level-Check erstellt hat.",

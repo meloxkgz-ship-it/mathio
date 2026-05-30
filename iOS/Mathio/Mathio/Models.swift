@@ -453,6 +453,29 @@ final class Store {
         }
     }
 
+    /// Review forecast for the lesson the learner just completed.
+    /// This turns the completion screen into a clear "come back later" cue.
+    func reviewPlan(for lesson: Lesson, now: Date = .now) -> (tomorrow: Int, week: Int) {
+        let calendar = Calendar.current
+        let tomorrow = calendar.date(byAdding: .day, value: 1, to: now) ?? now.addingTimeInterval(60 * 60 * 24)
+        let week = calendar.date(byAdding: .day, value: 7, to: now) ?? now.addingTimeInterval(60 * 60 * 24 * 7)
+        var dueTomorrow = 0
+        var dueThisWeek = 0
+
+        for question in lesson.questions {
+            guard let entry = answered[question.id],
+                  entry.attempts > 0,
+                  entry.nextReviewAt > now,
+                  entry.nextReviewAt <= week else { continue }
+            dueThisWeek += 1
+            if entry.nextReviewAt <= tomorrow {
+                dueTomorrow += 1
+            }
+        }
+
+        return (dueTomorrow, dueThisWeek)
+    }
+
     // MARK: Daily goal progress
 
     /// Number of correct answers today.

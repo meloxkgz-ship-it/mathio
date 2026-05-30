@@ -51997,6 +51997,40 @@
         }
       }
     },
+    "Mathio will bring this back before it fades.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mathio bringt es zurück, bevor es verblasst."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mathio recuperará esto antes de que se desvanezca."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mathio ramènera ça avant qu'il ne disparaisse."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mathio lo riporterà indietro prima che svanisca."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mathio trará isso de volta antes que desapareça."
+          }
+        }
+      }
+    },
     "Matrices": {
       "localizations": {
         "de": {
@@ -52540,6 +52574,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Memorizá-los torna as raízes mais rápidas."
+          }
+        }
+      }
+    },
+    "Memory plan": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gedächtnisplan"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Plan de memoria"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Plan mémoire"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Piano di memoria"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Plano de memória"
           }
         }
       }
