@@ -215,6 +215,7 @@ final class UserSettings {
     private let defaults = UserDefaults.standard
     private let kDailyGoal     = "mathio.dailyGoal"
     private let kNotifications = "mathio.notifications.enabled"
+    private let kReminderHour  = "mathio.notifications.hour"
     private let kTheme         = "mathio.theme"
 
     enum Theme: String, CaseIterable, Identifiable {
@@ -234,14 +235,19 @@ final class UserSettings {
     var notificationsEnabled: Bool {
         didSet { defaults.set(notificationsEnabled, forKey: kNotifications) }
     }
+    var reminderHour: Int {
+        didSet { defaults.set(reminderHour, forKey: kReminderHour) }
+    }
     var theme: Theme {
         didSet { defaults.set(theme.rawValue, forKey: kTheme) }
     }
 
     init() {
         let storedGoal = defaults.integer(forKey: kDailyGoal)
+        let storedReminderHour = defaults.object(forKey: kReminderHour) as? Int
         self.dailyGoal = storedGoal == 0 ? 5 : storedGoal
         self.notificationsEnabled = defaults.bool(forKey: kNotifications)
+        self.reminderHour = storedReminderHour ?? 19
         self.theme = Theme(rawValue: defaults.string(forKey: kTheme) ?? "") ?? .system
     }
 }

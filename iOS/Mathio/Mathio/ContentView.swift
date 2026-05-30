@@ -284,6 +284,10 @@ final class PremiumStore {
 
 enum NotificationManager {
     static let dailyId = "mathio.daily.reminder"
+    private static let reminderHourKey = "mathio.notifications.hour"
+    static var preferredHour: Int {
+        UserDefaults.standard.object(forKey: reminderHourKey) as? Int ?? 19
+    }
 
     static func requestAuthorization() async -> Bool {
         do {
@@ -292,7 +296,7 @@ enum NotificationManager {
         } catch { return false }
     }
 
-    static func scheduleDailyReminder(hour: Int = 19, minute: Int = 0) {
+    static func scheduleDailyReminder(hour: Int = preferredHour, minute: Int = 0) {
         let center = UNUserNotificationCenter.current()
         center.removePendingNotificationRequests(withIdentifiers: [dailyId])
         let content = UNMutableNotificationContent()
@@ -310,6 +314,15 @@ enum NotificationManager {
     static func cancelDailyReminder() {
         UNUserNotificationCenter.current()
             .removePendingNotificationRequests(withIdentifiers: [dailyId])
+    }
+
+    static func formattedTime(hour: Int = preferredHour) -> String {
+        var components = DateComponents()
+        components.hour = hour
+        components.minute = 0
+        let calendar = Calendar.current
+        let date = calendar.date(from: components) ?? .now
+        return date.formatted(date: .omitted, time: .shortened)
     }
 }
 
@@ -3133,7 +3146,7 @@ struct PracticeView: View {
                         Text("Practice again tomorrow")
                             .font(.titleM)
                             .foregroundStyle(Palette.ink)
-                        Text("Let Mathio remind you at 19:00, after today's progress has settled.")
+                        Text("Let Mathio remind you at \(NotificationManager.formattedTime()), after today's progress has settled.")
                             .font(.bodyM)
                             .foregroundStyle(Palette.inkSoft)
                     }
@@ -4014,13 +4027,26 @@ struct SettingsView: View {
                                 .foregroundStyle(Palette.inkSoft)
                         }
                     }
-                    Toggle("Daily reminder at 19:00", isOn: Binding(
+                    Toggle("Daily reminder", isOn: Binding(
                         get: { settings.notificationsEnabled },
                         set: { newValue in
                             settings.notificationsEnabled = newValue
                             Task { await applyNotificationPreference(newValue) }
                         }
                     ))
+                    Picker("Reminder time", selection: Binding(
+                        get: { settings.reminderHour },
+                        set: { newValue in
+                            settings.reminderHour = newValue
+                            if settings.notificationsEnabled {
+                                NotificationManager.scheduleDailyReminder(hour: newValue)
+                            }
+                        }
+                    )) {
+                        Text("17:00").tag(17)
+                        Text("19:00").tag(19)
+                        Text("21:00").tag(21)
+                    }
                 }
 
                 Section("Appearance") {
@@ -4104,7 +4130,7 @@ struct SettingsView: View {
         if enabled {
             let granted = await NotificationManager.requestAuthorization()
             if granted {
-                NotificationManager.scheduleDailyReminder()
+                NotificationManager.scheduleDailyReminder(hour: settings.reminderHour)
             } else {
                 settings.notificationsEnabled = false
             }

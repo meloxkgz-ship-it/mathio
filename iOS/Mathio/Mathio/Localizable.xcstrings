@@ -87334,6 +87334,176 @@
           }
         }
       }
+    },
+    "17:00": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "17:00"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "17:00"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "17:00"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "17:00"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "17:00"
+          }
+        }
+      }
+    },
+    "19:00": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "19:00"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "19:00"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "19:00"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "19:00"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "19:00"
+          }
+        }
+      }
+    },
+    "21:00": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "21:00"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "21:00"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "21:00"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "21:00"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "21:00"
+          }
+        }
+      }
+    },
+    "Reminder time": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erinnerungszeit"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hora del recordatorio"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Heure du rappel"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ora del promemoria"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hora do lembrete"
+          }
+        }
+      }
+    },
+    "Daily reminder": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tägliche Erinnerung"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recordatorio diario"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rappel quotidien"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Promemoria quotidiano"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lembrete diário"
+          }
+        }
+      }
     }
   },
   "version": "1.0"
