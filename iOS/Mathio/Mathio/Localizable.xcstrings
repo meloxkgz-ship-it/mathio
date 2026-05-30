@@ -92534,6 +92534,1196 @@
           }
         }
       }
+    },
+    "$1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "$1"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "$1"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "$1"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "$1"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "$1"
+          }
+        }
+      }
+    },
+    "$2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "$2"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "$2"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "$2"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "$2"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "$2"
+          }
+        }
+      }
+    },
+    "$5": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "$5"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "$5"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "$5"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "$5"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "$5"
+          }
+        }
+      }
+    },
+    "0 · 0.8 = 0": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0 · 0.8 = 0"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0 · 0.8 = 0"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0 · 0.8 = 0"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0 · 0.8 = 0"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0 · 0.8 = 0"
+          }
+        }
+      }
+    },
+    "0 · 1/2 = 0": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0 · 1/2 = 0"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0 · 1/2 = 0"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0 · 1/2 = 0"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0 · 1/2 = 0"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0 · 1/2 = 0"
+          }
+        }
+      }
+    },
+    "10 · 0.2 = 2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "10 · 0.2 = 2"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "10 · 0.2 = 2"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "10 · 0.2 = 2"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "10 · 0.2 = 2"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "10 · 0.2 = 2"
+          }
+        }
+      }
+    },
+    "100": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "100"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "100"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "100"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "100"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "100"
+          }
+        }
+      }
+    },
+    "2 is not one of the payouts": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2 ist keiner der möglichen Auszahlungswerte"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2 no es uno de los pagos posibles"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2 ne fait pas partie des gains possibles"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2 non è uno dei pagamenti possibili"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2 não é um dos pagamentos possíveis"
+          }
+        }
+      }
+    },
+    "4 · 1/2 = 2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "4 · 1/2 = 2"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "4 · 1/2 = 2"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "4 · 1/2 = 2"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "4 · 1/2 = 2"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "4 · 1/2 = 2"
+          }
+        }
+      }
+    },
+    "A coin game paying 0 or 4 has expected payout 2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ein Münzspiel mit Auszahlung 0 oder 4 hat den erwarteten Auszahlungswert 2"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un juego de moneda que paga 0 o 4 tiene un pago esperado de 2"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un jeu de pile ou face qui paie 0 ou 4 a un gain espéré de 2"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un gioco con moneta che paga 0 o 4 ha un pagamento atteso di 2"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Um jogo de moeda que paga 0 ou 4 tem pagamento esperado de 2"
+          }
+        }
+      }
+    },
+    "A coin game pays $4 for heads and $0 for tails. Expected payout?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ein Münzspiel zahlt 4 $ bei Kopf und 0 $ bei Zahl. Erwarteter Auszahlungswert?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un juego de moneda paga $4 por cara y $0 por cruz. ¿Pago esperado?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un jeu de pile ou face paie 4 $ pour pile et 0 $ pour face. Gain espéré ?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un gioco con moneta paga $4 per testa e $0 per croce. Pagamento atteso?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Um jogo de moeda paga US$4 para cara e US$0 para coroa. Pagamento esperado?"
+          }
+        }
+      }
+    },
+    "A fair game has expected gain:": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ein faires Spiel hat erwarteten Gewinn:"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un juego justo tiene ganancia esperada:"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un jeu équitable a un gain espéré de :"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un gioco equo ha guadagno atteso:"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Um jogo justo tem ganho esperado:"
+          }
+        }
+      }
+    },
+    "A fair game has no average profit or loss over many repeats.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ein faires Spiel hat über viele Wiederholungen keinen durchschnittlichen Gewinn oder Verlust."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un juego justo no tiene ganancia ni pérdida promedio tras muchas repeticiones."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un jeu équitable n’a ni profit ni perte moyenne sur de nombreuses répétitions."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un gioco equo non ha profitto né perdita media su molte ripetizioni."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Um jogo justo não tem lucro nem perda média em muitas repetições."
+          }
+        }
+      }
+    },
+    "A game pays $10 with probability 0.2 and $0 otherwise. Expected payout?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ein Spiel zahlt 10 $ mit Wahrscheinlichkeit 0,2 und sonst 0 $. Erwarteter Auszahlungswert?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un juego paga $10 con probabilidad 0,2 y $0 en caso contrario. ¿Pago esperado?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un jeu paie 10 $ avec une probabilité de 0,2 et 0 $ sinon. Gain espéré ?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un gioco paga $10 con probabilità 0,2 e $0 altrimenti. Pagamento atteso?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Um jogo paga US$10 com probabilidade 0,2 e US$0 caso contrário. Pagamento esperado?"
+          }
+        }
+      }
+    },
+    "Always negative": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Immer negativ"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siempre negativa"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toujours négatif"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sempre negativo"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sempre negativo"
+          }
+        }
+      }
+    },
+    "Always positive": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Immer positiv"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siempre positiva"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toujours positif"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sempre positivo"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sempre positivo"
+          }
+        }
+      }
+    },
+    "Averages can fall between possible outcomes.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Durchschnittswerte können zwischen möglichen Ergebnissen liegen."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Los promedios pueden quedar entre resultados posibles."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les moyennes peuvent se situer entre des résultats possibles."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le medie possono cadere tra risultati possibili."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Médias podem ficar entre resultados possíveis."
+          }
+        }
+      }
+    },
+    "Each side has probability 1/2.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jede Seite hat Wahrscheinlichkeit 1/2."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cada lado tiene probabilidad 1/2."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chaque côté a une probabilité de 1/2."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ogni lato ha probabilità 1/2."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cada lado tem probabilidade 1/2."
+          }
+        }
+      }
+    },
+    "Expected Value": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erwartungswert"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Valor esperado"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Espérance"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Valore atteso"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Valor esperado"
+          }
+        }
+      }
+    },
+    "Expected gain = 2 − 3": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erwarteter Gewinn = 2 − 3"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ganancia esperada = 2 − 3"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gain espéré = 2 − 3"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Guadagno atteso = 2 − 3"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ganho esperado = 2 − 3"
+          }
+        }
+      }
+    },
+    "Expected gain = −1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erwarteter Gewinn = −1"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ganancia esperada = −1"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gain espéré = −1"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Guadagno atteso = −1"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ganho esperado = −1"
+          }
+        }
+      }
+    },
+    "Expected payout is 2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der erwartete Auszahlungswert ist 2"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El pago esperado es 2"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le gain espéré est 2"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il pagamento atteso è 2"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O pagamento esperado é 2"
+          }
+        }
+      }
+    },
+    "Expected value": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erwartungswert"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Valor esperado"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Espérance"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Valore atteso"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Valor esperado"
+          }
+        }
+      }
+    },
+    "Expected value is the long-run average outcome. It helps compare games, risks, and decisions with different payoffs.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der Erwartungswert ist das langfristige Durchschnittsergebnis. Er hilft, Spiele, Risiken und Entscheidungen mit unterschiedlichen Auszahlungen zu vergleichen."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El valor esperado es el resultado promedio a largo plazo. Ayuda a comparar juegos, riesgos y decisiones con pagos diferentes."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L’espérance est le résultat moyen à long terme. Elle aide à comparer des jeux, des risques et des décisions aux gains différents."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il valore atteso è il risultato medio nel lungo periodo. Aiuta a confrontare giochi, rischi e decisioni con pagamenti diversi."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O valor esperado é o resultado médio no longo prazo. Ele ajuda a comparar jogos, riscos e decisões com pagamentos diferentes."
+          }
+        }
+      }
+    },
+    "Fair game": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Faires Spiel"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Juego justo"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jeu équitable"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gioco equo"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jogo justo"
+          }
+        }
+      }
+    },
+    "Fair means no average advantage.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fair bedeutet: kein durchschnittlicher Vorteil."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Justo significa sin ventaja promedio."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Équitable signifie sans avantage moyen."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Equo significa nessun vantaggio medio."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Justo significa sem vantagem média."
+          }
+        }
+      }
+    },
+    "Gain = payout − cost.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gewinn = Auszahlung − Kosten."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ganancia = pago − costo."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gain = paiement − coût."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Guadagno = pagamento − costo."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ganho = pagamento − custo."
+          }
+        }
+      }
+    },
+    "If a ticket costs $3 and the expected payout is $2, expected gain is:": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wenn ein Ticket 3 $ kostet und der erwartete Auszahlungswert 2 $ ist, ist der erwartete Gewinn:"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Si un boleto cuesta $3 y el pago esperado es $2, la ganancia esperada es:"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Si un billet coûte 3 $ et que le gain espéré est 2 $, le gain espéré est :"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se un biglietto costa $3 e il pagamento atteso è $2, il guadagno atteso è:"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se um bilhete custa US$3 e o pagamento esperado é US$2, o ganho esperado é:"
+          }
+        }
+      }
+    },
+    "Multiply each outcome by its probability, then add the results.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Multipliziere jedes Ergebnis mit seiner Wahrscheinlichkeit und addiere die Ergebnisse."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Multiplica cada resultado por su probabilidad y luego suma los resultados."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Multiplie chaque résultat par sa probabilité, puis additionne."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Moltiplica ogni risultato per la sua probabilità, poi somma i risultati."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Multiplique cada resultado por sua probabilidade e depois some os resultados."
+          }
+        }
+      }
+    },
+    "Multiply each payout by its probability.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Multipliziere jede Auszahlung mit ihrer Wahrscheinlichkeit."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Multiplica cada pago por su probabilidad."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Multiplie chaque paiement par sa probabilité."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Moltiplica ogni pagamento per la sua probabilità."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Multiplique cada pagamento por sua probabilidade."
+          }
+        }
+      }
+    },
+    "Over many repeats, average gain is neither profit nor loss": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Über viele Wiederholungen ist der durchschnittliche Gewinn weder positiv noch negativ"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tras muchas repeticiones, la ganancia promedio no es ni beneficio ni pérdida"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sur de nombreuses répétitions, le gain moyen n’est ni un profit ni une perte"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Su molte ripetizioni, il guadagno medio non è né profitto né perdita"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Em muitas repetições, o ganho médio não é lucro nem perda"
+          }
+        }
+      }
+    },
+    "So expected gain is 0": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Also ist der erwartete Gewinn 0"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Por eso la ganancia esperada es 0"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Donc le gain espéré est 0"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quindi il guadagno atteso è 0"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Então o ganho esperado é 0"
+          }
+        }
+      }
+    },
+    "True or false: expected value must be one of the possible outcomes.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wahr oder falsch: Der Erwartungswert muss eines der möglichen Ergebnisse sein."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verdadero o falso: el valor esperado debe ser uno de los resultados posibles."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vrai ou faux : l’espérance doit être l’un des résultats possibles."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vero o falso: il valore atteso deve essere uno dei risultati possibili."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verdadeiro ou falso: o valor esperado deve ser um dos resultados possíveis."
+          }
+        }
+      }
+    },
+    "−$1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "−$1"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "−$1"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "−$1"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "−$1"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "−$1"
+          }
+        }
+      }
+    },
+    "82 lessons across algebra, calculus, geometry, statistics, finance, and more": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "82 Lektionen in Algebra, Analysis, Geometrie, Statistik, Finanzmathe und mehr"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "82 lecciones de álgebra, cálculo, geometría, estadística, finanzas y más"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "82 leçons en algèbre, analyse, géométrie, statistiques, finance et plus"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "82 lezioni di algebra, analisi, geometria, statistica, finanza e altro"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "82 lições de álgebra, cálculo, geometria, estatística, finanças e muito mais"
+          }
+        }
+      }
     }
   },
   "version": "1.0"

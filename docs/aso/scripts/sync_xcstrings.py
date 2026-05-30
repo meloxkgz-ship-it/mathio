@@ -23,6 +23,8 @@ PROSE: dict[str, str] = {
     # Home and review UX
     "7 days": "7 Tage",
     "7-day focus": "7-Tage-Fokus",
+    "82 lessons across algebra, calculus, geometry, statistics, finance, and more":
+        "82 Lektionen in Algebra, Analysis, Geometrie, Statistik, Finanzmathe und mehr",
     "A quick rating helps more learners find it.": "Eine kurze Bewertung hilft mehr Lernenden, Mathio zu finden.",
     "Accuracy": "Trefferquote",
     "active days": "aktive Tage",
@@ -82,6 +84,42 @@ PROSE: dict[str, str] = {
     "Add the values and divide by 3.": "Addiere die Werte und teile durch 3.",
     "All equal": "Alle gleich",
     "All values equal the mean": "Alle Werte entsprechen dem Mittelwert",
+    "2 is not one of the payouts": "2 ist keiner der möglichen Auszahlungswerte",
+    "A coin game paying 0 or 4 has expected payout 2":
+        "Ein Münzspiel mit Auszahlung 0 oder 4 hat den erwarteten Auszahlungswert 2",
+    "A coin game pays $4 for heads and $0 for tails. Expected payout?":
+        "Ein Münzspiel zahlt 4 $ bei Kopf und 0 $ bei Zahl. Erwarteter Auszahlungswert?",
+    "A fair game has expected gain:": "Ein faires Spiel hat erwarteten Gewinn:",
+    "A fair game has no average profit or loss over many repeats.":
+        "Ein faires Spiel hat über viele Wiederholungen keinen durchschnittlichen Gewinn oder Verlust.",
+    "A game pays $10 with probability 0.2 and $0 otherwise. Expected payout?":
+        "Ein Spiel zahlt 10 $ mit Wahrscheinlichkeit 0,2 und sonst 0 $. Erwarteter Auszahlungswert?",
+    "Always negative": "Immer negativ",
+    "Always positive": "Immer positiv",
+    "Averages can fall between possible outcomes.":
+        "Durchschnittswerte können zwischen möglichen Ergebnissen liegen.",
+    "Each side has probability 1/2.": "Jede Seite hat Wahrscheinlichkeit 1/2.",
+    "Expected Value": "Erwartungswert",
+    "Expected gain = 2 − 3": "Erwarteter Gewinn = 2 − 3",
+    "Expected gain = −1": "Erwarteter Gewinn = −1",
+    "Expected payout is 2": "Der erwartete Auszahlungswert ist 2",
+    "Expected value": "Erwartungswert",
+    "Expected value is the long-run average outcome. It helps compare games, risks, and decisions with different payoffs.":
+        "Der Erwartungswert ist das langfristige Durchschnittsergebnis. Er hilft, Spiele, Risiken und Entscheidungen mit unterschiedlichen Auszahlungen zu vergleichen.",
+    "Fair game": "Faires Spiel",
+    "Fair means no average advantage.": "Fair bedeutet: kein durchschnittlicher Vorteil.",
+    "Gain = payout − cost.": "Gewinn = Auszahlung − Kosten.",
+    "If a ticket costs $3 and the expected payout is $2, expected gain is:":
+        "Wenn ein Ticket 3 $ kostet und der erwartete Auszahlungswert 2 $ ist, ist der erwartete Gewinn:",
+    "Multiply each outcome by its probability, then add the results.":
+        "Multipliziere jedes Ergebnis mit seiner Wahrscheinlichkeit und addiere die Ergebnisse.",
+    "Multiply each payout by its probability.":
+        "Multipliziere jede Auszahlung mit ihrer Wahrscheinlichkeit.",
+    "Over many repeats, average gain is neither profit nor loss":
+        "Über viele Wiederholungen ist der durchschnittliche Gewinn weder positiv noch negativ",
+    "So expected gain is 0": "Also ist der erwartete Gewinn 0",
+    "True or false: expected value must be one of the possible outcomes.":
+        "Wahr oder falsch: Der Erwartungswert muss eines der möglichen Ergebnisse sein.",
     "Always smaller": "Immer kleiner",
     "Every deviation is 0": "Jede Abweichung ist 0",
     "Find each distance from the mean, square it, average those squares, then take the square root.":

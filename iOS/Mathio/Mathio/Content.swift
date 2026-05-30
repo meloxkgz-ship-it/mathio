@@ -2669,6 +2669,60 @@ enum Curriculum {
         ]
     )
 
+    static let expectedValue = Lesson(
+        id: "stats.expected",
+        title: "Expected Value",
+        intro: "Expected value is the long-run average outcome. It helps compare games, risks, and decisions with different payoffs.",
+        formulas: [
+            Formula(key: "stats.expected.f1",
+                    name: "Expected value",
+                    math: "E = sum(outcome · probability)",
+                    explanation: "Multiply each outcome by its probability, then add the results."),
+            Formula(key: "stats.expected.f2",
+                    name: "Fair game",
+                    math: "expected gain = 0",
+                    explanation: "A fair game has no average profit or loss over many repeats."),
+        ],
+        questions: [
+            Question(id: "stats.expected.q1",
+                     prompt: "A game pays $10 with probability 0.2 and $0 otherwise. Expected payout?", math: nil,
+                     kind: .freeAnswer(accepted: ["2", "$2", "2 dollars"]),
+                     hint: "Multiply each payout by its probability.",
+                     solutionSteps: ["10 · 0.2 = 2", "0 · 0.8 = 0", "Expected payout is 2"]),
+            Question(id: "stats.expected.q2",
+                     prompt: "A coin game pays $4 for heads and $0 for tails. Expected payout?", math: nil,
+                     kind: .freeAnswer(accepted: ["2", "$2", "2 dollars"]),
+                     hint: "Each side has probability 1/2.",
+                     solutionSteps: ["4 · 1/2 = 2", "0 · 1/2 = 0", "Expected payout is 2"]),
+            Question(id: "stats.expected.q3",
+                     prompt: "If a ticket costs $3 and the expected payout is $2, expected gain is:", math: nil,
+                     kind: .multipleChoice(options: [
+                        .init(label: "−$1", math: nil),
+                        .init(label: "$1", math: nil),
+                        .init(label: "$2", math: nil),
+                        .init(label: "$5", math: nil),
+                     ], correctIndex: 0),
+                     hint: "Gain = payout − cost.",
+                     solutionSteps: ["Expected gain = 2 − 3", "Expected gain = −1"]),
+            Question(id: "stats.expected.q4",
+                     prompt: "A fair game has expected gain:", math: nil,
+                     kind: .multipleChoice(options: [
+                        .init(label: "0", math: nil),
+                        .init(label: "Always positive", math: nil),
+                        .init(label: "Always negative", math: nil),
+                        .init(label: "100", math: nil),
+                     ], correctIndex: 0),
+                     hint: "Fair means no average advantage.",
+                     solutionSteps: ["Over many repeats, average gain is neither profit nor loss", "So expected gain is 0"]),
+            Question(id: "stats.expected.q5",
+                     prompt: "True or false: expected value must be one of the possible outcomes.",
+                     math: nil,
+                     kind: .trueFalse(answer: false),
+                     hint: "Averages can fall between possible outcomes.",
+                     solutionSteps: ["A coin game paying 0 or 4 has expected payout 2", "2 is not one of the payouts"]),
+        ]
+    )
+
     static let dataDisplays = Lesson(
         id: "stats.display",
         title: "Data Displays",
@@ -4297,7 +4351,7 @@ enum Curriculum {
               subtitle: "Data, chance & decisions",
               icon: "chart.bar.doc.horizontal",
               color: Palette.stats,
-              lessons: [descriptiveStats, probabilityBasics, dataDisplays, boxPlots, sampling,
+              lessons: [descriptiveStats, probabilityBasics, expectedValue, dataDisplays, boxPlots, sampling,
                         distributions, standardDeviation, correlationRegression, inferenceBasics, normalDistribution,
                         confidenceIntervals, hypothesisTests]),
         Topic(id: "linearalgebra",

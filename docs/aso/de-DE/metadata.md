@@ -52,7 +52,7 @@ Begründung:
 ## Werbetext (170 max — editierbar ohne Review)
 
 ```
-Neu: Standardabweichung, Implizite Ableitung und 81 Lektionen.
+Neu: Erwartungswert, Standardabweichung und 82 Lektionen.
 ```
 **113 / 170** — hebt Kataloggröße und neue alltagsnahe Inhalte hervor.
 
@@ -104,7 +104,7 @@ Verfügbar auf Deutsch, Englisch, Spanisch, Französisch, Italienisch und Brasil
 
 — THEMEN —
 Vor-Algebra · Algebra · Geometrie · Trigonometrie · Analysis
-81 Lektionen und 405 handgemachte Aufgaben in Multiple-Choice, Freitext und Wahr/Falsch. Von Bruchrechnen, Potenzen und Logarithmen bis zu Ableitungen, impliziter Ableitung, Integralen, Statistik, Standardabweichung, Normalverteilung, Vektoren, Budgetrechnung, Steuern, Rabatten, Funktionsmodellierung, Konfidenzintervallen, Korrelation, Optimierung, Wahrheitstabellen und Logik.
+82 Lektionen und 410 handgemachte Aufgaben in Multiple-Choice, Freitext und Wahr/Falsch. Von Bruchrechnen, Potenzen und Logarithmen bis zu Ableitungen, impliziter Ableitung, Integralen, Statistik, Erwartungswert, Standardabweichung, Normalverteilung, Vektoren, Budgetrechnung, Steuern, Rabatten, Funktionsmodellierung, Konfidenzintervallen, Korrelation, Optimierung, Wahrheitstabellen und Logik.
 
 — ABO —
 Mathio ist kostenlos zum Ausprobieren. Alle Themen freischalten mit:
@@ -128,10 +128,11 @@ Von Bruchrechnung bis Differentialrechnung. Zwei Minuten täglich genügen.
 ```
 Mathio gibt Lernenden jetzt klarere Richtung und mehr Tiefe für tägliches Üben.
 
+• Neue Lektion: Erwartungswert für langfristige Durchschnitte, faire Spiele und erwarteten Gewinn
 • Neue Lektion: Standardabweichung für Streuung, quadrierte Abweichungen und Stichprobe-vs-Population
 • Neue Lektion: Implizite Ableitung für dy/dx, Kreise, Produkte und Kettenregel-Denken
 • Home zeigt Fehler-Notizbuch, Wiederholungs-Vorschau, 7-Tage-Fokus und nächste Lernziele
-• Mathio wächst auf 81 Lektionen und 405 geführte Aufgaben
+• Mathio wächst auf 82 Lektionen und 410 geführte Aufgaben
 • Premium- und App-Store-Texte passen zum erweiterten Inhalt
 
 Zwei Minuten am Tag decken jetzt noch mehr relevante Mathematik ab.
