@@ -98926,6 +98926,1298 @@
           }
         }
       }
+    },
+    "100(1.10)² = 100 · 1.21": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "100(1,10)² = 100 · 1,21"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "100(1.10)² = 100 · 1.21"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "100(1.10)² = 100 · 1.21"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "100(1.10)² = 100 · 1.21"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "100(1.10)² = 100 · 1.21"
+          }
+        }
+      }
+    },
+    "200 + 5t": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "200 + 5t"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "200 + 5t"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "200 + 5t"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "200 + 5t"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "200 + 5t"
+          }
+        }
+      }
+    },
+    "200(0.95)^t": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "200(0.95)^t"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "200(0.95)^t"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "200(0.95)^t"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "200(0.95)^t"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "200(0.95)^t"
+          }
+        }
+      }
+    },
+    "200(1.05)^t": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "200(1.05)^t"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "200(1.05)^t"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "200(1.05)^t"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "200(1.05)^t"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "200(1.05)^t"
+          }
+        }
+      }
+    },
+    "25% loss leaves 75%.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "25 % Verlust lässt 75 % übrig."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una pérdida del 25% deja 75%."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Une perte de 25 % laisse 75 %."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una perdita del 25% lascia il 75%."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uma perda de 25% deixa 75%."
+          }
+        }
+      }
+    },
+    "5% growth factor = 1.05": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "5 % Wachstumsfaktor = 1,05"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Factor de crecimiento del 5% = 1.05"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Facteur de croissance de 5 % = 1.05"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fattore di crescita del 5% = 1.05"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fator de crescimento de 5% = 1.05"
+          }
+        }
+      }
+    },
+    "5(200)^t": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "5(200)^t"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "5(200)^t"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "5(200)^t"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "5(200)^t"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "5(200)^t"
+          }
+        }
+      }
+    },
+    "50 · 2³ = 50 · 8": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "50 · 2³ = 50 · 8"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "50 · 2³ = 50 · 8"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "50 · 2³ = 50 · 8"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "50 · 2³ = 50 · 8"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "50 · 2³ = 50 · 8"
+          }
+        }
+      }
+    },
+    "800 · 0.75 = 600": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "800 · 0,75 = 600"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "800 · 0.75 = 600"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "800 · 0.75 = 600"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "800 · 0.75 = 600"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "800 · 0.75 = 600"
+          }
+        }
+      }
+    },
+    "87 lessons across algebra, calculus, geometry, statistics, finance, and more": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "87 Lektionen in Algebra, Analysis, Geometrie, Statistik, Finanzmathe und mehr"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "87 lecciones de álgebra, cálculo, geometría, estadística, finanzas y más"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "87 leçons d’algèbre, de calcul, de géométrie, de statistiques, de finance et plus"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "87 lezioni di algebra, analisi, geometria, statistica, finanza e altro"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "87 aulas de álgebra, cálculo, geometria, estatística, finanças e mais"
+          }
+        }
+      }
+    },
+    "A bacteria count doubles every hour. Starting from 50, how many after 3 hours?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eine Bakterienzahl verdoppelt sich jede Stunde. Start bei 50: Wie viele sind es nach 3 Stunden?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una cantidad de bacterias se duplica cada hora. Empezando con 50, ¿cuántas hay después de 3 horas?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un nombre de bactéries double chaque heure. En partant de 50, combien après 3 heures ?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una colonia di batteri raddoppia ogni ora. Partendo da 50, quanti dopo 3 ore?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uma contagem de bactérias dobra a cada hora. Começando em 50, quantas após 3 horas?"
+          }
+        }
+      }
+    },
+    "A phone worth $800 loses 25% of its value. What is it worth after one year?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ein Handy im Wert von 800 $ verliert 25 % seines Werts. Wie viel ist es nach einem Jahr wert?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un teléfono de $800 pierde 25% de su valor. ¿Cuánto vale después de un año?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un téléphone valant 800 $ perd 25 % de sa valeur. Que vaut-il après un an ?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un telefono da $800 perde il 25% del suo valore. Quanto vale dopo un anno?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Um celular de US$ 800 perde 25% do valor. Quanto vale após um ano?"
+          }
+        }
+      }
+    },
+    "A value starts at 100 and grows by 10% each year. Value after 2 years?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ein Wert startet bei 100 und wächst jedes Jahr um 10 %. Wert nach 2 Jahren?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un valor empieza en 100 y crece 10% cada año. ¿Valor después de 2 años?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Une valeur commence à 100 et augmente de 10 % par an. Valeur après 2 ans ?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un valore parte da 100 e cresce del 10% ogni anno. Valore dopo 2 anni?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Um valor começa em 100 e cresce 10% por ano. Valor após 2 anos?"
+          }
+        }
+      }
+    },
+    "Add the percent to 1 for growth; subtract it from 1 for decay.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Addiere den Prozentsatz zu 1 bei Wachstum; subtrahiere ihn von 1 bei Zerfall."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Suma el porcentaje a 1 para crecimiento; réstalo de 1 para decaimiento."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ajoute le pourcentage à 1 pour une croissance ; soustrais-le de 1 pour une décroissance."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aggiungi la percentuale a 1 per la crescita; sottraila da 1 per il decadimento."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Some o percentual a 1 para crescimento; subtraia de 1 para decaimento."
+          }
+        }
+      }
+    },
+    "All 87 lessons and 435 guided questions": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alle 87 Lektionen und 435 geführten Aufgaben"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Las 87 lecciones y 435 preguntas guiadas"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les 87 leçons et 435 questions guidées"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tutte le 87 lezioni e 435 domande guidate"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Todas as 87 aulas e 435 perguntas guiadas"
+          }
+        }
+      }
+    },
+    "Count = 400": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anzahl = 400"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cantidad = 400"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nombre = 400"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Conteggio = 400"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Contagem = 400"
+          }
+        }
+      }
+    },
+    "Decay factor": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zerfallsfaktor"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Factor de decaimiento"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Facteur de décroissance"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fattore di decadimento"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fator de decaimento"
+          }
+        }
+      }
+    },
+    "Decay factor: 1 − 0.25 = 0.75": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zerfallsfaktor: 1 − 0,25 = 0,75"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Factor de decaimiento: 1 − 0.25 = 0.75"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Facteur de décroissance : 1 − 0.25 = 0.75"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fattore di decadimento: 1 − 0.25 = 0.75"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fator de decaimento: 1 − 0.25 = 0.75"
+          }
+        }
+      }
+    },
+    "Doubling means multiply by 2 each hour.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verdopplung bedeutet: jede Stunde mit 2 multiplizieren."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Duplicar significa multiplicar por 2 cada hora."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Doubler signifie multiplier par 2 chaque heure."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Raddoppiare significa moltiplicare per 2 ogni ora."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dobrar significa multiplicar por 2 a cada hora."
+          }
+        }
+      }
+    },
+    "Exponential Growth & Decay": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Exponentielles Wachstum & Zerfall"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Crecimiento y decaimiento exponencial"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Croissance et décroissance exponentielles"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Crescita e decadimento esponenziale"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Crescimento e decaimento exponencial"
+          }
+        }
+      }
+    },
+    "Exponential change multiplies by a constant factor": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Exponentielle Veränderung multipliziert mit einem konstanten Faktor"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El cambio exponencial multiplica por un factor constante"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un changement exponentiel multiplie par un facteur constant"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il cambiamento esponenziale moltiplica per un fattore costante"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mudança exponencial multiplica por um fator constante"
+          }
+        }
+      }
+    },
+    "Exponential models multiply by the same factor each step. They explain interest, population growth, depreciation, half-life, and many real-world change problems.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Exponentielle Modelle multiplizieren in jedem Schritt mit demselben Faktor. Sie erklären Zinsen, Bevölkerungswachstum, Wertverlust, Halbwertszeit und viele reale Veränderungsprobleme."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Los modelos exponenciales multiplican por el mismo factor en cada paso. Explican intereses, crecimiento poblacional, depreciación, vida media y muchos cambios reales."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les modèles exponentiels multiplient par le même facteur à chaque étape. Ils expliquent les intérêts, la croissance de population, la dépréciation, la demi-vie et de nombreux changements réels."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I modelli esponenziali moltiplicano per lo stesso fattore a ogni passo. Spiegano interessi, crescita della popolazione, deprezzamento, emivita e molti cambiamenti reali."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modelos exponenciais multiplicam pelo mesmo fator a cada passo. Eles explicam juros, crescimento populacional, depreciação, meia-vida e muitas mudanças reais."
+          }
+        }
+      }
+    },
+    "For decay, multiply by a factor below 1 each period.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bei Zerfall multiplizierst du pro Zeitraum mit einem Faktor unter 1."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Para decaimiento, multiplica por un factor menor que 1 en cada periodo."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pour une décroissance, multiplie par un facteur inférieur à 1 à chaque période."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Per il decadimento, moltiplica per un fattore minore di 1 a ogni periodo."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Para decaimento, multiplique por um fator menor que 1 em cada período."
+          }
+        }
+      }
+    },
+    "Growth factor: 1.10": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wachstumsfaktor: 1,10"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Factor de crecimiento: 1.10"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Facteur de croissance : 1.10"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fattore di crescita: 1.10"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fator de crescimento: 1.10"
+          }
+        }
+      }
+    },
+    "Growth means a factor above 1.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wachstum bedeutet einen Faktor über 1."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Crecimiento significa un factor mayor que 1."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Une croissance signifie un facteur supérieur à 1."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Crescita significa un fattore maggiore di 1."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Crescimento significa um fator acima de 1."
+          }
+        }
+      }
+    },
+    "Growth or decay model": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wachstums- oder Zerfallsmodell"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modelo de crecimiento o decaimiento"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modèle de croissance ou de décroissance"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modello di crescita o decadimento"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modelo de crescimento ou decaimento"
+          }
+        }
+      }
+    },
+    "Linear adds the same amount; exponential multiplies.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Linear addiert denselben Betrag; exponentiell multipliziert."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lineal suma la misma cantidad; exponencial multiplica."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Linéaire ajoute la même quantité ; exponentiel multiplie."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lineare aggiunge la stessa quantità; esponenziale moltiplica."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Linear soma a mesma quantidade; exponencial multiplica."
+          }
+        }
+      }
+    },
+    "Lines, functions, exponents, growth": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Geraden, Funktionen, Potenzen, Wachstum"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rectas, funciones, exponentes, crecimiento"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Droites, fonctions, exposants, croissance"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rette, funzioni, esponenti, crescita"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Retas, funções, expoentes, crescimento"
+          }
+        }
+      }
+    },
+    "Model: 200(1.05)^t": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modell: 200(1,05)^t"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modelo: 200(1.05)^t"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modèle : 200(1.05)^t"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modello: 200(1.05)^t"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modelo: 200(1.05)^t"
+          }
+        }
+      }
+    },
+    "Percent to factor": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prozent zu Faktor"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Porcentaje a factor"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pourcentage en facteur"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Da percentuale a fattore"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Percentual para fator"
+          }
+        }
+      }
+    },
+    "Starting amount = 200": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Startwert = 200"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cantidad inicial = 200"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quantité initiale = 200"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quantità iniziale = 200"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quantidade inicial = 200"
+          }
+        }
+      }
+    },
+    "The added amount usually changes each step": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der addierte Betrag ändert sich normalerweise in jedem Schritt"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La cantidad sumada normalmente cambia en cada paso"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La quantité ajoutée change généralement à chaque étape"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La quantità aggiunta di solito cambia a ogni passo"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A quantidade somada geralmente muda a cada passo"
+          }
+        }
+      }
+    },
+    "True or false: Exponential growth adds the same amount each step.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wahr oder falsch: Exponentielles Wachstum addiert in jedem Schritt denselben Betrag."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verdadero o falso: el crecimiento exponencial suma la misma cantidad en cada paso."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vrai ou faux : la croissance exponentielle ajoute la même quantité à chaque étape."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vero o falso: la crescita esponenziale aggiunge la stessa quantità a ogni passo."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verdadeiro ou falso: crescimento exponencial soma a mesma quantidade a cada passo."
+          }
+        }
+      }
+    },
+    "Use 100(1.10)².": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nutze 100(1,10)²."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usa 100(1.10)²."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Utilise 100(1.10)²."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usa 100(1.10)²."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Use 100(1.10)²."
+          }
+        }
+      }
+    },
+    "Value = 121": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wert = 121"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Valor = 121"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Valeur = 121"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Valore = 121"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Valor = 121"
+          }
+        }
+      }
+    },
+    "Which expression models 5% growth for t years from 200?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Welcher Ausdruck modelliert 5 % Wachstum über t Jahre ausgehend von 200?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "¿Qué expresión modela un crecimiento del 5% durante t años desde 200?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quelle expression modélise une croissance de 5 % pendant t années à partir de 200 ?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quale espressione modella una crescita del 5% per t anni a partire da 200?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Qual expressão modela crescimento de 5% por t anos a partir de 200?"
+          }
+        }
+      }
+    },
+    "a is the starting amount, r is the rate, and t is the number of periods.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "a ist der Startwert, r die Rate und t die Anzahl der Zeiträume."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "a es la cantidad inicial, r es la tasa y t es el número de periodos."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "a est la quantité initiale, r est le taux et t le nombre de périodes."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "a è la quantità iniziale, r è il tasso e t è il numero di periodi."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "a é a quantidade inicial, r é a taxa e t é o número de períodos."
+          }
+        }
+      }
+    },
+    "20% growth → 1.20,  20% decay → 0.80": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "20% de crecimiento → 1.20,  20% de decaimiento → 0.80"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "20 % de croissance → 1.20,  20 % de décroissance → 0.80"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "20% di crescita → 1.20,  20% di decadimento → 0.80"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "20% de crescimento → 1.20,  20% de decaimento → 0.80"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "20 % Wachstum → 1,20,  20 % Zerfall → 0,80"
+          }
+        }
+      }
     }
   },
   "version": "1.0"

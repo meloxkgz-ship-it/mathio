@@ -488,6 +488,63 @@ enum Curriculum {
         ]
     )
 
+    static let exponentialGrowth = Lesson(
+        id: "alg.expgrowth",
+        title: "Exponential Growth & Decay",
+        intro: "Exponential models multiply by the same factor each step. They explain interest, population growth, depreciation, half-life, and many real-world change problems.",
+        formulas: [
+            Formula(key: "alg.expgrowth.f1",
+                    name: "Growth or decay model",
+                    math: "{var:y} = {var:a}(1 + {var:r}){sup:^t}",
+                    explanation: "a is the starting amount, r is the rate, and t is the number of periods."),
+            Formula(key: "alg.expgrowth.f2",
+                    name: "Decay factor",
+                    math: "{var:y} = {var:a}(1 − {var:r}){sup:^t}",
+                    explanation: "For decay, multiply by a factor below 1 each period."),
+            Formula(key: "alg.expgrowth.f3",
+                    name: "Percent to factor",
+                    math: "20% growth → 1.20,  20% decay → 0.80",
+                    explanation: "Add the percent to 1 for growth; subtract it from 1 for decay."),
+        ],
+        questions: [
+            Question(id: "alg.expgrowth.q1",
+                     prompt: "A value starts at 100 and grows by 10% each year. Value after 2 years?",
+                     math: nil,
+                     kind: .freeAnswer(accepted: ["121"]),
+                     hint: "Use 100(1.10)².",
+                     solutionSteps: ["Growth factor: 1.10", "100(1.10)² = 100 · 1.21", "Value = 121"]),
+            Question(id: "alg.expgrowth.q2",
+                     prompt: "A phone worth $800 loses 25% of its value. What is it worth after one year?",
+                     math: nil,
+                     kind: .freeAnswer(accepted: ["600", "$600"]),
+                     hint: "25% loss leaves 75%.",
+                     solutionSteps: ["Decay factor: 1 − 0.25 = 0.75", "800 · 0.75 = 600"]),
+            Question(id: "alg.expgrowth.q3",
+                     prompt: "Which expression models 5% growth for t years from 200?",
+                     math: nil,
+                     kind: .multipleChoice(options: [
+                        .init(label: "200(1.05)^t", math: nil),
+                        .init(label: "200(0.95)^t", math: nil),
+                        .init(label: "200 + 5t", math: nil),
+                        .init(label: "5(200)^t", math: nil),
+                     ], correctIndex: 0),
+                     hint: "Growth means a factor above 1.",
+                     solutionSteps: ["5% growth factor = 1.05", "Starting amount = 200", "Model: 200(1.05)^t"]),
+            Question(id: "alg.expgrowth.q4",
+                     prompt: "A bacteria count doubles every hour. Starting from 50, how many after 3 hours?",
+                     math: nil,
+                     kind: .freeAnswer(accepted: ["400"]),
+                     hint: "Doubling means multiply by 2 each hour.",
+                     solutionSteps: ["50 · 2³ = 50 · 8", "Count = 400"]),
+            Question(id: "alg.expgrowth.q5",
+                     prompt: "True or false: Exponential growth adds the same amount each step.",
+                     math: nil,
+                     kind: .trueFalse(answer: false),
+                     hint: "Linear adds the same amount; exponential multiplies.",
+                     solutionSteps: ["Exponential change multiplies by a constant factor", "The added amount usually changes each step"]),
+        ]
+    )
+
     // MARK: - Calculus
 
     static let limits = Lesson(
@@ -4532,7 +4589,7 @@ enum Curriculum {
               subtitle: "Equations & expressions",
               icon: "function",
               color: Palette.algebra,
-              lessons: [linearEquations, quadratics, completingSquare, exponents, logarithms, factoring,
+              lessons: [linearEquations, quadratics, completingSquare, exponents, logarithms, exponentialGrowth, factoring,
                         linesAndSlope, inequalities, systems, polynomials, algFunctions,
                         functionModeling, sequencesSeries, wordProblems, absoluteValueEquations,
                         radicalEquations, rationalExpressions]),

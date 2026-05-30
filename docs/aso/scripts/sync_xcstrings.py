@@ -29,8 +29,8 @@ PROSE: dict[str, str] = {
         "84 Lektionen in Algebra, Analysis, Geometrie, Statistik, Finanzmathe und mehr",
     "85 lessons across algebra, calculus, geometry, statistics, finance, and more":
         "85 Lektionen in Algebra, Analysis, Geometrie, Statistik, Finanzmathe und mehr",
-    "86 lessons across algebra, calculus, geometry, statistics, finance, and more":
-        "86 Lektionen in Algebra, Analysis, Geometrie, Statistik, Finanzmathe und mehr",
+    "87 lessons across algebra, calculus, geometry, statistics, finance, and more":
+        "87 Lektionen in Algebra, Analysis, Geometrie, Statistik, Finanzmathe und mehr",
     "A quick rating helps more learners find it.": "Eine kurze Bewertung hilft mehr Lernenden, Mathio zu finden.",
     "Accuracy": "Trefferquote",
     "active days": "aktive Tage",
@@ -108,12 +108,52 @@ PROSE: dict[str, str] = {
     "A square root is not negative.": "Eine Quadratwurzel ist nicht negativ.",
     "A squared step can make false answers appear, so always check.":
         "Ein Quadrierschritt kann falsche Lösungen erzeugen, also prüfe immer nach.",
+    "20% growth → 1.20,  20% decay → 0.80": "20 % Wachstum → 1,20,  20 % Zerfall → 0,80",
+    "25% loss leaves 75%.": "25 % Verlust lässt 75 % übrig.",
+    "5% growth factor = 1.05": "5 % Wachstumsfaktor = 1,05",
+    "800 · 0.75 = 600": "800 · 0,75 = 600",
+    "100(1.10)² = 100 · 1.21": "100(1,10)² = 100 · 1,21",
     "Add the values and divide by 3.": "Addiere die Werte und teile durch 3.",
     "All equal": "Alle gleich",
     "All possible outcomes": "Alle möglichen Ergebnisse",
     "All 85 lessons and 425 guided questions": "Alle 85 Lektionen und 425 geführten Aufgaben",
-    "All 86 lessons and 430 guided questions": "Alle 86 Lektionen und 430 geführten Aufgaben",
+    "All 87 lessons and 435 guided questions": "Alle 87 Lektionen und 435 geführten Aufgaben",
     "answers left": "Antworten übrig",
+    "A bacteria count doubles every hour. Starting from 50, how many after 3 hours?":
+        "Eine Bakterienzahl verdoppelt sich jede Stunde. Start bei 50: Wie viele sind es nach 3 Stunden?",
+    "A phone worth $800 loses 25% of its value. What is it worth after one year?":
+        "Ein Handy im Wert von 800 $ verliert 25 % seines Werts. Wie viel ist es nach einem Jahr wert?",
+    "A value starts at 100 and grows by 10% each year. Value after 2 years?":
+        "Ein Wert startet bei 100 und wächst jedes Jahr um 10 %. Wert nach 2 Jahren?",
+    "Add the percent to 1 for growth; subtract it from 1 for decay.":
+        "Addiere den Prozentsatz zu 1 bei Wachstum; subtrahiere ihn von 1 bei Zerfall.",
+    "Count = 400": "Anzahl = 400",
+    "Decay factor": "Zerfallsfaktor",
+    "Decay factor: 1 − 0.25 = 0.75": "Zerfallsfaktor: 1 − 0,25 = 0,75",
+    "Doubling means multiply by 2 each hour.": "Verdopplung bedeutet: jede Stunde mit 2 multiplizieren.",
+    "Exponential change multiplies by a constant factor":
+        "Exponentielle Veränderung multipliziert mit einem konstanten Faktor",
+    "Exponential Growth & Decay": "Exponentielles Wachstum & Zerfall",
+    "Exponential growth adds the same amount each step.":
+        "Exponentielles Wachstum addiert in jedem Schritt denselben Betrag.",
+    "Exponential models multiply by the same factor each step. They explain interest, population growth, depreciation, half-life, and many real-world change problems.":
+        "Exponentielle Modelle multiplizieren in jedem Schritt mit demselben Faktor. Sie erklären Zinsen, Bevölkerungswachstum, Wertverlust, Halbwertszeit und viele reale Veränderungsprobleme.",
+    "For decay, multiply by a factor below 1 each period.":
+        "Bei Zerfall multiplizierst du pro Zeitraum mit einem Faktor unter 1.",
+    "Growth factor: 1.10": "Wachstumsfaktor: 1,10",
+    "Growth means a factor above 1.": "Wachstum bedeutet einen Faktor über 1.",
+    "Growth or decay model": "Wachstums- oder Zerfallsmodell",
+    "Linear adds the same amount; exponential multiplies.": "Linear addiert denselben Betrag; exponentiell multipliziert.",
+    "Lines, functions, exponents, growth": "Geraden, Funktionen, Potenzen, Wachstum",
+    "Model: 200(1.05)^t": "Modell: 200(1,05)^t",
+    "Percent to factor": "Prozent zu Faktor",
+    "Starting amount = 200": "Startwert = 200",
+    "The added amount usually changes each step": "Der addierte Betrag ändert sich normalerweise in jedem Schritt",
+    "True or false: Exponential growth adds the same amount each step.":
+        "Wahr oder falsch: Exponentielles Wachstum addiert in jedem Schritt denselben Betrag.",
+    "Use 100(1.10)².": "Nutze 100(1,10)².",
+    "Which expression models 5% growth for t years from 200?":
+        "Welcher Ausdruck modelliert 5 % Wachstum über t Jahre ausgehend von 200?",
     "All values equal the mean": "Alle Werte entsprechen dem Mittelwert",
     "Always check in the original equation": "Prüfe immer in der ursprünglichen Gleichung",
     "2 is not one of the payouts": "2 ist keiner der möglichen Auszahlungswerte",
@@ -126,6 +166,8 @@ PROSE: dict[str, str] = {
         "Ein faires Spiel hat über viele Wiederholungen keinen durchschnittlichen Gewinn oder Verlust.",
     "A game pays $10 with probability 0.2 and $0 otherwise. Expected payout?":
         "Ein Spiel zahlt 10 $ mit Wahrscheinlichkeit 0,2 und sonst 0 $. Erwarteter Auszahlungswert?",
+    "a is the starting amount, r is the rate, and t is the number of periods.":
+        "a ist der Startwert, r die Rate und t die Anzahl der Zeiträume.",
     "Always negative": "Immer negativ",
     "Always positive": "Immer positiv",
     "Averages can fall between possible outcomes.":
@@ -283,6 +325,7 @@ PROSE: dict[str, str] = {
     "Use the multiplication rule.": "Nutze die Multiplikationsregel.",
     "Which conversion factor changes hours to minutes?": "Welcher Umrechnungsfaktor wandelt Stunden in Minuten um?",
     "hours · 60 min / 1 h": "Stunden · 60 min / 1 h",
+    "Value = 121": "Wert = 121",
     "Use both ways a positive result can happen.": "Nutze beide Wege, wie ein positives Ergebnis entstehen kann.",
     "Using P(A)=0.2, P(B|A)=0.5, and P(B)=0.25, find P(A|B).":
         "Mit P(A)=0,2, P(B|A)=0,5 und P(B)=0,25: Bestimme P(A|B).",
