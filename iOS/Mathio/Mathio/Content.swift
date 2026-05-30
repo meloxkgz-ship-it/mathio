@@ -2622,6 +2622,64 @@ enum Curriculum {
         ]
     )
 
+    static let boxPlots = Lesson(
+        id: "stats.box",
+        title: "Box Plots & Quartiles",
+        intro: "Box plots summarize spread using the minimum, quartiles, median, and maximum.",
+        formulas: [
+            Formula(key: "stats.box.f1",
+                    name: "Five-number summary",
+                    math: "min, Q1, median, Q3, max",
+                    explanation: "A box plot is built from these five values."),
+            Formula(key: "stats.box.f2",
+                    name: "Interquartile range",
+                    math: "IQR = Q3 − Q1",
+                    explanation: "The IQR measures the spread of the middle half of the data."),
+        ],
+        questions: [
+            Question(id: "stats.box.q1",
+                     prompt: "For 2, 4, 6, 8, 10, what is the median?",
+                     math: nil,
+                     kind: .freeAnswer(accepted: ["6"]),
+                     hint: "The list is already sorted.",
+                     solutionSteps: ["There are 5 values", "The middle value is 6"]),
+            Question(id: "stats.box.q2",
+                     prompt: "If Q1 = 7 and Q3 = 19, what is the IQR?",
+                     math: nil,
+                     kind: .freeAnswer(accepted: ["12"]),
+                     hint: "Subtract Q1 from Q3.",
+                     solutionSteps: ["IQR = Q3 − Q1", "19 − 7 = 12"]),
+            Question(id: "stats.box.q3",
+                     prompt: "Which value is not part of the five-number summary?",
+                     math: nil,
+                     kind: .multipleChoice(options: [
+                        .init(label: "Mean", math: nil),
+                        .init(label: "Median", math: nil),
+                        .init(label: "Minimum", math: nil),
+                        .init(label: "Maximum", math: nil),
+                     ], correctIndex: 0),
+                     hint: "Box plots use quartiles, not the average.",
+                     solutionSteps: ["The five-number summary is min, Q1, median, Q3, max", "Mean is not included"]),
+            Question(id: "stats.box.q4",
+                     prompt: "A larger box in a box plot usually means:",
+                     math: nil,
+                     kind: .multipleChoice(options: [
+                        .init(label: "More spread in the middle 50%", math: nil),
+                        .init(label: "A smaller data set", math: nil),
+                        .init(label: "No outliers", math: nil),
+                        .init(label: "A lower median", math: nil),
+                     ], correctIndex: 0),
+                     hint: "The box runs from Q1 to Q3.",
+                     solutionSteps: ["Box width represents Q3 − Q1", "A larger box means a larger IQR"]),
+            Question(id: "stats.box.q5",
+                     prompt: "True or false: the median line in a box plot splits the data into two halves.",
+                     math: nil,
+                     kind: .trueFalse(answer: true),
+                     hint: "Median means middle.",
+                     solutionSteps: ["The median is the middle of the sorted data", "Half the values are at or below it, half at or above it"]),
+        ]
+    )
+
     static let sampling = Lesson(
         id: "stats.sample",
         title: "Sampling & Bias",
@@ -4071,7 +4129,7 @@ enum Curriculum {
               subtitle: "Data, chance & decisions",
               icon: "chart.bar.doc.horizontal",
               color: Palette.stats,
-              lessons: [descriptiveStats, probabilityBasics, dataDisplays, sampling,
+              lessons: [descriptiveStats, probabilityBasics, dataDisplays, boxPlots, sampling,
                         distributions, correlationRegression, inferenceBasics, normalDistribution, confidenceIntervals,
                         hypothesisTests]),
         Topic(id: "linearalgebra",

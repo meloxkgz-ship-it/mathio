@@ -53,7 +53,7 @@ Reasoning:
 ## Promotional Text (170 max — editable without review)
 
 ```
-New: Roadmap Phases, Completing the Square, Composite Areas, and 77 lessons.
+New: Box Plots, Roadmap Phases, Completing the Square, and 78 lessons.
 ```
 **73 / 170** — highlights current catalog size, retention improvements, and new exam-prep content.
 
@@ -110,7 +110,7 @@ Available in English, German, Spanish, French, Italian, and Brazilian Portuguese
 TOPICS
 Pre-Algebra, Algebra, Calculus, Geometry, Trigonometry, Statistics, Linear Algebra, Financial Math, and Discrete Math.
 
-77 lessons and 385 hand-crafted questions cover fractions, percentages, percent change, equations, word problems, functions, derivatives, integrals, related rates, vectors, matrices, probability, regression, normal distribution, confidence intervals, rational expressions, completing the square, coordinate geometry, composite areas, budgeting, unit prices, tips, bill splitting, loans, taxes, discounts, truth tables, logic, graph theory, and more.
+78 lessons and 390 hand-crafted questions cover fractions, percentages, percent change, equations, word problems, functions, derivatives, integrals, related rates, vectors, matrices, probability, regression, normal distribution, box plots, confidence intervals, rational expressions, completing the square, coordinate geometry, composite areas, budgeting, unit prices, tips, bill splitting, loans, taxes, discounts, truth tables, logic, graph theory, and more.
 
 SUBSCRIPTION
 Mathio is free to try. Unlock all topics with:
@@ -141,6 +141,7 @@ New:
 • Rich Path Previews: guided paths now show duration, lesson count, and the next concrete lesson
 • Session Insight: every completed session now shows accuracy, misses, mode, and the next best step
 • Normal Distribution: new statistics practice for z-scores, bell curves, and the empirical rule
+• Box Plots & Quartiles: new statistics practice for five-number summaries, IQR, and spread
 • Tips & Bill Splitting: practical finance practice for tips, shared totals, and fair shares
 • Comeback Mission: a gentle 5-question restart when you return after a break
 • Coordinate Geometry: new geometry practice for midpoint, distance, slope, and coordinate-plane reasoning
@@ -158,7 +159,7 @@ New:
 Improved:
 • Clearer learning path guidance on Home
 • Better premium feel with more personalized study flow
-• Expanded curriculum: 77 lessons and 385 guided questions across 9 topics
+• Expanded curriculum: 78 lessons and 390 guided questions across 9 topics
 
 Fixed:
 • Continued cleanup of localized app copy to avoid mixed German/English flows
