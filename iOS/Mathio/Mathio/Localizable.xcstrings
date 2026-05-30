@@ -70059,6 +70059,74 @@
           }
         }
       }
+    },
+    "Your lowest-mastery areas are the best place to earn quick progress.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deine schwächsten Bereiche bringen dir am schnellsten sichtbaren Fortschritt."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tus áreas con menor dominio son el mejor lugar para avanzar rápido."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tes zones les moins maîtrisées sont le meilleur endroit pour progresser vite."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le aree meno padroneggiate sono il punto migliore per fare progressi rapidi."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Suas áreas com menor domínio são o melhor ponto para avançar rápido."
+          }
+        }
+      }
+    },
+    "%lld%% mastery · %lld lessons": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld %% gemeistert · %lld Lektionen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld %% de dominio · %lld lecciones"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld %% maîtrisé · %lld leçons"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld %% padronanza · %lld lezioni"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld %% domínio · %lld lições"
+          }
+        }
+      }
     }
   },
   "version": "1.0"

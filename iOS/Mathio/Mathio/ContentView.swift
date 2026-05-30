@@ -2647,9 +2647,11 @@ struct StatsView: View {
         }
         return weighted / Double(totalQuestions)
     }
-    private var weakest: Topic? {
+    private var focusTopics: [Topic] {
         topics.filter { store.mastery(for: $0) < 1.0 }
-              .min { store.mastery(for: $0) < store.mastery(for: $1) }
+              .sorted { store.mastery(for: $0) < store.mastery(for: $1) }
+              .prefix(3)
+              .map { $0 }
     }
     private var hasAnyProgress: Bool {
         store.answered.values.contains { $0.attempts > 0 }
@@ -2663,7 +2665,7 @@ struct StatsView: View {
                     forecastCard
                     activityCard
                     masteryCard
-                    if hasAnyProgress, let weakest { focusCard(weakest) }
+                    if hasAnyProgress, !focusTopics.isEmpty { focusCard }
                 }
                 .padding(20)
             }
@@ -2804,21 +2806,33 @@ struct StatsView: View {
         }
     }
 
-    private func focusCard(_ topic: Topic) -> some View {
+    private var focusCard: some View {
         Card {
-            VStack(alignment: .leading, spacing: 10) {
+            VStack(alignment: .leading, spacing: 12) {
                 SectionLabel(title: "Focus next")
-                HStack(spacing: 12) {
-                    Image(systemName: topic.icon)
-                        .font(.system(size: 22))
-                        .foregroundStyle(topic.color)
-                        .frame(width: 44, height: 44)
-                        .background(topic.color.opacity(0.15)).clipShape(Circle())
-                    VStack(alignment: .leading) {
-                        Text(topic.title).font(.titleM).foregroundStyle(Palette.ink)
-                        Text("\(Int(store.mastery(for: topic) * 100))% mastery")
-                            .font(.bodyM).foregroundStyle(Palette.inkSoft)
+                Text("Your lowest-mastery areas are the best place to earn quick progress.")
+                    .font(.bodyM)
+                    .foregroundStyle(Palette.inkSoft)
+                ForEach(focusTopics) { topic in
+                    HStack(spacing: 12) {
+                        Image(systemName: topic.icon)
+                            .font(.system(size: 18, weight: .semibold))
+                            .foregroundStyle(topic.color)
+                            .frame(width: 38, height: 38)
+                            .background(topic.color.opacity(0.15), in: Circle())
+                        VStack(alignment: .leading, spacing: 3) {
+                            Text(topic.title)
+                                .font(.titleM)
+                                .foregroundStyle(Palette.ink)
+                            Text("\(Int(store.mastery(for: topic) * 100))% mastery · \(topic.lessons.count) lessons")
+                                .font(.bodyM)
+                                .foregroundStyle(Palette.inkSoft)
+                        }
+                        Spacer()
+                        ProgressRing(progress: store.mastery(for: topic), size: 34, lineWidth: 4, color: topic.color)
                     }
+                    .padding(12)
+                    .background(Palette.surfaceMuted, in: RoundedRectangle(cornerRadius: 12, style: .continuous))
                 }
             }
         }
