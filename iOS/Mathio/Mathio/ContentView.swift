@@ -2441,7 +2441,8 @@ struct LearningPath: Identifiable {
             color: Palette.terracotta,
             lessons: [Curriculum.preAlgFractions, Curriculum.linearEquations, Curriculum.pythagoras,
                       Curriculum.wordProblems, Curriculum.trigBasics, Curriculum.descriptiveStats,
-                      Curriculum.standardDeviation, Curriculum.correlationRegression],
+                      Curriculum.conditionalProbability, Curriculum.standardDeviation,
+                      Curriculum.correlationRegression],
             durationDays: 14
         ),
         LearningPath(
@@ -2451,7 +2452,7 @@ struct LearningPath: Identifiable {
             icon: "chart.bar.xaxis",
             color: Palette.calculus,
             lessons: [Curriculum.descriptiveStats, Curriculum.probabilityBasics, Curriculum.expectedValue,
-                      Curriculum.bayesTheorem, Curriculum.dataDisplays,
+                      Curriculum.conditionalProbability, Curriculum.bayesTheorem, Curriculum.dataDisplays,
                       Curriculum.sampling, Curriculum.distributions, Curriculum.standardDeviation,
                       Curriculum.correlationRegression,
                       Curriculum.normalDistribution, Curriculum.confidenceIntervals],
@@ -5085,7 +5086,7 @@ struct PaywallView: View {
 
     private var bullets: some View {
         VStack(alignment: .leading, spacing: 12) {
-            row("books.vertical.fill", "84 lessons across algebra, calculus, geometry, statistics, finance, and more")
+            row("books.vertical.fill", "85 lessons across algebra, calculus, geometry, statistics, finance, and more")
             row("map.fill", "Guided paths show exactly what to study next")
             row("brain.head.profile", "Adaptive practice focuses on weak spots")
             row("arrow.triangle.2.circlepath", "Spaced repetition brings back what you are about to forget")
@@ -5104,7 +5105,7 @@ struct PaywallView: View {
                 valueProof("sparkles", "Study coach", "One best next step every time you open Mathio")
                 valueProof("heart.text.square.fill", "Learning health", "See whether your habit, reviews, and mastery are on track")
                 valueProof("arrow.triangle.2.circlepath", "Smart review", "Questions return before you forget them")
-                valueProof("map.fill", "Full roadmap", "All 84 lessons and 420 guided questions")
+                valueProof("map.fill", "Full roadmap", "All 85 lessons and 425 guided questions")
             }
         }
     }

@@ -96104,6 +96104,1264 @@
           }
         }
       }
+    },
+    "0.18 / 0.6 = 0.3": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0.18 / 0.6 = 0.3"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0.18 / 0.6 = 0.3"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0.18 / 0.6 = 0.3"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0.18 / 0.6 = 0.3"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0.18 / 0.6 = 0.3"
+          }
+        }
+      }
+    },
+    "85 lessons across algebra, calculus, geometry, statistics, finance, and more": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "85 Lektionen in Algebra, Analysis, Geometrie, Statistik, Finanzmathe und mehr"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "85 lecciones de álgebra, cálculo, geometría, estadística, finanzas y más"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "85 leçons sur l'algèbre, le calcul, la géométrie, les statistiques, la finance et bien plus encore"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "85 lezioni di algebra, calcolo infinitesimale, geometria, statistica, finanza e altro ancora"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "85 aulas de álgebra, cálculo, geometria, estatística, finanças e muito mais"
+          }
+        }
+      }
+    },
+    "All 85 lessons and 425 guided questions": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alle 85 Lektionen und 425 geführten Aufgaben"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Las 85 lecciones y 425 preguntas guiadas."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les 85 leçons et 425 questions guidées"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tutte le 85 lezioni e 425 domande guidate"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Todas as 85 lições e 425 perguntas guiadas"
+          }
+        }
+      }
+    },
+    "All possible outcomes": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alle möglichen Ergebnisse"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Todos los resultados posibles"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tous les résultats possibles"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tutti i risultati possibili"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Todos os resultados possíveis"
+          }
+        }
+      }
+    },
+    "Conditional Probability": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bedingte Wahrscheinlichkeit"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Probabilidad condicional"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Probabilité conditionnelle"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Probabilità condizionata"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Probabilidade Condicional"
+          }
+        }
+      }
+    },
+    "Conditional probability": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bedingte Wahrscheinlichkeit"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Probabilidad condicional"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Probabilité conditionnelle"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Probabilità condizionata"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Probabilidade condicional"
+          }
+        }
+      }
+    },
+    "Conditional probability asks how likely A is when B is already known. It is the step between basic probability and Bayes.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bedingte Wahrscheinlichkeit fragt, wie wahrscheinlich A ist, wenn B bereits bekannt ist. Sie ist der Schritt zwischen einfacher Wahrscheinlichkeit und Bayes."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La probabilidad condicional pregunta qué tan probable es A cuando B ya se conoce. Es el paso entre la probabilidad básica y Bayes."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La probabilité conditionnelle demande quelle est la probabilité que A soit lorsque B est déjà connu. C'est l'étape entre la probabilité de base et Bayes."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La probabilità condizionata chiede quanto sia probabile A quando B è già noto. È il passaggio tra la probabilità di base e Bayes."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A probabilidade condicional pergunta qual é a probabilidade de A quando B já é conhecido. É o passo entre a probabilidade básica e Bayes."
+          }
+        }
+      }
+    },
+    "Conditional probability changes the denominator to:": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bedingte Wahrscheinlichkeit ändert den Nenner zu:"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La probabilidad condicional cambia el denominador a:"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La probabilité conditionnelle change le dénominateur en :"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La probabilità condizionata cambia il denominatore in:"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A probabilidade condicional muda o denominador para:"
+          }
+        }
+      }
+    },
+    "Divide the overlap by the condition.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Teile die Überschneidung durch die Bedingung."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Divida la superposición por la condición."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Divisez le chevauchement par la condition."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dividere la sovrapposizione per la condizione."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Divida a sobreposição pela condição."
+          }
+        }
+      }
+    },
+    "Full roadmap": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vollständiger Lernplan"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hoja de ruta completa"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Feuille de route complète"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tabella di marcia completa"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Roteiro completo"
+          }
+        }
+      }
+    },
+    "Given B means only B outcomes remain": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gegeben B heißt: Es bleiben nur B-Ergebnisse übrig"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dado B significa que solo quedan resultados B"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Étant donné que B signifie que seuls les résultats B restent"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dato B significa che rimangono solo i risultati B"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dado B significa que apenas os resultados B permanecem"
+          }
+        }
+      }
+    },
+    "If P(A and B)=0.18 and P(B)=0.6, find P(A|B).": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wenn P(A und B)=0,18 und P(B)=0,6: Bestimme P(A|B)."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Si P(A y B)=0,18 y P(B)=0,6, encuentre P(A|B)."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Si P(A et B)=0,18 et P(B)=0,6, trouvez P(A|B)."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se P(A e B)=0,18 e P(B)=0,6, trova P(A|B)."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se P(A e B)=0,18 e P(B)=0,6, encontre P(A|B)."
+          }
+        }
+      }
+    },
+    "If P(pass | studied)=0.8 and P(studied)=0.5, what is P(pass and studied)?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wenn P(bestanden | gelernt)=0,8 und P(gelernt)=0,5: Wie groß ist P(bestanden und gelernt)?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Si P(aprobado | estudiado)=0.8 y P(estudiado)=0.5, ¿cuál es P(aprobado y estudiado)?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Si P(réussite | étudié)=0,8 et P(étudié)=0,5, qu'est-ce que P(réussite et étudié) ?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se P(superato | studiato)=0,8 e P(studiato)=0,5, quanto vale P(superato e studiato)?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se P(aprova | estudou)=0,8 e P(estudou)=0,5, o que é P(aprova e estudou)?"
+          }
+        }
+      }
+    },
+    "In a class, 12 students play sports. 5 of those also play music. If a sports player is chosen, what is P(music | sports)?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In einer Klasse treiben 12 Schüler Sport. 5 davon machen auch Musik. Wenn ein Sportler gewählt wird: Wie groß ist P(Musik | Sport)?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En una clase, 12 estudiantes practican deportes. 5 de ellos también tocan música. Si se elige un deportista, ¿cuál es P(música | deportes)?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dans une classe, 12 élèves font du sport. 5 d’entre eux jouent également de la musique. Si un sportif est choisi, qu'est-ce que P(musique | sports) ?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In una classe, 12 studenti praticano sport. 5 di questi riproducono anche musica. Se viene scelto un giocatore sportivo, cos'è P(musica | sport)?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Em uma turma, 12 alunos praticam esportes. 5 deles também tocam música. Se for escolhido um esportista, o que é P(música | esportes)?"
+          }
+        }
+      }
+    },
+    "Independent means B does not change A": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unabhängig heißt: B verändert A nicht"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Independiente significa que B no cambia A"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Indépendant signifie que B ne change pas A"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Indipendente significa che B non cambia A"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Independente significa que B não muda A"
+          }
+        }
+      }
+    },
+    "Keep only the world where B happened, then ask what share also has A.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Betrachte nur die Welt, in der B passiert ist, und frage dann, welcher Anteil auch A hat."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mantenga solo el mundo donde ocurrió B, luego pregunte qué parte también tiene A."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gardez uniquement le monde dans lequel B s'est produit, puis demandez quelle part possède également A."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Conserva solo il mondo in cui è accaduto B, poi chiedi quale quota ha anche A."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mantenha apenas o mundo onde B aconteceu e depois pergunte qual parcela também tem A."
+          }
+        }
+      }
+    },
+    "Knowing B gives no new information about A.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "B zu kennen liefert keine neue Information über A."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Conocer B no proporciona información nueva sobre A."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Connaître B ne donne aucune nouvelle information sur A."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Conoscere B non fornisce nuove informazioni su A."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Conhecer B não fornece nenhuma informação nova sobre A."
+          }
+        }
+      }
+    },
+    "Multiplication rule": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Multiplikationsregel"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "regla de multiplicacion"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Règle de multiplication"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Regola di moltiplicazione"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Regra de multiplicação"
+          }
+        }
+      }
+    },
+    "One best next step every time you open Mathio": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ein bester nächster Schritt bei jedem Öffnen von Mathio"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El mejor siguiente paso cada vez que abres Mathio"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Une meilleure prochaine étape à chaque fois que vous ouvrez Mathio"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il miglior passo successivo ogni volta che apri Mathio"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Um melhor próximo passo sempre que você abrir o Mathio"
+          }
+        }
+      }
+    },
+    "Only impossible outcomes": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nur unmögliche Ergebnisse"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sólo resultados imposibles"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Seulement des résultats impossibles"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Solo risultati impossibili"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apenas resultados impossíveis"
+          }
+        }
+      }
+    },
+    "P = 5/12": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P = 5/12"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P = 5/12"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P = 5/12"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P = 5/12"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P = 5/12"
+          }
+        }
+      }
+    },
+    "P(A|B) = P(A and B) / P(B)": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P(A|B) = P(A und B) / P(B)"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P(A|B) = P(A y B) / P(B)"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P(A|B) = P(A et B) / P(B)"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P(A|B) = P(A e B) / P(B)"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P(A|B) = P(A e B) / P(B)"
+          }
+        }
+      }
+    },
+    "P(pass and studied) = 0.4": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P(bestanden und gelernt) = 0,4"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P(aprobado y estudiado) = 0,4"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P(réussite et étudié) = 0,4"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P(superato e studiato) = 0,4"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P(passou e estudou) = 0,4"
+          }
+        }
+      }
+    },
+    "P(pass and studied) = 0.8 · 0.5": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P(bestanden und gelernt) = 0,8 · 0,5"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P(aprobado y estudiado) = 0,8 · 0,5"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P(réussite et étudié) = 0,8 · 0,5"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P(superato e studiato) = 0,8 · 0,5"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P(passou e estudou) = 0,8 · 0,5"
+          }
+        }
+      }
+    },
+    "Questions return before you forget them": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aufgaben kommen zurück, bevor du sie vergisst"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Las preguntas regresan antes de que las olvides."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les questions reviennent avant que vous les oubliiez"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le domande ritornano prima che tu le dimentichi"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "As perguntas retornam antes que você as esqueça"
+          }
+        }
+      }
+    },
+    "Rearrange the conditional formula to find the overlap.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stelle die bedingte Formel um, um die Überschneidung zu finden."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reorganice la fórmula condicional para encontrar la superposición."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Réorganisez la formule conditionnelle pour trouver le chevauchement."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Riorganizzare la formula condizionale per trovare la sovrapposizione."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reorganize a fórmula condicional para encontrar a sobreposição."
+          }
+        }
+      }
+    },
+    "Restrict the group to sports players.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beschränke die Gruppe auf Sportler."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Restringir el grupo a deportistas."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Limitez le groupe aux sportifs."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Limitare il gruppo ai giocatori sportivi."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Restrinja o grupo a esportistas."
+          }
+        }
+      }
+    },
+    "See whether your habit, reviews, and mastery are on track": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sieh, ob Gewohnheit, Wiederholungen und Mastery auf Kurs sind"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vea si su hábito, sus revisiones y su dominio van por buen camino"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vérifiez si vos habitudes, vos critiques et votre maîtrise sont sur la bonne voie"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verifica se le tue abitudini, le tue recensioni e la tua padronanza sono sulla buona strada"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Veja se seu hábito, avaliações e domínio estão no caminho certo"
+          }
+        }
+      }
+    },
+    "Smart review": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Smarte Wiederholung"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Revisión inteligente"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Examen intelligent"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recensione intelligente"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Revisão inteligente"
+          }
+        }
+      }
+    },
+    "So P(A | B) equals P(A)": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Also gilt P(A | B) = P(A)"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Entonces P(A | B) es igual a P(A)"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Donc P(A | B) est égal à P(A)"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quindi P(A | B) è uguale a P(A)"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Então P(A | B) é igual a P(A)"
+          }
+        }
+      }
+    },
+    "So the denominator becomes P(B)": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Also wird der Nenner zu P(B)"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Entonces el denominador se convierte en P(B)"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le dénominateur devient donc P(B)"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quindi il denominatore diventa P(B)"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Então o denominador se torna P(B)"
+          }
+        }
+      }
+    },
+    "Sports and music: 5": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sport und Musik: 5"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deportes y música: 5"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sports et musique : 5"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sport e musica: 5"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Esportes e música: 5"
+          }
+        }
+      }
+    },
+    "Sports players: 12": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sportler: 12"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jugadores deportivos: 12"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acteurs sportifs : 12"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Giocatori sportivi: 12"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jogadores esportivos: 12"
+          }
+        }
+      }
+    },
+    "The group where the condition is true": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Gruppe, in der die Bedingung wahr ist"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El grupo donde la condición es verdadera."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le groupe où la condition est vraie"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il gruppo in cui la condizione è vera"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O grupo onde a condição é verdadeira"
+          }
+        }
+      }
+    },
+    "The larger event": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Das größere Ereignis"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El evento más grande"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le plus grand événement"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L'evento più grande"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O evento maior"
+          }
+        }
+      }
+    },
+    "True or false: If A and B are independent, then P(A | B) = P(A).": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wahr oder falsch: Wenn A und B unabhängig sind, dann gilt P(A | B) = P(A)."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verdadero o falso: si A y B son independientes, entonces P(A | B) = P(A)."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vrai ou faux : si A et B sont indépendants, alors P(A | B) = P(A)."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vero o falso: se A e B sono indipendenti, allora P(A | B) = P(A)."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verdadeiro ou falso: Se A e B são independentes, então P(A | B) = P(A)."
+          }
+        }
+      }
+    },
+    "Use the multiplication rule.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nutze die Multiplikationsregel."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usa la regla de la multiplicación."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Utilisez la règle de multiplication."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usa la regola della moltiplicazione."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Use a regra da multiplicação."
+          }
+        }
+      }
     }
   },
   "version": "1.0"

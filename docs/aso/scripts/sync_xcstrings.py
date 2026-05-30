@@ -27,6 +27,8 @@ PROSE: dict[str, str] = {
         "82 Lektionen in Algebra, Analysis, Geometrie, Statistik, Finanzmathe und mehr",
     "84 lessons across algebra, calculus, geometry, statistics, finance, and more":
         "84 Lektionen in Algebra, Analysis, Geometrie, Statistik, Finanzmathe und mehr",
+    "85 lessons across algebra, calculus, geometry, statistics, finance, and more":
+        "85 Lektionen in Algebra, Analysis, Geometrie, Statistik, Finanzmathe und mehr",
     "A quick rating helps more learners find it.": "Eine kurze Bewertung hilft mehr Lernenden, Mathio zu finden.",
     "Accuracy": "Trefferquote",
     "active days": "aktive Tage",
@@ -41,6 +43,7 @@ PROSE: dict[str, str] = {
     "Exam core": "Prüfungs-Kern",
     "Extension": "Erweiterung",
     "Finance, Linear Algebra, Discrete Math": "Finanzmathe, Lineare Algebra, Diskrete Mathematik",
+    "Full roadmap": "Vollständiger Lernplan",
     "Foundations": "Grundlagen",
     "Guided paths": "Geführte Lernpfade",
     "Pre-Algebra, Algebra, Geometry": "Vor-Algebra, Algebra, Geometrie",
@@ -54,11 +57,15 @@ PROSE: dict[str, str] = {
     "Next focus": "Nächster Fokus",
     "Next study targets": "Nächste Lernziele",
     "Not now": "Nicht jetzt",
+    "One best next step every time you open Mathio": "Ein bester nächster Schritt bei jedem Öffnen von Mathio",
     "Rate Mathio": "Mathio bewerten",
     "Recommended next": "Als Nächstes empfohlen",
     "Reminder time": "Erinnerungszeit",
     "Review forecast": "Wiederholungs-Vorschau",
     "Seven small sessions from your recommended path.": "Sieben kleine Sessions aus deinem empfohlenen Pfad.",
+    "See whether your habit, reviews, and mastery are on track": "Sieh, ob Gewohnheit, Wiederholungen und Mastery auf Kurs sind",
+    "Questions return before you forget them": "Aufgaben kommen zurück, bevor du sie vergisst",
+    "Smart review": "Smarte Wiederholung",
     "Start due review": "Fällige Wiederholung starten",
     "Study coach": "Lerncoach",
     "Answer a few questions to start your personal review cycle.":
@@ -93,6 +100,8 @@ PROSE: dict[str, str] = {
         "Ein Quadrierschritt kann falsche Lösungen erzeugen, also prüfe immer nach.",
     "Add the values and divide by 3.": "Addiere die Werte und teile durch 3.",
     "All equal": "Alle gleich",
+    "All possible outcomes": "Alle möglichen Ergebnisse",
+    "All 85 lessons and 425 guided questions": "Alle 85 Lektionen und 425 geführten Aufgaben",
     "All values equal the mean": "Alle Werte entsprechen dem Mittelwert",
     "Always check in the original equation": "Prüfe immer in der ursprünglichen Gleichung",
     "2 is not one of the payouts": "2 ist keiner der möglichen Auszahlungswerte",
@@ -165,20 +174,43 @@ PROSE: dict[str, str] = {
     "Bayes' theorem keeps the base rate in the calculation":
         "Der Satz von Bayes behält die Basisrate in der Rechnung",
     "Before any evidence": "Vor jeder Evidenz",
+    "Conditional Probability": "Bedingte Wahrscheinlichkeit",
+    "Conditional probability": "Bedingte Wahrscheinlichkeit",
+    "Conditional probability asks how likely A is when B is already known. It is the step between basic probability and Bayes.":
+        "Bedingte Wahrscheinlichkeit fragt, wie wahrscheinlich A ist, wenn B bereits bekannt ist. Sie ist der Schritt zwischen einfacher Wahrscheinlichkeit und Bayes.",
+    "Conditional probability changes the denominator to:":
+        "Bedingte Wahrscheinlichkeit ändert den Nenner zu:",
+    "Divide the overlap by the condition.": "Teile die Überschneidung durch die Bedingung.",
     "Evidence probability": "Wahrscheinlichkeit der Evidenz",
+    "Given B means only B outcomes remain": "Gegeben B heißt: Es bleiben nur B-Ergebnisse übrig",
+    "If P(A and B)=0.18 and P(B)=0.6, find P(A|B).":
+        "Wenn P(A und B)=0,18 und P(B)=0,6: Bestimme P(A|B).",
+    "If P(pass | studied)=0.8 and P(studied)=0.5, what is P(pass and studied)?":
+        "Wenn P(bestanden | gelernt)=0,8 und P(gelernt)=0,5: Wie groß ist P(bestanden und gelernt)?",
+    "In a class, 12 students play sports. 5 of those also play music. If a sports player is chosen, what is P(music | sports)?":
+        "In einer Klasse treiben 12 Schüler Sport. 5 davon machen auch Musik. Wenn ein Sportler gewählt wird: Wie groß ist P(Musik | Sport)?",
+    "Independent means B does not change A": "Unabhängig heißt: B verändert A nicht",
+    "Keep only the world where B happened, then ask what share also has A.":
+        "Betrachte nur die Welt, in der B passiert ist, und frage dann, welcher Anteil auch A hat.",
+    "Knowing B gives no new information about A.": "B zu kennen liefert keine neue Information über A.",
+    "Multiplication rule": "Multiplikationsregel",
     "Ignoring B": "B ignorieren",
     "In Bayes' theorem, P(A) before new evidence is called the:":
         "Im Satz von Bayes heißt P(A) vor neuer Evidenz:",
     "It is the probability you start with.": "Das ist die Wahrscheinlichkeit, mit der du startest.",
     "Multiply the top, then divide by P(B).": "Multipliziere den Zähler und teile dann durch P(B).",
     "Only when B is impossible": "Nur wenn B unmöglich ist",
+    "Only impossible outcomes": "Nur unmögliche Ergebnisse",
     "Outlier": "Ausreißer",
     "P(A) is the starting probability": "P(A) ist die Startwahrscheinlichkeit",
     "P(A|B) is the probability of A:": "P(A|B) ist die Wahrscheinlichkeit von A:",
     "P(A|B) reads as probability of A given B": "P(A|B) liest sich als Wahrscheinlichkeit von A gegeben B",
     "P(A|B) = 0.5 · 0.2 / 0.25": "P(A|B) = 0,5 · 0,2 / 0,25",
+    "P(A|B) = P(A and B) / P(B)": "P(A|B) = P(A und B) / P(B)",
     "P(positive) = 0.009 + 0.099 = 0.108": "P(positiv) = 0,009 + 0,099 = 0,108",
     "P(positive) = 0.90 · 0.01 + 0.10 · 0.99": "P(positiv) = 0,90 · 0,01 + 0,10 · 0,99",
+    "P(pass and studied) = 0.4": "P(bestanden und gelernt) = 0,4",
+    "P(pass and studied) = 0.8 · 0.5": "P(bestanden und gelernt) = 0,8 · 0,5",
     "Posterior": "Posterior",
     "Prior": "Prior",
     "Radical Equations": "Wurzelgleichungen",
@@ -186,13 +218,25 @@ PROSE: dict[str, str] = {
         "Wurzelgleichungen verstecken die Variable unter einer Wurzel. Isoliere die Wurzel, quadriere beide Seiten und prüfe dann auf zusätzliche Lösungen.",
     "The evidence can happen through A or through not A.":
         "Die Evidenz kann durch A oder durch nicht A eintreten.",
+    "Rearrange the conditional formula to find the overlap.":
+        "Stelle die bedingte Formel um, um die Überschneidung zu finden.",
+    "Restrict the group to sports players.": "Beschränke die Gruppe auf Sportler.",
+    "So P(A | B) equals P(A)": "Also gilt P(A | B) = P(A)",
+    "So the denominator becomes P(B)": "Also wird der Nenner zu P(B)",
+    "Sports and music: 5": "Sport und Musik: 5",
+    "Sports players: 12": "Sportler: 12",
+    "The group where the condition is true": "Die Gruppe, in der die Bedingung wahr ist",
+    "The larger event": "Das größere Ereignis",
     "The vertical bar means given.": "Der senkrechte Strich bedeutet gegeben.",
     "That is called the prior": "Das nennt man Prior",
     "So B has been observed": "Also wurde B beobachtet",
     "True or false: a rare event can still be unlikely after a positive test if false positives are common.":
         "Wahr oder falsch: Ein seltenes Ereignis kann nach einem positiven Test weiterhin unwahrscheinlich sein, wenn falsch positive Ergebnisse häufig sind.",
+    "True or false: If A and B are independent, then P(A | B) = P(A).":
+        "Wahr oder falsch: Wenn A und B unabhängig sind, dann gilt P(A | B) = P(A).",
     "Update the probability of A after seeing evidence B.":
         "Aktualisiere die Wahrscheinlichkeit von A, nachdem Evidenz B beobachtet wurde.",
+    "Use the multiplication rule.": "Nutze die Multiplikationsregel.",
     "Use both ways a positive result can happen.": "Nutze beide Wege, wie ein positives Ergebnis entstehen kann.",
     "Using P(A)=0.2, P(B|A)=0.5, and P(B)=0.25, find P(A|B).":
         "Mit P(A)=0,2, P(B|A)=0,5 und P(B)=0,25: Bestimme P(A|B).",
@@ -864,7 +908,9 @@ def main() -> None:
         r'label:\s*"([^"\\]+)"',
         r'LocalizedStringResource\(\s*"([^"\\]+)"',
         r'String\(localized:\s*"([^"\\]+)"',
+        r'row\(\s*"[^"\\]+"\s*,\s*"([^"\\]+)"',
     ]
+    pat_value_proof = r'valueProof\(\s*"[^"\\]+"\s*,\s*"([^"\\]+)"\s*,\s*"([^"\\]+)"'
     pat_array = [r'solutionSteps:\s*\[([^\]]+)\]']
     pat_text = (r'(?:Text|Button|navigationTitle|Picker|Toggle|Stepper|Section|Label)'
                 r'\(\s*"([^"\\]+)"')
@@ -875,6 +921,9 @@ def main() -> None:
         src = open(fname, encoding="utf-8").read()
         for pat in pat_named:
             candidates.update(m.group(1) for m in re.finditer(pat, src))
+        for m in re.finditer(pat_value_proof, src):
+            candidates.add(m.group(1))
+            candidates.add(m.group(2))
         for pat in pat_array:
             for arr in re.finditer(pat, src):
                 candidates.update(re.findall(r'"([^"\\]+)"', arr.group(1)))
