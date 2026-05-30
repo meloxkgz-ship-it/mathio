@@ -90,4 +90,39 @@ final class CurriculumIntegrityTests: XCTestCase {
         XCTAssertTrue((dataPath?.lessons.map(\.id) ?? []).contains("stats.hypothesis"))
         XCTAssertTrue((moneyPath?.lessons.map(\.id) ?? []).contains("fin.loans"))
     }
+
+    func testLearningProfileRoutesIntoBestSpecializedPath() {
+        XCTAssertEqual(
+            LearningPath.recommended(for: profile(goal: .money, level: .starter)).id,
+            "money-confidence-30"
+        )
+        XCTAssertEqual(
+            LearningPath.longTermAnchor(for: profile(goal: .money, level: .steady)).id,
+            "money-confidence-30"
+        )
+        XCTAssertEqual(
+            LearningPath.recommended(for: profile(goal: .school, level: .steady)).id,
+            "algebra-exam-45"
+        )
+        XCTAssertEqual(
+            LearningPath.longTermAnchor(for: profile(goal: .exam, level: .advanced)).id,
+            "exam-prep-12-week"
+        )
+    }
+
+    private func profile(goal: LearningGoal, level: DiagnosticLevel) -> LearningProfile {
+        let correct: Int
+        switch level {
+        case .starter: correct = 1
+        case .steady: correct = 3
+        case .advanced: correct = 5
+        }
+        return LearningProfile(
+            goal: goal,
+            confidence: level == .advanced ? 5 : (level == .steady ? 3 : 1),
+            diagnosticCorrect: correct,
+            diagnosticTotal: 5,
+            createdAt: .now
+        )
+    }
 }

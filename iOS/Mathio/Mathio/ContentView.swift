@@ -875,10 +875,7 @@ struct HomeView: View {
     private var learningPaths: [LearningPath] { LearningPath.defaultPaths }
     private var recommendedPath: LearningPath { LearningPath.recommended(for: store.learningProfile) }
     private var longTermAnchorPath: LearningPath {
-        if store.learningProfile?.goal == .exam {
-            return LearningPath.defaultPaths.first { $0.id == "exam-prep-12-week" } ?? recommendedPath
-        }
-        return LearningPath.defaultPaths.first { $0.id == "core-mastery-90" } ?? recommendedPath
+        LearningPath.longTermAnchor(for: store.learningProfile)
     }
     private var nextUp: (Topic, Lesson)? { store.nextLesson(in: topics, premium: premiumStore.isPremium) }
     private var weakSpot: (Topic, Lesson)? {
@@ -3323,20 +3320,42 @@ struct LearningPath: Identifiable {
         guard let profile else { return defaultPaths[0] }
         switch profile.goal {
         case .school:
-            return profile.level == .starter ? defaultPaths[0] : defaultPaths[1]
+            return profile.level == .starter
+                ? path("foundation-reset")
+                : path("algebra-exam-45")
         case .exam:
-            return defaultPaths.first { $0.id == "exam-essentials" } ?? defaultPaths[0]
+            return path("exam-essentials")
         case .selfStudy:
             return profile.level == .advanced
-                ? (defaultPaths.first { $0.id == "functions-bootcamp" } ?? defaultPaths[1])
-                : defaultPaths[0]
+                ? path("functions-bootcamp")
+                : path("foundation-reset")
         case .university:
             return profile.level == .advanced
-                ? (defaultPaths.first { $0.id == "calculus-starter" } ?? defaultPaths[0])
-                : (defaultPaths.first { $0.id == "algebra-foundation" } ?? defaultPaths[0])
+                ? path("calculus-starter")
+                : path("algebra-exam-45")
         case .money:
-            return defaultPaths.first { $0.id == "money-math" } ?? defaultPaths[0]
+            return path("money-confidence-30")
         }
+    }
+
+    static func longTermAnchor(for profile: LearningProfile?) -> LearningPath {
+        guard let profile else { return path("core-mastery-90") }
+        switch profile.goal {
+        case .exam:
+            return path("exam-prep-12-week")
+        case .money:
+            return path("money-confidence-30")
+        case .university:
+            return profile.level == .advanced ? path("core-mastery-90") : path("algebra-exam-45")
+        case .school:
+            return profile.level == .starter ? path("core-mastery-90") : path("algebra-exam-45")
+        case .selfStudy:
+            return path("core-mastery-90")
+        }
+    }
+
+    private static func path(_ id: String) -> LearningPath {
+        defaultPaths.first { $0.id == id } ?? defaultPaths[0]
     }
 }
 
