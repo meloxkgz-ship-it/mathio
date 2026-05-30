@@ -2865,6 +2865,9 @@ struct PracticeView: View {
                         .font(.titleM).foregroundStyle(Palette.terracotta)
                         .padding(.top, -8)
                 }
+                if lesson.questions.count > 0 {
+                    sessionInsightCard
+                }
                 if shouldShowShareOffer {
                     shareWinCard
                 }
@@ -2921,6 +2924,76 @@ struct PracticeView: View {
 
     private var shouldShowRetryOffer: Bool {
         !sessionMissedQuestions.isEmpty
+    }
+
+    private var sessionAccuracyPercent: Int {
+        guard lesson.questions.count > 0 else { return 0 }
+        return Int((Double(sessionCorrect) / Double(lesson.questions.count) * 100).rounded())
+    }
+
+    private var sessionModeLabel: LocalizedStringResource {
+        if isReview { return "Review" }
+        if lesson.id.hasPrefix("__exam_sprint__") { return "Exam sprint" }
+        if lesson.id.hasPrefix("__daily") { return "Daily challenge" }
+        if lesson.id.hasPrefix("__weak") { return "Weak spot drill" }
+        return "Lesson"
+    }
+
+    private var nextBestStep: LocalizedStringResource {
+        if shouldShowRetryOffer {
+            return "Retry misses while the solution is still fresh."
+        }
+        if isReview {
+            return "Your review queue is cleaner. Continue with the next lesson."
+        }
+        if nextLessonProvider?() != nil {
+            return "Start the next lesson while the rhythm is warm."
+        }
+        return "Come back tomorrow for another short session."
+    }
+
+    private var sessionInsightCard: some View {
+        Card(padding: 16, background: Palette.surfaceMuted) {
+            VStack(alignment: .leading, spacing: 14) {
+                HStack(spacing: 10) {
+                    Image(systemName: "chart.line.uptrend.xyaxis.circle.fill")
+                        .font(.system(size: 22, weight: .semibold))
+                        .foregroundStyle(Palette.success)
+                    VStack(alignment: .leading, spacing: 2) {
+                        Text("Session insight")
+                            .font(.titleM)
+                            .foregroundStyle(Palette.ink)
+                        Text(nextBestStep)
+                            .font(.bodyM)
+                            .foregroundStyle(Palette.inkSoft)
+                            .fixedSize(horizontal: false, vertical: true)
+                    }
+                }
+
+                HStack(spacing: 10) {
+                    insightMetric(value: "\(sessionAccuracyPercent)%", label: "Accuracy")
+                    insightMetric(value: "\(sessionMissedQuestions.count)", label: "Missed")
+                    insightMetric(value: String(localized: sessionModeLabel), label: "Mode")
+                }
+            }
+        }
+        .transition(.opacity.combined(with: .move(edge: .bottom)))
+    }
+
+    private func insightMetric(value: String, label: LocalizedStringResource) -> some View {
+        VStack(alignment: .leading, spacing: 2) {
+            Text(value)
+                .font(.titleM)
+                .foregroundStyle(Palette.ink)
+                .lineLimit(1)
+                .minimumScaleFactor(0.7)
+            Text(label)
+                .font(.caption)
+                .foregroundStyle(Palette.inkFaint)
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .padding(12)
+        .background(Palette.surface, in: RoundedRectangle(cornerRadius: 12, style: .continuous))
     }
 
     private var retryMissesLesson: Lesson {

@@ -53,9 +53,9 @@ Reasoning:
 ## Promotional Text (170 max — editable without review)
 
 ```
-New: 7-Day Focus, Coordinate Geometry, Unit Prices, Word Problems, and 73 lessons.
+New: Session Insight, 7-Day Focus, Coordinate Geometry, Unit Prices, and 73 lessons.
 ```
-**83 / 170** — highlights current catalog size, retention improvements, and new exam-prep content.
+**81 / 170** — highlights current catalog size, retention improvements, and new exam-prep content.
 
 Rotation ideas (swap monthly):
 - `Free 7-day trial. Master one lesson a day — no leaderboards, no streaks-or-die guilt, just calm progress.` (113)
@@ -137,6 +137,7 @@ Mathio now gives learners clearer direction after every launch and more depth ac
 New:
 • Next 3 Sessions: your personal plan now shows the next concrete lessons to study
 • 7-Day Focus: a clearer weekly habit card turns your recommended path into seven small sessions
+• Session Insight: every completed session now shows accuracy, misses, mode, and the next best step
 • Comeback Mission: a gentle 5-question restart when you return after a break
 • Coordinate Geometry: new geometry practice for midpoint, distance, slope, and coordinate-plane reasoning
 • Unit Prices: new financial math practice for comparing real deals

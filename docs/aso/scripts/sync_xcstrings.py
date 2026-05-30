@@ -23,6 +23,7 @@ PROSE: dict[str, str] = {
     # Home and review UX
     "7-day focus": "7-Tage-Fokus",
     "A quick rating helps more learners find it.": "Eine kurze Bewertung hilft mehr Lernenden, Mathio zu finden.",
+    "Accuracy": "Trefferquote",
     "active days": "aktive Tage",
     "Algebra Foundation": "Algebra-Grundlagen",
     "Average the x-values and y-values.": "Bilde den Durchschnitt der x-Werte und der y-Werte.",
@@ -40,6 +41,8 @@ PROSE: dict[str, str] = {
     "Not now": "Nicht jetzt",
     "Rate Mathio": "Mathio bewerten",
     "Seven small sessions from your recommended path.": "Sieben kleine Sessions aus deinem empfohlenen Pfad.",
+    "Missed": "Verpasst",
+    "Session insight": "Session-Auswertung",
 
     # Curriculum: lesson titles
     "Power rule": "Potenzregel",
