@@ -787,7 +787,11 @@ struct HomeView: View {
                 }
             }
             .navigationDestination(item: $presented) { lesson in
-                LessonView(lesson: lesson, store: store)
+                LessonView(lesson: lesson, store: store) {
+                    guard let (_, next) = store.nextLesson(in: topics, premium: premiumStore.isPremium),
+                          next.id != lesson.id else { return nil }
+                    return next
+                }
             }
             .navigationDestination(isPresented: $showReview) {
                 PracticeView(lesson: reviewLesson(), store: store, isReview: true)
@@ -1488,7 +1492,15 @@ struct LessonRow: View {
 struct LessonView: View {
     let lesson: Lesson
     @Bindable var store: Store
+    let followUpLesson: () -> Lesson?
     @State private var showPractice = false
+    @State private var queuedLesson: Lesson?
+
+    init(lesson: Lesson, store: Store, followUpLesson: @escaping () -> Lesson? = { nil }) {
+        self.lesson = lesson
+        self.store = store
+        self.followUpLesson = followUpLesson
+    }
 
     var body: some View {
         ScrollView {
@@ -1523,7 +1535,18 @@ struct LessonView: View {
         .navigationTitle("")
         .navigationBarTitleDisplayMode(.inline)
         .navigationDestination(isPresented: $showPractice) {
-            PracticeView(lesson: lesson, store: store, isReview: false)
+            PracticeView(
+                lesson: lesson,
+                store: store,
+                isReview: false,
+                nextLessonProvider: followUpLesson
+            ) { next in
+                queuedLesson = next
+                showPractice = false
+            }
+        }
+        .navigationDestination(item: $queuedLesson) { next in
+            LessonView(lesson: next, store: store, followUpLesson: followUpLesson)
         }
     }
 }
@@ -1811,6 +1834,8 @@ struct PracticeView: View {
     let lesson: Lesson
     @Bindable var store: Store
     let isReview: Bool
+    var nextLessonProvider: (() -> Lesson?)? = nil
+    var onStartNextLesson: ((Lesson) -> Void)? = nil
     @Environment(\.dismiss) private var dismiss
     /// Modern SwiftUI in-app review prompt — shown at most once per app
     /// version per device by Apple, regardless of how often we call it.
@@ -2044,6 +2069,9 @@ struct PracticeView: View {
                 if shouldShowReviewOffer {
                     reviewOfferCard
                 }
+                if let next = nextLessonProvider?(), !isReview {
+                    nextLessonCard(next)
+                }
                 PrimaryButton(title: "Done", icon: "checkmark") { dismiss() }
                     .padding(.top, 12)
             }
@@ -2101,6 +2129,31 @@ struct PracticeView: View {
             }
         }
         .transition(.opacity.combined(with: .move(edge: .bottom)))
+    }
+
+    private func nextLessonCard(_ next: Lesson) -> some View {
+        Card(padding: 16, background: Palette.surfaceMuted) {
+            VStack(alignment: .leading, spacing: 12) {
+                HStack(spacing: 10) {
+                    Image(systemName: "arrow.forward.circle.fill")
+                        .font(.system(size: 20, weight: .semibold))
+                        .foregroundStyle(Palette.calculus)
+                    VStack(alignment: .leading, spacing: 2) {
+                        Text("Keep learning")
+                            .font(.titleM)
+                            .foregroundStyle(Palette.ink)
+                        Text(next.title)
+                            .font(.bodyM)
+                            .foregroundStyle(Palette.inkSoft)
+                            .lineLimit(2)
+                    }
+                    Spacer(minLength: 0)
+                }
+                PrimaryButton(title: "Next lesson", icon: "arrow.right") {
+                    onStartNextLesson?(next)
+                }
+            }
+        }
     }
 
     private var ribbon: String {
