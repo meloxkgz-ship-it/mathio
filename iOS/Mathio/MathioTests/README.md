@@ -25,3 +25,4 @@ The test cases are real:
 | `equationsArePreservedNotReordered` | Equations not reordered around `=` |
 | `acceptedListVariants` | The `accepted: [String]` list is normalized too |
 | `reviewPlan` | Completion memory plan counts tomorrow/week review timing |
+| `curriculumIntegrity` | Roadmap counts, unique IDs, 5-question lessons, and Exam Review path coverage |

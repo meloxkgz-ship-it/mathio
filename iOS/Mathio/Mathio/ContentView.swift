@@ -2598,14 +2598,15 @@ struct LearningPath: Identifiable {
         LearningPath(
             id: "exam-essentials",
             title: "Exam Essentials",
-            subtitle: "Mixed practice across core topics",
+            subtitle: "Mixed sprints and finals prep",
             icon: "checklist",
             color: Palette.terracotta,
             lessons: [Curriculum.preAlgFractions, Curriculum.linearEquations, Curriculum.pythagoras,
                       Curriculum.exponentialGrowth, Curriculum.graphingLines, Curriculum.quadraticGraphs, Curriculum.wordProblems, Curriculum.trigBasics, Curriculum.descriptiveStats,
                       Curriculum.conditionalProbability, Curriculum.standardDeviation,
-                      Curriculum.correlationRegression],
-            durationDays: 14
+                      Curriculum.correlationRegression, Curriculum.examMixedFoundations, Curriculum.examAlgebraSprint,
+                      Curriculum.examGeometrySprint, Curriculum.examDataSprint, Curriculum.examWordProblemSprint],
+            durationDays: 21
         ),
         LearningPath(
             id: "stats-starter",

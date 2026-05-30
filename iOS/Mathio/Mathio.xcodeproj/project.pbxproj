@@ -23,6 +23,7 @@
 		1A000001000000000000000E /* RevenueCat in Frameworks */ = {isa = PBXBuildFile; productRef = 1A0000010000000000000091 /* RevenueCat */; };
 		1A0000020000000000000001 /* MathExpressionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000020000000000000011 /* MathExpressionTests.swift */; };
 		1A0000020000000000000002 /* StoreRetentionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000020000000000000012 /* StoreRetentionTests.swift */; };
+		1A0000020000000000000003 /* CurriculumIntegrityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000020000000000000014 /* CurriculumIntegrityTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		1A0000020000000000000011 /* MathExpressionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathExpressionTests.swift; sourceTree = "<group>"; };
 		1A0000020000000000000012 /* StoreRetentionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreRetentionTests.swift; sourceTree = "<group>"; };
 		1A0000020000000000000013 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1A0000020000000000000014 /* CurriculumIntegrityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurriculumIntegrityTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 			children = (
 				1A0000020000000000000011 /* MathExpressionTests.swift */,
 				1A0000020000000000000012 /* StoreRetentionTests.swift */,
+				1A0000020000000000000014 /* CurriculumIntegrityTests.swift */,
 				1A0000020000000000000013 /* README.md */,
 			);
 			path = MathioTests;
@@ -248,6 +251,7 @@
 			files = (
 				1A0000020000000000000001 /* MathExpressionTests.swift in Sources */,
 				1A0000020000000000000002 /* StoreRetentionTests.swift in Sources */,
+				1A0000020000000000000003 /* CurriculumIntegrityTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
