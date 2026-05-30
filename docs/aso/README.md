@@ -53,5 +53,6 @@ Run these before using `scripts/submit.sh`:
 
 ```bash
 python3 docs/aso/scripts/verify_metadata.py
+python3 docs/aso/scripts/verify_release_config.py
 python3 docs/aso/scripts/verify_xcstrings.py
 ```

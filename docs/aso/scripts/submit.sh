@@ -51,6 +51,7 @@ do_run(){
 
 bold "[0/7] Verify local metadata"
 python3 docs/aso/scripts/verify_metadata.py
+python3 docs/aso/scripts/verify_release_config.py
 echo
 
 bold "[1/7] Verify asc auth (profile: $PROFILE)"

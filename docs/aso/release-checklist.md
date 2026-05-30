@@ -1,12 +1,12 @@
-# Mathio v1.0 — Pre-Submit Release Checklist
+# Mathio v1.0.10 — Pre-Submit Release Checklist
 
 Run top-to-bottom before tapping **Submit for Review** in App Store Connect.
 
 ## 1 — Xcode project sanity
 
 - [x] Bundle ID: `com.kgz.Mathio`
-- [x] Marketing version: `1.0.9`
-- [x] Build number: `12` (bump for every TestFlight upload)
+- [x] Marketing version: `1.0.10`
+- [x] Build number: `14` (bump for every TestFlight upload)
 - [x] iOS Deployment Target: `18.0` (intentional per README)
 - [x] `INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO` (skips export-compliance dialog)
 - [x] `INFOPLIST_KEY_LSApplicationCategoryType = public.app-category.education`
