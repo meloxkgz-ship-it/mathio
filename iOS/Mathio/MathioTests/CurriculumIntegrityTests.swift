@@ -7,8 +7,8 @@ final class CurriculumIntegrityTests: XCTestCase {
         let lessonCount = Curriculum.topics.reduce(0) { $0 + $1.lessons.count }
         let questionCount = Curriculum.topics.reduce(0) { $0 + $1.questionCount }
 
-        XCTAssertEqual(lessonCount, 96)
-        XCTAssertEqual(questionCount, 480)
+        XCTAssertEqual(lessonCount, 97)
+        XCTAssertEqual(questionCount, 485)
     }
 
     func testCurriculumIdsAreUnique() {
@@ -34,8 +34,8 @@ final class CurriculumIntegrityTests: XCTestCase {
         let topic = Curriculum.topics.first { $0.id == "examreview" }
 
         XCTAssertNotNil(topic)
-        XCTAssertEqual(topic?.lessons.count, 7)
-        XCTAssertEqual(topic?.questionCount, 35)
+        XCTAssertEqual(topic?.lessons.count, 8)
+        XCTAssertEqual(topic?.questionCount, 40)
         XCTAssertEqual(topic?.lessons.map(\.id), [
             "exam.mixed.foundations",
             "exam.algebra.sprint",
@@ -44,6 +44,7 @@ final class CurriculumIntegrityTests: XCTestCase {
             "exam.word.sprint",
             "exam.strategy.sprint",
             "exam.mental.sprint",
+            "exam.errorcheck.sprint",
         ])
     }
 
@@ -58,5 +59,17 @@ final class CurriculumIntegrityTests: XCTestCase {
         XCTAssertNotNil(path)
         XCTAssertEqual(path?.durationDays, 21)
         XCTAssertTrue(examLessonIDs.allSatisfy { pathLessonIDs.contains($0) })
+    }
+
+    func testLongTermLearningPathsCreateMultiMonthRetentionLoops() {
+        let corePath = LearningPath.defaultPaths.first { $0.id == "core-mastery-90" }
+        let examPath = LearningPath.defaultPaths.first { $0.id == "exam-prep-12-week" }
+
+        XCTAssertNotNil(corePath)
+        XCTAssertNotNil(examPath)
+        XCTAssertEqual(corePath?.durationDays, 90)
+        XCTAssertEqual(examPath?.durationDays, 84)
+        XCTAssertTrue((corePath?.lessons.count ?? 0) >= 25)
+        XCTAssertTrue((examPath?.lessons.map(\.id) ?? []).contains("exam.errorcheck.sprint"))
     }
 }

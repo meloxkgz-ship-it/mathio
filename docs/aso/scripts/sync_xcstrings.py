@@ -33,8 +33,6 @@ PROSE: dict[str, str] = {
         "88 Lektionen in Algebra, Analysis, Geometrie, Statistik, Finanzmathe und mehr",
     "89 lessons across algebra, calculus, geometry, statistics, finance, and more":
         "89 Lektionen in Algebra, Analysis, Geometrie, Statistik, Finanzmathe und mehr",
-    "96 lessons across algebra, calculus, geometry, statistics, finance, exam review, and more":
-        "96 Lektionen in Algebra, Analysis, Geometrie, Statistik, Finanzmathe, Prüfungstraining und mehr",
     "0.8 is greatest": "0,8 ist am größten",
     "10% is 8 and 5% is half of that.": "10 % sind 8 und 5 % ist die Hälfte davon.",
     "19% is close to 20%": "19 % liegt nahe bei 20 %",
@@ -101,7 +99,6 @@ PROSE: dict[str, str] = {
     "A variable names the unknown clearly.": "Eine Variable benennt die Unbekannte klar.",
     "Add, then divide by 3.": "Addiere und teile dann durch 3.",
     "Algebra Sprint": "Algebra-Sprint",
-    "All 96 lessons and 480 guided questions": "Alle 96 Lektionen und 480 geführten Fragen",
     "An extreme value changes the sum": "Ein Extremwert verändert die Summe",
     "Active days": "Aktive Tage",
     "Aim for three short practice days before chasing longer sessions.":
@@ -1291,6 +1288,71 @@ PROSE: dict[str, str] = {
     "5/8": "5/8",
     "π ≈ 3.14159…": "π ≈ 3,14159…",
 }
+
+PROSE.update({
+    "97 lessons across algebra, calculus, geometry, statistics, finance, exam review, and more":
+        "97 Lektionen in Algebra, Analysis, Geometrie, Statistik, Finanzmathe, Prüfungstraining und mehr",
+    "All 97 lessons and 485 guided questions": "Alle 97 Lektionen und 485 geführten Fragen",
+    "90-Day Core Mastery": "90-Tage-Kernkompetenz",
+    "12-Week Exam Prep": "12-Wochen-Prüfungsvorbereitung",
+    "Foundations to exam confidence": "Von Grundlagen zu Prüfungssicherheit",
+    "Skills, sprints, and review rhythm": "Fähigkeiten, Sprints und Wiederholungsrhythmus",
+    "Error Check Sprint": "Fehlercheck-Sprint",
+    "Train the last minute habits that save points: check signs, units, reasonableness, and whether an answer actually satisfies the question.":
+        "Trainiere die letzten Gewohnheiten, die Punkte retten: Vorzeichen, Einheiten, Plausibilität und ob eine Antwort die Frage wirklich erfüllt.",
+    "Back-substitute": "Rückeinsetzen",
+    "put answer back into the original question": "Antwort in die ursprüngliche Frage einsetzen",
+    "A correct solution must work in the original equation, not only in your final line.":
+        "Eine richtige Lösung muss in der ursprünglichen Gleichung funktionieren, nicht nur in deiner letzten Zeile.",
+    "Reasonableness check": "Plausibilitätscheck",
+    "estimate < answer < estimate window": "Schätzung < Antwort < Schätzfenster",
+    "Compare the answer with a rough estimate before moving on.":
+        "Vergleiche die Antwort mit einer groben Schätzung, bevor du weitermachst.",
+    "You solve x − 7 = 12 and write x = 5. What check catches the mistake?":
+        "Du löst x − 7 = 12 und schreibst x = 5. Welche Kontrolle findet den Fehler?",
+    "Substitute 5 back into x − 7 = 12": "Setze 5 wieder in x − 7 = 12 ein",
+    "Round 12 to 10": "12 auf 10 runden",
+    "Ignore the sign": "Das Vorzeichen ignorieren",
+    "Change the equation to x + 7 = 12": "Die Gleichung zu x + 7 = 12 ändern",
+    "Put your answer into the original equation.": "Setze deine Antwort in die ursprüngliche Gleichung ein.",
+    "5 − 7 = −2": "5 − 7 = −2",
+    "−2 is not 12": "−2 ist nicht 12",
+    "So x = 5 cannot be correct": "Also kann x = 5 nicht richtig sein",
+    "A rectangle area question asks for square centimeters. Which unit should the final answer use?":
+        "Eine Rechteck-Flächenaufgabe fragt nach Quadratzentimetern. Welche Einheit sollte die Endantwort haben?",
+    "Area uses square units.": "Fläche nutzt Quadrateinheiten.",
+    "Length uses cm": "Länge nutzt cm",
+    "Area uses cm²": "Fläche nutzt cm²",
+    "Volume uses cm³": "Volumen nutzt cm³",
+    "Estimate 39 · 51 before calculating. Which range is reasonable?":
+        "Schätze 39 · 51 vor dem Rechnen. Welcher Bereich ist plausibel?",
+    "About 2,000": "Etwa 2.000",
+    "About 200": "Etwa 200",
+    "About 20,000": "Etwa 20.000",
+    "About 20": "Etwa 20",
+    "Round to 40 · 50.": "Runde auf 40 · 50.",
+    "39 is close to 40": "39 liegt nahe bei 40",
+    "51 is close to 50": "51 liegt nahe bei 50",
+    "40 · 50 = 2,000": "40 · 50 = 2.000",
+    "A probability answer comes out to 1.4. What is the best first reaction?":
+        "Eine Wahrscheinlichkeitsantwort ergibt 1,4. Was ist die beste erste Reaktion?",
+    "Recheck, because probability cannot be above 1":
+        "Erneut prüfen, weil Wahrscheinlichkeit nicht größer als 1 sein kann",
+    "Keep it, because any decimal works": "Behalten, weil jede Dezimalzahl funktioniert",
+    "Change it to 14": "Zu 14 ändern",
+    "Convert it to 140%": "In 140 % umwandeln",
+    "Probabilities run from 0 to 1.": "Wahrscheinlichkeiten liegen zwischen 0 und 1.",
+    "A probability must be between 0 and 1": "Eine Wahrscheinlichkeit muss zwischen 0 und 1 liegen",
+    "1.4 is larger than 1": "1,4 ist größer als 1",
+    "Recheck the count or denominator": "Prüfe Anzahl oder Nenner erneut",
+    "True or false: checking one worked step can reveal where an error first appeared.":
+        "Richtig oder falsch: Einen Rechenschritt zu prüfen kann zeigen, wo ein Fehler zuerst aufgetreten ist.",
+    "You do not always need to restart the whole problem.":
+        "Du musst nicht immer die ganze Aufgabe neu starten.",
+    "Compare each line with the line before it": "Vergleiche jede Zeile mit der Zeile davor",
+    "The first line that does not follow is where the error begins":
+        "Die erste Zeile, die nicht folgt, ist der Beginn des Fehlers",
+})
 
 # Strings whose value is identical in DE: pure math, single letters, etc.
 # Detected by absence of letters that would translate.

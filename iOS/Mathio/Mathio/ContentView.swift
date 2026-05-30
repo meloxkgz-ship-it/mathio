@@ -2840,7 +2840,7 @@ struct LearningPath: Identifiable {
                       Curriculum.conditionalProbability, Curriculum.standardDeviation,
                       Curriculum.correlationRegression, Curriculum.examMixedFoundations, Curriculum.examAlgebraSprint,
                       Curriculum.examGeometrySprint, Curriculum.examDataSprint, Curriculum.examWordProblemSprint,
-                      Curriculum.examStrategySprint, Curriculum.examMentalMathSprint],
+                      Curriculum.examStrategySprint, Curriculum.examMentalMathSprint, Curriculum.examErrorCheckSprint],
             durationDays: 21
         ),
         LearningPath(
@@ -2898,6 +2898,39 @@ struct LearningPath: Identifiable {
                       Curriculum.unitPrices, Curriculum.inflationRealValue, Curriculum.loansPayments,
                       Curriculum.taxesDiscounts],
             durationDays: 14
+        ),
+        LearningPath(
+            id: "core-mastery-90",
+            title: "90-Day Core Mastery",
+            subtitle: "Foundations to exam confidence",
+            icon: "map.fill",
+            color: Palette.success,
+            lessons: [Curriculum.preAlgFractions, Curriculum.preAlgPercents, Curriculum.percentChange, Curriculum.preAlgOrder,
+                      Curriculum.preAlgDecimals, Curriculum.preAlgRatios, Curriculum.unitConversions, Curriculum.preAlgRoots,
+                      Curriculum.linearEquations, Curriculum.linesAndSlope, Curriculum.graphingLines, Curriculum.inequalities,
+                      Curriculum.systems, Curriculum.quadratics, Curriculum.quadraticGraphs, Curriculum.factoring,
+                      Curriculum.wordProblems, Curriculum.pythagoras, Curriculum.angles, Curriculum.trigBasics,
+                      Curriculum.descriptiveStats, Curriculum.probabilityBasics, Curriculum.standardDeviation,
+                      Curriculum.examMixedFoundations, Curriculum.examStrategySprint, Curriculum.examMentalMathSprint,
+                      Curriculum.examErrorCheckSprint],
+            durationDays: 90
+        ),
+        LearningPath(
+            id: "exam-prep-12-week",
+            title: "12-Week Exam Prep",
+            subtitle: "Skills, sprints, and review rhythm",
+            icon: "calendar.badge.clock",
+            color: Palette.terracotta,
+            lessons: [Curriculum.preAlgFractions, Curriculum.preAlgPercents, Curriculum.percentChange,
+                      Curriculum.linearEquations, Curriculum.linesAndSlope, Curriculum.graphingLines,
+                      Curriculum.quadratics, Curriculum.quadraticGraphs, Curriculum.wordProblems,
+                      Curriculum.pythagoras, Curriculum.circles, Curriculum.trigBasics,
+                      Curriculum.descriptiveStats, Curriculum.probabilityBasics, Curriculum.conditionalProbability,
+                      Curriculum.standardDeviation, Curriculum.correlationRegression,
+                      Curriculum.examMixedFoundations, Curriculum.examAlgebraSprint, Curriculum.examGeometrySprint,
+                      Curriculum.examDataSprint, Curriculum.examWordProblemSprint, Curriculum.examStrategySprint,
+                      Curriculum.examMentalMathSprint, Curriculum.examErrorCheckSprint],
+            durationDays: 84
         )
     ]
 
@@ -5872,7 +5905,7 @@ struct PaywallView: View {
 
     private var bullets: some View {
         VStack(alignment: .leading, spacing: 12) {
-            row("books.vertical.fill", "96 lessons across algebra, calculus, geometry, statistics, finance, exam review, and more")
+            row("books.vertical.fill", "97 lessons across algebra, calculus, geometry, statistics, finance, exam review, and more")
             row("map.fill", "Guided paths show exactly what to study next")
             row("brain.head.profile", "Adaptive practice focuses on weak spots")
             row("arrow.triangle.2.circlepath", "Spaced repetition brings back what you are about to forget")
@@ -5891,7 +5924,7 @@ struct PaywallView: View {
                 valueProof("sparkles", "Study coach", "One best next step every time you open Mathio")
                 valueProof("calendar.badge.checkmark", "Weekly plan", "A clear seven-day path from today's level")
                 valueProof("arrow.triangle.2.circlepath", "Smart review", "Questions return before you forget them")
-                valueProof("map.fill", "Full roadmap", "All 96 lessons and 480 guided questions")
+                valueProof("map.fill", "Full roadmap", "All 97 lessons and 485 guided questions")
             }
         }
     }

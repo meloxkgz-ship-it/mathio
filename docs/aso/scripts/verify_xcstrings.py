@@ -26,10 +26,10 @@ ROOT = Path(__file__).resolve().parents[3]
 CATALOG = ROOT / "iOS/Mathio/Mathio/Localizable.xcstrings"
 PLACEHOLDER_RE = re.compile(r"%(?:\d+\$)?(?:[-+#0]*\d*(?:\.\d+)?)?(?:ll|[hlLzjt])?[@dfiuoxXscC%]")
 STALE_MARKETING_RE = re.compile(
-    r"\b(?:94|95)\s+lessons\b|"
-    r"\b(?:470|475)\s+guided questions\b|"
-    r"\b(?:94|95)\s+Lektionen\b|"
-    r"\b(?:470|475)\s+gef[üu]hrten? Fragen\b",
+    r"\b(?:94|95|96)\s+lessons\b|"
+    r"\b(?:470|475|480)\s+guided questions\b|"
+    r"\b(?:94|95|96)\s+Lektionen\b|"
+    r"\b(?:470|475|480)\s+gef[üu]hrten? Fragen\b",
     re.IGNORECASE,
 )
 

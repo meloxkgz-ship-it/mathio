@@ -5082,6 +5082,74 @@ enum Curriculum {
         ]
     )
 
+    static let examErrorCheckSprint = Lesson(
+        id: "exam.errorcheck.sprint",
+        title: "Error Check Sprint",
+        intro: "Train the last minute habits that save points: check signs, units, reasonableness, and whether an answer actually satisfies the question.",
+        formulas: [
+            Formula(key: "exam.error.f1",
+                    name: "Back-substitute",
+                    math: "put answer back into the original question",
+                    explanation: "A correct solution must work in the original equation, not only in your final line."),
+            Formula(key: "exam.error.f2",
+                    name: "Reasonableness check",
+                    math: "estimate < answer < estimate window",
+                    explanation: "Compare the answer with a rough estimate before moving on."),
+        ],
+        questions: [
+            Question(id: "exam.error.q1",
+                     prompt: "You solve x − 7 = 12 and write x = 5. What check catches the mistake?",
+                     math: nil,
+                     kind: .multipleChoice(options: [
+                        .init(label: "Substitute 5 back into x − 7 = 12", math: nil),
+                        .init(label: "Round 12 to 10", math: nil),
+                        .init(label: "Ignore the sign", math: nil),
+                        .init(label: "Change the equation to x + 7 = 12", math: nil),
+                     ], correctIndex: 0),
+                     hint: "Put your answer into the original equation.",
+                     solutionSteps: ["5 − 7 = −2", "−2 is not 12", "So x = 5 cannot be correct"]),
+            Question(id: "exam.error.q2",
+                     prompt: "A rectangle area question asks for square centimeters. Which unit should the final answer use?",
+                     math: nil,
+                     kind: .multipleChoice(options: [
+                        .init(label: "cm²", math: nil),
+                        .init(label: "cm", math: nil),
+                        .init(label: "cm³", math: nil),
+                        .init(label: "%", math: nil),
+                     ], correctIndex: 0),
+                     hint: "Area uses square units.",
+                     solutionSteps: ["Length uses cm", "Area uses cm²", "Volume uses cm³"]),
+            Question(id: "exam.error.q3",
+                     prompt: "Estimate 39 · 51 before calculating. Which range is reasonable?",
+                     math: nil,
+                     kind: .multipleChoice(options: [
+                        .init(label: "About 2,000", math: nil),
+                        .init(label: "About 200", math: nil),
+                        .init(label: "About 20,000", math: nil),
+                        .init(label: "About 20", math: nil),
+                     ], correctIndex: 0),
+                     hint: "Round to 40 · 50.",
+                     solutionSteps: ["39 is close to 40", "51 is close to 50", "40 · 50 = 2,000"]),
+            Question(id: "exam.error.q4",
+                     prompt: "A probability answer comes out to 1.4. What is the best first reaction?",
+                     math: nil,
+                     kind: .multipleChoice(options: [
+                        .init(label: "Recheck, because probability cannot be above 1", math: nil),
+                        .init(label: "Keep it, because any decimal works", math: nil),
+                        .init(label: "Change it to 14", math: nil),
+                        .init(label: "Convert it to 140%", math: nil),
+                     ], correctIndex: 0),
+                     hint: "Probabilities run from 0 to 1.",
+                     solutionSteps: ["A probability must be between 0 and 1", "1.4 is larger than 1", "Recheck the count or denominator"]),
+            Question(id: "exam.error.q5",
+                     prompt: "True or false: checking one worked step can reveal where an error first appeared.",
+                     math: nil,
+                     kind: .trueFalse(answer: true),
+                     hint: "You do not always need to restart the whole problem.",
+                     solutionSteps: ["Compare each line with the line before it", "The first line that does not follow is where the error begins"]),
+        ]
+    )
+
     // MARK: - All topics
 
     static let topics: [Topic] = [
@@ -5155,6 +5223,6 @@ enum Curriculum {
               icon: "checkmark.seal",
               color: Palette.terracotta,
               lessons: [examMixedFoundations, examAlgebraSprint, examGeometrySprint, examDataSprint, examWordProblemSprint,
-                        examStrategySprint, examMentalMathSprint]),
+                        examStrategySprint, examMentalMathSprint, examErrorCheckSprint]),
     ]
 }
