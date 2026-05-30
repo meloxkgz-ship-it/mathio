@@ -110,6 +110,22 @@ final class CurriculumIntegrityTests: XCTestCase {
         )
     }
 
+    func testEveryTopicHasSpecificPurposeGuidance() {
+        let genericTitle = String(localized: "Build durable math confidence")
+        let genericDetail = String(localized: "Short lessons connect today’s practice to the skills you will need again later.")
+        let missingSpecificGuidance = Curriculum.topics
+            .filter {
+                String(localized: $0.useCaseTitle) == genericTitle
+                || String(localized: $0.useCaseDetail) == genericDetail
+            }
+            .map(\.id)
+
+        XCTAssertTrue(
+            missingSpecificGuidance.isEmpty,
+            "Topics missing specific purpose guidance: \(missingSpecificGuidance.joined(separator: ", "))"
+        )
+    }
+
     private func profile(goal: LearningGoal, level: DiagnosticLevel) -> LearningProfile {
         let correct: Int
         switch level {

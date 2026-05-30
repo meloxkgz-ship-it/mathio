@@ -3658,18 +3658,16 @@ extension Topic {
             return "Understand change, slopes, and accumulation"
         case "geometry":
             return "Make shapes, units, and diagrams predictable"
-        case "trigonometry":
+        case "trig":
             return "Connect angles, waves, and right triangles"
         case "statistics":
             return "Read data without guessing"
-        case "finance":
+        case "financialmath":
             return "Use math for money decisions"
         case "linearalgebra":
             return "Think clearly about systems and vectors"
-        case "discrete":
+        case "discretemath":
             return "Build logic for counting, graphs, and code"
-        case "precalculus":
-            return "Prepare for functions and calculus"
         case "examreview":
             return "Protect points under time pressure"
         default:
@@ -3687,18 +3685,16 @@ extension Topic {
             return "Calculus explains motion, growth, optimization, and area. It is the language behind many advanced courses."
         case "geometry":
             return "Geometry makes diagrams less mysterious by turning angles, area, distance, and volume into repeatable moves."
-        case "trigonometry":
+        case "trig":
             return "Trig connects triangles to circles and waves, which makes physics, engineering, and precalculus easier."
         case "statistics":
             return "Statistics helps you judge charts, uncertainty, averages, and claims instead of trusting first impressions."
-        case "finance":
+        case "financialmath":
             return "Interest, inflation, discounts, loans, and budgets become easier when the numbers have a method."
         case "linearalgebra":
             return "Vectors, matrices, and systems power data science, graphics, economics, and higher-level math."
-        case "discrete":
+        case "discretemath":
             return "Counting, logic, and graph ideas support computer science, probability, algorithms, and proofs."
-        case "precalculus":
-            return "Precalculus ties functions, graphs, growth, and trig together before calculus raises the speed."
         case "examreview":
             return "Mixed practice trains switching skills quickly, checking work, and choosing the fastest wins first."
         default:
