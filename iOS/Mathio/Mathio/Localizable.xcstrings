@@ -73354,6 +73354,142 @@
           }
         }
       }
+    },
+    "Retry missed questions": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verpasste Fragen wiederholen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reintentar preguntas falladas"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Réessayer les questions ratées"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Riprova le domande sbagliate"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Refazer perguntas erradas"
+          }
+        }
+      }
+    },
+    "A short second pass through the questions you missed in this session.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ein kurzer zweiter Durchlauf durch die Fragen, die du in dieser Session verpasst hast."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una segunda pasada breve por las preguntas que fallaste en esta sesión."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un court deuxième passage sur les questions que tu as ratées dans cette session."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un breve secondo passaggio sulle domande che hai sbagliato in questa sessione."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uma segunda rodada curta com as perguntas que você errou nesta sessão."
+          }
+        }
+      }
+    },
+    "Fix the misses now": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fehler jetzt korrigieren"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Corrige los fallos ahora"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Corrige les erreurs maintenant"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Correggi ora gli errori"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Corrija os erros agora"
+          }
+        }
+      }
+    },
+    "%lld missed questions are ready for a quick second pass.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld verpasste Fragen sind bereit für einen schnellen zweiten Durchlauf."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld preguntas falladas están listas para una segunda pasada rápida."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld questions ratées sont prêtes pour un deuxième passage rapide."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld domande sbagliate sono pronte per un rapido secondo passaggio."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld perguntas erradas estão prontas para uma segunda rodada rápida."
+          }
+        }
+      }
     }
   },
   "version": "1.0"

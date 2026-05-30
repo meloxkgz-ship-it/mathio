@@ -2352,6 +2352,8 @@ struct PracticeView: View {
     @State private var state: AnswerState = .pending
     @State private var showHint: Bool = false
     @State private var sessionCorrect: Int = 0
+    @State private var sessionMissedQuestions: [Question] = []
+    @State private var retryLesson: Lesson?
     @State private var showQuitConfirm: Bool = false
     @State private var didCelebrate: Bool = false
     @State private var hideReviewOffer: Bool = false
@@ -2405,6 +2407,9 @@ struct PracticeView: View {
             Button("Quit", role: .destructive) { dismiss() }
         } message: {
             Text("You're at \(index + 1) of \(lesson.questions.count). Progress on answered questions is saved.")
+        }
+        .navigationDestination(item: $retryLesson) { retry in
+            PracticeView(lesson: retry, store: store, isReview: false)
         }
     }
 
@@ -2573,6 +2578,9 @@ struct PracticeView: View {
                 if shouldShowShareOffer {
                     shareWinCard
                 }
+                if shouldShowRetryOffer {
+                    retryMissesCard
+                }
                 if shouldShowReviewOffer {
                     reviewOfferCard
                 }
@@ -2619,6 +2627,44 @@ struct PracticeView: View {
     private var shouldShowShareOffer: Bool {
         lesson.questions.count > 0
         && sessionCorrect >= min(3, lesson.questions.count)
+    }
+
+    private var shouldShowRetryOffer: Bool {
+        !sessionMissedQuestions.isEmpty
+    }
+
+    private var retryMissesLesson: Lesson {
+        Lesson(
+            id: "__retry_misses__\(lesson.id)",
+            title: "Retry missed questions",
+            intro: "A short second pass through the questions you missed in this session.",
+            formulas: lesson.formulas,
+            questions: sessionMissedQuestions
+        )
+    }
+
+    private var retryMissesCard: some View {
+        Card(padding: 16, background: Palette.terracottaSoft.opacity(0.55)) {
+            VStack(alignment: .leading, spacing: 12) {
+                HStack(spacing: 10) {
+                    Image(systemName: "arrow.counterclockwise.circle.fill")
+                        .font(.system(size: 22, weight: .semibold))
+                        .foregroundStyle(Palette.terracotta)
+                    VStack(alignment: .leading, spacing: 2) {
+                        Text("Fix the misses now")
+                            .font(.titleM)
+                            .foregroundStyle(Palette.ink)
+                        Text("\(sessionMissedQuestions.count) missed questions are ready for a quick second pass.")
+                            .font(.bodyM)
+                            .foregroundStyle(Palette.inkSoft)
+                    }
+                }
+                PrimaryButton(title: "Retry missed questions", icon: "arrow.counterclockwise") {
+                    retryLesson = retryMissesLesson
+                }
+            }
+        }
+        .transition(.opacity.combined(with: .move(edge: .bottom)))
     }
 
     private var shareMessage: String {
@@ -2818,7 +2864,11 @@ struct PracticeView: View {
             isCorrect = trueFalseValue == answer
         }
         state = isCorrect ? .correct : .incorrect
-        if isCorrect { sessionCorrect += 1 }
+        if isCorrect {
+            sessionCorrect += 1
+        } else if !sessionMissedQuestions.contains(where: { $0.id == q.id }) {
+            sessionMissedQuestions.append(q)
+        }
         store.record(questionId: q.id, correct: isCorrect)
 
         // Review prompts are intentionally delayed until the completion screen,
