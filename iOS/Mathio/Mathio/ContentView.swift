@@ -3274,6 +3274,48 @@ struct LearningPath: Identifiable {
                       Curriculum.examMentalMathSprint, Curriculum.examErrorCheckSprint, Curriculum.examTimedTriageSprint,
                       Curriculum.examFormulaRecallSprint, Curriculum.examCalculatorCheckSprint],
             durationDays: 84
+        ),
+        LearningPath(
+            id: "algebra-exam-45",
+            title: "45-Day Algebra Exam Plan",
+            subtitle: "Equations, graphs, functions, word problems",
+            icon: "function",
+            color: Palette.algebra,
+            lessons: [Curriculum.linearEquations, Curriculum.linesAndSlope, Curriculum.graphingLines,
+                      Curriculum.inequalities, Curriculum.systems, Curriculum.absoluteValueEquations,
+                      Curriculum.quadratics, Curriculum.completingSquare, Curriculum.quadraticGraphs,
+                      Curriculum.factoring, Curriculum.polynomials, Curriculum.rationalExpressions,
+                      Curriculum.radicalEquations, Curriculum.algFunctions, Curriculum.functionModeling,
+                      Curriculum.wordProblems, Curriculum.examAlgebraSprint, Curriculum.examWordProblemSprint,
+                      Curriculum.examErrorCheckSprint],
+            durationDays: 45
+        ),
+        LearningPath(
+            id: "data-confidence-60",
+            title: "60-Day Data Confidence",
+            subtitle: "Statistics, probability, inference",
+            icon: "chart.bar.doc.horizontal",
+            color: Palette.calculus,
+            lessons: [Curriculum.descriptiveStats, Curriculum.dataDisplays, Curriculum.boxPlots,
+                      Curriculum.probabilityBasics, Curriculum.expectedValue, Curriculum.conditionalProbability,
+                      Curriculum.bayesTheorem, Curriculum.sampling, Curriculum.distributions,
+                      Curriculum.standardDeviation, Curriculum.correlationRegression, Curriculum.inferenceBasics,
+                      Curriculum.normalDistribution, Curriculum.confidenceIntervals, Curriculum.hypothesisTests,
+                      Curriculum.examDataSprint, Curriculum.examCalculatorCheckSprint],
+            durationDays: 60
+        ),
+        LearningPath(
+            id: "money-confidence-30",
+            title: "30-Day Money Confidence",
+            subtitle: "Percentages, budgets, loans, decisions",
+            icon: "banknote",
+            color: Palette.trig,
+            lessons: [Curriculum.preAlgPercents, Curriculum.percentChange, Curriculum.unitConversions,
+                      Curriculum.simpleInterest, Curriculum.compoundInterest, Curriculum.budgeting,
+                      Curriculum.unitPrices, Curriculum.tipsSplitting, Curriculum.inflationRealValue,
+                      Curriculum.loansPayments, Curriculum.taxesDiscounts, Curriculum.examMentalMathSprint,
+                      Curriculum.examCalculatorCheckSprint],
+            durationDays: 30
         )
     ]
 

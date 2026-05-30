@@ -67,15 +67,27 @@ final class CurriculumIntegrityTests: XCTestCase {
     func testLongTermLearningPathsCreateMultiMonthRetentionLoops() {
         let corePath = LearningPath.defaultPaths.first { $0.id == "core-mastery-90" }
         let examPath = LearningPath.defaultPaths.first { $0.id == "exam-prep-12-week" }
+        let algebraPath = LearningPath.defaultPaths.first { $0.id == "algebra-exam-45" }
+        let dataPath = LearningPath.defaultPaths.first { $0.id == "data-confidence-60" }
+        let moneyPath = LearningPath.defaultPaths.first { $0.id == "money-confidence-30" }
 
         XCTAssertNotNil(corePath)
         XCTAssertNotNil(examPath)
+        XCTAssertNotNil(algebraPath)
+        XCTAssertNotNil(dataPath)
+        XCTAssertNotNil(moneyPath)
         XCTAssertEqual(corePath?.durationDays, 90)
         XCTAssertEqual(examPath?.durationDays, 84)
+        XCTAssertEqual(algebraPath?.durationDays, 45)
+        XCTAssertEqual(dataPath?.durationDays, 60)
+        XCTAssertEqual(moneyPath?.durationDays, 30)
         XCTAssertTrue((corePath?.lessons.count ?? 0) >= 25)
         XCTAssertTrue((examPath?.lessons.map(\.id) ?? []).contains("exam.errorcheck.sprint"))
         XCTAssertTrue((examPath?.lessons.map(\.id) ?? []).contains("exam.timed.triage.sprint"))
         XCTAssertTrue((examPath?.lessons.map(\.id) ?? []).contains("exam.formula.recall.sprint"))
         XCTAssertTrue((examPath?.lessons.map(\.id) ?? []).contains("exam.calculator.check.sprint"))
+        XCTAssertTrue((algebraPath?.lessons.map(\.id) ?? []).contains("alg.model"))
+        XCTAssertTrue((dataPath?.lessons.map(\.id) ?? []).contains("stats.hypothesis"))
+        XCTAssertTrue((moneyPath?.lessons.map(\.id) ?? []).contains("fin.loans"))
     }
 }
