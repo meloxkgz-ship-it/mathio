@@ -831,6 +831,21 @@ private struct WeeklyActivityDay: Identifiable {
     var id: Date { date }
 }
 
+private struct HomeWinGoal {
+    let title: LocalizedStringResource
+    let subtitle: LocalizedStringResource
+    let icon: String
+    let color: Color
+    let progress: Double
+    let current: Int
+    let target: Int
+    var suffix: String = ""
+
+    var progressText: String {
+        "\(current)\(suffix)/\(target)\(suffix)"
+    }
+}
+
 struct HomeView: View {
     @Bindable var store: Store
     @Bindable var premiumStore: PremiumStore
@@ -920,6 +935,80 @@ struct HomeView: View {
     }
     private var milestoneProgress: Double {
         min(1, Double(totalCorrect) / Double(max(nextCorrectMilestone, 1)))
+    }
+    private var overallMastery: Double {
+        guard questionCount > 0 else { return 0 }
+        let weighted = topics.reduce(0.0) { total, topic in
+            total + store.mastery(for: topic) * Double(topic.questionCount)
+        }
+        return weighted / Double(questionCount)
+    }
+    private var nextWin: HomeWinGoal {
+        if store.correctToday() < settings.dailyGoal {
+            return HomeWinGoal(
+                title: "Finish today's goal",
+                subtitle: "A small daily win keeps the plan warm.",
+                icon: "target",
+                color: Palette.calculus,
+                progress: min(1, Double(store.correctToday()) / Double(max(settings.dailyGoal, 1))),
+                current: store.correctToday(),
+                target: settings.dailyGoal
+            )
+        }
+        if store.streakDays < 3 {
+            return HomeWinGoal(
+                title: "Three-day rhythm",
+                subtitle: "Come back for three short sessions to make Mathio feel automatic.",
+                icon: "flame.fill",
+                color: Palette.terracotta,
+                progress: min(1, Double(store.streakDays) / 3.0),
+                current: store.streakDays,
+                target: 3
+            )
+        }
+        if totalCorrect < 25 {
+            return HomeWinGoal(
+                title: "First 25 correct",
+                subtitle: "Reach 25 correct answers to prove the routine is working.",
+                icon: "bolt.fill",
+                color: Palette.amber,
+                progress: min(1, Double(totalCorrect) / 25.0),
+                current: totalCorrect,
+                target: 25
+            )
+        }
+        if overallMastery < 0.25 {
+            return HomeWinGoal(
+                title: "Roadmap starter",
+                subtitle: "Master the first quarter of the roadmap.",
+                icon: "map",
+                color: Palette.success,
+                progress: min(1, overallMastery / 0.25),
+                current: Int((overallMastery * 100).rounded()),
+                target: 25,
+                suffix: "%"
+            )
+        }
+        if store.streakDays < 7 {
+            return HomeWinGoal(
+                title: "Seven-day rhythm",
+                subtitle: "Build a full week of short practice sessions.",
+                icon: "calendar.badge.checkmark",
+                color: Palette.success,
+                progress: min(1, Double(store.streakDays) / 7.0),
+                current: store.streakDays,
+                target: 7
+            )
+        }
+        return HomeWinGoal(
+            title: "Next correct milestone",
+            subtitle: "Keep stacking correct answers while the session is warm.",
+            icon: "sparkles",
+            color: Palette.amber,
+            progress: milestoneProgress,
+            current: totalCorrect,
+            target: nextCorrectMilestone
+        )
     }
     private var weeklyActivity: [WeeklyActivityDay] {
         let calendar = Calendar.current
@@ -1012,6 +1101,7 @@ struct HomeView: View {
                     reviewForecastCard
                     sevenDayFocusCard
                     nextUpCard
+                    nextWinCard
                     personalPlanCard
                     learningPathsSection
                     topicsList
@@ -2137,6 +2227,55 @@ struct HomeView: View {
         } else {
             presented = lesson
         }
+    }
+
+    private var nextWinCard: some View {
+        Button { showStats = true } label: {
+            Card(padding: 16, background: Palette.surface) {
+                VStack(alignment: .leading, spacing: 14) {
+                    HStack(alignment: .top, spacing: 12) {
+                        Image(systemName: nextWin.icon)
+                            .font(.system(size: 17, weight: .semibold))
+                            .foregroundStyle(nextWin.color)
+                            .frame(width: 38, height: 38)
+                            .background(nextWin.color.opacity(0.14), in: Circle())
+                            .accessibilityHidden(true)
+
+                        VStack(alignment: .leading, spacing: 4) {
+                            Text("Next win")
+                                .font(.label)
+                                .foregroundStyle(Palette.inkFaint)
+                                .textCase(.uppercase)
+                                .tracking(1.2)
+                            Text(nextWin.title)
+                                .font(.titleM)
+                                .foregroundStyle(Palette.ink)
+                                .fixedSize(horizontal: false, vertical: true)
+                            Text(nextWin.subtitle)
+                                .font(.bodyM)
+                                .foregroundStyle(Palette.inkSoft)
+                                .fixedSize(horizontal: false, vertical: true)
+                        }
+
+                        Spacer(minLength: 0)
+
+                        Image(systemName: "chart.bar.xaxis")
+                            .font(.system(size: 14, weight: .semibold))
+                            .foregroundStyle(Palette.inkFaint)
+                    }
+
+                    ProgressBar(progress: nextWin.progress, color: nextWin.color, height: 7)
+
+                    HStack(spacing: 8) {
+                        habitMetric(icon: "flag.checkered", value: nextWin.progressText, label: "progress")
+                        habitMetric(icon: "flame.fill", value: "\(store.streakDays)", label: "streak")
+                        habitMetric(icon: "map.fill", value: "\(Int((overallMastery * 100).rounded()))%", label: "roadmap")
+                    }
+                }
+            }
+        }
+        .buttonStyle(.plain)
+        .accessibilityElement(children: .combine)
     }
 
     private func studyPlanDayRow(_ day: StudyPlanDay) -> some View {

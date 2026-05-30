@@ -21560,6 +21560,40 @@
         }
       }
     },
+    "A small daily win keeps the plan warm.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ein kleiner Tageserfolg hält den Plan warm."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una pequeña ganancia diaria mantiene el plan activo."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Une petite victoire quotidienne maintient le plan au chaud."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una piccola vincita giornaliera mantiene caldo il piano."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uma pequena vitória diária mantém o plano aquecido."
+          }
+        }
+      }
+    },
     "A small p-value means the sample would be unusual if the null claim were true.": {
       "localizations": {
         "de": {
@@ -29383,6 +29417,40 @@
         }
       }
     },
+    "Build a full week of short practice sessions.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Baue eine volle Woche kurzer Übungssessions auf."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Desarrolla una semana completa de sesiones de práctica cortas."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Construisez une semaine complète de courtes séances d’entraînement."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Costruisci un'intera settimana di brevi sessioni di pratica."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Crie uma semana inteira de sessões práticas curtas."
+          }
+        }
+      }
+    },
     "Build momentum through your guided path.": {
       "localizations": {
         "de": {
@@ -31638,6 +31706,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Combine os termos x² e depois os termos x."
+          }
+        }
+      }
+    },
+    "Come back for three short sessions to make Mathio feel automatic.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Komm für drei kurze Sessions zurück, damit Mathio automatisch dazugehört."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vuelve para tres sesiones cortas para que Mathio se sienta automático."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Revenez pour trois courtes séances pour que Mathio se sente automatique."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Torna per tre brevi sessioni per far sentire Mathio automatico."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Volte para três sessões curtas para fazer Mathio se sentir automático."
           }
         }
       }
@@ -43418,6 +43520,40 @@
         }
       }
     },
+    "First 25 correct": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die ersten 25 Richtigen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "primeros 25 correctos"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "25 premiers corrects"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Primi 25 corretti"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Primeiros 25 corretos"
+          }
+        }
+      }
+    },
     "First build the equation connecting variables": {
       "extractionState": "manual",
       "localizations": {
@@ -52121,6 +52257,40 @@
         }
       }
     },
+    "Keep stacking correct answers while the session is warm.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sammle weiter richtige Antworten, solange die Session warm ist."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siga apilando respuestas correctas mientras la sesión esté cálida."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continuez à empiler les bonnes réponses pendant que la session est chaude."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continua ad impilare le risposte corrette mentre la sessione è calda."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continue empilhando as respostas corretas enquanto a sessão estiver quente."
+          }
+        }
+      }
+    },
     "Keep the chain warm: one short session is enough.": {
       "localizations": {
         "de": {
@@ -54815,6 +54985,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Domine 50% do roteiro."
+          }
+        }
+      }
+    },
+    "Master the first quarter of the roadmap.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Meistere das erste Viertel des Lernplans."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Domina el primer cuarto de la hoja de ruta."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Maîtrisez le premier quart de la feuille de route."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Padroneggia il primo quarto della tabella di marcia."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Domine o primeiro quarto do roteiro."
           }
         }
       }
@@ -58816,6 +59020,40 @@
         }
       }
     },
+    "Next correct milestone": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nächster Richtig-Meilenstein"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siguiente hito correcto"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prochain jalon correct"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prossima tappa corretta"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Próximo marco correto"
+          }
+        }
+      }
+    },
     "Next focus": {
       "localizations": {
         "de": {
@@ -59050,6 +59288,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Próximos objetivos"
+          }
+        }
+      }
+    },
+    "Next win": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nächster Erfolg"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Próxima victoria"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prochaine victoire"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prossima vittoria"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Próxima vitória"
           }
         }
       }
@@ -67992,6 +68264,40 @@
         }
       }
     },
+    "Reach 25 correct answers to prove the routine is working.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erreiche 25 richtige Antworten und zeig, dass die Routine wirkt."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Llega a 25 respuestas correctas para demostrar que la rutina está funcionando."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Obtenez 25 bonnes réponses pour prouver que la routine fonctionne."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Raggiungi 25 risposte corrette per dimostrare che la routine funziona."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alcance 25 respostas corretas para provar que a rotina está funcionando."
+          }
+        }
+      }
+    },
     "Reach 25 correct answers.": {
       "extractionState": "manual",
       "localizations": {
@@ -72537,6 +72843,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Sete pequenas sessões do seu caminho recomendado."
+          }
+        }
+      }
+    },
+    "Seven-day rhythm": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sieben-Tage-Rhythmus"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ritmo de siete días"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rythme de sept jours"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ritmo di sette giorni"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ritmo de sete dias"
           }
         }
       }
@@ -102523,6 +102863,40 @@
         }
       }
     },
+    "progress": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fortschritt"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "progreso"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "progrès"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "progressi"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "progresso"
+          }
+        }
+      }
+    },
     "r = d/2 = 4": {
       "localizations": {
         "de": {
@@ -102657,6 +103031,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "variação vertical = 6 − 2 = 4"
+          }
+        }
+      }
+    },
+    "roadmap": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lernplan"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "hoja de ruta"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "feuille de route"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "tabella di marcia"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "roteiro"
           }
         }
       }
@@ -103135,6 +103543,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "inclinação = 4/2 = 2"
+          }
+        }
+      }
+    },
+    "streak": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Serie"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "racha"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "traînée"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "strisciante"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "onda"
           }
         }
       }
