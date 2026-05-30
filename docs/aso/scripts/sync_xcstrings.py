@@ -29,6 +29,8 @@ PROSE: dict[str, str] = {
         "84 Lektionen in Algebra, Analysis, Geometrie, Statistik, Finanzmathe und mehr",
     "85 lessons across algebra, calculus, geometry, statistics, finance, and more":
         "85 Lektionen in Algebra, Analysis, Geometrie, Statistik, Finanzmathe und mehr",
+    "86 lessons across algebra, calculus, geometry, statistics, finance, and more":
+        "86 Lektionen in Algebra, Analysis, Geometrie, Statistik, Finanzmathe und mehr",
     "A quick rating helps more learners find it.": "Eine kurze Bewertung hilft mehr Lernenden, Mathio zu finden.",
     "Accuracy": "Trefferquote",
     "active days": "aktive Tage",
@@ -110,6 +112,7 @@ PROSE: dict[str, str] = {
     "All equal": "Alle gleich",
     "All possible outcomes": "Alle möglichen Ergebnisse",
     "All 85 lessons and 425 guided questions": "Alle 85 Lektionen und 425 geführten Aufgaben",
+    "All 86 lessons and 430 guided questions": "Alle 86 Lektionen und 430 geführten Aufgaben",
     "answers left": "Antworten übrig",
     "All values equal the mean": "Alle Werte entsprechen dem Mittelwert",
     "Always check in the original equation": "Prüfe immer in der ursprünglichen Gleichung",
@@ -172,6 +175,12 @@ PROSE: dict[str, str] = {
     "True or false: squaring both sides can introduce an extraneous solution.":
         "Wahr oder falsch: Das Quadrieren beider Seiten kann eine Scheinlösung erzeugen.",
     "0.10 / 0.25 = 0.4": "0,10 / 0,25 = 0,4",
+    "1 h / 60 min": "1 h / 60 min",
+    "1 kilometer is 1000 meters.": "1 Kilometer sind 1000 Meter.",
+    "1 meter is 100 centimeters.": "1 Meter sind 100 Zentimeter.",
+    "1000 grams make 1 kilogram.": "1000 Gramm ergeben 1 Kilogramm.",
+    "3 meters and 300 centimeters are the same length.": "3 Meter und 300 Zentimeter sind dieselbe Länge.",
+    "60 min / 1 h": "60 min / 1 h",
     "A condition affects 1% of people. A test is positive for 90% with the condition and 10% without it. What is P(positive)?":
         "Eine Krankheit betrifft 1 % der Menschen. Ein Test ist bei 90 % mit Krankheit positiv und bei 10 % ohne Krankheit positiv. Wie groß ist P(positiv)?",
     "After observing B": "Nach Beobachtung von B",
@@ -189,24 +198,34 @@ PROSE: dict[str, str] = {
         "Bedingte Wahrscheinlichkeit fragt, wie wahrscheinlich A ist, wenn B bereits bekannt ist. Sie ist der Schritt zwischen einfacher Wahrscheinlichkeit und Bayes.",
     "Conditional probability changes the denominator to:":
         "Bedingte Wahrscheinlichkeit ändert den Nenner zu:",
+    "Choose the fraction so the unit you do not want cancels.":
+        "Wähle den Bruch so, dass sich die unerwünschte Einheit kürzt.",
+    "Common metric moves": "Häufige metrische Umrechnungen",
     "Clear due reviews first, then your next lesson feels lighter.":
         "Erledige zuerst fällige Wiederholungen, dann fühlt sich die nächste Lektion leichter an.",
     "Come back tomorrow before the review queue grows.":
         "Komm morgen zurück, bevor die Wiederholungs-Liste wächst.",
+    "Conversion factor": "Umrechnungsfaktor",
+    "Convert 2.5 kilometers to meters.": "Rechne 2,5 Kilometer in Meter um.",
+    "Convert 3 meters to centimeters.": "Rechne 3 Meter in Zentimeter um.",
     "Divide the overlap by the condition.": "Teile die Überschneidung durch die Bedingung.",
     "Evidence probability": "Wahrscheinlichkeit der Evidenz",
     "Given B means only B outcomes remain": "Gegeben B heißt: Es bleiben nur B-Ergebnisse übrig",
+    "Hours should cancel, minutes should remain.": "Stunden sollen sich kürzen, Minuten sollen übrig bleiben.",
     "If P(A and B)=0.18 and P(B)=0.6, find P(A|B).":
         "Wenn P(A und B)=0,18 und P(B)=0,6: Bestimme P(A|B).",
     "If P(pass | studied)=0.8 and P(studied)=0.5, what is P(pass and studied)?":
         "Wenn P(bestanden | gelernt)=0,8 und P(gelernt)=0,5: Wie groß ist P(bestanden und gelernt)?",
     "In a class, 12 students play sports. 5 of those also play music. If a sports player is chosen, what is P(music | sports)?":
         "In einer Klasse treiben 12 Schüler Sport. 5 davon machen auch Musik. Wenn ein Sportler gewählt wird: Wie groß ist P(Musik | Sport)?",
+    "A recipe needs 750 grams. How many kilograms is that?":
+        "Ein Rezept braucht 750 Gramm. Wie viele Kilogramm sind das?",
     "Independent means B does not change A": "Unabhängig heißt: B verändert A nicht",
     "Keep only the world where B happened, then ask what share also has A.":
         "Betrachte nur die Welt, in der B passiert ist, und frage dann, welcher Anteil auch A hat.",
     "Knowing B gives no new information about A.": "B zu kennen liefert keine neue Information über A.",
     "Multiplication rule": "Multiplikationsregel",
+    "Metric conversions move by powers of 10.": "Metrische Umrechnungen verschieben sich in Zehnerpotenzen.",
     "Ignoring B": "B ignorieren",
     "In Bayes' theorem, P(A) before new evidence is called the:":
         "Im Satz von Bayes heißt P(A) vor neuer Evidenz:",
@@ -214,6 +233,7 @@ PROSE: dict[str, str] = {
     "Multiply the top, then divide by P(B).": "Multipliziere den Zähler und teile dann durch P(B).",
     "Only when B is impossible": "Nur wenn B unmöglich ist",
     "Only impossible outcomes": "Nur unmögliche Ergebnisse",
+    "Only the label changes": "Nur die Einheit ändert sich",
     "Outlier": "Ausreißer",
     "P(A) is the starting probability": "P(A) ist die Startwahrscheinlichkeit",
     "P(A|B) is the probability of A:": "P(A|B) ist die Wahrscheinlichkeit von A:",
@@ -234,6 +254,8 @@ PROSE: dict[str, str] = {
         "Wurzelgleichungen verstecken die Variable unter einer Wurzel. Isoliere die Wurzel, quadriere beide Seiten und prüfe dann auf zusätzliche Lösungen.",
     "The evidence can happen through A or through not A.":
         "Die Evidenz kann durch A oder durch nicht A eintreten.",
+    "The amount stays equal": "Die Menge bleibt gleich",
+    "The h cancels and minutes remain": "h kürzt sich und Minuten bleiben übrig",
     "Rearrange the conditional formula to find the overlap.":
         "Stelle die bedingte Formel um, um die Überschneidung zu finden.",
     "Restrict the group to sports players.": "Beschränke die Gruppe auf Sportler.",
@@ -251,9 +273,16 @@ PROSE: dict[str, str] = {
         "Wahr oder falsch: Ein seltenes Ereignis kann nach einem positiven Test weiterhin unwahrscheinlich sein, wenn falsch positive Ergebnisse häufig sind.",
     "True or false: If A and B are independent, then P(A | B) = P(A).":
         "Wahr oder falsch: Wenn A und B unabhängig sind, dann gilt P(A | B) = P(A).",
+    "True or false: converting units changes the actual amount.":
+        "Wahr oder falsch: Einheiten umzurechnen verändert die tatsächliche Menge.",
+    "Unit Conversions": "Einheiten umrechnen",
+    "Unit conversions keep the same amount but change the label. Multiply by a conversion factor so the old unit cancels.":
+        "Einheiten umrechnen erhält dieselbe Menge, ändert aber die Einheit. Multipliziere mit einem Umrechnungsfaktor, damit sich die alte Einheit kürzt.",
     "Update the probability of A after seeing evidence B.":
         "Aktualisiere die Wahrscheinlichkeit von A, nachdem Evidenz B beobachtet wurde.",
     "Use the multiplication rule.": "Nutze die Multiplikationsregel.",
+    "Which conversion factor changes hours to minutes?": "Welcher Umrechnungsfaktor wandelt Stunden in Minuten um?",
+    "hours · 60 min / 1 h": "Stunden · 60 min / 1 h",
     "Use both ways a positive result can happen.": "Nutze beide Wege, wie ein positives Ergebnis entstehen kann.",
     "Using P(A)=0.2, P(B|A)=0.5, and P(B)=0.25, find P(A|B).":
         "Mit P(A)=0,2, P(B|A)=0,5 und P(B)=0,25: Bestimme P(A|B).",

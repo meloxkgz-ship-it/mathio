@@ -1375,6 +1375,55 @@ enum Curriculum {
         ]
     )
 
+    static let unitConversions = Lesson(
+        id: "pre.units",
+        title: "Unit Conversions",
+        intro: "Unit conversions keep the same amount but change the label. Multiply by a conversion factor so the old unit cancels.",
+        formulas: [
+            Formula(key: "pre.units.f1",
+                    name: "Conversion factor",
+                    math: "value · (new unit / old unit)",
+                    explanation: "Choose the fraction so the unit you do not want cancels."),
+            Formula(key: "pre.units.f2",
+                    name: "Common metric moves",
+                    math: "1 km = 1000 m,  1 m = 100 cm,  1 kg = 1000 g",
+                    explanation: "Metric conversions move by powers of 10."),
+        ],
+        questions: [
+            Question(id: "pre.units.q1",
+                     prompt: "Convert 3 meters to centimeters.", math: nil,
+                     kind: .freeAnswer(accepted: ["300", "300 cm"]),
+                     hint: "1 meter is 100 centimeters.",
+                     solutionSteps: ["3 m · 100 cm/m", "3 · 100 = 300 cm"]),
+            Question(id: "pre.units.q2",
+                     prompt: "Convert 2.5 kilometers to meters.", math: nil,
+                     kind: .freeAnswer(accepted: ["2500", "2500 m"]),
+                     hint: "1 kilometer is 1000 meters.",
+                     solutionSteps: ["2.5 km · 1000 m/km", "2.5 · 1000 = 2500 m"]),
+            Question(id: "pre.units.q3",
+                     prompt: "A recipe needs 750 grams. How many kilograms is that?", math: nil,
+                     kind: .freeAnswer(accepted: ["0.75", ".75", "0.75 kg"]),
+                     hint: "1000 grams make 1 kilogram.",
+                     solutionSteps: ["750 g ÷ 1000", "750 g = 0.75 kg"]),
+            Question(id: "pre.units.q4",
+                     prompt: "Which conversion factor changes hours to minutes?", math: nil,
+                     kind: .multipleChoice(options: [
+                        .init(label: "60 min / 1 h", math: nil),
+                        .init(label: "1 h / 60 min", math: nil),
+                        .init(label: "100 cm / 1 m", math: nil),
+                        .init(label: "1 kg / 1000 g", math: nil),
+                     ], correctIndex: 0),
+                     hint: "Hours should cancel, minutes should remain.",
+                     solutionSteps: ["hours · 60 min / 1 h", "The h cancels and minutes remain"]),
+            Question(id: "pre.units.q5",
+                     prompt: "True or false: converting units changes the actual amount.",
+                     math: nil,
+                     kind: .trueFalse(answer: false),
+                     hint: "3 meters and 300 centimeters are the same length.",
+                     solutionSteps: ["Only the label changes", "The amount stays equal"]),
+        ]
+    )
+
     static let preAlgRoots = Lesson(
         id: "pre.roots",
         title: "Powers & Roots",
@@ -4477,7 +4526,7 @@ enum Curriculum {
               icon: "number",
               color: Palette.stats,
               lessons: [preAlgFractions, preAlgPercents, percentChange, preAlgOrder, preAlgNegatives,
-                        preAlgDecimals, preAlgRatios, preAlgRoots, scientificNotation]),
+                        preAlgDecimals, preAlgRatios, unitConversions, preAlgRoots, scientificNotation]),
         Topic(id: "algebra",
               title: "Algebra",
               subtitle: "Equations & expressions",

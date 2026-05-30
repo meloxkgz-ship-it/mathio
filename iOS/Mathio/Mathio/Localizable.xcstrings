@@ -97838,6 +97838,1094 @@
           }
         }
       }
+    },
+    "1 h / 60 min": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1 h / 60 min"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1h/60min"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1h / 60mn"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1 ora / 60 minuti"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1h/60min"
+          }
+        }
+      }
+    },
+    "1 kg / 1000 g": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1 kg / 1000 g"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1 kilo / 1000 gramos"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1kg / 1000g"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1 kg/1000 g"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1kg/1000g"
+          }
+        }
+      }
+    },
+    "1 kilometer is 1000 meters.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1 Kilometer sind 1000 Meter."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1 kilómetro son 1000 metros."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1 kilomètre équivaut à 1000 mètres."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1 chilometro equivale a 1000 metri."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1 quilômetro equivale a 1000 metros."
+          }
+        }
+      }
+    },
+    "1 meter is 100 centimeters.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1 Meter sind 100 Zentimeter."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1 metro son 100 centímetros."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1 mètre équivaut à 100 centimètres."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1 metro equivale a 100 centimetri."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1 metro equivale a 100 centímetros."
+          }
+        }
+      }
+    },
+    "100 cm / 1 m": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "100 cm / 1 m"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "100cm / 1m"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "100 cm / 1 m"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "100 centimetri/1 metro"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "100cm / 1m"
+          }
+        }
+      }
+    },
+    "1000 grams make 1 kilogram.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1000 Gramm ergeben 1 Kilogramm."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1000 gramos hacen 1 kilogramo."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1000 grammes font 1 kilogramme."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1000 grammi formano 1 chilogrammo."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1000 gramas equivalem a 1 quilograma."
+          }
+        }
+      }
+    },
+    "2.5 km · 1000 m/km": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2.5 km · 1000 m/km"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2,5 kilómetros · 1000 m/km"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2,5 km · 1 000 m/km"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2,5 km · 1000 m/km"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2,5 km · 1000 m/km"
+          }
+        }
+      }
+    },
+    "2.5 · 1000 = 2500 m": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2.5 · 1000 = 2500 m"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2.5 · 1000 = 2500 m"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2.5 · 1000 = 2500 m"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2.5 · 1000 = 2500 m"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2.5 · 1000 = 2500 m"
+          }
+        }
+      }
+    },
+    "3 m · 100 cm/m": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3 m · 100 cm/m"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3m·100cm/m"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3 m · 100 cm/m"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3 m · 100 cm/m"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3 m · 100 cm/m"
+          }
+        }
+      }
+    },
+    "3 meters and 300 centimeters are the same length.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3 Meter und 300 Zentimeter sind dieselbe Länge."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3 metros y 300 centímetros tienen la misma longitud."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3 mètres et 300 centimètres font la même longueur."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3 metri e 300 centimetri hanno la stessa lunghezza."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3 metros e 300 centímetros têm o mesmo comprimento."
+          }
+        }
+      }
+    },
+    "3 · 100 = 300 cm": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3 · 100 = 300 cm"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3·100 = 300cm"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3 · 100 = 300 cm"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3 · 100 = 300 cm"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3 · 100 = 300 centímetros"
+          }
+        }
+      }
+    },
+    "60 min / 1 h": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "60 min / 1 h"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "60 minutos / 1 hora"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "60 minutes / 1 heure"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "60 minuti / 1 ora"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "60 minutos / 1 hora"
+          }
+        }
+      }
+    },
+    "750 g = 0.75 kg": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "750 g = 0.75 kg"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "750 gramos = 0,75 kilos"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "750g = 0,75kg"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "750 g = 0,75 kg"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "750g = 0,75kg"
+          }
+        }
+      }
+    },
+    "750 g ÷ 1000": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "750 g ÷ 1000"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "750 g ÷ 1000"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "750 g ÷ 1000"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "750 g ÷ 1000"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "750 g ÷ 1000"
+          }
+        }
+      }
+    },
+    "86 lessons across algebra, calculus, geometry, statistics, finance, and more": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "86 Lektionen in Algebra, Analysis, Geometrie, Statistik, Finanzmathe und mehr"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "86 lecciones de álgebra, cálculo, geometría, estadística, finanzas y más"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "86 leçons sur l'algèbre, le calcul, la géométrie, les statistiques, la finance et bien plus encore"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "86 lezioni di algebra, calcolo infinitesimale, geometria, statistica, finanza e altro ancora"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "86 lições de álgebra, cálculo, geometria, estatística, finanças e muito mais"
+          }
+        }
+      }
+    },
+    "A recipe needs 750 grams. How many kilograms is that?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ein Rezept braucht 750 Gramm. Wie viele Kilogramm sind das?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una receta necesita 750 gramos. ¿Cuántos kilogramos es eso?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Une recette nécessite 750 grammes. Cela fait combien de kilos ?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Per una ricetta sono necessari 750 grammi. Quanti chilogrammi sono?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uma receita precisa de 750 gramas. Quantos quilogramas são isso?"
+          }
+        }
+      }
+    },
+    "All 86 lessons and 430 guided questions": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alle 86 Lektionen und 430 geführten Aufgaben"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Las 86 lecciones y 430 preguntas guiadas."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les 86 leçons et 430 questions guidées"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tutte le 86 lezioni e 430 domande guidate"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Todas as 86 lições e 430 perguntas guiadas"
+          }
+        }
+      }
+    },
+    "Choose the fraction so the unit you do not want cancels.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wähle den Bruch so, dass sich die unerwünschte Einheit kürzt."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Elige la fracción para que se cancele la unidad que no deseas."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Choisissez la fraction pour que l'unité que vous ne voulez pas s'annule."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scegli la frazione in modo che l'unità che non desideri venga annullata."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Escolha a fração para que a unidade que você não deseja seja cancelada."
+          }
+        }
+      }
+    },
+    "Common metric moves": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Häufige metrische Umrechnungen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Movimientos métricos comunes"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mouvements métriques courants"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Movimenti metrici comuni"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Movimentos métricos comuns"
+          }
+        }
+      }
+    },
+    "Conversion factor": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Umrechnungsfaktor"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Factor de conversión"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Facteur de conversion"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fattore di conversione"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fator de conversão"
+          }
+        }
+      }
+    },
+    "Convert 2.5 kilometers to meters.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rechne 2,5 Kilometer in Meter um."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Convertir 2,5 kilómetros a metros."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Convertissez 2,5 kilomètres en mètres."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Converti 2,5 chilometri in metri."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Converta 2,5 quilômetros em metros."
+          }
+        }
+      }
+    },
+    "Convert 3 meters to centimeters.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rechne 3 Meter in Zentimeter um."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Convertir 3 metros a centímetros."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Convertissez 3 mètres en centimètres."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Converti 3 metri in centimetri."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Converta 3 metros em centímetros."
+          }
+        }
+      }
+    },
+    "Hours should cancel, minutes should remain.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stunden sollen sich kürzen, Minuten sollen übrig bleiben."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Las horas deben cancelarse, los minutos deben permanecer."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les heures devraient s'annuler, les minutes devraient rester."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le ore dovrebbero cancellarsi, i minuti dovrebbero rimanere."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "As horas devem ser canceladas, os minutos devem permanecer."
+          }
+        }
+      }
+    },
+    "Metric conversions move by powers of 10.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Metrische Umrechnungen verschieben sich in Zehnerpotenzen."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Las conversiones métricas se mueven en potencias de 10."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les conversions métriques se déplacent par puissances de 10."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le conversioni metriche si spostano per potenze di 10."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "As conversões métricas são movidas por potências de 10."
+          }
+        }
+      }
+    },
+    "Only the label changes": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nur die Einheit ändert sich"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Solo cambia la etiqueta"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Seule l'étiquette change"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cambia solo l'etichetta"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apenas o rótulo muda"
+          }
+        }
+      }
+    },
+    "The amount stays equal": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Menge bleibt gleich"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La cantidad se mantiene igual"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le montant reste égal"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L'importo rimane uguale"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O valor permanece igual"
+          }
+        }
+      }
+    },
+    "The h cancels and minutes remain": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "h kürzt sich und Minuten bleiben übrig"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La h se cancela y quedan minutos."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le h s'annule et les minutes restent"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La h si cancella e rimangono i minuti"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O h cancela e restam minutos"
+          }
+        }
+      }
+    },
+    "True or false: converting units changes the actual amount.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wahr oder falsch: Einheiten umzurechnen verändert die tatsächliche Menge."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verdadero o falso: la conversión de unidades cambia la cantidad real."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vrai ou faux : la conversion des unités modifie le montant réel."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vero o falso: la conversione delle unità modifica l'importo effettivo."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verdadeiro ou falso: a conversão de unidades altera o valor real."
+          }
+        }
+      }
+    },
+    "Unit Conversions": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Einheiten umrechnen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Conversiones de unidades"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Conversions d'unités"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Conversioni di unità"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Conversões de unidades"
+          }
+        }
+      }
+    },
+    "Unit conversions keep the same amount but change the label. Multiply by a conversion factor so the old unit cancels.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Einheiten umrechnen erhält dieselbe Menge, ändert aber die Einheit. Multipliziere mit einem Umrechnungsfaktor, damit sich die alte Einheit kürzt."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Las conversiones de unidades mantienen la misma cantidad pero cambian la etiqueta. Multiplique por un factor de conversión para que la unidad anterior se cancele."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les conversions d'unités conservent le même montant mais changent d'étiquette. Multipliez par un facteur de conversion pour que l'ancienne unité s'annule."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le conversioni di unità mantengono lo stesso importo ma cambiano l'etichetta. Moltiplicare per un fattore di conversione in modo che la vecchia unità si annulli."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "As conversões de unidades mantêm o mesmo valor, mas mudam o rótulo. Multiplique por um fator de conversão para que a unidade antiga seja cancelada."
+          }
+        }
+      }
+    },
+    "Which conversion factor changes hours to minutes?": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Welcher Umrechnungsfaktor wandelt Stunden in Minuten um?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "¿Qué factor de conversión convierte horas a minutos?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quel facteur de conversion change les heures en minutes ?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quale fattore di conversione trasforma le ore in minuti?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Qual fator de conversão muda horas para minutos?"
+          }
+        }
+      }
+    },
+    "hours · 60 min / 1 h": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stunden · 60 min / 1 h"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "horas · 60 min / 1 h"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "heures · 60 min / 1 h"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ore · 60 min / 1 h"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "horas · 60 min / 1 h"
+          }
+        }
+      }
     }
   },
   "version": "1.0"

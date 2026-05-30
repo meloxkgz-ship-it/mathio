@@ -25,6 +25,7 @@ New:
 • Completing the Square: new algebra practice for rewriting quadratics, solving by square roots, and reading vertex form
 • Composite Areas: new geometry practice for splitting shapes, subtracting cutouts, and avoiding overlap mistakes
 • Unit Prices: new financial math practice for comparing real deals
+• Unit Conversions: new foundation practice for metric moves, conversion factors, and real-world units
 • Percent Change: new everyday math practice for discounts, growth, and loss
 • Word Problems: new algebra practice for translating real situations into equations
 • Related Rates: new calculus practice for classic exam-style rate problems
@@ -38,7 +39,7 @@ Improved:
 • Progress now includes lesson-level study targets, not only topic percentages
 • Clearer learning path guidance on Home
 • Better premium feel with more personalized study flow
-• Expanded curriculum: 85 lessons and 425 guided questions across 9 topics
+• Expanded curriculum: 86 lessons and 430 guided questions across 9 topics
 
 Fixed:
 • Continued cleanup of localized app copy to avoid mixed German/English flows
