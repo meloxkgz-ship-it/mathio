@@ -3,6 +3,10 @@
 Working notes behind the keyword choices in `en-US/metadata.md` and
 `de-DE/metadata.md`. Update before each major release.
 
+For the latest growth-focused ASO research, competitor search samples, and
+recommended post-1.0.10 keyword experiments, see
+`docs/aso/growth-keyword-research-2026-06.md`.
+
 ## Apple's algorithm — fast recap
 
 1. **Match sources Apple indexes:** App Name, Subtitle, Keywords field,
