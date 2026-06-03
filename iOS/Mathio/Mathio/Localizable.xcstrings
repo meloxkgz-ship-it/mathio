@@ -65892,6 +65892,30 @@
             "state": "translated",
             "value": "Eine klare kurze Einheit reicht."
           }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una sesión breve y clara basta."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Une courte séance bien faite suffit."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Basta una sessione breve e chiara."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uma sessão curta e clara já basta."
+          }
         }
       }
     },
@@ -93363,6 +93387,30 @@
             "state": "translated",
             "value": "Schwachstelle trainieren"
           }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Entrena tu punto débil"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Travaille ton point faible"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Allena il punto debole"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Treine seu ponto fraco"
+          }
         }
       }
     },
@@ -93372,6 +93420,30 @@
           "stringUnit": {
             "state": "translated",
             "value": "%@ braucht gerade am meisten Übung."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ es donde más puedes mejorar ahora."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ est la zone à renforcer en priorité."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ è l'area da migliorare di più ora."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ é onde você mais pode melhorar agora."
           }
         }
       }
@@ -102095,6 +102167,30 @@
             "state": "translated",
             "value": "Woche %lld von %lld"
           }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Semana %lld de %lld"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Semaine %lld sur %lld"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Settimana %lld di %lld"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Semana %lld de %lld"
+          }
         }
       }
     },
@@ -106139,6 +106235,30 @@
           "stringUnit": {
             "state": "translated",
             "value": "Dein Langzeitplan bleibt mit dem heutigen kleinen Ziel aktiv."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tu plan a largo plazo sigue activo con el pequeño objetivo de hoy."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ton plan à long terme avance avec le petit objectif du jour."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il tuo piano a lungo termine resta attivo con il piccolo obiettivo di oggi."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Seu plano de longo prazo continua ativo com a pequena meta de hoje."
           }
         }
       }
@@ -118015,6 +118135,30 @@
             "state": "translated",
             "value": "Tage"
           }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "días"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "jours"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "giorni"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "dias"
+          }
         }
       }
     },
@@ -118024,6 +118168,30 @@
           "stringUnit": {
             "state": "translated",
             "value": "übrig"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "restan"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "reste"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "rimaste"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "faltam"
           }
         }
       }
@@ -118068,6 +118236,30 @@
           "stringUnit": {
             "state": "translated",
             "value": "Woche"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "semana"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "semaine"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "settimana"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "semana"
           }
         }
       }
