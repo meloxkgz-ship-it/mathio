@@ -1438,7 +1438,10 @@ struct HomeView: View {
                 Button { startHabitShieldAction() } label: {
                     HStack(spacing: 8) {
                         Image(systemName: habitShieldCTAIcon)
+                            .font(.system(size: 13, weight: .semibold))
                         Text(habitShieldCTA)
+                            .lineLimit(1)
+                            .minimumScaleFactor(0.82)
                         Spacer(minLength: 0)
                         Image(systemName: "arrow.right")
                             .font(.system(size: 12, weight: .bold))
@@ -1447,7 +1450,7 @@ struct HomeView: View {
                     .foregroundStyle(Palette.heroInk)
                     .padding(.horizontal, 14)
                     .padding(.vertical, 12)
-                    .background(Palette.ink, in: RoundedRectangle(cornerRadius: 12, style: .continuous))
+                    .background(Palette.heroSurface, in: RoundedRectangle(cornerRadius: 12, style: .continuous))
                 }
                 .buttonStyle(.plain)
             }
@@ -1498,10 +1501,11 @@ struct HomeView: View {
     }
 
     private func habitMetric(icon: String, value: String, label: LocalizedStringResource) -> some View {
-        HStack(spacing: 7) {
+        HStack(alignment: .top, spacing: 6) {
             Image(systemName: icon)
                 .font(.system(size: 12, weight: .semibold))
                 .foregroundStyle(Palette.terracotta)
+                .frame(width: 14, height: 18)
             VStack(alignment: .leading, spacing: 1) {
                 Text(verbatim: value)
                     .font(.label)
@@ -1509,13 +1513,15 @@ struct HomeView: View {
                 Text(label)
                     .font(.caption)
                     .foregroundStyle(Palette.inkFaint)
-                    .lineLimit(1)
-                    .minimumScaleFactor(0.82)
+                    .lineLimit(2)
+                    .minimumScaleFactor(0.72)
+                    .fixedSize(horizontal: false, vertical: true)
             }
             Spacer(minLength: 0)
         }
-        .padding(10)
-        .frame(maxWidth: .infinity)
+        .padding(.horizontal, 9)
+        .padding(.vertical, 10)
+        .frame(maxWidth: .infinity, minHeight: 62, alignment: .topLeading)
         .background(Palette.surface, in: RoundedRectangle(cornerRadius: 12, style: .continuous))
     }
 
@@ -1665,9 +1671,9 @@ struct HomeView: View {
                     }
 
                     HStack(spacing: 8) {
-                        seasonMetric(value: "\(currentSeasonDay)/\(longTermAnchorPath.durationDays)", label: "days")
-                        seasonMetric(value: "\(Int((seasonWeeklyProgress * 100).rounded()))%", label: "this week")
-                        seasonMetric(value: "\(weeklyAnswersRemaining)", label: "answers left")
+                        seasonMetric(value: "\(currentSeasonDay)/\(longTermAnchorPath.durationDays)", label: "days short")
+                        seasonMetric(value: "\(Int((seasonWeeklyProgress * 100).rounded()))%", label: "week short")
+                        seasonMetric(value: "\(weeklyAnswersRemaining)", label: "left short")
                     }
 
                     VStack(spacing: 8) {
@@ -1706,11 +1712,14 @@ struct HomeView: View {
             Text(label)
                 .font(.caption)
                 .foregroundStyle(Palette.heroInkSoft)
-                .lineLimit(1)
-                .minimumScaleFactor(0.78)
+                .lineLimit(2)
+                .minimumScaleFactor(0.72)
+                .fixedSize(horizontal: false, vertical: true)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
-        .padding(10)
+        .frame(minHeight: 58, alignment: .topLeading)
+        .padding(.horizontal, 10)
+        .padding(.vertical, 9)
         .background(Palette.heroInk.opacity(0.07), in: RoundedRectangle(cornerRadius: 12, style: .continuous))
     }
 

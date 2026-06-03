@@ -65885,6 +65885,16 @@
         }
       }
     },
+    "One clean session is enough.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eine klare kurze Einheit reicht."
+          }
+        }
+      }
+    },
     "One-time offer. Locked in for 12 months.": {
       "extractionState": "manual",
       "localizations": {
@@ -93346,6 +93356,26 @@
         }
       }
     },
+    "Train your weakest spot": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schwachstelle trainieren"
+          }
+        }
+      }
+    },
+    "%@ has the most room to improve.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ braucht gerade am meisten Übung."
+          }
+        }
+      }
+    },
     "Tomorrow's plan": {
       "localizations": {
         "de": {
@@ -102058,6 +102088,16 @@
         }
       }
     },
+    "Week %lld of %lld": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Woche %lld von %lld"
+          }
+        }
+      }
+    },
     "Week 1": {
       "localizations": {
         "de": {
@@ -106089,6 +106129,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Sua próxima aula está pronta para uma sessão curta de retorno."
+          }
+        }
+      }
+    },
+    "Your long-term plan stays alive with today's small target.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dein Langzeitplan bleibt mit dem heutigen kleinen Ziel aktiv."
           }
         }
       }
@@ -117958,6 +118008,26 @@
         }
       }
     },
+    "days short": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tage"
+          }
+        }
+      }
+    },
+    "left short": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "übrig"
+          }
+        }
+      }
+    },
     "this week": {
       "localizations": {
         "de": {
@@ -117988,6 +118058,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "esta semana"
+          }
+        }
+      }
+    },
+    "week short": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Woche"
           }
         }
       }
