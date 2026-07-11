@@ -12,25 +12,32 @@ enum Links {
         ?? URL(filePath: "/")
 }
 
-/// Decides when to fire the in-app `requestReview()` prompt. Strategy: only
-/// after a **success moment with proven engagement** — namely 10+ lifetime
-/// correct answers AND a 3-day streak — and at most once per `MARKETING_VERSION`.
-/// SKStoreReviewController itself further caps Apple's UI to ~3/year, so a
-/// false positive here costs nothing.
+/// Decides when to offer an App Store review. Strategy: only after a clear
+/// value moment — a completed session with strong engagement — and at most
+/// once per `MARKETING_VERSION`. SKStoreReviewController itself further caps
+/// Apple's UI to ~3/year.
 enum ReviewPromptGate {
     private static let kPromptedVersion = "mathio.review.promptedVersion"
     private static let kCorrectMilestone = 10
-    private static let kStreakMilestone = 3
 
     private static var currentVersion: String {
         Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "1.0"
     }
 
-    static func shouldPrompt(store: Store) -> Bool {
+    static func shouldOfferAfterCompletion(store: Store,
+                                           sessionCorrect: Int,
+                                           questionCount: Int,
+                                           isReview: Bool) -> Bool {
         let already = UserDefaults.standard.string(forKey: kPromptedVersion)
         guard already != currentVersion else { return false }
+        guard questionCount > 0 else { return false }
+
         let totalCorrect = store.answered.values.reduce(0) { $0 + $1.correct }
-        return totalCorrect >= kCorrectMilestone && store.streakDays >= kStreakMilestone
+        let perfectLesson = !isReview && sessionCorrect == questionCount
+        let dailyGoalMet = store.correctToday() >= UserSettings().dailyGoal
+        let streakMoment = store.streakDays >= 3 && sessionCorrect >= max(3, questionCount - 1)
+
+        return totalCorrect >= kCorrectMilestone && (perfectLesson || dailyGoalMet || streakMoment)
     }
 
     static func markPrompted() {

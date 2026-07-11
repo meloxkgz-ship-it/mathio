@@ -32,6 +32,12 @@ enum Palette {
         light: Color(red: 0.969, green: 0.953, blue: 0.925),
         dark:  Color(red: 0.149, green: 0.133, blue: 0.114)
     )
+    static let heroSurface     = Color.dynamic(
+        light: Color(red: 0.078, green: 0.067, blue: 0.055),
+        dark:  Color(red: 0.125, green: 0.110, blue: 0.094)
+    )
+    static let heroInk         = Color(red: 0.973, green: 0.957, blue: 0.929)
+    static let heroInkSoft     = Color(red: 0.812, green: 0.788, blue: 0.745)
 
     // Type
     static let ink             = Color.dynamic(
@@ -128,7 +134,7 @@ struct PrimaryButton: View {
                 Text(title).fontWeight(.semibold)
             }
             .frame(maxWidth: .infinity, minHeight: 54)
-            .foregroundStyle(enabled ? Color.white : Color.white.opacity(0.7))
+            .foregroundStyle(Palette.background)
             .background(enabled ? Palette.ink : Palette.inkFaint)
             .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
         }
@@ -373,24 +379,35 @@ struct DailyGoalView: View {
     var body: some View {
         let pct = goal > 0 ? Double(progress) / Double(goal) : 0
         let met = progress >= goal
-        return HStack(spacing: 14) {
-            ZStack {
-                ProgressRing(progress: min(1, pct), size: 52, lineWidth: 5,
-                             color: met ? Palette.success : Palette.terracotta)
-                Image(systemName: met ? "checkmark" : "target")
-                    .font(.system(size: 18, weight: .semibold))
-                    .foregroundStyle(met ? Palette.success : Palette.terracotta)
+        return Card(padding: 16, background: met ? Palette.amberSoft : Palette.surface) {
+            HStack(spacing: 14) {
+                ZStack {
+                    ProgressRing(progress: min(1, pct), size: 54, lineWidth: 5,
+                                 color: met ? Palette.success : Palette.terracotta)
+                    Image(systemName: met ? "checkmark" : "target")
+                        .font(.system(size: 18, weight: .semibold))
+                        .foregroundStyle(met ? Palette.success : Palette.terracotta)
+                }
+                VStack(alignment: .leading, spacing: 3) {
+                    Text("Today")
+                        .font(.label).textCase(.uppercase)
+                        .tracking(1.2)
+                        .foregroundStyle(Palette.inkFaint)
+                    Text(met ? "Daily goal complete" : "\(progress) of \(goal) correct")
+                        .font(.titleM)
+                        .foregroundStyle(Palette.ink)
+                    Text(met ? "Good moment to stop or continue your streak." : "One clean session is enough.")
+                        .font(.bodyM)
+                        .foregroundStyle(Palette.inkSoft)
+                        .fixedSize(horizontal: false, vertical: true)
+                }
+                Spacer()
+                if met {
+                    Image(systemName: "sparkles")
+                        .font(.system(size: 18, weight: .semibold))
+                        .foregroundStyle(Palette.terracotta)
+                }
             }
-            VStack(alignment: .leading, spacing: 2) {
-                Text("Today")
-                    .font(.label).textCase(.uppercase)
-                    .tracking(1.2)
-                    .foregroundStyle(Palette.inkFaint)
-                Text(met ? "Goal reached. Nice." : "\(progress) of \(goal) correct")
-                    .font(.titleM)
-                    .foregroundStyle(Palette.ink)
-            }
-            Spacer()
         }
         .accessibilityElement(children: .combine)
         .accessibilityLabel(Text(met

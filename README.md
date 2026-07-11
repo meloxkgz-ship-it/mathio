@@ -18,8 +18,8 @@ Native iOS 18+, SwiftUI, **StoreKit 2** (no third-party SDKs), DE + EN localized
 
 | | |
 |---|---|
-| **Topics** | Pre-Algebra · Algebra · Calculus · Geometry · Trigonometry |
-| **Lessons** | 14 lessons, ~70 questions across multiple-choice, free-answer, true/false |
+| **Topics** | Pre-Algebra · Algebra · Calculus · Geometry · Trigonometry · Statistics · Linear Algebra · Financial Math · Discrete Math |
+| **Lessons** | 52 lessons, 260 questions across multiple-choice, free-answer, true/false |
 | **Review queue** | Spaced repetition based on Leitner intervals (1d / 3d / 1w / 2w / 1m) |
 | **Daily goal** | User-set target (default 5 correct/day), settable in Settings |
 | **Streak + freeze** | Daily streak with auto-spent freezes (1 weekly refill, max 2) |
@@ -83,6 +83,7 @@ Everything is stored in `UserDefaults`. No server, no cloud sync, no analytics S
 | `mathio.streak.count` / `.last` | Day streak + last-active date |
 | `mathio.streak.freezes` / `.freezeRefillDate` | Streak freezes inventory + weekly refill timestamp |
 | `mathio.dailyGoal` | User-set goal (1–30 correct/day) |
+| `mathio.dailyCorrect.v1` | `[Day: Count]` — exact daily correct-answer totals for the goal ring and heatmap |
 | `mathio.notifications.enabled` | Daily reminder toggle |
 | `mathio.theme` | system / light / dark |
 | `mathio.bookmarks` | `[FormulaKey]` — saved formulas |
@@ -97,7 +98,7 @@ Everything is stored in `UserDefaults`. No server, no cloud sync, no analytics S
 - [ ] Lock Screen + Home widget (streak + today's ring)
 - [ ] FSRS algorithm (currently Leitner; FSRS reduces reviews ~25%)
 - [ ] Weekly recap card
-- [ ] Topic expansion: Statistics, Linear Algebra
+- [x] Topic expansion: Statistics, Linear Algebra
 - [ ] Real-domain hosted Privacy / Terms pages
 
 ## License

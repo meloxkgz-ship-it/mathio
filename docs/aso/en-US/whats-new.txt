@@ -1,8 +1,10 @@
 Welcome to Mathio.
 
-A calm, focused way to practice math — algebra, geometry, calculus, trigonometry — one small step at a time.
+A calm, focused way to practice math — algebra, geometry, calculus, statistics, linear algebra, financial math, and discrete math — one small step at a time.
 
-• 21 lessons, 105 hand-crafted questions, 50 reference formulas
+• New in-app languages: Spanish, French, Italian, and Brazilian Portuguese
+• New lesson visuals for graphs, triangles, number lines, unit circles, vectors, statistics, and compound growth
+• Fixed dark-mode contrast on primary buttons and learning cards
 • Step-by-step solutions for every wrong answer
 • Adaptive lesson picker, daily streak with auto-freezes, spaced-repetition review queue
 • Siri shortcut ("practice math"), iPad layout, branded launch screen

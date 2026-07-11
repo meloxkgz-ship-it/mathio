@@ -30,8 +30,8 @@ Full semantic palette adapts to system. VoiceOver labels on every interactive el
 Fully localised, including formulas and step-by-step explanations.
 
 — TOPICS —
-Pre-Algebra · Algebra · Geometry · Trigonometry · Calculus
-21 lessons, 105 hand-crafted questions across multiple-choice, free-answer, and true/false formats. From fractions, exponents, and logarithms through derivatives, integrals, and trig identities.
+Pre-Algebra · Algebra · Geometry · Trigonometry · Calculus · Statistics · Linear Algebra · Financial Math · Discrete Math
+52 lessons, 260 hand-crafted questions across multiple-choice, free-answer, and true/false formats. From fractions, exponents, and logarithms through derivatives, integrals, statistics, vectors, budgeting, and logic.
 
 — SUBSCRIPTION —
 Mathio is free to try. Unlock all topics with:

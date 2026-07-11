@@ -154,15 +154,19 @@ Two minutes a day is enough. No leaderboards. No tracking.
 
 ## App Privacy ("Data Used to Track You" / "Data Linked to You")
 
-Match what's in `PrivacyInfo.xcprivacy`:
+Match what's in `PrivacyInfo.xcprivacy` and the RevenueCat SDK privacy
+manifest:
 
-- **Data Not Collected** — declare nothing. Mathio stores all progress in
-  `UserDefaults`. The only outbound traffic is StoreKit purchase events,
-  which Apple itself handles and which are out of scope for the App
-  Privacy questionnaire.
+- Mathio stores learning progress in `UserDefaults` and does not run its own
+  analytics server.
+- RevenueCat is used for subscription entitlement validation. Review the
+  RevenueCat privacy manifest and App Store Connect App Privacy questionnaire
+  before submitting a RevenueCat-enabled build.
+- Do not keep the old **Data Not Collected** answer after enabling RevenueCat in
+  production; purchase/receipt and anonymous app-user data may be processed by
+  RevenueCat for subscription management.
 
-This becomes the highly-coveted **"Data Not Collected"** label in the
-listing — a small but meaningful conversion lift in 2024+ data.
+The public privacy policy has been updated to mention RevenueCat.
 
 ---
 

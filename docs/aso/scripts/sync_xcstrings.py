@@ -20,6 +20,21 @@ import sys
 # Manual prose translations. Anything not listed here AND not math-only
 # triggers a hard fail so we never silently leave English in the bundle.
 PROSE: dict[str, str] = {
+    # Home and review UX
+    "A quick rating helps more learners find it.": "Eine kurze Bewertung hilft mehr Lernenden, Mathio zu finden.",
+    "Algebra Foundation": "Algebra-Grundlagen",
+    "Calculus Starter": "Analysis-Einstieg",
+    "Enjoying Mathio?": "Gefällt dir Mathio?",
+    "Equations, lines, factoring": "Gleichungen, Geraden, Faktorisieren",
+    "Exam Essentials": "Prüfungs-Basics",
+    "Guided paths": "Geführte Lernpfade",
+    "Interest, loans, inflation": "Zinsen, Kredite, Inflation",
+    "Limits, derivatives, integrals": "Grenzwerte, Ableitungen, Integrale",
+    "Mixed practice across core topics": "Gemischtes Training zu Kernthemen",
+    "Money Math": "Finanzmathe",
+    "Not now": "Nicht jetzt",
+    "Rate Mathio": "Mathio bewerten",
+
     # Curriculum: lesson titles
     "Power rule": "Potenzregel",
     "Sum rule": "Summenregel",

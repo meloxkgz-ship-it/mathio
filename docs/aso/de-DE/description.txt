@@ -30,8 +30,8 @@ Vollständige semantische Palette passt sich dem System an. VoiceOver-Beschriftu
 Vollständig übersetzt — auch Formeln und Schritt-für-Schritt-Erklärungen.
 
 — THEMEN —
-Vor-Algebra · Algebra · Geometrie · Trigonometrie · Analysis
-21 Lektionen, 105 handgemachte Aufgaben in Multiple-Choice, Freitext und Wahr/Falsch. Von Bruchrechnen, Potenzen und Logarithmen bis zu Ableitungen, Integralen und trigonometrischen Identitäten.
+Vor-Algebra · Algebra · Geometrie · Trigonometrie · Analysis · Statistik · Lineare Algebra · Finanzmathematik · Diskrete Mathematik
+52 Lektionen, 260 handgemachte Aufgaben in Multiple-Choice, Freitext und Wahr/Falsch. Von Bruchrechnen, Potenzen und Logarithmen bis zu Ableitungen, Integralen, Statistik, Vektoren, Budgetrechnung und Logik.
 
 — ABO —
 Mathio ist kostenlos zum Ausprobieren. Alle Themen freischalten mit:

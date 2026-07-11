@@ -1,13 +1,21 @@
 import SwiftUI
+import RevenueCat
 import StoreKit
 import UserNotifications
 import AudioToolbox
 
 // MARK: - Premium store
 //
-// Native StoreKit 2. Three subscription products keyed by App Store Connect ID.
-// Local testing uses Mathio.storekit. Production reads the same product IDs
-// from App Store Connect. No external dependencies.
+// RevenueCat-first subscription store. When a public RevenueCat SDK key is
+// present in `RevenueCatAPIKey`, offerings, purchases, restore, and entitlement
+// checks run through RevenueCat. Without a key, we keep the StoreKit 2 path as
+// a local fallback so screenshots, previews, and App Review override still work.
+
+enum PremiumPlan {
+    case weekly
+    case annual
+    case retention
+}
 
 @MainActor
 @Observable
@@ -16,6 +24,8 @@ final class PremiumStore {
     static let annualID    = "mathio_annual"
     static let retentionID = "mathio_retention"
     private static let allIDs: [String] = [weeklyID, annualID, retentionID]
+    private static let entitlementIDs = ["premium", "plus"]
+    private static var revenueCatConfigured = false
 
     /// `UserDefaults` key for the reviewer-override flag. Toggled by 7-tapping
     /// the version label in Settings — the documented reviewer demo path.
@@ -23,7 +33,8 @@ final class PremiumStore {
     private static let kReviewerOverride = "mathio.reviewer.override"
 
     /// True if a real subscription transaction is currently entitled.
-    private var entitlementActive: Bool = false
+    private var storeKitEntitlementActive: Bool = false
+    private var revenueCatEntitlementActive: Bool = false
 
     /// True if the reviewer-override flag is set in `UserDefaults`. Survives
     /// relaunches; cleared by tapping the version label again 7 times or by
@@ -32,20 +43,30 @@ final class PremiumStore {
 
     /// Public premium gate. Gives access if **either** the App Store reports
     /// an active entitlement **or** the reviewer-override flag is set.
-    var isPremium: Bool { entitlementActive || reviewerOverride }
+    var isPremium: Bool {
+        revenueCatEntitlementActive || storeKitEntitlementActive || reviewerOverride
+    }
 
-    var weekly:    Product?
-    var annual:    Product?
-    var retention: Product?
+    private(set) var revenueCatEnabled = false
+    private(set) var revenueCatMessage: String?
+
+    private var weekly:    StoreKit.Product?
+    private var annual:    StoreKit.Product?
+    private var retention: StoreKit.Product?
+    private var offerings: Offerings?
     var loaded: Bool = false
     var purchaseInFlight: Bool = false
 
     init() {
-        Task { [weak self] in
-            for await update in Transaction.updates {
-                if case .verified(let tx) = update {
-                    await tx.finish()
-                    await self?.refreshEntitlements()
+        revenueCatEnabled = Self.configureRevenueCatIfPossible()
+
+        if !revenueCatEnabled {
+            Task { [weak self] in
+                for await update in Transaction.updates {
+                    if case .verified(let tx) = update {
+                        await tx.finish()
+                        await self?.refreshEntitlements()
+                    }
                 }
             }
         }
@@ -53,8 +74,12 @@ final class PremiumStore {
     }
 
     func refresh() async {
-        await loadProducts()
-        await refreshEntitlements()
+        if revenueCatEnabled {
+            await refreshRevenueCat()
+        } else {
+            await loadProducts()
+            await refreshEntitlements()
+        }
         loaded = true
     }
 
@@ -66,9 +91,52 @@ final class PremiumStore {
         UserDefaults.standard.set(reviewerOverride, forKey: Self.kReviewerOverride)
     }
 
+    private static func configureRevenueCatIfPossible() -> Bool {
+        guard let apiKey = revenueCatAPIKey else { return false }
+        guard !revenueCatConfigured else { return true }
+
+        #if DEBUG
+        Purchases.logLevel = .debug
+        #else
+        Purchases.logLevel = .warn
+        #endif
+        Purchases.configure(withAPIKey: apiKey)
+        revenueCatConfigured = true
+        return true
+    }
+
+    private static var revenueCatAPIKey: String? {
+        let bundleValue = Bundle.main.object(forInfoDictionaryKey: "RevenueCatAPIKey") as? String
+        let envValue = ProcessInfo.processInfo.environment["REVENUECAT_API_KEY"]
+        return [envValue, bundleValue]
+            .compactMap { $0?.trimmingCharacters(in: .whitespacesAndNewlines) }
+            .first { !$0.isEmpty && !$0.contains("$(") && !$0.contains("REPLACE") && $0.hasPrefix("appl_") }
+    }
+
+    private func refreshRevenueCat() async {
+        do {
+            async let fetchedInfo = Purchases.shared.customerInfo()
+            async let fetchedOfferings = Purchases.shared.offerings()
+            let (customerInfo, offerings) = try await (fetchedInfo, fetchedOfferings)
+            self.offerings = offerings
+            apply(customerInfo: customerInfo)
+            revenueCatMessage = currentOffering == nil
+                ? "RevenueCat offering is missing."
+                : nil
+        } catch {
+            revenueCatMessage = error.localizedDescription
+        }
+    }
+
+    private func apply(customerInfo: CustomerInfo) {
+        revenueCatEntitlementActive = Self.entitlementIDs.contains {
+            customerInfo.entitlements[$0]?.isActive == true
+        }
+    }
+
     private func loadProducts() async {
         do {
-            let products = try await Product.products(for: Self.allIDs)
+            let products = try await StoreKit.Product.products(for: Self.allIDs)
             for product in products {
                 switch product.id {
                 case Self.weeklyID:    weekly = product
@@ -92,12 +160,44 @@ final class PremiumStore {
                 active = true
             }
         }
-        entitlementActive = active
+        storeKitEntitlementActive = active
     }
 
-    func purchase(_ product: Product) async {
+    func purchase(_ plan: PremiumPlan) async {
         purchaseInFlight = true
         defer { purchaseInFlight = false }
+
+        if revenueCatEnabled {
+            await purchaseRevenueCat(plan)
+        } else {
+            await purchaseStoreKit(plan)
+        }
+    }
+
+    private func purchaseRevenueCat(_ plan: PremiumPlan) async {
+        guard let package = package(for: plan) ?? package(for: .annual) else {
+            revenueCatMessage = "No RevenueCat package is available yet."
+            return
+        }
+
+        do {
+            let (_, customerInfo, userCancelled) = try await Purchases.shared.purchase(package: package)
+            guard !userCancelled else { return }
+            apply(customerInfo: customerInfo)
+        } catch {
+            revenueCatMessage = error.localizedDescription
+        }
+    }
+
+    private func purchaseStoreKit(_ plan: PremiumPlan) async {
+        let product: StoreKit.Product?
+        switch plan {
+        case .weekly:    product = weekly
+        case .annual:    product = annual
+        case .retention: product = retention ?? annual
+        }
+        guard let product else { return }
+
         do {
             let result = try await product.purchase()
             if case .success(let verification) = result,
@@ -111,8 +211,34 @@ final class PremiumStore {
     }
 
     func restore() async {
-        try? await AppStore.sync()
-        await refreshEntitlements()
+        if revenueCatEnabled {
+            do {
+                let customerInfo = try await Purchases.shared.restorePurchases()
+                apply(customerInfo: customerInfo)
+                revenueCatMessage = isPremium
+                    ? "Purchases restored."
+                    : "No active subscription found."
+            } catch {
+                revenueCatMessage = error.localizedDescription
+            }
+        } else {
+            try? await AppStore.sync()
+            await refreshEntitlements()
+        }
+    }
+
+    func price(for plan: PremiumPlan, fallback: String) -> String {
+        if let package = package(for: plan) {
+            return package.storeProduct.localizedPriceString
+        }
+
+        let product: StoreKit.Product?
+        switch plan {
+        case .weekly:    product = weekly
+        case .annual:    product = annual
+        case .retention: product = retention
+        }
+        return product?.displayPrice ?? fallback
     }
 
     /// Headline price line: "$1.15 / week" derived from the annual price.
@@ -120,6 +246,27 @@ final class PremiumStore {
         guard let p = annual else { return nil }
         let perWeek = (p.price as NSDecimalNumber).doubleValue / 52.0
         return Decimal(perWeek).formatted(p.priceFormatStyle.precision(.fractionLength(2)))
+    }
+
+    private var currentOffering: Offering? {
+        offerings?.current ?? offerings?.offering(identifier: "default")
+    }
+
+    private func package(for plan: PremiumPlan) -> Package? {
+        switch plan {
+        case .weekly:
+            return currentOffering?.weekly ?? package(productID: Self.weeklyID)
+        case .annual:
+            return currentOffering?.annual ?? package(productID: Self.annualID)
+        case .retention:
+            return package(productID: Self.retentionID)
+        }
+    }
+
+    private func package(productID: String) -> Package? {
+        currentOffering?.availablePackages.first {
+            $0.storeProduct.productIdentifier == productID
+        }
     }
 }
 
@@ -404,8 +551,14 @@ struct HomeView: View {
     @State private var showReview = false
 
     private var topics: [Topic] { Curriculum.topics }
+    private var learningPaths: [LearningPath] { LearningPath.defaultPaths }
     private var nextUp: (Topic, Lesson)? { store.nextLesson(in: topics, premium: premiumStore.isPremium) }
     private var reviewCount: Int { store.reviewQueue(in: topics).count }
+    private var lessonCount: Int { topics.reduce(0) { $0 + $1.lessons.count } }
+    private var questionCount: Int { topics.reduce(0) { $0 + $1.questionCount } }
+    private var monthsOfPractice: Int {
+        max(1, Int(ceil(Double(questionCount) / Double(max(settings.dailyGoal, 1)) / 30.0)))
+    }
 
     /// Set by `PracticeMathIntent` (Siri / Spotlight). Honored once on appear.
     private static let pendingPracticeKey = "mathio.intent.pendingPractice"
@@ -418,6 +571,8 @@ struct HomeView: View {
                     DailyGoalView(progress: store.correctToday(), goal: settings.dailyGoal)
                     if reviewCount > 0 { reviewBanner }
                     nextUpCard
+                    learningPlanCard
+                    learningPathsSection
                     topicsList
                     Spacer(minLength: 40)
                 }
@@ -519,7 +674,7 @@ struct HomeView: View {
                     presented = lesson
                 }
             } label: {
-                Card(padding: 24, background: Palette.ink) {
+                Card(padding: 24, background: Palette.heroSurface) {
                     VStack(alignment: .leading, spacing: 16) {
                         HStack {
                             Text("Continue").textCase(.uppercase).tracking(1.4)
@@ -529,12 +684,12 @@ struct HomeView: View {
                                 Image(systemName: "lock.fill").foregroundStyle(Palette.amber)
                             }
                         }
-                        Text(lesson.title).font(.displayM).foregroundStyle(.white)
+                        Text(lesson.title).font(.displayM).foregroundStyle(Palette.heroInk)
                         HStack(spacing: 6) {
                             Image(systemName: topic.icon).font(.system(size: 13))
                             Text(topic.title).font(.label)
                         }
-                        .foregroundStyle(.white.opacity(0.7))
+                        .foregroundStyle(Palette.heroInkSoft)
                         HStack {
                             ProgressBar(progress: store.mastery(for: lesson),
                                         color: Palette.amber, height: 6)
@@ -575,6 +730,91 @@ struct HomeView: View {
         }
     }
 
+    private var learningPathsSection: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            SectionLabel(title: "Guided paths").padding(.leading, 4)
+            ForEach(learningPaths) { path in
+                Button { open(path) } label: {
+                    LearningPathRow(
+                        path: path,
+                        progress: progress(for: path),
+                        locked: firstLesson(in: path).map(isLocked(_:)) ?? false
+                    )
+                }
+                .buttonStyle(.plain)
+                .accessibilityElement(children: .combine)
+            }
+        }
+    }
+
+    private var learningPlanCard: some View {
+        Card(padding: 18, background: Palette.surfaceMuted) {
+            VStack(alignment: .leading, spacing: 14) {
+                HStack(alignment: .top, spacing: 12) {
+                    Image(systemName: "calendar.badge.clock")
+                        .font(.system(size: 20, weight: .semibold))
+                        .foregroundStyle(Palette.calculus)
+                        .frame(width: 42, height: 42)
+                        .background(Palette.calculus.opacity(0.14))
+                        .clipShape(Circle())
+                    VStack(alignment: .leading, spacing: 3) {
+                        Text("Multi-month path")
+                            .font(.titleM)
+                            .foregroundStyle(Palette.ink)
+                        Text("\(lessonCount) lessons · \(questionCount) questions · about \(monthsOfPractice) months at your current goal")
+                            .font(.bodyM)
+                            .foregroundStyle(Palette.inkSoft)
+                            .fixedSize(horizontal: false, vertical: true)
+                    }
+                }
+
+                HStack(spacing: 10) {
+                    planPill("Foundation", icon: "1.circle.fill")
+                    planPill("Practice", icon: "2.circle.fill")
+                    planPill("Review", icon: "3.circle.fill")
+                }
+            }
+        }
+        .accessibilityElement(children: .combine)
+    }
+
+    private func planPill(_ title: LocalizedStringResource, icon: String) -> some View {
+        Label(title, systemImage: icon)
+            .font(.caption)
+            .foregroundStyle(Palette.ink)
+            .padding(.horizontal, 10)
+            .padding(.vertical, 8)
+            .frame(maxWidth: .infinity)
+            .background(Palette.surface, in: Capsule())
+    }
+
+    private func progress(for path: LearningPath) -> Double {
+        guard !path.lessons.isEmpty else { return 0 }
+        return path.lessons.reduce(0.0) { $0 + store.mastery(for: $1) } / Double(path.lessons.count)
+    }
+
+    private func topic(containing lesson: Lesson) -> Topic? {
+        topics.first { $0.lessons.contains(lesson) }
+    }
+
+    private func firstLesson(in path: LearningPath) -> Lesson? {
+        path.lessons.first { store.mastery(for: $0) < 1.0 } ?? path.lessons.first
+    }
+
+    private func isLocked(_ lesson: Lesson) -> Bool {
+        guard let topic = topic(containing: lesson) else { return false }
+        return !premiumStore.isPremium && !lesson.isFree(in: topic)
+    }
+
+    private func open(_ path: LearningPath) {
+        guard let lesson = firstLesson(in: path) else { return }
+        if isLocked(lesson) {
+            showPaywall = true
+        } else {
+            presented = lesson
+        }
+    }
+
     /// Build a synthetic lesson from the spaced-repetition queue.
     private func reviewLesson() -> Lesson {
         let qs = store.reviewQueue(in: topics, limit: 10)
@@ -585,6 +825,85 @@ struct HomeView: View {
             formulas: [],
             questions: qs
         )
+    }
+}
+
+struct LearningPath: Identifiable {
+    let id: String
+    let title: LocalizedStringResource
+    let subtitle: LocalizedStringResource
+    let icon: String
+    let color: Color
+    let lessons: [Lesson]
+
+    static let defaultPaths: [LearningPath] = [
+        LearningPath(
+            id: "algebra-foundation",
+            title: "Algebra Foundation",
+            subtitle: "Equations, lines, factoring",
+            icon: "function",
+            color: Palette.algebra,
+            lessons: [Curriculum.linearEquations, Curriculum.linesAndSlope, Curriculum.factoring,
+                      Curriculum.inequalities, Curriculum.systems]
+        ),
+        LearningPath(
+            id: "calculus-starter",
+            title: "Calculus Starter",
+            subtitle: "Limits, derivatives, integrals",
+            icon: "chart.xyaxis.line",
+            color: Palette.calculus,
+            lessons: [Curriculum.limits, Curriculum.derivatives, Curriculum.chainRule,
+                      Curriculum.integrals, Curriculum.definiteIntegrals]
+        ),
+        LearningPath(
+            id: "exam-essentials",
+            title: "Exam Essentials",
+            subtitle: "Mixed practice across core topics",
+            icon: "checklist",
+            color: Palette.terracotta,
+            lessons: [Curriculum.preAlgFractions, Curriculum.linearEquations, Curriculum.pythagoras,
+                      Curriculum.trigBasics, Curriculum.descriptiveStats]
+        ),
+        LearningPath(
+            id: "money-math",
+            title: "Money Math",
+            subtitle: "Interest, loans, inflation",
+            icon: "banknote",
+            color: Palette.trig,
+            lessons: [Curriculum.simpleInterest, Curriculum.compoundInterest, Curriculum.budgeting,
+                      Curriculum.inflationRealValue, Curriculum.loansPayments]
+        )
+    ]
+}
+
+struct LearningPathRow: View {
+    let path: LearningPath
+    let progress: Double
+    let locked: Bool
+
+    var body: some View {
+        Card(padding: 16) {
+            HStack(spacing: 14) {
+                ZStack {
+                    Circle().fill(path.color.opacity(0.15)).frame(width: 46, height: 46)
+                    Image(systemName: path.icon)
+                        .font(.system(size: 19, weight: .semibold))
+                        .foregroundStyle(path.color)
+                }
+                VStack(alignment: .leading, spacing: 5) {
+                    Text(path.title)
+                        .font(.titleM)
+                        .foregroundStyle(Palette.ink)
+                    Text(path.subtitle)
+                        .font(.bodyM)
+                        .foregroundStyle(Palette.inkSoft)
+                    ProgressBar(progress: progress, color: path.color, height: 4)
+                }
+                Spacer()
+                Image(systemName: locked ? "lock.fill" : "arrow.right")
+                    .foregroundStyle(Palette.inkFaint)
+            }
+        }
     }
 }
 
@@ -605,7 +924,7 @@ struct TopicRow: View {
                 }
                 VStack(alignment: .leading, spacing: 6) {
                     Text(topic.title).font(.titleM).foregroundStyle(Palette.ink)
-                    Text("\(topic.lessons.count) lessons · \(Int(mastery * 100))%")
+                    Text("\(topic.lessons.count) lessons · \(topic.questionCount) questions · \(Int(mastery * 100))%")
                         .font(.bodyM).foregroundStyle(Palette.inkSoft)
                     ProgressBar(progress: mastery, color: topic.color, height: 4)
                 }
@@ -641,6 +960,12 @@ struct TopicView: View {
                 }
                 .padding(.top, 4)
 
+                HStack(spacing: 8) {
+                    metricPill(value: "\(topic.lessons.count)", label: "Lessons")
+                    metricPill(value: "\(topic.questionCount)", label: "Questions")
+                    metricPill(value: "\(Int(store.mastery(for: topic) * 100))%", label: "Mastery")
+                }
+
                 ForEach(Array(topic.lessons.enumerated()), id: \.element.id) { index, lesson in
                     let locked = !premiumStore.isPremium && index > 0
                     Button {
@@ -666,12 +991,42 @@ struct TopicView: View {
             PaywallView(premiumStore: premiumStore, mode: .upgrade)
         }
     }
+
+    private func metricPill(value: String, label: LocalizedStringResource) -> some View {
+        VStack(alignment: .leading, spacing: 2) {
+            Text(value)
+                .font(.titleM)
+                .foregroundStyle(Palette.ink)
+                .lineLimit(1)
+                .minimumScaleFactor(0.75)
+            Text(label)
+                .font(.caption)
+                .foregroundStyle(Palette.inkSoft)
+                .lineLimit(1)
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .padding(.horizontal, 12)
+        .padding(.vertical, 10)
+        .background(Palette.surfaceMuted, in: RoundedRectangle(cornerRadius: 14, style: .continuous))
+        .accessibilityElement(children: .combine)
+        .accessibilityLabel(Text("\(value) \(label)"))
+    }
+}
+
+extension Topic {
+    var questionCount: Int {
+        lessons.reduce(0) { $0 + $1.questions.count }
+    }
 }
 
 extension Lesson {
     /// First lesson of a topic is always free.
     func isFree(in topic: Topic) -> Bool {
         topic.lessons.first?.id == self.id
+    }
+
+    var estimatedMinutes: Int {
+        max(3, questions.count)
     }
 }
 
@@ -687,7 +1042,7 @@ struct LessonRow: View {
                 ProgressRing(progress: mastery, size: 36, lineWidth: 4, color: color)
                 VStack(alignment: .leading, spacing: 4) {
                     Text(lesson.title).font(.titleM).foregroundStyle(Palette.ink)
-                    Text("\(lesson.questions.count) questions")
+                    Text("\(lesson.questions.count) questions · \(lesson.estimatedMinutes) min")
                         .font(.bodyM).foregroundStyle(Palette.inkSoft)
                 }
                 Spacer()
@@ -713,6 +1068,10 @@ struct LessonView: View {
                 Text(lesson.intro).font(.bodyL).foregroundStyle(Palette.inkSoft)
                     .padding(.bottom, 4)
 
+                if let visual = lesson.visual {
+                    LessonVisualCard(visual: visual)
+                }
+
                 ForEach(lesson.formulas, id: \.id) { formula in
                     FormulaCard(formula: formula, store: store)
                 }
@@ -735,6 +1094,257 @@ struct LessonView: View {
         .navigationBarTitleDisplayMode(.inline)
         .navigationDestination(isPresented: $showPractice) {
             PracticeView(lesson: lesson, store: store, isReview: false)
+        }
+    }
+}
+
+struct LessonVisualCard: View {
+    let visual: LessonVisual
+
+    var body: some View {
+        Card(padding: 0) {
+            VStack(alignment: .leading, spacing: 14) {
+                HStack {
+                    Label(title, systemImage: symbol)
+                        .font(.titleM)
+                        .foregroundStyle(Palette.ink)
+                    Spacer()
+                    Text("Visual")
+                        .font(.caption)
+                        .foregroundStyle(Palette.inkFaint)
+                        .textCase(.uppercase)
+                        .tracking(1.1)
+                }
+                .padding(.horizontal, 18)
+                .padding(.top, 18)
+
+                visualBody
+                    .frame(height: 168)
+                    .frame(maxWidth: .infinity)
+                    .background(Palette.surfaceMuted)
+                    .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
+                    .padding(.horizontal, 14)
+                    .padding(.bottom, 14)
+            }
+        }
+        .accessibilityElement(children: .combine)
+        .accessibilityLabel(Text(accessibilityLabel))
+    }
+
+    private var title: LocalizedStringResource {
+        switch visual {
+        case .numberLine: return "See the movement"
+        case .triangle: return "See the shape"
+        case .parabola: return "See the curve"
+        case .derivativeSlope: return "See the slope"
+        case .unitCircle: return "See the angle"
+        case .barChart: return "See the data"
+        case .vectorPlane: return "See the vector"
+        case .compoundGrowth: return "See the growth"
+        }
+    }
+
+    private var symbol: String {
+        switch visual {
+        case .numberLine: return "arrow.left.and.right"
+        case .triangle: return "triangle"
+        case .parabola, .derivativeSlope: return "chart.xyaxis.line"
+        case .unitCircle: return "circle.dotted"
+        case .barChart: return "chart.bar"
+        case .vectorPlane: return "arrow.up.right"
+        case .compoundGrowth: return "chart.line.uptrend.xyaxis"
+        }
+    }
+
+    private var accessibilityLabel: LocalizedStringResource {
+        switch visual {
+        case .numberLine: return "Number line visual showing movement left and right."
+        case .triangle: return "Triangle visual showing sides and height."
+        case .parabola: return "Parabola visual showing a quadratic curve."
+        case .derivativeSlope: return "Curve visual showing a tangent slope."
+        case .unitCircle: return "Unit circle visual showing an angle and radius."
+        case .barChart: return "Bar chart visual showing different values."
+        case .vectorPlane: return "Coordinate plane visual showing a vector."
+        case .compoundGrowth: return "Growth curve visual showing compounding."
+        }
+    }
+
+    @ViewBuilder
+    private var visualBody: some View {
+        switch visual {
+        case .numberLine:
+            NumberLineVisual()
+        case .triangle:
+            TriangleVisual()
+        case .parabola:
+            CurveVisual(mode: .parabola)
+        case .derivativeSlope:
+            CurveVisual(mode: .slope)
+        case .unitCircle:
+            UnitCircleVisual()
+        case .barChart:
+            BarChartVisual()
+        case .vectorPlane:
+            VectorPlaneVisual()
+        case .compoundGrowth:
+            CurveVisual(mode: .growth)
+        }
+    }
+}
+
+private struct NumberLineVisual: View {
+    var body: some View {
+        GeometryReader { geo in
+            let mid = geo.size.height * 0.52
+            let w = geo.size.width
+            Canvas { ctx, size in
+                var axis = Path()
+                axis.move(to: CGPoint(x: 24, y: mid))
+                axis.addLine(to: CGPoint(x: w - 24, y: mid))
+                ctx.stroke(axis, with: .color(Palette.inkFaint), lineWidth: 2)
+                for i in 0...6 {
+                    let x = 24 + (w - 48) * CGFloat(i) / 6
+                    var tick = Path()
+                    tick.move(to: CGPoint(x: x, y: mid - 7))
+                    tick.addLine(to: CGPoint(x: x, y: mid + 7))
+                    ctx.stroke(tick, with: .color(Palette.inkFaint), lineWidth: 1.5)
+                }
+                var arc = Path()
+                arc.move(to: CGPoint(x: w * 0.28, y: mid))
+                arc.addQuadCurve(to: CGPoint(x: w * 0.68, y: mid),
+                                 control: CGPoint(x: w * 0.48, y: mid - 58))
+                ctx.stroke(arc, with: .color(Palette.terracotta), style: StrokeStyle(lineWidth: 4, lineCap: .round))
+            }
+            HStack {
+                Text("-3")
+                Spacer()
+                Text("0")
+                Spacer()
+                Text("3")
+            }
+            .font(.caption)
+            .foregroundStyle(Palette.inkSoft)
+            .padding(.horizontal, 20)
+            .offset(y: mid + 12)
+        }
+    }
+}
+
+private struct TriangleVisual: View {
+    var body: some View {
+        GeometryReader { geo in
+            let size = geo.size
+            Canvas { ctx, _ in
+                let a = CGPoint(x: size.width * 0.18, y: size.height * 0.78)
+                let b = CGPoint(x: size.width * 0.78, y: size.height * 0.78)
+                let c = CGPoint(x: size.width * 0.48, y: size.height * 0.24)
+                var tri = Path()
+                tri.move(to: a); tri.addLine(to: b); tri.addLine(to: c); tri.closeSubpath()
+                ctx.fill(tri, with: .color(Palette.geometry.opacity(0.18)))
+                ctx.stroke(tri, with: .color(Palette.geometry), lineWidth: 4)
+                var h = Path()
+                h.move(to: c); h.addLine(to: CGPoint(x: c.x, y: a.y))
+                ctx.stroke(h, with: .color(Palette.terracotta), style: StrokeStyle(lineWidth: 3, dash: [6, 5]))
+            }
+        }
+    }
+}
+
+private struct CurveVisual: View {
+    enum Mode { case parabola, slope, growth }
+    let mode: Mode
+
+    var body: some View {
+        Canvas { ctx, size in
+            let inset: CGFloat = 24
+            var axes = Path()
+            axes.move(to: CGPoint(x: inset, y: size.height - inset))
+            axes.addLine(to: CGPoint(x: size.width - inset, y: size.height - inset))
+            axes.move(to: CGPoint(x: inset, y: size.height - inset))
+            axes.addLine(to: CGPoint(x: inset, y: inset))
+            ctx.stroke(axes, with: .color(Palette.inkFaint.opacity(0.7)), lineWidth: 1.5)
+
+            var curve = Path()
+            for i in 0...80 {
+                let t = CGFloat(i) / 80
+                let x = inset + t * (size.width - inset * 2)
+                let y: CGFloat
+                switch mode {
+                case .parabola:
+                    y = size.height - inset - pow((t - 0.5) * 2, 2) * (size.height - inset * 2)
+                case .slope:
+                    y = size.height - inset - (0.18 + 0.62 * t + 0.12 * sin(t * .pi * 2)) * (size.height - inset * 2)
+                case .growth:
+                    y = size.height - inset - (pow(t, 2.2) * 0.82 + 0.06) * (size.height - inset * 2)
+                }
+                if i == 0 { curve.move(to: CGPoint(x: x, y: y)) }
+                else { curve.addLine(to: CGPoint(x: x, y: y)) }
+            }
+            ctx.stroke(curve, with: .color(Palette.calculus), style: StrokeStyle(lineWidth: 4, lineCap: .round, lineJoin: .round))
+
+            if mode == .slope {
+                var tangent = Path()
+                tangent.move(to: CGPoint(x: size.width * 0.42, y: size.height * 0.55))
+                tangent.addLine(to: CGPoint(x: size.width * 0.72, y: size.height * 0.30))
+                ctx.stroke(tangent, with: .color(Palette.terracotta), style: StrokeStyle(lineWidth: 3, lineCap: .round))
+            }
+        }
+    }
+}
+
+private struct UnitCircleVisual: View {
+    var body: some View {
+        Canvas { ctx, size in
+            let center = CGPoint(x: size.width / 2, y: size.height / 2)
+            let r = min(size.width, size.height) * 0.34
+            ctx.stroke(Path(ellipseIn: CGRect(x: center.x - r, y: center.y - r, width: r * 2, height: r * 2)),
+                       with: .color(Palette.trig), lineWidth: 4)
+            var axes = Path()
+            axes.move(to: CGPoint(x: center.x - r - 18, y: center.y))
+            axes.addLine(to: CGPoint(x: center.x + r + 18, y: center.y))
+            axes.move(to: CGPoint(x: center.x, y: center.y - r - 18))
+            axes.addLine(to: CGPoint(x: center.x, y: center.y + r + 18))
+            ctx.stroke(axes, with: .color(Palette.inkFaint), lineWidth: 1.5)
+            let end = CGPoint(x: center.x + r * 0.72, y: center.y - r * 0.72)
+            var radius = Path()
+            radius.move(to: center); radius.addLine(to: end)
+            ctx.stroke(radius, with: .color(Palette.terracotta), style: StrokeStyle(lineWidth: 4, lineCap: .round))
+        }
+    }
+}
+
+private struct BarChartVisual: View {
+    private let values: [CGFloat] = [0.38, 0.68, 0.52, 0.86, 0.46]
+    var body: some View {
+        HStack(alignment: .bottom, spacing: 12) {
+            ForEach(Array(values.enumerated()), id: \.offset) { index, value in
+                RoundedRectangle(cornerRadius: 8, style: .continuous)
+                    .fill(index == 3 ? Palette.stats : Palette.stats.opacity(0.42))
+                    .frame(height: 118 * value)
+            }
+        }
+        .padding(.horizontal, 32)
+        .padding(.vertical, 24)
+    }
+}
+
+private struct VectorPlaneVisual: View {
+    var body: some View {
+        Canvas { ctx, size in
+            let center = CGPoint(x: size.width * 0.42, y: size.height * 0.62)
+            var grid = Path()
+            for i in 1...4 {
+                let x = size.width * CGFloat(i) / 5
+                grid.move(to: CGPoint(x: x, y: 18)); grid.addLine(to: CGPoint(x: x, y: size.height - 18))
+                let y = size.height * CGFloat(i) / 5
+                grid.move(to: CGPoint(x: 18, y: y)); grid.addLine(to: CGPoint(x: size.width - 18, y: y))
+            }
+            ctx.stroke(grid, with: .color(Palette.hairline), lineWidth: 1)
+            let end = CGPoint(x: size.width * 0.70, y: size.height * 0.30)
+            var vector = Path()
+            vector.move(to: center); vector.addLine(to: end)
+            ctx.stroke(vector, with: .color(Palette.algebra), style: StrokeStyle(lineWidth: 5, lineCap: .round))
+            ctx.fill(Path(ellipseIn: CGRect(x: end.x - 7, y: end.y - 7, width: 14, height: 14)), with: .color(Palette.algebra))
         }
     }
 }
@@ -786,6 +1396,7 @@ struct PracticeView: View {
     @State private var sessionCorrect: Int = 0
     @State private var showQuitConfirm: Bool = false
     @State private var didCelebrate: Bool = false
+    @State private var hideReviewOffer: Bool = false
 
     enum AnswerState: Equatable { case pending, correct, incorrect }
 
@@ -999,6 +1610,9 @@ struct PracticeView: View {
                         .font(.titleM).foregroundStyle(Palette.terracotta)
                         .padding(.top, -8)
                 }
+                if shouldShowReviewOffer {
+                    reviewOfferCard
+                }
                 PrimaryButton(title: "Done", icon: "checkmark") { dismiss() }
                     .padding(.top, 12)
             }
@@ -1015,6 +1629,46 @@ struct PracticeView: View {
 
     private var isPerfect: Bool {
         sessionCorrect == lesson.questions.count && lesson.questions.count > 0
+    }
+
+    private var shouldShowReviewOffer: Bool {
+        !hideReviewOffer && ReviewPromptGate.shouldOfferAfterCompletion(
+            store: store,
+            sessionCorrect: sessionCorrect,
+            questionCount: lesson.questions.count,
+            isReview: isReview
+        )
+    }
+
+    private var reviewOfferCard: some View {
+        Card(padding: 16, background: Palette.surfaceMuted) {
+            VStack(alignment: .leading, spacing: 12) {
+                HStack(spacing: 10) {
+                    Image(systemName: "heart.fill")
+                        .foregroundStyle(Palette.terracotta)
+                    VStack(alignment: .leading, spacing: 2) {
+                        Text("Enjoying Mathio?")
+                            .font(.titleM)
+                            .foregroundStyle(Palette.ink)
+                        Text("A quick rating helps more learners find it.")
+                            .font(.bodyM)
+                            .foregroundStyle(Palette.inkSoft)
+                    }
+                }
+                HStack(spacing: 10) {
+                    SecondaryButton(title: "Not now") {
+                        ReviewPromptGate.markPrompted()
+                        hideReviewOffer = true
+                    }
+                    PrimaryButton(title: "Rate Mathio", icon: "star.fill") {
+                        ReviewPromptGate.markPrompted()
+                        hideReviewOffer = true
+                        requestReview()
+                    }
+                }
+            }
+        }
+        .transition(.opacity.combined(with: .move(edge: .bottom)))
     }
 
     private var ribbon: String {
@@ -1072,18 +1726,8 @@ struct PracticeView: View {
         if isCorrect { sessionCorrect += 1 }
         store.record(questionId: q.id, correct: isCorrect)
 
-        // Ask for an App Store rating once per version, **after** a real
-        // success moment (correct answer + 3+ day streak + ≥ 10 lifetime
-        // correct answers). Apple itself caps prompts to ~3/year per user.
-        if isCorrect, ReviewPromptGate.shouldPrompt(store: store) {
-            ReviewPromptGate.markPrompted()
-            // Defer past the answer-reveal animation so the prompt doesn't
-            // collide with the green "Correct!" state change.
-            Task { @MainActor in
-                try? await Task.sleep(for: .seconds(0.9))
-                requestReview()
-            }
-        }
+        // Review prompts are intentionally delayed until the completion screen,
+        // after the user has felt the full value moment.
     }
 
     private func advance() {
@@ -1299,8 +1943,12 @@ struct StatsView: View {
         store.answered.values.reduce(0) { $0 + $1.correct }
     }
     private var overallMastery: Double {
-        guard !topics.isEmpty else { return 0 }
-        return topics.reduce(0.0) { $0 + store.mastery(for: $1) } / Double(topics.count)
+        let totalQuestions = topics.reduce(0) { $0 + $1.questionCount }
+        guard totalQuestions > 0 else { return 0 }
+        let weighted = topics.reduce(0.0) { total, topic in
+            total + store.mastery(for: topic) * Double(topic.questionCount)
+        }
+        return weighted / Double(totalQuestions)
     }
     private var weakest: Topic? {
         topics.filter { store.mastery(for: $0) < 1.0 }
@@ -1858,9 +2506,9 @@ struct PaywallView: View {
         }
     }
 
-    private var weeklyPrice: String    { premiumStore.weekly?.displayPrice ?? "$12.99" }
-    private var annualPrice: String    { premiumStore.annual?.displayPrice ?? "$59.99" }
-    private var retentionPrice: String { premiumStore.retention?.displayPrice ?? "$44.99" }
+    private var weeklyPrice: String    { premiumStore.price(for: .weekly, fallback: "$12.99") }
+    private var annualPrice: String    { premiumStore.price(for: .annual, fallback: "$59.99") }
+    private var retentionPrice: String { premiumStore.price(for: .retention, fallback: "$44.99") }
 
     /// Inline auto-renewal disclaimer that meets App Store guideline 3.1.2.
     /// Must remain visible on the paywall (not behind a sheet).
@@ -1916,13 +2564,13 @@ struct PaywallView: View {
 
     @MainActor
     private func purchase() async {
-        let target: Product?
+        let target: PremiumPlan
         switch mode {
-        case .retention: target = premiumStore.retention ?? premiumStore.annual
+        case .retention:
+            target = .retention
         default:
-            target = selected == .annual ? premiumStore.annual : premiumStore.weekly
+            target = selected == .annual ? .annual : .weekly
         }
-        guard let target else { dismiss(); return }
         await premiumStore.purchase(target)
         if premiumStore.isPremium { dismiss() }
     }

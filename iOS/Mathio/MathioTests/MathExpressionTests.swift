@@ -57,10 +57,10 @@ final class MathExpressionTests: XCTestCase {
 
     // MARK: - Comma-separated lists
 
-    func test_sortedNumberLists() {
-        XCTAssertTrue(MathInput.matches("3,2", accepted: ["2,3"]))
-        XCTAssertTrue(MathInput.matches("3, 2", accepted: ["2,3"]))
-        XCTAssertTrue(MathInput.matches("-3, 3", accepted: ["3,-3"]))
+    func test_numberListsPreserveOrder() {
+        XCTAssertTrue(MathInput.matches("2,3", accepted: ["2,3"]))
+        XCTAssertTrue(MathInput.matches("2, 3", accepted: ["2,3"]))
+        XCTAssertFalse(MathInput.matches("3,2", accepted: ["2,3"]))
     }
 
     // MARK: - DE comma decimal

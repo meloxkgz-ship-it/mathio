@@ -9,9 +9,9 @@
 #     finished processing — check the TestFlight tab of the app.
 #
 # Profile selection:
-#   By default uses the asc profile named "Mathio". Override with the
+#   By default uses the asc profile named "industrietrainer". Override with the
 #   PROFILE env var, e.g.
-#       PROFILE=industrietrainer docs/aso/scripts/submit.sh --dry-run
+#       PROFILE=other-profile docs/aso/scripts/submit.sh --dry-run
 #
 # Modes:
 #   --dry-run    print the planned actions, mutate nothing
@@ -34,8 +34,9 @@ REPO_ROOT="$(cd "$(dirname "$0")/../../.." && pwd)"
 cd "$REPO_ROOT"
 
 BUNDLE="com.kgz.Mathio"
-TARGET_VERSION="1.0"
-PROFILE="${PROFILE:-Mathio}"
+TARGET_VERSION="${TARGET_VERSION:-1.0.4}"
+TARGET_BUILD="${TARGET_BUILD:-6}"
+PROFILE="${PROFILE:-industrietrainer}"
 ASC=/opt/homebrew/bin/asc
 
 bold()  { printf "\033[1m%s\033[0m\n" "$*"; }
@@ -182,13 +183,18 @@ BUILD_JSON=$($ASC --profile "$PROFILE" builds list --app "$APP_ID" --output json
 BUILD_ID=$(echo "$BUILD_JSON" | python3 -c "
 import json,sys
 d=json.load(sys.stdin)
-# Filter to processed builds, take the newest version-string match.
+pre = {
+    item['id']: item.get('attributes', {}).get('version')
+    for item in d.get('included', [])
+    if item.get('type') == 'preReleaseVersions'
+}
 def proc(b): return b['attributes'].get('processingState')=='VALID'
 for b in sorted(d.get('data', []), key=lambda x: x['attributes'].get('uploadedDate',''), reverse=True):
-    if proc(b) and b['attributes'].get('version')=='1':
+    pre_id = b.get('relationships', {}).get('preReleaseVersion', {}).get('data', {}).get('id')
+    if proc(b) and pre.get(pre_id) == '$TARGET_VERSION' and b['attributes'].get('version')=='$TARGET_BUILD':
         print(b['id']); break")
 if [[ -z "$BUILD_ID" ]]; then
-  echo "  No processed build found yet. Wait 5-15 min after archive.sh." >&2
+  echo "  No processed $TARGET_VERSION ($TARGET_BUILD) build found yet. Wait 5-15 min after archive.sh." >&2
   echo "  Re-run with --no-submit first if you want to push metadata now and submit later." >&2
   exit 1
 fi
